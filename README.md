@@ -14,5 +14,7 @@ My name is reisikei.
 ##Completed projects
 
 * [CitiW Project](https://reisikei.github.io/CitiW/)
-* 
+
+##Media:
 * [Linkedin profile](https://linkedin.com/jesalctag)
+* [Code wars](https://www.codewars.com/users/polotroko/badges/large)
