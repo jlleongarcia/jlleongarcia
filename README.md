@@ -12,6 +12,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/jesalctag" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jesalctag" height="30" width="40" /></a>
+[Code wars](https://www.codewars.com/users/polotroko/badges/large)
   
 </p>
 
@@ -30,11 +31,8 @@
 <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
 <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
 
-
+<h3 align="left">Projects:</h3>
+<p align="left"> 
 * [CitiW Project](https://reisikei.github.io/CitiW/)
 * [Ubuntu based distro's easy setup - Instructions](https://github.com/reisikei/Linux)
 * [Ubuntu based distro's easy setup - Repository](https://github.com/reisikei/Linux)
-
-##Media:
-* [Linkedin profile](https://linkedin.com/jesalctag)
-* [Code wars](https://www.codewars.com/users/polotroko/badges/large)
