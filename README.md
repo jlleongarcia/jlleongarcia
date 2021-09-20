@@ -13,5 +13,6 @@ My name is reisikei.
 
 ##Completed projects
 
-* [website](https://reisikei.github.io/CitiW/)
-* [website](https://linkedin.com/jesalctag)
+* [CitiW Project](https://reisikei.github.io/CitiW/)
+* 
+* [Linkedin profile](https://linkedin.com/jesalctag)
