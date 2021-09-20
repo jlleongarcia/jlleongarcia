@@ -13,9 +13,7 @@
 <p align="left">
 <a href="https://linkedin.com/in/jesalctag" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jesalctag" height="30" width="40" /></a> 
 <a href="https://www.codewars.com/users/polotroko/badges/large" target="blank"><img align="center" src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/logocodewars.svg" alt="polotroko" height="30" width="30" /></a> 
-  
-  
-  
+    
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
@@ -36,5 +34,5 @@
 <h3 align="left">Projects:</h3>
 <p align="left"> 
 * [CitiW Project](https://reisikei.github.io/CitiW/) <p align="left"> 
-* [Ubuntu based distro's easy setup - Instructions](https://github.com/reisikei/Linux) <p align="left"> 
-* [Ubuntu based distro's easy setup - Repository](https://github.com/reisikei/Linux)
+* [Ubuntu and Arch based distros easy setup - Instructions](https://github.com/reisikei/Linux) <p align="left"> 
+* [Ubuntu and Arch based distros easy setup - Repository](https://github.com/reisikei/Linux)
