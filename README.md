@@ -2,9 +2,10 @@
 
 My name is reisikei.
 
-* CUrrently working on TG download bot made in python (to be containerized in docker).
+* Currently working on TG download bot made in python (to be containerized in docker).
 
 ##Skills
+
 * Python (ML)
 * R
 * Linux
@@ -13,3 +14,4 @@ My name is reisikei.
 ##Completed projects
 
 [website](https://reisikei.github.io/CitiW/)
+[website](https://linkedin.com/jesalctag)
