@@ -37,7 +37,7 @@
 
 <h3 align="left">Projects:</h3>
 <p align="left"> 
-* [CitiW Project](https://reisikei.github.io/CitiW/) <p align="left"> 
+* [Raspberry Pi Projects](https://reisikei.github.io/RPi/) <p align="left"> 
 * [Ubuntu and Arch based distros easy setup - Instructions](https://reisikei.github.io/Linux) <p align="left"> 
 * [Ubuntu and Arch based distros easy setup - Repository](https://github.com/reisikei/Linux)
 * [Python TG Bot image on Docker Hub](https://hub.docker.com/u/reisikei)
