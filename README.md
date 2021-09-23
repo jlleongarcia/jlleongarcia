@@ -39,6 +39,7 @@
 <p align="left"> 
 
 <p><a href="https://reisikei.github.io/RPi/">* Raspberry Pi Configuration A-Z</a></p>
-<p><a href="https://reisikei.github.io/Linux">* Ubuntu and Arch based distros easy setup - Instructions</a></p>
+<p><a href="https://reisikei.github.io/Linux">* Ubuntu and Arch based distros easy setup - Instructions</a> 
+<a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> </p>
 <p><a href="https://github.com/reisikei/Linux">* Ubuntu and Arch based distros easy setup - Repository</a></p>
 <p><a href="https://hub.docker.com/u/reisikei">* Python TG Bot image on Docker Hub</a></p>
