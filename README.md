@@ -40,8 +40,9 @@
 
   
   
-<p><a href="https://reisikei.github.io/RPi/">* Raspberry Pi Configuration A-Z</a></p>
 <p><a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="40" height="40"/> </a>
+<a href="https://reisikei.github.io/RPi/">* Raspberry Pi Configuration A-Z</a>
+</p>
 
 <p><a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
 <a href="https://reisikei.github.io/Linux">* Ubuntu and Arch based distros easy setup - Instructions</a></p>
