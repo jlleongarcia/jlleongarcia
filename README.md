@@ -38,7 +38,7 @@
 <h3 align="left">Projects:</h3>
 <p align="left"> 
 
-<p><a href="https://reisikei.github.io/RPi/">* [Raspberry Pi Projects]</a></p>
-<p><a href="https://reisikei.github.io/Linux">* [Ubuntu and Arch based distros easy setup - Instructions]</a></p>
-<p><a href="https://github.com/reisikei/Linux">* [Ubuntu and Arch based distros easy setup - Repository]</a></p>
-<p><a href="https://hub.docker.com/u/reisikei">* [Python TG Bot image on Docker Hub]</a></p>
+<p><a href="https://reisikei.github.io/RPi/">* Raspberry Pi Projects</a></p>
+<p><a href="https://reisikei.github.io/Linux">* Ubuntu and Arch based distros easy setup - Instructions</a></p>
+<p><a href="https://github.com/reisikei/Linux">* Ubuntu and Arch based distros easy setup - Repository</a></p>
+<p><a href="https://hub.docker.com/u/reisikei">* Python TG Bot image on Docker Hub</a></p>
