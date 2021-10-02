@@ -83,5 +83,8 @@
 </p><a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
 <a href="https://github.com/reisikei/Financial_analysis_python">* Python Jupyter notebooks with financial analysis</a>
     
-</p>
+    
+    
+    
+</p><a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
 <a href="https://reisikei.github.io/Financial_analysis_R/">* R markdowns with financial analysis</a>
