@@ -78,4 +78,4 @@
 <a href="https://github.com/reisikei/Financial_analysis_python">* Python Jupyter notebooks with financial analysis</a>
     
 </p>
-<a href="https://github.com/reisikei/Financial_analysis_R">* R markdowns with financial analysis</a>
+<a href="https://reisikei.github.io/Financial_analysis_R/">* R markdowns with financial analysis</a>
