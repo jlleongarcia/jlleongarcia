@@ -23,7 +23,7 @@
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
     
-<h4 align="left">Currently:</h3>
+<h4 align="left">Currently:</h4>
 <p align="left"> 
 
 <p><a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
@@ -41,7 +41,7 @@
 <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> 
 <a href="https://pytorch.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
 
-<h4 align="left">Others:</h3>
+<h4 align="left">Others:</h4>
 <p align="left"> 
 
     
@@ -53,7 +53,8 @@
 
     
     
-    
+<h4 align="left">Previously:</h4>
+<p align="left"> 
     
     
 
@@ -87,4 +88,4 @@
     
     
 </p><a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
-<a href="https://reisikei.github.io/Financial_analysis_R/">* R markdowns with financial analysis</a>
+<a href="https://reisikei.github.io/Financial_analysis_R/"> Github page with the data-driven financial analysis</a>
