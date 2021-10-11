@@ -57,7 +57,7 @@
 
     
 <p><a href="https://www.raspberrypi.org/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/> </a>
-<a href="https://reisikei.github.io/RPi/"> Github page with Raspberry Pi Configuration A-Z</a>
+<a href="https://reisikei.github.io/RPi/"> Raspberry Pi Configuration A-Z</a>
 </p>
 
 <p><a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
@@ -76,7 +76,7 @@
     
     
 </p><a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
-<a href="https://reisikei.github.io/Financial_analysis_R/"> Github page with the data-driven financial analysis</a>
+<a href="https://reisikei.github.io/Financial_analysis_R/"> R data-driven financial analysis</a>
  
  
  
