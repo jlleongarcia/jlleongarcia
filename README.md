@@ -7,7 +7,7 @@
 
 - 🤝 I’m looking for help with **AI kart circuit ** - a Python AI model that given any track circuit, it will find the fastest path to the finish line
 
-- 📝 I regularly update the content on <a href="https://reisikei.github.io/Financial_analysis_R/">(R data driven financial insights)</a>, <a href="https://reisikei.github.io/RPi/">(RPi configuration)<a>, <a href="https://reisikei.github.io/docker/">(Docker configuration)<a>  and <a href="https://reisikei.github.io/Linux//">(Linux configuration)<a> all of them being Github pages fed from my public repositories.
+- 📝 I regularly update the content on the github pages, feeding them with the results of the analysis included in my public repositories. The main one from where you can jump to any of them by category is <a href="https://reisikei.github.io/reisikei/">(my main page)</a>.
 
 
 </p>
