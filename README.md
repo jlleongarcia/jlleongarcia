@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on **TG BOT downloads - python**
 
-- 🤝 I’m looking for help with **AI kart circuit ** - a Python AI model that given any track circuit, it will find the fastest path to the finish line
+- 🤝 I’m looking for help with **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line
 
 - 📝 I regularly update the content on github pages, feeding them with the results of the analysis included in my public repositories. The main one, from where you can jump to any of them by category is <a href="https://reisikei.github.io/reisikei/">my main page</a>.
 
