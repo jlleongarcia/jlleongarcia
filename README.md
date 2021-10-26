@@ -87,7 +87,8 @@
  <h4 align="left">Mechanical engineering computation:</h4>
 <p align="left"> 
 <a href="https://github.com/reisikei/Bike_dynamic_simulator>Bike/Motorbike realtime simulator (Multi-Body system mechanics made computational)</a>               
-               
+<p>
+    
  
 <h3 align="center">Connect with me:</h3>
 <p align="center">
