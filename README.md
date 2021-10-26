@@ -91,6 +91,19 @@ and on Github: https://github.com/reisikei/TG-Download-Bot
 <a href="https://github.com/reisikei/Bike_dynamic_simulator">Bike/Motorbike realtime simulator (Multi-Body system mechanics made computational)</a>               
 <p>
     
+    
+   
+
+     
+<h4 align="left">Web:</h4>
+<p align="left"> 
+    
+<a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg alt="rmarkdown" width="40" height="40"/> </a> 
+<a href="https://reisikei.github.io/reisikei/"> My main github page with its html completely generated with the knit package in Rmarkdown</a>               
+<p>
+    
+    
+  
  
 <h3 align="center">Connect with me:</h3>
 <p align="center">
