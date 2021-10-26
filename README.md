@@ -75,9 +75,9 @@
 <p><a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
 <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-<a href="https://hub.docker.com/u/reisikei">Python TG Bot image on Docker Hub</a><p>
-https://github.com/reisikei/TG-Download-Bot and on Github
-https://hub.docker.com/repository/docker/reisikei/tg_bot_torrent#
+<a href="https://hub.docker.com/repository/docker/reisikei/tg_bot_torrent#">Python TG Bot image on Docker Hub</a>
+and on Github: https://github.com/reisikei/TG-Download-Bot 
+
     
     
 </p><a href="https://github.com/reisikei/Financial_analysis_R/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
