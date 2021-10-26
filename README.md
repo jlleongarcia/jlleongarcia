@@ -65,7 +65,7 @@
 </p>
 
 <p><a href="https://github.com/reisikei/Linux" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://reisikei.github.io/Linux"Linux easy setup and tricks - Instructions (Ubuntu and Arch)</a></p>
+<a href="https://reisikei.github.io/Linux">Linux easy setup and tricks - Instructions (Ubuntu and Arch)</a></p>
 
     
 <h4 align="left">Data analysis, apps:</h4>
@@ -76,11 +76,11 @@
 <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
 <a href="https://hub.docker.com/u/reisikei">Python TG Bot image on Docker Hub</a>
+<https://github.com/reisikei/TG-Download-Bot>
     
     
     
-    
-</p><a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
+</p><a href="https://github.com/reisikei/Financial_analysis_R" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
 <a href="https://reisikei.github.io/Financial_analysis_R/">R data-driven financial analysis</a>
  
  
