@@ -76,15 +76,15 @@
 <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
 <a href="https://hub.docker.com/u/reisikei">Python TG Bot image on Docker Hub</a><p>
-<a href="https://github.com/reisikei/TG-Download-Bot> and on Github</a>
-    
+https://github.com/reisikei/TG-Download-Bot and on Github
+https://hub.docker.com/repository/docker/reisikei/tg_bot_torrent#
     
     
 </p><a href="https://github.com/reisikei/Financial_analysis_R/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
 <a href="https://reisikei.github.io/Financial_analysis_R/">R data-driven financial analysis</a>
  
  
- <h4 align="left">Mechanical engineering computation:</h4>
+<h4 align="left">Mechanical engineering computation:</h4>
 <p align="left"> 
 <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> 
