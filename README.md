@@ -55,17 +55,17 @@
 <p align="left"> 
     
  
-<p><a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
+<p><a href="https://github.com/reisikei/docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 <a href="https://reisikei.github.io/docker/">Docker Configuration A-Z</a>
 </p>
 
     
-<p><a href="https://www.raspberrypi.org/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/> </a>
+<p><a href="https://github.com/reisikei/RPi" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/> </a>
 <a href="https://reisikei.github.io/RPi/">Raspberry Pi Configuration A-Z</a>
 </p>
 
-<p><a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://reisikei.github.io/Linux">Ubuntu and Arch based distros easy setup - Instructions</a></p>
+<p><a href="https://github.com/reisikei/Linux" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
+<a href="https://reisikei.github.io/Linux"Linux easy setup and tricks - Instructions (Ubuntu and Arch)</a></p>
 
     
 <h4 align="left">Data analysis, apps:</h4>
@@ -76,9 +76,6 @@
 <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
 <a href="https://hub.docker.com/u/reisikei">Python TG Bot image on Docker Hub</a>
-    
-</p><a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-<a href="https://github.com/reisikei/Financial_analysis_python">Python Jupyter notebooks with financial analysis</a>
     
     
     
