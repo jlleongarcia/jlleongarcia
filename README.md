@@ -80,6 +80,7 @@ and on Github: https://github.com/reisikei/TG-Download-Bot
 
     
 </p><a href="https://github.com/reisikei/Financial_analysis_R/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
+ <a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://reisikei.github.io/Financial_analysis_R/">R data-driven financial analysis</a>    
 
 <p><a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
