@@ -80,7 +80,7 @@ and on Github: https://github.com/reisikei/TG-Download-Bot
 
 
 <p><a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
-<a href="https://github.com/reisikei/Python_general">Python TG Bot image on Docker Hub</a>    
+<a href="https://github.com/reisikei/Python_general">Python repo with scripts, API/SQL connections</a>    
 
     
     
