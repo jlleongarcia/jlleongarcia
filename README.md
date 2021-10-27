@@ -78,19 +78,23 @@
 <a href="https://hub.docker.com/repository/docker/reisikei/tg_bot_torrent#">Python TG Bot image on Docker Hub</a>
 and on Github: https://github.com/reisikei/TG-Download-Bot 
 
+    
+</p><a href="https://github.com/reisikei/Financial_analysis_R/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
+<a href="https://reisikei.github.io/Financial_analysis_R/">R data-driven financial analysis</a>    
 
 <p><a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://github.com/reisikei/Python_general">Python repo with scripts, API/SQL connections</a>    
-
 
     
 <p><a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
 <a href="https://github.com/reisikei/R_general">R repo with scripts, API/SQL connections, Rmd</a>  
     
     
-</p><a href="https://github.com/reisikei/Financial_analysis_R/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
-<a href="https://reisikei.github.io/Financial_analysis_R/">R data-driven financial analysis</a>
+
  
+    
+    
+    
  
 <h4 align="left">Mechanical engineering computation:</h4>
 <p align="left"> 
