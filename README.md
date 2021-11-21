@@ -92,8 +92,10 @@ and on Github: https://github.com/reisikei/TG-Download-Bot
 <a href="https://reisikei.github.io/Financial_analysis_R/">R data-driven financial analysis</a>    
 
     
-
+<h4 align="left">Dashboards:</h4>
+<p align="left"> 
     
+ </p><a href="https://reisikei.shinyapps.io/growth_index_nominal_vs_inflation/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> Public dashboard with insights about the evolution of financial indexes, like SP500, over the last decades and the effect of the inflation on them. </a>
     
 
  
