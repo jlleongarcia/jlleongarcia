@@ -24,13 +24,12 @@
 <p>
     
 <a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg" alt="python" width="40" height="40"/></a>      
-<a href="https://reisikei.github.io/reisikei/" target="_blank"><img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/wp.svg" alt="linux" width="30" height="30"/></a>
-<a href="https://reisikei.github.io/reisikei/"> My github pages (except the main one generated with WP), with their html completely generated with the knit package in Rmarkdown</a>               
+<a href="https://reisikei.github.io/reisikei/" target="_blank"><img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/wp.svg" alt="linux" width="30" height="30"/>            
 <p>
 
 <p><a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
 <a href="https://github.com/reisikei/R_general" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
-<a href="https://github.com/reisikei/R_general" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
+<a href="https://github.com/reisikei/Python_general" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
 <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> 
 <a href="https://pytorch.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
