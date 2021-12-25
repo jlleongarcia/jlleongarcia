@@ -23,6 +23,16 @@
 <a href="https://www.raspberrypi.org/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
 <p>
     
+<img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/wp.svg" alt="linux" width="30" height="30"/>
+<p>
+ <a href="https://reisikei.github.io/reisikei/"> My main github page with its html completely generated with the knit package in Rmarkdown</a>  
+    
+<h4 align="left">Web:</h4>
+<p align="left"> 
+    
+<a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg" alt="python" width="40" height="40"/> </a> 
+<a href="https://reisikei.github.io/reisikei/"> My main github page with its html completely generated with the knit package in Rmarkdown</a>               
+<p>
 
 <p><a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
 <a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
@@ -114,12 +124,7 @@ and on Github: https://github.com/reisikei/TG-Download-Bot
    
 
      
-<h4 align="left">Web:</h4>
-<p align="left"> 
-    
-<a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg" alt="python" width="40" height="40"/> </a> 
-<a href="https://reisikei.github.io/reisikei/"> My main github page with its html completely generated with the knit package in Rmarkdown</a>               
-<p>
+
     
     
   
