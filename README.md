@@ -23,8 +23,8 @@
 <a href="https://reisikei.github.io/rpi/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
 <p>
     
-<a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg" alt="python" width="40" height="40"/>      
-<a href="https://reisikei.github.io/reisikei/" target="_blank"><img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/wp.svg" alt="linux" width="30" height="30"/>
+<a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg" alt="python" width="40" height="40"/></a>      
+<a href="https://reisikei.github.io/reisikei/" target="_blank"><img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/wp.svg" alt="linux" width="30" height="30"/></a>
 <a href="https://reisikei.github.io/reisikei/"> My github pages (except the main one generated with WP), with their html completely generated with the knit package in Rmarkdown</a>               
 <p>
 
