@@ -7,7 +7,7 @@
 
 - 🤝 I’m looking for help with **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line
 
-- 📝 I regularly update the content on github pages, feeding them with the results of the analysis included in my public repositories. The main one (done in wordpress) from where you can jump to any of them by category is <a href="https://reisikei.github.io/reisikei/">my main page</a>.
+- 📝 I regularly update the content on github pages, feeding them with the results of the analysis included in my public repositories. The main one (done in wordpress) from where you can jump to any of them by category is <a href="https://JAlcocerT.github.io/JAlcocerT/">my main page</a>.
 
 
 </p>
@@ -18,18 +18,18 @@
 <h4 align="left">Currently:</h4>
 <p align="left"> 
 
-<p><a href="https://reisikei.github.io/docker/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://reisikei.github.io/docker/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-<a href="https://reisikei.github.io/RPi/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
+<p><a href="https://JAlcocerT.github.io/Docker/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
+<a href="https://JAlcocerT.github.io/Docker/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
+<a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
 
     
 <p><a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg" alt="python" width="40" height="40"/></a>      
-<a href="https://reisikei.github.io/reisikei/" target="_blank"><img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/wp.svg" alt="linux" width="30" height="30"/>            
+<a href="https://JAlcocerT.github.io/JAlcocerT/" target="_blank"><img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/wp.svg" alt="linux" width="30" height="30"/>            
 
 
 <p><a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
-<a href="https://github.com/reisikei/R_general" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
-<a href="https://github.com/reisikei/Python_general" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
+<a href="https://github.com/JAlcocerT/R_general" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
+<a href="https://github.com/JAlcocerT/Python_general" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
 <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> 
 <a href="https://pytorch.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
@@ -83,11 +83,11 @@ and on Github: https://github.com/reisikei/TG-Download-Bot
 
     
  <p><a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
-<a href="https://github.com/reisikei/Python_general">Python repo with scripts, API/SQL connections</a>   
+<a href="https://github.com/JAlcocerT/Python_general">Python repo with scripts, API/SQL connections</a>   
     
      
 <p><a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
-<a href="https://github.com/reisikei/R_general">R repo with scripts, API/SQL connections, Rmd</a>       
+<a href="https://github.com/JAlcocerT/R_general">R repo with scripts, API/SQL connections, Rmd</a>       
      
     
 </p><a href="https://github.com/reisikei/Financial_analysis_R/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
@@ -110,7 +110,7 @@ and on Github: https://github.com/reisikei/TG-Download-Bot
 <p align="left"> 
 <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> 
-<a href="https://github.com/reisikei/Bike_dynamic_simulator">Bike/Motorbike realtime simulator (Multi-Body system mechanics made computational)</a>               
+<a href="https://github.com/JAlcocerT/Bike_dynamic_simulator">Bike/Motorbike realtime simulator (Multi-Body system mechanics made computational)</a>               
 <p>
     
     
