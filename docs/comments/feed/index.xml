@@ -7,33 +7,15 @@
 	>
 <channel>
 	<title>
-	Comments for Jesus Alcocer Tagua	</title>
+	Comments for JESUS ALCOCER TAGUA	</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../index.html</link>
 	<description>PORTFOLIO</description>
-	<lastBuildDate>Sat, 25 Dec 2021 18:21:07 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 27 Jan 2022 18:27:06 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.8.2</generator>
-	<item>
-		<title>
-		Comment on Hello world! by A WordPress Commenter		</title>
-		<link>./../../hello-world/index.html#comment-1</link>
-
-		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
-		<pubDate>Sat, 25 Dec 2021 10:04:39 +0000</pubDate>
-		<guid isPermaLink="false">http://127.0.0.1/?p=1#comment-1</guid>
-
-					<description><![CDATA[Hi, this is a comment.
-To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
-Commenter avatars come from &lt;a href=&quot;https://gravatar.com&quot;&gt;Gravatar&lt;/a&gt;.]]></description>
-			<content:encoded><![CDATA[<p>Hi, this is a comment.<br />
-To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.<br />
-Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.</p>
-]]></content:encoded>
-		
-			</item>
-	</channel>
+	<generator>https://wordpress.org/?v=5.8.3</generator>
+</channel>
 </rss>
