@@ -18,7 +18,7 @@
 <h4 align="left">Currently:</h4>
 <p align="left"> 
 
-<p><a href="https://JAlcocerT.github.io/linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
+<p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
 <a href="https://JAlcocerT.github.io/Docker/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 <a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
 
