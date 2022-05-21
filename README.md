@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Jesús</h1>
 <h3 align="center">A human being.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=reisikei&label=Profile%20views&color=0e75b6&style=flat" alt="reisikei" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=jalcocert&label=Profile%20views&color=0e75b6&style=flat" alt="jalcocert" /> </p>
 
 - 🔭 I’m currently working on **TG BOT downloads - python**
 
@@ -20,15 +20,15 @@
 
 <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
 <a href="https://JAlcocerT.github.io/Docker/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-<a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
+<a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
 
     
-<p><a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg" alt="python" width="40" height="40"/></a>      
-<a href="https://JAlcocerT.github.io/JAlcocerT/" target="_blank"><img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/wp.svg" alt="linux" width="30" height="30"/>            
+<p><a href="https://github.com/jalcocert/jalcocert/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/rmarkdown.svg" alt="python" width="40" height="40"/></a>      
+<a href="https://JAlcocerT.github.io/JAlcocerT/" target="_blank"><img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/wp.svg" alt="linux" width="30" height="30"/>            
 
 
 <p><a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
-<a href="https://github.com/JAlcocerT/R_general" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
+<a href="https://github.com/JAlcocerT/R_general" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
 <a href="https://github.com/JAlcocerT/Python_general" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
 <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> 
