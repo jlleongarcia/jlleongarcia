@@ -58,17 +58,17 @@
 <p align="left"> 
     
  
-<p><a href="https://github.com/reisikei/docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-<a href="https://reisikei.github.io/docker/">Docker Configuration A-Z</a>
+<p><a href="https://github.com/jalcocert/docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
+<a href="https://jalcocert.github.io/docker/">Docker Configuration A-Z</a>
 </p>
 
     
-<p><a href="https://github.com/reisikei/RPi" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/> </a>
-<a href="https://reisikei.github.io/RPi/">Raspberry Pi Configuration A-Z</a>
+<p><a href="https://github.com/jalcocert/RPi" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/> </a>
+<a href="https://jalcocert.github.io/RPi/">Raspberry Pi Configuration A-Z</a>
 </p>
 
-<p><a href="https://github.com/reisikei/Linux" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://reisikei.github.io/Linux">Linux easy setup and tricks - Instructions (Ubuntu and Arch)</a></p>
+<p><a href="https://github.com/jalcocert/Linux" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
+<a href="https://jalcocert.github.io/Linux">Linux easy setup and tricks - Instructions (Ubuntu and Arch)</a></p>
 
     
 <h4 align="left">Data analysis, apps,scripts:</h4>
@@ -78,27 +78,27 @@
 <p> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
 <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
 <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-<a href="https://hub.docker.com/repository/docker/reisikei/tg_bot_torrent#">Python TG Bot image on Docker Hub</a>
-and on Github: https://github.com/reisikei/TG-Download-Bot 
+<a href="https://hub.docker.com/repository/docker/jalcocert/tg_bot_torrent#">Python TG Bot image on Docker Hub</a>
+and on Github: https://github.com/jalcocert/TG-Download-Bot 
 
     
  <p><a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://github.com/JAlcocerT/Python_general">Python repo with scripts, API/SQL connections</a>   
     
      
-<p><a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
+<p><a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
 <a href="https://github.com/JAlcocerT/R_general">R repo with scripts, API/SQL connections, Rmd</a>       
      
     
-</p><a href="https://github.com/reisikei/Financial_analysis_R/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
- <a href="https://github.com/reisikei/reisikei/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/rmarkdown.svg" alt="python" width="40" height="40"/> </a> 
-<a href="https://reisikei.github.io/Financial_analysis_R/">R data-driven financial analysis</a>    
+</p><a href="https://github.com/jalcocert/Financial_analysis_R/" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
+ <a href="https://github.com/jalcocert/jalcocert/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/rmarkdown.svg" alt="python" width="40" height="40"/> </a> 
+<a href="https://jalcocert.github.io/Financial_analysis_R/">R data-driven financial analysis</a>    
 
     
 <h4 align="left">Dashboards:</h4>
 <p align="left"> 
     
- </p><a href="https://reisikei.shinyapps.io/growth_index_nominal_vs_inflation/" target="_blank"> <img src="https://raw.githubusercontent.com/reisikei/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> Public dashboard with insights about the evolution of financial indexes, like SP500, over the last decades and the effect of the inflation on them. </a>
+ </p><a href="https://reisikei.shinyapps.io/growth_index_nominal_vs_inflation/" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> Public dashboard with insights about the evolution of financial indexes, like SP500, over the last decades and the effect of the inflation on them. </a>
     
 
  
