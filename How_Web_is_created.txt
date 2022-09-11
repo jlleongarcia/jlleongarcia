@@ -1,0 +1,5 @@
+* Install WP
+* Add the theme ScapeShot
+* Add the widget Social icons
+* Add plugin Simply Static -> it will generate for us the static content, that we can include in the /docs folder on this repository
+* Upload the content to /docs
