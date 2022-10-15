@@ -2703,7 +2703,7 @@ body.color-scheme-ecommerce .section + .site-content {
  * 14.1 - Slider
  */
 #feature-slider-section {
-  background: url("/wp-content/themes/scapeshot/assets/images/loader.svg") no-repeat center center; }
+  background: url("./assets/images/loader.svg") no-repeat center center; }
 
 #feature-slider-section {
   border: none;
