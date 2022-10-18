@@ -97,10 +97,8 @@ and on Github: https://github.com/jalcocert/TG-Download-Bot
 <h4 align="left">Dashboards:</h4>
 <p align="left"> 
     
- </p><a href="https://jalcocert.shinyapps.io/shiny_project_to_shinyapps/" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/reisikei/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> Public dashboard with insights about the evolution of financial indexes, like SP500, over the last decades and the effect of the inflation on them. </a>
-    
-
- 
+ </p><a href="https://jalcocert.shinyapps.io/shiny_project_to_shinyapps/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="rstudio" width="40" height="40"/> Public Shiny Dashboard with insights about the effects of the inflation on a person's wealth. </a>
+     
     
  
 <h4 align="left">Mechanical engineering computation:</h4>
@@ -113,10 +111,6 @@ and on Github: https://github.com/jalcocert/TG-Download-Bot
     
    
 
-     
-
-    
-    
   
  
 <h3 align="center">Connect with me:</h3>
