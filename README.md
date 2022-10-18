@@ -69,7 +69,7 @@
 </p>
 
 <p><a href="https://github.com/jalcocert/Linux" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://jalcocert.github.io/Linux">Linux easy setup and tricks - Instructions (Ubuntu and Arch)</a></p>
+<a href="https://jalcocert.github.io/Linux">Linux Made Easy</a></p>
 
     
 <h4 align="left">Data analysis, apps,scripts:</h4>
