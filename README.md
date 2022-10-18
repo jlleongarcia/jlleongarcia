@@ -9,7 +9,7 @@
 
 </p>
 
-<h3 align="left">Technologies, Languages and Tools:</h3>
+<h2 align="left">Technologies, Languages and Tools:</h2>
 <p align="left"> 
     
 <h4 align="left">Currently:</h4>
@@ -50,7 +50,7 @@
  <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
     
 
-<h3 align="left">Projects:</h3>
+<h2 align="left">Projects:</h2>
 <p align="left"> 
 
  
