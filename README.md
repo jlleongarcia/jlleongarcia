@@ -49,7 +49,8 @@
 <a href="https://www.oracle.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a>     
  <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
     
-
+<p>    
+<p>
 <h2 align="left">Projects:</h2>
 <p align="left"> 
 
@@ -107,13 +108,14 @@ and on Github: https://github.com/jalcocert/TG-Download-Bot
 <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> 
 <a href="https://github.com/JAlcocerT/Bike_dynamic_simulator">Bike/Motorbike realtime simulator (Multi-Body system mechanics made computational)</a>               
+
 <p>
     
     
    
-
   
  
 <h3 align="center">Connect with me:</h3>
 <p align="center">
 <a href="https://linkedin.com/in/jalcocert" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jesalctag" height="30" width="40" /></a> 
+<a href="mailto:jalcocert@fossengineer.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/src/gmail-logo.svg" alt="jesalctag" height="30" width="40" /></a> 
