@@ -5,7 +5,9 @@
 
 - 🤝 I’m looking for help with **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line.
 
-- 📝 I regularly update the content on Github Pages, feeding them with the results of the analysis included in my public repositories. The main one (done in wordpress) from where you can jump to any of them by category is <a href="https://JAlcocerT.github.io/JAlcocerT/"> my main page</a>.
+- 📝 I regularly update the content on Github Pages, feeding them with the results of the analysis included in my public repositories.
+
+- The main one (Portfolio) is <a href="https://JAlcocerT.github.io/JAlcocerT/"> </a>.
 
 </p>
 
