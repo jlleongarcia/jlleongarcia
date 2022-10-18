@@ -3,12 +3,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=jalcocert&label=Profile%20views&color=0e75b6&style=flat" alt="jalcocert" /> </p>
 
-- 🔭 I’m currently working on **TG BOT downloads - python**
+- 🤝 I’m looking for help with **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line.
 
-- 🤝 I’m looking for help with **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line
-
-- 📝 I regularly update the content on github pages, feeding them with the results of the analysis included in my public repositories. The main one (done in wordpress) from where you can jump to any of them by category is <a href="https://JAlcocerT.github.io/JAlcocerT/">my main page</a>.
-
+- 📝 I regularly update the content on Github Pages, feeding them with the results of the analysis included in my public repositories. The main one (done in wordpress) from where you can jump to any of them by category is <a href="https://JAlcocerT.github.io/JAlcocerT/"> my main page</a>.
 
 </p>
 
@@ -19,11 +16,11 @@
 <p align="left"> 
 
 <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://JAlcocerT.github.io/Docker/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
+<a href="https://github.com/JAlcocerT/Docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 <a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
 
     
-<p><a href="https://github.com/jalcocert/jalcocert/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/rmarkdown.svg" alt="python" width="40" height="40"/></a>      
+<p><a href="https://github.com/JAlcocerT/Docker/blob/main/README.md" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/rmarkdown.svg" alt="python" width="40" height="40"/></a>      
 <a href="https://JAlcocerT.github.io/JAlcocerT/" target="_blank"><img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/wp.svg" alt="linux" width="30" height="30"/>            
 
 
