@@ -18,14 +18,14 @@
 <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
 <a href="https://github.com/JAlcocerT/Docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 <a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
- <a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/>
-
     
 <p><a href="https://github.com/JAlcocerT/Docker/blob/main/README.md" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/rmarkdown.svg" alt="python" width="40" height="40"/></a>      
 <a href="https://JAlcocerT.github.io/JAlcocerT/" target="_blank"><img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/wp.svg" alt="linux" width="30" height="30"/>            
 
 
 <p><a href="https://github.com/JAlcocerT/R_general" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
+<a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/>
+         
 <p align="left">     
     
 <a href="https://github.com/JAlcocerT/Python_general" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
