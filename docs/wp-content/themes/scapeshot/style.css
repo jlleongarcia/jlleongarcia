@@ -5626,7 +5626,7 @@ body .mejs-container.mejs-container {
   cursor: pointer; }
 
 .mejs-overlay-button {
-  background: url(http://127.0.0.1/wp-includes/js/mediaelement/mejs-controls.svg) no-repeat;
+  background: url(https://127.0.0.1/wp-includes/js/mediaelement/mejs-controls.svg) no-repeat;
   background-position: 0 -39px;
   height: 80px;
   width: 80px; }
@@ -5641,7 +5641,7 @@ body .mejs-container.mejs-container {
 .mejs-overlay-loading-bg-img {
   -webkit-animation: mejsanimation 1s linear infinite;
   animation: mejsanimation 1s linear infinite;
-  background: transparent url(http://127.0.0.1/wp-includes/js/mediaelement/mejs-controls.svg) -160px -40px no-repeat;
+  background: transparent url(https://127.0.0.1/wp-includes/js/mediaelement/mejs-controls.svg) -160px -40px no-repeat;
   display: block;
   height: 80px;
   width: 80px;
@@ -5691,7 +5691,7 @@ body .mejs-container.mejs-container {
   padding: 0; }
 
 .mejs-button > button {
-  background: transparent url(http://127.0.0.1/wp-includes/js/mediaelement/mejs-controls.svg);
+  background: transparent url(https://127.0.0.1/wp-includes/js/mediaelement/mejs-controls.svg);
   border: 0;
   cursor: pointer;
   display: block;
