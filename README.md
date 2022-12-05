@@ -3,11 +3,14 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=jalcocert&label=Profile%20views&color=0e75b6&style=flat" alt="jalcocert" /> </p>
 
-- 🤝 I’m looking for help with **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line.
+- 🤝 I’m looking for help with:
+*   **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line (the environment is ready).
+*   **R Stocks** - a Shiny app that displays financial information 
+*   **Py Route Tracker** - a Dash app that helps you track your hikes/routes
+*   **Py Trip Planner** - a Dash app, that given the coordinates, will display the historical weather information
 
 - 📝 I regularly update the content on Github Pages, feeding them with the results of the analysis included in my public repositories.
-
-- The main one (Portfolio) is <a href="https://JAlcocerT.github.io/JAlcocerT/"> </a>.
+*   The main one (Portfolio) is <a href="https://JAlcocerT.github.io/JAlcocerT/"> </a>.
 
 </p>
 
