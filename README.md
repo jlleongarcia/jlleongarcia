@@ -1,7 +1,6 @@
 <h1 align="center">Hi 👋, I'm Jesús</h1>
 <h3 align="center">A curious person.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=jalcocert&label=Profile%20views&color=0e75b6&style=flat" alt="jalcocert" /> </p>
 
 - 🤝 I’m looking for help with:
 *   **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line (the environment is ready).
@@ -124,3 +123,5 @@ and on Github: https://github.com/jalcocert/TG-Download-Bot
 <p align="center">
 <a href="https://linkedin.com/in/jalcocert" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jesalctag" height="30" width="40" /></a> 
 <a href="mailto:jalcocert@fossengineer.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/src/gmail-logo.svg" alt="jesalctag" height="30" width="40" /></a> 
+
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=jalcocert&label=Profile%20views&color=0e75b6&style=flat" alt="jalcocert" /> </p>
