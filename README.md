@@ -28,7 +28,7 @@
 
 
 <p><a href="https://github.com/JAlcocerT/R_general" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
-<a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/>
+<a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/>
          
 <p align="left">     
     
