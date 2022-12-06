@@ -27,12 +27,12 @@
 <a href="https://JAlcocerT.github.io/JAlcocerT/" target="_blank"><img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/wp.svg" alt="linux" width="30" height="30"/>            
 
 
-<p><a href="https://github.com/JAlcocerT/R_general" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
+<p><a href="https://github.com/JAlcocerT/R_is_Great" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
 <a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/>
          
 <p align="left">     
     
-<a href="https://github.com/JAlcocerT/Python_general" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
+<a href="https://github.com/JAlcocerT/Python_is_awesome" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
 <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
 <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> 
 <a href="https://pytorch.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
