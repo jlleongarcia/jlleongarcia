@@ -87,17 +87,6 @@
 and on Github: https://github.com/jalcocert/TG-Download-Bot 
 
     
- <p><a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
-<a href="https://github.com/JAlcocerT/Python_general">Python repo with scripts, API/SQL connections</a>   
-    
-     
-<p><a href="https://www.rstudio.com/" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
-<a href="https://github.com/JAlcocerT/R_general">R repo with scripts, API/SQL connections, Rmd</a>       
-     
-    
-</p><a href="https://github.com/jalcocert/Financial_analysis_R/" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
- <a href="https://github.com/jalcocert/jalcocert/tree/main/docs" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/rmarkdown.svg" alt="python" width="40" height="40"/> </a> 
-<a href="https://jalcocert.github.io/Financial_analysis_R/">R data-driven financial analysis</a>    
 
     
 <h4 align="left">Dashboards:</h4>
