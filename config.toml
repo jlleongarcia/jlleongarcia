@@ -1,0 +1,31 @@
+theme = "lynx"
+title = "Lynx"
+baseURL= "https://jalcocert.github.io/"
+
+
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[author]
+  name = "Welcome to my Portfolio"
+  headline = """
+  Jesus Alcocer Tagua
+  """
+  
+  image = "jalcocert.png" 
+  links = [
+    { linkedin = "https://linkedin.com/jalcocert" },
+    { github = "https://github.com/JAlcocerT"},
+    { fossengineer = { href = "https://fossengineer.com/", text = "My Engineering Blog - FOSS Engineer" } },
+    { gitlab = "https://gitlab.com/FOSSEngineer" },
+    { link = { href = "https://jalcocert.github.io/RPi/", text = "Guide to RPi", icon = "github" } },
+    { link = { href = "https://jalcocert.github.io/Linux/", text = "Guide to Linux", icon = "github" } },
+    { web3 = { href = "jalcocert.blockchain", text = "My Web3" } },
+  ]
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
