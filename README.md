@@ -16,6 +16,12 @@
 <h2 align="left">Technologies, Languages and Tools:</h2>
 <p align="left"> 
     
+|    |      What      |  Where |
+|----------|:-------------:|------:|
+| Currently Using |  left-aligned | $1600 |
+| Personal Projects |    <https://github.com/JAlcocerT/Docker>   |   $12 |
+| Previously | right-aligned |    $1 |    
+    
 <h4 align="left">Currently:</h4>
 <p align="left"> 
 
