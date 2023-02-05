@@ -7,7 +7,7 @@
       {{- else }}
         &copy;
         {{ now.Format "2006" }}
-        JAlcocerT
+        {{ .Site.Author.name | markdownify | emojify }}
       {{- end }}
     </p>
     {{/* Theme attribution */}}
