@@ -16,9 +16,9 @@
 <h2 align="left">Technologies, Languages and Tools:</h2>
 <p align="left"> 
     
-|    |      What      |  Where |
+|  Currently Using  |      What      |  Where |
 |----------|:-------------:|------:|
-| Currently Using |  left-aligned | $1600 |
+| PySpark | <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> | $1600 |
 | Personal Projects |    <https://github.com/JAlcocerT/Docker>   |   $12 |
 | Previously | right-aligned |    $1 |    
     
