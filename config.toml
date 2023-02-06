@@ -1,5 +1,5 @@
 theme = "lynx"
-title = "Lynx"
+title = "JAlcocerT"
 baseURL= "https://jalcocert.github.io/"
 
 
@@ -17,10 +17,9 @@ disableKinds = ["taxonomy", "term"]
     { linkedin = "https://linkedin.com/jalcocert" },
     { github = "https://github.com/JAlcocerT"},
     { fossengineer = { href = "https://fossengineer.com/", text = "My Engineering Blog - FOSS Engineer" } },
-    { gitlab = "https://gitlab.com/FOSSEngineer" },
-    { link = { href = "https://jalcocert.github.io/RPi/", text = "Guide to RPi", icon = "github" } },
-    { link = { href = "https://jalcocert.github.io/Linux/", text = "Guide to Linux", icon = "github" } },
-    { web3 = { href = "jalcocert.blockchain", text = "My Web3" } },
+    { GL = { href = "https://fossengineer.com/", text = "Gitlab" } },
+    { GHPages = { href = "https://jalcocert.github.io/RPi/", text = "RPi Guide" } },
+    { GHPages = { href = "https://jalcocert.github.io/Linux/", text = "Linux Guide" } },
   ]
 
 [markup.highlight]

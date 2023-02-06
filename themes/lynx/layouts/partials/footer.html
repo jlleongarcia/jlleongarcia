@@ -2,6 +2,9 @@
   <div class="text-center">
     {{/* Copyright */}}
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      Web3 Ready? - jalcocert.blockchain
+      <br>
+        <br>
       {{- with .Site.Copyright }}
         {{ . | emojify | markdownify }}
       {{- else }}
@@ -20,6 +23,8 @@
         {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Lynx" $lynx) | safeHTML }}
       </p>
     {{ end }}
+
+    
   </div>
   {{/* Extend footer - eg. for extra scripts, etc. */}}
   {{ if templates.Exists "partials/extend-footer.html" }}
