@@ -21,7 +21,7 @@
 | PySpark | <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> | $1600 |
 | Personal Projects |    <https://github.com/JAlcocerT/Docker>   |   $12 |
 | Previously | right-aligned |   [da](https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg) |    
-| <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/jalcocert.svg" alt="linux" width="40" height="40"/> </a>  |
+| <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/jalcocert.png" alt="linux" width="40" height="40"/> </a>  |
     
 <h4 align="left">Currently:</h4>
 <p align="left"> 
