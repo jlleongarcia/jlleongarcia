@@ -14,7 +14,7 @@ disableKinds = ["taxonomy", "term"]
   
   image = "jalcocert.png" 
   links = [
-    { linkedin = "https://linkedin.com/jalcocert" },
+    { linkedin = "https://www.linkedin.com/in/jalcocert/" },
     { fossengineer = { href = "https://fossengineer.com/", text = "My Engineering Blog - FOSS Engineer" } },
     { GL = { href = "https://fossengineer.com/", text = "Gitlab" } },
     { github = "https://github.com/JAlcocerT"},
