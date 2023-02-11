@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, Welcome to my Github</h1>
-<h3 align="center">Let's have a look to my latest projects.</h3>
+<h3 align="center">Let's have a look to my latest projects</h3>
 
 
 - 🤝 I’m looking for help with:
@@ -32,17 +32,16 @@
  
 <p>  
 <p>    
-<p>
 
-<h3 align="left">Making FOSS content more accesible:</h3>
+<h4 align="left">Making FOSS content more accesible:</h4>
 <p align="left"> 
 <p align="left"> 
-
+   
 Web content generated with HUGO that aims to make the first steps to open source and data analytics simpler for anyone who wants to learn about it.
 
 |      Guides for FOSS content |  Link | Technologies |
 |------------------------------|-------|--------------------------------|
-| My Blog - FOSS Engineer   |  <p><a href="https://fossengineer.com/ target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/jalcocert.png" alt="fossengineer" width="40" height="40"/> </a>  | |
+| My Blog - FOSS Engineer   | <a href="https://fossengineer.com/" target="_blank"> <img src="ttps://github.com/JAlcocerT/JAlcocerT/raw/main/src/jalcocert.png" alt="fossengineer" width="40" height="40"/> </a> | |
 | Docker repository - configs file for self-hosting  |  <a href="https://jalcocert.github.io/docker/">Docker Configuration A-Z</a> | <a href="https://github.com/jalcocert/docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> |
 | Linux Github Page (and repo) | <a href="https://jalcocert.github.io/Linux">Linux Made Easy</a>| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> |
 | RPi Github Page (and repo) | <<a href="https://jalcocert.github.io/RPi/">Raspberry Pi Configuration A-Z</a>| <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
