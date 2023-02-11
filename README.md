@@ -20,35 +20,22 @@
 | PySpark | <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> | $1600 |
 | Personal Projects |    <https://github.com/JAlcocerT/Docker>   |   $12 |
 | Previously | right-aligned |   [da](https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg) |    
-| <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/jalcocert.png" alt="linux" width="40" height="40"/> </a>  |
-    
-<h4 align="left">Currently:</h4>
-<p align="left"> 
-
-<p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
+|  |
     
 
-<p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://github.com/JAlcocerT/Docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-<a href="https://JAlcocerT.github.io/RPi/" target="_blank"> <img src="[https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg](https://elinux.org/images/c/cb/Raspberry_Pi_Logo.svg)" alt="linux" width="30" height="30"/>
-    
-"https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" 
 
-<p><a href="https://github.com/JAlcocerT/R_is_Great" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a>
-<a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/>
          
 <p align="left">     
     
 
 
      
-|      Personal Projects       |   |   |
-|-------------------|---|---|
-|  <a href="https://github.com/JAlcocerT/Python_is_awesome" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-|    <a href="https://pytorch.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
-|  <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>  
-| <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
-| https://jalcocert.shinyapps.io/retirement_facts/   |   |   |   
+|    Python and R - Related  | Link  | Main packages used  |
+|----------------------------|-------|--------------------|
+| Main Python Repository | <a href="https://github.com/JAlcocerT/Python_is_awesome" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> |  <a href="https://pytorch.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a>  <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>  <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> |
+| Main R Repository | <a href="https://github.com/JAlcocerT/R_is_Great" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/RStudio.svg" alt="rstudio" width="40" height="40"/> </a> |
+| R Stocks - Shiny App | | <a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/> |
+
     
     
     
@@ -73,7 +60,8 @@
 
 
 |      Guides for FOSS content |  Link | Technologies |
-|-------------------|---|--------------------------------|
+|------------------------------|-------|--------------------------------|
+| My Blog - FOSS Engineer   |  <p><a href="https://fossengineer.com/ target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/jalcocert.png" alt="fossengineer" width="40" height="40"/> </a>  | |
 | Docker repository - configs file for self-hosting  |  <a href="https://jalcocert.github.io/docker/">Docker Configuration A-Z</a> | <a href="https://github.com/jalcocert/docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> |
 | Linux Github Page (and repo) | <a href="https://jalcocert.github.io/Linux">Linux Made Easy</a>| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> |
 | RPi Github Page (and repo) | <<a href="https://jalcocert.github.io/RPi/">Raspberry Pi Configuration A-Z</a>| <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
@@ -96,7 +84,7 @@ and on Github: https://github.com/jalcocert/TG-Download-Bot
 <h4 align="left">Dashboards:</h4>
 <p align="left"> 
     
- </p><a href="https://shiny.rstudio.com/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="rstudio" width="40" height="40"/> Public Shiny Dashboard with insights about the effects of the inflation on a person's wealth. </a>
+ 
     
 |    Dashboards |  Link | Technologies | Description |
 |---------------|-------|--------------|-------------|
