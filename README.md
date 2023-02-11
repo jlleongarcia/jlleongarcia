@@ -1,15 +1,14 @@
-<h1 align="center">Hi 👋, I'm Jesús</h1>
+<h1 align="center">Hi 👋, Welcome to my Github</h1>
 <h3 align="center">A curious person.</h3>
 
 
 - 🤝 I’m looking for help with:
-*   **R Stocks** - a Shiny app that displays financial information 
-*   **Py Route Tracker** - a Dash app that helps you track your hikes/routes
+*   **[R Stocks](https://github.com/JAlcocerT/R_Stocks)** - a Shiny app that displays financial information 
+*   **[Py Route Tracker](https://github.com/JAlcocerT/Py_RouteTracker)** - a Dash app that helps you track your hikes/routes
 *   **Py Trip Planner** - a Dash app, that given the coordinates, will display the historical weather information
 *   **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line (the environment is ready).
 
-- 📝 I regularly update the content on Github Pages, feeding them with the results of the analysis included in my public repositories.
-*   The main one [Portfolio](https://JAlcocerT.github.io/JAlcocerT).
+- 📝 I regularly update the content on *[my Blog](https://fossengineer.com/)*, feeding the posts with the results of the analysis included in my public repositories.
 
 </p>
 
@@ -59,10 +58,10 @@
 <h4 align="left">Others:</h4>
 <p align="left"> 
     
-|      Others       |   |   |
-|-------------------|---|---|
-|  <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>   |   |   | 
-| <p><a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a>   |   |   |
+|      Others       |   | 
+|-------------------|---|
+|  Others  |  <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>  a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a>  |
+| <p><a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a>   |   |   
    
 
 
