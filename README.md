@@ -24,11 +24,6 @@
 | R Stocks - Shiny App | <a href="https://github.com/JAlcocerT/R_is_Great"> R Stocks</a> | <a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/> |
 
      
-    
-|      Outro        |  Technologies | 
-|-------------------|---|
-|  Other Tools  |  <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a>  |
-| Previously  |  <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a>  <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>    |   
  
 <p>  
 <p>    
@@ -44,7 +39,7 @@ Web content generated with HUGO that aims to make the first steps to open source
 | My Blog - FOSS Engineer   | <a href="https://fossengineer.com/" target="_blank"> <img src="ttps://github.com/JAlcocerT/JAlcocerT/raw/main/src/jalcocert.png" alt="fossengineer" width="40" height="40"/> </a> | |
 | Docker repository - configs file for self-hosting  |  <a href="https://jalcocert.github.io/docker/">Docker Configuration A-Z</a> | <a href="https://github.com/jalcocert/docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> |
 | Linux Github Page (and repo) | <a href="https://jalcocert.github.io/Linux">Linux Made Easy</a>| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> |
-| RPi Github Page (and repo) | <<a href="https://jalcocert.github.io/RPi/">Raspberry Pi Configuration A-Z</a>| <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
+| RPi Github Page (and repo) | <a href="https://jalcocert.github.io/RPi/">Raspberry Pi Configuration A-Z</a>| <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
     
      
 <h4 align="left">Dashboards:</h4>
@@ -54,15 +49,30 @@ Web content generated with HUGO that aims to make the first steps to open source
     
 |    Dashboards |  Link | Technologies | Description |
 |---------------|-------|--------------|-------------|
-| Retirement Facts | <a href="https://jalcocert.shinyapps.io/retirement_facts/">Retirement Facts</a> | <a href="https://shiny.rstudio.com/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="rstudio" width="40" height="40"/></a> | Simple Shiny app deployed into shinyapps.io free tier - a full description on assumptions and conclusions can be found on **[this post](https://fossengineer.com/posts/retirementfacts/)** and **[here](https://fossengineer.com/posts/retirementfacts/)** the code. |
-| R Stocks - Shiny App | <a href="https://github.com/JAlcocerT/R_is_Great"> R Stocks</a> | <a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/> |     Shiny app that get free available financial information to create a more advance dashboard, a detail explanation can be found on **[this post](https://fossengineer.com/posts/rstocks/)**.
+| Retirement Facts | <a href="https://jalcocert.shinyapps.io/retirement_facts/">Retirement Facts</a> | <a href="https://shiny.rstudio.com/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="rstudio" width="40" height="40"/></a> | More info on **[this post](https://fossengineer.com/posts/retirementfacts/)** and **[here](https://fossengineer.com/posts/retirementfacts/)** the code. |
+| R Stocks - Shiny App | <a href="https://github.com/JAlcocerT/R_is_Great"> R Stocks</a> | <a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/> |     A detail explanation can be found on **[this post](https://fossengineer.com/posts/rstocks/)**.
     
+     
+<p>  
+<p>   
     
 |    Mechanical Engineering - Simulations |  Link | Technologies |
 |-------------------------------------|-----------|---------------|
 | Bike / Motorbike Simulator in Real Time | <a href="https://github.com/JAlcocerT/Bike_dynamic_simulator">Bike/Motorbike realtime simulator (Multi-Body system mechanics made computational)</a> |<a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> |
     
+     
+<p>  
+<p>   
  
+    
+|      Outro        |  Technologies | 
+|-------------------|---|
+|  Other Tools  |  <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a>  |
+| Previously  |  <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a>  <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>    |   
+
+ 
+<p>  
+<p>   
  
 <h3 align="center">Connect with me:</h3>
 <p align="center">
