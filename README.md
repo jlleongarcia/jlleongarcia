@@ -15,7 +15,7 @@
 <h2 align="left">Technologies, Languages and Tools:</h2>
 <p align="left"> 
     
-|  Currently Using  |      What      |  Where |
+|  Project Name  |      Description      |  Powered Thanks To |
 |----------|:-------------:|------:|
 | PySpark | <p><a href="https://JAlcocerT.github.io/Linux/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> | $1600 |
 | Personal Projects |    <https://github.com/JAlcocerT/Docker>   |   $12 |
@@ -41,9 +41,6 @@
     
 
 
-
-
-
      
 |      Personal Projects       |   |   |
 |-------------------|---|---|
@@ -55,48 +52,44 @@
     
     
     
-<h4 align="left">Others:</h4>
-<p align="left"> 
     
-|      Others       |   | 
+    
+    
+|      Outro        |   | 
 |-------------------|---|
-|  Others  |  <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>  a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a>  |
-| <p><a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a>   |   |   
-   
-
-
-
-
-    
-    
-<h4 align="left">Previously:</h4>
-<p align="left"> 
-<p><a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
-<a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> 
-<a href="https://www.oracle.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a>     
- <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
-    
+|  Other Tools  |  <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a>  |
+| Previously  |  <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a>  <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>    |   
+ 
+<p>  
 <p>    
 <p>
+
 <h2 align="left">Projects:</h2>
 <p align="left"> 
 
  
 <h4 align="left">Linux, Docker, Cloud:</h4>
 <p align="left"> 
+
+
+|      Guides for FOSS content |  Link | Technologies |
+|-------------------|---|--------------------------------|
+| Docker repository - configs file for self-hosting  |  <a href="https://jalcocert.github.io/docker/">Docker Configuration A-Z</a> | <a href="https://github.com/jalcocert/docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> |
+| Linux Github Page (and repo) | <a href="https://jalcocert.github.io/Linux">Linux Made Easy</a>| img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> |
+| RPi Github Page (and repo) | <<a href="https://jalcocert.github.io/RPi/">Raspberry Pi Configuration A-Z</a>| <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
     
  
-<p><a href="https://github.com/jalcocert/docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
-<a href="https://jalcocert.github.io/docker/">Docker Configuration A-Z</a>
+<p>
+
 </p>
 
     
-<p><a href="https://github.com/jalcocert/RPi" target="_blank"> <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/> </a>
-<a href="https://jalcocert.github.io/RPi/">Raspberry Pi Configuration A-Z</a>
+<p> </a>
+
 </p>
 
-<p><a href="https://github.com/jalcocert/Linux" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://jalcocert.github.io/Linux">Linux Made Easy</a></p>
+<p><</a>
+</p>
 
     
 <h4 align="left">Data analysis, apps,scripts:</h4>
