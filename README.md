@@ -98,16 +98,15 @@ and on Github: https://github.com/jalcocert/TG-Download-Bot
     
  </p><a href="https://shiny.rstudio.com/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="rstudio" width="40" height="40"/> Public Shiny Dashboard with insights about the effects of the inflation on a person's wealth. </a>
     
-|    Dashboards |  Link | Technologies | Description
-|---------------|-------|--------------|
-| Retirement Facts | <a href="https://jalcocert.shinyapps.io/retirement_facts/">Retirement Facts</a> | <a href="https://shiny.rstudio.com/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="rstudio" width="40" height="40"/></a> | Simple Shiny app deployed into shinyapps.io free tier - a full description on assumptions and conclusions can be found on **[this post](https://fossengineer.com/posts/retirementfacts/) and **[here](https://fossengineer.com/posts/retirementfacts/)** the code.
+|    Dashboards |  Link | Technologies | Description |
+|---------------|-------|--------------|-------------|
+| Retirement Facts | <a href="https://jalcocert.shinyapps.io/retirement_facts/">Retirement Facts</a> | <a href="https://shiny.rstudio.com/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="rstudio" width="40" height="40"/></a> | Simple Shiny app deployed into shinyapps.io free tier - a full description on assumptions and conclusions can be found on **[this post](https://fossengineer.com/posts/retirementfacts/) and **[here](https://fossengineer.com/posts/retirementfacts/)** the code. |
     
     
     
 |    Mechanical Engineering - Simulations |  Link | Technologies |
-|-------------------|---|--------------------------------|
-| Bike / Motorbike Simulator in Real Time | <a href="https://github.com/JAlcocerT/Bike_dynamic_simulator">Bike/Motorbike realtime simulator (Multi-Body system mechanics made computational)</a> |
-<a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> |
+|-------------------------------------|-----------|---------------|
+| Bike / Motorbike Simulator in Real Time | <a href="https://github.com/JAlcocerT/Bike_dynamic_simulator">Bike/Motorbike realtime simulator (Multi-Body system mechanics made computational)</a> |<a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> |
     
  
  
