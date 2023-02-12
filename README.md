@@ -36,7 +36,7 @@ Web content generated with HUGO that aims to make the first steps to open source
 
 |      Guides for FOSS content |  Link | Technologies |
 |------------------------------|-------|--------------------------------|
-| My Blog - FOSS Engineer   | <a href="https://fossengineer.com/" target="_blank"> <img src="ttps://github.com/JAlcocerT/JAlcocerT/raw/main/src/jalcocert.png" alt="fossengineer" width="40" height="40"/> </a> | |
+| My Blog - FOSS Engineer   | <a href="https://fossengineer.com/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/jalcocert.png" alt="fossengineer" width="40" height="40"/> </a> | |
 | Docker repository - configs file for self-hosting  |  <a href="https://jalcocert.github.io/docker/">Docker Configuration A-Z</a> | <a href="https://github.com/jalcocert/docker" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> |
 | Linux Github Page (and repo) | <a href="https://jalcocert.github.io/Linux">Linux Made Easy</a>| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> |
 | RPi Github Page (and repo) | <a href="https://jalcocert.github.io/RPi/">Raspberry Pi Configuration A-Z</a>| <img src="https://raw.githubusercontent.com/jalcocert/jalcocert/main/src/Raspberry_Pi_Logo.svg" alt="linux" width="30" height="30"/>
