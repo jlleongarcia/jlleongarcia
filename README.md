@@ -5,7 +5,7 @@
 - 🤝 I’m looking for help with:
     *   **[R Stocks](https://github.com/JAlcocerT/R_Stocks)** - a Shiny app that displays financial information 
     *   **[Py Route Tracker](https://github.com/JAlcocerT/Py_RouteTracker)** - a Dash app that helps you track your hikes/routes
-    *   **Py Trip Planner** - a Dash app, that given the coordinates, will display the historical weather information
+    *   **[Slider-Crank](https://github.com/JAlcocerT/Slider-Crank)** - a DASH app that helps to visualize the physics of a Slider-Crank mechanism
     *   **AI kart circuit** - a Python AI model that given any track circuit, it will find the fastest path to the finish line (the environment is ready).
 
 - 📝 I regularly update the content on *[my Blog](https://fossengineer.com/)*, feeding the posts with the results of the analysis included in my public repositories.
@@ -21,7 +21,6 @@
 |----------------------------|-------|--------------------|
 | Main Python Repository |<a href="https://github.com/JAlcocerT/Python_is_awesome">Python is Awsome</a> | <a href="https://www.python.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>   <a href="https://pytorch.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a>  <a href="https://www.tensorflow.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>  <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> |
 | Main R Repository | <a href="https://github.com/JAlcocerT/R_is_Great"> R is Great</a> |
-| R Stocks - Shiny App | <a href="https://github.com/JAlcocerT/R_is_Great"> R Stocks</a> | <a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/> |
 
      
  
@@ -50,7 +49,8 @@ Web content generated with HUGO that aims to make the first steps to open source
 |    Dashboards |  Link | Technologies | Description |
 |---------------|-------|--------------|-------------|
 | Retirement Facts | <a href="https://jalcocert.shinyapps.io/retirement_facts/">Retirement Facts</a> | <a href="https://shiny.rstudio.com/" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="rstudio" width="40" height="40"/></a> | More info on **[this post](https://fossengineer.com/posts/retirementfacts/)** and **[here](https://fossengineer.com/posts/retirementfacts/)** the code. |
-| R Stocks - Shiny App | <a href="https://github.com/JAlcocerT/R_is_Great"> R Stocks</a> | <a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/> |     A detail explanation can be found on **[this post](https://fossengineer.com/posts/rstocks/)**.
+| R Stocks - Shiny App | <a href="https://github.com/JAlcocerT/R_is_Great"> R Stocks</a> | <a href="https://github.com/JAlcocerT/R_Stocks" target="_blank"> <img src="https://github.com/JAlcocerT/JAlcocerT/raw/main/src/shiny_logo.png" alt="linux" width="30" height="30"/> |     A detail explanation can be found on **[this post](https://fossengineer.com/posts/rstocks/)**. |
+| Py Trip Planner - DASH App | <a href="https://github.com/JAlcocerT/Py_Trip_Planner"> Py Trip Planner</a> | <a href="https://github.com/JAlcocerT/Py_Trip_Planner" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> |   Dash app, that given the coordinates, will display the historical weather information |
     
      
 <p>  
@@ -59,6 +59,7 @@ Web content generated with HUGO that aims to make the first steps to open source
 |    Mechanical Engineering - Simulations |  Link | Technologies |
 |-------------------------------------|-----------|---------------|
 | Bike / Motorbike Simulator in Real Time | <a href="https://github.com/JAlcocerT/Bike_dynamic_simulator">Bike/Motorbike realtime simulator (Multi-Body system mechanics made computational)</a> |<a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> |
+| Slider-Crank | <a href="https://github.com/JAlcocerT/Slider-Crank"> Slider-Crank Mechanism (Reference Point Coordinates)</a> |<a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>  |
     
      
 <p>  
