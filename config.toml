@@ -16,7 +16,7 @@ disableKinds = ["taxonomy", "term"]
   links = [
     { linkedin = "https://www.linkedin.com/in/jalcocert/" },
     { fossengineer = { href = "https://fossengineer.com/", text = "My Engineering Blog - FOSS Engineer" } },
-    { GL = { href = "https://fossengineer.com/", text = "Gitlab" } },
+    { GL = { href = "https://gitlab.com/FOSSEngineer/", text = "Gitlab" } },
     { github = "https://github.com/JAlcocerT"},
     { GHPages = { href = "https://jalcocert.github.io/RPi/", text = "RPi Guide" } },
     { GHPages = { href = "https://jalcocert.github.io/Linux/", text = "Linux Guide" } },
