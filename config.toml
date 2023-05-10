@@ -20,6 +20,7 @@ disableKinds = ["taxonomy", "term"]
     { github = "https://github.com/JAlcocerT"},
     { GHPages = { href = "https://jalcocert.github.io/RPi/", text = "RPi Guide" } },
     { GHPages = { href = "https://jalcocert.github.io/Linux/", text = "Linux Guide" } },
+    { GHPages = { href = "https://jalcocert.github.io/Docker/", text = "Docker" } },
   ]
 
 [markup.highlight]
