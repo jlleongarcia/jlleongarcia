@@ -3,8 +3,8 @@
 
 
 - 🔥 Lately I have been working on these dashboards:
-    *   **[R Stocks](https://github.com/JAlcocerT/R_Stocks)** - a [R Shiny App](https://r_stocks.fossengineer.com/) that displays interactively [public financial information](https://fossengineer.com/project-shiny-R-Stocks/).
-    *   **[Py Trip Planner](https://github.com/JAlcocerT/Py_RouteTracker)** - a [Python Dash App](https://trip-planner.fossengineer.com/) that helps you plan interactively your trips considering the [historical weather patterns](https://fossengineer.com/python-trip-planner/) of the chosen location.
+    *   **[R Stocks](https://github.com/JAlcocerT/R_Stocks)** - a [R Shiny App Dashboard](https://r_stocks.fossengineer.com/) that displays interactively [public financial information](https://fossengineer.com/project-shiny-R-Stocks/).
+    *   **[Py Trip Planner](https://github.com/JAlcocerT/Py_Trip_Planner)** - a [Python Dash App Dashboard](https://trip-planner.fossengineer.com/) that helps you plan interactively your trips considering the [historical weather patterns](https://fossengineer.com/python-trip-planner/) of the chosen location.
  
 - 📝 I regularly update the content on *[my Tech Blog](https://fossengineer.com/)*, feeding the posts with the results of the analysis included in my public repositories.
     * I find Open Source Software captivating, and over time, I have contributed by creating comprehensive guides: [Linux](https://jalcocert.github.io/Linux), [Raspberry Pi](https://jalcocert.github.io/RPi/) and [Docker](https://github.com/JAlcocerT/Docker).
