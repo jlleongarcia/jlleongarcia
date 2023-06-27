@@ -7,7 +7,7 @@
     *   **[Py Trip Planner](https://github.com/JAlcocerT/Py_RouteTracker)** - a [Python Dash App](https://trip-planner.fossengineer.com/) that helps you plan interactively your trips considering the [historical weather patterns](https://fossengineer.com/python-trip-planner/) of the chosen location.
  
 - 📝 I regularly update the content on *[my Tech Blog](https://fossengineer.com/)*, feeding the posts with the results of the analysis included in my public repositories.
-    * I find Open Source Software and created over time some guides for: [Linux](https://jalcocert.github.io/Linux), [Raspberry Pi](https://jalcocert.github.io/RPi/) and [Docker](https://github.com/JAlcocerT/Docker).
+    * I find Open Source Software captivating, and over time, I have contributed by creating comprehensive guides: [Linux](https://jalcocert.github.io/Linux), [Raspberry Pi](https://jalcocert.github.io/RPi/) and [Docker](https://github.com/JAlcocerT/Docker).
 
 - ⚙️Simulations and Mechanical Engineering: *I also like to understand how machines work*
     * **[Slider-Crank](https://github.com/JAlcocerT/Slider-Crank)** - a DASH app that helps to visualize the physics of a Slider-Crank mechanism
