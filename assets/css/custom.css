@@ -12,9 +12,9 @@
   background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
-    rgb(161, 154, 166) 0%,
+    rgb(92, 89, 95) 0%,
     rgb(130, 84, 84) 50%,
-    rgb(226, 67, 41) 100%
+    rgb(244, 86, 61) 100%
   );
 }
 
@@ -33,9 +33,9 @@
   background: rgb(74, 62, 83);
   background: linear-gradient(
     90deg,
-    rgb(95, 74, 74) 0%,
+    rgb(92, 89, 95) 0%,
     rgb(97, 60, 60) 50%,
-    rgb(50, 47, 44) 100%
+    rgb(227, 109, 18) 100%
   );
 }
 
@@ -46,5 +46,26 @@
     rgba(252, 163, 38, 1) 0%,
     rgb(252, 109, 38) 50%,
     rgb(226, 67, 41) 100%
+  );
+}
+
+
+.link-pylo {
+  background: rgb(74, 62, 83);
+  background: linear-gradient(
+    90deg,
+    rgb(92, 89, 95) 0%,
+    rgb(97, 60, 60) 50%,
+    rgb(227, 109, 18) 100%
+  );
+}
+
+.link-R_logo {
+  background: rgb(74, 62, 83);
+  background: linear-gradient(
+    90deg,
+    rgb(92, 89, 95) 0%,
+    rgb(97, 60, 60) 50%,
+    rgb(227, 109, 18) 100%
   );
 }
