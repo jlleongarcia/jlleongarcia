@@ -1,13 +1,9 @@
-# Sample workflow for building and deploying a Gatsby site to GitHub Pages
-#
-# To get started with Gatsby see: https://www.gatsbyjs.com/docs/quick-start/
-#
 name: Deploy Gatsby site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches:
+      - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,11 +14,10 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow one concurrent deployment
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 # Default to bash
 defaults:
@@ -34,55 +29,117 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT  # Change this to npm install
-            exit 0
-          else
-            echo "Unable to determine package manager"
-            exit 1
-          fi
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Install Node.js
+        uses: actions/setup-node@v1
         with:
-          node-version: "18"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
-        with:
-          # Automatically inject pathPrefix in your Gatsby configuration file.
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: gatsby
-      - name: Restore cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            public
-            .cache
-          key: ${{ runner.os }}-gatsby-build-${{ hashFiles('public') }}
-          restore-keys: |
-            ${{ runner.os }}-gatsby-build-
-      - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ci  # Change this to npm ci
-      - name: Build with Gatsby
-        env:
-          PREFIX_PATHS: 'true'
-        run: ${{ steps.detect-package-manager.outputs.manager }} run build
+          node-version: '20' 
+      
+      - name: Clean npm Cache
+        run: npm cache clean --force
+      
+      - name: Delete package-lock.json
+        run: rm package-lock.json
+      
+      - name: Update Dependencies
+        run: npm install
+      
+      - name: Build
+        run: npm run build  # Adjust this command if needed
+      
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
+          name: gatsby-build
           path: ./public
+
+# # Sample workflow for building and deploying a Gatsby site to GitHub Pages
+# #
+# # To get started with Gatsby see: https://www.gatsbyjs.com/docs/quick-start/
+# #
+# name: Deploy Gatsby site to Pages
+
+# on:
+#   # Runs on pushes targeting the default branch
+#   push:
+#     branches: ["main"]
+
+#   # Allows you to run this workflow manually from the Actions tab
+#   workflow_dispatch:
+
+# # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+
+# # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# concurrency:
+#   group: "pages"
+#   cancel-in-progress: false
+
+# # Default to bash
+# defaults:
+#   run:
+#     shell: bash
+
+# jobs:
+#   # Build job
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#       - name: Detect package manager
+#         id: detect-package-manager
+#         run: |
+#           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+#             echo "manager=yarn" >> $GITHUB_OUTPUT
+#             echo "command=install" >> $GITHUB_OUTPUT
+#             exit 0
+#           elif [ -f "${{ github.workspace }}/package.json" ]; then
+#             echo "manager=npm" >> $GITHUB_OUTPUT
+#             echo "command=install" >> $GITHUB_OUTPUT  # Change this to npm install
+#             exit 0
+#           else
+#             echo "Unable to determine package manager"
+#             exit 1
+#           fi
+#       - name: Setup Node
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: "18"
+#           cache: ${{ steps.detect-package-manager.outputs.manager }}
+#       - name: Setup Pages
+#         id: pages
+#         uses: actions/configure-pages@v3
+#         with:
+#           # Automatically inject pathPrefix in your Gatsby configuration file.
+#           #
+#           # You may remove this line if you want to manage the configuration yourself.
+#           static_site_generator: gatsby
+#       - name: Restore cache
+#         uses: actions/cache@v3
+#         with:
+#           path: |
+#             public
+#             .cache
+#           key: ${{ runner.os }}-gatsby-build-${{ hashFiles('public') }}
+#           restore-keys: |
+#             ${{ runner.os }}-gatsby-build-
+#       - name: Install dependencies
+#         run: ${{ steps.detect-package-manager.outputs.manager }} ci  # Change this to npm ci
+#       - name: Build with Gatsby
+#         env:
+#           PREFIX_PATHS: 'true'
+#         run: ${{ steps.detect-package-manager.outputs.manager }} run build
+#       - name: Upload artifact
+#         uses: actions/upload-pages-artifact@v2
+#         with:
+#           path: ./public
 
   # # Deployment job
   # deploy:
