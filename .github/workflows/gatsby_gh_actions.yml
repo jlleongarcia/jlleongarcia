@@ -45,7 +45,7 @@ jobs:
             exit 0
           elif [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT  # Change this to npm install
             exit 0
           else
             echo "Unable to determine package manager"
@@ -74,7 +74,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gatsby-build-
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: ${{ steps.detect-package-manager.outputs.manager }} run ${{ steps.detect-package-manager.outputs.command }}  # Change this to npm install
       - name: Build with Gatsby
         env:
           PREFIX_PATHS: 'true'
