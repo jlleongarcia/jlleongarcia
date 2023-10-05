@@ -33,3 +33,6 @@ jobs:
 
       - name: Build
         run: npm run build  # Adjust this command if needed
+
+      - name: Deploy
+        run: npm run deploy:ci        
