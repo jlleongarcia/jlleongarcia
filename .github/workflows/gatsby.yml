@@ -36,7 +36,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '14'  # Adjust the Node.js version as needed
+          node-version: '20' 
       
       - name: Clean npm Cache
         run: npm cache clean --force
