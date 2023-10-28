@@ -12,9 +12,9 @@ __webpack_require__.d(__webpack_exports__, {
   $: () => (/* binding */ Section_Section)
 });
 
-// EXTERNAL MODULE: external "/home/jalcocert/JAlcocerT/node_modules/react/index.js"
-var index_js_ = __webpack_require__(752);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
+// EXTERNAL MODULE: external "C:\\Users\\Jesus Alcocer\\Desktop\\JAlcocerT\\node_modules\\react\\index.js"
+var external_C_Users_Jesus_Alcocer_Desktop_JAlcocerT_node_modules_react_index_js_ = __webpack_require__(3423);
+var external_C_Users_Jesus_Alcocer_Desktop_JAlcocerT_node_modules_react_index_js_default = /*#__PURE__*/__webpack_require__.n(external_C_Users_Jesus_Alcocer_Desktop_JAlcocerT_node_modules_react_index_js_);
 ;// CONCATENATED MODULE: ./node_modules/gatsby-theme-portfolio-minimal/src/components/Section/style.module.css
 // Exports
 var Section = "style-module--Section--1d871";
@@ -22,7 +22,7 @@ var Heading = "style-module--Heading--2c002";
 var ContentWrapper  = "style-module--ContentWrapper --36dde";
 
 ;// CONCATENATED MODULE: ./node_modules/gatsby-theme-portfolio-minimal/src/components/Section/index.tsx
-function Section_Section(props){let classList;if(props.additionalClasses){classList=props.additionalClasses.concat(ContentWrapper).join(' ');}else{classList=ContentWrapper;}return/*#__PURE__*/index_js_default().createElement("section",{id:props.anchor,className:Section},/*#__PURE__*/index_js_default().createElement("div",{className:classList},props.heading&&/*#__PURE__*/index_js_default().createElement("h3",{className:Heading},props.heading),props.children));}
+function Section_Section(props){let classList;if(props.additionalClasses){classList=props.additionalClasses.concat(ContentWrapper).join(' ');}else{classList=ContentWrapper;}return/*#__PURE__*/external_C_Users_Jesus_Alcocer_Desktop_JAlcocerT_node_modules_react_index_js_default().createElement("section",{id:props.anchor,className:Section},/*#__PURE__*/external_C_Users_Jesus_Alcocer_Desktop_JAlcocerT_node_modules_react_index_js_default().createElement("div",{className:classList},props.heading&&/*#__PURE__*/external_C_Users_Jesus_Alcocer_Desktop_JAlcocerT_node_modules_react_index_js_default().createElement("h3",{className:Heading},props.heading),props.children));}
 
 /***/ }),
 
@@ -33,7 +33,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ NotFoundPage)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(752);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3423);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1665);
 /* harmony import */ var _components_Section__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4443);

@@ -1,26 +1,26 @@
 var plugins = [{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('/home/jalcocert/JAlcocerT/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      plugin: require('C:/Users/Jesus Alcocer/Desktop/JAlcocerT/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-image',
-      plugin: require('/home/jalcocert/JAlcocerT/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      plugin: require('C:/Users/Jesus Alcocer/Desktop/JAlcocerT/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-sitemap',
-      plugin: require('/home/jalcocert/JAlcocerT/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
+      plugin: require('C:/Users/Jesus Alcocer/Desktop/JAlcocerT/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
       options: {"plugins":[],"output":"/","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},
     },{
       name: 'gatsby-plugin-manifest',
-      plugin: require('/home/jalcocert/JAlcocerT/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
+      plugin: require('C:/Users/Jesus Alcocer/Desktop/JAlcocerT/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
       options: {"plugins":[],"name":"My Minimal Portfolio","short_name":"J.Alcocer T. Portfolio","start_url":"/","background_color":"#FFFFFF","theme_color":"#000000","display":"minimal-ui","icon":"./content/images/favicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"d48eafceaf44a7dcd7ae15ab27bfe91b"},
     },{
       name: 'gatsby-plugin-offline',
-      plugin: require('/home/jalcocert/JAlcocerT/node_modules/gatsby-plugin-offline/gatsby-ssr.js'),
+      plugin: require('C:/Users/Jesus Alcocer/Desktop/JAlcocerT/node_modules/gatsby-plugin-offline/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'partytown',
-      plugin: require('/home/jalcocert/JAlcocerT/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('C:/Users/Jesus Alcocer/Desktop/JAlcocerT/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */
