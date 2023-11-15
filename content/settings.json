@@ -16,12 +16,12 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "JAlcocerT Portfolio" },
+    "logo": { "text": "JAlcocerT" },
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
         { "label": "My Interests", "url": "/blog" },
-        { "label": "Projects", "url": "/#Projects" }
+        { "label": "Projects", "url": "https://jalcocert.github.io/Portfolio/" }
       ],
       "ctaButton": {
         "openNewTab": true,

@@ -13,17 +13,12 @@ import {
 export default function IndexPage() {
   return (
     <>
-      <Seo title="JAlcocerT Portfolio" />
-      {/* <Page useSplashScreenAnimation> */}
-      <Page>
+      <Seo title="Gatsby Starter for Portfolio Minimal" />
+      <Page useSplashScreenAnimation>
         <HeroSection sectionId="hero" />
         <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Medium']} />
-        
-        {/* <InterestsSection sectionId="details" heading="Details" /> */}
-        <ProjectsSection sectionId="Projects" heading="Projects" />
-        {/* <ContactSection sectionId="github" heading="Issues?" /> */}
-
         <AboutSection sectionId="about" heading="About Me" />
+        <ProjectsSection sectionId="features" heading="Projects" />
       </Page>
     </>
   );
