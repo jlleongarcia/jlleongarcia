@@ -2,18 +2,20 @@
 <h3 align="center">Let's have a look to my latest projects</h3>
 
 
-- 🔥 Lately I have been working on:
+- 🔥⚡ Lately I have been working on:
+    * **AI Projects** - [Chat with your PDFS](https://github.com/JAlcocerT/ask-multiple-pdfs)
     *   **IoT & Edge Data Analytics** - several public projects with the [Raspberry Pi](https://jalcocert.github.io/RPi/)
-    *   **[Py Trip Planner](https://github.com/JAlcocerT/Py_Trip_Planner)** - a [Python Dash App Dashboard](https://trip-planner.fossengineer.com/) that helps you plan interactively your trips considering the [historical weather patterns](https://fossengineer.com/python-trip-planner/) of the chosen location.
- 
-- 📝 I regularly update the content on *[my Tech Blog](https://fossengineer.com/)*, feeding the posts with the results of the analysis included in my public repositories.
-    * I find Open Source Software captivating, and I have created comprehensive guides not only for IoT, but also for [Linux](https://jalcocert.github.io/Linux), and [Docker](https://github.com/JAlcocerT/Docker).
 
-- ⚙️Simulations and Mechanical Engineering: *I also like to understand how machines work*
+ 
+- 📝 I regularly update the content on *[my Tech Blog](https://about.jalcocertech.xyz/)*
+    * I love sharing with others and find Open Source Software captivating, which is why I have created these public guides for [Linux](https://jalcocert.github.io/Linux) and [Docker](https://github.com/JAlcocerT/Docker).
+
+
+- ⚙️Simulations: *I also like to understand how machines work*
     * **[Slider-Crank](https://github.com/JAlcocerT/Slider-Crank)** - a DASH app that helps to visualize the physics of a Slider-Crank mechanism
     * **[Bike Simulator](https://github.com/JAlcocerT/Bike_dynamic_simulator)** - Bike/Motorbike realtime simulator (Multi-Body System Dynamics made computational and in real time)
 
-- ⚡ Fun fact: I am combining my two wheels passion with the Trip Planner App during the stages of [my Bike trip across Europe](https://fossengineer.com/trip-bike-poland-hungary/).
+- 🚵 Fun fact: I am combining my two wheels passion with [my Trip Planner App](https://github.com/JAlcocerT/Py_Trip_Planner) during the stages of my Bike trip across Europe.
  
 <h3 align="center">Connect with me: 📫</h3>
 <p align="center">
