@@ -7,7 +7,7 @@
     *   **IoT & Edge Data Analytics** - several public projects with the [Raspberry Pi](https://jalcocert.github.io/RPi/)
 
  
-- 📝 I regularly update the content on *[my Tech Blog](https://about.jalcocertech.xyz/)*
+- 📝 I regularly update the content on *[my Tech Blog](https://about.jalcocertech.xyz/)* <a href="https://about.jalcocertech.xyz"><img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/jalcocertech2.svg" alt="Subscribe via RSS" height="16" style="vertical-align: bottom;"/></a>
     * I love sharing with others and find Open Source Software captivating, which is why I have created these public guides for [Linux](https://jalcocert.github.io/Linux) and [Docker](https://github.com/JAlcocerT/Docker).
 
 
@@ -19,10 +19,13 @@
  
 <h3 align="center">Connect with me: 📫</h3>
 <p align="center">
-<a href="Your_Link_For_SVG">
-    <img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/JAlcocerT.svg" alt="Description of the image">
+<a href="https://linkedin.com/in/jalcocert" target="blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="my_linkedin" height="30" width="40" style="vertical-align: middle;" />
 </a>
-<a href="https://linkedin.com/in/jalcocert" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="my_linkedin" height="30" width="40" /></a> 
+<a href="JAlcocerTech">
+    <img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/JAT.svg" alt="Description of the image" height="30" style="vertical-align: middle;" />
+</a>
+
 
 
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=jalcocert&label=Profile%20views&color=0e75b6&style=flat" alt="jalcocert" /> </p>
