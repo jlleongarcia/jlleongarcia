@@ -12,13 +12,16 @@
 
 
 - ⚙️Simulations: *I also like to understand how machines work*
-    * **[Slider-Crank](https://github.com/JAlcocerT/Slider-Crank)** - a DASH app that helps to visualize the physics of a Slider-Crank mechanism
-    * **[Bike Simulator](https://github.com/JAlcocerT/Bike_dynamic_simulator)** - Bike/Motorbike realtime simulator (Multi-Body System Dynamics made computational and in real time)
+    * [Slider-Crank](https://github.com/JAlcocerT/Slider-Crank) - a DASH app that helps to visualize the physics of a Slider-Crank mechanism
+    * [Bike Simulator](https://github.com/JAlcocerT/Bike_dynamic_simulator) - Bike/Motorbike realtime simulator (Multi-Body System Dynamics made computational and in real time)
 
-- 🚵 Fun fact: I am combining my two wheels passion with [my Trip Planner App](https://github.com/JAlcocerT/Py_Trip_Planner) during the stages of my Bike trip across Europe.
+- 🚵 **Fun fact**: I am combining my two wheels passion with [my Trip Planner App](https://github.com/JAlcocerT/Py_Trip_Planner) during the stages of my Bike trip across Europe.
  
 <h3 align="center">Connect with me: 📫</h3>
 <p align="center">
+<a href="Your_Link_For_SVG">
+    <img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/JAlcocerT.svg" alt="Description of the image">
+</a>
 <a href="https://linkedin.com/in/jalcocert" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="my_linkedin" height="30" width="40" /></a> 
 
 
