@@ -3,13 +3,14 @@
 
 
 - 🔥⚡ Lately I have been working on:
-    * **AI Projects** - [Chat with your PDFS](https://github.com/JAlcocerT/ask-multiple-pdfs)
+    * **AI Projects**
+        * [Multi-Provider Chat](https://github.com/JAlcocerT/Streamlit-MultiChat)
+        * [Chat with your PDFS](https://github.com/JAlcocerT/ask-multiple-pdfs)
     *   **IoT & Edge Data Analytics** - several public projects with the [Raspberry Pi](https://jalcocert.github.io/RPi/)
 
  
-- 📝 I regularly update the content on *[my Tech Blog](https://about.jalcocertech.xyz/)* <a href="https://about.jalcocertech.xyz"><img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/jalcocertech2.svg" alt="Subscribe via RSS" height="25" style="vertical-align: bottom;"/></a>
+- 📝 I regularly update the content on *[my Tech Blog](https://jalcocertech.xyz/)* <a href="https://jalcocertech.xyz"><img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/jalcocertech2.svg" alt="Subscribe via RSS" height="25" style="vertical-align: bottom;"/></a>
     * I love sharing with others and find Open Source Software captivating, which is why I have created these public guides for [Linux](https://jalcocert.github.io/Linux) and [Docker](https://github.com/JAlcocerT/Docker).
-
 
 - ⚙️Simulations: *I also like to understand how machines work*
     * [Slider-Crank](https://github.com/JAlcocerT/Slider-Crank) - a DASH app that helps to visualize the physics of a Slider-Crank mechanism
@@ -25,7 +26,5 @@
 <a href="https://jalcocertech.xyz">
     <img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/JAT.svg" alt="Description of the image" height="30" style="vertical-align: middle;" />
 </a>
-
-
 
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=jalcocert&label=Profile%20views&color=0e75b6&style=flat" alt="jalcocert" /> </p>
