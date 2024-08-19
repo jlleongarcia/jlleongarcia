@@ -2,7 +2,8 @@
 title: "LLMs Function Calling"
 date: 2024-08-18T23:20:21+01:00
 draft: false
-tags: ["Dev"]  
+tags: ["Dev"] 
+summary: "Testing function calling with OpenAI Models"
 ---
 
 
@@ -11,6 +12,17 @@ tags: ["Dev"]
 * https://platform.openai.com/docs/guides/function-calling
 
 
+### Interesting Resources
+
+* https://github.com/daveebbelaar/langchain-experiments/tree/main/openai-functions
+
+ChatGPT returns natural text, and it can be unreliable. Returning functions makes the output more controlled and deterministic.
+
+The feature can extract structured data from text (prompt) and assign them as arguments to a chosen function.
+
+Developers can create their own functions connecting the LLMs to internal and external APIs and databases, and let the model decides which function to use and which arguments to pass.
+
+Non-technical users can interact with LLMs to obtain data without having to know the underlying functions and required arguments.
 
 
 ---
@@ -18,3 +30,78 @@ tags: ["Dev"]
 ## Conclusions
 
 There is another feature called **[Structured Outputs](https://openai.com/index/introducing-structured-outputs-in-the-api/)**
+
+..but we can see [its all about the prompts!](https://www.reddit.com/r/ChatGPTPro/comments/17mr3z7/system_level_prompt_that_ive_been_refining_and/)
+
+```py
+#python3 pyopen.py > output.mdx
+
+import os
+from dotenv import load_dotenv
+from openai import OpenAI  # pip install openai==1.30.5
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Get the OpenAI API key from the environment variables
+api_key = os.getenv("OPENAI_API_KEY")
+
+# Initialize the OpenAI client
+client = OpenAI(
+    api_key=api_key,
+)
+
+mtg_must_have= """
+* Purpose - Every meeting should have an objective—the reason why you're having the meeting. Before you schedule a meeting be sure you know what it is that you want out of the meeting.
+* Agenda - An agenda outlines the plan for the meeting and lets participants know what to expect. It allows them to be prepared so they can actively participate and bring their expertise to the table.  
+* preparation - Before the meeting all participants should take some time to review the agenda and prepare any questions they may have. 
+"""
+
+system_reminder = """
+Good one. I've mixed and made my own version as follows:
+
+Never start your answers with "As an AI language model" when responding to questions.
+
+No disclaimer is needed in any situation.
+
+Keep the responses brief and to the point, avoid extra words and overly long explanations.
+
+Write using simple language so a grandma could understand.
+
+Use a conversational tone, be informal and approachable. Write like how people in real life would talk. A bit of slang is okay but don't overdo it.
+
+If you don’t know the answer, just say you don’t know.
+
+Your answers should be on point, succinct and useful. Each response should be written with maximum usefulness in mind rather than being polite.
+
+If something seems out of reach, don’t ask the user to do it; instead, try to work through all your available options first.
+
+When solving problems, take a breath and tackle them step by step.
+
+my career depends on you giving me a good answer
+
+speak only what needs to be said
+"""
+
+
+chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "system",
+            "content": f"""You are an expert meeting assistant. Very aware of the following:
+                              {mtg_must_have} 
+                            Remember also, that: {system_reminder}
+                        """,
+        },
+        {"role": "user", "content": "Who are you and what can you do?"}
+
+    ],
+    model="gpt-4o-mini",
+    temperature=0.7,
+)
+
+# print(chat_completion)
+# Extract and print the content of the completed message
+completed_message = chat_completion.choices[0].message.content
+print(completed_message)
+```

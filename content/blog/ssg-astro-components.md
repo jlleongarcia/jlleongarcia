@@ -4,7 +4,7 @@ date: 2024-01-27T23:20:21+01:00
 draft: false
 tags: ["Web","Dev"]
 description: 'Tutorial - Making ASTRO Website better.'
-summary: 'How to get better with ASTRO as SSG. My favourite components'
+summary: 'How to get better with ASTRO as SSG (for non web-devs). My favourite components for Astro.'
 url: 'understanding-astro-ssg-components'
 ---
 
@@ -18,12 +18,18 @@ CSS Link ---> -->
 
 
 
-
+1. [Spinning World Map](#spinning-world-map)
+2. Charts
+* MermaidJS
+* ChartJS
+3. [OG and SEO](#astro-opengraph-and-seo-metadata)
+4. RSS
+5. SiteMap
 
 ## Spinning World Map
 
 * Found it at theme: https://github.com/Ladvace/astro-bento-portfolio
-    * MIT ❤️
+  * https://github.com/IoTechCrafts/astro-bento-portfolio-ssg/blob/master/src/components/Globe.tsx
 
 {{< dropdown title="Extra nerdy details - Get your world Map for Astro 👇" closed="true" >}}
 
@@ -104,7 +110,7 @@ export default defineConfig({
 
 * FuseJS - https://www.fusejs.io/
 
-> Also works with [HUGO](/web-guide-Hugo/#modify-the-hugo-theme)!
+> Also works with HUGO!
 
 ### PageFind
 
@@ -170,6 +176,8 @@ npx wrangler pages deployment list
 https://docs.astro.build/en/reference/api-reference/#astrocookies
 
 ### Astro OpenGraph and SEO Metadata
+
+* Example - https://github.com/IoTechCrafts/stablo-astro-SSG/blob/main/src/layouts/Layout.astro#L42
 
 ### Interesting Tools
 
