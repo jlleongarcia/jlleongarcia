@@ -10,13 +10,13 @@
 
  
 - 📝 I regularly update the content on *[my Tech Blog](https://jalcocertech.xyz/)* <a href="https://jalcocertech.xyz"><img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/jalcocertech2.svg" alt="Subscribe via RSS" height="25" style="vertical-align: bottom;"/></a>
-    * I love sharing with others and find Open Source Software captivating, which is why I have created these public guides for [Linux](https://jalcocert.github.io/Linux) and [Docker](https://github.com/JAlcocerT/Docker).
+    * I love sharing with others - I have created these public guides for [Linux](https://jalcocert.github.io/Linux) and [Docker](https://github.com/JAlcocerT/Docker).
 
 - ⚙️Simulations: *I also like to understand how machines work*
     * [Slider-Crank](https://github.com/JAlcocerT/Slider-Crank) - a DASH app that helps to visualize the physics of a Slider-Crank mechanism
     * [Bike Simulator](https://github.com/JAlcocerT/Bike_dynamic_simulator) - Bike/Motorbike simulator (RT Computational Multi-Body System Dynamics)
 
-- 🚵 **Fun fact**: I am combining my two wheels passion with [my Trip Planner App](https://github.com/JAlcocerT/Py_Trip_Planner) during the stages of my Bike trip across Europe.
+- **Fun fact**: I am combining my 🚵 passion with [my Trip Planner App](https://github.com/JAlcocerT/Py_Trip_Planner) for my Bike trip across Europe.
  
 <h3 align="center">Connect with me: 📫</h3>
 <p align="center">

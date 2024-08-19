@@ -1,0 +1,3 @@
+[submodule "linux-v3/themes/hextra"]
+	path = linux-v3/themes/hextra
+	url = https://github.com/imfing/hextra.git
