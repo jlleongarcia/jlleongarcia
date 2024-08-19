@@ -70,5 +70,6 @@ claude-3-opus-20240229", "claude-3-sonnet-20240229"
 
 Fireship
 
-
 {{< youtube id="v=m_xoN8KlP3w" autoplay="false" >}}
+
+* Groq - https://console.groq.com/keys

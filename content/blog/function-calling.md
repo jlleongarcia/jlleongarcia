@@ -11,6 +11,8 @@ summary: "Testing function calling with OpenAI Models"
 
 * https://platform.openai.com/docs/guides/function-calling
 
+> Thanks to https://www.promptingguide.ai/applications/function_calling
+
 
 ### Interesting Resources
 
@@ -24,6 +26,9 @@ Developers can create their own functions connecting the LLMs to internal and ex
 
 Non-technical users can interact with LLMs to obtain data without having to know the underlying functions and required arguments.
 
+## Ollama
+
+* https://mer.vin/2024/07/ollama-tool-call-example/
 
 ---
 
@@ -32,6 +37,9 @@ Non-technical users can interact with LLMs to obtain data without having to know
 There is another feature called **[Structured Outputs](https://openai.com/index/introducing-structured-outputs-in-the-api/)**
 
 ..but we can see [its all about the prompts!](https://www.reddit.com/r/ChatGPTPro/comments/17mr3z7/system_level_prompt_that_ive_been_refining_and/)
+
+
+* https://www.promptingguide.ai/techniques/activeprompt
 
 ```py
 #python3 pyopen.py > output.mdx
