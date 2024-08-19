@@ -1,6 +1,6 @@
 #baseURL: http://localhost/ #specified in pages.yml
 languageCode: en-us
-title: JAlcocerT
+title: JAlcocerT Blog
 theme: hextra
 
 
@@ -10,7 +10,7 @@ theme: hextra
 #   - path: github.com/imfing/hextra
 
 params:
-  description: Linux Guides to make the learning journey easier for everyone.
+  description: JAlcocerT Blog
 
 markup:
   # allow raw html
@@ -27,14 +27,15 @@ menu:
     - name: Docs
       pageRef: /docs
       weight: 1
-    - name: About
-      pageRef: /about
-      weight: 2
-    - name: Contact ↗
+    - identifier: blog
+      name: Blog
+      pageRef: /blog
+      weight: 2      
+    - name: Linkedin ↗
       url: "https://www.linkedin.com/in/jalcocert/"
-      weight: 3
-    - name: Search
       weight: 4
+    - name: Search
+      weight: 5
       params:
         type: search
    
