@@ -97,5 +97,4 @@ plot_ly(df_inflation, type = 'scatter', mode = 'lines') %>%
 
 I found PriceR really useful and have used it during the creation of this Shiny project:
 
-* <https://fossengineer.com/project-shiny-R-Stocks/>
 * <https://github.com/JAlcocerT/R_Stocks/>

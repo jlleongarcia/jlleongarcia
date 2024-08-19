@@ -17,9 +17,7 @@ Docker Multi-Platform-->
 Some months ago I was sharing with you my Shiny App [R Stocks](https://github.com/JAlcocerT/R_Stocks)
 
 ## Building R Shiny Apps Docker Image
-<!-- 
-For Python DASH Apps the process was way simpler [aaaaaaaa](https://fossengineer.com/building-docker-container-images/#dockerfile-x86arm32arm64---python-dash) -->
-
+d
 ### X86 Images
 
 
@@ -62,10 +60,4 @@ I am using the
 
 Recently I got an Orange Pi and I am using it to self-host some of my favourite services, as well of my personal projects.
 
-The Docker setup to make Shiny works on armv8 has been way more challenging than the x86, particularly to make the [yfR package work properly](https://fossengineer.com/r-yfR-package-guide/).
-
-<!-- ## Multi-Platform
-
-So now, say that you want to have in DockerHub different the images with multiple platforms, so that users can just pull the latest version and get the correct one automatically.
-
-You can check the results at <dockerhub> fossengineer -->
+The Docker setup to make Shiny works on armv8 has been way more challenging than the x86, particularly to make the yfR package work properly.

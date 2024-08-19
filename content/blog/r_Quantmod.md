@@ -82,5 +82,4 @@ plot_ly(df_divs, type = 'bar')%>%
 
 I found QuantMod really useful and have used it during the creation of this Shiny project:
 
-* <https://fossengineer.com/project-shiny-R-Stocks/>
 * <https://github.com/JAlcocerT/R_Stocks/>

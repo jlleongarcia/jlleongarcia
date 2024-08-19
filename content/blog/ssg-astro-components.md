@@ -140,7 +140,6 @@ npm run preview
 
 {{< dropdown title="How to deploy Astro to Cloudflare Pages? ⏬" closed="true" >}}
 
-* https://fossengineer.com/hosting-with-cloudflare-pages/
 
 * Create the project (you will need to authenticate to Cloudflare):
 
@@ -170,7 +169,9 @@ npx wrangler pages deployment list
 
 https://docs.astro.build/en/reference/api-reference/#astrocookies
 
-### Interesting TOols
+### Astro OpenGraph and SEO Metadata
+
+### Interesting Tools
 
 #### Primitives
 

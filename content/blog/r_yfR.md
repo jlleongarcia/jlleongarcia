@@ -62,13 +62,8 @@ hist_price$Year <- as.integer(format(as.Date(hist_price$ref_date), "%Y"))
 
 Then, just get some help from plotly to create one interactive visualization:
 
-```
+```r
        plot_ly(hist_price, type = 'scatter', mode = 'lines') %>%
                           add_trace(x = ~ym, y = ~price_close, name = ~ticker)
 ```
 
-## FAQ
-
-### Project Example Using yfR
-
-* <https://fossengineer.com/project-shiny-R-Stocks/>

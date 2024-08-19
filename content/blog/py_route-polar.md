@@ -12,7 +12,7 @@ summary: 'As I plan to make a complete route by bike from Tallin to Athens, I ne
 url: 'polar-data-python-analysis'
 ---
 
-Last year I made my first [bikepacking trip in central Europe](https://fossengineer.com/trip-bike-poland-hungary/).
+Last year I made my first bikepacking trip in central Europe.
 
 The experience was much better than I could have thought, so right now I am planning to join that route with the baltic countries this year - where I plan to achieve around 600km in 5 days.
 
