@@ -13,7 +13,7 @@ editPost:
     appendFilePath: false # to append file path to Edit link
 description: "R Stocks - R Shiny Interactive Dashboard that displays free available financial information."
 summary: 'An interactive R Shiny App that revolutionizes the way public financial information is displayed. Built on top of well-known R packages for financial analysis: yfR, QuantMod, PriceR and Quandl.'
-url: 'project-shiny-R-Stocks'
+url: 'R-Stocks'
 isPinned: false
 ---
 

@@ -4,7 +4,6 @@ date: 2023-09-03T23:20:21+01:00
 draft: false
 tags: ["Python","Dashboards"]
 cover:
-    #image: "https://socialify.git.ci/JAlcocerT/Py_Double_Pendulum/image?language=1&name=1&theme=Auto" # image path/url 
     image: "https://socialify.git.ci/jalcocert/Py_Double_Pendulum/image?description=0&name=1&owner=1&pattern=Brick%20Wall&theme=Light"
     alt: "Double Pendulum Simulation with Python" # alt text
     caption: "Double Pendulum with Python & Streamlit." # display caption under cover
@@ -107,7 +106,9 @@ These are the technologies that helped me craft the Python Double Pendulum App:
 
 The first challenge was to create an interactive and user-friendly interface. Enter Streamlit. 
 
+<!--
 ![Py_double_Pendulum APP gif](/img/Projects/double_pendulum.gif)
+-->
 
 This powerful tool became the canvas upon which the double pendulum would dance. With its intuitive design capabilities, Streamlit allowed for the seamless integration of visuals and controls, making the app not just functional but also a delight to use.
 
@@ -186,8 +187,7 @@ You can run it with: streamlit run app.py
 
 ### How Can I try the Python Double Pendulum App?
 
-* You can **use it for free from any browser at:** <https://double-pendulum.fossengineer.com/>
-* Or you can use the [docker container image](https://hub.docker.com/r/fossengineer/double_pendulum/ "Python Double Pendulum DockerHUB {rel='nofollow'}") to self-host it yourself.
+* Use the [docker container image](https://hub.docker.com/r/fossengineer/double_pendulum/ "Python Double Pendulum DockerHUB {rel='nofollow'}") to self-host it yourself.
 
 ### How Can I Contribute?
 
