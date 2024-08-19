@@ -1,0 +1,22 @@
+<!-- Define a new Hugo shortcode "docker-dropdown.html" -->
+{{- $title := .Get "title" | default "Docker Installation" -}}
+{{- $closed := eq (.Get "closed") "true" | default false -}}
+
+<details class="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4 group" {{ if not $closed }}open{{ end }}>
+  <summary class="flex items-center cursor-pointer select-none list-none p-1 rounded transition-colors hover:bg-gray-100 dark:hover:bg-neutral-800 before:mr-1 before:inline-block before:transition-transform before:content-[''] dark:before:invert rtl:before:rotate-180 group-open:before:rotate-90">
+    <strong class="text-lg">{{ $title | markdownify }}</strong>
+  </summary>
+  <div class="p-2 overflow-hidden">
+    <!-- Fixed content for Docker installation instructions -->
+    <p>You can install Docker for any PC, Mac, or Linux at home or in any cloud provider that you wish. It will just take a few moments. If you are on Linux, just:</p>
+    <pre><code>apt-get update && sudo apt-get upgrade && curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+#sudo apt install docker-compose -y</code></pre>
+    <p>And install also Docker-compose with:</p>
+    <pre><code>apt install docker-compose -y</code></pre>
+    <p>When the process finishes, you can use it to self-host other services as well. You should see the versions with:</p>
+    <pre><code>docker --version
+docker-compose --version
+#sudo systemctl status docker #and the status</code></pre>
+  </div>
+</details>
