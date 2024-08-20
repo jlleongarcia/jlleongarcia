@@ -35,15 +35,20 @@ summary: Comparing SBCs performance with the Cloud
 
 The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (when used to build the trip-planner container image).
 
-Hetzner Shared vCPU (2x Skylake @2ghz) 4GB	~77s
-Hetzner Shared vCPU (4x Skylake @2ghz) 8GB	~45s
+* Hetzner Shared vCPU (2x Skylake @2ghz) 4GB	~77s
+* Hetzner Shared vCPU (4x Skylake @2ghz) 8GB	~45s
 
 ---
 
 ## FAQ
 
-Sysbench
+
+{{% details title="Sysbench" closed="true" %}}
 
 ```sh
 sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
 ```
+
+{{% /details %}}
+
+

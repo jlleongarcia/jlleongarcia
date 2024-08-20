@@ -4,7 +4,7 @@ date: 2023-06-24T23:20:21+01:00
 draft: false
 tags: ["R","Docker","Dashboards","My Projects","R-Stocks"]
 description: ''
-summary: '.'
+summary: 'ShinyApps with docker for multi-architecture'
 url: 'building-shiny-apps-with-docker-x86-and-arm'
 ---
 

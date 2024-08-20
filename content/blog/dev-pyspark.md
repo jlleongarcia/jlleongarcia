@@ -8,20 +8,16 @@ summary: 'If you have been using SQL and Pandas with Python for a while, you mig
 url: 'guide-python-PySpark'
 ---
 
-<!-- # The PySpark Guide -->
 <!-- 
 https://hub.docker.com/layers/bitnami/spark/3.5-debian-11/images/sha256-70d7589cb07f24c09a28863e3fce5b9f0419042da2fff6505d0822e0ccbb7cde -->
 
 ## The PySpark Project
 
-When talking about PySpark, we are talking about **Big Data** and [Python](/guide-python/) 🐍.
+When talking about PySpark, we are talking about **Big Data** and [Python](/JAlcocerT/guide-python/) 🐍.
 
+* {{< newtab url="https://spark.apache.org/docs/latest/api/python/index.html" text="Spark python API docs" >}}
+    * {{< newtab url="https://github.com/spark-examples/pyspark-examples" text="PySpark Examples" >}}
 
-* {{< newtab url="https://.github.io//" text="The  Official Site" >}}
-* {{< newtab url="https://github.com//" text="The  Source Code at Github" >}}
-    * License: {{< newtab url="https://github.com//?tab=AGPL-3.0-1-ov-file#readme" text="aGPL 3.0" >}} ❤️
-* https://spark.apache.org/docs/latest/api/python/index.html
-* https://github.com/spark-examples/pyspark-examples
 
 <!-- Understanding Big Data 5V’s.
 Understanding Big Data use cases (e.g. IoT, social media analysis, ML models, log analytics, etc.).
@@ -123,6 +119,7 @@ result.show()
 
 ```
 
+And with python like logic:
 ```py
 df = spark.read \
     .format("jdbc") \
@@ -145,7 +142,7 @@ result.show()
 <!-- 
 https://billennium.com/time-traveling-in-data-lakes/ -->
 
-Time-traveling allows accessing data from a specific point in the past.
+**Time-traveling** allows accessing data from a specific point in the past.
 
 While the approach varies across formats, the core principle remains the same. **Snapshots stored in logs** enable time-traveling capabilities.
 

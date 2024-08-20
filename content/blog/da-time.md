@@ -1,7 +1,7 @@
 ---
 title: "Time Management in Data Analytics"
 date: 2021-09-25T23:20:21+01:00
-draft: true
+draft: false
 tags: ["Outro"]
 description: 'Time Management Techniques for Data Analytics'
 summary: 'Been commited to dive into Data Analytics will require that you excel at Time Management techniques. In this post I cover some of the techniques to help you stay on top of your projects.'

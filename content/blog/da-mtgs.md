@@ -1,7 +1,7 @@
 ---
 title: "Effective Meetings in Analytics"
 date: 2021-12-10T23:20:21+01:00
-draft: true
+draft: false
 tags: ["Outro"]
 description: 'How to run effective meetings in Analytics.'
 summary: 'During your career in data anlytics you will be working with different teams and you will be in need of meetings to sync up ideas. Here are some techniques to run and be part of effective meetings.'
