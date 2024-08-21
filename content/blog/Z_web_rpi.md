@@ -11,9 +11,16 @@ summary: 'I have just deployed on Github Pages content regarding Raspberry Pi'
 url: 'raspberrypi-starting-guide'
 ---
 
-During this month, have decided to create a more detail guide on Github Pages on how to get started with a Raspberry Pi.
+During this month, have decided to create a more **detailed guide on Github Pages on how to get started with a Raspberry Pi.**
 
 I will use this content as a personal wiki, so whenever I find some block that requires some effort to find out on the internet, will make a concise guide right here: <https://jalcocert.github.io/RPi/>
+
+
+---
+
+* References
+    * https://zweilosec.github.io/posts/jekyll-chirpy-github-pages-blog/
+    * Adding Web Analytics to Jekyll Chirpy - https://aouledissa.com/posts/Jekyll-Google-Analytics-4-Integration-With-Chirpy-Theme/
 
 
 <!-- shodan

@@ -3,11 +3,7 @@ title: JAlcocerT | Tech Blog
 toc: false
 ---
 
-If you are reading it, you are not like others.
-
-You like not only to think different, but act different - That brought you here.
-
-
+Hi There!
 
 ## A Tech Blog?
 
@@ -64,5 +60,5 @@ Beyond personal growth, a tech blog allows you to contribute to the tech communi
 {{< /hextra/feature-grid >}}
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/Portfolio/" title="Collaborations ↗" icon="user" >}}
+  {{< card link="https://jalcocert.github.io/Portfolio/" title="Portfolio Links↗" icon="user" >}}
 {{< /cards >}}
