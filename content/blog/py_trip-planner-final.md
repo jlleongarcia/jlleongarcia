@@ -97,14 +97,13 @@ With streamlined processes and easy-to-understand features, even your grandma ca
 
 ### Open Source Magic
 
-Ever wondered how the magic happens? Dive into the code. It's open for all to see, contribute, and learn. It's not just an app; it's a community.
-
-Join in, make it better, or just satiate your curiosity and check how it works.
-
+How the magic happens? Dive into the code.
 
 ## The Odyssey of Building and Deploying a Python Dash App: Trials, Triumphs and Tunnels
 
-Every great app has a story behind it, a journey of discovery, challenges, and those "Aha!" moments. The Python Trip Planner 2.0 is no different. Let's embark on this roller coaster of a learning process together.
+Every great app has a story behind it, a journey of discovery, challenges, and those "Aha!" moments. The Python Trip Planner 2.0 is no different.
+
+Let's embark on this roller coaster of a learning process together.
 
 ### Creating a Python DASH App: The Dawn
 
@@ -116,7 +115,9 @@ Then came Docker, the tool that promises to package an app and its environment i
 
 ### One Docker Image, Multiple Architectures: The Manifest Mystery
 
-The world of tech is vast, with myriad architectures and platforms. The challenge? [Creating manifests for a single Docker image](https://fossengineer.com/building-docker-container-images/#managing-multi-arch-images-in-dockerhub) that catered to different architectures. It was like trying to fit a square peg in a round hole, but with some tweaks and turns, the peg was carved to perfection.
+The world of tech is vast, with myriad architectures and platforms. The challenge? [Creating manifests for a single Docker image](https://fossengineer.com/building-docker-container-images/#managing-multi-arch-images-in-dockerhub) that catered to different architectures.
+
+It was like trying to fit a square peg in a round hole, but with some tweaks and turns, the peg was carved to perfection.
 
 ### Deploying to Google Cloud Run: The Gamble
 
@@ -124,7 +125,9 @@ With the app ready, it was time to showcase it to the world. Google Cloud Run se
 
 ### Self-hosting with Docker and Cloudflare Tunnel: The Homecoming
 
-Why rely on external platforms when you can be the master of your domain? The decision to self-host the Python Dash app at home was both daring and ingenious. Docker ensured the app ran smoothly, and [Cloudflare Tunnel](https://fossengineer.com/selfhosting-python-dash-apps-with-docker/) was the guardian, safely exposing the app to the world. It was like building a castle and then drawing up the bridge to let the world in, securely.
+Why rely on external platforms when you can be the master of your domain? The decision to self-host the Python Dash app at home was both daring and ingenious.
+
+Docker ensured the app ran smoothly, and [Cloudflare Tunnel](https://fossengineer.com/selfhosting-python-dash-apps-with-docker/) was the guardian, safely exposing the app to the world. It was like building a castle and then drawing up the bridge to let the world in, securely.
 
 
 <!-- 
@@ -162,12 +165,12 @@ Trying the DASH App locally might be an easy process for people that are familia
 
 ### Do I need to Know Python to use it?
 
-No, you dont need to.
+No, you dont need [to know Python]()
 
 * You can use it for free here:
 * SelfHost it locally with Docker
 
-If you would like to modify some of the features to adapt it to your use case, you will need to have some [Python basic knowledge](/guide-python/).
+> You can build interesting [Weather Forecast with Grafana](https://ibug.io/blog/2024/01/weather-forecast-with-grafana/) or with a [RPi and some sensors](https://jalcocert.github.io/RPi/tags/sensors/)
 
 ### F/OSS Android Apps for Maps
 

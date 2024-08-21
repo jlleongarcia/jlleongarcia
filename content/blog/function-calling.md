@@ -14,6 +14,42 @@ summary: "Testing function calling with OpenAI Models"
 > Thanks to https://www.promptingguide.ai/applications/function_calling
 
 
+{{% details title="How to use OpenAI API? " closed="true" %}}
+
+```sh
+pip install openai==1.40.0
+```
+
+```py
+api_key = os.getenv("OPENAI_API_KEY")
+
+client = OpenAI(api_key=api_key)
+
+#df = read_excel(file_name)
+#df_markdown = df.to_markdown(index=False)
+df_markdown="12345"
+
+chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "system",
+            "content": """
+                        You are an expert data analyst.
+                    """,
+        },
+        {"role": "user", "content": f"What it is this variable containing?: {df_markdown}"}
+    ],
+    model="gpt-4o-mini",
+    temperature=0.3,
+)
+
+completed_message = chat_completion.choices[0].message.content
+print(completed_message)
+```
+
+{{% /details %}}
+
+
 ### Interesting Resources
 
 * https://github.com/daveebbelaar/langchain-experiments/tree/main/openai-functions
@@ -25,6 +61,43 @@ The feature can extract structured data from text (prompt) and assign them as ar
 Developers can create their own functions connecting the LLMs to internal and external APIs and databases, and let the model decides which function to use and which arguments to pass.
 
 Non-technical users can interact with LLMs to obtain data without having to know the underlying functions and required arguments.
+
+## Claude
+
+
+{{% details title="How to use Anthropic API?" closed="true" %}}
+
+* https://docs.anthropic.com/en/api/client-sdks
+    * https://github.com/anthropics/anthropic-sdk-python/blob/main/api.md
+
+```sh
+pip install anthropic==0.34.1 #https://github.com/anthropics/anthropic-sdk-python
+```
+
+```py
+import anthropic
+
+client = Anthropic(api_key = os.getenv("ANTHROPIC_API_KEY"),)
+
+system_prompt = "You are a helpful Data Analyst."
+
+message = client.messages.create(
+    max_tokens=1024,
+    system=system_prompt,  # Use the top-level "system" parameter
+    messages=[
+        {"role": "user", "content": "Hello, who you?"}
+    ],
+    model="claude-3-5-sonnet-20240620",
+    #model="claude-3-opus-20240229",
+)
+
+#print(message.content)
+content = message.content[0].text
+print(content)
+```
+{{% /details %}}
+
+## Groq
 
 ## Ollama
 

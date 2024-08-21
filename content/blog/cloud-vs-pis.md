@@ -31,8 +31,9 @@ summary: Comparing SBCs performance with the Cloud
 | BMAX B4        | 45 seconds         | 64°C  fan  | -                          | -                         | -                       | -                       |
 | AMD 5600G        |         |    fan | -                          | -                         | -                       | -                       |
 
-* opi - 5min 20s
-* rpi4b 2gb - 
+* Astral-sh build
+    * opi - 5min 20s
+    * rpi4b 2gb - 10min 7s
 
 {{< callout type="info" >}}
   * How to run [these tests](#faq)
@@ -70,7 +71,14 @@ sudo apt-get install p7zip-full
 7z b
 ```
 
-* Trip Planner docker build time:
+and with 7zr:
+
+```sh
+7zr b -mmt1
+```
+
+* [Trip Planner](https://github.com/JAlcocerT/Py_Trip_Planner/) docker build time:
+
 ```sh
 git clone https://github.com/JAlcocerT/Py_Trip_Planner/
 cd Py_Trip_Planner
@@ -79,6 +87,7 @@ sudo bash -c 'time docker pull python:3.8' #let's remove the time of downloading
 
 #docker build -t pytripplanner .
 sudo bash -c 'time docker build -t pytripplanner .'
+#sudo bash -c 'time podman build -t pytripplanner .'
 ```
 
 * Astral-sh Python Dependency Manager:
