@@ -31,9 +31,7 @@ summary: Comparing SBCs performance with the Cloud
 | BMAX B4        | 45 seconds         | 64°C  fan  | -                          | -                         | -                       | -                       |
 | AMD 5600G        |         |    fan | -                          | -                         | -                       | -                       |
 
-* Astral-sh build
-    * opi - 5min 20s
-    * rpi4b 2gb - 10min 7s
+
 
 {{< callout type="info" >}}
   * How to run [these tests](#faq)
@@ -46,6 +44,19 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 
 * Hetzner Shared vCPU (2x Skylake @2ghz) 4GB	~77s
 * Hetzner Shared vCPU (4x Skylake @2ghz) 8GB	~45s
+
+## Testing Results
+
+
+{{< dropdown title="Building Astral-SH 📌" closed="true" >}}
+
+* Astral-sh build
+    * opi - 5min 20s
+    * rpi4b 2gb - 10min 7s
+    * hetzner 6m 15s
+
+{{< /dropdown >}}
+
 
 ---
 

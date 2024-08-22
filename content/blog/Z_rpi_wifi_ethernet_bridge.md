@@ -431,3 +431,14 @@ echo "deb http://deb.debian.org/debian buster-backports main" | sudo tee -a /etc
 sudo apt update
 sudo apt install -t buster-backports libseccomp2
 ``` -->
+
+
+```sh
+sudo apt-get install speedtest-cli
+speedtest-cli
+```
+
+### VPS for the Experiment
+
+* https://skillhost.pl/hosting-vps-polska
+* Hetzner

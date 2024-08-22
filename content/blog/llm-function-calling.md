@@ -4,12 +4,14 @@ date: 2024-08-18T23:20:21+01:00
 draft: false
 tags: ["Dev"] 
 summary: "Testing function calling with OpenAI Models"
+url: "how-to-use-openai-function-calling"
 ---
 
 
 ## OpenAI
 
 * https://platform.openai.com/docs/guides/function-calling
+    * https://openai.com/index/introducing-structured-outputs-in-the-api/
 
 > Thanks to https://www.promptingguide.ai/applications/function_calling
 
@@ -112,6 +114,10 @@ There is another feature called **[Structured Outputs](https://openai.com/index/
 ..but we can see [its all about the prompts!](https://www.reddit.com/r/ChatGPTPro/comments/17mr3z7/system_level_prompt_that_ive_been_refining_and/)
 
 
+
+{{% details title="Example of system Prompt that works well for me " closed="true" %}}
+
+
 * https://www.promptingguide.ai/techniques/activeprompt
 
 ```py
@@ -139,13 +145,9 @@ mtg_must_have= """
 """
 
 system_reminder = """
-Good one. I've mixed and made my own version as follows:
-
 Never start your answers with "As an AI language model" when responding to questions.
 
 No disclaimer is needed in any situation.
-
-Keep the responses brief and to the point, avoid extra words and overly long explanations.
 
 Write using simple language so a grandma could understand.
 
@@ -159,11 +161,10 @@ If something seems out of reach, don’t ask the user to do it; instead, try to 
 
 When solving problems, take a breath and tackle them step by step.
 
-my career depends on you giving me a good answer
+My career depends on you giving me a good answer
 
-speak only what needs to be said
+Speak only what needs to be said. Keep the responses brief and to the point, avoid extra words and overly long explanations.
 """
-
 
 chat_completion = client.chat.completions.create(
     messages=[
@@ -181,8 +182,9 @@ chat_completion = client.chat.completions.create(
     temperature=0.7,
 )
 
-# print(chat_completion)
 # Extract and print the content of the completed message
 completed_message = chat_completion.choices[0].message.content
 print(completed_message)
 ```
+
+{{% /details %}}

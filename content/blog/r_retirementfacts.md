@@ -12,20 +12,18 @@ summary: 'In this post I show you how to build a simple interactive shiny dashbo
 url: 'r-dashboard-shinyapps'
 ---
 
-# Creating a Shiny Dashboard
-
 
 Inflation levels is a topic that is currently more and more listened. This will be the topic.
 
 In the end of 2021 I made a simple Shiny app that I deployed into ShinyApps, that was actually showing interactively the effects of inflation.
 
-So let's explain now the internals of that dashboard.
+So let's explain now the internals of that Shiny Dashboard.
 
 ## Math vs Controversy
 
 I know that discussing retirement can be a controversial topic, depending with whom we bring up the conversation.
 
-My goal with that simple app was to bring the math into those conversations, so that we could leave the emotions aside in the table and focus on the underlying data.
+My goal with that simple app was to bring the math into those conversations, so that we could **leave the emotions/biases aside** in the table and focus on the data.
 
 ## The Logic - How Does it Work?
 
@@ -44,7 +42,7 @@ The model assumes that no return on the savings are given, showing that in this 
 
 ### Libraries
 
-* Plotly - for interactive visualizations
+* **Plotly** - for interactive visualizations
     * In the UI side, it has to be called with
 
     ```r
@@ -54,7 +52,7 @@ The model assumes that no return on the savings are given, showing that in this 
     ```r
     output$SavingsEvolution <- renderPlotly({....})
     ```
-* Shiny - to build the app and have our filters
+* **Shiny** - to build the app and have our filters
     * sliderInput
     * checkboxInput
 
@@ -79,7 +77,6 @@ Also, during retirement, the effect will be present as well, so the savings will
 * I invite you to:
     * Play with the App <https://jalcocert.shinyapps.io/retirement_facts/>
     * Inspect the code <https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps>
-    * Check my post to learn [how to deploy your Shiny dashboard with ShinyApps](https://fossengineer.com/guide-deploy-shinyapps/)
     * Take a few minutes to think about this, as the example represented show that a 5% inflation rate make that person life savings last up to 75 years instead of 97.
 
 Of course, the results of this dashboard just try to show one simple example on how to build and deploy your simple app with an interactive graph and **must not been taking as a tool that provides any financial advice.**
