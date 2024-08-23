@@ -4,8 +4,8 @@ date: 2024-12-30T23:20:21+01:00
 draft: true
 tags: ["Self-Hosting"]
 description: ''
-summary: '.'
-url: ''
+summary: 'Raspberry Pi Wifi2Ethernet Bridge'
+url: 'wifi-to-ethernet-bridge'
 ---
 
 <!-- 
@@ -17,8 +17,9 @@ openwrt
 
 ## Raspberry Pi: Wifi Bridge
 
-
 I was inspired by the awsome work of **[William Halley in his blog](https://www.willhaley.com/blog/raspberry-pi-wifi-ethernet-bridge/)**, where I was able to follow succesfully the option 2 that it is proposed: *to share Wifi through Ethernet on a separated subnet*.
+
+> Let's learn a little bit about **Networking by doing!**
 
 ### Initial Setup: Option 2 - Separate Subnet
 
@@ -101,26 +102,28 @@ I decided to try with **Wireguard** (you will need a working VPN server that gen
 
 1) First, we need to have wireguard installed:
 
-{{< cmd >}}
+```sh
 sudo apt install wireguard
 cp /home/Downloads/your_vpn_wireguard_configuration.conf /etc/wireguard #download the wireguard config: account-wireguard configuration
 sudo wg-quick your_vpn_wireguard_configuration #the name of the .conf file that you have downloaded
-{{< /cmd >}}
+```
 
-This will make your wireguard client to be connected to the server. Do you want to check your public IP?
+This will make your wireguard client to be connected to the server.
 
-{{< cmd >}}
+Do you want to [check your public IP?](#is-the-vpn-working)
+
+```sh
 curl -sS https://ipinfo.io/json #the command to use
-{{< /cmd >}}
+```
 
 And if you need, to disconnect from Wireguard, just:
 
-{{< cmd >}}
+```sh
 wg-quick down <name>
 sudo wg-quick down your_vpn_wireguard_configuration
 #sudo nano /etc/resolv.conf #to check/adapt DNS name (optional)
 #sudo reboot (optional)
-{{< /cmd >}}
+```
 
 2) Use this command to check which network interface your wireguard VPN has:
 
@@ -438,7 +441,17 @@ sudo apt-get install speedtest-cli
 speedtest-cli
 ```
 
+https://speedtest.worm.ovh/
+
 ### VPS for the Experiment
 
 * https://skillhost.pl/hosting-vps-polska
 * Hetzner
+
+### Is the VPN Working?
+
+In addition to ipinfo.io, you can use:
+
+```sh
+curl -sS http://ip-api.com/json/ #provides info about country, ISP, ...
+```

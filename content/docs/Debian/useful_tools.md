@@ -683,7 +683,6 @@ flatpak run com.rustdesk.RustDesk
 
 {{% details title=" How to Create Custom Aliases" closed="true" %}}
 
-
 Lets edit this file:
 
 

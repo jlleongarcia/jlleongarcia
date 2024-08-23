@@ -1,13 +1,47 @@
 ---
-title: "Cloud vs Pi's"
+title: "Cloud vs Pi's: What Should I get?"
 date: 2024-08-10T23:20:21+01:00
 draft: false
 tags: ["Dev"]
-summary: Comparing SBCs performance with the Cloud
+summary: Comparing SBCs performance with the Cloud - Raspberry Pi, Orange Pi, Mini PC, Cloud...?
 ---
 
 
-* https://jalcocert.github.io/RPi/posts/minipc-vs-pi/
+## Analysis paralysis - Choosing Small Factor Computer 
+
+Sometime ago, I was doing some benchmarks about [Raspberry Pi vs Orange Pi](https://jalcocert.github.io/RPi/posts/pi-vs-orange/) and also about [Mini PCs vs those SBC](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/).
+
+But lately, I have been giving [a try to cloud providers](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner).
+
+There is a bunch of information on the internet: reddit, youtube and decided to create this post as both, a systematic guide and the results of testing that I could perform.
+
+{{< callout type="info" >}}
+How to run [these tests](#faq)
+{{< /callout >}}
+
+* What I the testing results include:
+  * RPi4 2GB
+  * RPi 5 8GB
+  * Orange Pi 5 8GB
+  * BMAX B4
+  * Hetzner Cloud
+
+> **Big Thanks to [Alex](https://www.linkedin.com/in/dunayeu/)** - For sharing the results of the Raspberry Pi 5 8GB  
+
+### Power Consumption and Temps
+
+{{< callout type="info" >}}
+Disabling Wi-Fi improves power efficiency. On the BMAX B4 by ~10% (~1W).
+{{< /callout >}}
+
+### GPIO
+
+
+
+
+
+
+### Computing vs Volume
 
 | Device         | CPU                                       | GPU           | RAM | Dimensions                | Idle Power | Max Power & Temp Seen | Power Adapter Requirements |
 | :------------- | :---------------------------------------- | :------------- | :-- | :------------------------- | :--------- | :-------- | :-------------------------- |
@@ -15,14 +49,22 @@ summary: Comparing SBCs performance with the Cloud
 | Orange Pi 5    | Rockchip RK3588S (4x Cortex-A76 @ 2.4GHz + 4x Cortex-A55 @ 1.8GHz) | Mali G510 MP4 | 8 GB | 100mm × 62mm × 18mm (0.112L) | ~2W & 45°C | 8W, 80C   | 5V 4A     |
 | BMAX B4        | Intel N95 (x4 cores Alder-Lake)                       | -              | 16 GB | 12.5 x 11.2 x 4.4 cm  (0.608L) | 9W & 37C  | 64W & 64°C, fan | -   |
 
+
 {{< callout type="info" >}}
-  It's very important to use proper adapter 170 events/s vs
+* It's very important to use [proper adapter](https://raspberrytips.com/how-to-power-a-raspberry-pi/) 170 events/s vs
+* The A info on adapters is the MAXIMUM they can deliver at a certain voltaje, the devices will ask for less current if they dont need that much
 {{< /callout >}}
 
-**Additional notes**:
-* Disabling Wi-Fi on the BMAX B4 can improve power efficiency by ~10% (~1W).
+## Testing Results
 
-* https://jalcocert.github.io/RPi/posts/pi-vs-orange/
+### Synthetic CPU Benchmarks
+
+#### Sysbench
+
+#### 7zip
+
+### Docker Build Time
+
 
 | Device         | Docker Build  | Max Temp | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) | Peak Temp (Docker Build) | Avg Temp (Docker Build) |
 | :------------- | :----------------- | :------- | :------------------------- | :------------------------- | :----------------------- | :----------------------- |
@@ -31,29 +73,23 @@ summary: Comparing SBCs performance with the Cloud
 | BMAX B4        | 45 seconds         | 64°C  fan  | -                          | -                         | -                       | -                       |
 | AMD 5600G        |         |    fan | -                          | -                         | -                       | -                       |
 
-
-
 {{< callout type="info" >}}
-  * How to run [these tests](#faq)
-  * For some reason, the ARM SBC's were using just one core during the docker builds (25% and 13%)
+For some reason, the ARM SBC's were using just one core during the docker builds (25% and 13%)
 {{< /callout >}}
-
-* https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner
 
 The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (when used to build the trip-planner container image).
 
 * Hetzner Shared vCPU (2x Skylake @2ghz) 4GB	~77s
 * Hetzner Shared vCPU (4x Skylake @2ghz) 8GB	~45s
 
-## Testing Results
-
-
+### Astral-SH Build Time
 {{< dropdown title="Building Astral-SH 📌" closed="true" >}}
 
-* Astral-sh build
-    * opi - 5min 20s
-    * rpi4b 2gb - 10min 7s
-    * hetzner 6m 15s
+| Platform | opi    | rpi4b 2gb | RPi 5 8GB | Hetzner  |
+|----------|--------|-----------|-----------|----------|
+| Build Time | 5min 20s | 10min 7s  | 4min 30s  | 6min 15s |
+
+> I have to mention that the [Alex](https://www.linkedin.com/in/dunayeu/) have way faster internet connection than me - which may influence this result
 
 {{< /dropdown >}}
 
@@ -97,7 +133,7 @@ cd Py_Trip_Planner
 sudo bash -c 'time docker pull python:3.8' #let's remove the time of downloading the Python base image from the equation, it was ~1 min!
 
 #docker build -t pytripplanner .
-sudo bash -c 'time docker build -t pytripplanner .'
+sudo bash -c 'time docker build --no-cache -t pytripplanner .'
 #sudo bash -c 'time podman build -t pytripplanner .'
 ```
 
@@ -121,7 +157,7 @@ sudo stress --cpu  8 --timeout 120
 {{% /details %}}
 
 
-{{% details title="Testing Connectivity" closed="true" %}}
+{{% details title="Testing Internet Connectivity" closed="true" %}}
 
 ```sh
 ip addr show
@@ -140,7 +176,16 @@ sudo apt-get install speedtest-cli
 speedtest-cli
 ```
 
+
+```sh
+curl -sS https://ipinfo.io/json #the command to use
+curl -sS http://ip-api.com/json/ #provides info about country, ISP, ...
+```
+
 {{% /details %}}
+
+
+{{< dropdown title="Measuring Temperature with NetData 📌" closed="true" >}}
 
 ```yml
 version: '3.8'
@@ -170,5 +215,6 @@ volumes:
   netdatalib:
   netdatacache:
 ```
+{{% /details %}}
 
-{{< youtube id="Y_W35yuOeRk" autoplay="false" >}}s
+{{< youtube id="h1kyncK--vQ" autoplay="false" >}}

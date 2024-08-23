@@ -27,5 +27,5 @@ you will need to restart and HDMI cable to enjoy :)
 
 * See information about your Android Phone with [CPU-Info](https://play.google.com/store/apps/details?id=com.kgurgul.cpuinfo&hl=es) or with [DevCheck]()
 
-CPU: Tensor G3 (4x Cortex A510 + 4xCortex A715 + 1x Cortex X3) - ARMv8a 64bits
-GPU: Mali-G715
+* CPU: Tensor G3 (4x Cortex A510 + 4xCortex A715 + 1x Cortex X3) - ARMv8a 64bits
+* GPU: Mali-G715
