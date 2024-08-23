@@ -180,10 +180,10 @@ EOF
 systemctl mask networking.service
 ```
 
-{{< cmd >}}
+```sh
 sudo bash bridge_wireguard.sh
 sudo reboot
-{{< /cmd >}}
+```
 
 <!-- 
 ## with Tailscale VPN  -->
