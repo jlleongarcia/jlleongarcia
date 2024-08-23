@@ -26,29 +26,39 @@ How to run [these tests](#faq)
   * BMAX B4
   * Hetzner Cloud
 
-> **Big Thanks to [Alex](https://www.linkedin.com/in/dunayeu/)** - For sharing the results of the Raspberry Pi 5 8GB  
+> **Big Thanks to [Alex](https://www.linkedin.com/in/dunayeu/) 🙌** - For sharing the results of the Raspberry Pi 5 8GB  
 
 ### Power Consumption and Temps
 
+| Device | Idle Power | Max (Power & Temp Seen) | Power Adapter | Yearly 🔌 Cost (USD) |
+| :-- | :-- | :-- | :-- | :-- |
+| Raspberry Pi 4 | ~2/3w | 6W | 5V 3A | ~$5 |
+| Orange Pi 5 | ~3/5~W | 8W, 80°C | 5V 4A | ~$8 |
+| BMAX B4 | 9W | 18W & 64°C, fan | - | ~$14 |
+
 {{< callout type="info" >}}
-Disabling Wi-Fi improves power efficiency. On the BMAX B4 by ~10% (~1W).
+* Disabling Wi-Fi improves power efficiency. On the BMAX B4 by ~10% (~1W).
+* Calculation
+  * Annual kWh = Idle Power in Watts × 24 hours/day × 365 days/year ÷ 1000 (to convert W to kW)
+  * Cost = Annual kWh × Cost per kWh (USD)
 {{< /callout >}}
+
+> At the time of writing, I pay ~0.2$/kWh
 
 ### GPIO
 
+No discussion here - The Raspberries are the absolute winners.
 
-
-
+Also in software support.
 
 
 ### Computing vs Volume
 
-| Device         | CPU                                       | GPU           | RAM | Dimensions                | Idle Power | Max Power & Temp Seen | Power Adapter Requirements |
-| :------------- | :---------------------------------------- | :------------- | :-- | :------------------------- | :--------- | :-------- | :-------------------------- |
-| Raspberry Pi 4 | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72) | VideoCore VI @ 500mhz   | 2 GB | 85.6mm × 56.5mm × 17mm (0.082L) | 2-3W        | 6W        | 5V 3A           |
-| Orange Pi 5    | Rockchip RK3588S (4x Cortex-A76 @ 2.4GHz + 4x Cortex-A55 @ 1.8GHz) | Mali G510 MP4 | 8 GB | 100mm × 62mm × 18mm (0.112L) | ~2W & 45°C | 8W, 80C   | 5V 4A     |
-| BMAX B4        | Intel N95 (x4 cores Alder-Lake)                       | -              | 16 GB | 12.5 x 11.2 x 4.4 cm  (0.608L) | 9W & 37C  | 64W & 64°C, fan | -   |
-
+| Device | CPU | GPU | RAM | Dimensions |
+| :-- | :-- | :-- | :-- | :-- |
+| Raspberry Pi 4 | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72) | VideoCore VI @ 500mhz | 2/4 GB | 85.6mm × 56.5mm × 17mm (0.082L) |
+| Orange Pi 5 | Rockchip RK3588S (4x Cortex-A76 @ 2.4GHz + 4x Cortex-A55 @ 1.8GHz) | Mali G510 MP4 | 8 GB | 100mm × 62mm × 18mm (0.112L) |
+| BMAX B4 | Intel N95 (x4 cores Alder-Lake) | - | 16 GB | 12.5 x 11.2 x 4.4 cm  (0.608L) |
 
 {{< callout type="info" >}}
 * It's very important to use [proper adapter](https://raspberrytips.com/how-to-power-a-raspberry-pi/) 170 events/s vs
@@ -61,17 +71,51 @@ Disabling Wi-Fi improves power efficiency. On the BMAX B4 by ~10% (~1W).
 
 #### Sysbench
 
+{{< details title="Results - 7zip 📌" closed="true" >}}
+
+| Device | Tot (4 threads) |
+| :-- | :-- | :-- |
+| Raspberry Pi 4 2GB | ~1.7k events (?) | 
+| Raspberry Pi 4 4GB | 1442/5508 | 
+| Raspberry Pi 5 8GB | 2.7k/10k | 
+| Orange Pi 5 |  2.4k/10.6k | 
+
+```sh
+7z b -mmt4
+```
+
+{{< /details >}}
+
 #### 7zip
+
+{{< details title="Results - 7zip 📌" closed="true" >}}
+
+| Device | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) |
+| :-- | :-- | :-- |
+| Raspberry Pi 4 2GB | ~1.7k events (?) | - |
+| Raspberry Pi 4 4GB | ~28k events | - |
+| Orange Pi 5 | ~38k events | ~50k events |
+| AMD 5600G | - | - |
+
+{{< /details >}}
+
+
 
 ### Docker Build Time
 
+{{< details title="Results - Building Docker Image for Trip-Planner 📌" closed="true" >}}
 
-| Device         | Docker Build  | Max Temp | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) | Peak Temp (Docker Build) | Avg Temp (Docker Build) |
-| :------------- | :----------------- | :------- | :------------------------- | :------------------------- | :----------------------- | :----------------------- |
-| Raspberry Pi 4 | ~3672s             | -        | ~1.7k events           | -                         | ~46°C                   | ~39°C                   |
-| Orange Pi 5    | ~1777s             | 80°C    | ~38k events           | ~50k            | ~65°C                   | ~50°C                   |
-| BMAX B4        | 45 seconds         | 64°C  fan  | -                          | -                         | -                       | -                       |
-| AMD 5600G        |         |    fan | -                          | -                         | -                       | -                       |
+* I love using [Docker for SelfHosting](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
+
+| Device | Docker Build | Max Temp | Peak Temp (Docker Build) | Avg Temp (Docker Build) |
+| :-- | :-- | :-- | :-- | :-- |
+| Raspberry Pi 4 2GB | ~3672s | - | ~46°C | ~39°C |
+| Raspberry Pi 4 4GB | ~3480s | - | - | - |
+| Orange Pi 5 | ~1777s | 80°C | ~65°C | ~50°C |
+| BMAX B4 | ~45 seconds | 64°C fan | - | - |
+| AMD 5600G | - | - fan | - | - |
+
+{{< /details >}}
 
 {{< callout type="info" >}}
 For some reason, the ARM SBC's were using just one core during the docker builds (25% and 13%)
@@ -83,7 +127,7 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 * Hetzner Shared vCPU (4x Skylake @2ghz) 8GB	~45s
 
 ### Astral-SH Build Time
-{{< dropdown title="Building Astral-SH 📌" closed="true" >}}
+{{< details title="Building Astral-SH 📌" closed="true" >}}
 
 | Platform | opi    | rpi4b 2gb | RPi 5 8GB | Hetzner  |
 |----------|--------|-----------|-----------|----------|
@@ -91,7 +135,7 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 
 > I have to mention that the [Alex](https://www.linkedin.com/in/dunayeu/) have way faster internet connection than me - which may influence this result
 
-{{< /dropdown >}}
+{{< /details >}}
 
 
 ---
@@ -105,7 +149,7 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 #cat /proc/cpuinfo
 #uname -a
 #nproc
-sudo apt install sysbench 
+sudo apt install sysbench -y
 sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
 ```
 
@@ -185,7 +229,7 @@ curl -sS http://ip-api.com/json/ #provides info about country, ISP, ...
 {{% /details %}}
 
 
-{{< dropdown title="Measuring Temperature with NetData 📌" closed="true" >}}
+{{< details title="Measuring Temperature with NetData 📌" closed="true" >}}
 
 ```yml
 version: '3.8'

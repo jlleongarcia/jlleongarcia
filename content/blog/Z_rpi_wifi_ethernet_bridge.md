@@ -1,16 +1,14 @@
 ---
-title: "Wifi to Ethernet Bridge (through Wireguard VPN)"
-date: 2024-12-30T23:20:21+01:00
-draft: true
-tags: ["Self-Hosting"]
-description: ''
-summary: 'Raspberry Pi Wifi2Ethernet Bridge'
-url: 'wifi-to-ethernet-bridge'
+title: "Networking - Wifi to Ethernet Bridge"
+date: 2024-08-23T10:20:21+01:00
+draft: false
+tags: ["Dev"]
+description: 'Tinkering with a Raspberry Pi and Networking.'
+summary: 'Raspberry Pi - Wifi2Ethernet Bridge (With Wireguard) and more'
+url: 'raspberry-pi-networking'
 ---
 
-<!-- 
-openwrt
-<https://www.youtube.com/watch?v=fOYmHPmvSVg> -->
+
 
 <!-- <https://www.youtube.com/watch?v=qhe6KUw3D78> -->
 
@@ -84,9 +82,9 @@ systemctl mask networking.service
 
 * **Remember**, the names of wlan0 and eth0 used, can be different in other devices, check it with:
 
-{{< cmd >}}
+```sh
 ifconfig
-{{< /cmd >}}
+```
 
 The end result is that **the Raspberry Pi will act as a bridge between the WiFi connection and the Ethernet connection**, providing Internet access to devices connected via Ethernet- to the RPi.
 
@@ -127,17 +125,17 @@ sudo wg-quick down your_vpn_wireguard_configuration
 
 2) Use this command to check which network interface your wireguard VPN has:
 
-{{< cmd >}}
+```sh
 ifconfig
-{{< /cmd >}}
+```
 
 3) This will be our new **bridge_wireguard.sh** script to route the WIFI to ethernet and provide VPN connection at the same time:
 
 
 
-{{< cmd >}}
+```sh
 sudo nano bridge_wireguard.sh
-{{< /cmd >}}
+```
 
 ```sh
 #!/usr/bin/env bash
@@ -455,3 +453,74 @@ In addition to ipinfo.io, you can use:
 ```sh
 curl -sS http://ip-api.com/json/ #provides info about country, ISP, ...
 ```
+
+* dnscheck.tools
+
+### How to Setup WG-Easy
+
+```sh
+ip -4 -brief a #you will need to use it
+```
+
+```yml
+version: '3'
+services:
+  wg-easy:
+    container_name: wg-easy
+    #env_file: .env
+    environment:
+      - WG_HOST= your-vps-ip-address #${WG_HOST}
+      - WG_PORT=51820
+      - PASSWORD= someamazingpassword #${WG_PASSWORD} # It's recommended to keep sensitive data in an .env file
+      #- WG_PEER_DEFAULT_DNS=9.9.9.9
+      - LANG=en
+    volumes:
+      - ./wg-easy:/etc/wireguard
+      #- wg_data:/etc/wireguard
+    ports:
+      - 51820:51820/udp # VPN traffic
+      - 51821:51821/tcp # Web interface
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+      - net.ipv4.ip_forward=1
+    restart: unless-stopped
+    image: ghcr.io/wg-easy/wg-easy
+#     networks:
+#       - nginx_default #https for wg-easy UI  
+  
+# networks:
+#   nginx_default:
+#     external: true    
+
+# volumes:
+#   wg_data:
+#     name: wg_data    
+```
+
+
+### How to Setup RaspAP
+
+```yml
+
+
+```
+
+> Go to `http://raspberrypi.local` and access it with `admin/secret`
+
+
+### Software for Routers
+
+#### VyOS
+
+* https://github.com/runborg/vyos-pi-builder
+
+#### OpenWRT
+
+* https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi
+
+<!-- 
+openwrt
+<https://www.youtube.com/watch?v=fOYmHPmvSVg> -->
