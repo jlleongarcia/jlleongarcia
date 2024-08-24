@@ -3,8 +3,8 @@ title: "Self-hosting Python DASH Apps: with Docker (and Cloudflare Tunnels)"
 date: 2023-04-15T23:20:21+01:00
 draft: false
 tags: ["Docker","Self-Hosting","Python","DASH","Trip-Planner"]
-description: 'Exposing Python DASH Apps with Docker and Cloudflare Zero Trust Tunnels securely for free.'
-summary: 'Discovering the differences in the deployment process of a Python DASH App (Trip Planner with Weather): Google Cloud Run vs. using the Docker DASH image of the App together with Cloudflare to deploy it securely from home.'    
+description: 'Exposing Python DASH Apps with Docker and Cloudflare Zero Trust Tunnels (securely and free).'
+summary: 'The deployment process of a Python DASH App - Google Cloud Run vs. Docker Image + Cloudflare to serve it securely from home.'    
 url: 'selfhosting-python-dash-apps-with-docker'   
 ---
 
@@ -14,6 +14,12 @@ Dash is a popular **Python framework for building interactive web applications**
 When it comes to deploying a Dash Docker App, you have two main options: self-hosting or using a cloud service *like Google Cloud Run*. 
 
 **The goal today** is to  compare these two options, highlighting their respective pros and cons, share a personal experience of unexpected billing when deploying a Dash app on Google Cloud Run and show you how to share with the world securely your Python DASH Apps by using Docker and Cloudflare (for free).
+
+* The project in [Github - Py_Trip_Planner](https://github.com/JAlcocerT/Py_Trip_Planner "Python Trip Planner with Weather in Github {rel='nofollow'}") 
+
+* Don't have a IDE right now? Have a look to the .ipynb notebook that I used to integrate the packages with Google Colaboratory:
+ [![Google Colab](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Py_Trip_Planner/blob/main/TripPlanner.ipynb "Google Colaboratory: Python Trip Planner {rel='nofollow'}") 
+
 
 ## Deploying Python Apps: Self-Hosting vs Google Cloud Run
 
@@ -113,22 +119,39 @@ networks:
     external: true
 ```
 
-* Step 5: go to the Cloudflare UI and add the public host names as explained [in the Cloudflare guide](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/#cloudflare-tunnel---adding-the-docker-container-to-the-ui).
+* Step 5: go to the Cloudflare UI and add the public host names as explained [in this Cloudflare Guide](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/#cloudflare-tunnel---adding-the-docker-container-to-the-ui).
+  * https://one.dash.cloudflare.com -> Networks -> `Tunnels`
+
+{{< youtube id="VrV0udRUi8A" autoplay="false" >}}
 
 ---
 
 ## FAQ
 
-### How can I try the Python DASH App?
 
-You can see the result from any browser here: <https://trip-planner.fossengineer.com/>
+ ### How to use Cloudflare to Restrict Access to Apps
+
+* Go to https://www.cloudflare.com/ -> [Zero Trust](https://one.dash.cloudflare.com)
+  * Access -> Applications -> Add an application (selecting Self-hosted)
+    * **Version 1 - with IP** At the `Add policies` section, give it a name to the policy and configure rules
+      * Select `IP ranges` and include your (or friends/family) **home Public IP address** as below
+        * You might need to add ipv4 AND **ipv6 range**: `some:ip:v6:string::/64`
+    * Finish the process with clicking `add an application`
+    * **Version 2 - with email** At the `Add policies` section, give it a name to the policy and configure rules
+      * Select `email` or `emails ending in` and include your (or friends/family) **home Public IP address** as below  
+
+```sh
+curl -sS https://ipinfo.io/json
+curl -6 ifconfig.me #provided ipv6
+```
+
+{{< callout type="info" >}}
+* You can use **Tailscale** with a home device as **exit node** if you are away
+* You can setup custom logos available at a website, like: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
+  * Make sure to understand that you are allowed to use a logo!
+{{< /callout >}}
 
 
-### How can I Contribute?
+{{< youtube id="65FdHRs0axE" autoplay="false" >}}
 
-I have made all the code **Open Source** and this is the public Github repository where I have built the code, please feel free to have a look, experiment with the code and suggest any improvements:
-
-* The project in [Github](https://github.com/JAlcocerT/Py_Trip_Planner "Python Trip Planner with Weather in Github {rel='nofollow'}") 
-
-* Don't have a IDE right now? Have a look to the .ipynb notebook that I used to integrate the packages with Google Colaboratory:
- [![Google Colab](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Py_Trip_Planner/blob/main/TripPlanner.ipynb "Google Colaboratory: Python Trip Planner {rel='nofollow'}") 
+> Thanks a lot to DBTech for this!

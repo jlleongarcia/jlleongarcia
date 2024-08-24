@@ -137,8 +137,7 @@ fig.show()
 
 Trying the app locally might be an easy process for people that are familiar with software development. But I want this project to help as much people as possible.
 
-* For that reason I [deployed the DASH App at home using Docker and Cloudflare Tunnels](https://fossengineer.com/selfhosting-python-dash-apps-with-docker/).
-    * You can **use it for free from any browser at:** <https://trip-planner.fossengineer.com/>
+* For that reason I [deployed the DASH App at home using Docker and Cloudflare Tunnels](https://jalcocert.github.io/JAlcocerT/selfhosting-python-dash-apps-with-docker/).
 
 
 ### How can I Contribute?

@@ -34,10 +34,10 @@ Sounds like magic? Well, it's not.
     * {{< newtab url="https://github.com/JAlcocerT/Py_Trip_Planner?tab=GPL-3.0-1-ov-file#readme" text="License: GNU v3" >}} ✅
 
 * Powered Thanks to:
-    * OpenMeteo - https://fossengineer.com/python-weather-forecast-with-open-meteo-api/
-    * DASH - https://fossengineer.com/improving-ui-python-dash-apps/
-    * MeteoStat - https://fossengineer.com/python-historical-weather-api-with-meteostat/
-    * Docker for SelfHosting - https://fossengineer.com/selfhosting-python-dash-apps-with-docker/
+    * [OpenMeteo](https://jalcocert.github.io/JAlcocerT/python-weather-forecast-with-open-meteo-api)
+    * [DASH](https://jalcocert.github.io/JAlcocerT/improving-ui-python-dash-apps/)
+    * [MeteoStat](https://jalcocert.github.io/JAlcocerT/python-historical-weather-api-with-meteostat)
+    * [Docker for SelfHosting](#how-can-i-try-the-python-trip-planner-app)
 
 ## How A Python App can be a Weather Compass
 
@@ -49,7 +49,7 @@ One such story was my tryst with the weather. Europe, with its unpredictable cli
 
 While I mostly got lucky with the weather, there were moments when I wished I had a crystal ball to peek into the future. **And that's when this idea struck.**
 
-It's not just an app; it's the culmination of a dream, [a dream born on the open roads of Europe](https://fossengineer.com/tags/cyclingthrougheurope/).
+It's not just an app; it's the culmination of a dream, **a dream born on the open paths of Europe**.
 
 ### The Birth of the Python Trip Planner
 
@@ -150,9 +150,13 @@ Docker ensured the app ran smoothly, and [Cloudflare Tunnel](https://fossenginee
 
 ### How Can I try the Python Trip Planner App?
 
-Trying the DASH App locally might be an easy process for people that are familiar with software development. But I want this project to help as much people as possible.
+Trying the DASH App locally might be an easy process for people that are familiar with software development.
 
-* For that reason I [deployed the DASH App at home using Docker and Cloudflare Tunnels](https://fossengineer.com/selfhosting-python-dash-apps-with-docker/).
+But I want this project to help as much people as possible.
+
+You can use it [locally with Docker]( https://jalcocert.github.io/JAlcocerT/selfhosting-python-dash-apps-with-docker/), just follow [the repo instructions](https://github.com/JAlcocerT/Py_Trip_Planner/tree/main/Deploy)
+
+* For that reason I [deployed the DASH App at home using Docker and Cloudflare Tunnels](https://jalcocert.github.io/JAlcocerT/selfhosting-python-dash-apps-with-docker//).
     * You can **use it for free from any browser at:** <https://trip-planner.fossengineer.com/>
 
 

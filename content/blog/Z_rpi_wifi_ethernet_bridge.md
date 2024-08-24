@@ -100,7 +100,7 @@ sudo wg-quick your_vpn_wireguard_configuration #the name of the .conf file that 
 
 This will make your wireguard client to be connected to the server.
 
-Do you want to [check your public IP?](#is-the-vpn-working)
+Do you want to [check your public IP?](#faq)
 
 ```sh
 curl -sS https://ipinfo.io/json #the command to use
@@ -119,14 +119,15 @@ sudo wg-quick down your_vpn_wireguard_configuration
  
 {{% steps %}}
 
-### Use this command to check which network interface your wireguard VPN has:
+### Check network interface for wireguard VPN
 
 ```sh
 ifconfig
 ```
 
-### This will be our new **bridge_wireguard.sh** script to route the WIFI to ethernet and provide VPN connection at the same time:
+### Create new **bridge_wireguard.sh** script 
 
+It routes the WIFI to ethernet and provide VPN connection at the same time:
 ```sh
 sudo nano bridge_wireguard.sh
 ```
@@ -221,8 +222,11 @@ speedtest-cli
 In addition to ipinfo.io, you can use:
 
 ```sh
+curl https://ipapi.co/json/
 #curl -sS https://ipinfo.io/json
 curl -sS http://ip-api.com/json/ #provides info about country, ISP, ...
+curl -sS https://am.i.mullvad.net/json #https://whatismyipaddress.com/
+curl -6 ifconfig.me #ipv6 info 
 ```
 {{< /details >}}
 
@@ -348,18 +352,141 @@ services:
 #     name: wg_data    
 ```
 
+{{< /details >}}
+
+{{< callout type="info" >}}
+You can also try with PiVPN
+{{< /callout >}}
+
+
+{{< details title="How to Setup TailScale with  Docker 📌" closed="true" >}}
+
+* https://login.tailscale.com/admin/machines
+  * Settings -> Keys -> `Generate Auth Key`
+
+```yml
+version: '3' #https://tailscale.com/blog/getting-started-with-docker-and-tailscale
+services: #https://www.youtube.com/watch?v=YTjYXii4WzI
+  tailscale-authkey1: #https://github.com/tailscale-dev/docker-guide-code-examples/blob/main/06-quickstart-vid/01-nginx-basic/docker-compose.yaml
+    container_name: ts-authkey-test
+    restart: unless-stopped
+    image: tailscale/tailscale:latest #https://tailscale.com/kb/1282/docker
+    hostname: coolurl
+    environment:
+      - TS_AUTHKEY=tskey-auth-get-the-string #use tailscale admin console for this
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_USERSPACE=false
+    volumes:
+      - ts-authkey-test:/var/lib/tailscale
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - net_admin
+      - sys_module
+    restart: unless-stopped
+  nginx-authkey-test:
+    image: nginx
+    network_mode: service:tailscale-authkey1 #the name of the service above
+  # metube-authkey-test:
+  #   #image: nginx
+  #   network_mode: service:tailscale-authkey1 #the name of the service above
+  #   image: ghcr.io/alexta69/metube
+  #   container_name: metube
+  #   restart: unless-stopped
+  #   # ports:
+  #   #   - "8081:8081"
+  #   volumes:
+  #     - "/home/user/Downloads:/downloads"    
+volumes:
+  ts-authkey-test:
+    driver: local
+```
+
+Deploying containers directly onto your tailnet transforms each one into a fully operational node, equivalent to any other node in the network.
+
+Tailscale eliminates the need for intricate firewall configurations or port forwarding.
+
+Tailscale efficiently handles even the most complex NAT setups, ensuring smooth connectivity.
+
+* Settings -> OAuth Clients -> `Generate OAuth Client`
+
+```yml
+version: '3' #https://tailscale.com/blog/getting-started-with-docker-and-tailscale
+services: #https://www.youtube.com/watch?v=YTjYXii4WzI
+  tailscale-authkey1: #https://github.com/tailscale-dev/docker-guide-code-examples/blob/main/06-quickstart-vid/02-stirlingpdf/docker-compose.yaml
+    container_name: ts-authkey-test
+    restart: unless-stopped
+    image: tailscale/tailscale:latest #https://tailscale.com/kb/1282/docker
+    hostname: pdf
+    environment:
+      - TS_AUTHKEY=tskey-auth-get-the-string #use tailscale admin console for this
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_USERSPACE=false
+    volumes:
+      - ts-authkey-test:/var/lib/tailscale
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - net_admin
+      - sys_module
+    restart: unless-stopped
+
+  metube-authkey-test:
+    network_mode: service:tailscale-authkey1 #the name of the service above
+    image: ghcr.io/alexta69/metube
+    container_name: metube
+    restart: unless-stopped
+    # ports:
+    #   - "8081:8081"
+    volumes:
+      - "/home/user/Downloads:/downloads"    
+volumes:
+  ts-authkey-test:
+    driver: local
+```
 
 {{< /details >}}
 
-
 ### How to Setup RaspAP
 
-```yml
-
-
+```sh
+curl -sL https://install.raspap.com | bash #https://docs.raspap.com/
 ```
 
-> Go to `http://raspberrypi.local` and access it with `admin/secret`
+> Go to `http://raspberrypi.local` and access it with `admin/secret`. You will see a network called `raspi-webgui`, pass `ChangeMe`
+
+{{< details title="RaspAP with NordVPN 📌" closed="true" >}}
+
+* https://my.nordaccount.com
+
+{{< /details >}}
+
+{{< details title="RaspAP with ProtonVPN 📌" closed="true" >}}
+
+* https://account.protonvpn.com/login
+  * https://account.protonvpn.com/downloads
+
+```
+[Interface]
+# Bouncing = 2
+# NAT-PMP (Port Forwarding) = off
+# VPN Accelerator = on
+PrivateKey = +some/pri/key=
+Address = address/32
+DNS = 10.2.0.1
+
+[Peer]
+# NL-FREE#103073
+PublicKey = +some/string=
+AllowedIPs = 0.0.0.0/0
+Endpoint = ipaddress:51820
+```
+
+{{< /details >}}
+
+{{< details title="RaspAP with Mullvad 📌" closed="true" >}}
+
+* https://mullvat.net
+
+{{< /details >}}
 
 
 ### Software for Routers
