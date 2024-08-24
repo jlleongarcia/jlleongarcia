@@ -6,3 +6,5 @@ tags: ["Dev"]
 summary: "How to use the Structured Output Feature with OpenAI"
 url: "how-to-use-structured-outputs-LLM"
 ---
+
+* https://openai.com/index/introducing-structured-outputs-in-the-api/

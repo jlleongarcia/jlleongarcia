@@ -71,7 +71,7 @@ Also in software support.
 
 #### Sysbench
 
-{{< details title="Results - 7zip 📌" closed="true" >}}
+{{< details title="Results - Sysbench 📌" closed="true" >}}
 
 | Device | Tot (4 threads) |
 | :-- | :-- | :-- |
