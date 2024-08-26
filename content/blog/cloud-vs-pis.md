@@ -6,6 +6,7 @@ tags: ["Dev"]
 summary: Comparing SBCs performance with the Cloud - Raspberry Pi, Orange Pi, Mini PC, Cloud...?
 ---
 
+Time to choose - where is it worth [to do SelfHosting](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)?
 
 ## Analysis paralysis - Choosing Small Factor Computer 
 
@@ -20,8 +21,8 @@ How to run [these tests](#faq)
 {{< /callout >}}
 
 * What I the testing results include:
-  * RPi4 2GB
-  * RPi 5 8GB
+  * Raspberry Pi 4 2/4GB
+  * Raspberry Pi 5 8GB
   * Orange Pi 5 8GB
   * BMAX B4
   * Hetzner Cloud
@@ -85,23 +86,6 @@ Also in software support.
 
 #### Sysbench
 
-{{< details title="Results - Sysbench 📌" closed="true" >}}
-
-| Device | Tot (4 threads) |
-| :-- | :-- | :-- |
-| Raspberry Pi 4 2GB | ~1.7k events (?) | 
-| Raspberry Pi 4 4GB | 1442/5508 | 
-| Raspberry Pi 5 8GB | 2.7k/10k | 
-| Orange Pi 5 |  2.4k/10.6k | 
-
-```sh
-7z b -mmt4
-```
-
-{{< /details >}}
-
-#### 7zip
-
 {{< details title="Results - 7zip 📌" closed="true" >}}
 
 | Device | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) |
@@ -112,6 +96,25 @@ Also in software support.
 | AMD 5600G | - | - |
 
 {{< /details >}}
+
+#### 7zip
+
+
+{{< details title="Results - Sysbench 📌" closed="true" >}}
+
+| Device | Tot (4 threads) |
+| :-- | :-- | :-- |
+| Raspberry Pi 4 2GB | ~1.7k events (?) | 
+| Raspberry Pi 4 4GB | 1442/5508 | 
+| Raspberry Pi 5 8GB | 2.7k/10k | 
+| Orange Pi 5 |  2.7k/11.8k | 
+
+```sh
+7z b -mmt4
+```
+
+{{< /details >}}
+
 
 
 
@@ -219,6 +222,11 @@ sudo stress --cpu  8 --timeout 120
 
 ```sh
 ip addr show
+hostname -I
+
+#sudo apt-get install net-tools
+#ifconfig
+
 ping -c 4 192.168.3.1 #gateway
 ping 9.9.9.9 #quad9
 ```
@@ -297,6 +305,31 @@ sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always \
 -v /var/run/docker.sock:/var/run/docker.sock \
 -v portainer_data:/data \
 portainer/portainer-ce #now you can re-use your portainer, as it was
+```
+
+{{% /details %}}
+
+
+{{% details title="Hot to mount external drives consistently" closed="true" %}}
+
+```sh
+lsblk #list them again
+lsblk -f /dev/sda1 /dev/sdb2 #see the format and the UUID of a couple of blocks
+df -h /dev/sda1 #you will see if its mounted
+```
+
+```sh
+sudo nano /etc/fstab #forever
+UUID=some-uuid-of-your-drive /mnt/ext4_mount_point_folder ext4 defaults 0 1
+```
+
+For one time:
+```sh
+sudo mkdir -p /mnt/data_ntfs_500
+sudo mount -t ntfs /dev/sda1 /mnt/data_ntfs_500/ #example with ntfs
+
+sudo mkdir -p /mnt/data_ext_2tb
+sudo mount -t ext4 /dev/sdb2 /mnt/data_ext_2tb/ #example with ntfs
 ```
 
 {{% /details %}}
