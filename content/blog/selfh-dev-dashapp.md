@@ -3,7 +3,7 @@ title: "Self-hosting Python DASH Apps: Cloudflare Tunnels"
 date: 2023-04-15T23:20:21+01:00
 draft: false
 tags: ["Docker","Self-Hosting","Python","DASH","Trip-Planner"]
-description: 'Python DASH Apps with Docker and Cloudflare Zero Trust Tunnels.
+description: 'Python DASH Apps with Docker and Cloudflare Zero Trust Tunnels.'
 summary: 'The deployment process of a Python DASH App - Google Cloud Run vs. Docker Image + Cloudflare to serve it securely and free from home.'    
 url: 'selfhosting-python-dash-apps-with-docker'   
 ---
