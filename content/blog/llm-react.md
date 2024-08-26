@@ -42,3 +42,90 @@ Function calling agents provide ease of use but less control, while ReACt agents
 ## LangChain - AgentsExecutors
 
 * https://api.python.langchain.com/en/latest/agents/langchain.agents.agent.AgentExecutor.html
+
+{{% details title="Why ? 🚀" closed="true" %}}
+
+
+{{% /details %}}
+
+---
+
+## FAQ
+
+{{% details title="What could ReAct enhance? Two projects in mind 🚀" closed="true" %}}
+
+* Streamlit Multichat and the YT Summarizer with Groq from PhiData
+
+```yml
+version: '3'
+
+services:
+  streamlit_multichat:
+    image: ghcr.io/jalcocert/streamlit-multichat:latest
+    container_name: streamlit_multichat
+    volumes:
+      - ai_streamlit_multichat:/app
+    working_dir: /app
+    command: /bin/sh -c "\
+      mkdir -p /app/.streamlit && \
+      echo 'OPENAI_API_KEY = \"sk-proj-oaiapi\"' > /app/.streamlit/secrets.toml && \
+      echo 'GROQ_API_KEY = \"gsk_yourgroqapi\"' >> /app/.streamlit/secrets.toml && \
+      echo 'ANTHROPIC_API_KEY = \"sk-ant-anthapikey-\"' >> /app/.streamlit/secrets.toml && \      
+      streamlit run Z_multichat_Auth.py"
+    ports:
+      - "8501:8501"
+    networks:
+      - cloudflare_tunnel
+    restart: always
+      # - nginx_default      
+
+networks:
+  cloudflare_tunnel:
+    external: true
+  # nginx_default:
+  #   external: true
+
+volumes:
+  ai_streamlit_multichat:
+```
+
+```yml
+version: '3.8'
+
+services:
+  phidata_service:
+    image: ghcr.io/jalcocert/phidata:yt-groq #phidata:yt_summary_groq
+    container_name: phidata_yt_groq
+    ports:
+      - "8502:8501"    
+    environment:
+      - GROQ_API_KEY=gsk_yourgroq_apikey # your_api_key_here
+    command: streamlit run cookbook/llms/groq/video_summary/app.py
+    restart: always
+#     networks:
+#       - cloudflare_tunnel
+            
+# networks:
+#   cloudflare_tunnel:
+#     external: true        
+```
+
+To use Cloudflare tunnels, you will need:
+
+```yml
+version: '3.8'
+
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared
+    command: tunnel --no-autoupdate run --token your_cloudflare_token
+    networks:
+      - tunnel
+    restart: unless-stopped
+
+networks:
+  tunnel:
+```
+
+{{% /details %}}

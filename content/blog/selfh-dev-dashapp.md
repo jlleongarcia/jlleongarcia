@@ -1,10 +1,10 @@
 ---
-title: "Self-hosting Python DASH Apps: with Docker (and Cloudflare Tunnels)"
+title: "Self-hosting Python DASH Apps: Cloudflare Tunnels"
 date: 2023-04-15T23:20:21+01:00
 draft: false
 tags: ["Docker","Self-Hosting","Python","DASH","Trip-Planner"]
-description: 'Exposing Python DASH Apps with Docker and Cloudflare Zero Trust Tunnels (securely and free).'
-summary: 'The deployment process of a Python DASH App - Google Cloud Run vs. Docker Image + Cloudflare to serve it securely from home.'    
+description: 'Python DASH Apps with Docker and Cloudflare Zero Trust Tunnels.
+summary: 'The deployment process of a Python DASH App - Google Cloud Run vs. Docker Image + Cloudflare to serve it securely and free from home.'    
 url: 'selfhosting-python-dash-apps-with-docker'   
 ---
 
@@ -93,13 +93,17 @@ This might take a while, depending in the device where you will run it.
 
 * Step 4: Deploy your App together [with Cloudflare](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker) to expose it securely:
 
-With CLI:
+{{< details title="With CLI" closed="true" >}}
 
 ```sh
 docker run --name py_trip_planner --network tunnel -p 8050:8050 --detach py_trip_planner
 ```
 
-Or Docker-Compose:
+{{< /details >}}
+
+
+{{< details title="Or Docker-Compose:" closed="true" >}}
+
 
 ```yml
 version: '3.8'
@@ -119,8 +123,12 @@ networks:
     external: true
 ```
 
+{{< /details >}}
+
+
+
 * Step 5: go to the Cloudflare UI and add the public host names as explained [in this Cloudflare Guide](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/#cloudflare-tunnel---adding-the-docker-container-to-the-ui).
-  * https://one.dash.cloudflare.com -> Networks -> `Tunnels`
+* https://one.dash.cloudflare.com -> Networks -> `Tunnels`
 
 {{< youtube id="VrV0udRUi8A" autoplay="false" >}}
 
@@ -128,17 +136,16 @@ networks:
 
 ## FAQ
 
-
- ### How to use Cloudflare to Restrict Access to Apps
+### How to use Cloudflare to Restrict Access to Apps
 
 * Go to https://www.cloudflare.com/ -> [Zero Trust](https://one.dash.cloudflare.com)
-  * Access -> Applications -> Add an application (selecting Self-hosted)
-    * **Version 1 - with IP** At the `Add policies` section, give it a name to the policy and configure rules
-      * Select `IP ranges` and include your (or friends/family) **home Public IP address** as below
-        * You might need to add ipv4 AND **ipv6 range**: `some:ip:v6:string::/64`
-    * Finish the process with clicking `add an application`
-    * **Version 2 - with email** At the `Add policies` section, give it a name to the policy and configure rules
-      * Select `email` or `emails ending in` and include your (or friends/family) **home Public IP address** as below  
+* Access -> Applications -> Add an application (selecting Self-hosted)
+  * **Version 1 - with IP** At the `Add policies` section, give it a name to the policy and configure rules
+    * Select `IP ranges` and include your (or friends/family) **home Public IP address** as below
+      * You might need to add ipv4 AND **ipv6 range**: `some:ip:v6:string::/64`
+  * Finish the process with clicking `add an application`
+  * **Version 2 - with email** At the `Add policies` section, give it a name to the policy and configure rules
+    * Select `email` or `emails ending in` and include your (or friends/family) **home Public IP address** as below  
 
 ```sh
 curl -sS https://ipinfo.io/json
@@ -149,6 +156,7 @@ curl -6 ifconfig.me #provided ipv6
 * You can use **Tailscale** with a home device as **exit node** if you are away
 * You can setup custom logos available at a website, like: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
   * Make sure to understand that you are allowed to use a logo!
+* You can use **Accesses Groups** to make re-usable rules
 {{< /callout >}}
 
 

@@ -52,6 +52,20 @@ No discussion here - The Raspberries are the absolute winners.
 Also in software support.
 
 
+{{< details title="OrangePi 5 with Latest Kernel 📌" closed="true" >}}
+* [Installing OS](https://jalcocert.github.io/RPi/posts/getting-started/) with latest kernel thanks to [Joshua-Riek](https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5b.html)
+  * Remember that they are not the [official ones](https://github.com/orangepi-xunlong/orangepi-build)!
+  * I have tried the 6.1.75 version, which has HDMI support working
+  * Other 3rd party images: **[Armbian](https://www.armbian.com/orangepi-5/)**
+
+{{< /details >}}
+
+{{< callout type="info" >}}
+* You can boot RPi5 from NVMe [like so](https://jalcocert.github.io/RPi/posts/pi-vs-orange/#using-nvme-with-the-orange-pi-5)
+  * The SD card will still have the boot priority (if it's there)
+{{< /callout >}}
+
+
 ### Computing vs Volume
 
 | Device | CPU | GPU | RAM | Dimensions |
@@ -262,3 +276,27 @@ volumes:
 {{% /details %}}
 
 {{< youtube id="h1kyncK--vQ" autoplay="false" >}}
+
+### How to BackUp Properly
+
+Whatever option you choose - make sure to have proper backups setup.
+
+{{% details title="Why? I had to recover Portainer data the hard way..." closed="true" %}}
+
+```sh
+sudo fdisk -l #get the drive
+sudo mkdir /mnt/portainer_backup
+sudo mount /dev/nvme0n1p2 /mnt/portainer_backup #mount the drive
+
+#it was installed in the other drive with:
+#sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+
+sudo docker volume create portainer_data
+sudo cp -r /mnt/portainer_backup/var/lib/docker/volumes/portainer_data/_data/* /var/lib/docker/volumes/portainer_data/_data/
+sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v portainer_data:/data \
+portainer/portainer-ce #now you can re-use your portainer, as it was
+```
+
+{{% /details %}}

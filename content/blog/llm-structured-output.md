@@ -8,3 +8,33 @@ url: "how-to-use-structured-outputs-LLM"
 ---
 
 * https://openai.com/index/introducing-structured-outputs-in-the-api/
+
+---
+
+## FAQ
+
+### How to use LLMs to create a CV
+
+{{< details title="Use a CV Builder Framework: OpenResume or " closed="true" >}}
+
+* With [Reactive-Resume](https://fossengineer.com/open-source-curriculum/#the-reactive-resume-project)
+
+* Or with **OpenResume**:
+
+```sh
+version: '3'
+services:
+  open-resume:
+    container_name: openresume #https://github.com/xitanggg/open-resume
+    image: ghcr.io/jalcocert/open-resume:latest #https://github.com/users/JAlcocerT/packages/container/package/open-resume
+    ports:
+      - "3333:3000"
+#     networks:
+#       - cloudflare_tunnel
+          
+# networks:
+#   cloudflare_tunnel:
+#     external: true
+```
+
+{{< /details >}}
