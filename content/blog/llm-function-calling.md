@@ -188,3 +188,50 @@ print(completed_message)
 ```
 
 {{% /details %}}
+
+---
+
+## FAQ
+
+* https://aman.ai/primers/ai/prompt-engineering/
+
+### About LangChain and Frameworks
+
+Interesting Article - https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents
+
+However, as their requirements became more sophisticated, LangChain's rigid high-level abstractions turned into a source of friction and hindered productivity.
+
+
+{{% details title="Issues with LangChain's abstractions were... " closed="true" %}}
+
+* The Main Issues with LangChain's Abstractions
+
+1. 🚧 Increased complexity of code without perceivable benefits
+2. 🤔 Difficulty in understanding and maintaining code
+3. 🔒 Inflexibility in adapting to new requirements
+4. 🕸️ Nested abstractions leading to debugging internal framework code
+
+Octomind's development team faced challenges when trying to implement more complex architectures, such as spawning sub-agents or having multiple specialist agents interact with each other. LangChain's limitations forced them to reduce the scope of their implementations.
+
+* Building AI Applications Without a Framework
+
+After removing LangChain, Octomind realized that a framework might not be necessary for building AI applications. Instead, they suggest using a building blocks approach with simple low-level code and carefully selected external packages. **The core components most applications need are**:
+
+1. 💬 A client for LLM communication
+2. 🛠️ Functions/Tools for function calling
+3. 📊 A vector database for RAG
+4. 🔍 An Observability platform for tracing, evaluation, etc.
+
+By using modular building blocks with minimal abstractions, Octomind's team can now develop more quickly and with less friction, focusing on solving problems rather than translating ideas into framework-specific code.
+
+{{% /details %}}
+
+
+
+> `Dont marry the framework?` :)
+
+### Generating Images with OpenAI
+
+### Understanding Images with Claude
+
+* https://docs.anthropic.com/en/docs/build-with-claude/vision

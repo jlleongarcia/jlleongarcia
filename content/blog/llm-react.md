@@ -52,6 +52,12 @@ Function calling agents provide ease of use but less control, while ReACt agents
 
 ## FAQ
 
+* https://aman.ai/primers/ai/agents/
+
+> AI Agents
+
+
+
 {{% details title="What could ReAct enhance? Two projects in mind 🚀" closed="true" %}}
 
 * Streamlit Multichat and the YT Summarizer with Groq from PhiData

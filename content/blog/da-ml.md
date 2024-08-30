@@ -1,5 +1,5 @@
 ---
-title: "First Steps in ML for Data Analytics"
+title: "Machine Learning for Data Analytics"
 date: 2020-11-25T23:20:21+01:00
 draft: false
 tags: ["Python","Dev"]
@@ -149,6 +149,10 @@ Repeating steps 3 and 4 until the cluster allocations stabilize or the specified
 ---
 
 ## FAQ 
+
+* https://aman.ai/primers/ai/ml-comp/
+* https://roadmap.sh/
+    * https://roadmap.sh/ai-data-scientist
 
 ### Key Concepts
 

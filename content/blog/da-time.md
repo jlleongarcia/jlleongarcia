@@ -56,3 +56,13 @@ Stop for a moment and break the concepts in steps. Look for the first minute act
 * Can it be delegated?
 * Can it be automatized?
 * Am I the bottleneck? - Aka, stopping others to be productive?
+
+---
+
+## FAQ
+
+### Interesting Tools for Time Management
+
+* https://focustide.app/
+    * ex - https://another-pomodoro.app/timer
+* https://the-wise-pomodoro.firebaseapp.com/

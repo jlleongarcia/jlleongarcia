@@ -86,25 +86,28 @@ Also in software support.
 
 #### Sysbench
 
-{{< details title="Results - 7zip 📌" closed="true" >}}
+{{< details title="Results - SysBench 📌" closed="true" >}}
 
 | Device | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) |
 | :-- | :-- | :-- |
-| Raspberry Pi 4 2GB | ~1.7k events (?) | - |
+| Raspberry Pi 4 2GB | ~1.7k events | - |
 | Raspberry Pi 4 4GB | ~28k events | - |
 | Orange Pi 5 | ~38k events | ~50k events |
 | AMD 5600G | - | - |
+
+```sh
+sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
+```
 
 {{< /details >}}
 
 #### 7zip
 
-
-{{< details title="Results - Sysbench 📌" closed="true" >}}
+{{< details title="Results - 7ZIP 📌" closed="true" >}}
 
 | Device | Tot (4 threads) |
 | :-- | :-- | :-- |
-| Raspberry Pi 4 2GB | ~1.7k events (?) | 
+| Raspberry Pi 4 2GB | 1622/6311 | 
 | Raspberry Pi 4 4GB | 1442/5508 | 
 | Raspberry Pi 5 8GB | 2.7k/10k | 
 | Orange Pi 5 |  2.7k/11.8k | 
@@ -319,7 +322,10 @@ df -h /dev/sda1 #you will see if its mounted
 ```
 
 ```sh
+sudo apt install ntfs-3g
+
 sudo nano /etc/fstab #forever
+UUID=some-uuid /mnt/data_ntfs_500 ntfs-3g defaults,uid=1000,gid=1000,umask=0022 0 1
 UUID=some-uuid-of-your-drive /mnt/ext4_mount_point_folder ext4 defaults 0 1
 ```
 
