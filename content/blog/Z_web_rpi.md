@@ -19,8 +19,12 @@ I will use this content as a personal wiki, so whenever I find some block that r
 ---
 
 * References
+    * The Jekyll Theme I use - https://github.com/cotes2020/jekyll-theme-chirpy
     * https://zweilosec.github.io/posts/jekyll-chirpy-github-pages-blog/
     * Adding Web Analytics to Jekyll Chirpy - https://aouledissa.com/posts/Jekyll-Google-Analytics-4-Integration-With-Chirpy-Theme/
+
+* Other Interesting jekyll Themes
+    * https://github.com/wowthemesnet/jekyll-theme-memoirs
 
 
 <!-- shodan

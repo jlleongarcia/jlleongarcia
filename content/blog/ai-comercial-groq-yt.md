@@ -8,9 +8,8 @@ cover:
     caption: "Using Groq to Summarize Youtube Videos." # display caption under cover
 tags: ["Docker","Gen-AI","Python","Dev","Self-Hosting"]
 description: 'Groq Video Summaries with LLMs'
-summary: 'How to avoid falling into click baits with Generative AI. Use Groq and Streamlit to summarize and video and to know if its worth your time'
+summary: 'How to avoid falling into click baits with Generative AI. Use Groq and Streamlit to summarize and video and to know if its worth your time!'
 url: 'summarize-yt-videos'
-isPinned: true
 ---
 
 <!-- 
@@ -62,7 +61,6 @@ https://console.groq.com/keys
 
 ## Groq
 https://console.groq.com/keys -->
-<!-- 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 -->
 
 
 ## SelfHosting Groq Video Summaries
