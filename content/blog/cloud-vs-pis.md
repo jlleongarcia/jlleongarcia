@@ -14,6 +14,11 @@ Sometime ago, I was doing some benchmarks about [Raspberry Pi vs Orange Pi](http
 
 But lately, I have been giving [a try to cloud providers](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner).
 
+And also, I got a new Raspberry Pi 4 (this time 4GB - ARM64, now that prices are reasonable):
+
+![Two RPI's 4](/blog_img/RPi4_2_vs4gb.jpg)
+
+
 There is a bunch of information on the internet: reddit, youtube and decided to create this post as both, a systematic guide and the results of testing that I could perform.
 
 {{< callout type="info" >}}

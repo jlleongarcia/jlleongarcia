@@ -7,10 +7,19 @@ summary: Learning drone programming with Python and a DJI Tello drone.
 url: 'dji-tello-python-programming'
 ---
 
+Last year I got a drone.
+
+This is what I've learn with it so far.
+
 ## DJI Tello Python
 
 I have [forked](https://github.com/damiafuentes/DJITelloPy) and created a Docker Image with Python Code which is able to control the drone:
 * https://github.com/JAlcocerT/DJITelloPy
+
+Hardware wise:
+* The battery last ~10 min
+* Price ~100$
+* It has an Intel CPU which we can program with python
 
 So far it can do the following:
 
@@ -23,13 +32,19 @@ Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=12
 
 {{< youtube id="v=LmEcyQnfpDA" autoplay="false" >}}
 
+### Computer Vision without a Dron
+
+![CV with a RPI4](/blog_img/RPi4_2gb_cam.jpg)
+
+> I got a small camera for the Pi this year - Try `OpenCV` and `yolov8`
+
 ---
 
 ## FAQ
 
 ### How to Control DJI Tello with Mobile Apps
 
-* There are official Apps for DJI Tello
+* There are official Apps for DJI Tello (Manufactured by Ryze)
     * iOS - https://apps.apple.com/us/app/tello/id1330559633
     * Android - The official app seems outdated and non compatible with my Android
         A Free Demo alternative - https://play.google.com/store/apps/details?id=com.volatello.tellofpv.demo

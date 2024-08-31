@@ -1,11 +1,14 @@
 ---
-title: ""
+title: "Learning about 3D Printing and more"
 date: 2024-08-10T23:20:21+01:00
 draft: true
 tags: ["Tinkering"]
 summary: abcd
 ---
 
+## Choosing a Printer
+
+People recommended me: Prusa or BambuLabs
 
 ## Where to get 3DPrint Designs
 
@@ -16,6 +19,17 @@ summary: abcd
     * Blender
     * FreeCad
     * OpenSCad
+    * https://github.com/nkallen/plasticity?tab=readme-ov-file
+
+## My 3D Printing Plans
+
+Can't wait to make some mechanism design and see it work.
+
+* There is an **awsome project by Gabemorris12** - https://github.com/gabemorris12/mechanism
+    * ...which I forked and have pending to [give it a serious trial](https://github.com/JAlcocerT/mechanism)
+* Most likely I will start with [a simple, yet useful Slider-Crank](https://github.com/JAlcocerT/Slider-Crank)
+
+> If you like mechanism, you can have a look at my [Bicycle Dynamics Simulator](https://github.com/JAlcocerT/Bike_dynamic_simulator)
 
 ---
 
