@@ -4,6 +4,7 @@ date: 2024-08-10T23:20:21+01:00
 draft: false
 tags: ["Dev"]
 summary: Comparing SBCs performance with the Cloud - Raspberry Pi, Orange Pi, Mini PC, Cloud...?
+url: cloud-vs-single-board-computers
 ---
 
 Time to choose - where is it worth [to do SelfHosting](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)?
@@ -24,7 +25,7 @@ Sometime ago, I was doing some benchmarks about [Raspberry Pi vs Orange Pi](http
     align="center"
 >}}
 
-{{< figure src="/blog_img/mini_pc/bmax_asrockx300.jpg" alt="CV with a RPI4" >}}
+{{< figure src="/static/blog_img/mini_pc/bmax_asrockx300.jpg" alt="CV with a RPI4" >}}
 
 {{< figure src="/blog_img/mini_pc/bmax_asrockx300.jpg"
            alt="CV with a RPI4"
