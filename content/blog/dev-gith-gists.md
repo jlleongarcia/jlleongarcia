@@ -9,6 +9,7 @@ summary: 'How to use gist as free image hosting'
 
 
 Initialize git:
+
 ```sh
 git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
@@ -23,16 +24,18 @@ Create a gist if you haven't already.
 
 Clone your gist:
 
+```sh
 # make sure to replace `<hash>` with your gist's hash
 git clone https://gist.github.com/<hash>.git # with https 
 #git clone https://gist.github.com/c043e6645a8786f55640e5fbccbaea00.git
 git clone git@gist.github.com:<hash>.git     # or with ssh
-Add your image to your gist's repository:
+#Add your image to your gist's repository:
 
 git add your-image.jpg
-Commit the image:
+#Commit the image:
 
 git commit -m "Add image"
-Update gist:
+#Update gist:
 
 git push origin master
+```

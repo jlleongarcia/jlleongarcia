@@ -15,7 +15,8 @@ If you are using HUGO, embedd your images with [this shortcode](https://raw.gith
 | **Description**                        | **Link**                                   |
 |----------------------------------------|--------------------------------------------|
 | PageFind with Astro      | [VisVRS/AstroVerse Example](https://github.com/IoTechCrafts/astroverse)    |
-| FuseJS with Hugo      | [VisVRS/AstroVerse Example](https://github.com/IoTechCrafts/astroverse)    |
+| FuseJS with Astro      | [AstroEngineeringBlog Example](https://github.com/EddyVinck/astro-engineering-blog)    |
+| FuseJS with HUGO      | [AstroEngineeringBlog Example](https://github.com/EddyVinck/astro-engineering-blog)    |
 | Ghost                | [Compose Overview](https://docs.docker.com/compose/) |
 
 

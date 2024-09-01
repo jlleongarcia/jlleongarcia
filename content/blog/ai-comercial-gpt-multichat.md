@@ -254,7 +254,9 @@ And feel free to use any of these:
 
 {{< /dropdown >}} -->
 
-![CV with a RPI4](/blog_img/GH_package_to_repo.png)
+Remember to link the GHCR Package with your repository Readme:
+
+![GHCR Connecting Package to Repository](/blog_img/GH_package_to_repo.png)
 
 
 {{< dropdown title="Using buildx with Github Actions to create x86 and ARM64 images⏬" closed="true" >}}
