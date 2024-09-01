@@ -8,6 +8,18 @@ summary: 'The essential concepts of data modeling and key terms in this introduc
 url: 'create-your-website'
 ---
 
+
+
+{{< details title="Themes I love for Galleries 📌" closed="true" >}}
+
+| **Description**                        | **Link**                                   |
+|----------------------------------------|--------------------------------------------|
+| PHP          | [NovaGallery](https://github.com/novafacile/novagallery)    |
+| Ghost                | [Compose Overview](https://docs.docker.com/compose/) |
+
+
+{{< /details >}}
+
 ---
 
 ## FAQ
@@ -23,3 +35,17 @@ url: 'create-your-website'
 * https://trends.google.es/trends/
 
 * https://github.com/Lissy93/web-check
+
+### CDN and Videos for your Website
+
+* https://github.com/orthdron/subatic - Extremely simple video hosting Site that scales with you
+
+
+
+### Interesting Search Engines
+
+* Ecosia.org / Brave / DuckDuckGo
+* [Whoogle/SearXNG](https://jalcocert.github.io/RPi/posts/selfh-internet-better/)
+* Bing 
+
+It's worth to try few of them - not all the content is indexed in the same way.

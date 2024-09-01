@@ -12,6 +12,10 @@ Time to choose - where is it worth [to do SelfHosting](https://jalcocert.github.
 
 Sometime ago, I was doing some benchmarks about [Raspberry Pi vs Orange Pi](https://jalcocert.github.io/RPi/posts/pi-vs-orange/) and also about [Mini PCs vs those SBC](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/).
 
+![CV with a RPI4](/blog_img/mini_pc/bmax_asrockx300.jpg)
+
+![CV with a RPI4](/blog_img/mini_pc/bmax.jpg)
+
 But lately, I have been giving [a try to cloud providers](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner).
 
 And also, I got a new Raspberry Pi 4 (this time 4GB - ARM64, now that prices are reasonable):
@@ -344,3 +348,11 @@ sudo mount -t ext4 /dev/sdb2 /mnt/data_ext_2tb/ #example with ntfs
 ```
 
 {{% /details %}}
+
+### How to use a RPi - Without a RPi
+
+A raspberry Pi inside a container - https://github.com/ptrsr/pi-ci
+
+* https://github.com/ptrsr/pi-ci
+
+> A raspberry Pi emulator in a Docker image that lets developers easily prepare and flash RPi configurations.

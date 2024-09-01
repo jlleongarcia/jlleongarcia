@@ -18,8 +18,9 @@ I have [forked](https://github.com/damiafuentes/DJITelloPy) and created a Docker
 
 Hardware wise:
 * The battery last ~10 min
+* Weight ~80g
 * Price ~100$
-* It has an Intel CPU which we can program with python
+* It has an Intel CPU which we can program with python, 5MP Camera with 720P Live View Vision System, WIFI 802.11n 2.4G,
 
 So far it can do the following:
 
@@ -52,3 +53,14 @@ Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=12
 ### About Dron Regulations
 
 * https://drony.gov.pl/
+* https://www.seguridadaerea.gob.es/es/particulares/piloto-de-drones
+
+* **Remember** 
+    * An exam is generally required for drones weighing over 250 grams (0.55 pounds) in most countries.
+    * Check your local regulations to ensure compliance, as rules can differ significantly by region.
+
+
+
+
+
+

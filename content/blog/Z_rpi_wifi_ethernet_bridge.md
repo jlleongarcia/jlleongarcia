@@ -19,6 +19,8 @@ Inspired by the awsome work of **[William Halley in his blog](https://www.willha
 
 > Let's learn a little bit about **Networking by doing!**
 
+![CV with a RPI4](/blog_img/wifi_eth.jpg)
+
 
 {{< details title="Option 1 - Wifi to Ethernet with Separated subnet 📌" closed="true" >}}
 
@@ -195,6 +197,10 @@ with this version, you can route the traffic through any Wireguard Traffic (from
 
 
 ## FAQ
+
+* Portable Router (Alternative to RPi) - GL.iNet GL-SFT1200 or the GL.iNet GL-MT300N-V2 (which should be powered via the usb port of a laptop).
+
+<!-- https://www.amazon.pl/GL-iNet-GL-SFT1200-Bezpieczny-podr%C3%B3%C5%BCny-router/dp/B09N72FMH5/ref=pd_rhf_se_s_pd_crcd_d_sccl_2_3/261-2737239-8107716?pd_rd_w=uqRgK&content-id=amzn1.sym.757a6f22-e200-4cac-9f98-1486b52768de&pf_rd_p=757a6f22-e200-4cac-9f98-1486b52768de&pf_rd_r=75AC129RPCM5ZV4H0PGW&pd_rd_wg=Ta2ss&pd_rd_r=71ffd9b4-1178-4b1d-b73d-f53d847a88ed&pd_rd_i=B09N72FMH5&psc=1 -->
 
 {{< details title="Which WIFI is the raspberry pi connected to?" closed="true" >}}
 
@@ -499,3 +505,8 @@ Endpoint = ipaddress:51820
 
 * https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi
 * <https://www.youtube.com/watch?v=fOYmHPmvSVg>
+
+### TailScale and More
+
+* [ZeroTier](https://www.zerotier.com/)
+* [HeadScale](https://github.com/juanfont/headscale)
