@@ -17,12 +17,25 @@ Sometime ago, I was doing some benchmarks about [Raspberry Pi vs Orange Pi](http
 {{< figure 
     src="/blog_img/mini_pc/bmax_asrockx300.jpg" 
     link="https://www.youtube.com/@JAlcocerTech"
-    title="Raspberry Pi 4" 
+    title="BMax-B4 Mini PC" 
     caption="BMaxB4 vs Asrock X300." 
     attr="Photo by JAlcocerT" 
     attrlink="https://jalcocertech.xyz"
     align="center"
 >}}
+
+{{< figure src="/blog_img/mini_pc/bmax_asrockx300.jpg" alt="CV with a RPI4" >}}
+
+{{< figure src="/blog_img/mini_pc/bmax_asrockx300.jpg"
+           alt="CV with a RPI4"
+           class="center"
+           link="https://example.com"
+           caption="This is an image of a BMAX ASRock x300 used as a mini PC."
+           title="Mini PC Setup"
+           target="_blank"
+           rel="noopener noreferrer"
+           width="300"
+           height="200" >}}
 
 
 ![CV with a RPI4](/blog_img/mini_pc/bmax.jpg)
