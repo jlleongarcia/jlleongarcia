@@ -453,6 +453,8 @@ volumes:
 
 ### How to Setup RaspAP
 
+* Make sure you have a compatible Wifi USB - https://github.com/morrownr/USB-WiFi
+
 ```sh
 curl -sL https://install.raspap.com | bash #https://docs.raspap.com/
 ```

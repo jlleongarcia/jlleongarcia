@@ -14,6 +14,17 @@ Sometime ago, I was doing some benchmarks about [Raspberry Pi vs Orange Pi](http
 
 ![CV with a RPI4](/blog_img/mini_pc/bmax_asrockx300.jpg)
 
+{{< figure 
+    src="/blog_img/mini_pc/bmax_asrockx300.jpg" 
+    link="https://www.youtube.com/@JAlcocerTech"
+    title="Raspberry Pi 4" 
+    caption="BMaxB4 vs Asrock X300." 
+    attr="Photo by JAlcocerT" 
+    attrlink="https://jalcocertech.xyz"
+    align="center"
+>}}
+
+
 ![CV with a RPI4](/blog_img/mini_pc/bmax.jpg)
 
 But lately, I have been giving [a try to cloud providers](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner).

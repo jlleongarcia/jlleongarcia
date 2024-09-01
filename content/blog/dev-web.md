@@ -1,5 +1,5 @@
 ---
-title: "What Ive learn about websites"
+title: "What I've learnt about websites"
 date: 2025-11-05T23:20:21+01:00
 draft: true
 tags: ["dev"]
@@ -8,7 +8,18 @@ summary: 'The essential concepts of data modeling and key terms in this introduc
 url: 'create-your-website'
 ---
 
+If you are using HUGO, embedd your images with [this shortcode](https://raw.githubusercontent.com/gohugoio/hugo/master/tpl/tplimpl/embedded/templates/shortcodes/figure.html)
 
+{{< details title="How to Include Search 📌" closed="true" >}}
+
+| **Description**                        | **Link**                                   |
+|----------------------------------------|--------------------------------------------|
+| PageFind with Astro      | [VisVRS/AstroVerse Example](https://github.com/IoTechCrafts/astroverse)    |
+| FuseJS with Hugo      | [VisVRS/AstroVerse Example](https://github.com/IoTechCrafts/astroverse)    |
+| Ghost                | [Compose Overview](https://docs.docker.com/compose/) |
+
+
+{{< /details >}}
 
 {{< details title="Themes I love for Galleries 📌" closed="true" >}}
 
@@ -17,6 +28,8 @@ url: 'create-your-website'
 | PHP          | [NovaGallery](https://github.com/novafacile/novagallery)    |
 | Ghost                | [Compose Overview](https://docs.docker.com/compose/) |
 
+Ghost Themes: Handlebars, HTML, CSS, JavaScript, JSON.
+WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, and hooks.
 
 {{< /details >}}
 
@@ -35,6 +48,9 @@ url: 'create-your-website'
 * https://trends.google.es/trends/
 
 * https://github.com/Lissy93/web-check
+
+* You will need proper favicons
+    * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
 
 ### CDN and Videos for your Website
 
