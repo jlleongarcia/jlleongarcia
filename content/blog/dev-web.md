@@ -61,8 +61,12 @@ WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, 
 
 ### Interesting Search Engines
 
-* Ecosia.org / Brave / DuckDuckGo
+* Ecosia.org / qwant.com / Brave / DuckDuckGo
 * [Whoogle/SearXNG](https://jalcocert.github.io/RPi/posts/selfh-internet-better/)
 * Bing 
 
-It's worth to try few of them - not all the content is indexed in the same way.
+It's worth to try few of them - not all the content is indexed in the same way across engines
+
+{{< callout type="info" >}}
+**Thanks to Ecosia** I could find how to add Web Analytics to the Jekyll Chirpy Theme!
+{{< /callout >}}

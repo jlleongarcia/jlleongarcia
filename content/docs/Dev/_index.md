@@ -1,5 +1,5 @@
 ---
-title: NIX - The Package Manager 
+title: Tools for Dev 
 type: docs
 prev: docs/debian
 next: docs/arch

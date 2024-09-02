@@ -16,7 +16,7 @@ https://docs.astro.build/en/tutorial/2-pages/3/ -->
 <!-- 
 CSS Link ---> -->
 
-
+* https://www.geeksforgeeks.org/how-to-add-chartjs-in-nextjs-13/
 
 1. [Spinning World Map](#spinning-world-map)
 2. Charts

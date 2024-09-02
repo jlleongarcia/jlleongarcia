@@ -58,8 +58,19 @@ menu:
       name: "Raspberry Pi Guide ↗"
       url: "https://jalcocert.github.io/RPi/"
       weight: 4  
+    - identifier: Linux
+      name: "Linux Guide ↗"
+      url: "https://jalcocert.github.io/Linux/"
+      weight: 5
+    - identifier: Docker
+      name: "Docker Config Files ↗"
+      url: "https://github.com/JAlcocerT/Docker/"
+      weight: 6              
                         
 params:
+  page:
+    # full (100%), wide (90rem), normal (1280px) - default is normal
+    width: wide:
   navbar:
     displayTitle: true
     displayLogo: false
@@ -77,4 +88,4 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/JAlcocerT/Linux/edit/main/content"
+    base: "https://github.com/JAlcocerT/JAlcocerT/edit/main/content"

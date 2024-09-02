@@ -1,7 +1,7 @@
 ---
 title: "Pixel8 Pro - Tricks"
 date: 2024-04-27T23:20:21+01:00
-draft: true
+draft: false
 tags: ["Dev"]
 description: 'Pixel8 Pro Tricks'
 summary: 'Tricks for Google Pixel 8 Pro.'
@@ -44,6 +44,8 @@ you will need to restart and HDMI cable to enjoy :)
     * [TailScale](https://f-droid.org/es/packages/com.tailscale.ipn/)
     * [Syncthing](https://f-droid.org/es/packages/com.nutomic.syncthingandroid/)
     * [Element](https://f-droid.org/es/packages/im.vector.app/)
+    * [RSS - Wallabag](https://f-droid.org/es/packages/fr.gaulupeau.apps.InThePoche/)
+    * [RSS ReadDrops](https://f-droid.org/es/packages/com.readrops.app/)
 
 * [2FAS](https://play.google.com/store/apps/details?id=com.twofasapp)
 * [Bitwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden)

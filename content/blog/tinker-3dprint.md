@@ -147,6 +147,11 @@ Can't wait to make some mechanism design and see it work.
 
 ## FAQ
 
+Very interesting video: western vs eastern design - https://www.youtube.com/watch?v=8UAsN9wvePE
+
+* https://forocoches.com/foro/showthread.php?t=8677592
+* https://forocoches.com/foro/showthread.php?t=6621713
+
 ### Designs as Code
 
 1. **GIMP with python** - https://docs.gimp.org/2.10/en_GB/gimp-filters-python-fu.html
@@ -155,3 +160,17 @@ Before we start writing Python scripts in GIMP, we need to install the Python-Fu
 
 2. **FreeCAD with Python** - https://wiki.freecad.org/Python_scripting_tutorial
     * Query2CAD: [Generating CAD models using natural language queries](https://arxiv.org/html/2406.00144v1)
+
+
+### Free Software for 3D Printing
+
+1. **OctoPrint** - https://octoprint.org/
+    * https://github.com/OctoPrint/OctoPrint
+    * https://www.raspberrypi.com/tutorials/set-up-raspberry-pi-octoprint/
+    * https://depau.github.io/3dprint-wiki/wiki/hardware/octoprint-devices/
+
+> The snappy web interface for your 3D printer.
+
+* **Klipper** - https://github.com/Klipper3d/klipper
+
+>  Klipper is a 3d-printer firmware 

@@ -10,6 +10,10 @@ url: 'time-management-data-analytics'
 
 Time, it's all about Time.
 
+{{< callout type="info" >}}
+Be aware of the **Optimism Bias** when commiting with others (and with yourself)
+{{< /callout >}}
+
 ## Understanding your Productivity Peak
 
 Finding your prodictivity rhythm.

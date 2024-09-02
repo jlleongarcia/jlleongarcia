@@ -163,3 +163,10 @@ curl -6 ifconfig.me #provided ipv6
 {{< youtube id="65FdHRs0axE" autoplay="false" >}}
 
 > Thanks a lot to DBTech for this!
+
+#### Cloudflare API
+
+* https://blog.cloudflare.com/python-cloudflare/
+  * https://github.com/cloudflare/python-cloudflare
+
+> Could be interesting to feed the allowed emails, ipv4/ipv6 programatically
