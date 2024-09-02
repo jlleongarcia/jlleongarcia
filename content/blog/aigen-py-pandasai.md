@@ -1,6 +1,6 @@
 ---
 title: "Talk to your DataFrames with PandasAI"
-date: 2024-07-26T23:20:21+01:00
+date: 2024-07-12T23:20:21+01:00
 draft: false
 cover:
   image: "https://socialify.git.ci/gventuri/pandas-ai/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"

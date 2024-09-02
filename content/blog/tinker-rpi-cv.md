@@ -1,7 +1,7 @@
 ---
 title: A Camera for the Raspberry Pi
 date: 2024-07-19T23:20:21+01:00
-draft: true
+draft: false
 tags: ["Tinkering"]
 summary: SimpleCV and OpenCV + Scrypted & HA...but first, lets make the camera work
 ---
@@ -73,7 +73,8 @@ nano capture_images.sh
 ./capture_images.sh
 ```
 {{< callout type="info" >}}
-Get the sample script at my RPi Repo!
+* Get the sample script at my [RPi Repo](https://github.com/JAlcocerT/RPi/tree/main/Z_RPi_Cam)!
+* See/Download the images while being created [with Filebrowser](https://github.com/JAlcocerT/Docker/blob/main/Z_Dockge/stacks/syncthingfilebrowser/compose.yaml)
 {{< /callout >}}
 
 * And now video streaming with:
