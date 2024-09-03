@@ -3,7 +3,7 @@ title: "Setup RPi Pico W and ESP32 "
 date: 2024-09-02T23:20:21+01:00
 draft: false
 tags: ["Tinkering"]
-summary: what Ive learnt while using a ESP32 and a Raspberry Pi Pico W [Microcontrollers]
+summary: What Ive learnt while using a ESP32 and a Raspberry Pi Pico W [Microcontrollers]
 url: 'microcontrollers-setup-101'
 ---
 
@@ -13,8 +13,8 @@ Last year I bough a couple of companions for my Raspberry Pi 4 2GB:
 2. [Pi Pico W](#the-raspberry-pi-pico-w)
 
 And Recently, this new release got my attention:
-3. Pi Pico 2
-* A brand new model, with both **ARM and RISC-V cores**
+
+3. Raspberry Pi Pico 2 -  A brand new model, with both **ARM and RISC-V cores**
 
 
 {{< cards >}}
@@ -22,7 +22,12 @@ And Recently, this new release got my attention:
   {{< card link="https://jalcocertech.xyz" title="Collaborations ↗" icon="user" >}}
 {{< /cards >}}
 
-Let me show you how to get started with MicroControllers:
+Let me show you **how to get started with MicroControllers**
+
+What you need to know:
+* They dont need an OS
+* They run in loop whatever logic is loaded
+* The are low consumption devices (much more than even SBC's)
 
 <!-- I know this is supposed to be a RPi centered repo and web, but couldn't resist to add some small project that uses the ESP32. -->
 

@@ -235,6 +235,8 @@ A complete and local NVR designed for Home Assistant with AI object detection. U
 ---
 
 ## FAQ
+HA Desktop - https://flathub.org/apps/com.cassidyjames.butler
+
 
 ### AI
 

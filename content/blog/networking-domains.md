@@ -54,3 +54,9 @@ If your subdomain is `app.example.com` and the IPv6 address is `2001:0db8:85a3:0
 - Use an `AAAA` record to point a subdomain to an IPv6 address.
 
 Make sure to replace `subdomain.yourdomain.com` with your actual subdomain, and `yourdomain.com` with your actual domain name.
+
+
+### How to get Local SSL
+
+NGINX
+DuckDNS
