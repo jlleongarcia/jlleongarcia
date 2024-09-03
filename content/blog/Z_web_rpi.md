@@ -15,7 +15,6 @@ During this month, have decided to create a more **detailed guide on Github Page
 
 I will use this content as a personal wiki, so whenever I find some block that requires some effort to find out on the internet, will make a concise guide right here: <https://jalcocert.github.io/RPi/>
 
-
 ---
 
 * References

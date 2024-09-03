@@ -161,6 +161,8 @@ WebAssembly (often abbreviated as Wasm) is a binary instruction format for a sta
 
 > in go - https://github.com/gomatcha/matcha
 
+* Python Reflex - for WebApps
+
 ### Run Python in HTML
 
 * PyScript - Thanks to Pyodide, WASM and Moderm WEb Tech

@@ -86,6 +86,7 @@ No discussion here - The Raspberries are the absolute winners.
 
 Also in software support.
 
+> I have to comment that **I prefer BullsEye** over Bookworm for the Pi's for IoT/CV Projects
 
 {{< details title="OrangePi 5 with Latest Kernel 📌" closed="true" >}}
 * [Installing OS](https://jalcocert.github.io/RPi/posts/getting-started/) with latest kernel thanks to [Joshua-Riek](https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5b.html)
@@ -110,8 +111,9 @@ Also in software support.
 | BMAX B4 | Intel N95 (x4 cores Alder-Lake) | - | 16 GB | 12.5 x 11.2 x 4.4 cm  (0.608L) |
 
 {{< callout type="info" >}}
-* It's very important to use [proper adapter](https://raspberrytips.com/how-to-power-a-raspberry-pi/) 170 events/s vs
-* The A info on adapters is the MAXIMUM they can deliver at a certain voltaje, the devices will ask for less current if they dont need that much
+* It's very important to use [proper adapter](https://raspberrytips.com/how-to-power-a-raspberry-pi/) or you will risk the SBC and its performance
+* The Amperes [A] info on adapters is the MAXIMUM they can deliver at a given voltaje [V]
+  * The devices will ask for less current if they dont need that much
 {{< /callout >}}
 
 ## Testing Results
@@ -197,7 +199,7 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 ## FAQ
 
 
-{{% details title="Testing CPU Performance - Sysbench, TripPlanner, build Astral-sh,..." closed="true" %}}
+{{% details title="Testing CPU Performance - SysBench, TripPlanner, build Astral-sh,..." closed="true" %}}
 
 ```sh
 #cat /proc/cpuinfo
@@ -378,6 +380,13 @@ sudo mount -t ext4 /dev/sdb2 /mnt/data_ext_2tb/ #example with ntfs
 
 A raspberry Pi inside a container - https://github.com/ptrsr/pi-ci
 
-* https://github.com/ptrsr/pi-ci
+> A Raspberry **Pi emulator in a Docker image** that lets developers easily prepare and flash RPi configurations.
 
-> A raspberry Pi emulator in a Docker image that lets developers easily prepare and flash RPi configurations.
+### Cloud Interesting Resources
+
+* <https://cloud.google.com/free>
+  * PUB/SUB <https://cloud.google.com/free/docs/free-cloud-features#pub-sub>
+
+<https://www.youtube.com/watch?v=jYIgcdIW1yk>
+
+* AWS IoT - <https://www.youtube.com/watch?v=hgQ-Ewrm48c>

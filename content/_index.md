@@ -5,9 +5,13 @@ toc: false
 
 Hi There!
 
+Writing as I learn something helps me keeping the concepts in place.
+
+It can also help you to get started!
+
 ## A Tech Blog?
 
-{{% details title="Why Start a Tech Blog? 🚀" closed="true" %}}
+{{% details title="Why Starting a Tech Blog? 🚀" closed="true" %}}
 
 Starting a tech blog can be beneficial for several reasons:
 
@@ -40,7 +44,7 @@ Beyond personal growth, a tech blog allows you to contribute to the tech communi
     title="Raspberry Pi's are cool"
     subtitle="Single Board Computers and IoT Stuff"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
-    link="https://jalcocert.github.io/Rpi/"
+    link="https://jalcocert.github.io/RPi/"
   >}}
 
   {{< hextra/feature-card
@@ -52,9 +56,9 @@ Beyond personal growth, a tech blog allows you to contribute to the tech communi
 
     {{< hextra/feature-card
     title="Who said Web3?"
-    subtitle="Code is law."
+    subtitle="Code is Law."
     style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
-    link="Linux/docs/debian/linux_installing_apps/"
+    link="https://jalcocert.github.io/web3/"
   >}}
 
 {{< /hextra/feature-grid >}}

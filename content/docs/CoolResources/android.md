@@ -37,7 +37,8 @@ This is were **F-Droid** enters - you can [get F/OSS Apps](https://f-droid.org/e
 * Organic Maps - https://github.com/organicmaps/organicmaps
 * MapsMe - https://github.com/mapsme/api-android
 
-* Readrops (RSS) - https://github.com/readrops/Readrops
+* Readrops (RSS) - https://github.com/readrops/Readrops - Android multi-services RSS client
+
 
 * PhyPhox - https://github.com/phyphox/phyphox-android
 * https://f-droid.org/en/packages/github.umer0586.sensorserver/

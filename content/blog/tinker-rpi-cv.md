@@ -4,28 +4,13 @@ date: 2024-07-19T23:20:21+01:00
 draft: false
 tags: ["Tinkering"]
 summary: SimpleCV and OpenCV + Scrypted & HA...but first, lets make the camera work
+url: 'raspberry-pi-camera-setup'
 ---
 
-How to Install Raspberri Pi camera and Troubleshoot errors | Upgrade Bios Firmware on Raspberry Pi
-https://www.youtube.com/watch?v=Z8cs1cRrc5A
 
+## Raspberry Pi + Camera
 
-
-<https://www.youtube.com/watch?v=tT5gHNDBHXo>
-
-
-
-
-* Node-RED with Raspberry Pi Camera (Take Photos) - https://randomnerdtutorials.com/node-red-with-raspberry-pi-camera-take-photos/
-
-* Video Streaming with Raspberry Pi Camera - https://randomnerdtutorials.com/video-streaming-with-raspberry-pi-camera/
-
-* Pi Zero W + Camera + MotionEyeOS (https://github.com/motioneye-project/motioneyeos) -  How To Make A Raspberry Pi Zero WiFi Security Camera, Also Accessible Over The Internet - https://www.youtube.com/watch?v=ll5d342QaCY
-	* https://github.com/motioneye-project/motioneyeos/wiki/Supported-Devices
-
----
-
-## Hardware
+### Hardware
 
 
 * Arducam OV5647 (5MP, 1080p) - 
@@ -35,19 +20,6 @@ https://www.youtube.com/watch?v=UxsiBxcXbYc -->
 * Pi Zero Wifi Security Camera - https://www.youtube.com/watch?v=ll5d342QaCY with MotionEyeOS
   * https://randomnerdtutorials.com/install-motioneyeos-on-raspberry-pi-surveillance-camera-system/
 
----
-
-## Pi NVR
-
-An NVR stands for Network Video Recorder. It's a specialized computer system designed to record and store video footage captured by IP (Internet Protocol) cameras.
-
-* https://github.com/geerlingguy/pi-nvr
-
-> Raspberry Pi NVR for home CCTV recording.
-
----
-
-## Software
 
 ### Taking Pictures and Streaming Video
 
@@ -111,9 +83,39 @@ Deploy the image:
 docker run -p 9999:9999 --device /dev/video0 -it streamer:latest
 ```
 
-And we will have the interface ready at the specified port: `localhost:9999`
+{{< details title="streamer Docker Compose 📌" closed="true" >}}
+
+```yml
+version: '3'
+services:
+  streamer:
+    image: streamer:latest
+    container_name: streamer
+    ports:
+      - "9999:9999"
+    devices:
+      - "/dev/video0:/dev/video0"
+    stdin_open: true
+    tty: true
+```
+
+{{< /details >}}
+
+And we will have the interface ready at the specified port: `localhost:9999` and user/password as per your specifications while building the image.
 
 > Working **up to GNU v11** (not available in bookworm!)
+
+---
+
+## More Software - Camera and CV
+
+### Pi NVR
+
+An NVR stands for Network Video Recorder. It's a specialized computer system designed to record and store video footage captured by IP (Internet Protocol) cameras.
+
+* https://github.com/geerlingguy/pi-nvr
+
+> Raspberry Pi NVR for home CCTV recording.
 
 ### TensorFlow Lite
 
@@ -261,33 +263,21 @@ Build multimodal AI applications with cloud-native stack:
 * <https://www.opensourcealternative.to/project/LightDashs>
 * <https://www.opensourcealternative.to/project/Metabase>
 
+### More
 
-### What are microservices?
+How to Install Raspberri Pi camera and Troubleshoot errors | Upgrade Bios Firmware on Raspberry Pi
+https://www.youtube.com/watch?v=Z8cs1cRrc5A
 
-### What are Web-Hooks?
 
-A webhook is like a doorbell. When certain events happen in one system (like a new post on a blog or a new commit in a repository), it automatically sends a notification to another system. It's a way for apps to provide other applications with real-time information.
 
-* How It Works: A webhook delivers data to other applications as it happens, meaning you get data immediately. You set up a webhook by providing a URL to the system you want to receive the notifications. When an event occurs, the system makes an HTTP request (usually POST) to the URL you provided.
+<https://www.youtube.com/watch?v=tT5gHNDBHXo>
 
-* Use Case Example: A common use of webhooks is in Continuous Integration/Continuous Deployment (CI/CD) pipelines. For example, GitHub can use a webhook to notify a CI server like Jenkins to start a new build whenever code is pushed to a repository.
 
-### What are API calls?
 
-An API call is like making a phone call to a specific service. You request the information or service you need, and the system responds back. It's a way for applications to interact and request data from each other.
 
-* How It Works: An API call is a manual process; you have to make the request to get the data. It’s like asking, "Do you have any new data?" The request is usually made via HTTP (GET, POST, PUT, DELETE), and the server processes the request and sends back a response.
+* Node-RED with Raspberry Pi Camera (Take Photos) - https://randomnerdtutorials.com/node-red-with-raspberry-pi-camera-take-photos/
 
-* Use Case Example: If you have an application that needs to get the latest weather data, it can make an API call to a weather service. The application sends a request, and the weather service responds with the latest weather information.
+* Video Streaming with Raspberry Pi Camera - https://randomnerdtutorials.com/video-streaming-with-raspberry-pi-camera/
 
-### WebHooks vs API Calls
-
-* Initiation:
-  * Webhook: Automatically initiated by the source system when an event occurs.
-  * API Call: Manually initiated by the requesting system.
-* Purpose:
-  * Webhook: Used for real-time notifications.
-  * API Call: Used for requesting or sending data on demand.
-* Direction:
-  * Webhook: One-way from the source to the receiver.
-  * API Call: Two-way communication between the requester and the server.
+* Pi Zero W + Camera + MotionEyeOS (https://github.com/motioneye-project/motioneyeos) -  How To Make A Raspberry Pi Zero WiFi Security Camera, Also Accessible Over The Internet - https://www.youtube.com/watch?v=ll5d342QaCY
+	* https://github.com/motioneye-project/motioneyeos/wiki/Supported-Devices
