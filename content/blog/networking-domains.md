@@ -4,8 +4,8 @@ date: 2024-10-23T10:20:21+01:00
 draft: true
 tags: ["Dev"]
 description: 'Tinkering with a Raspberry Pi and Networking.'
-summary: 'Raspberry Pi - Wifi2Ethernet Bridge (With Wireguard) and more'
-url: 'raspberry-pi-networking'
+summary: ''
+url: 'networking-basics'
 ---
 
 
@@ -42,11 +42,11 @@ If your subdomain is `app.example.com` and the IPv4 address is `192.168.1.1`, yo
 - **Value:** The IPv6 address you want to point to.
 
 ### Example:
-If your subdomain is `app.example.com` and the IPv6 address is `2001:0db8:85a3:0000:0000:8a2e:0370:7334`, your DNS record should look like:
+If your subdomain is `app.example.com` and the IPv6 address is `2001:0db8:85a3:0000:0000:8a2e:1234:5678`, your DNS record should look like:
 
 | Type  | Name            | Value                                   |
 |-------|-----------------|-----------------------------------------|
-| AAAA  | app.example.com | 2001:0db8:85a3:0000:0000:8a2e:0370:7334 |
+| AAAA  | app.example.com | 2001:0db8:85a3:0000:0000:8a2e:1234:5678 |
 
 ### **Summary:**
 

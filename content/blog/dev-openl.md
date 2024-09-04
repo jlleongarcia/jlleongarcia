@@ -9,6 +9,8 @@ url: 'understanding-openl-tablets'
 
 **[OpenL Tablets](https://www.openl-tablets.org/)** is a powerful business rule management system (BRMS) that leverages Excel spreadsheets for defining and managing business rules. To effectively use this tool, it's essential to grasp the following:
 
+* https://github.com/openl-tablets/openl-tablets - Easy Business Rules
+
 {{< details title="OpenL Tablets Core Concepts 📌" closed="true" >}}
 
 
@@ -82,9 +84,7 @@ services:
 * https://hub.docker.com/u/openltablets/
 Docker Image for OpenL Tablets Rule Services
 
-{{< /details >}}
-
-https://hub.docker.com/r/openltablets/webstudio
+* And the WebStudio - https://hub.docker.com/r/openltablets/webstudio
 
 ```yml
 version: '3.8'  # Using version 3.8, but you can use other versions as appropriate
@@ -97,5 +97,13 @@ services:
       - "9086:8080"  # Map port 9080 on the host to port 8080 on the container
     restart: unless-stopped  # Optional: Ensures the container restarts unless explicitly stopped
 ```
+{{< /details >}}
 
 ![OpenL Setup](/blog_img/openl-setup.png)
+
+
+---
+
+## Resources that Helped
+
+* https://notebooklm.google.com/

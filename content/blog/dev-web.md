@@ -8,6 +8,21 @@ summary: 'The essential concepts of data modeling and key terms in this introduc
 url: 'create-your-website'
 ---
 
+## What Ive Learnt about Astro
+
+
+{{< details title="Better SEO for Astro 📌" closed="true" >}}
+
+
+import { AstroSeo } from '@astrolib/seo';
+
+as in the [Minimal Studio Theme by michael-andreuzza ](https://github.com/IoTechCrafts/minimalstudio-ssg)
+
+{{< /details >}}
+
+## Tweaking HUGO Themes
+
+
 If you are using HUGO, embedd your images with [this shortcode](https://raw.githubusercontent.com/gohugoio/hugo/master/tpl/tplimpl/embedded/templates/shortcodes/figure.html)
 
 {{< details title="How to Include Search 📌" closed="true" >}}
@@ -41,6 +56,17 @@ WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, 
 * https://roadmap.sh/frontend
 * https://roadmap.sh/backend
 
+{{< details title="Free SSG Deployment 📌" closed="true" >}}
+
+* With Firebase
+
+```sh
+firebase init #configure files for firebase hosting / public directory is normall public for HUGO and dist for Astro/nodes
+firebase deploy #you will get something like -> https://jalcocertech.web.app/
+```
+
+{{< /details >}}
+
 ### Is my website performing well?
 
 * https://pagespeed.web.dev/
@@ -49,6 +75,7 @@ WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, 
 * https://trends.google.es/trends/
 
 * https://github.com/Lissy93/web-check
+    * https://web-check.xyz/
 
 * You will need proper favicons
     * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
