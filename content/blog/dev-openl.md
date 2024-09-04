@@ -7,7 +7,7 @@ summary: 'How to get started with OpenL Tablets'
 url: 'understanding-openl-tablets'
 ---
 
-**OpenL Tablets** is a powerful business rule management system (BRMS) that leverages Excel spreadsheets for defining and managing business rules. To effectively use this tool, it's essential to grasp the following:
+**[OpenL Tablets](https://www.openl-tablets.org/)** is a powerful business rule management system (BRMS) that leverages Excel spreadsheets for defining and managing business rules. To effectively use this tool, it's essential to grasp the following:
 
 {{< details title="OpenL Tablets Core Concepts 📌" closed="true" >}}
 
@@ -49,3 +49,53 @@ url: 'understanding-openl-tablets'
 
 
 {{< /details >}}
+
+
+* SimpleLookup
+* SpreadSheet Tables
+
+
+
+{{< details title="You can run OpenL Tablets Demo example with Docker 📌" closed="true" >}}
+
+* https://hub.docker.com/r/openltablets/demo
+
+```yml
+version: '3.8'  # Using version 3.8, but you can use other versions as appropriate
+
+services:
+  openltablets-demo:
+    image: openltablets/demo  # Specify the Docker image to use
+    container_name: openltablets-demo  # Optional: Specify a custom container name
+    ports:
+      - "9088:8080"  # Map port 9080 on the host to port 8080 on the container
+    restart: unless-stopped  # Optional: Ensures the container restarts unless explicitly stopped
+```
+
+> After a while, it will be accesible: `http://localhost:9088/webservice/` `http://localhost:9088/`
+
+{{< /details >}}
+
+
+{{< details title="Run OpenL Tablets with Docker 📌" closed="true" >}}
+
+* https://hub.docker.com/u/openltablets/
+Docker Image for OpenL Tablets Rule Services
+
+{{< /details >}}
+
+https://hub.docker.com/r/openltablets/webstudio
+
+```yml
+version: '3.8'  # Using version 3.8, but you can use other versions as appropriate
+
+services:
+  openl-webstudio:
+    image: openltablets/webstudio  # Specify the Docker image to use
+    container_name: openl-webstudio  # Optional: Specify a custom container name
+    ports:
+      - "9086:8080"  # Map port 9080 on the host to port 8080 on the container
+    restart: unless-stopped  # Optional: Ensures the container restarts unless explicitly stopped
+```
+
+![OpenL Setup](/blog_img/openl-setup.png)
