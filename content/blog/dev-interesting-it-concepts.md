@@ -125,6 +125,16 @@ docker pull ghcr.io/your_github_username/your_repo_name:v1.0
 
 ### VSCode Through Docker
 
+### Github Authenticating
+
+```sh
+sudo apt update
+sudo apt install gh #https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls
+gh auth login #you can use HTTPs
+```
+
+* https://github.com/login/device and paste the Code the CLI will give you
+
 ---
 
 ### What are microservices?
