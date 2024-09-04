@@ -1,12 +1,38 @@
 ---
 title: "What I've learnt about websites"
-date: 2025-11-05T23:20:21+01:00
-draft: true
+date: 2024-09-04T10:20:21+01:00
+draft: false
 tags: ["dev"]
-description: 'Must know data concepts and techniques for your career in Analytics.'
-summary: 'The essential concepts of data modeling and key terms in this introductory course for effective data analytics and informed decision-making. Learn how to structure and represent data efficiently to unlock valuable insights and optimize your analytical capabilities.'
+summary: 'Interesting stuff Ive learn along the way when trying to make better Websites. A Non-WebDev perspective.'
 url: 'create-your-website'
 ---
+
+
+{{< details title="Important Files for all Webs 📌" closed="true" >}}
+
+
+Look always for the `<head>` - It will guide you to a `Base.astro`, `BaseLayout.astro`, `head.html`...
+
+In there you can do interesting things, like adding web analytics.
+
+{{< /details >}}
+
+
+{{< details title="About favicons 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
+
+{{< details title="How to get OGImage right 📌" closed="true" >}}
+
+
+
+> As seen in [Web3Templates - Stablo Theme](https://github.com/IoTechCrafts/stablo-astro-SSG)
+
+{{< /details >}}
+
 
 ## What Ive Learnt about Astro
 
@@ -19,6 +45,17 @@ import { AstroSeo } from '@astrolib/seo';
 as in the [Minimal Studio Theme by michael-andreuzza ](https://github.com/IoTechCrafts/minimalstudio-ssg)
 
 {{< /details >}}
+
+{{< details title="WebSearch in Astro 📌" closed="true" >}}
+
+
+as in the [withastro/starlight Theme](https://github.com/IoTechCrafts/starlight-SSG)
+
+{{< /details >}}
+
+
+
+
 
 ## Tweaking HUGO Themes
 
