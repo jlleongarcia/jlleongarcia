@@ -81,8 +81,9 @@ services:
 
 {{< details title="Run OpenL Tablets with Docker 📌" closed="true" >}}
 
-* https://hub.docker.com/u/openltablets/
-Docker Image for OpenL Tablets Rule Services
+* Because you dont want to download java 11, then go to openl tablets and to the current version demo 5.27.7...
+
+* Let's do it with Docker instead - https://hub.docker.com/u/openltablets/
 
 * And the WebStudio - https://hub.docker.com/r/openltablets/webstudio
 

@@ -1,5 +1,5 @@
 ---
-title: "What I've learnt about websites"
+title: "What I've learnt about Websites"
 date: 2024-09-04T10:20:21+01:00
 draft: false
 tags: ["dev"]
@@ -20,7 +20,7 @@ In there you can do interesting things, like adding web analytics.
 
 {{< details title="About favicons 📌" closed="true" >}}
 
-
+as in the [withastro/starlight Theme](https://github.com/IoTechCrafts/starlight-SSG) or Pacamara
 
 {{< /details >}}
 
@@ -37,10 +37,27 @@ In there you can do interesting things, like adding web analytics.
 ## What Ive Learnt about Astro
 
 
+{{< details title="RaspAP with Mullvad 📌" closed="true" >}}
+
+checking dependencies
+
+```sh
+npm list @astrojs/starlight
+npm install @astrojs/starlight
+npm install @astrojs/starlight --legacy-peer-deps #if you have some dep issues
+```
+
+
+{{< /details >}}
+
+
+
+
 {{< details title="Better SEO for Astro 📌" closed="true" >}}
 
-
+```astro
 import { AstroSeo } from '@astrolib/seo';
+```
 
 as in the [Minimal Studio Theme by michael-andreuzza ](https://github.com/IoTechCrafts/minimalstudio-ssg)
 
@@ -51,8 +68,24 @@ as in the [Minimal Studio Theme by michael-andreuzza ](https://github.com/IoTech
 
 as in the [withastro/starlight Theme](https://github.com/IoTechCrafts/starlight-SSG)
 
+one of the most complete Astro themes ive seen - also supporting several languages
+* https://starlight.astro.build/guides/i18n/
 {{< /details >}}
 
+{{< details title="Optimized images in Astro 📌" closed="true" >}}
+
+```astro
+import { Image } from 'astro:assets'
+
+import photopost1b from '../../assets/image.jpg';
+
+<figure>
+  <Image src={photopost1b} width={500} height={200} alt="Exploring Astro Images" />
+  <figcaption class="caption">Say hi to Astro</figcaption>
+</figure>
+```
+
+{{< /details >}}
 
 
 
@@ -110,6 +143,8 @@ firebase deploy #you will get something like -> https://jalcocertech.web.app/
 * https://search.google.com/search-console/
 
 * https://trends.google.es/trends/
+
+* https://www.websitecarbon.com/
 
 * https://github.com/Lissy93/web-check
     * https://web-check.xyz/
