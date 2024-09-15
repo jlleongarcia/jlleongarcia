@@ -6,8 +6,13 @@ tags: ["Dev"]
 summary: "CSS Frameworks I find amazing"
 ---
 
+In case you dont know yet, CSS is oart of the [front-end of websites](https://roadmap.sh/frontend).
+
+And you can make cool things, easily.
 
 ## Tailwind
+
+https://tailwindui.com/components
 
 ## Material UI - MUI
 

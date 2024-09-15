@@ -25,6 +25,8 @@ This is were **F-Droid** enters - you can [get F/OSS Apps](https://f-droid.org/e
 * Syncthing - https://github.com/syncthing/syncthing
 * Nextcloud - https://github.com/nextcloud/android
 
+If you need a NAS, you can check HexOS
+
 * https://github.com/bitwarden/clients
 * https://f-droid.org/packages/net.mullvad.mullvadvpn/
 

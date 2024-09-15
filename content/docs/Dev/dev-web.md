@@ -129,6 +129,12 @@ WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, 
 * https://roadmap.sh/frontend
 * https://roadmap.sh/backend
 
+You need markdown for these SSGs - https://github.com/Cveinnt/LetsMarkdown.com
+
+```sh
+docker run --rm -dp 3030:3030 cveinnt/LetsMarkdown.com
+```
+
 {{< details title="Free SSG Deployment 📌" closed="true" >}}
 
 * With Firebase
@@ -154,6 +160,7 @@ firebase deploy #you will get something like -> https://jalcocertech.web.app/
 
 * You will need proper favicons
     * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
+    * https://github.com/seadfeng/favicon-downloader
 
 ### CDN and Videos for your Website
 
