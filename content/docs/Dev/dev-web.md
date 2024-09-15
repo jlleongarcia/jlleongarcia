@@ -7,6 +7,7 @@ summary: 'Interesting stuff Ive learn along the way when trying to make better W
 url: 'create-your-website'
 ---
 
+You can create cool static websites with these frameworks, and also with [Remix](https://github.com/jacob-ebey/remix-ssg)
 
 {{< details title="Important Files for all Webs 📌" closed="true" >}}
 
@@ -73,6 +74,8 @@ one of the most complete Astro themes ive seen - also supporting several languag
 {{< /details >}}
 
 {{< details title="Optimized images in Astro 📌" closed="true" >}}
+
+You will **need astrojs/mdx installed** first and use it within .mdx files:
 
 ```astro
 import { Image } from 'astro:assets'

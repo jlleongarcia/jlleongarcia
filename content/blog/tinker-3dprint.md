@@ -10,6 +10,8 @@ summary: abcd
 
 People recommended me: [Prusa](https://www.prusa3d.com/) or BambuLabs
 
+* https://www.prusa3d.com/page/how-to-choose-a-3d-printer_229126/
+
 {{< details title="What to Know before choosing a 3D Printer 📌" closed="true" >}}
 
 * https://all3dp.com/2/3d-printing-for-beginners-all-you-need-to-know-to-get-started/
@@ -81,6 +83,11 @@ People recommended me: [Prusa](https://www.prusa3d.com/) or BambuLabs
 * https://www.printables.com/es
 * https://thangs.com/
 * [maker world](https://makerworld.com/en/3d-models)
+
+* https://www.reddit.com/r/3Dprinting/comments/1ep78yx/is_thingiverse_still_the_standard_place_to_get/
+* https://www.reddit.com/r/3Dprinting/comments/ozg8xj/creality_vs_prusa_3d_printers/
+* https://teachingtechyt.github.io/calibration.html
+
 
 {{< /details >}}
 
