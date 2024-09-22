@@ -218,7 +218,7 @@ apt-get install -y iputils-ping
 
 ```sh
 sudo apt-get install speedtest-cli
-speedtest-cli
+speedtest-cli #speedtest-cli --simple
 ```
 
 {{< /details >}}

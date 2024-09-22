@@ -129,7 +129,6 @@ Also in software support.
 | Raspberry Pi 4 2GB | ~1.7k events | - |
 | Raspberry Pi 4 4GB | ~28k events | - |
 | Orange Pi 5 | ~38k events | ~50k events |
-| AMD 5600G | - | - |
 
 ```sh
 sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
@@ -278,13 +277,14 @@ dig google.com
 
 ```sh
 sudo apt-get install speedtest-cli
-speedtest-cli
+speedtest-cli #speedtest-cli --simple
 ```
 
 
 ```sh
 curl -sS https://ipinfo.io/json #the command to use
 curl -sS http://ip-api.com/json/ #provides info about country, ISP, ...
+curl -6 ifconfig.me #ipv6 info 
 ```
 
 {{% /details %}}
