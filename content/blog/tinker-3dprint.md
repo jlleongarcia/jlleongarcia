@@ -17,6 +17,8 @@ People recommended me: [Prusa](https://www.prusa3d.com/) or BambuLabs
 * https://all3dp.com/2/3d-printing-for-beginners-all-you-need-to-know-to-get-started/
 * https://www.prusa3d.com/page/basics-of-3d-printing-with-josef-prusa_490/
 * https://www.reddit.com/r/3Dprinting/wiki/gettingstarted/
+* https://www.reddit.com/r/prusa3d/comments/1eau9je/give_it_to_me_prusa_vs_bambu/
+* https://www.reddit.com/r/BambuLab/comments/1cqn7ua/why_bambu_over_prusa_specifically_p1s_vs_prusa_mk4/
 
 1. Type of 3D Printer (Technology)
 - **FDM (Fused Deposition Modeling):** 

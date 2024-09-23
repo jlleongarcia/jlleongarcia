@@ -3,7 +3,7 @@ title: "Ansible and Raspberry Pi"
 date: 2024-08-10T23:20:21+01:00
 draft: true
 tags: ["Dev"]
-summary: Comparing SBCs performance with the Cloud - Raspberry Pi, Orange Pi, Mini PC, Cloud...?
+summary: Learning about Ansible with SBCs
 url: ansible-with-raspberry-pi
 ---
 

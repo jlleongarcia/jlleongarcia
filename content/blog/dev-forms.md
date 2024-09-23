@@ -38,3 +38,11 @@ Check that its performing with:
 
 * https://pagespeed.web.dev/
 * https://web-check.xyz/
+
+
+Paid - https://formpress.org/pricing
+
+### Other Tools
+
+https://www.tawk.to/ - Talk to customers
+https://www.cal.com/
