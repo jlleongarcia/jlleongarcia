@@ -17,7 +17,7 @@ Docker Multi-Platform-->
 Some months ago I was sharing with you my Shiny App [R Stocks](https://github.com/JAlcocerT/R_Stocks)
 
 ## Building R Shiny Apps Docker Image
-d
+
 ### X86 Images
 
 
