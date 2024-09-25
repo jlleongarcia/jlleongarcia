@@ -61,6 +61,3 @@ I am using the
 Recently I got an Orange Pi and I am using it to self-host some of my favourite services, as well of my personal projects.
 
 The Docker setup to make Shiny works on armv8 has been way more challenging than the x86, particularly to make the yfR package work properly.
-
-
-{{< pdf "/blog_pdf/OrangePi_5_RK3588S_User-Manual_v1.5.pdf" >}}

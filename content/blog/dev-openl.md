@@ -53,10 +53,11 @@ url: 'understanding-openl-tablets'
 {{< /details >}}
 
 
-* SimpleLookup
+
 * SpreadSheet Tables
-
-
+* **Simple LookUp**
+* **LookUp Table**
+* **Smart Decision Tables**
 
 {{< details title="You can run OpenL Tablets Demo example with Docker 📌" closed="true" >}}
 
@@ -108,3 +109,4 @@ services:
 ## Resources that Helped
 
 * https://notebooklm.google.com/
+* https://openldocs.readthedocs.io/en/latest/documentation/guides/reference_guide/#creating-tables-for-openl-tablets

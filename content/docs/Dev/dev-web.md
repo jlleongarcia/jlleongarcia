@@ -132,7 +132,7 @@ WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, 
 You need markdown for these SSGs - https://github.com/Cveinnt/LetsMarkdown.com
 
 ```sh
-docker run --rm -dp 3030:3030 cveinnt/LetsMarkdown.com
+docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
 ```
 
 {{< details title="Free SSG Deployment 📌" closed="true" >}}
