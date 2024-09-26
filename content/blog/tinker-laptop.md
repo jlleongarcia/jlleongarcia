@@ -18,6 +18,7 @@ url: laptop-benchmark
 | Orange Pi 5 | ~38k events | ~50k events |
 | AMD 5600G | - | - |
 | AMD 5850U | ~72k events | ~121k events |
+| Intel i3 5005U | ~7.3k events | - |
 
 
 ```sh
