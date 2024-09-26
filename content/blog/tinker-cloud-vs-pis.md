@@ -13,7 +13,10 @@ Time to choose - where is it worth [to do SelfHosting](https://jalcocert.github.
 
 Sometime ago, I was doing some benchmarks about [Raspberry Pi vs Orange Pi](https://jalcocert.github.io/RPi/posts/pi-vs-orange/) and also about [Mini PCs vs those SBC](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/).
 
-<!-- {{< pdf "/blog_pdf/OrangePi_5_RK3588S_User-Manual_v1.5.pdf" >}} -->
+<!-- 
+{{< pdf "/blog_pdf/OrangePi_5_RK3588S_User-Manual_v1.5.pdf" >}}
+OrangePi_5_RK3588S_User-Manual_v1.5.pdf
+ -->
 
 ![CV with a RPI4](/blog_img/mini_pc/bmax_asrockx300.jpg)
 
