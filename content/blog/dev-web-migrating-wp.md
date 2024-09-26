@@ -1,7 +1,7 @@
 ---
 title: "From Wordpress to a Cool Website"
-date: 2024-09-04T10:20:21+01:00
-draft: true
+date: 2024-09-23T10:20:21+01:00
+draft: false
 tags: ["dev"]
 summary: 'Migrating Wordpress to Cool Websites'
 url: 'wordpress-migration-to-ssg'
@@ -56,6 +56,11 @@ We tried to add the Umami script on the wordpress Theme, but the option was also
 
 {{< /hextra/feature-grid >}}
 
+### SSG Alternatives
+
+* https://github.com/CaiJimmy/hugo-theme-stack
+  * Supports https://photoswipe.com/ out of the box!
+
 
 ### The challenges
 
@@ -64,6 +69,8 @@ Writing posts on md a IDE...that can cause some friction.
 I proposed to have a look to:
 
 * https://vscode.dev/
+  * Alternatively Github Codespaces or Gitlab Web IDE can do
+  * You can also provide [VSCode as a container](https://github.com/JAlcocerT/Docker/blob/main/Dev/vscode-server_Docker-compose.yml)
 * letsMarkdown
 
 {{< details title="A quick look on how to use markdown 📌" closed="true" >}}
@@ -76,6 +83,9 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown #https://github.com/Cveinnt/L
 
 ## How to Migrate WordPress
 
+### Scrapping Wordpress Content
+
+### Creating the markdown posts with AI
 
 
 ---
@@ -87,9 +97,15 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown #https://github.com/Cveinnt/L
 * With Firebase
 
 ```sh
-firebase init #configure files for firebase hosting / public directory is normall public for HUGO and dist for Astro/nodes
+firebase init #configure files for firebase hosting / public directory is normal public for HUGO and dist for Astro/nodes
 firebase deploy #you will get something like -> https://jalcocertech.web.app/
 ```
+
+> Yes, **free web.app subdomain**!
+
+* With Cloudflare Pages
+
+> Here you get a **pages.dev subdomain**, also for free
 
 {{< /details >}}
 
@@ -108,6 +124,25 @@ firebase deploy #you will get something like -> https://jalcocertech.web.app/
 * You will need proper favicons
     * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
     * https://github.com/seadfeng/favicon-downloader
+
+
+{{< details title="Do I have broken links? 📌" closed="true" >}}
+
+```sh
+#podman run --rm -it ghcr.io/linkchecker/linkchecker:latest --verbose https://fossengineer.com > linkchecker_output.txt
+
+docker run --rm -it -u $(id -u):$(id -g) ghcr.io/linkchecker/linkchecker:latest --verbose https://www.example.com
+```
+
+* Option 2: with the [python Package](https://pypi.org/project/LinkChecker/)
+
+```sh
+pip3 install linkchecker #Check links in web documents or full websites
+```
+
+You will get a report with what’s link working and what not when it comes to Links in your Site.
+
+{{< /details >}}
 
 ### CDN and Videos for your Website
 

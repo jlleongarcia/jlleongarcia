@@ -132,6 +132,8 @@ The ENS ([ERC-721 Token](https://fossengineer.com/crypto-101-concepts-for-data-a
 
 I have [this repository](https://jalcocert.github.io/web3/) where I try to collect Web3 related stuff :)
 
+* You might want to have a look to https://whycryptocurrencies.com/
+
 ---
 
 ## FAQ
