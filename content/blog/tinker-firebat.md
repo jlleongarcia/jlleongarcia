@@ -16,10 +16,71 @@ url: firebat-ak2-plus-minipc-review
 > Great accesibility to add an additional 2.5" drive
 ---
 
+| Device | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) |
+| :-- | :-- | :-- |
+| Raspberry Pi 4 2GB | ~1.7k events | - |
+| Raspberry Pi 4 4GB | ~28k events | - |
+| Orange Pi 5 | ~38k events | ~50k events |
+| FireBat | ~22k events | - |
+
+```sh
+sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
+7z b -mmt4
+```
+
+| Device | Tot (4 threads) |
+| :-- | :-- | :-- |
+| Raspberry Pi 4 2GB | 1622/6311 | 
+| Raspberry Pi 4 4GB | 1442/5508 | 
+| Raspberry Pi 5 8GB | 2.7k/10k | 
+| Orange Pi 5 |  2.7k/11.8k | 
+| FireBat | ~1.8k events | ~6.4k events |
+
+
+
+
+```sh
+git clone https://github.com/JAlcocerT/Py_Trip_Planner/
+cd Py_Trip_Planner
+
+sudo bash -c 'time docker pull python:3.8' #let's remove the time of downloading the Python base image from the equation, it was ~1 min!
+
+#docker build -t pytripplanner .
+sudo bash -c 'time docker build --no-cache -t pytripplanner .'
+#sudo bash -c 'time podman build -t pytripplanner .'
+```
+
+```sh
+apt install cargo
+#cargo install --git https://github.com/astral-sh/rye rye
+time cargo install --git https://github.com/astral-sh/rye rye
+```
+
+
+| Device | Docker Build | Max Temp | Peak Temp (Docker Build) | Avg Temp (Docker Build) |
+| :-- | :-- | :-- | :-- | :-- |
+| Raspberry Pi 4 2GB | ~3672s | - | ~46°C | ~39°C |
+| Raspberry Pi 4 4GB | ~3480s | - | - | - |
+| Orange Pi 5 | ~1777s | 80°C | ~65°C | ~50°C |
+| BMAX B4 | ~45 seconds | 64°C fan | - | - |
+| Firebat | ~47 seconds | - | - | - |
+| AMD 5600G | - | - fan | - | - |
+
+| Platform | opi    | rpi4b 2gb | RPi 5 8GB | Hetzner  | FireBat |
+|----------|--------|-----------|-----------|----------|----------|
+| Build Time | 5min 20s | 10min 7s  | 4min 30s  | 6min 15s | 2min 45s|
+
+
 ## FAQ
+
+Enter the FireBat MiniPC bios by pressing ESC.
+
+### How to Benchmark the Firebat MiniPC
 
 
 {{% details title="Testing CPU Performance - SysBench, TripPlanner, build Astral-sh,..." closed="true" %}}
+
+Check CPU cores and test with sysbench:
 
 ```sh
 #cat /proc/cpuinfo
@@ -29,7 +90,7 @@ sudo apt install sysbench -y
 sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
 ```
 
-* 7zip
+* Benchmark with 7zip:
 
 ```sh
 sudo apt-get install p7zip-full
