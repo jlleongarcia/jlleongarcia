@@ -24,7 +24,7 @@ url: firebat-ak2-plus-minipc-review
 | Raspberry Pi 4 2GB | ~1.7k events | - |
 | Raspberry Pi 4 4GB | ~28k events | - |
 | Orange Pi 5 | ~38k events | ~50k events |
-| FireBat | ~39k events | - |
+| FireBat | ~35k events | - |
 
 > 22k events if power saving mode is enabled in Linux
 
@@ -34,7 +34,7 @@ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
 ```
 
 | Device | Tot (4 threads) |
-| :-- | :-- | :-- |
+| :-- | :-- |
 | Raspberry Pi 4 2GB | 1622/6311 | 
 | Raspberry Pi 4 4GB | 1442/5508 | 
 | Raspberry Pi 5 8GB | 2.7k/10k | 
@@ -64,12 +64,12 @@ time cargo install --git https://github.com/astral-sh/rye rye
 
 | Device                     | Raspberry Pi 4 2GB | Raspberry Pi 4 4GB | Orange Pi 5 | BMAX B4 N95 | Firebat AK2 Plus N100 | AMD 5600G |
 |----------------------------|--------------------|--------------------|-------------|-------------|------------------------|-----------|
-| **Docker Build Time**       | ~3672s             | ~3480s             | ~1777s      | ~45s        | ~47s                   | -         |
+| Docker Build      | ~3672s             | ~3480s             | ~1777s      | ~45s        | ~47s                   | -         |
 
 
 | Platform | opi    | rpi4b 2gb | RPi 5 8GB | Hetzner  | FireBat |
 |----------|--------|-----------|-----------|----------|----------|
-| Build Time Astral| 5min 20s | 10min 7s  | 4min 30s  | 6min 15s | 2min 45s|
+| Build Astral| 5min 20s | 10min 7s  | 4min 30s  | 6min 15s | 2min 45s|
 
 
 ## Using a MiniPC as Home Cloud
@@ -105,6 +105,23 @@ sudo ufw allow ssh
 ```
 
 > With `ifconfig` you can see the local ip address and also the tailscale one
+
+{{< /details >}}
+
+
+{{< details title="Reset Portianer Password 📌" closed="true" >}}
+
+There was some installation on other PC and we had to restart it...
+
+```sh
+sudo docker stop portainer
+sudo docker rm portainer
+
+sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always \
+-v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data \
+-e "ADMIN_PASSWORD=<your_hashed_password>" portainer/portainer-ce
+```
+
 
 {{< /details >}}
 
@@ -170,12 +187,59 @@ services:
     ports:
       - 8080:80
     volumes:
-      - /home/Docker/FileBrowser/data:/srv
+      - /home/Docker/FileBrowser/data:/config
       - /media/casa/Datos_Copia_2/Datos_Servidor:/srv #same as Syncthing!
     restart: unless-stopped    
 ```
 
 > Access the FileBrowser admin UI with: `admin/admin` at port `8384`
+
+You could also try [NextCloud](https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/):
+
+```yml
+version: '2'
+
+volumes:
+  nextcloud:
+  db:
+
+services:
+  db:
+    image: linuxserver/mariadb
+    restart: always
+    container_name: nextclouddb
+    volumes:
+      - /home/Docker/nextcloud/db:/var/lib/mysql
+    environment:
+      - MYSQL_INITDB_SKIP_TZINFO=1
+      - MYSQL_ROOT_PASSWORD=rootpass
+      - MYSQL_PASSWORD=ncpass
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+#    networks: ["nginx_nginx_network"] #optional 
+
+  app:
+    image: nextcloud #latest
+    container_name: nextcloud
+    restart: always
+    ports:
+      - 8080:80
+    links:
+      - db
+    volumes:
+      - /home/Docker/nextcloud/html:/var/www/html
+    environment:
+      - MYSQL_PASSWORD=ncpass
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_HOST=db
+      - NEXTCLOUD_TRUSTED_DOMAINS=http://0.0.0.0:8080 #https://nextcloud.yourduckdnsubdomain.duckdns.org/
+#    networks: ["nginx_nginx_network"] #optional 
+ 
+# networks: #optional
+#   nginx_nginx_network: #optional
+#     external: true #optional
+```
 
 {{< /details >}}
 
