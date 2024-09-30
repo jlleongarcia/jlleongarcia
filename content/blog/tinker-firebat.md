@@ -11,9 +11,12 @@ url: firebat-ak2-plus-minipc-review
 
 ## The FIREBAT AK2 PLUS MiniPC
 
-* N100 8GB 256GB
+* Intel N100 (4 cores) 8GB@2600mhz 256GB
 
-> Great accesibility to add an additional 2.5" drive
+> Great accesibility to add an additional 2.5" drive!
+
+
+
 ---
 
 | Device | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) |
@@ -21,7 +24,9 @@ url: firebat-ak2-plus-minipc-review
 | Raspberry Pi 4 2GB | ~1.7k events | - |
 | Raspberry Pi 4 4GB | ~28k events | - |
 | Orange Pi 5 | ~38k events | ~50k events |
-| FireBat | ~22k events | - |
+| FireBat | ~39k events | - |
+
+> 22k events if power saving mode is enabled in Linux
 
 ```sh
 sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
@@ -57,18 +62,14 @@ time cargo install --git https://github.com/astral-sh/rye rye
 ```
 
 
-| Device              | Docker Build  |
-|---------------------|---------------|
-| Raspberry Pi 4 2GB  | ~3672s         |
-| Raspberry Pi 4 4GB  | ~3480s         |
-| Orange Pi 5         | ~1777s         |
-| BMAX B4 N95         | ~45 seconds    |
-| Firebat AK2 Plus N100| ~47 seconds    |
-| AMD 5600G           | -             |
+| Device                     | Raspberry Pi 4 2GB | Raspberry Pi 4 4GB | Orange Pi 5 | BMAX B4 N95 | Firebat AK2 Plus N100 | AMD 5600G |
+|----------------------------|--------------------|--------------------|-------------|-------------|------------------------|-----------|
+| **Docker Build Time**       | ~3672s             | ~3480s             | ~1777s      | ~45s        | ~47s                   | -         |
+
 
 | Platform | opi    | rpi4b 2gb | RPi 5 8GB | Hetzner  | FireBat |
 |----------|--------|-----------|-----------|----------|----------|
-| Build Time | 5min 20s | 10min 7s  | 4min 30s  | 6min 15s | 2min 45s|
+| Build Time Astral| 5min 20s | 10min 7s  | 4min 30s  | 6min 15s | 2min 45s|
 
 
 ## Using a MiniPC as Home Cloud
@@ -79,15 +80,119 @@ This is the architecture:
 ```mermaid
 graph LR
     A[Android Phone] -- Sends --> B[Lenovo i3]
-    B -- Sends --> C[Firebat Server]
+    B -- Sends <--> C[Firebat Server]
     
     C -- Sends & Receives <--> D[Desktop]
-    E[Small Lenovo Laptop] -- Sends --> C
+    E[Small Lenovo Laptop] -- Sends <--> C
 ```
+
+* Router: `http://192.168.1.1/`
+* FireBat: `http://192.168.1.103/`
+
+
+{{< details title="Setup the Server for SelfHosting 📌" closed="true" >}}
+
+* Start with the [SelfHosting script](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
+
+```sh
+sudo apt update
+sudo apt install openssh-server
+#systemctl status ssh
+
+sudo ufw allow ssh
+
+#ssh username@<local_minipc_server_ip>
+```
+
+> With `ifconfig` you can see the local ip address and also the tailscale one
+
+{{< /details >}}
+
+{{< details title="[Optiona] Update DNS 📌" closed="true" >}}
+
+```sh
+sudo nano /etc/resolv.conf
+```
+
+Add the following if you want to use quad9 DNS:
+`nameserver 9.9.9.9`
+`nameserver 149.112.112.112`
+
+```sh
+nslookup google.com #see that now you are using quad9 DNS
+```
+
+
+{{< /details >}}
+
+
+{{< details title="Inspects the disks 📌" closed="true" >}}
+
+Connect with ssh as:
+
+```sh
+ssh casa@192.168.1.103
+df -h #its /dev/sda1 and its already mounted at /media/casa/Datos_Copia_2
+```
+
+
+![Exploring FireBat Disks](/blog_img/mini_pc/firebat-disks.png.png)
+
+{{< /details >}}
+
+{{< details title="Configure FileBrowser with Syncthing 📌" closed="true" >}}
+
+```yml
+---
+version: "2.1"
+services:
+  syncthing:
+    image: syncthing/syncthing #ghcr.io/linuxserver/syncthing
+    container_name: syncthing
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Rome
+    volumes:
+      - /home/Docker/Syncthing/config:/config
+      - /media/casa/Datos_Copia_2/Datos_Servidor:/data1 #same as filebrowser
+    ports:
+      - 8384:8384 
+      - 22000:22000/tcp
+      - 22000:22000/udp
+      - 21027:21027/udp
+    restart: unless-stopped
+
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser
+    ports:
+      - 8080:80
+    volumes:
+      - /home/Docker/FileBrowser/data:/srv
+      - /media/casa/Datos_Copia_2/Datos_Servidor:/srv #same as Syncthing!
+    restart: unless-stopped    
+```
+
+> Access the FileBrowser admin UI with: `admin/admin` at port `8384`
+
+{{< /details >}}
+
+
+## FireBat MiniPC as Media Server
+
+```sh
+flatpak install flathub com.brave.Browser
+```
+
 
 ## FAQ
 
 Enter the FireBat MiniPC bios by pressing ESC.
+
+* Find more interesting apps at:
+    * https://flathub.org/
+    * https://snapcraft.io/
 
 ### How to Benchmark the Firebat MiniPC
 

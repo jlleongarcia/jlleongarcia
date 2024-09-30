@@ -25,6 +25,8 @@ https://daisyui.com/components/diff/
 
 ### More CSS Resources
 
+* https://ui.shadxn.com/docs/registries/shadxn
+
 * https://blog.logto.io/css-only-infinite-scroll
 
 
