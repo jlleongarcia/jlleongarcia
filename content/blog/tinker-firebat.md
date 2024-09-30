@@ -34,7 +34,7 @@ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
 | Raspberry Pi 4 4GB | 1442/5508 | 
 | Raspberry Pi 5 8GB | 2.7k/10k | 
 | Orange Pi 5 |  2.7k/11.8k | 
-| FireBat | ~1.8k events | ~6.4k events |
+| FireBat | ~1.8k/6.4 events |
 
 
 
@@ -70,6 +70,20 @@ time cargo install --git https://github.com/astral-sh/rye rye
 |----------|--------|-----------|-----------|----------|----------|
 | Build Time | 5min 20s | 10min 7s  | 4min 30s  | 6min 15s | 2min 45s|
 
+
+## Using a MiniPC as Home Cloud
+
+
+This is the architecture:
+
+```mermaid
+graph LR
+    A[Android Phone] -- Sends --> B[Lenovo i3]
+    B -- Sends --> C[Firebat Server]
+    
+    C -- Sends & Receives <--> D[Desktop]
+    E[Small Lenovo Laptop] -- Sends --> C
+```
 
 ## FAQ
 
@@ -180,5 +194,6 @@ A raspberry Pi inside a container - https://github.com/ptrsr/pi-ci
 > A Raspberry **Pi emulator in a Docker image** that lets developers easily prepare and flash RPi configurations.
 
 
+### How I Created the diagrams
 
-
+* Using **MermaidJS** with mermaid.live as per [this guide](https://fossengineer.com/free-diagram-tools/#mermaidjs)
