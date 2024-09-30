@@ -9,7 +9,7 @@ url: 'wordpress-migration-to-ssg'
 
 I was talking with my father about websites the other day and...
 
-I realized how much more we can do with SSG's than with wordpress.
+I realized how much **more we can do with SSG's than with wordpress**.
 
 It all started trying to add Web Analytics to his site.
 

@@ -1,7 +1,7 @@
 ---
 title: "[Review] Firebat AK2 PLUS"
-date: 2024-10-10T23:20:21+01:00
-draft: true
+date: 2024-09-29T23:20:21+01:00
+draft: false
 tags: ["Dev"]
 summary: Testing Firebat Mini PC
 url: firebat-ak2-plus-minipc-review
@@ -57,14 +57,14 @@ time cargo install --git https://github.com/astral-sh/rye rye
 ```
 
 
-| Device | Docker Build | Max Temp | Peak Temp (Docker Build) | Avg Temp (Docker Build) |
-| :-- | :-- | :-- | :-- | :-- |
-| Raspberry Pi 4 2GB | ~3672s | - | ~46°C | ~39°C |
-| Raspberry Pi 4 4GB | ~3480s | - | - | - |
-| Orange Pi 5 | ~1777s | 80°C | ~65°C | ~50°C |
-| BMAX B4 | ~45 seconds | 64°C fan | - | - |
-| Firebat | ~47 seconds | - | - | - |
-| AMD 5600G | - | - fan | - | - |
+| Device              | Docker Build  |
+|---------------------|---------------|
+| Raspberry Pi 4 2GB  | ~3672s         |
+| Raspberry Pi 4 4GB  | ~3480s         |
+| Orange Pi 5         | ~1777s         |
+| BMAX B4 N95         | ~45 seconds    |
+| Firebat AK2 Plus N100| ~47 seconds    |
+| AMD 5600G           | -             |
 
 | Platform | opi    | rpi4b 2gb | RPi 5 8GB | Hetzner  | FireBat |
 |----------|--------|-----------|-----------|----------|----------|
