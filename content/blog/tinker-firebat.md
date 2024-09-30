@@ -135,10 +135,11 @@ ssh casa@192.168.1.103
 df -h #its /dev/sda1 and its already mounted at /media/casa/Datos_Copia_2
 ```
 
-
-![Exploring FireBat Disks](/blog_img/mini_pc/firebat-disks.png.png)
+![Exploring FireBat Disks](/blog_img/mini_pc/firebat-disks.png)
 
 {{< /details >}}
+
+
 
 {{< details title="Configure FileBrowser with Syncthing 📌" closed="true" >}}
 
