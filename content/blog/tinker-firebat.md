@@ -2,11 +2,10 @@
 title: "[Review] Firebat AK2 PLUS"
 date: 2024-09-29T23:20:21+01:00
 draft: false
-tags: ["Dev"]
+tags: ["Tinkering"]
 summary: Testing Firebat Mini PC
 url: firebat-ak2-plus-minipc-review
 ---
-
 
 
 ## The FIREBAT AK2 PLUS MiniPC
@@ -15,34 +14,28 @@ url: firebat-ak2-plus-minipc-review
 
 > Great accesibility to add an additional 2.5" drive!
 
+### Firebat AK2 Benchmarks
 
+Running some **synthetic tests on the Firebat MiniPC** and comparing it with SBC's and more:
 
----
-
-| Device | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) |
-| :-- | :-- | :-- |
-| Raspberry Pi 4 2GB | ~1.7k events | - |
-| Raspberry Pi 4 4GB | ~28k events | - |
-| Orange Pi 5 | ~38k events | ~50k events |
-| FireBat | ~35k events | - |
-
-> 22k events if power saving mode is enabled in Linux
+| Device             | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) | Tot (4 threads) 7 zip  |
+|--------------------|---------------------------|---------------------------|------------------------|
+| Raspberry Pi 4 2GB | ~1.7k events               | -                         | 1622/6311              |
+| Raspberry Pi 4 4GB | ~28k events                | -                         | 1442/5508              |
+| Orange Pi 5         | ~38k events               | ~50k events               | 2.7k/11.8k             |
+| Raspberry Pi 5 8GB  | -                         | -                         | 2.7k/10k               |
+| FireBat             | ~35k events               | -                         | ~1.8k/6.4k events      |
 
 ```sh
-sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
+sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run #4 cores
 7z b -mmt4
 ```
 
-| Device | Tot (4 threads) |
-| :-- | :-- |
-| Raspberry Pi 4 2GB | 1622/6311 | 
-| Raspberry Pi 4 4GB | 1442/5508 | 
-| Raspberry Pi 5 8GB | 2.7k/10k | 
-| Orange Pi 5 |  2.7k/11.8k | 
-| FireBat | ~1.8k/6.4 events |
+> Firebat results go to 22k events if power saving mode is enabled in Linux
 
 
 
+And now the real benchmarks:
 
 ```sh
 git clone https://github.com/JAlcocerT/Py_Trip_Planner/
@@ -62,17 +55,29 @@ time cargo install --git https://github.com/astral-sh/rye rye
 ```
 
 
-| Device                     | Raspberry Pi 4 2GB | Raspberry Pi 4 4GB | Orange Pi 5 | BMAX B4 N95 | Firebat AK2 Plus N100 | AMD 5600G |
-|----------------------------|--------------------|--------------------|-------------|-------------|------------------------|-----------|
-| Docker Build      | ~3672s             | ~3480s             | ~1777s      | ~45s        | ~47s                   | -         |
 
+| Device                     | Docker Build       | Build Astral       |
+|----------------------------|--------------------|--------------------|
+| Raspberry Pi 4 2GB          | ~3672s             | 10min 7s           |
+| Raspberry Pi 4 4GB          | ~3480s             | -                  |
+| Orange Pi 5                 | ~1777s             | 5min 20s           |
+| BMAX B4 N95                 | ~45s               | -                  |
+| Firebat AK2 Plus N100       | ~47s               | 2min 45s           |
+| AMD 5600G                   | -                  | -                  |
+| RPi 5 8GB                   | -                  | 4min 30s           |
+| Hetzner                     | -                  | 6min 15s           |
 
-| Platform | opi    | rpi4b 2gb | RPi 5 8GB | Hetzner  | FireBat |
-|----------|--------|-----------|-----------|----------|----------|
-| Build Astral| 5min 20s | 10min 7s  | 4min 30s  | 6min 15s | 2min 45s|
+> N95 was 5% faster when building [the Docker Image](https://github.com/JAlcocerT/Py_Trip_Planner/)
 
+## Cool Stuff with FireBat MiniPC
 
-## Using a MiniPC as Home Cloud
+Some ideas that you can do with your MiniPC:
+
+1. Setup a Home Cloud
+2. Use the MiniPC as media server
+3. Use it to plan your trips as per weather conditions
+
+### Using a MiniPC as Home Cloud
 
 
 This is the architecture:
@@ -250,11 +255,30 @@ services:
 {{< /details >}}
 
 
-## FireBat MiniPC as Media Server
+### FireBat MiniPC as Media Server
 
 ```sh
 flatpak install flathub com.brave.Browser
 ```
+
+### FireBat Trip Planner
+
+
+
+{{< details title="Setup Trip Planner 📌" closed="true" >}}
+
+```yml
+version: "2"
+services:
+  tripplanner:
+    image: ghcr.io/jalcocert/py_trip_planner #https://github.com/JAlcocerT/Py_Trip_Planner/pkgs/container/py_trip_planner
+    container_name: tripplanner
+    ports:
+      - 8051:8050
+    restart: unless-stopped
+```
+
+{{< /details >}}
 
 
 ## FAQ

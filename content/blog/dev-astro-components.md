@@ -144,6 +144,55 @@ npm run preview
 
 {{< /dropdown >}}
 
+{{< dropdown title="How can I avoid rendering posts which are draft? ⏬" closed="true" >}}
+
+Define the content collections properly Go to the `astro.config.mjs` or to the `config.ts` file.
+
+
+```ts
+import { defineCollection, reference, z } from 'astro:content';
+
+const blogCollection = defineCollection({
+    type: 'content',
+    schema: ({ image }) => z.object({
+        title: z.string(),
+        intro: z.string(),
+        tag: z.string(),
+        pubDate: z.date(),
+        draft: z.boolean().optional(), // Add this line!!
+        type: z.string().optional(),
+    }),
+});
+
+const pageCollection = defineCollection({
+    type: 'content',
+    schema: ({ image }) => z.object({
+        title: z.string(),
+        intro: z.string(),
+        image: image().optional(),
+        type: z.string().optional(),
+    }),
+});
+
+export const collections = {
+    'blog': blogCollection,
+    'author': authorCollection,
+    'page': pageCollection,
+};
+```
+
+Then, use it in your astro templates like:
+
+```js
+  const allPosts = (await getCollection('blog'))
+        // Filter out posts that have draft: true
+        .filter(post => !post.data.draft)
+        // Sort the remaining posts by pubDate in descending order
+        .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+```
+
+{{< /dropdown >}}
+
 {{< dropdown title="How to deploy Astro to Cloudflare Pages? ⏬" closed="true" >}}
 
 
