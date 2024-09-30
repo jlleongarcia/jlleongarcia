@@ -80,14 +80,20 @@ This is the architecture:
 ```mermaid
 graph LR
     A[Android Phone] -- Sends --> B[Lenovo i3]
-    B -- Sends <--> C[Firebat Server]
+    B -- Sends & Receives <--> C[Firebat Server]
     
     C -- Sends & Receives <--> D[Desktop]
-    E[Small Lenovo Laptop] -- Sends <--> C
+    E[Small Lenovo Laptop] -- Sends & Receives <--> C
 ```
 
-* Router: `http://192.168.1.1/`
-* FireBat: `http://192.168.1.103/`
+* Devices
+  * Router: `http://192.168.1.1/`
+  * FireBat: `http://192.168.1.103/`
+  * Lenovo i3: `http://192.168.1.105/`  
+* Ports that will be use
+  * 9000 for portainer
+  * 8080 for filebrowser - Lenovo i3 will have the filebrowser UI at `http://192.168.1.105:8080` 
+  * 8384 for syncthing UI - FireBat syncthing is configured at `http://192.168.1.103:8384`
 
 
 {{< details title="Setup the Server for SelfHosting 📌" closed="true" >}}
