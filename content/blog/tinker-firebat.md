@@ -24,6 +24,7 @@ Running some **synthetic tests on the Firebat MiniPC** and comparing it with SBC
 | Raspberry Pi 4 4GB | ~28k events                | -                         | 1442/5508              |
 | Orange Pi 5         | ~38k events               | ~50k events               | 2.7k/11.8k             |
 | Raspberry Pi 5 8GB  | -                         | -                         | 2.7k/10k               |
+| AMD 2200g             | ~26.9k events               | -                         | ~4.2k/15.34k events      |
 | FireBat             | ~35k events               | -                         | ~1.8k/6.4k events      |
 
 ```sh
@@ -63,11 +64,14 @@ time cargo install --git https://github.com/astral-sh/rye rye
 | Orange Pi 5                 | ~1777s             | 5min 20s           |
 | BMAX B4 N95                 | ~45s               | -                  |
 | Firebat AK2 Plus N100       | ~47s               | 2min 45s           |
+| AMD 2200G                   | -                  |       -            |
 | AMD 5600G                   | -                  | -                  |
 | RPi 5 8GB                   | -                  | 4min 30s           |
 | Hetzner                     | -                  | 6min 15s           |
 
 > N95 was 5% faster when building [the Docker Image](https://github.com/JAlcocerT/Py_Trip_Planner/)
+
+Energy costs ~0.25Eur/Kwh
 
 ## Cool Stuff with FireBat MiniPC
 
@@ -120,7 +124,7 @@ sudo ufw allow ssh
 {{< /details >}}
 
 
-{{< details title="Reset Portianer Password 📌" closed="true" >}}
+{{< details title="Reset Portainer Password 📌" closed="true" >}}
 
 There was some installation on other PC and we had to restart it...
 
@@ -136,7 +140,7 @@ sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always \
 
 {{< /details >}}
 
-{{< details title="[Optiona] Update DNS 📌" closed="true" >}}
+{{< details title="[Optional] Update DNS 📌" closed="true" >}}
 
 ```sh
 sudo nano /etc/resolv.conf

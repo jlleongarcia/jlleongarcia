@@ -32,7 +32,7 @@ and some more rows...
 4. Go to the location folder of `.ssh` and **look for the id_rsa.pub** file generated (copy its content)
 5. Paste it in the Gitlab UI (it will start by ssh-rsa and many more chars will follow)
 
-Now, you can select the Code button in the Gitlab Repository, and open in your IDE (with SSH).
+Now, you can select the Code button in the Gitlab Repository, and **select open in your IDE (with SSH)**.
 
 Check how many branches there are
 
