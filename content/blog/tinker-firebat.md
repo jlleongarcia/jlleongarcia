@@ -25,7 +25,7 @@ url: firebat-ak2-plus-minipc-review
 
 * For convenience, you can mount the additional 2,5 drive outside and then mount it again with 3 screws:
 
-![Firebat MiniPc](/blog_img/mini_pc/firebat-mounted.jpg.jpg)
+![Firebat MiniPc](/blog_img/mini_pc/firebat-mounted.jpg)
 
 > All screws are provided as well
 
@@ -35,14 +35,15 @@ How does Firebat MiniPC compares to [other MiniPC's and SBC's?](https://jalcocer
 
 Running some **synthetic tests on the Firebat MiniPC** and comparing it with SBC's and more:
 
-| Device             | CPU Benchmark (4 threads) | CPU Benchmark (8 threads) | Tot (4 threads) 7 zip  |
-|--------------------|---------------------------|---------------------------|------------------------|
-| Raspberry Pi 4 2GB | ~1.7k events               | -                         | 1622/6311              |
-| Raspberry Pi 4 4GB | ~28k events                | -                         | 1442/5508              |
-| Orange Pi 5         | ~38k events               | ~50k events               | 2.7k/11.8k             |
-| Raspberry Pi 5 8GB  | -                         | -                         | 2.7k/10k               |
-| AMD 2200g             | ~26.9k events               | -                         | ~4.2k/15.34k events      |
-| FireBat             | ~35k events               | -                         | ~1.8k/6.4k events      |
+| Device             | CPU Benchmark (4 threads) | Tot (4 threads) 7 zip  |
+|--------------------|---------------------------|------------------------|
+| Raspberry Pi 4 2GB | ~1.7k events              | 1622/6311              |
+| Raspberry Pi 4 4GB | ~28k events               | 1442/5508              |
+| Orange Pi 5        | ~38k events               | 2.7k/11.8k             |
+| Raspberry Pi 5 8GB | -                         | 2.7k/10k               |
+| AMD 2200g          | ~26.9k events             | ~4.2k/15.34k events    |
+| FireBat            | ~35k events               | ~1.8k/6.4k events      |
+
 
 ```sh
 sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run #4 cores
@@ -89,14 +90,14 @@ time cargo install --git https://github.com/astral-sh/rye rye
 Energy costs ~0.25Eur/Kwh
 
 ### Firebat - Computing vs Volume
+| Device                     | CPU                                                | Volume | Docker Build (s*L) | CPU Benchmark (4 threads) (events/L) | Tot (4 threads) 7 zip (events/L) |
+|----------------------------|----------------------------------------------------|--------|---------------------|----------------------------------------|-----------------------------------|
+| Raspberry Pi 4 2GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | 0.082L | 301.824             | 20732                                  | 19878                             |
+| Raspberry Pi 4 4GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | 0.082L | 285.36              | 34146                                  | 17627                             |
+| BMAX B4 (16 GB)           | Intel N95 (x4 cores Alder-Lake)                   | 0.608L | **27.36**           | 44225                                  | 6890.79                           |
+| **FireBat AK2 Plus (8 GB)**| Intel N100 (x4 cores Alder-Lake)                  | 0.76L  | **35.72**           | 46052.63                               | 2368.42                           |
+| Orange Pi 5 (8 GB)        | Rockchip RK3588S (4x Cortex-A76 + 4x Cortex-A55) | 0.112L | 198.624             | **339285.71**                          | **24107.14**                      |
 
-| Device                     | CPU                                                | GPU                       | RAM    | Volume | Docker Build (s*L) | CPU Benchmark (4 threads) (events/L) | Tot (4 threads) 7 zip (events/L) |
-|----------------------------|----------------------------------------------------|---------------------------|--------|--------|---------------------|----------------------------------------|-----------------------------------|
-| Raspberry Pi 4 2GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | VideoCore VI @ 500MHz     | 2 GB   | 0.082L | 301.824             | 20732                                  | 19878                             |
-| Raspberry Pi 4 4GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | VideoCore VI @ 500MHz     | 4 GB   | 0.082L | 285.36              | 34146                                  | 17627                             |
-| BMAX B4                    | Intel N95 (x4 cores Alder-Lake)                   | -                         | 16 GB  | 0.608L | **27.36**               | 44225                                  | 6890.79                           |
-| **FireBat AK2 Plus**          | Intel N100 (x4 cores Alder-Lake)                  | -                         | 8 GB   | 0.76L  | **35.72**               | 46052.63                               | 2368.42                           |
-| Orange Pi 5                | Rockchip RK3588S (4x Cortex-A76 + 4x Cortex-A55) | Mali G510 MP4            | 8 GB   | 0.112L | 198.624             | **339285.71**                              | **24107.14**                          |
 
 
 * For docker builds, it seems that the ARM architecture lags compared to x86 (lower is better)
@@ -104,14 +105,14 @@ Energy costs ~0.25Eur/Kwh
 * The OrangePi5 is a great rival when having into consideration the performance and volume
 
 ### FireBat - Computing vs Price
+| Device                     | CPU                                                | Price | Docker Build (s/Price) | CPU Benchmark (4 threads) (events/Price) | Tot (4 threads) 7 zip (events/Price) |
+|----------------------------|----------------------------------------------------|-------|-------------------------|--------------------------------------------|---------------------------------------|
+| Raspberry Pi 4 2GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | $35   | 128520                  | 48.57                                      | 46.34                                 |
+| Raspberry Pi 4 4GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | $55   | 191400                  | 509.09                                     | 26.49                                 |
+| BMAX B4 (16 GB)           | Intel N95 (x4 cores Alder-Lake)                   | $150  | 6750                    | 179.33                                     | 28.00                                 |
+| **FireBat AK2 Plus (8 GB)**| Intel N100 (x4 cores Alder-Lake)                  | $75   | **3525**                | 466.67                                     | 24.00                                 |
+| Orange Pi 5 (8 GB)        | Rockchip RK3588S (4x Cortex-A76 + 4x Cortex-A55) | $150  | 266550                  | 253.33                                     | 18.00                                 |
 
-| Device                     | CPU                                                | GPU                       | RAM    | Price | Docker Build (s/Price) | CPU Benchmark (4 threads) (events/Price) | Tot (4 threads) 7 zip (events/Price) |
-|----------------------------|----------------------------------------------------|---------------------------|--------|-------|-------------------------|--------------------------------------------|---------------------------------------|
-| Raspberry Pi 4 2GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | VideoCore VI @ 500MHz     | 2 GB   | $35   | 128520                  | 48.57                                      | 46.34                                 |
-| Raspberry Pi 4 4GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | VideoCore VI @ 500MHz     | 4 GB   | $55   | 191400                  | 509.09                                     | 26.49                                 |
-| BMAX B4                    | Intel N95 (x4 cores Alder-Lake)                   | -                         | 16 GB  | $150  | 6750                    | 179.33                                     | 28.00                                 |
-| **FireBat AK2 Plus**          | Intel N100 (x4 cores Alder-Lake)                  | -                         | 8 GB   | $75   | **3525**                    | 466.67                                     | 24.00                                 |
-| Orange Pi 5                | Rockchip RK3588S (4x Cortex-A76 + 4x Cortex-A55) | Mali G510 MP4            | 8 GB   | $150  | 266550                  | 253.33                                     | 18.00                                 |
 
 * The firebat is the most competitive of my list in building docker images versus price (lower is better)
 * The Pi's 4 win the Sysbench and 7zip versus price due to their lower price ratio
