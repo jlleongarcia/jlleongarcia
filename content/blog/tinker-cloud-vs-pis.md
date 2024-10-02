@@ -43,8 +43,10 @@ OrangePi_5_RK3588S_User-Manual_v1.5.pdf
            width="300"
            height="200" >}}
 
+* RAM is not soldered in the BMAX, and also you can add an additional 2,5 drive (screws not included)
+* The SSD drive it comes with is not 2280
 
-![CV with a RPI4](/blog_img/mini_pc/bmax.jpg)
+![Bmax B4](/blog_img/mini_pc/bmax.jpg)
 
 But lately, I have been giving [a try to cloud providers](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner).
 

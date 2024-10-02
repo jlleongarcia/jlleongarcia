@@ -10,9 +10,26 @@ url: firebat-ak2-plus-minipc-review
 
 ## The FIREBAT AK2 PLUS MiniPC
 
-* Intel N100 (4 cores) 8GB@2600mhz 256GB
+* Intel N100 (4 cores) 8GB@2600mhz 256GB (M.2 2280 SSD)
+* Dimensions: 13x13x4,5cm = 0,76L
+* Cost: ~75$
+* It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
 
-> Great accesibility to add an additional 2.5" drive!
+![Firebat MiniPc](/blog_img/mini_pc/firebat.jpg)
+
+> Value for money, Great accesibility to add an additional 2.5" drive!
+
+* As you can see, the **RAM is not soldered**:
+
+![Firebat MiniPc](/blog_img/mini_pc/firebat-ram.jpg)
+
+* For convenience, you can mount the additional 2,5 drive outside and then mount it again with 3 screws:
+
+![Firebat MiniPc](/blog_img/mini_pc/firebat-mounted.jpg.jpg)
+
+> All screws are provided as well
+
+How does Firebat MiniPC compares to [other MiniPC's and SBC's?](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/) Lets find out:
 
 ### Firebat AK2 Benchmarks
 
@@ -32,9 +49,7 @@ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run #4 cores
 7z b -mmt4
 ```
 
-> Firebat results go to 22k events if power saving mode is enabled in Linux
-
-
+> Firebat results go down to 22k events if power saving mode is enabled in Linux
 
 And now the real benchmarks:
 
@@ -73,6 +88,61 @@ time cargo install --git https://github.com/astral-sh/rye rye
 
 Energy costs ~0.25Eur/Kwh
 
+### Firebat - Computing vs Volume
+
+| Device                     | CPU                                                | GPU                       | RAM    | Volume | Docker Build (s*L) | CPU Benchmark (4 threads) (events/L) | Tot (4 threads) 7 zip (events/L) |
+|----------------------------|----------------------------------------------------|---------------------------|--------|--------|---------------------|----------------------------------------|-----------------------------------|
+| Raspberry Pi 4 2GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | VideoCore VI @ 500MHz     | 2 GB   | 0.082L | 301.824             | 20732                                  | 19878                             |
+| Raspberry Pi 4 4GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | VideoCore VI @ 500MHz     | 4 GB   | 0.082L | 285.36              | 34146                                  | 17627                             |
+| BMAX B4                    | Intel N95 (x4 cores Alder-Lake)                   | -                         | 16 GB  | 0.608L | **27.36**               | 44225                                  | 6890.79                           |
+| **FireBat AK2 Plus**          | Intel N100 (x4 cores Alder-Lake)                  | -                         | 8 GB   | 0.76L  | **35.72**               | 46052.63                               | 2368.42                           |
+| Orange Pi 5                | Rockchip RK3588S (4x Cortex-A76 + 4x Cortex-A55) | Mali G510 MP4            | 8 GB   | 0.112L | 198.624             | **339285.71**                              | **24107.14**                          |
+
+
+* For docker builds, it seems that the ARM architecture lags compared to x86 (lower is better)
+  * During docker builds with ARM i observe that only 1 core is used
+* The OrangePi5 is a great rival when having into consideration the performance and volume
+
+### FireBat - Computing vs Price
+
+| Device                     | CPU                                                | GPU                       | RAM    | Price | Docker Build (s/Price) | CPU Benchmark (4 threads) (events/Price) | Tot (4 threads) 7 zip (events/Price) |
+|----------------------------|----------------------------------------------------|---------------------------|--------|-------|-------------------------|--------------------------------------------|---------------------------------------|
+| Raspberry Pi 4 2GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | VideoCore VI @ 500MHz     | 2 GB   | $35   | 128520                  | 48.57                                      | 46.34                                 |
+| Raspberry Pi 4 4GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | VideoCore VI @ 500MHz     | 4 GB   | $55   | 191400                  | 509.09                                     | 26.49                                 |
+| BMAX B4                    | Intel N95 (x4 cores Alder-Lake)                   | -                         | 16 GB  | $150  | 6750                    | 179.33                                     | 28.00                                 |
+| **FireBat AK2 Plus**          | Intel N100 (x4 cores Alder-Lake)                  | -                         | 8 GB   | $75   | **3525**                    | 466.67                                     | 24.00                                 |
+| Orange Pi 5                | Rockchip RK3588S (4x Cortex-A76 + 4x Cortex-A55) | Mali G510 MP4            | 8 GB   | $150  | 266550                  | 253.33                                     | 18.00                                 |
+
+* The firebat is the most competitive of my list in building docker images versus price (lower is better)
+* The Pi's 4 win the Sysbench and 7zip versus price due to their lower price ratio
+
+
+{{< hextra/feature-grid >}}
+ 
+{{< hextra/feature-card
+  title="Cloud vs Home Computing"
+  subtitle="Cloud performance vs Costs compared with small home devices"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  link="https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/"
+>}}
+
+{{< hextra/feature-card
+  title="RPi 4 vs Opi5"
+  subtitle="ARM SBC Battle - Orange vs Raspberry Pi"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,50%,0));"
+  link="https://jalcocert.github.io/RPi/posts/pi-vs-orange/"
+>}}
+
+{{< hextra/feature-card
+  title="BMax B4 vs Pi"
+  subtitle="ARM SBC vs Bmax x86 MiniPC"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  link="https://jalcocert.github.io/RPi/posts/minipc-vs-pi/"
+>}}
+
+
+{{< /hextra/feature-grid >}}
+
 ## Cool Stuff with FireBat MiniPC
 
 Some ideas that you can do with your MiniPC:
@@ -80,6 +150,32 @@ Some ideas that you can do with your MiniPC:
 1. Setup a Home Cloud
 2. Use the MiniPC as media server
 3. Use it to plan your trips as per weather conditions
+
+
+{{< hextra/feature-grid >}}
+ 
+{{< hextra/feature-card
+  title="Cloud vs Home Computing"
+  subtitle="Cloud performance vs Costs compared with small home devices"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  link="https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/"
+>}}
+
+{{< hextra/feature-card
+  title="RPi 4 vs Opi5"
+  subtitle="ARM SBC Battle - Orange vs Raspberry Pi"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,50%,0));"
+  link="https://jalcocert.github.io/RPi/posts/pi-vs-orange/"
+>}}
+
+{{< hextra/feature-card
+  title="BMax B4 vs Pi"
+  subtitle="ARM SBC vs Bmax x86 MiniPC"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  link="https://jalcocert.github.io/RPi/posts/minipc-vs-pi/"
+>}}
+
+{{< /hextra/feature-grid >}}
 
 ### Using a MiniPC as Home Cloud
 
@@ -103,6 +199,9 @@ graph LR
   * 9000 for portainer
   * 8080 for filebrowser - Lenovo i3 will have the filebrowser UI at `http://192.168.1.105:8080` 
   * 8384 for syncthing UI - FireBat syncthing is configured at `http://192.168.1.103:8384`
+* To setup HTTPs you can [use DuckDNS](#faq)
+
+![Exploring FireBat Disks](/blog_img/mini_pc/duckdns-firebat.png)
 
 
 {{< details title="Setup the Server for SelfHosting 📌" closed="true" >}}
@@ -268,7 +367,6 @@ flatpak install flathub com.brave.Browser
 ### FireBat Trip Planner
 
 
-
 {{< details title="Setup Trip Planner 📌" closed="true" >}}
 
 ```yml
@@ -287,14 +385,40 @@ services:
 
 ## FAQ
 
-Enter the FireBat MiniPC bios by pressing ESC.
+* Enter the FireBat AK2 Plus MiniPC **bios by pressing ESC**.
 
 * Find more interesting apps at:
     * https://flathub.org/
     * https://snapcraft.io/
 
-### How to Benchmark the Firebat MiniPC
 
+{{< hextra/feature-grid >}}
+ 
+{{< hextra/feature-card
+  title="Setup NGINX"
+  subtitle="How to add HTTPs to FireBat Services"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/"
+>}}
+
+{{< hextra/feature-card
+  title="Setup Syncthing"
+  subtitle="P2P Syncing between home devices"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,50%,0));"
+  link="https://fossengineer.com/selfhosting-filebrowser-docker/"
+>}}
+
+{{< hextra/feature-card
+  title="Setup NextCloud"
+  subtitle="A Cloud for your home devices"
+  style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  link="https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/"
+>}}
+
+
+{{< /hextra/feature-grid >}}
+
+### How to Benchmark the Firebat MiniPC
 
 {{% details title="Testing CPU Performance - SysBench, TripPlanner, build Astral-sh,..." closed="true" %}}
 
