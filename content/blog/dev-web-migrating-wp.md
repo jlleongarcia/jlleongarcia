@@ -75,13 +75,86 @@ Observe how for both platforms they provide a ~500ms speed and http requests (th
 
 {{< /hextra/feature-grid >}}
 
-### SSG Alternatives
+### SSG Alternatives to Wordpress
 
 * https://github.com/CaiJimmy/hugo-theme-stack
   * Supports https://photoswipe.com/ out of the box!
 
 
-### The challenges
+<!-- 
+https://alto.ghost.io/
+https://massively.ghost.io/
+  https://github.com/TryGhost/Massively -->
+
+#### SEO Tools for Wordpress
+
+I dont use WP myself, but...
+
+
+{{< details title="WP SEO Stuff 📌" closed="true" >}}
+
+
+On-Page SEO Tools
+- **Rank Math**  
+  An SEO plugin for WordPress to help optimize your website’s on-page SEO.
+  
+- **SEO Meta in One Click (Chrome Extension)**  
+  Quickly analyze meta tags and H1 headings for SEO optimization.
+
+- **SEO Minion (Chrome Extension)**  
+  Provides various SEO insights including "People Also Asked" (PAA) data.
+
+- **Anchor Text**  
+  Use relevant anchor text to link to other pages on your site to improve internal linking.
+
+## Image Optimization
+- **Kraken.io**  
+  A tool to compress images like .jpg files for faster page load times.
+
+Authority & Analytics
+- **Moz Bar (Chrome Extension)**  
+  Helps check **Page Authority (PA)** and **Domain Authority (DA)**. Compete with websites that have DA 25-30 when starting a new site.
+
+- **Keyword Surfer (Chrome Extension)**  
+  Provides search volume data directly in Google search results.
+
+- **Keywords Everywhere (Chrome Extension)**  
+  Displays search volume, CPC, and competition data.
+
+Advanced Google Search
+- Use `site:yourwebsite.com` in Google to see indexed pages.
+- Ensure external links open in a new tab and are marked as "no follow" where necessary.
+
+Featured Images & Copyright
+- Search for images using **Creative Commons** licenses to ensure proper rights usage.
+
+Free SEO Tools & Resources
+
+1. **Google Search Console**  
+   Track your site’s search performance and monitor SEO issues.
+
+2. **Ubersuggest**  
+   Free keyword and competitive analysis tool with limited daily usage.
+
+3. **AnswerThePublic**  
+   Get popular search queries and keywords in your niche.
+
+4. **Screaming Frog**  
+   Free version allows crawling of up to 500 URLs for technical SEO audits.
+
+5. **Google PageSpeed Insights**  
+   Analyze your website's speed and get suggestions for improvement.
+
+Other Notes
+- Proxy-related resources like **cerveza.gratis** or **disfruta badajoz**.
+- Check out [this app](https://joseo20-gpt.streamlit.app/) for more insights.
+
+
+{{< /details >}}
+
+
+
+### The Challenges
 
 Writing posts on md a IDE...that can cause some friction.
 
@@ -185,4 +258,22 @@ It's worth to try few of them - not all the content is indexed in the same way a
 
 ### Interesting web related stuff I got to know recently
 
-* 
+
+* **Menu websites at ~500 eur/year**
+  * http://cartalia.org/
+    * http://ukelele.cartalia.org/
+  * https://www.upmenu.com/pricing/
+* https://www.covermanager.com/en
+* https://www.mojstolik.pl/dla-restauracji
+
+* Hosting Costs:
+  * https://banahosting.com/web-hosting ~5eur/month
+  * https://webtolearn.pl/cennik ~20eur/month
+
+* Customer management systems
+  * https://wakems.com/index.php
+  * https://clubspeed.com/pricing/
+
+* Custom websites
+  * https://zeon.studio/estimate-project
+  * https://hormigasenlanube.com/

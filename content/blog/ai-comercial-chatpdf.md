@@ -255,6 +255,69 @@ RAG is a technique for enhancing the capabilities of large language models (LLMs
 
 > Sometime ago, I was covering another RAG - [The EmbedChain RAG Framework](/embedchain-ai)
 
+
+{{< details title="Interesting Concepts for RAGs 📌" closed="true" >}}
+
+
+| Concept            | Description                                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------------------------------|
+| **Embedded Models** | Machine learning models that convert text into dense vector representations with semantic information.         |
+| **Vector Store**    | Data structure that stores vector representations of text/content with associated metadata.                   |
+| **Chroma**          | A library by Spotify for efficient vector similarity search, often used in music recommender systems.          |
+| **FAISS**           | A library by Facebook AI Research for scalable and high-performance vector similarity search.                 |
+| **Role in Semantic Search** | Embedded models generate vector representations, vector stores hold these vectors, and tools like Chroma/FAISS facilitate efficient search. |
+| **Applications**    | Semantic search, recommendation systems, content retrieval, personalized content delivery, question answering. |
+
+---
+
+### Examples of Embedded Models:
+
+- **NLP (Natural Language Processing)**: Models like BERT or GPT-3 used for tasks like text summarization, sentiment analysis, chatbots.
+- **Computer Vision**: CNNs for object recognition, facial recognition, or medical image analysis.
+- **Speech Recognition**: Used in transcribing speech for voice-controlled systems.
+
+---
+
+### How Embedded Models Enhance Semantic Search:
+
+1. **Natural Language Understanding**: Grasp the semantics and relationships in user queries.
+2. **Intent Recognition**: Identify different user intents (informational, transactional, etc.).
+3. **Query Expansion**: Suggest related terms or synonyms to improve results.
+4. **Contextual Search**: Take into account the query and content context for relevant results.
+5. **Entity Recognition**: Identify entities (people, places, etc.) in queries.
+6. **Question Answering**: Answer questions using context from the query and data.
+7. **Relevance Ranking**: Rank search results by semantic similarity.
+8. **Personalization**: Tailor results to individual user preferences.
+
+---
+
+### How Components Work Together:
+
+1. **Embedded Models**: Convert text into dense vector representations (embeddings).
+2. **Vector Store**: Stores embeddings with metadata for efficient retrieval.
+3. **Chroma**: Scalable vector similarity search library (developed by Spotify).
+4. **FAISS**: High-performance similarity search library (developed by Facebook AI).
+
+**Typical Workflow for Semantic Search**:
+- Text is processed by embedded models into vectors.
+- These vectors are stored in the vector store.
+- User queries are converted into vectors.
+- Libraries like Chroma/FAISS search for the most similar vectors.
+- Results are ranked and presented as recommendations or search results.
+
+---
+
+### Applications
+
+- Semantic search
+- Recommendation systems
+- Content retrieval
+- Personalized content delivery
+- Question-answering systems
+
+
+{{< /details >}}
+
 #### LangChain
 
 [This Streamlit Project](#chat-with-pdf-streamlit) is using **LangChain as RAG** -  with its core focus on the retrieval aspect of the RAG pipeline:

@@ -85,7 +85,7 @@ How to run [these tests](#faq)
   * Cost = Annual kWh × Cost per kWh (USD)
 {{< /callout >}}
 
-> At the time of writing, I pay ~0.2$/kWh
+> At the time of writing, I pay **~0.2$/kWh**
 
 ### GPIO
 
@@ -198,6 +198,17 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 > I have to mention that the [Alex](https://www.linkedin.com/in/dunayeu/) have way faster internet connection than me - which may influence this result
 
 {{< /details >}}
+
+## Conclusions
+
+
+{{< cards cols="1" >}}
+  {{< card link="https://fly.io/" title="Dev Focus Public Cloud" >}}
+{{< /cards >}}
+{{< cards cols="2" >}}
+  {{< card link="https://www.pikapods.com/" title="PikaPods" >}}
+  {{< card link="https://elest.io/" title="Elestio" >}}
+{{< /cards >}}
 
 
 ---

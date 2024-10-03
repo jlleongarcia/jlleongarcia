@@ -215,6 +215,61 @@ networks:
 
 ## Conclusion
 
+Now you are free to **prompt those different models!**
+
+{{< details title="Interesting Prompts 📌" closed="true" >}}
+
+# ChatGPT Productivity Techniques
+
+### 1. Use the 80/20 principle to learn faster:
+_"I want to learn about [insert topic]. Identify and share the most important 20% of learnings from this topic that will help me understand 80% of it."_
+___
+
+### 2. Improve your writing by getting feedback:
+_[Paste your writing]_
+
+_"Proofread my writing above. Fix grammar and spelling mistakes. And make suggestions that will improve the clarity of my writing."_
+___
+
+### 3. Turn ChatGPT into your intern:
+_"I am creating a report about [insert topic]. Research and create an in-depth report with a step-by-step guide that will help me understand how to [insert outcome]."_
+___
+
+### 4. Learn any new skill:
+_"I want to learn [insert desired skill]. Create a 30-day learning plan that will help a beginner like me learn and improve this skill."_
+___
+
+### 5. Strengthen your learning by testing yourself:
+_"I am currently learning about [insert topic]. Ask me a series of questions that will test my knowledge. Identify knowledge gaps in my answers and give me better answers to fill those gaps."_
+___
+
+### 6. Train ChatGPT to generate prompts for you:
+___
+
+### 7. Get ChatGPT to write in your style:
+_"Analyze the writing style from the text below and write a 200-word piece guide on [insert topic]."_
+
+_[Insert your text]_
+___
+
+### 8. Learn any complex topic in only a few minutes:
+_"Explain [insert topic] in simple and easy terms that any beginner can understand."_
+___
+
+### 9. Summarize long documents and articles:
+_"Summarize the text below and give me a list of bullet points with key insights and the most important facts."_
+
+_[Insert text]_
+___
+
+### 10. Understand things faster by simplifying complex texts:
+_"Rewrite the text below and make it easy for a beginner to understand."_
+
+_[Insert text]_
+
+
+{{< /details >}}
+
 {{< dropdown title="Similar AI Projects 👇" closed="true" >}}
 
 * Using [Streamlit + OpenAI API](/how-to-chat-with-pdfs) to chat with your Docs

@@ -85,6 +85,11 @@ time cargo install --git https://github.com/astral-sh/rye rye
 | RPi 5 8GB                   | -                  | 4min 30s           |
 | Hetzner                     | -                  | 6min 15s           |
 
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/minipc-vs-pi/" title="BMAX B4 Review" image="/blog_img/mini_pc/bmax_asrockx300.jpg" subtitle="SBC's vs BMAX MiniPC" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers" title="Cloud vs SBC's Image" image="/blog_img/RPi4_2_vs4gb.jpg" subtitle="Raspberry and Orange Pi's vs Hetzner" >}}
+{{< /cards >}}
+
 > N95 was 5% faster when building [the Docker Image](https://github.com/JAlcocerT/Py_Trip_Planner/)
 
 Energy costs ~0.25Eur/Kwh
@@ -152,31 +157,13 @@ Some ideas that you can do with your MiniPC:
 2. Use the MiniPC as media server
 3. Use it to plan your trips as per weather conditions
 
-
-{{< hextra/feature-grid >}}
+{{< cards cols="3" >}}
+  {{< card link="#using-a-minipc-as-home-cloud" title="Home Cloud" >}}
+  {{< card link="#firebat-minipc-as-media-server" title="Media Server" >}}
+  {{< card link="#firebat-trip-planner" title="Weather Trip Planner" >}}  
+{{< /cards >}}
  
-{{< hextra/feature-card
-  title="Cloud vs Home Computing"
-  subtitle="Cloud performance vs Costs compared with small home devices"
-  style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
-  link="https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/"
->}}
 
-{{< hextra/feature-card
-  title="RPi 4 vs Opi5"
-  subtitle="ARM SBC Battle - Orange vs Raspberry Pi"
-  style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,50%,0));"
-  link="https://jalcocert.github.io/RPi/posts/pi-vs-orange/"
->}}
-
-{{< hextra/feature-card
-  title="BMax B4 vs Pi"
-  subtitle="ARM SBC vs Bmax x86 MiniPC"
-  style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
-  link="https://jalcocert.github.io/RPi/posts/minipc-vs-pi/"
->}}
-
-{{< /hextra/feature-grid >}}
 
 ### Using a MiniPC as Home Cloud
 
@@ -388,18 +375,22 @@ By following the 3-2-1 rule, you significantly **minimize the risk of losing imp
 
 ### FireBat MiniPC as Media Server
 
-You can also install regular apps in your server, like Brave browser:
+You can also install regular apps in your server, like **Brave browser**:
 
 ```sh
 flatpak install flathub com.brave.Browser
 ```
 
-Explore more apps with:
+Explore more apps:
 
-{{< cards cols="2" >}}
-  {{< card link="https://flathub.org/" title="FlatHub" >}}
-  {{< card link="https://snapcraft.io/" title="SnapCraft" >}}
+{{< cards cols="1" >}}
+  {{< card link="https://github.com/upscayl/upscayl" title="Upscayl to enhance images" >}}
 {{< /cards >}}
+{{< cards cols="2" >}}
+  {{< card link="https://flathub.org/" title="FlatHub Apps" >}}
+  {{< card link="https://snapcraft.io/" title="SnapCraft Apps" >}}
+{{< /cards >}}
+
 
 ### FireBat Trip Planner
 
@@ -429,9 +420,9 @@ services:
  
 {{< hextra/feature-card
   title="Setup NGINX"
-  subtitle="How to add HTTPs to FireBat Services"
+  subtitle="How to setup: PiHole and UnBound DNS with FireBat"
   style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
-  link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/"
+  link="https://jalcocert.github.io/RPi/posts/selfh-internet-better/"
 >}}
 
 {{< hextra/feature-card
@@ -442,7 +433,7 @@ services:
 >}}
 
 {{< hextra/feature-card
-  title="Setup NextCloud"
+  title="Setup NextCloud in your Home Server"
   subtitle="A Cloud for your home devices"
   style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
   link="https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/"
@@ -451,9 +442,8 @@ services:
 {{< /hextra/feature-grid >}}
 
 {{< cards >}}
-  {{< card link="/" title="Image Card" image="https://source.unsplash.com/featured/800x600?landscape" subtitle="Unsplash Landscape" >}}
   {{< card link="/" title="Local Image" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Raw image under static directory." >}}
-  {{< card link="/" title="Local Image" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Image under assets directory, processed by Hugo." method="Resize" options="600x q80 webp" >}}
+  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="HTTPS Everywhere" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Setup NGINX with DuckDNS to have https certificates." method="Resize" options="600x q80 webp" >}}
 {{< /cards >}}
 
 ![FireBat NextCloud](/blog_img/mini_pc/nginx_posteio.png)

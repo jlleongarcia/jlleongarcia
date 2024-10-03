@@ -85,6 +85,9 @@ People recommended me: [Prusa](https://www.prusa3d.com/) or BambuLabs
 * https://www.printables.com/es
 * https://thangs.com/
 * [maker world](https://makerworld.com/en/3d-models)
+* ThingyVerse
+
+> STL files!
 
 * https://www.reddit.com/r/3Dprinting/comments/1ep78yx/is_thingiverse_still_the_standard_place_to_get/
 * https://www.reddit.com/r/3Dprinting/comments/ozg8xj/creality_vs_prusa_3d_printers/

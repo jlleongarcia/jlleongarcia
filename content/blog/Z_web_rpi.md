@@ -6,7 +6,7 @@ tags: ["Self-Hosting","Web"]
 cover:
     image: "https://socialify.git.ci/JAlcocerT/RPi/image?description=1&language=1&name=1&owner=1&pattern=Solid&theme=Light" # image path/url 
     alt: "My Github Pages with RPi setup information." # alt text
-description: 'A quick guide to Raspberry Pi'
+description: 'A quick guide to Raspberry Pi 4'
 summary: 'I have just deployed on Github Pages content regarding Raspberry Pi'
 url: 'raspberrypi-starting-guide'
 ---

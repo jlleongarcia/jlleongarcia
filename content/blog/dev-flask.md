@@ -43,6 +43,24 @@ It utilizes Flask as its underlying web server and integrates several other libr
   {{< card link="https://github.com/JAlcocerT/Py_Trip_Planner/" title="Dash project example - Trip Planner with Weather" >}}
 {{< /cards >}}
 
+## Simpler Data Apps
+
+### Streamlit
+
+{{< cards cols="1" >}}
+  {{< card link="https://github.com/streamlit/streamlit" title="Streamlit in Github" >}}
+{{< /cards >}}
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/JAlcocerT/ask-multiple-pdfs" title="Streamlit Ask PDF" >}}
+  {{< card link="https://github.com/JAlcocerT/Streamlit-MultiChat" title="MultiChat: OpenAI, Anthropic, Ollama,..." >}}
+{{< /cards >}}
+<!-- 
+  {{< card link="https://github.com/JAlcocerT/Py_Double_Pendulum" title="Streamlit Double Pendulum" >}} -->
+
+
+
+<!-- https://github.com/AIAnytime/Document-Buddy-App -->
+
 ---
 
 ## Interesting stuff I learnt recently

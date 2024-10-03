@@ -1,6 +1,6 @@
 ---
 title: "How to make quick diagrams"
-date: 2023-12-27T23:20:21+01:00
+date: 2023-12-29T23:20:21+01:00
 draft: false
 tags: ["Dev"]
 summary: 'How to use Mermaid Diagrams'

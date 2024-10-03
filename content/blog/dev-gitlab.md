@@ -1,6 +1,6 @@
 ---
 title: "How to Setup Gitlab"
-date: 2023-12-27T23:20:21+01:00
+date: 2023-12-30T23:20:21+01:00
 draft: false
 tags: ["Dev"]
 summary: 'How to use Gitlab'
@@ -78,3 +78,32 @@ source openltabletstests_venv/bin/activate #(linux)
 ```sh
 pip install -r requirements.txt 
 ```
+
+## How to use Gitlab Container Registry
+
+1. **Authenticate with the GitLab Container Registry**  
+   You can do this using the Docker CLI or the GitLab API.
+
+2. **Tag the local image with the GitLab Container Registry URL**  
+   The GitLab Container Registry URL format:  
+   `registry.gitlab.com/<group>/<project>/<image>:<tag>`
+
+3. **Push the tagged image to the GitLab Container Registry**  
+   Use either the Docker CLI or the GitLab API.
+
+### Example: Pushing a Local Docker Image using the Docker CLI
+
+```bash
+# Authenticate with the GitLab Container Registry
+docker login registry.gitlab.com
+
+# Tag the local image with the GitLab Container Registry URL
+docker tag my-image registry.gitlab.com/my-group/my-project/my-image:latest
+
+# Push the tagged image to the GitLab Container Registry
+docker push registry.gitlab.com/my-group/my-project/my-image:latest
+```
+
+Use docker push --all-tags to push all tags of an image to the registry.
+Use docker push --dry-run to test the push command without actually pushing the image.
+If using a self-hosted GitLab instance, configure the GitLab Container Registry to use a custom TLS certificate.
