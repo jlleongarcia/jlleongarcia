@@ -1,6 +1,6 @@
 ---
 title: "Crypto with AI"
-date: 2023-12-27T23:20:21+01:00
+date: 2024-12-27T23:20:21+01:00
 draft: true
 tags: ["Dev"]
 summary: 'How to use Gitlab'
@@ -20,4 +20,12 @@ Understanding SC's with LLMs: these are are some [interesting protocols](https:/
 
 * https://www.reddit.com/r/CryptoCurrency/comments/mnzv1c/defi_explained_lending_borrowing/
 * https://www.reddit.com/r/CryptoCurrency/comments/nletmi/defi_explained_the_full_guide/#:~:text=Decentralized%20Finance%20(DeFi)%20is%20a,protocols%20that%20work%20without%20intermediaries.
+
+I was writing about web3 here: https://jalcocert.github.io/JAlcocerT/guide-web3
+
+---
+
+## Crypto Resources
+
+* https://whycryptocurrencies.com/
 

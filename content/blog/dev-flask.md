@@ -37,5 +37,16 @@ Dash, a **web application framework for Python**, is primarily built on top of F
 
 It utilizes Flask as its underlying web server and integrates several other libraries and components to facilitate the development of interactive web applications, particularly for data visualization.
 
-* https://github.com/plotly/dash
-    * https://github.com/JAlcocerT/Py_Trip_Planner/
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/plotly/dash" title="Dash in Github" >}}
+  {{< card link="https://github.com/JAlcocerT/Py_Trip_Planner/" title="Dash project example - Trip Planner with Weather" >}}
+{{< /cards >}}
+
+---
+
+## Interesting stuff I learnt recently
+
+* https://github.com/Scale3-Labs/langtrace - Langtrace 🔍 is an open-source, Open Telemetry based end-to-end observability tool for LLM applications, providing real-time tracing, evaluations and metrics for popular LLMs, LLM frameworks, vectorDBs and more.. Integrate using Typescript, Python.
+
+* Model Garden, Vertex AI - https://cloud.google.com/model-garden?hl=es

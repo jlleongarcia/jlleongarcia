@@ -11,9 +11,12 @@ url: "how-to-use-openai-function-calling"
 ## OpenAI
 
 * https://platform.openai.com/docs/guides/function-calling
+    * Example: https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb
     * https://openai.com/index/introducing-structured-outputs-in-the-api/
 
 > Thanks to https://www.promptingguide.ai/applications/function_calling
+
+
 
 
 {{% details title="How to use OpenAI API? " closed="true" %}}

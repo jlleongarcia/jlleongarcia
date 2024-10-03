@@ -21,14 +21,33 @@ We tried to add the Umami script on the wordpress Theme, but the option was also
 
 ## Why there are better options?
 
-![Wordpress Carbon vs SSG](/blog_img/web/carbon-comparison.png)
+* This is how google sees the templates (the higher rating, the better):
 
 ![Wordpress Google Page Speed Desktop](/blog_img/web/jmodels-google-pagespeed-desktop.png)
 
+and for mobile (a responsive site is even more important here):
+
 ![Wordpress Google Page Speed Mobile](/blog_img/web/jmodels-google-pagespeed-mobile.png)
+
+* The ping doesnt look so bad actually, but...
 
 ![Pinging Wordpress vs SSG](/blog_img/web/ping_comparison.png)
 
+...the http request has a huge gap. And its not this particular website's fault.
+
+We can [use Uptime Kuma](https://fossengineer.com/selfhosting-uptime-Kuma-docker/) to check the **http request response** time for both, Wordpress and Wix official websites:
+
+![Http request Wix](/blog_img/web/uptimekuma-wix.png)
+
+![Http request WP](/blog_img/web/uptimekuma-wp.png)
+
+Observe how for both platforms they provide a ~500ms speed and http requests (these are the ones that we care about as users).
+
+> When you use SSG's, you can expect to have it around ~100ms instead, **x5 faster**
+
+* If you are concerned about the environment, speed also means less processing required, hence **less emissions**!
+
+![Wordpress Carbon vs SSG](/blog_img/web/carbon-comparison.png)
 
 {{< hextra/feature-grid >}}
  
@@ -161,3 +180,9 @@ It's worth to try few of them - not all the content is indexed in the same way a
 {{< callout type="info" >}}
 **Thanks to Ecosia** I could find how to add Web Analytics to the Jekyll Chirpy Theme!
 {{< /callout >}}
+
+---
+
+### Interesting web related stuff I got to know recently
+
+* 

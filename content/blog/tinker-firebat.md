@@ -192,17 +192,17 @@ graph LR
     E[Small Lenovo Laptop] -- Sends & Receives <--> C
 ```
 
-* Devices
+* Devices:
   * Router: `http://192.168.1.1/`
   * FireBat: `http://192.168.1.103/`
   * Lenovo i3: `http://192.168.1.105/`  
-* Ports that will be use
+* Ports that will be used:
   * 9000 for portainer
   * 8080 for filebrowser - Lenovo i3 will have the filebrowser UI at `http://192.168.1.105:8080` 
   * 8384 for syncthing UI - FireBat syncthing is configured at `http://192.168.1.103:8384`
-* To setup HTTPs you can [use DuckDNS](#faq)
+* To setup HTTPs you can [use DuckDNS with NGINX](#faq)
 
-![Exploring FireBat Disks](/blog_img/mini_pc/duckdns-firebat.png)
+![DuckDNS Firebat](/blog_img/mini_pc/duckdns-firebat.png)
 
 
 {{< details title="Setup the Server for SelfHosting 📌" closed="true" >}}
@@ -309,7 +309,14 @@ services:
 
 > Access the FileBrowser admin UI with: `admin/admin` at port `8384`
 
+
+{{< /details >}}
+
+{{< details title="Home CLoud with NextCloud 📌" closed="true" >}}
+
 You could also try [NextCloud](https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/):
+
+![FireBat NextCloud](/blog_img/mini_pc/nextcloud.png)
 
 ```yml
 version: '2'
@@ -356,14 +363,43 @@ services:
 #     external: true #optional
 ```
 
+> Make sure to add your private ip of the server to be able to access it in trusted domains
+
 {{< /details >}}
 
+{{< callout type="info" >}}
+  Remember the 3-2-1 backup rule
+{{< /callout >}}
+
+
+{{< details title="More about 3-2-1 Back-Ups 📌" closed="true" >}}
+
+The 3-2-1 backup rule is a widely recommended strategy for ensuring data safety and recovery in case of failure or disaster. The rule suggests that you should:
+
+* Keep 3 copies of your data: This includes the original data and two backups. Having multiple copies helps prevent total data loss.
+
+* Store the backups on 2 different media types: This could include external hard drives, cloud storage, or USB drives. Using different media types reduces the risk of failure, as different storage media are less likely to fail at the same time.
+
+* Keep 1 copy offsite: One of the backup copies should be stored offsite (e.g., cloud storage or a remote location) to protect against local disasters such as fires, floods, or theft.
+
+By following the 3-2-1 rule, you significantly **minimize the risk of losing important data**.
+
+{{< /details >}}
 
 ### FireBat MiniPC as Media Server
+
+You can also install regular apps in your server, like Brave browser:
 
 ```sh
 flatpak install flathub com.brave.Browser
 ```
+
+Explore more apps with:
+
+{{< cards cols="2" >}}
+  {{< card link="https://flathub.org/" title="FlatHub" >}}
+  {{< card link="https://snapcraft.io/" title="SnapCraft" >}}
+{{< /cards >}}
 
 ### FireBat Trip Planner
 
@@ -387,10 +423,6 @@ services:
 ## FAQ
 
 * Enter the FireBat AK2 Plus MiniPC **bios by pressing ESC**.
-
-* Find more interesting apps at:
-    * https://flathub.org/
-    * https://snapcraft.io/
 
 
 {{< hextra/feature-grid >}}
@@ -416,8 +448,15 @@ services:
   link="https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/"
 >}}
 
-
 {{< /hextra/feature-grid >}}
+
+{{< cards >}}
+  {{< card link="/" title="Image Card" image="https://source.unsplash.com/featured/800x600?landscape" subtitle="Unsplash Landscape" >}}
+  {{< card link="/" title="Local Image" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Raw image under static directory." >}}
+  {{< card link="/" title="Local Image" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Image under assets directory, processed by Hugo." method="Resize" options="600x q80 webp" >}}
+{{< /cards >}}
+
+![FireBat NextCloud](/blog_img/mini_pc/nginx_posteio.png)
 
 ### How to Benchmark the Firebat MiniPC
 

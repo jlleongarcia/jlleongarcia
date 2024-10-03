@@ -35,7 +35,7 @@ We will do it in a simple three-step approach 📢
 Lets explore some potential of the next generation of the internet!
 
 
-## Exploring Web3 Concepts 🌐
+## Exploring Web3 Concepts
 
 ### Unstoppable Domains (UDs) 🚀
 
@@ -45,7 +45,9 @@ Lets explore some potential of the next generation of the internet!
 
 https://mariushosting.com/synology-install-ipfs-with-portainer/
 
-**IPFS**, short for InterPlanetary File System, is a peer-to-peer hypermedia protocol with a visionary goal: to preserve and expand humanity's knowledge. By decentralizing content storage and distribution, IPFS aims to make the web more resilient, upgradable, and open. It operates on a distributed network, where files are addressed by their content, not their location, facilitating faster and more efficient data retrieval.
+**IPFS**, short for InterPlanetary File System, is a peer-to-peer hypermedia protocol with a visionary goal: to preserve and expand humanity's knowledge.
+
+By decentralizing content storage and distribution, IPFS aims to make the web more resilient, upgradable, and open. It operates on a distributed network, where files are addressed by their content, not their location, facilitating faster and more efficient data retrieval.
 
 Join the Web3 revolution today and explore the limitless possibilities these innovative technologies offer!
 
