@@ -13,11 +13,19 @@ I realized how much **more we can do with SSG's than with wordpress**.
 
 It all started trying to add Web Analytics to his site.
 
-We wanted to add Umami Analytics - The same im using for this site (which is GDPR compliant out of the box and non invasive for the readers).
+We wanted to add **Umami Analytics** - The same im using for this site (which is GDPR compliant out of the box and non invasive for the readers).
 
 > It turned out that you need a business suscription to add Plugins (WPCode could have solve it).
 
 We tried to add the Umami script on the wordpress Theme, but the option was also not available.
+
+
+<!-- 
+
+No need to be a web dev expert, but some tricks with css and components are good to have
+https://jalcocert.github.io/JAlcocerT/blog/dev-css/
+https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/
+ -->
 
 ## Why there are better options?
 
@@ -72,8 +80,17 @@ Observe how for both platforms they provide a ~500ms speed and http requests (th
   link="https://web-check.xyz/"
 >}}
 
-
 {{< /hextra/feature-grid >}}
+
+Also, you can do cool thinks like:
+
+{{< cards cols="1" >}}
+  {{< card link="https://fossengineer.com/selfhosting-umami-with-docker/" title="GDPR Compliance Web Analytics with Umami" >}}
+{{< /cards >}}
+{{< cards cols="2" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/blog/dev-forms/" title="Build your audience with Newsletter & Forms" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-use-mermaid-diagrams/" title="Incorporate Diagrams easily in your posts" >}}
+{{< /cards >}}
 
 ### SSG Alternatives to Wordpress
 
@@ -149,7 +166,6 @@ Other Notes
 - Proxy-related resources like **cerveza.gratis** or **disfruta badajoz**.
 - Check out [this app](https://joseo20-gpt.streamlit.app/) for more insights.
 
-
 {{< /details >}}
 
 
@@ -203,12 +219,18 @@ firebase deploy #you will get something like -> https://jalcocertech.web.app/
 
 ### Is my website performing well?
 
-* https://pagespeed.web.dev/
-* https://search.google.com/search-console/
-
-* https://trends.google.es/trends/
-
-* https://www.websitecarbon.com/
+{{< cards cols="3" >}}
+  {{< card link="https://pagespeed.web.dev/" title="PageSpeed Insights" >}}
+  {{< card link="https://search.google.com/search-console/" title="Google Search Console" >}}
+  {{< card link="https://trends.google.es/trends/" title="Google Trends" >}}  
+{{< /cards >}}
+{{< cards cols="1" >}}
+  {{< card link="https://www.websitecarbon.com/" title="Website Carbon Benchmark" >}}
+{{< /cards >}}
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/Lissy93/web-check" title="Web Check - GitHub" >}}
+  {{< card link="https://web-check.xyz/" title="Web Check Tool" >}}
+{{< /cards >}}
 
 * https://github.com/Lissy93/web-check
     * https://web-check.xyz/

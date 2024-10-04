@@ -210,13 +210,23 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
   {{< card link="https://elest.io/" title="Elestio" >}}
 {{< /cards >}}
 
+For **AI workloads** you will be interested in some **cloud GPU**:
+
+{{< cards cols="3" >}}
+  {{< card link="https://www.vultr.com/pricing/#cloud-gpu" title="Vultr Cloud GPUs" >}}
+  {{< card link="https://vast.ai/pricing" title="VastAI GPUs" >}}
+  {{< card link="https://lambdalabs.com/" title="Lambdalabs GPUs" >}}    
+{{< /cards >}}
+
+
+
 
 ---
 
 ## FAQ
 
 
-{{% details title="Testing CPU Performance - SysBench, TripPlanner, build Astral-sh,..." closed="true" %}}
+{{% details title="Testing CPU Performance - SysBench, TripPlanner, build Astral-sh..." closed="true" %}}
 
 ```sh
 #cat /proc/cpuinfo

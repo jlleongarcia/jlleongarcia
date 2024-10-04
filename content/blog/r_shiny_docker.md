@@ -12,15 +12,15 @@ summary: 'Exploring the integration of Docker and R Shiny, focusing on reproduci
 url: 'building-r-shiny-apps-container-image-with-docker'       
 ---
 
-# R Shiny Containerized
+## R Shiny Containerized
 
-One of the technologies that I am happy to have found out in the previous years has been [Docker](https://fossengineer.com/docker-first-steps-guide-for-data-analytics/).
+One of the technologies that I am happy to have found out in the previous years has been Docker.
 
 > In a nutshell, it avoid the *it works in my computer* moment that we have all experienced.
 
-By harnessing Docker's containerization capabilities, we can encapsulate our [R Shiny applications](https://fossengineer.com/tags/shiny/) and their dependencies, ensuring consistency and easy portability across various environments. 
+With Docker, we can **encapsulate our R Shiny applications** and their dependencies, ensuring consistency and easy portability across various environments. 
 
-But I was wondering how to create [my own containerized R Shiny App](https://fossengineer.com/tags/r-stocks/) and the **R-Stocks** projec presented me the perfect opportunity.
+But I was wondering how to create my own containerized R Shiny App and the **R-Stocks** projec presented me the perfect opportunity.
 
 ## Building R Shiny Apps in Docker
 
@@ -210,6 +210,284 @@ DOCKER_BUILDKIT=1 docker build --no-cache --progress=plain -t r_stocks:V1-arm64 
 ```
 
 
+
+---
+
+## The learning path
+
+It took me quite a while to get [this Dockerfile right](https://github.com/JAlcocerT/R_Stocks/blob/main/Dockerfile).
+
+Specially to make it work in both ARM and x86.
+
+```sh
+sudo apt update
+sudo apt dist-upgrade
+
+sudo apt install r-base
+
+R --version
+
+R
+R.Version()
+quit()
+```
+
+Remember that you have few ways to install R Packages:
+
+```sh
+#install.packages('yfR') #ya esta en CRAN
+install.packages('yfR', dependencies = TRUE) 
+
+sudo apt-get install libxml2-dev
+
+R -e 'install.packages("remotes")'
+
+R -e 'install.packages(c("shiny", "plotly", "dplyr", "tidyr","lubridate","shinythemes","shinyWidgets","DT","bslib","priceR","quantmod"))'
+
+R -e 'install.packages("yfR", dependencies = TRUE)'
+```
+
+
+{{< details title="RStudio was my IDE companion" closed="true" >}}
+
+```sh
+sudo apt install git
+
+git clone https://github.com/JAlcocerT/R_Stocks ./R_Stocks
+cd R_Stocks
+```
+
+```sh
+####R install, not Rstudio
+sudo apt install -y g++ gcc gfortran libreadline-dev libx11-dev libxt-dev \
+                    libpng-dev libjpeg-dev libcairo2-dev xvfb \
+                    libbz2-dev libzstd-dev liblzma-dev libtiff5 \
+                    libssh-dev libgit2-dev libcurl4-openssl-dev \
+                    libblas-dev liblapack-dev libopenblas-base \
+                    zlib1g-dev openjdk-11-jdk \
+                    texinfo texlive texlive-fonts-extra \
+                    screen wget libpcre2-dev make 
+
+sudo apt install libedit2 libssl-dev libclang-dev libxkbcommon-x11-0 libsqlite3-0 libpq5 libc6
+
+sudo apt install gdebi
+```
+
+Download and **install RStudio:**
+
+```sh
+#lsb_release -a #check whats your release and adapt the web link
+sudo apt install wget 
+wget https://dailies.rstudio.com/rstudio/spotted-wakerobin/desktop/jammy/
+
+sudo apt install ./rstudio*
+```
+
+{{< /details >}}
+
+* And this project from [ploner helped me a lot](https://github.com/ploner/coronavirus-r/blob/master/corona-app-v1/Dockerfile)
+
+It turns out that there are different solutions: tidyverse, rbase and shiny images
+
+{{< details title="Using rocker/tidyverse 📌" closed="true" >}}
+
+Instead of using rocker/shiny:3.6.1, you can use rocker/tidyverse:3.6.1 and install the shiny package separately.
+
+This will make your app available on port 3838 without the need for Shiny Server stackoverflow.com.
+#https://hub.docker.com/r/rocker/tidyverse
+
+```dockerfile
+FROM rocker/tidyverse:4
+LABEL maintainer "Jesus Alcocer <jalcocert@fossengineer.com>"
+
+RUN R -e 'install.packages(c("shiny", "plotly", "dplyr", "tidyr","lubridate","shinythemes","shinyWidgets","DT","bslib","priceR","quantmod"))'
+
+
+RUN R -e 'install.packages("yfR", dependencies = TRUE)'
+
+
+COPY app.R /app.R
+
+
+EXPOSE 3838
+
+
+CMD R -e 'shiny::runApp("app.R", port = 3838, host = "0.0.0.0")'
+```
+
+Dockerfile build run time ~470s
+
+{{< /details >}}
+
+
+{{< details title="Using rbase image 📌" closed="true" >}}
+
+Using [r-base](https://hub.docker.com/_/r-base/tags)
+
+```sh
+docker build -t rstocks_rbase_arm  .
+docker run --name stocksshiny -p 3838:3838 --detach rstocks_rbase_arm 
+DOCKER_BUILDKIT=1 docker build --no-cache --progress=plain -t rstocks_rbase_arm .
+```
+
+```dockerfile
+FROM r-base:latest
+RUN apt-get update && apt-get install -y --no-install-recommends \
+   sudo \
+   libcurl4-gnutls-dev \
+   libcairo2-dev \
+   libxt-dev \
+   libssl-dev \
+   libssh2-1-dev \
+   libxml2-dev \
+   && rm -rf /var/lib/apt/lists/*
+
+
+# Install remotes package
+RUN R -e 'install.packages("remotes")'
+
+
+RUN R -e 'install.packages(c("shiny", "plotly", "dplyr", "tidyr","lubridate","shinythemes","shinyWidgets","DT","bslib","priceR","quantmod"))'
+RUN R -e 'install.packages("yfR", dependencies = TRUE)'
+
+
+# Install specific versions of Shiny and Plotly, along with their dependencies
+# RUN R -e 'remotes::install_version("shiny", version = "1.6.0", dependencies = TRUE)'
+# RUN R -e 'remotes::install_version("plotly", version = "4.9.3", dependencies = TRUE)'
+
+
+# Copy app.R to the container
+COPY app.R /srv/shiny-server/app.R
+
+
+# Expose the required port
+EXPOSE 3838
+
+
+# Set the CMD to run the Shiny app
+CMD ["R", "-e", "shiny::runApp('/srv/shiny-server/app.R', host = '0.0.0.0', port = 3838)"]
+```
+
+And finally this **worked for x86 and ARM**:
+
+```dockerfile
+FROM r-base:latest
+LABEL maintainer "Jesus Alcocer"
+RUN apt-get update && apt-get install -y --no-install-recommends \
+   sudo \
+   libcurl4-gnutls-dev \
+   libcairo2-dev \
+   libxt-dev \
+   libssl-dev \
+   libssh2-1-dev \
+   libxml2-dev \
+   && rm -rf /var/lib/apt/lists/*
+
+# Install remotes package
+RUN R -e 'install.packages("remotes")'
+
+RUN R -e 'install.packages(c("shiny", "plotly", "dplyr", "tidyr","lubridate","shinythemes","shinyWidgets","DT","bslib","priceR","quantmod"))'
+RUN R -e 'install.packages("yfR", dependencies = TRUE)'
+
+# Install specific versions of Shiny and Plotly, along with their dependencies
+# RUN R -e 'remotes::install_version("shiny", version = "1.6.0", dependencies = TRUE)'
+# RUN R -e 'remotes::install_version("plotly", version = "4.9.3", dependencies = TRUE)'
+
+# Copy app.R to the container
+COPY app.R /srv/shiny-server/app.R
+
+# Expose the required port
+EXPOSE 3838
+
+# Set the CMD to run the Shiny app
+CMD ["R", "-e", "shiny::runApp('/srv/shiny-server/app.R', host = '0.0.0.0', port = 3838)"]
+```
+
+Dockerfile build time using r-base ~1400s.
+
+```sh
+DOCKER_BUILDKIT=1 docker build --no-cache --progress=plain -t rstocks_rbase3 .
+```
+
+Thanks to [r-bloggers post](https://www.r-bloggers.com/2021/05/dockerizing-shiny-applications/)
+
+```dockerfile
+FROM r-base:latest
+LABEL maintainer="USER <user@example.com>"
+RUN apt-get update && apt-get install -y --no-install-recommends \
+   sudo \
+   libcurl4-gnutls-dev \
+   libcairo2-dev \
+   libxt-dev \
+   libssl-dev \
+   libssh2-1-dev \
+   && rm -rf /var/lib/apt/lists/*
+
+
+# Install remotes package
+RUN R -e 'install.packages("remotes")'
+
+
+RUN R -e 'install.packages(c("shiny", "plotly", "dplyr", "tidyr","lubridate","shinythemes","shinyWidgets","DT","bslib","priceR","quantmod"))'
+RUN R -e 'install.packages("yfR", dependencies = TRUE)'
+
+
+# Install specific versions of Shiny and Plotly, along with their dependencies
+# RUN R -e 'remotes::install_version("shiny", version = "1.6.0", dependencies = TRUE)'
+# RUN R -e 'remotes::install_version("plotly", version = "4.9.3", dependencies = TRUE)'
+
+
+# Copy app.R to the container
+COPY app.R /srv/shiny-server/app.R
+
+
+# Expose the required port
+EXPOSE 3838
+
+
+# Set the CMD to run the Shiny app
+CMD ["R", "-e", "shiny::runApp('/srv/shiny-server/app.R', host = '0.0.0.0', port = 3838)"]
+```
+
+{{< /details >}}
+
+
+{{< details title="Using Shiny as base 📌" closed="true" >}}
+
+```dockerfile
+FROM rocker/shiny:3.6.1
+LABEL maintainer "Meinhard Ploner <dummy@host.com>"
+
+
+WORKDIR /srv/shiny-serverRUN apt-get update \
+   && apt-get install -y libsasl2-dev libssl-devRUN echo \
+ 'options(repos=list(CRAN="https://cloud.r-project.org/"))' > \
+ ".Rprofile"
+
+
+RUN R -e 'install.packages(c("shiny", "plotly", "dplyr", "tidyr","lubridate","shinythemes","shinyWidgets","DT","bslib","priceR","quantmod"))'
+
+
+RUN R -e 'install.packages("yfR", dependencies = TRUE)'
+
+
+ADD https://raw.githubusercontent.com/rocker-org/shiny/master/shiny-server.sh /usr/bin/
+
+
+COPY ./ ./
+EXPOSE 3838
+RUN chmod a+w .
+RUN chmod +x /usr/bin/shiny-server.sh
+CMD /usr/bin/shiny-server.sh
+```
+
+```sh
+docker run --name stocksshiny -p 3838:3838 --detach fossengineer/rstocks_shiny
+```
+
+* Dockerfile build 500 segundos
+
+{{< /details >}}
 
 <!-- 
 ## ARM32

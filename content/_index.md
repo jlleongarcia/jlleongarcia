@@ -63,6 +63,6 @@ Beyond personal growth, a tech blog allows you to contribute to the tech communi
 
 {{< /hextra/feature-grid >}}
 
-{{< cards >}}
-  {{< card link="https://jalcocert.github.io/Portfolio/" title="Portfolio Links↗" icon="user" >}}
+{{< cards cols="1" >}}
+  {{< card link="https://jalcocert.github.io/Portfolio/" title="Portfolio Links ↗" icon="user" >}}
 {{< /cards >}}

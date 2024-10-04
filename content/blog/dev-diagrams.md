@@ -8,6 +8,9 @@ url: 'how-to-use-mermaid-diagrams'
 ---
 
 
+## MermaidJS
+
+A top down flow chart:
 
 ```
 graph TD;

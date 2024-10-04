@@ -14,6 +14,8 @@ People recommended me: [Prusa](https://www.prusa3d.com/) or BambuLabs
 
 {{< details title="What to Know before choosing a 3D Printer 📌" closed="true" >}}
 
+I found interesting the following resources:
+
 * https://all3dp.com/2/3d-printing-for-beginners-all-you-need-to-know-to-get-started/
 * https://www.prusa3d.com/page/basics-of-3d-printing-with-josef-prusa_490/
 * https://www.reddit.com/r/3Dprinting/wiki/gettingstarted/
@@ -87,14 +89,17 @@ People recommended me: [Prusa](https://www.prusa3d.com/) or BambuLabs
 * [maker world](https://makerworld.com/en/3d-models)
 * ThingyVerse
 
-> STL files!
+> STL files! and you can do cool thinks like [this miniPC of ~1.2L](https://www.youtube.com/watch?v=_Euus3cum5k)
 
 * https://www.reddit.com/r/3Dprinting/comments/1ep78yx/is_thingiverse_still_the_standard_place_to_get/
 * https://www.reddit.com/r/3Dprinting/comments/ozg8xj/creality_vs_prusa_3d_printers/
 * https://teachingtechyt.github.io/calibration.html
 
-
 {{< /details >}}
+
+What cool things you can do? How about a **3d printed Hydrofoil**?
+
+{{< youtube RdVfVoCJZQM >}}
 
 
 ### Software for DYI Designs

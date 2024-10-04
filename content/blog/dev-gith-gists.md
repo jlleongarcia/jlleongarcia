@@ -7,6 +7,9 @@ url: 'github-gists'
 summary: 'How to use gist as free image hosting'
 ---
 
+In VSCode, the **source control graph** can guide you on whats going on.
+
+## Git 101
 
 Initialize git:
 
@@ -15,12 +18,58 @@ git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
 
-## Git 101
+Create a new git repository and push it:
+
+```sh
+git init
+touch README.md
+git add README.md
+git commit -m "Initial commit"
+git remote add origin <remote_repository_url>
+git push -u origin master
+```
+
+### Branch Management 
+
+Check how many branches there are:
+
+```sh
+git branch -a #list them all
+git branch #and in which one you are
+#git branch -D some_branch_name #delete a local branch
+```
+
+Change to another (new local) branch with:
+
+```sh
+git checkout other_branch_name #git checkout tests
+```
+
+And if the branch **already exists in the repo**, change to it with:
+
+```sh
+git checkout -b other_branch_name origin/other_branch_name #will pull and swap you to it
+```
+
+See the latest commit:
+
+```sh
+git log --oneline #exit with q
+```
+
+Make your changes, commit and push to the specified branch with:
+
+```sh
+git add <file-name>
+git commit -m "Your commit message" #git commit -m "Adding the script that creates testing scenarios from random combinations of the initial provided table"
+git push origin other_branch_name #tests
+```
+
+### How to add an image to a Gist
 
 How to add an image to a gist
-Create a gist if you haven't already.
 
-## How to add an image to a Gist
+Create a gist if you haven't already. And then...
 
 Clone your gist:
 

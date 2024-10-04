@@ -15,6 +15,10 @@ If that resonates with you, keep reading - I will show you how to **leverage Ans
 
 [Ansible is an automation tool](https://jalcocert.github.io/Linux/docs/linux__cloud.md/ansible/) that Pros are using all around and it can Spin up with one liners your IoT Projects with the RPi.
 
+{{< cards cols="1" >}}
+  {{< card link="https://jalcocert.github.io/Linux/docs/linux__cloud/ansible/" title="Linux Ansible 101 ↗" icon="book-open" >}}
+{{< /cards >}}
+
 > Yep, still, you will have to connect the cables 😝
 {: .prompt-info }
 

@@ -18,3 +18,11 @@ sidebar:
   {{< card link="https://www.youtube.com/c/Jos%C3%A9MariaLabarta/videos" title="Jose Maria Labarta" icon="warning" tag= "YT Channel" >}}
   {{< card link="/" title="No Icon" >}}
 {{< /cards >}}
+
+## Interesting Blogs
+
+These blogs are kind of "underground".
+
+Probably you will not find them on the firsts google results, yet they were helpful to me and I find their content valuable/inspiring:
+
+* https://www.jeffgeerling.com/

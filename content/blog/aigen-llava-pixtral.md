@@ -1,6 +1,6 @@
 ---
-title: "LLaVa - "
-date: 2024-12-01T00:20:21+01:00
+title: "Vision Models: LLaVa, Pixtral and LLaMa 3.2 "
+date: 2024-10-17T00:20:21+01:00
 draft: true
 # cover:
 #    image: "/img/GenAI/LLMs_Locally_LLamas.png" # image path/url 
@@ -9,10 +9,10 @@ draft: true
 #    sizes: 360
 #    alt: "From Fiction to Function: A Hands-On Guide to Open Source LLM Models.." # alt text
 #    caption: "From Fiction to Function: A Hands-On Guide to Open Source LLM Models." # display caption
-tags: ["Gen-AI","Self-Hosting","Docker"]
+tags: ["Gen-AI"]
 description: ''
 summary: ''
-url: 'llava-docker'
+url: 'multi-modal-models'
 ---
 
 https://www.youtube.com/watch?v=Y2ldwg8xsgE
@@ -54,4 +54,6 @@ https://github.com/ibaiGorordo/ONNX-YOLOv8-Object-Detection
 ### Understanding OpenAI Vision 
 
 OpenAI Vision API Crash Course - Chat with Images (Node)
+
+
 https://www.youtube.com/watch?v=ZjkS11DSeEk

@@ -11,3 +11,6 @@ url: 'fuzzy-matching-python'
 
 * https://github.com/seatgeek/fuzzywuzzy
     * https://github.com/seatgeek/thefuzz
+
+
+You might be interested in these https://jalcocert.github.io/JAlcocerT/get-started-with-flask/nlp-tools

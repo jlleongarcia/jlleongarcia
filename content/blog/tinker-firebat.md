@@ -79,7 +79,7 @@ time cargo install --git https://github.com/astral-sh/rye rye
 | Raspberry Pi 4 4GB          | ~3480s             | -                  |
 | Orange Pi 5                 | ~1777s             | 5min 20s           |
 | BMAX B4 N95                 | ~45s               | -                  |
-| Firebat AK2 Plus N100       | ~47s               | 2min 45s           |
+| **Firebat AK2 Plus N100**       | ~47s               | 2min 45s           |
 | AMD 2200G                   | -                  |       -            |
 | AMD 5600G                   | -                  | -                  |
 | RPi 5 8GB                   | -                  | 4min 30s           |

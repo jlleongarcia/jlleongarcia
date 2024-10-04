@@ -23,6 +23,34 @@ https://mui.com/material-ui/react-image-list/
 
 https://daisyui.com/components/diff/
 
+When you add Daisy UI to your project...
+
+```sh
+npm install daisyui
+```
+
+In the `tailwind.config.cjs` file, add DaisyUI to the plugins section:
+
+```md
+module.exports = {
+  content: [
+    './src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [require('daisyui')], #add this
+};
+```
+
+ automatically you can use:
+
+* https://daisyui.com/components/toggle/
+
+```html
+<input type="checkbox" class="toggle toggle-success" checked="checked" />
+```
+
 ### More CSS Resources
 
 * https://ui.shadxn.com/docs/registries/shadxn

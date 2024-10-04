@@ -3,8 +3,8 @@ title: "What I've learnt about Python"
 date: 2024-09-04T10:20:21+01:00
 draft: false
 tags: ["dev"]
-summary: 'Interesting stuff Ive learn along the way when trying to make better Websites. A Non-WebDev perspective.'
-url: 'create-your-website'
+summary: 'Interesting stuff Ive learn along the way when trying to use Python'
+url: 'useful-python-stuff'
 ---
 
 

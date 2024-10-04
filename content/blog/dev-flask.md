@@ -13,6 +13,161 @@ url: 'get-started-with-flask'
 * The **main Flask file** is named `__init__.py`, this indicates that your Flask application is structured as a package.
     * You can run it with: `flask run`
 
+
+{{< details title="How to Setup Flask 📌" closed="true" >}}
+
+- **Flask Installation:**
+```sh
+pip install Flask #https://pypi.org/project/Flask/
+```
+
+- **Basic Flask Application Structure:**
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+{{< /details >}}
+
+{{< details title="Concepts for Flask 📌" closed="true" >}}
+
+* WSGI, which stands for Web Server Gateway Interface, is a standard interface between web servers and Python web applications or frameworks. It allows different web servers and Python applications to communicate with each other in a standardized way.
+
+
+
+- **Routing:**
+  - Define routes using the `@app.route()` decorator, mapping URLs to functions.
+
+- **Request and Response:**
+  - Access request data via `flask.request` (e.g., `request.method`, `request.args`, `request.form`).
+  - Return responses using strings, HTML templates, JSON, etc.
+
+- **Templates:**
+  - Use **Jinja2 templates** for rendering HTML:
+    ```html
+    <!doctype html>
+    <html>
+    <head><title>{{ title }}</title></head>
+    <body>
+        <h1>{{ message }}</h1>
+    </body>
+    </html>
+    ```
+
+- **Static Files:**
+  - Serve static files (CSS, JS, images) from the `static` directory.
+
+- **Forms and User Input:**
+  - Handle forms using `request.form` for POST data, and validate inputs as needed.
+
+- **Flask Extensions:**
+  - Extend functionality with various extensions (e.g., Flask-SQLAlchemy for database, Flask-Migrate for migrations, Flask-WTF for forms).
+
+- **Error Handling:**
+  - Customize error pages using error handlers:
+    ```python
+    @app.errorhandler(404)
+    def not_found(error):
+        return 'Page not found', 404
+    ```
+
+- **Deployment:**
+  - Use production-ready servers like Gunicorn or uWSGI for deployment.
+
+- **Documentation and Resources:**
+  - Official Flask Documentation: [Flask Documentation](https://flask.palletsprojects.com/)
+  - Community Resources: Flask tutorials, forums, and GitHub repositories for additional learning and examples.
+
+
+{{< /details >}}
+
+{{< details title="Jinja Templates for Flask 📌" closed="true" >}}
+
+- **What is Jinja2?**
+  - Jinja2 is a powerful templating engine for Python, commonly used with web frameworks like Flask. It enables the creation of dynamic HTML pages by embedding Python-like expressions in HTML documents.
+
+- **Syntax**:
+  - Jinja2 uses a straightforward syntax that includes:
+    - **Variables**: Encapsulated in double curly braces `{{ variable }}` to output the value of a variable.
+    - **Control Structures**: Such as loops and conditionals, defined with `{% %}` tags.
+      - **Example of a loop**:
+        ```jinja
+        <ul>
+          {% for item in items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        ```
+
+- **Filters**:
+  - Jinja2 supports filters to modify variables for output. Filters are applied using the pipe symbol (`|`).
+  - **Example**:
+    ```jinja
+    {{ username|capitalize }}  <!-- Capitalizes the username -->
+    ```
+
+- **Template Inheritance**:
+  - Jinja2 supports inheritance, allowing the creation of a base template that can be extended in other templates. This promotes reusability and cleaner code.
+  - **Example**:
+    ```jinja
+    <!-- base.html -->
+    <html>
+      <head><title>{% block title %}My Site{% endblock %}</title></head>
+      <body>
+        <header>{% block header %}Header{% endblock %}</header>
+        <main>{% block content %}{% endblock %}</main>
+        <footer>Footer</footer>
+      </body>
+    </html>
+    ```
+    ```jinja
+    <!-- page.html -->
+    {% extends "base.html" %}
+    {% block title %}Home{% endblock %}
+    {% block content %}
+      <h1>Welcome to My Site</h1>
+    {% endblock %}
+    ```
+
+- **Whitespace Control**:
+  - Jinja2 provides mechanisms to control whitespace, which can help maintain a clean output.
+  - **Example**:
+    - Using `-{%` and `-%}` will strip whitespace around control statements.
+
+- **Security**:
+  - Jinja2 automatically escapes variables to prevent Cross-Site Scripting (XSS) attacks, unless explicitly marked as safe.
+  - **Example**:
+    ```jinja
+    {{ user_input|safe }}  <!-- Outputs raw HTML -->
+    ```
+
+- **Integration with Flask**:
+  - In Flask, Jinja2 is the default templating engine. Templates are typically stored in a `templates` directory and rendered using the `render_template` function.
+  - **Example**:
+    ```python
+    from flask import Flask, render_template
+
+    app = Flask(__name__)
+
+    @app.route('/')
+    def home():
+        return render_template('home.html', username='John Doe')
+    ```
+
+- **Conclusion**:
+  - Jinja2 templates provide a robust way to create dynamic web pages in Python applications. With powerful features like variable rendering, control structures, template inheritance, and filters, it enables developers to maintain clean and efficient code for rendering HTML.
+
+{{< /details >}}
+
+
 ```
 /flask_project_app
 │
@@ -30,6 +185,13 @@ url: 'get-started-with-flask'
 
 * Placing your models in a dedicated `models.py` (or even splitting into multiple files for large applications) keeps all your database-related code in one place. It improves maintainability by decoupling the data structure from the business logic (routes) and app initialization.
 
+To run a flask app do:
+
+```sh
+flask run
+```
+
+And the UI will appear at: `localhost:5000`
 
 ### DASH uses Flask!
 
