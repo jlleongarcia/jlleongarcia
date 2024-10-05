@@ -18,7 +18,7 @@ pdf "/blog_pdf/OrangePi_5_RK3588S_User-Manual_v1.5.pdf"
 OrangePi_5_RK3588S_User-Manual_v1.5.pdf
  -->
 
-![CV with a RPI4](/blog_img/mini_pc/bmax_asrockx300.jpg)
+![BMax B4 vs Asrock X300 Size](/blog_img/mini_pc/bmax_asrockx300.jpg)
 
 {{< figure 
     src="/blog_img/mini_pc/bmax_asrockx300.jpg" 
@@ -30,7 +30,7 @@ OrangePi_5_RK3588S_User-Manual_v1.5.pdf
     align="center"
 >}}
 
-{{< figure src="/static/blog_img/mini_pc/bmax_asrockx300.jpg" alt="CV with a RPI4" >}}
+{{< figure src="/static/blog_img/mini_pc/bmax_asrockx300.jpg" alt="BMax B4 vs Asrock X300 Size" >}}
 
 {{< figure src="/blog_img/mini_pc/bmax_asrockx300.jpg"
            alt="CV with a RPI4"
@@ -175,7 +175,6 @@ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
 | Raspberry Pi 4 4GB | ~3480s | - | - | - |
 | Orange Pi 5 | ~1777s | 80°C | ~65°C | ~50°C |
 | BMAX B4 | ~45 seconds | 64°C fan | - | - |
-| AMD 5600G | - | - fan | - | - |
 
 {{< /details >}}
 

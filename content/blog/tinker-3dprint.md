@@ -101,6 +101,8 @@ What cool things you can do? How about a **3d printed Hydrofoil**?
 
 {{< youtube RdVfVoCJZQM >}}
 
+> It seems they used Prusa for it
+
 
 ### Software for DYI Designs
 

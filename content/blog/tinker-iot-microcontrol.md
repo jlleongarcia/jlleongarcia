@@ -24,7 +24,7 @@ And Recently, this new release got my attention:
 
 Let me show you **how to get started with MicroControllers**
 
-What you need to know:
+What you need to know about microcontrollers:
 * They dont need an OS
 * They run in loop whatever logic is loaded
 * The are low consumption devices (much more than even SBC's)

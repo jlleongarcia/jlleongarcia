@@ -13,6 +13,11 @@ url: 'get-started-with-flask'
 * The **main Flask file** is named `__init__.py`, this indicates that your Flask application is structured as a package.
     * You can run it with: `flask run`
 
+{{< callout type="info" >}}
+  This free [book from Miguel](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates) helped me a lot to understand Flask
+{{< /callout >}}
+
+
 
 {{< details title="How to Setup Flask 📌" closed="true" >}}
 
@@ -163,7 +168,7 @@ if __name__ == '__main__':
     ```
 
 - **Conclusion**:
-  - Jinja2 templates provide a robust way to create dynamic web pages in Python applications. With powerful features like variable rendering, control structures, template inheritance, and filters, it enables developers to maintain clean and efficient code for rendering HTML.
+  - [Jinja2 templates](https://jinja.palletsprojects.com/en/3.1.x/) provide a robust way to create dynamic web pages in Python applications. With powerful features like variable rendering, control structures, template inheritance, and filters, it enables developers to maintain clean and efficient code for rendering HTML.
 
 {{< /details >}}
 
@@ -205,6 +210,19 @@ It utilizes Flask as its underlying web server and integrates several other libr
   {{< card link="https://github.com/JAlcocerT/Py_Trip_Planner/" title="Dash project example - Trip Planner with Weather" >}}
 {{< /cards >}}
 
+### Flask Competitors
+
+#### FastAPI
+
+FastAPI: Fully supports Jinja2 templates.
+
+
+#### Django
+
+Django: Can use Jinja2, but its native templating engine is preferred.
+
+
+
 ## Simpler Data Apps
 
 ### Streamlit
@@ -225,7 +243,50 @@ It utilizes Flask as its underlying web server and integrates several other libr
 
 ---
 
-## Interesting stuff I learnt recently
+## Off-Topics 
+
+### Flask and WebSockets
+
+Unlike HTTP connections, a **WebSocket connection is a permanent, bi-directional** communication channel between a client and the server, where either one can initiate an exchange.
+
+Once established, the connection remains available until one of the parties disconnects from it.
+
+WebSocket connections are useful for games or web sites that need to display live information with very low latency.
+
+| Framework  | WebSocket Support                       |
+|------------|-----------------------------------------|
+| **Flask**      | [Supported via Flask-SocketIO](https://blog.miguelgrinberg.com/post/easy-websockets-with-flask-and-gevent)            |
+| Django     | Supported via Django Channels            |
+| FastAPI    | Built-in support                        |
+| Tornado    | Built-in support                        |
+| Sanic      | Native support                          |
+| Streamlit  | Limited support (using custom components) |
+| Dash       | Limited support (using WebSocket-based components) |
+
+#### Other Communication Protocols
+
+| Feature               | WebSockets                         | MQTT                               | RabbitMQ                           |
+|-----------------------|------------------------------------|-------------------------------------|------------------------------------|
+| Connection Type       | Permanent, bi-directional          | Publish/subscribe                   | Message broker with various patterns|
+| Initiation            | Either party can initiate          | Clients subscribe/publish           | Producers send to queues            |
+| Connection Duration    | Long-lived until closed            | Long-lived with session persistence | Can be transient or persistent      |
+| Use Cases             | Real-time apps (chat, gaming)     | IoT, telemetry, low-bandwidth apps  | Microservices, task queues         |
+| Latency               | Low latency                        | Generally low latency               | Higher latency due to routing      |
+
+
+{{< cards cols="1" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/rpi-mqtt/" title="I was learning MQTT with a RPI here" icon="user" >}}
+{{< /cards >}}
+{{< cards cols="2" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/microcontrollers-setup-101/" title="MQTT with ESP32 and a Pico W" >}}
+  {{< card link="https://github.com/JAlcocerT/RPi/tree/main/Z_MQTT" title="MQTT Source Files" >}}
+{{< /cards >}}
+
+* WebSockets are best for real-time communication where low latency is crucial.
+* MQTT excels in low-bandwidth environments and is optimized for IoT applications.
+* RabbitMQ is suitable for scenarios requiring reliable message delivery and complex routing logic.
+
+### Interesting stuff I learnt recently
 
 * https://github.com/Scale3-Labs/langtrace - Langtrace 🔍 is an open-source, Open Telemetry based end-to-end observability tool for LLM applications, providing real-time tracing, evaluations and metrics for popular LLMs, LLM frameworks, vectorDBs and more.. Integrate using Typescript, Python.
 

@@ -7,7 +7,8 @@ summary: 'How to use Gitlab for development'
 url: 'how-to-use-gitlab'
 ---
 
-Github is great, but there are other cool options, like **Gitlab**.
+Github is great, but there are other cool options, like **Gitlab**, codeberg or forgejo.
+
 
 ## Cloning a Gitlab Repository
 

@@ -96,6 +96,12 @@ Also, you can do cool thinks like:
 
 * https://github.com/CaiJimmy/hugo-theme-stack
   * Supports https://photoswipe.com/ out of the box!
+  * https://github.com/CaiJimmy/hugo-theme-stack-starter
+
+> That one reminded my to the Jekyll Chirpy Theme, but it **uses HUGO**
+
+* https://github.com/Darthagnon/hugo-easy-gallery
+
 
 
 <!-- 
@@ -279,6 +285,8 @@ It's worth to try few of them - not all the content is indexed in the same way a
 ---
 
 ### Interesting web related stuff I got to know recently
+
+* Static Websites with python: Check Nikola, the SSG written in python
 
 
 * **Menu websites at ~500 eur/year**

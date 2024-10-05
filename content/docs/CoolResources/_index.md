@@ -26,3 +26,5 @@ These blogs are kind of "underground".
 Probably you will not find them on the firsts google results, yet they were helpful to me and I find their content valuable/inspiring:
 
 * https://www.jeffgeerling.com/
+* https://selfh.st/newsletter
+* https://theitguycj.com/self-host-and-share-your-videos-audio-and-pictures-with-mediacms/

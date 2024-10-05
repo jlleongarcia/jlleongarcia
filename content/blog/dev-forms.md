@@ -1,5 +1,5 @@
 ---
-title: "Forms and Newsletters"
+title: "Forms and Newsletters for your Website"
 date: 2024-09-07T23:20:21+01:00
 draft: false
 tags: ["Dev"]
@@ -21,6 +21,8 @@ You ll still need a back end to process the calls (if you are using static sites
 ### Formbricks
 
 https://formbricks.com/
+Paid - https://formpress.org/pricing
+
 
 ### symfony forms
 
@@ -30,17 +32,29 @@ https://github.com/symfony/form
 
 https://github.com/plutov/formulosity
 
+### HeyForms
+
+{{< details title="Edit 📌" closed="true" >}}
+
+* https://hub.docker.com/r/heyform/community-edition/tags
+* https://github.com/heyform/heyform/tree/main
+
+```yml
+
+```
+
+{{< /details >}}
+
 ---
 
 ## FAQ
 
-Check that its performing with:
+Check that your web is performing well with:
 
 * https://pagespeed.web.dev/
 * https://web-check.xyz/
 
 
-Paid - https://formpress.org/pricing
 
 ### Other Tools
 

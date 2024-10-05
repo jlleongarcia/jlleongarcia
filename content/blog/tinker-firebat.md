@@ -13,7 +13,7 @@ url: firebat-ak2-plus-minipc-review
 * Intel N100 (4 cores) 8GB@2600mhz 256GB (M.2 2280 SSD)
 * Dimensions: 13x13x4,5cm = 0,76L
 * Cost: ~75$
-* It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
+* It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/): I went with [Zorin OS](https://zorin.com/os/)
 
 ![Firebat MiniPc](/blog_img/mini_pc/firebat.jpg)
 
@@ -299,7 +299,7 @@ services:
 
 {{< /details >}}
 
-{{< details title="Home CLoud with NextCloud 📌" closed="true" >}}
+{{< details title="Home Cloud with NextCloud 📌" closed="true" >}}
 
 You could also try [NextCloud](https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/):
 
@@ -448,6 +448,23 @@ services:
 
 ![FireBat NextCloud](/blog_img/mini_pc/nginx_posteio.png)
 
+{{ $image := resources.Get "blog_img/mini_pc/nginx_posteio.png" }}
+{{ $resized := $image.Resize "600x" }}
+<img src="{{ $resized.Permalink }}" alt="FireBat NextCloud">
+
+{{ $image := resources.Get "/blog_img/mini_pc/nginx_posteio.png" }}
+{{ $resized := $image.Resize "600x" }}
+<img src="{{ $resized.Permalink }}" alt="FireBat NextCloud">
+
+{{ $image := resources.Get "/blog_img/mini_pc/nginx_posteio.png" }}
+{{ $resized := $image.Resize "600x" }}
+<div style="text-align: center;">
+  <img src="{{ $resized.Permalink }}" alt="FireBat NextCloud">
+  <p style="font-size: 14px; color: gray;">FireBat NextCloud - Example Caption</p>
+</div>
+
+
+
 ### How to Benchmark the Firebat MiniPC
 
 {{% details title="Testing CPU Performance - SysBench, TripPlanner, build Astral-sh,..." closed="true" %}}
@@ -511,6 +528,8 @@ sudo stress --cpu  8 --timeout 120
 
 
 {{% details title="Testing Internet Connectivity" closed="true" %}}
+
+* https://www.speedtest.pl/
 
 ```sh
 ip addr show
