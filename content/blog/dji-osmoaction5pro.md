@@ -1,7 +1,7 @@
 ---
 title: "[Review] DJI Osmo Action 5 Pro"
 date: 2024-10-05T00:20:21+01:00
-draft: true
+draft: false
 tags: ["Tinkering"]
 summary: .
 description: Testing the OA5 Pro

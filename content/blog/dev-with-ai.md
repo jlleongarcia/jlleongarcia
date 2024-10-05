@@ -23,3 +23,5 @@ url: 'dev-ai-tools'
 * Tabby
 * Codeium
 * Continue.dev
+
+* https://github.com/paul-gauthier/aider

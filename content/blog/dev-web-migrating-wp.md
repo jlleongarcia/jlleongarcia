@@ -199,6 +199,43 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown #https://github.com/Cveinnt/L
 
 ### Scrapping Wordpress Content
 
+<!-- 
+## AgencySwarm
+
+Web Browsing like human. With GPT4.
+
+https://www.youtube.com/watch?v=Yidy_ePo7pE
+
+* https://github.com/VRSEN/agency-swarm - FOSS, but using GPT4
+* Embedding customs GPT - https://www.oai-widget.com/
+
+
+### a browsing agent, fully in Py and GPT4 under the hood
+
+* Selenium
+* Scroll...
+
+### gpt4 web scraping with (vision API) - Needs js and py + close system
+
+https://www.youtube.com/watch?v=VeQR17k7fiU
+https://www.youtube.com/watch?v=PMLg6Rr8fcU
+
+* https://github.com/unconv/gpt4v-browsing -->
+
+<!-- 
+Puppeteer what?
+
+- **Puppeteer** is a **Node.js library** developed by Google, used for **automating and interacting with web pages** using a headless Chrome or Chromium browser.
+- **Key functionalities** include:
+  - **Headless Browsing**: Operates Chrome or Chromium without a graphical user interface, ideal for background automation tasks.
+  - **Web Scraping**: Enables data extraction from websites through navigation and interaction with page elements.
+  - **Automated Testing**: Useful for testing web applications by simulating user actions like clicks and form submissions.
+  - **Screenshots and PDF Generation**: Captures screenshots and generates PDFs from web content, beneficial for reports or documentation.
+  - **Performance Monitoring**: Measures web page performance metrics such as load times and resource usage.
+  - **Accessibility Testing**: Incorporates tools to ensure web pages are accessible to users with disabilities.
+- **Popularity**: Favored for web scraping and automated testing due to its ease of use and Chrome integration.
+- **Getting Started**: Install via npm or yarn, then write scripts to automate browser interactions and perform tasks on web pages. -->
+
 ### Creating the markdown posts with AI
 
 

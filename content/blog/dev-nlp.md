@@ -1,9 +1,10 @@
 ---
-title: "Interesting NLP Tools: PII, sentiment analysis..."
+title: "Interesting NLP Tools: PII, Sentiment Analysis..."
 date: 2024-08-03T23:20:21+01:00
-draft: true
+draft: false
 tags: ["Dev"]
-summary: ''
+description: 'How to use SpaCy with python as NER'
+summary: 'Spacy Python Ner'
 url: 'nlp-tools'
 ---
 
