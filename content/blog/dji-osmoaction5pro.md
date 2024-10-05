@@ -43,6 +43,11 @@ As they required email registration, I put to test how seriously DJI takes priva
 
 ### My Workflow with the DJI OA5-Pro
 
+* Uploading the videos!
+    * To youtube
+    * [To MediaCMS](https://hub.docker.com/r/mediacms/mediacms/tags)
+        * https://github.com/mediacms-io/mediacms/blob/main/docker-compose.yaml
+        * https://mediacms.io/
 
 ---
 

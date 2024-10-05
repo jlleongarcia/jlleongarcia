@@ -6,12 +6,15 @@
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
     {{- end }}
 
-    {{- $image := resources.Get .Get "src" }} 
-    {{- if $image }} <!-- Check if the image resource is found -->
-        {{- $resized := $image.Resize (.Get "width" | default "600x") }} <!-- Resize the image -->
-        <img loading="lazy" src="{{ $resized.Permalink }}" alt="{{ .Get "alt" }}">
-    {{- else }}
-        <p>Image not found: {{ .Get "src" }}</p> <!-- Optional error message -->
+    {{- $image := .Get "src" }} <!-- Get the source path -->
+    {{- if $image }} <!-- Check if the image source is provided -->
+        {{- $resized := resources.Get (printf "static%s" $image) }} <!-- Get the image resource -->
+        {{- if $resized }} <!-- Check if the resource is found -->
+            {{- $processed := $resized.Resize (.Get "width" | default "600x") }} <!-- Resize the image -->
+            <img loading="lazy" src="{{ $processed.Permalink }}" alt="{{ .Get "alt" }}">
+        {{- else }}
+            <p>Image not found: {{ $image }}</p> <!-- Optional error message -->
+        {{- end }}
     {{- end }}
 
     {{- if .Get "link" }}</a>{{ end -}}

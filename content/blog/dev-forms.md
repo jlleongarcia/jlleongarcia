@@ -34,10 +34,13 @@ https://github.com/plutov/formulosity
 
 ### HeyForms
 
-{{< details title="Edit 📌" closed="true" >}}
+You can try their SaaS - https://heyform.net/pricing
+
+{{< details title="How to Setup HeyForms 📌" closed="true" >}}
 
 * https://hub.docker.com/r/heyform/community-edition/tags
 * https://github.com/heyform/heyform/tree/main
+* https://docs.heyform.net/open-source/self-hosting
 
 ```yml
 
