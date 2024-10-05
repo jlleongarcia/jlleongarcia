@@ -19,6 +19,9 @@ url: firebat-ak2-plus-minipc-review
 
 {{< figure src="/blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
 
+{{< figure_tweaked src="/blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud v2" >}}
+
+
 ![Firebat MiniPc](/blog_img/mini_pc/firebat.jpg)
 
 > Value for money, Great accesibility to add an additional 2.5" drive!
