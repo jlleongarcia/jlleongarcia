@@ -118,3 +118,14 @@ Use docker push --all-tags to push all tags of an image to the registry.
 Use docker push --dry-run to test the push command without actually pushing the image.
 
 If using a self-hosted GitLab instance, configure the GitLab Container Registry to use a custom TLS certificate.
+
+
+---
+
+## Gitea: a Gitlab Alternative
+
+You can also setup [Gitea locally with containers](https://github.com/JAlcocerT/Docker/blob/main/Dev/GIT/Gitea_Docker-compose.yaml):
+
+![Spanish Historical CashFlow](/blog_img/selfh/gitea_install.png)
+
+This is another stack with [Gitea, Gitlab and Jenkins](https://github.com/JAlcocerT/Docker/blob/main/Z_Dockge/stacks/git/compose.yaml)

@@ -1,7 +1,7 @@
 ---
 title: "Data Experiment - The Effects of Inflation"
 date: 2022-01-25T23:20:21+01:00
-draft: true
+draft: false
 tags: ["R","Shiny","Dashboards"]
 cover:
     image: "https://socialify.git.ci/JAlcocerT/R_is_Great/image?description=1&descriptionEditable=Explaining%20the%20deployed%20Shiny%20Dashboard.&language=1&name=1&owner=1&theme=Auto" # image path/url 
@@ -86,9 +86,11 @@ Of course, the results of this dashboard just try to show one simple example on 
 
 ### Where does monetary inflation comes from
 
+Maybe, just maybe.
+
 ![Spanish Historical CashFlow](/blog_img/outro/deficit.png)
 
-Food for thought
+Food for thought:
 
 ![Spanish Historical CashFlow](/blog_img/outro/piramideesp.gif)
 
