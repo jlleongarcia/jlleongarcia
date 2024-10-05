@@ -24,6 +24,9 @@ url: firebat-ak2-plus-minipc-review
 
 ![Firebat MiniPc](/blog_img/mini_pc/firebat.jpg)
 
+{{< figure src="images/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
+
+
 > Value for money, Great accesibility to add an additional 2.5" drive!
 
 * As you can see, the **RAM is not soldered**:
@@ -42,14 +45,14 @@ How does Firebat MiniPC compares to [other MiniPC's and SBC's?](https://jalcocer
 
 Running some **synthetic tests on the Firebat MiniPC** and comparing it with SBC's and more:
 
-| Device             | CPU Benchmark (4 threads) | Tot (4 threads) 7 zip  |
+| Device             | Sysbench (4 threads) | Tot (4 threads) 7 zip  |
 |--------------------|---------------------------|------------------------|
 | Raspberry Pi 4 2GB | ~1.7k events              | 1622/6311              |
 | Raspberry Pi 4 4GB | ~28k events               | 1442/5508              |
 | Orange Pi 5        | ~38k events               | 2.7k/11.8k             |
 | Raspberry Pi 5 8GB | -                         | 2.7k/10k               |
 | AMD 2200g          | ~26.9k events             | ~4.2k/15.34k events    |
-| FireBat            | ~35k events               | ~1.8k/6.4k events      |
+| **FireBat AK2 Plus**  | ~35k events               | ~1.8k/6.4k events      |
 
 
 ```sh
@@ -87,7 +90,6 @@ time cargo install --git https://github.com/astral-sh/rye rye
 | Orange Pi 5                 | ~1777s             | 5min 20s           |
 | BMAX B4 N95                 | ~45s               | -                  |
 | **Firebat AK2 Plus N100**       | ~47s               | 2min 45s           |
-| AMD 2200G                   | -                  |       -            |
 | AMD 5600G                   | -                  | -                  |
 | RPi 5 8GB                   | -                  | 4min 30s           |
 | Hetzner                     | -                  | 6min 15s           |

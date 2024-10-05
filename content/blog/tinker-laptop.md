@@ -11,6 +11,8 @@ As simple as it gets: it has a 8C/16T CPU, 16GB Ram and 500GB SSD.
 
 ![Lenovo Thinkpad x13](/blog_img/hardware/Lenovo_x13.jpg)
 
+It's 13' and over 1kg of weight.
+
 ## Benchmarks
 
 {{< details title="Results - SysBench 📌" closed="true" >}}
