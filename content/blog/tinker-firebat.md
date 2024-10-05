@@ -15,6 +15,10 @@ url: firebat-ak2-plus-minipc-review
 * Cost: ~75$
 * It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/): I went with [Zorin OS](https://zorin.com/os/)
 
+{{< figure src="blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
+
+{{< figure src="/blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
+
 ![Firebat MiniPc](/blog_img/mini_pc/firebat.jpg)
 
 > Value for money, Great accesibility to add an additional 2.5" drive!
@@ -462,6 +466,9 @@ services:
   <img src="{{ $resized.Permalink }}" alt="FireBat NextCloud">
   <p style="font-size: 14px; color: gray;">FireBat NextCloud - Example Caption</p>
 </div>
+
+
+
 
 
 

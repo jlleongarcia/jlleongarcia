@@ -29,7 +29,7 @@ https://jalcocert.github.io/Linux/docs/debian/content_creation/
 * You are required to install DJI Mimo app - which will allow you to activate the warranty + transfer files (no need for cable!) + receive firmware updates
 
 {{< callout type="info" >}}
-As they required email registration, I put to test how seriously DJI takes privacy by using **addy.io email aliases** ([ex-anonaddy](https://github.com/anonaddy/anonaddy?tab=readme-ov-file#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one))
+As they required email registration, I put to test how seriously DJI takes privacy by using **[addy.io](https://github.com/anonaddy/docker) email aliases** ([ex-anonaddy](https://github.com/anonaddy/anonaddy?tab=readme-ov-file#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one))
 {{< /callout >}}
 
 * The battery is 1950mah and charges really fast
