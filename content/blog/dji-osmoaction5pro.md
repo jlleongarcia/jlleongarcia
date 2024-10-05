@@ -1,6 +1,6 @@
 ---
 title: "[Review] DJI Osmo Action 5 Pro"
-date: 2024-10-15T23:20:21+01:00
+date: 2024-10-05T00:20:21+01:00
 draft: true
 tags: ["Tinkering"]
 summary: .
@@ -12,6 +12,11 @@ A photo of the latest DJI camera:
 
 ![DJI Osmo Action 5 Pro](/blog_img/hardware/dji_oa5pro.jpg)
 
+https://demo.mediacms.io/view?m=ZLjVzLcCE
+
+{{< video "https://www.w3schools.com/tags/movie.mp4" >}}
+
+{{< youtube "MlbJ3tY43vE" >}}
 
 ### How to edit Videos
 

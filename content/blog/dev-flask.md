@@ -238,6 +238,36 @@ Django: Can use Jinja2, but its native templating engine is preferred.
   {{< card link="https://github.com/JAlcocerT/Py_Double_Pendulum" title="Streamlit Double Pendulum" >}} -->
 
 
+* https://pypi.org/project/streamlit-oauth/
+* https://ecoagi.ai/topics/Streamlit/streamlit-authentication
+
+* https://github.com/ObservedObserver/streamlit-shadcn-ui
+
+
+### More Dashboarding Tools
+
+* Metabase
+* Superset
+* Grafana
+
+Shiny in Python
+
+<https://shiny.rstudio.com/py/gallery/>
+<https://shiny.rstudio.com/py/gallery/>
+
+
+pygwalker
+
+* https://kanaries.net/pygwalker
+* https://github.com/Kanaries/pygwalker
+
+* https://docs.kanaries.net/pygwalker/use-pygwalker-with-streamlit
+* https://github.com/Kanaries/pygwalker-in-streamlit
+* https://docs.kanaries.net/pygwalker/use-pygwalker-with-streamlit.en
+  * https://github.com/Kanaries/pygwalker?tab=readme-ov-file#tested-environments
+
+> PyGWalker: Turn your pandas dataframe into an interactive UI for visual analysis
+
 
 <!-- https://github.com/AIAnytime/Document-Buddy-App -->
 
