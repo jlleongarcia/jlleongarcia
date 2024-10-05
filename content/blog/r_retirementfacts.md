@@ -23,6 +23,9 @@ So let's explain now the internals of that Shiny Dashboard.
 
 I know that discussing retirement can be a controversial topic, depending with whom we bring up the conversation.
 
+![Spanish Historical CashFlow](/blog_img/outro/fry.webp)
+
+
 My goal with that simple app was to bring the math into those conversations, so that we could **leave the emotions/biases aside** in the table and focus on the data.
 
 ## The Logic - How Does it Work?
@@ -80,3 +83,13 @@ Also, during retirement, the effect will be present as well, so the savings will
     * Take a few minutes to think about this, as the example represented show that a 5% inflation rate make that person life savings last up to 75 years instead of 97.
 
 Of course, the results of this dashboard just try to show one simple example on how to build and deploy your simple app with an interactive graph and **must not been taking as a tool that provides any financial advice.**
+
+### Where does monetary inflation comes from
+
+![Spanish Historical CashFlow](/blog_img/outro/deficit.png)
+
+Food for thought
+
+![Spanish Historical CashFlow](/blog_img/outro/piramideesp.gif)
+
+![Spanish Historical CashFlow](/blog_img/outro/old-man-yells-at-cloud-yelling.gif)

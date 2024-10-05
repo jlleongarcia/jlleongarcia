@@ -17,6 +17,11 @@ Initialize git:
 git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
+<!-- 
+1. go to the repo folder 
+2. right click on the .git folder and choose the last option - properties
+3. on the general tab uncheck hidden checkbox if checked
+4. hit apply and then ok -->
 
 Create a new git repository and push it:
 
@@ -27,6 +32,11 @@ git add README.md
 git commit -m "Initial commit"
 git remote add origin <remote_repository_url>
 git push -u origin master
+```
+
+
+```sh
+git reset HEAD~3 #remove the last 3 commits in case you pass some secret (but keep the changes in files)
 ```
 
 ### Branch Management 

@@ -477,6 +477,9 @@ Now, to publish data from the ESP32: <https://github.com/jiteshsaini/mqtt-demo/b
 
 You will need <https://registry.platformio.org/libraries/knolleary/PubSubClient/installation> in the `platformio.ini` as
 
+![CV with a RPI4](/blog_img/iot/platformio.JPG)
+
+
 lib_deps = knolleary/PubSubClient@^2.8
 
 

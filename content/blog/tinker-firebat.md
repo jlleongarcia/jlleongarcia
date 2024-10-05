@@ -166,16 +166,19 @@ Some ideas that you can do with your MiniPC:
 2. Use the MiniPC as media server
 3. Use it to plan your trips as per weather conditions
 
-{{< cards cols="3" >}}
+{{< cards cols="2" >}}
   {{< card link="#using-a-minipc-as-home-cloud" title="Home Cloud" >}}
   {{< card link="#firebat-minipc-as-media-server" title="Media Server" >}}
+{{< /cards >}}
+
+{{< cards cols="1" >}}
   {{< card link="#firebat-trip-planner" title="Weather Trip Planner" >}}  
 {{< /cards >}}
  
+I have collected many container's configurations [here](https://github.com/JAlcocerT/Docker)
 
 
 ### Using a MiniPC as Home Cloud
-
 
 This is the architecture:
 
@@ -219,6 +222,13 @@ sudo ufw allow ssh
 
 {{< /details >}}
 
+You can use Tailscale DNS to make it easier to remember who is who:
+
+{{< details title="How to Setup Tailscale DNS 📌" closed="true" >}}
+
+TBD
+
+{{< /details >}}
 
 {{< details title="Reset Portainer Password 📌" closed="true" >}}
 
@@ -259,7 +269,7 @@ nslookup google.com #see that now you are using quad9 DNS
 Connect with ssh as:
 
 ```sh
-ssh casa@192.168.1.103
+ssh casa@192.168.1.103 #ssh casa@100.... with tailscale VPN IP
 df -h #its /dev/sda1 and its already mounted at /media/casa/Datos_Copia_2
 ```
 

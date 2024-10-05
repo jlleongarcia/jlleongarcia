@@ -13,6 +13,17 @@ I realized how much **more we can do with SSG's than with wordpress**.
 
 It all started trying to add Web Analytics to his site.
 
+{{< details title="How to know if a website uses GAnalytics 📌" closed="true" >}}
+
+```sh
+wget -qO- https://airgrup.com/ | grep -Eo 'UA-[0-9]+-[0-9]+|G-[A-Z0-9]+'
+wget -qO- https://casaensol.pl/ | grep -Eo 'UA-[0-9]+-[0-9]+|G-[A-Z0-9]+' #you see it in the output
+```
+
+{{< /details >}}
+
+
+
 We wanted to add **Umami Analytics** - The same im using for this site (which is GDPR compliant out of the box and non invasive for the readers).
 
 > It turned out that you need a business suscription to add Plugins (WPCode could have solve it).
@@ -191,6 +202,34 @@ I proposed to have a look to:
 
 ```sh
 docker run --rm -dp 3030:3030 cveinnt/letsMarkdown #https://github.com/Cveinnt/LetsMarkdown.com
+```
+
+{{< /details >}}
+
+You can also setup [vscode as a container](https://github.com/JAlcocerT/Docker/blob/main/Dev/vscode-server_Docker-compose.yml)
+
+{{< details title="Setup HUGO on VSCode container 📌" closed="true" >}}
+
+* https://github.com/gohugoio/hugo/releases
+
+```sh
+sudo apt update -y
+sudo apt install wget
+
+#install go
+wget https://go.dev/dl/go1.22.5.linux-arm64.tar.gz
+sudo tar -C /usr/local -xzf go1.22.5.linux-arm64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+source ~/.bashrc
+go version
+
+#install hugo: example v0.108
+# wget https://github.com/gohugoio/hugo/releases/tag/v0.108.0/hugo_extended_0.108.0_linux-amd64.deb -O hugo_latest.deb
+# wget https://github.com/gohugoio/hugo/releases/download/v0.117.0/hugo_extended_0.117.0_linux-arm64.deb -O hugo_latestarm.deb
+
+sudo dpkg -i hugo_latest.deb
+hugo version 
+#sudo dpkg -r hugo
 ```
 
 {{< /details >}}

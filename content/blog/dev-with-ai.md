@@ -25,3 +25,4 @@ url: 'dev-ai-tools'
 * Continue.dev
 
 * https://github.com/paul-gauthier/aider
+https://github.com/Aider-AI/aider

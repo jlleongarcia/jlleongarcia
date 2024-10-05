@@ -11,7 +11,7 @@ Last year I got a drone.
 
 This is what I've learn with it so far.
 
-![DJI Osmo Action 5 Pro](/blog_img/hardware/dji-dron.png)
+![DJI Tello Dron](/blog_img/hardware/dji-dron.png)
 
 
 ## DJI Tello Python

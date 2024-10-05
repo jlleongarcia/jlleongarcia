@@ -465,6 +465,83 @@ Create LLM derived knowledge Graph which serve as the LLM memory representation.
 > Build Conversational AI Experiences
 
 * [Chatwoot](/selfhosting-chatwoot/) 
+
+
+{{< details title="Edit 📌" closed="true" >}}
+
+* https://www.chatwoot.com/docs/self-hosted/deployment/docker
+* https://github.com/chatwoot/chatwoot
+
+
+```sh
+# Download the env file template
+wget -O .env https://raw.githubusercontent.com/chatwoot/chatwoot/develop/.env.example
+# Download the Docker compose template
+wget -O docker-compose.yaml https://raw.githubusercontent.com/chatwoot/chatwoot/develop/docker-compose.production.yaml
+```
+
+```yml
+version: '3'
+
+services:
+  base: &base
+    image: chatwoot/chatwoot:latest
+    env_file: .env ## Change this file for customized env variables
+    volumes:
+      - /data/storage:/app/storage
+
+  rails:
+    <<: *base
+    depends_on:
+      - postgres
+      - redis
+    ports:
+      - '127.0.0.1:3000:3000'
+    environment:
+      - NODE_ENV=production
+      - RAILS_ENV=production
+      - INSTALLATION_ENV=docker
+    entrypoint: docker/entrypoints/rails.sh
+    command: ['bundle', 'exec', 'rails', 's', '-p', '3000', '-b', '0.0.0.0']
+
+  sidekiq:
+    <<: *base
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - NODE_ENV=production
+      - RAILS_ENV=production
+      - INSTALLATION_ENV=docker
+    command: ['bundle', 'exec', 'sidekiq', '-C', 'config/sidekiq.yml']
+
+  postgres:
+    image: postgres:12
+    restart: always
+    ports:
+      - '127.0.0.1:5432:5432'
+    volumes:
+      - /data/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=chatwoot
+      - POSTGRES_USER=postgres
+      # Please provide your own password.
+      - POSTGRES_PASSWORD=
+
+  redis:
+    image: redis:alpine
+    restart: always
+    command: ["sh", "-c", "redis-server --requirepass \"$REDIS_PASSWORD\""]
+    env_file: .env
+    volumes:
+      - /data/redis:/data
+    ports:
+      - '127.0.0.1:6379:6379'
+
+```
+
+{{< /details >}}
+
 * [FlowiseAI](/selfhosting-flowise-ai/)
 * Langflow - **Visual framework** for building multi-agent and RAG applications. It is open-source, Python-powered, fully customizable, LLM and vector store agnostic.
   * https://docs.langflow.org/getting-started-installation

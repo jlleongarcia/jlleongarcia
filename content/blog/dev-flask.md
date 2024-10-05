@@ -225,6 +225,8 @@ Django: Can use Jinja2, but its native templating engine is preferred.
 
 ## Simpler Data Apps
 
+* <https://docs.chainlit.io/get-started/overview>
+
 ### Streamlit
 
 {{< cards cols="1" >}}

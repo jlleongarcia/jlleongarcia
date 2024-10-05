@@ -12,11 +12,11 @@ A photo of the latest DJI camera:
 
 ![DJI Osmo Action 5 Pro](/blog_img/hardware/dji_oa5pro.jpg)
 
-https://demo.mediacms.io/view?m=ZLjVzLcCE
-
-{{< video "https://www.w3schools.com/tags/movie.mp4" >}}
-
 {{< youtube "MlbJ3tY43vE" >}}
+
+<!-- https://demo.mediacms.io/view?m=ZLjVzLcCE
+
+{{< video "https://www.w3schools.com/tags/movie.mp4" >}} -->
 
 ### How to edit Videos
 

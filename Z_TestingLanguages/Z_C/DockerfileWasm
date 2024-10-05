@@ -1,0 +1,7 @@
+FROM scratch
+
+COPY hello.wasm /hello.wasm
+ENTRYPOINT [ "/hello.wasm" ]
+
+
+#docker buildx build --platform wasi/wasm -t fossengineer/helloworld-wasm -f DockerfileWasm .

@@ -32,6 +32,9 @@ ollama run llava #https://ollama.com/library/llava
 
 https://www.youtube.com/watch?v=4Jpltb9crPM
 
+
+<https://www.youtube.com/watch?v=2Tv5ZfPabGM>
+
 > Image Recognition with LLaVa in Python
 
 
