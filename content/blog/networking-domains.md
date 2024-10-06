@@ -1,11 +1,11 @@
 ---
-title: "Networking - Understading Domains"
+title: "Networking - Understading Domains and DNS Setup"
 date: 2024-10-23T10:20:21+01:00
 draft: true
 tags: ["Dev"]
-description: 'Tinkering with a Raspberry Pi and Networking.'
+description: 'How to Setup DNS for your Domains.'
 summary: ''
-url: 'networking-basics'
+url: 'web-domain-basics'
 ---
 
 

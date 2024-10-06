@@ -13,6 +13,10 @@ url: "how-to-use-structured-outputs-LLM"
 
 ## FAQ
 
+### Using LLMs to apply to Linkedin Jobs
+
+* https://github.com/feder-cr/Auto_Jobs_Applier_AIHawk
+
 ### How to use LLMs to create a CV
 
 {{< details title="Use a CV Builder Framework: OpenResume or " closed="true" >}}

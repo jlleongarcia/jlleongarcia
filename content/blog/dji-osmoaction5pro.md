@@ -20,11 +20,28 @@ A photo of the latest DJI camera:
 
 ### How to edit Videos
 
-https://jalcocert.github.io/Linux/docs/debian/content_creation/
+I was including [here](https://jalcocert.github.io/Linux/docs/debian/content_creation/) how to setup your PC for content creation.
 
+{{< details title="Shotcut with OA5 Pro📌" closed="true" >}}
 
-{{< details title="Edit 📌" closed="true" >}}
+```sh
+sudo snap install shotcut --classic
+```
 
+1. Open Shotcut, add the .mp4 file (not the [DJI's LRF](https://raw.githubusercontent.com/JAlcocerT/Docker/refs/heads/main/Backups/NextCloud/nc_mariadb.yml) - Low Resolution File used for the video playback)
+2. On the top left side - **add filter**: audio mute / brightness / ...
+3. When you are done witht he changes: CTRLE+E to export as .mp4
+
+{{< /details >}}
+
+{{< details title="KDEnlive with OA5Pro 📌" closed="true" >}}
+
+```sh
+sudo snap install shotcut --classic
+```
+
+1. Open Shotcut, add the .mp4 file (not the [DJI's LRF](https://raw.githubusercontent.com/JAlcocerT/Docker/refs/heads/main/Backups/NextCloud/nc_mariadb.yml) - Low Resolution File used for the video playback)
+2. On the top left side: add filter: audio mute
 
 {{< /details >}}
 
@@ -38,13 +55,17 @@ https://jalcocert.github.io/Linux/docs/debian/content_creation/
 As they required email registration, I put to test how seriously DJI takes privacy by using **[addy.io](https://github.com/anonaddy/docker) email aliases** ([ex-anonaddy](https://github.com/anonaddy/anonaddy?tab=readme-ov-file#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one))
 {{< /callout >}}
 
-* The battery is 1950mah and charges really fast 👌
+* The battery is 1950mah and charges really fast (~7w) 👌
     * From 10% to 80% - ~30 min
     * From 10% to 100% - ~40 min
 
 * Memory wise 👌
     * The built in is ~45GB
     * I added a Kingston SD 128GB CL10 (up to 80mb/s reading and 10 mb/s of writing - which might be to slow)
+    * When transfering files to my laptop I saw up to 90MB/s speed
+
+* File size:
+    * Super night mode 1920x**1080@30fps** has a 29.5mb/s video bitrate, making a 4.4gb for 20min duration. 
 
 ### My Workflow with the DJI OA5-Pro
 

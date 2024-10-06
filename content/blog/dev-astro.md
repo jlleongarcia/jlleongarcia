@@ -1,7 +1,7 @@
 ---
 title: "How to use Astro Web Templates"
-date: 2024-09-03T23:20:21+01:00
-draft: true
+date: 2024-08-15T23:20:21+01:00
+draft: false
 tags: ["Dev"]
 summary: 'How to get started with a free Astro Template'
 url: 'using-astro-templates'

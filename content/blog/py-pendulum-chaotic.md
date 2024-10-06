@@ -2,7 +2,7 @@
 title: "What a Double Pendulum can teach about Chaos Theory"
 date: 2023-09-03T23:20:21+01:00
 draft: false
-tags: ["Python","Dashboards"]
+tags: ["Python","Dashboards","Mechanics"]
 cover:
     image: "https://socialify.git.ci/jalcocert/Py_Double_Pendulum/image?description=0&name=1&owner=1&pattern=Brick%20Wall&theme=Light"
     alt: "Double Pendulum Simulation with Python" # alt text

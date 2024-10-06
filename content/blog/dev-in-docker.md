@@ -1,6 +1,6 @@
 ---
 title: "How to Develop AI Projects inside a Docker Container"
-date: 2024-08-12T23:20:21+01:00
+date: 2024-08-17T23:20:21+01:00
 draft: false
 tags: ["Dev"]
 summary: "Developing like a PRO (via SSH or into a container)"

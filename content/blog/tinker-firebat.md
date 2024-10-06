@@ -333,9 +333,9 @@ volumes:
 
 services:
   db:
-    image: linuxserver/mariadb
+    image: linuxserver/mariadb #:10.11.8
     restart: always
-    container_name: nextclouddb
+    container_name: nextclouddb #https://hub.docker.com/_/mariadb/tags 
     volumes:
       - /home/Docker/nextcloud/db:/var/lib/mysql
     environment:
@@ -347,21 +347,21 @@ services:
 #    networks: ["nginx_nginx_network"] #optional 
 
   app:
-    image: nextcloud #latest
-    container_name: nextcloud
+    image: nextcloud #latest #right now im using :30.0.0
+    container_name: nextcloud #https://hub.docker.com/_/nextcloud/
     restart: always
     ports:
       - 8080:80
     links:
       - db
     volumes:
-      - /home/Docker/nextcloud/html:/var/www/html
+      - /home/Docker/nextcloud/html:/var/www/html #This is where the data will be stored (under ./data/yourselecteduser/files)
     environment:
       - MYSQL_PASSWORD=ncpass
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
       - MYSQL_HOST=db
-      - NEXTCLOUD_TRUSTED_DOMAINS=http://0.0.0.0:8080 #https://nextcloud.yourduckdnsubdomain.duckdns.org/
+      - NEXTCLOUD_TRUSTED_DOMAINS=http://0.0.0.0:8080 #https://nc.yoursubdom.duckdns.org/ #http://opi5.abcdef.ts.net:8080
 #    networks: ["nginx_nginx_network"] #optional 
  
 # networks: #optional
@@ -369,7 +369,18 @@ services:
 #     external: true #optional
 ```
 
-> Make sure to add your private ip of the server to be able to access it in trusted domains
+> Make sure to add your private ip of the server to be able to **access it in trusted domains**: `http://0.0.0.0:8080`
+
+* You can use [NC as WebDav like so](https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/#faq): `dav://opi5.abcdef..ts.net:8080/remote.php/dav/files/YOUR_USERNAME/`
+
+And if you havent done it in a while, make some clean up:
+
+```sh
+docker builder prune
+#docker system prune -a
+docker volume prune
+docker image prune -a
+```
 
 {{< /details >}}
 

@@ -1,5 +1,5 @@
 ---
-title: "How to Develop AI Projects inside a Docker Container"
+title: "How to use HF"
 date: 2024-08-12T23:20:21+01:00
 draft: true
 tags: ["Dev"]

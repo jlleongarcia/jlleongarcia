@@ -19,6 +19,7 @@ https://pypi.org/project/googlesearch-python/
 * https://pypi.org/project/duckduckgo-search/
 
 
+---
 
 ## Outro
 
@@ -30,9 +31,11 @@ Scrape Google and other search engines from our fast, easy, and complete API.
 
 ### google-flight-analysis
 
+You can also search for the best flights with python an google flights 
+
 * https://pypi.org/project/google-flight-analysis
 
-### Interesting Related Stuff
+### Interesting Related Stuff to Python Search
 
 * https://github.com/premthomas/Ollama-and-Agents
 

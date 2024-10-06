@@ -8,3 +8,10 @@ url: 'dev-ai-tools'
 ---
 
 ![Exploring FireBat Disks](/blog_img/outro/porsche.png)
+
+
+---
+
+## Other Design Resources
+
+* Great video comparing [western vs eastern design](https://www.youtube.com/watch?v=8UAsN9wvePE&t=645s)
