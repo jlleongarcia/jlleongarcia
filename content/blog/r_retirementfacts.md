@@ -63,8 +63,7 @@ The model assumes that no return on the savings are given, showing that in this 
 
 The math is very simple for the case with no inflation, you save 1 at any given time, and you can expend the same amount later on:
 
-![Example image](/img/Inflation_No.JPG)
-
+![No Inflation](/blog_img/data-experiments/Inflation_No.JPG)
 
 Next, you can compare with a case of a *mild inflation* of a 5% (example value of what could be expected yearly and long term on US or EU).
 
@@ -72,7 +71,7 @@ In this case we have to expect that savings will not grow lineally, but they wil
 
 Also, during retirement, the effect will be present as well, so the savings will decay faster as we are consuming and suffering the inflation:
 
-![Example image](/img/Inflation_Mild.JPG)
+![No Inflation](/blog_img/data-experiments/Inflation_Mild.JPG)
 
 
 ## Conclusions

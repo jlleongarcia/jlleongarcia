@@ -15,16 +15,16 @@ url: firebat-ak2-plus-minipc-review
 * Cost: ~75$
 * It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/): I went with [Zorin OS](https://zorin.com/os/)
 
-{{< figure src="blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
+<!-- {{< figure src="blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
 
-{{< figure src="/blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
+{{< figure src="/blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}} -->
 
-{{< figure_tweaked src="/blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud v2" >}}
+<!-- {{< figure_tweaked src="/blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud v2" >}} -->
 
 
 ![Firebat MiniPc](/blog_img/mini_pc/firebat.jpg)
 
-{{< figure src="images/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
+<!-- {{< figure src="images/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}} -->
 
 
 > Value for money, Great accesibility to add an additional 2.5" drive!
@@ -477,7 +477,7 @@ services:
 {{< /cards >}}
 
 ![FireBat NextCloud](/blog_img/mini_pc/nginx_posteio.png)
-
+<!-- 
 {{ $image := resources.Get "blog_img/mini_pc/nginx_posteio.png" }}
 {{ $resized := $image.Resize "600x" }}
 <img src="{{ $resized.Permalink }}" alt="FireBat NextCloud">
@@ -492,7 +492,7 @@ services:
   <img src="{{ $resized.Permalink }}" alt="FireBat NextCloud">
   <p style="font-size: 14px; color: gray;">FireBat NextCloud - Example Caption</p>
 </div>
-
+ -->
 
 
 

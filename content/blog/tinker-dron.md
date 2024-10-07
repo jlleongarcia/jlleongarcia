@@ -7,7 +7,7 @@ summary: Learning drone programming with Python and a DJI Tello drone.
 url: 'dji-tello-python-programming'
 ---
 
-Last year I got a drone.
+Last year I got **a drone**.
 
 This is what I've learn with it so far.
 
@@ -19,11 +19,11 @@ This is what I've learn with it so far.
 I have [forked](https://github.com/damiafuentes/DJITelloPy) and created a Docker Image with Python Code which is able to control the drone:
 * https://github.com/JAlcocerT/DJITelloPy
 
-Hardware wise:
-* The battery last ~10 min
-* Weight ~80g
-* Price ~100$
-* It has an Intel CPU which we can program with python, 5MP Camera with 720P Live View Vision System, WIFI 802.11n 2.4G,
+* Hardware wise:
+    * The battery last ~10 min
+    * Weight ~80g
+    * Price ~100$
+    * It has an Intel CPU which **we can program with python**, 5MP Camera with 720p Live View Vision System, WIFI 802.11n 2.4G,
 
 So far it can do the following:
 
@@ -38,6 +38,8 @@ Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=12
 
 ### Computer Vision without a Dron
 
+* With a [Rpi and a small camera!](https://jalcocert.github.io/JAlcocerT/raspberry-pi-camera-setup/)
+
 ![CV with a RPI4](/blog_img/RPi4_2gb_cam.jpg)
 
 > I got a small camera for the Pi this year - Try `OpenCV` and `yolov8`
@@ -49,9 +51,9 @@ Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=12
 ### How to Control DJI Tello with Mobile Apps
 
 * There are official Apps for DJI Tello (Manufactured by Ryze)
-    * iOS - https://apps.apple.com/us/app/tello/id1330559633
-    * Android - The official app seems outdated and non compatible with my Android
-        A Free Demo alternative - https://play.google.com/store/apps/details?id=com.volatello.tellofpv.demo
+    * [iOS App](https://apps.apple.com/us/app/tello/id1330559633)
+    * Android - The **official app seems outdated** and non compatible with my Android
+        A Free Demo alternative is [this one](https://play.google.com/store/apps/details?id=com.volatello.tellofpv.demo)
 
 ### About Dron Regulations
 
