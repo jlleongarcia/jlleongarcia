@@ -56,7 +56,11 @@ sudo snap install shotcut --classic
 As they required email registration, I put to test how seriously DJI takes privacy by using **[addy.io](https://github.com/anonaddy/docker) email aliases** ([ex-anonaddy](https://github.com/anonaddy/anonaddy?tab=readme-ov-file#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one))
 {{< /callout >}}
 
-* The battery is 1950mah and charges really fast (~7w) 👌
+<!-- 
+https://app.addy.io/docs/#account-details-GETapi-v1-account-details 
+-->
+
+* The battery is 1950mah and charges really fast 👌
     * From 10% to 80% - ~30 min
     * From 10% to 100% - ~40 min
     * If you leave the battery connected, it will loose ~2% charge during a night
@@ -88,8 +92,9 @@ As they required email registration, I put to test how seriously DJI takes priva
         * Transfer speed is ~25mb/s
 
 * File size:
-    * Super night mode 1920x**1080@30fps** has a 29.5mb/s video bitrate, making a 4.4gb for 20min duration. 
-    * Super night mode 3840x**2160@30fps** makes a ~8gb file for 20 min duration and used 20% battery
+    * Super night mode FHD (Full HD) 1920x**1080@30fps** has a 29.5mb/s video bitrate, making a 4.4gb for 20min duration. 
+    * Super night mode with UHD (Ultra High Definition) **3840**x2160@30fps - 4k@30fps makes a ~8gb file for 20 min duration and used 20% battery - the super night mode needs stabilization ON
+    * **2688**x1522 resolution, aka 2.7K
 
 ### My Workflow with the DJI OA5-Pro
 

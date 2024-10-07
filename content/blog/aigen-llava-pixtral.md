@@ -17,6 +17,8 @@ url: 'multi-modal-models'
 
 https://www.youtube.com/watch?v=Y2ldwg8xsgE
 
+https://www.youtube.com/watch?v=7aGTKJJMb5w
+
 * {{< newtab url="https://.github.io//" text="The  Official Site" >}}
 * {{< newtab url="https://github.com//" text="The  Source Code at Github" >}}
     * License: {{< newtab url="https://github.com//?tab=AGPL-3.0-1-ov-file#readme" text="aGPL 3.0" >}} ❤️
