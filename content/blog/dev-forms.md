@@ -91,12 +91,30 @@ Generate a Google form and **add the iframe** wherever you want to place it:
 
 ### Formbricks
 
-* https://formbricks.com/
+You can use it for launching surveys or contact forms.
 
+* https://formbricks.com/
+<!-- 
+https://app.formbricks.com/environments/cm0vgwasu00061484bqmicsbm/surveys -->
+
+> Can be **linked with**: GSheets also with cal.com and more
 
 
 {{< details title="Using FormsBricks 📌" closed="true" >}}
 
+```sh
+yarn add @formbricks/js
+```
+
+Before the </head> add:
+
+```html
+<!-- START Formbricks Surveys -->
+<script type="text/javascript">
+  !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://app.formbricks.com/js/formbricks.umd.cjs";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e),setTimeout(function(){window.formbricks.init({environmentId: "someidforyou", apiHost: "https://app.formbricks.com"})},500)}();
+  </script>
+  <!-- END Formbricks Surveys -->
+```
 
 {{< /details >}}
 

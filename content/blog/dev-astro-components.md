@@ -202,7 +202,7 @@ Then, use it in your astro templates like:
 {{< dropdown title="How to deploy Astro to Cloudflare Pages? ⏬" closed="true" >}}
 
 
-* Create the project (you will need to authenticate to Cloudflare):
+* Create the project (you will need to [authenticate to Cloudflare](https://fossengineer.com/hosting-with-cloudflare-pages/)):
 
 ```sh
 npx wrangler pages project create #this will install wrangler CLI the first time
@@ -215,6 +215,15 @@ Use **Wrangler** to obtain a list of all available projects for Direct Upload:
 npx wrangler pages project list #this are the ones you uploaded already
 npx wrangler pages deployment list
 ```
+
+One **Final Step** (Thanks to [Project Brackets YT Video!](https://www.youtube.com/watch?v=aRYt02Mgy90)
+
+Remember to go to `Cloudflare Web UI` -> Workers and pages -> Select the project name as you uploaded with the CLI -> Custom Domains
+
+* If your domain is not with Cloudflare, they will ask you to use their **Name Authoritative NameServers**
+
+Something like: fattouche.ns.cloudflare.com, leanna.ns.cloudflare.com
+
 
 {{< /dropdown >}}
 

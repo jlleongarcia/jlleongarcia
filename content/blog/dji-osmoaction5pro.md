@@ -218,4 +218,6 @@ These resources should help you find the perfect chill music for your video proj
 
 {{< /details >}}
 
-To create video from code, you can use the [React Framework - Remotion](https://www.youtube.com/watch?v=deg8bOoziaE&t=58s)
+### Video as a Code
+
+To create **video from code**, you can use the [React Framework - **Remotion**](https://www.youtube.com/watch?v=deg8bOoziaE&t=58s)

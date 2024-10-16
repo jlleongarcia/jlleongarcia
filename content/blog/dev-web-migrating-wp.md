@@ -412,3 +412,9 @@ It's worth to try few of them - not all the content is indexed in the same way a
 * Custom websites
   * https://zeon.studio/estimate-project
   * https://hormigasenlanube.com/
+
+* **Other ways to get a personal blog**
+  * [btw](https://github.com/btw-so/btw)
+  * [Ghost](https://fossengineer.com/selfhosting-ghost-docker/)
+  * [Wordpress](https://fossengineer.com/selfhosting-wordpress-docker/)
+  * [Grav](https://fossengineer.com/selfhosting-grav-docker/)

@@ -10,7 +10,16 @@ url: 'how-to-record-web-sessions'
 
 ## OpenReplay
 
+* https://www.openreplay.com/
+
 {{< details title="Adding OpenReplay to a Astro Site 📌" closed="true" >}}
+
+Go to https://app.openreplay.com/login
+
+
+```sh
+npm i @openreplay/tracker
+```
 
 Copy the json before the `</head>`, normally in `BaseLayout.astro`
 
