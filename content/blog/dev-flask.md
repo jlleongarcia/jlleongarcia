@@ -228,6 +228,7 @@ It utilizes Flask as its underlying web server and integrates several other libr
 * If you are using Cloudflare, you will need their [API Token](https://dash.cloudflare.com/profile/api-tokens)
   * Go to Edit zone DNS. Zone Resources -> Include all zones and create it. Add it as `dns_cloudflare_api_token=`
   * Thanks to [TechHut](https://www.youtube.com/watch?v=79e6KBYcVmQ), [DistroDomain](https://www.youtube.com/watch?v=JNFQOJP5VY0) for the related YT Videos
+* In NginX UI, you will add the: **container name and port** of the Flask App
 
 ![Flask Https NginX Setup](/blog_img/apps/flask-nginx-duckdns.png)
 
@@ -238,7 +239,7 @@ It utilizes Flask as its underlying web server and integrates several other libr
 ping 188.public.server.IP
 
 ping wella.jalcocertech.xyz #dns might take a while to propagate
-ping flask.jalcocertech.xyz #also works if cloudflare proxied
+ping flask.jalcocertech.xyz #also works if cloudflare DNS record is proxied (this will hide your server IP)
 
 ping welladesk.duckdns.org
 ```
