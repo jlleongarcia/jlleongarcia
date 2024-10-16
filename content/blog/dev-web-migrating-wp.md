@@ -284,7 +284,7 @@ Puppeteer what?
 
 {{< details title="Free SSG Deployment 📌" closed="true" >}}
 
-* With Firebase
+* With [Firebase Hosting](https://fossengineer.com/hosting-with-firebase/)
 
 ```sh
 firebase init #configure files for firebase hosting / public directory is normal public for HUGO and dist for Astro/nodes
@@ -293,9 +293,11 @@ firebase deploy #you will get something like -> https://jalcocertech.web.app/
 
 > Yes, **free web.app subdomain**!
 
-* With Cloudflare Pages
+* With [Cloudflare Pages](https://fossengineer.com/hosting-with-cloudflare-pages/)
 
 > Here you get a **pages.dev subdomain**, also for free
+
+* You can also try **Github Pages**
 
 {{< /details >}}
 
@@ -412,6 +414,7 @@ It's worth to try few of them - not all the content is indexed in the same way a
 * Custom websites
   * https://zeon.studio/estimate-project
   * https://hormigasenlanube.com/
+  * https://lyk-website.pl/brief/
 
 * **Other ways to get a personal blog**
   * [btw](https://github.com/btw-so/btw)

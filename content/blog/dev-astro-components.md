@@ -222,8 +222,9 @@ Remember to go to `Cloudflare Web UI` -> Workers and pages -> Select the project
 
 * If your domain is not with Cloudflare, they will ask you to use their **Name Authoritative NameServers**
 
-Something like: fattouche.ns.cloudflare.com, leanna.ns.cloudflare.com
+Something like: `fattouche.ns.cloudflare.com, leanna.ns.cloudflare.com`
 
+![Wordpress Google Page Speed Desktop](/blog_img/web/CloudFlarePages_CustomDomain_DNS.png)
 
 {{< /dropdown >}}
 

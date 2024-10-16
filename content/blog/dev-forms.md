@@ -97,7 +97,7 @@ You can use it for launching surveys or contact forms.
 <!-- 
 https://app.formbricks.com/environments/cm0vgwasu00061484bqmicsbm/surveys -->
 
-> Can be **linked with**: GSheets also with cal.com and more
+> Can be **linked with**: GSheets also with [cal.com](https://app.cal.com/auth/login), and [more integrations like webhooks](https://app.formbricks.com/environments/cm0vgwasu00061484bqmicsbm/integrations)
 
 
 {{< details title="Using FormsBricks 📌" closed="true" >}}
@@ -166,4 +166,9 @@ Check that your web is performing well with:
 ### Other Tools
 
 https://www.tawk.to/ - Talk to customers
-https://www.cal.com/
+
+#### Appointments with cal.com
+
+
+* https://www.cal.com/
+  * You can integrate it with stripe to collect payment in advance of the meeting, also to require requestor email validation.

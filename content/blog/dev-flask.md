@@ -223,6 +223,61 @@ It utilizes Flask as its underlying web server and integrates several other libr
 5. To get **https and your custom domain** for the Flask App, use [NGinX Proxy Manager as another container](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
 6. Point your **DNS to the Server IP as an A record** (with whatever domain registrar you chose)
 
+* If you need something **free**, you can try with a [**duckdns subdomain**: ](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/#how-to-get-https-locally-with-docker-services)
+  * Remember to add the DSN Challenge with the **duckDNS** token when you'll be at the SSL tab (I placed 60s as propagation)
+* If you are using Cloudflare, you will need their [API Token](https://dash.cloudflare.com/profile/api-tokens)
+  * Go to Edit zone DNS. Zone Resources -> Include all zones and create it. Add it as `dns_cloudflare_api_token=`
+  * Thanks to [TechHut](https://www.youtube.com/watch?v=79e6KBYcVmQ), [DistroDomain](https://www.youtube.com/watch?v=JNFQOJP5VY0) for the related YT Videos
+
+![Flask Https NginX Setup](/blog_img/apps/flask-nginx-duckdns.png)
+
+
+{{< details title="Useful CLI commands to manage your Server for the Flask App 📌" closed="true" >}}
+
+```sh
+ping 188.public.server.IP
+
+ping wella.jalcocertech.xyz #dns might take a while to propagate
+ping flask.jalcocertech.xyz #also works if cloudflare proxied
+
+ping welladesk.duckdns.org
+```
+
+```yml
+version: "3"
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    container_name: nginx    
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port - UI
+      # Add any other Stream port you want to expose
+      # - '21:21' # FTP
+    volumes:
+      - ~/Docker/Nginx/data:/data
+      - ~/Docker/Nginx/letsencrypt:/etc/letsencrypt
+#     volumes:
+#       - nginx_data:/data #  - ~/Docker/Nginx/data:/data
+#       - nginx_letsencrypt:/etc/letsencrypt #  - ~/Docker/Nginx/letsencrypt:/etc/letsencrypt    
+
+
+# volumes:
+#   nginx_data:
+#   nginx_letsencrypt:      
+
+networks:
+  nginx_default:
+    name: nginx_default      
+```
+
+{{< /details >}}
+
+ping 188.245.198.60
+
 
 ---
 
