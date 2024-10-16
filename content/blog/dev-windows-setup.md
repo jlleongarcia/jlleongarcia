@@ -28,6 +28,8 @@ choco --version
 choco install podman-desktop
 ```
 
+![Podman Desktop](/blog_img/selfh/podmandesktop.png)
+
 Run podman compose up (podman CLI v4.7.0+) or docker-compose in a directory with a compose.yaml. Podman Desktop will automatically detect the Compose deployment and show it in the container list.'
 
 ```sh

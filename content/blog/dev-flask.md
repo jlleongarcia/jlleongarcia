@@ -210,7 +210,23 @@ It utilizes Flask as its underlying web server and integrates several other libr
   {{< card link="https://github.com/JAlcocerT/Py_Trip_Planner/" title="Dash project example - Trip Planner with Weather" >}}
 {{< /cards >}}
 
-### Flask Competitors
+### Deploying a Flask App like a Pro
+
+1. Get a server, for example [with Hetzner](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers)
+2. Setup the server with [docker and all goodies](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
+* Portainer is recommended for UI container management
+3. Clone your Flask App into the server, [build the container (similarly like for a DASH App)](https://jalcocert.github.io/JAlcocerT/dash-docker-gcr/)
+4. Run your containerized Flask App with [Docker-Compose - similar to this one](https://jalcocert.github.io/JAlcocerT/dash-docker-gcr/)
+
+> Now your App is running! but you can just access it via the Server IP and the port 5000
+
+5. To get **https and your custom domain** for the Flask App, use [NGinX Proxy Manager as another container](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
+6. Point your **DNS to the Server IP as an A record** (with whatever domain registrar you chose)
+
+
+---
+
+### Flask Alternatives
 
 #### FastAPI
 
@@ -228,6 +244,8 @@ Django: Can use Jinja2, but its native templating engine is preferred.
 * <https://docs.chainlit.io/get-started/overview>
 
 ### Streamlit
+
+I've been using this one for a while now:
 
 {{< cards cols="1" >}}
   {{< card link="https://github.com/streamlit/streamlit" title="Streamlit in Github" >}}
@@ -252,10 +270,9 @@ Django: Can use Jinja2, but its native templating engine is preferred.
 * Superset
 * Grafana
 
-Shiny in Python
-
-<https://shiny.rstudio.com/py/gallery/>
-<https://shiny.rstudio.com/py/gallery/>
+* Shiny in Python: For now I just used [Shiny with R](https://jalcocert.github.io/JAlcocerT/R-Stocks/)
+  * <https://shiny.rstudio.com/py/gallery/>
+  * <https://shiny.rstudio.com/py/gallery/>
 
 
 pygwalker

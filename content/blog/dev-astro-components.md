@@ -8,6 +8,12 @@ summary: 'How to get better with ASTRO as SSG (for non web-devs). My favourite c
 url: 'understanding-astro-ssg-components'
 ---
 
+There is one thing that you need to understand to be on the top percentile of webs.
+
+![Just use Astro - IQ Percentiles](/blog_img/IQ_default.jpg)
+
+And it is **how to use components**.
+
 <!-- Add dynamic content about you
 https://docs.astro.build/en/tutorial/2-pages/3/ -->
 

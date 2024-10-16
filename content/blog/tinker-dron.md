@@ -40,7 +40,7 @@ Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=12
 
 * With a [Rpi and a small camera!](https://jalcocert.github.io/JAlcocerT/raspberry-pi-camera-setup/)
 
-![CV with a RPI4](/blog_img/RPi4_2gb_cam.jpg)
+![CV with a RPI4](/blog_img/hardware/RPi4_2gb_cam.jpg)
 
 > I got a small camera for the Pi this year - Try `OpenCV` and `yolov8`
 

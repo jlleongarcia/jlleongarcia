@@ -32,6 +32,8 @@ https://github.com/OpenBMB/ChatDev?tab=Apache-2.0-1-ov-file#readme
 
 ### CrewAI
 
+https://github.com/streamlit/cookbook/tree/main/recipes/crewai
+
 ### MetaGPT
  
 ###  SuperAGI

@@ -101,12 +101,14 @@ services:
 ```
 {{< /details >}}
 
-![OpenL Setup](/blog_img/openl-setup.png)
+![OpenL Setup](/blog_img/apps/openl-setup.png)
 
 
 ---
 
 ## Resources that Helped
 
-* https://notebooklm.google.com/
+* https://notebooklm.google.com/ together with the docs PDF
+
+* https://openl-tablets.org/documentation/getting-started
 * https://openldocs.readthedocs.io/en/latest/documentation/guides/reference_guide/#creating-tables-for-openl-tablets

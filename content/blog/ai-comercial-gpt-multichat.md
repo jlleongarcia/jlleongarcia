@@ -130,7 +130,9 @@ docker exec -it openaichatbot /bin/bash
 #sudo docker run -it -p 8502:8501 openaichatbot:latest /bin/bash
 ```
 
-With Portainer:
+#### Run the Multichat App
+
+With Portainer and the **docker-compose stack**:
 
 ```yml
 version: '3'
@@ -314,7 +316,7 @@ Remember to link the GHCR Package with your repository Readme:
 ![GHCR Connecting Package to Repository](/blog_img/GH_package_to_repo.png)
 
 
-{{< dropdown title="Using buildx with Github Actions to create x86 and ARM64 images⏬" closed="true" >}}
+{{< dropdown title="Using buildx with Github Actions to create x86 and ARM64 images ⏬" closed="true" >}}
 
 We need to define a Github Actions workflow with **buildx**:
 
@@ -366,6 +368,9 @@ Locally, you could do:
 #build and push the image and manifest to DockerHub
 docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t yourDockerHubUser/multichat --push .
 ```
+
+![DockerHub Multi-Arch Image](/blog_img/selfh/multi-arch-pushed-dockerhub.png)
+
 
 {{< /dropdown >}}
 

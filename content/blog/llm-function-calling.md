@@ -55,11 +55,15 @@ print(completed_message)
 {{% /details %}}
 
 
-### Interesting Resources
+### Interesting Resources for Function Calling
 
 * https://github.com/daveebbelaar/langchain-experiments/tree/main/openai-functions
 
 ChatGPT returns natural text, and it can be unreliable. Returning functions makes the output more controlled and deterministic.
+
+{{< callout type="info" >}}
+Thanks to [daveebbelaar repository](https://github.com/daveebbelaar/langchain-experiments)
+{{< /callout >}}
 
 The feature can extract structured data from text (prompt) and assign them as arguments to a chosen function.
 

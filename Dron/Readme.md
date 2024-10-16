@@ -13,7 +13,7 @@ pygame == 2.0.1
 math
 numpy
 
-# PyCHarm
+# PyCharm
 
 #sudo snap install pycharm-community --classic
 

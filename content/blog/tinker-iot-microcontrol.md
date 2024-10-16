@@ -25,9 +25,15 @@ And Recently, this new release got my attention:
 Let me show you **how to get started with MicroControllers**
 
 What you need to know about microcontrollers:
+
 * They dont need an OS
 * They run in loop whatever logic is loaded
 * The are low consumption devices (much more than even SBC's)
+
+They are great companions for SBC's like a RPi:
+
+![SBC Raspberry Pi 4](/blog_img/iot/Rpi4_4gb_size.jpg)
+
 
 <!-- I know this is supposed to be a RPi centered repo and web, but couldn't resist to add some small project that uses the ESP32. -->
 

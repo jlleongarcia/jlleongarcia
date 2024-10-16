@@ -8,7 +8,7 @@ description: Testing the OA5 Pro
 url: 'dji-osmo-action-5-pro'
 ---
 
-A photo of the latest DJI camera:
+First, A photo of the latest DJI Camera:
 
 ![DJI Osmo Action 5 Pro](/blog_img/hardware/dji_oa5pro.jpg)
 
@@ -83,11 +83,13 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
 * Memory wise 👌
     * The built in is ~45GB
     * I added a Kingston SD 128GB CL10 (up to 80mb/s reading and 10 mb/s of writing - which might be to slow)
+        * It is enough to record in there video at 1080p@30fps without micro-stops
+        * 1080p@30fps is around 4mb/s in size
     * When transfering files to my laptop I saw up to 90MB/s speed
 
 * Transfering files:
     * Via the Mimo App
-    * Via usb-c (turn of the camera first and then connect the cable)
+    * Via usb-c (**turn ON the camera first** and then connect the cable)
         * You will see one drive for the internal card and another for your SD card if any
         * Transfer speed is ~25mb/s
 
@@ -120,3 +122,100 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
 Thanks to this [Freeware Focus fantastic video](https://www.youtube.com/watch?v=QdYdq3xO7-k&pp=ygUPdXBzY2F5bCBzaG90Y3V0) for the idea
 
 {{< /details >}}
+
+{{< details title="How to Combine .mp4 Videos with Python MoviePy 📌" closed="true" >}}
+
+You will need the [MoviePy Package](https://github.com/Zulko/moviepy) 
+
+```py
+from moviepy.editor import VideoFileClip, concatenate_videoclips
+```
+
+> Thanks to [NeuralNine yt Video](https://www.youtube.com/watch?v=Q2d1tYvTjRw)
+
+{{< /details >}}
+
+{{< callout type="info" >}}
+This is the repo I use for [my Video Editing WorkFlow](https://github.com/JAlcocerT/VideoEditingRemotion)
+{{< /callout >}}
+
+
+> Very Interesting way to make [video animations with python](https://zulko.github.io/moviepy/gallery.html#data-animations) and even [vector animations](https://zulko.github.io/blog/2014/09/20/vector-animations-with-python/)
+
+
+{{< details title="Audio for Videos 📌" closed="true" >}}
+
+In [Youtube Studio](https://studio.youtube.com/channel/UCPPMA8ZEusAe5dVH6PbjZFA/music), you also have a library for audio that you can use freely on your videos.
+
+> I tried [freepd](https://freepd.com/) as per [this reddit post](https://www.reddit.com/r/Filmmakers/comments/wjq71o/does_anyone_know_where_to_get_copyright_free/)
+
+You can find open-source, royalty-free, or Creative Commons-licensed music from several platforms that offer chill music for video projects. Here are some great resources:
+
+### 1. **Free Music Archive (FMA)**
+   - **Website**: [https://freemusicarchive.org](https://freemusicarchive.org)
+   - FMA offers a vast collection of free music under Creative Commons licenses, which means you can use music for your videos based on the licensing terms (some require attribution).
+   - **Genres**: Many genres, including chill, ambient, and downtempo music.
+   
+### 2. **YouTube Audio Library**
+   - **Website**: [https://www.youtube.com/audiolibrary/music](https://www.youtube.com/audiolibrary/music)
+   - YouTube provides a large collection of free music and sound effects that you can use for personal and commercial projects, even outside of YouTube.
+   - **Genres**: Chill, ambient, and various others.
+   - **Note**: Some tracks require attribution, so always check the licensing information.
+
+### 3. **ccMixter**
+   - **Website**: [https://ccmixter.org](https://ccmixter.org)
+   - A community music remixing site featuring tracks licensed under Creative Commons. Many artists share their music for use in videos, often for free, as long as you provide credit.
+   - **Genres**: Lots of ambient, electronic, chill, and experimental tracks.
+   - **Licensing**: Pay attention to the specific Creative Commons license for each track (e.g., some require attribution or are non-commercial).
+
+### 4. **Incompetech**
+   - **Website**: [https://incompetech.com](https://incompetech.com)
+   - Kevin MacLeod’s music collection, with a wide range of genres, is available under Creative Commons. You can find many chill and ambient tracks here.
+   - **Genres**: Chill, ambient, background music, etc.
+   - **Licensing**: Free to use with attribution. A paid option allows use without attribution.
+
+### 5. **Bensound**
+   - **Website**: [https://www.bensound.com](https://www.bensound.com)
+   - Bensound offers a collection of royalty-free music, including a lot of chill, relaxing, and ambient tracks.
+   - **Genres**: Chill, ambient, cinematic, electronic.
+   - **Licensing**: Free to use with attribution for non-commercial use. Paid licenses available for commercial use.
+
+### 6. **Jamendo Music**
+   - **Website**: [https://www.jamendo.com](https://www.jamendo.com/start](https://www.jamendo.com/start)
+   - Jamendo provides a large collection of royalty-free tracks for use in personal and commercial projects. They offer free music for non-commercial projects and paid licenses for commercial use.
+   - **Genres**: Chill, ambient, electronic, acoustic.
+   - **Licensing**: Free for personal use, and commercial licenses are available for purchase.
+
+### 7. **Audionautix**
+   - **Website**: [https://audionautix.com](https://audionautix.com)
+   - Audionautix offers free music tracks composed by Jason Shaw, licensed under Creative Commons. You can filter by mood and genre to find chill or relaxing tracks.
+   - **Genres**: Chill, acoustic, ambient, and more.
+   - **Licensing**: Free with attribution under Creative Commons 4.0.
+
+### 8. **SoundCloud (Creative Commons Music)**
+   - **Website**: [https://soundcloud.com](https://soundcloud.com)
+   - Many independent artists on SoundCloud publish their music under Creative Commons licenses. You can search for music tagged with CC licenses by using the "Creative Commons" filter.
+   - **Genres**: Diverse, with a good selection of chill, electronic, ambient, and more.
+   - **Licensing**: Check the license of each track individually.
+
+### 9. **Musopen**
+   - **Website**: [https://musopen.org](https://musopen.org)
+   - Musopen offers free classical music, which can add a relaxing, ambient, or chill vibe to videos. All music is public domain or Creative Commons licensed.
+   - **Genres**: Classical, instrumental.
+   - **Licensing**: Most tracks are public domain or licensed for free use.
+
+### 10. **Pixabay Music**
+   - **Website**: [https://pixabay.com/music/](https://pixabay.com/music/)
+   - Pixabay has a growing collection of royalty-free music available for use in videos, completely free for commercial and non-commercial projects.
+   - **Genres**: Chill, electronic, ambient, acoustic.
+   - **Licensing**: Free to use without attribution (though attribution is appreciated).
+
+### Key Points:
+- Always check the specific license of each track, especially if you’re using it for commercial purposes.
+- If the track requires attribution, make sure to include proper credits as specified by the artist.
+
+These resources should help you find the perfect chill music for your video project! Let me know if you need any specific help with any of them.
+
+{{< /details >}}
+
+To create video from code, you can use the [React Framework - Remotion](https://www.youtube.com/watch?v=deg8bOoziaE&t=58s)

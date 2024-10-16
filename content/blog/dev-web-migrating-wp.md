@@ -340,6 +340,35 @@ You will get a report with what’s link working and what not when it comes to L
 
 {{< /details >}}
 
+### How to have email with your domain
+
+
+{{< details title="Get a Domain! 📌" closed="true" >}}
+
+- [Cloudflare Domains](https://www.cloudflare.com/products/registrar/)
+- [Porkbun](https://porkbun.com/)
+- [Squarespace Domains](https://www.squarespace.com/domains)
+- [GoDaddy](https://www.godaddy.com/domains)
+- [Namecheap](https://www.namecheap.com/domains/)
+
+{{< /details >}}
+
+{{< details title="Email with your domain with Google and Cloudflare 📌" closed="true" >}}
+
+1. Add your Domain to Cloudflare
+2. Go to Cloudflare UI and select a domain -> Email -> Email Routing
+3. Add a routing rule (this will fwd emails with your custom domain to a particilar mail - it works one way for now)
+4. To send emails from custom domains **using gmail servers** - go to the Gmail UI -> Settings -> See all Settings - we will add it at `account and import section` -> Send email as - Add a new email address
+5. We need an Gmail App password - Go to Google Account and search for `app password`, just create one
+6. Add the new email address and hit next -> Then change the SMTP Server (from cloudflare to `smtp.gmail.com`, port 587), add the password you have created and as username is your original gmail address. Leave TLS ticked and hit add.
+
+> Kudos to [CodingEntrepreneur's video](https://www.youtube.com/watch?v=NmXWA08ly_s) for showing the process to send emails with our domain (using smtp.gmail.com)
+
+{{< /details >}}
+
+With porkbun works similarly, just replace `fwd1.porkbun.com` to `smtp.gmail.com` when adding it as per the guide above.
+
+
 ### CDN and Videos for your Website
 
 * https://github.com/orthdron/subatic - Extremely simple video hosting Site that scales with you
@@ -363,7 +392,7 @@ It's worth to try few of them - not all the content is indexed in the same way a
 ### Interesting web related stuff I got to know recently
 
 * Static Websites with python: Check Nikola, the SSG written in python
-
+* [Coding For Entrepreneur Github](https://github.com/codingforentrepreneurs?tab=repositories)!
 
 * **Menu websites at ~500 eur/year**
   * http://cartalia.org/

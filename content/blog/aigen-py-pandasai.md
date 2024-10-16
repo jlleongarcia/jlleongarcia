@@ -330,7 +330,33 @@ streamlit run app.py
 
 * {{< newtab url="https://fossengineer.com/embedchain-ai/" text="Mem0, ex-EmbedChain" >}}
 
-> The memory layer for Personalized AI 
+> The memory layer for Personalized AI
+
+{{< details title="How to use EmbedChain 📌" closed="true" >}}
+
+* <https://docs.embedchain.ai/get-started/quickstart>
+
+```sh
+# conda create --name embedchain python=3.11
+# conda activate embedchain
+# !python -m venv embedchain_venv
+
+#Unix
+#!source embedchain_venv/bin/activate
+#Windows
+#.\embedchain_venv\Scripts\activate
+
+#deactivate
+
+#Get-ExecutionPolicy
+#Set-ExecutionPolicy RemoteSigned
+#Set-ExecutionPolicy Restricted
+
+# !pip install embedchain
+!pip show embedchain
+```
+
+{{< /details >}}
 
 #### LangChain
 

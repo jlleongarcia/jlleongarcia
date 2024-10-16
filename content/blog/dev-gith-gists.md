@@ -98,3 +98,31 @@ git commit -m "Add image"
 
 git push origin master
 ```
+
+---
+
+## FAQ
+
+### How to use Github CLI
+
+* https://cli.github.com/
+    * https://cli.github.com/manual
+
+
+After installtion, just do:
+
+```sh
+gh --version
+gh auth login
+
+
+gh repo clone cli/cli #https://cli.github.com/manual/gh_repo_clone
+gh repo clone jalcocert #gh repo clone ScrewFastMoises
+#cd into the folder
+
+gh repo sync #updates from online to offline
+git status #check what was changed
+git add . #add all the changes
+git commit -m "Your commit message here"
+git push
+```

@@ -1,5 +1,5 @@
 ---
-title: "Testing ai projects"
+title: "Testing AI projects"
 date: 2024-10-02T05:20:21+01:00
 draft: true
 tags: ["Dev","Python"]
@@ -11,6 +11,23 @@ url: 'ai-projects'
 
 {{< details title="Edit 📌" closed="true" >}}
 
+
+```sh
+python -m venv video_venv #create it
+
+video_venv\Scripts\activate #activate venv (windows)
+source video_venv/bin/activate #(linux)
+```
+
+```sh
+pip install -r requirements.txt #all at once
+```
+
+prepare `.gitignore`
+
+```md
+*_venv
+```
 
 {{< /details >}}
 

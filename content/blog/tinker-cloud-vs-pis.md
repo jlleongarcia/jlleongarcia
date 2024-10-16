@@ -13,6 +13,10 @@ Time to choose - where is it worth [to do SelfHosting](https://jalcocert.github.
 
 Sometime ago, I was doing some benchmarks about [Raspberry Pi vs Orange Pi](https://jalcocert.github.io/RPi/posts/pi-vs-orange/) and also about [Mini PCs vs those SBC](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/).
 
+Is it really worth to SelfHost? or can we just use **a Cloud Server for similar performance/price?**
+
+This is what we will be looking at today.
+
 <!-- 
 pdf "/blog_pdf/OrangePi_5_RK3588S_User-Manual_v1.5.pdf"
 OrangePi_5_RK3588S_User-Manual_v1.5.pdf
@@ -52,10 +56,9 @@ But lately, I have been giving [a try to cloud providers](https://jalcocert.gith
 
 And also, I got a new Raspberry Pi 4 (this time 4GB - ARM64, now that prices are reasonable):
 
-![Two RPI's 4](/blog_img/RPi4_2_vs4gb.jpg)
+![Two RPI's 4](/blog_img/hardware/RPi4_2_vs4gb.jpg)
 
-
-There is a bunch of information on the internet: reddit, youtube and decided to create this post as both, a systematic guide and the results of testing that I could perform.
+There is a bunch of information on the internet: reddit, youtube and decided to create this post as both, **a systematic guide and the results of testing** that I could perform.
 
 {{< callout type="info" >}}
 How to run [these tests](#faq)
@@ -68,7 +71,7 @@ How to run [these tests](#faq)
   * BMAX B4
   * Hetzner Cloud
 
-> **Big Thanks to [Alex](https://www.linkedin.com/in/dunayeu/) 🙌** - For sharing the results of the Raspberry Pi 5 8GB  
+> **Big Thanks to [Alex](https://www.linkedin.com/in/dunayeu/) 🙌** - For sharing the results of the Raspberry **Pi 5 8GB**  
 
 ### Power Consumption and Temps
 
