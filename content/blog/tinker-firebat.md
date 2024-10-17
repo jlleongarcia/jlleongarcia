@@ -440,6 +440,7 @@ services:
 
 {{< /details >}}
 
+---
 
 ## FAQ
 
@@ -476,7 +477,19 @@ services:
   {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="HTTPS Everywhere" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Setup NGINX with DuckDNS to have https certificates." method="Resize" options="600x q80 webp" >}}
 {{< /cards >}}
 
-![FireBat NextCloud](/blog_img/mini_pc/nginx_posteio.png)
+
+{{< details title="Some tricks to Setup HTTPs across your server services 📌" closed="true" >}}
+
+* Point your DNS to your server:
+
+![Cloudflare DNS for NGINX Example](/blog_img/mini_pc/cloudflare_dns_nginx.png)
+
+> I like to have the internal IP and other for the device tailscale VPN IP
+
+* You will need to add the: container_name and the container port
+
+![FireBat NGINX Example](/blog_img/mini_pc/nginx_posteio.png)
+
 <!-- 
 {{ $image := resources.Get "blog_img/mini_pc/nginx_posteio.png" }}
 {{ $resized := $image.Resize "600x" }}
@@ -493,6 +506,18 @@ services:
   <p style="font-size: 14px; color: gray;">FireBat NextCloud - Example Caption</p>
 </div>
  -->
+
+* In the SSL tab, you will need to Add a **DNS Challenge**, for Cloudflare would be:
+
+![FireBat NGINX Example](/blog_img/mini_pc/DNS_Challenge_Cloudflare.png)
+
+* With Cloudflare, you will need their [API Token from here](https://dash.cloudflare.com/profile/api-tokens)
+  * Go to **Edit zone DNS**. Zone Resources -> Include all zones (or a specific domain only) and create it. Add it as `dns_cloudflare_api_token=`
+* In NginX UI, you will add the: **container name and port** of the services
+
+
+{{< /details >}}
+
 
 
 

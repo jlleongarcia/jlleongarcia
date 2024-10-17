@@ -1,23 +1,30 @@
 ---
-title: "Ask the Web with Streamlit"
-date: 2024-09-03T23:20:21+01:00
-draft: true
+title: "Ask the Web with Streamlit and AI"
+date: 2024-10-17
+draft: false
 tags: ["Gen-AI","Python","Dev"]
 summary: 'Using Streamlit with OpenAI API and FireCrawl'
 url: 'scrap-and-chat-with-the-web'
 ---
 
-
-> https://github.com/JAlcocerT/Scrap_Tools
-
 * https://github.com/ScrapeGraphAI/Scrapegraph-ai
+* https://github.com/mendableai/firecrawl
+* https://github.com/unclecode/crawl4ai
+
+{{< callout type="info" >}}
+  A post of what I learnt about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
+{{< /callout >}}
+
+
 
 
 --- 
 
 ## Resources
 
-### How to use Streamlit with Containers
+### Streamlit Related Stuff
+
+#### How to use Streamlit with Containers
 
 {{< details title="Docker-Compose for Streamlit 📌" closed="true" >}}
 
@@ -44,7 +51,7 @@ volumes:
 
 {{< /details >}}
 
-### How to Customize Streamlit Apps
+#### How to Customize Streamlit Apps
 
 
 {{< details title="Remove the default Streamlit Sections 📌" closed="true" >}}

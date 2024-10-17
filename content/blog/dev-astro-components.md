@@ -32,6 +32,44 @@ CSS Link ---> -->
 4. RSS
 5. SiteMap
 
+## Adding SiteMap for Astro Pages
+
+<!-- 
+curl -s https://bachatameet.com/sitemap.xml -o /dev/null -w "%{http_code}\n" #https://github.com/IoTechCrafts/astroverse ex visvrs
+https://verse-astro.vercel.app/
+curl -s https://verse-astro.vercel.app/sitemap.xml -o /dev/null -w "%{http_code}\n"
+ -->
+
+
+{{< details title="Check that the SiteMap Works 📌" closed="true" >}}
+
+```sh
+#curl -s https://example.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://jalcocertech.xyz/sitemap.xml -o /dev/null -w "%{http_code}\n" #200 means its there!
+curl -s https://cyclingthere.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://iotechcrafts.com/sitemap.xml -o /dev/null -w "%{http_code}\n" 
+
+curl -s https://fossengineer.com/sitemap.xml -o /dev/null -w "%{http_code}\n" #hugo paper mod has it
+
+#optional - check robots.txt
+curl -s https://jalcocertech.xyz/robots.txt | grep -i sitemap #look for sitemap direction
+curl -s https://iotechcrafts.com/robots.txt | head -n 10 #see the first 10 lines
+
+#example of path with robots
+curl -s https://bachatafests.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://bachatafests.com/robots.txt | head -n 10 #see the first 10 lines
+curl -s https://bachatafests.com/robots.txt | grep -i sitemap #look for sitemap direction
+curl -s https://bachatafests.com/sitemap_index.xml -o /dev/null -w "%{http_code}\n"
+```
+
+> Search for any **references to a sitemap URL** within the `robots.txt` file. If found, you can use that URL to check for the sitemap instead
+
+{{< /details >}}
+
+
+
+
+
 ## Spinning World Map
 
 * Found it at theme: https://github.com/Ladvace/astro-bento-portfolio

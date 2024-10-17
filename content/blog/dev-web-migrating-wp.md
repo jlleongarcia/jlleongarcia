@@ -236,7 +236,24 @@ hugo version
 
 ## How to Migrate WordPress
 
+{{< details title="Check that the SiteMap of a WP 📌" closed="true" >}}
+
+```sh
+#curl -s https://example.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://jmodels.net/sitemap.xml -o /dev/null -w "%{http_code}\n" #hugo paper mod has it
+
+#optional - check robots.txt
+curl -s https://jmodels.net/robots.txt | grep -i sitemap #look for sitemap direction
+curl -s https://jmodels.net/robots.txt | head -n 10 #see the first 10 lines
+```
+
+{{< /details >}}
+
 ### Scrapping Wordpress Content
+
+{{< callout type="info" >}}
+  A post of what I learnt about [Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools), documented in this post the latest tech for scrap
+{{< /callout >}}
 
 <!-- 
 ## AgencySwarm
@@ -277,6 +294,7 @@ Puppeteer what?
 
 ### Creating the markdown posts with AI
 
+They have to **keep the original content**, but split it in English/SPanish in different files
 
 ---
 

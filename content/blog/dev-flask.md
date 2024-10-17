@@ -226,7 +226,7 @@ It utilizes Flask as its underlying web server and integrates several other libr
 * If you need something **free**, you can try with a [**duckdns subdomain**: ](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/#how-to-get-https-locally-with-docker-services)
   * Remember to add the DSN Challenge with the **duckDNS** token when you'll be at the SSL tab (I placed 60s as propagation)
 * If you are using Cloudflare, you will need their [API Token](https://dash.cloudflare.com/profile/api-tokens)
-  * Go to Edit zone DNS. Zone Resources -> Include all zones and create it. Add it as `dns_cloudflare_api_token=`
+  * Go to Edit zone DNS. Zone Resources -> Include all zones (or a specific domain only) and create it. Add it as `dns_cloudflare_api_token=`
   * Thanks to [TechHut](https://www.youtube.com/watch?v=79e6KBYcVmQ), [DistroDomain](https://www.youtube.com/watch?v=JNFQOJP5VY0) for the related YT Videos
 * In NginX UI, you will add the: **container name and port** of the Flask App
 
@@ -277,8 +277,164 @@ networks:
 
 {{< /details >}}
 
-ping 188.245.198.60
+{{< callout type="info" >}}
+  This can be also applied to a [Home Server](https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/) together with [Cloudflare tunnels](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
+{{< /callout >}}
 
+### User Management with Flask
+
+{{< details title="Sample Flask UM Architecture 📌" closed="true" >}}
+
+To implement a user authentication system in **Flask** that handles user sign-up and sign-in with a **SQLite** database and shows different UI based on the login status, here are some tools and extensions:
+
+### 1. **Flask**: Core framework
+   - **Flask** will serve as the web framework for routing, templating, and managing user sessions.
+
+### 2. **SQLite + SQLAlchemy**: Database and ORM
+   - **SQLite** is a lightweight file-based database, ideal for simple projects or development.
+   - **SQLAlchemy** is the Object-Relational Mapper (ORM) that will interact with the SQLite database. It abstracts away raw SQL and makes database interaction cleaner.
+
+### 3. **Flask-SQLAlchemy**: SQLAlchemy integration with Flask
+   - This extension simplifies integrating SQLAlchemy with Flask and managing the database (creating tables, defining models).
+   
+### 4. **Flask-Login**: User session management
+   - **Flask-Login** handles user sessions, tracking whether a user is logged in or not, and protecting routes that require authentication. It also provides the utilities for login/logout functionality.
+
+### 5. **Flask-WTF**: Form handling and validation
+   - **Flask-WTF** makes it easy to create and validate forms (e.g., sign-up and login forms). It integrates **WTForms** with Flask, handling things like CSRF protection and validation.
+
+### 6. **Flask-Migrate** (optional): Database migrations
+   - **Flask-Migrate** allows you to easily manage database migrations using Alembic. It’s helpful if your database schema evolves over time (e.g., adding more fields to the user model).
+
+### 7. **Flask-Bcrypt** (optional but recommended): Password hashing
+   - **Flask-Bcrypt** allows you to securely hash and verify passwords, ensuring your app stores user passwords in a secure, non-plain-text format.
+
+---
+
+### How These Tools Work Together:
+#### 1. **User Sign-Up**:
+   - A user signs up by submitting a form (handled by **Flask-WTF**) that collects a username, email, and password.
+   - The password is hashed using **Flask-Bcrypt** before storing it in the SQLite database through **SQLAlchemy**.
+   
+#### 2. **User Sign-In**:
+   - The login form verifies the entered email/username and compares the hashed password using **Flask-Bcrypt**.
+   - Once authenticated, **Flask-Login** manages the session, storing whether the user is logged in.
+
+#### 3. **UI Display**:
+   - **Flask-Login** tracks if a user is authenticated. You can use this in your templates to conditionally display different UI elements. For example, if the user is logged in, show their profile and a logout button; otherwise, show a login/sign-up link.
+
+### Summary of Tools:
+1. **Flask** – Core framework for routing and templating.
+2. **SQLite** – Simple, file-based database.
+3. **SQLAlchemy** – ORM to interact with SQLite.
+4. **Flask-SQLAlchemy** – Integration of SQLAlchemy with Flask.
+5. **Flask-Login** – Managing user sessions (login, logout).
+6. **Flask-WTF** – Form handling with CSRF protection.
+7. **Flask-Bcrypt** – For securely hashing passwords.
+
+These tools combined will allow your Flask app to handle user registration, login, session management, and UI rendering based on login status.
+
+{{< /details >}}
+
+{{< details title="Flask UM with MailerLite and Stripe 📌" closed="true" >}}
+
+
+To implement a system where user registration, payments, and content access are tied together using **Flask**, **Stripe**, and **MailerLite**, you can break down the logic as follows:
+
+### 1. **User Sign-Up and Newsletter Subscription (MailerLite)**
+   - **MailerLite** will handle newsletter subscriptions. Users first sign up using their email.
+   - After subscribing, the user receives a confirmation email containing a **verification code** (which you generate). This code will allow them to create an account in the Flask app.
+
+   **Tools:**
+   - **MailerLite API**: To manage email subscriptions.
+   - **Flask**: For handling user interactions and generating the verification code.
+   - **Flask-WTF**: For the form used to collect the email and verification code.
+
+   **Flow**:
+   - The user signs up with their email on your Flask app.
+   - The Flask app makes an API call to MailerLite to add the user to your newsletter.
+   - Upon successful subscription, the Flask app generates a unique verification code and sends an email (via MailerLite or Flask-Mail) to the user.
+
+### 2. **Account Creation with Verification Code**
+   - The user can now use the verification code they received to create a username and password for logging into the Flask app.
+   
+   **Tools:**
+   - **Flask-Login**: To manage user authentication.
+   - **Flask-SQLAlchemy**: To store users and verification codes in an SQLite database.
+   - **Flask-Bcrypt**: For hashing passwords securely.
+
+   **Flow**:
+   - The user enters their verification code, email, and sets a password.
+   - The Flask app verifies the code and creates a new user account.
+   - The user can now log in using their email/username and password.
+
+### 3. **User Dashboard with Password Management and Services**
+   - After logging in, the user can manage their account (e.g., change their password) and see a list of services that can be purchased via **Stripe**.
+   
+   **Tools:**
+   - **Stripe API**: To list services/products and handle payments.
+   - **Flask-WTF**: For password change forms.
+   - **Flask-Login**: To protect routes and check if a user is authenticated.
+
+   **Flow**:
+   - Once logged in, users can update their password and view a list of available services fetched via the Stripe API.
+   - They can initiate a payment for any service.
+
+### 4. **Stripe Payment Integration**
+   - After a successful payment, the Stripe API will capture the email used for payment.
+   - The system will verify if the payment email matches the email tied to the logged-in user. If they match, the user will get access to premium content or additional services.
+
+   **Tools:**
+   - **Stripe API**: For payment processing and webhook integration.
+   - **Flask-SQLAlchemy**: To store and check payment status against the user’s email.
+
+   **Flow**:
+   - When the user makes a payment, a Stripe webhook can notify your Flask app of the successful transaction.
+   - The Flask app will check if the Stripe payment email matches the logged-in user's email.
+   - If they match, the user gains access to restricted content or services.
+
+---
+
+### Example Flow and Tool Summary:
+
+1. **Sign-Up (MailerLite Integration)**:
+   - User submits their email on Flask app.
+   - Flask calls MailerLite API to add the user to the newsletter.
+   - Flask generates a verification code and emails it to the user (via MailerLite or Flask-Mail).
+
+2. **Create Account**:
+   - User enters their email, verification code, and sets a password.
+   - Flask verifies the code and creates a new user in SQLite.
+
+3. **User Dashboard**:
+   - User logs in and sees a dashboard with options to:
+     - Change password.
+     - View available services/products fetched from Stripe.
+   
+4. **Stripe Payment**:
+   - User selects a service/product and pays via Stripe.
+   - Stripe webhook sends payment confirmation to Flask.
+   - Flask checks if the payment email matches the user's email.
+   - If matched, Flask unlocks premium content or features.
+
+---
+
+### Required Libraries:
+1. **Flask** – Core framework.
+2. **Flask-SQLAlchemy** – ORM for interacting with SQLite database.
+3. **Flask-Login** – User session management.
+4. **Flask-WTF** – Form handling.
+5. **Flask-Bcrypt** – For password hashing.
+6. **MailerLite API** – For handling newsletter signups.
+7. **Stripe API** – For payments and product listings.
+
+
+{{< /details >}}
+
+
+{{< callout type="info" >}}
+  You can also use [tools like LogTo](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
+{{< /callout >}}
 
 ---
 
@@ -286,14 +442,14 @@ ping 188.245.198.60
 
 #### FastAPI
 
-FastAPI: Fully supports Jinja2 templates.
+* FastAPI: Fully supports Jinja2 templates.
 
 
 #### Django
 
-Django: Can use Jinja2, but its native templating engine is preferred.
+* Django: Can use Jinja2, but its native templating engine is preferred.
 
-
+---
 
 ## Simpler Data Apps
 
