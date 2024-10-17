@@ -166,3 +166,9 @@ curl -6 ifconfig.me #ipv6 info
 
 {{% /details %}}
 
+Connecting your laptop to your server with https:
+
+{{< cards >}}
+  {{< card link="/" title="Local Image" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Raw image under static directory." >}}
+  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="HTTPS Everywhere" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Setup NGINX with DuckDNS to have https certificates." method="Resize" options="600x q80 webp" >}}
+{{< /cards >}}

@@ -1,6 +1,6 @@
 ---
 title: "Astro Web with Cloudflare Pages and CI/CD"
-date: 2024-09-24T
+date: 2024-09-24
 draft: false
 tags: ["Web","Dev"]
 description: 'Setup CI/CD for Astro website with Cloudflare Pages'
@@ -66,11 +66,11 @@ It will be available under the same name in the [Cloudflare CLI wrangler](/under
 
 Lets add a domain we have at Cloudflare:
 
-![Custom Domain CF Pages](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject.png)
+![Deployed CF Pages](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject.png)
 
 ![Custom Domain CF Pages](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject-customdomain.png)
 
-![Custom Domain CF Pages](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject-customDNS.png)
+![DNS CF Pages](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject-customDNS.png)
 
 
 
@@ -84,6 +84,32 @@ Now whenever I push changes to this repository, they will be available at:
 * Github Pages with free domain: <https://jalcocert.github.io/JAlcocerT/>
 * Cloudflare with my own subdomain: <https://blog.jalcocertech.xyz/> (also the [free one](https://jalcocertblog.pages.dev/))
 
-You can see what has been going on with your deployments at: Workers and Pages -> name of your project, for me `jalcocertblog`
+You can see what has been going on with your **deployments in the Cloudflare UI** at: Workers and Pages -> name of your project, for me `jalcocertblog`.
 
-![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject-deployments.png)
+![CF Pages deployments](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject-deployments.png)
+
+For Github, you would go to the [actions tab of the repo](https://github.com/JAlcocerT/JAlcocerT/actions)
+
+{{< callout type="warning" >}}
+  Github Pages will allow for 25mb+ individual files, but not Cloudflare.
+{{< /callout >}}
+
+
+### Cloudflare Pages vs other Free Deployment Methods
+
+
+**Cloudflare wins** in the ping time:
+
+```sh
+ping jalcocert.github.io/JAlcocerT #~30ms
+ping jalcocertblog.pages.dev #~10ms
+ping jalcocertech.web.app #~30ms
+```
+
+And also the http request:
+
+```sh
+curl -o /dev/null -s -w "Time: %{time_total}s\n" https://jalcocert.github.io/JAlcocerT #~0.28s
+curl -o /dev/null -s -w "Time: %{time_total}s\n" https://jalcocertblog.pages.dev #~0.15s
+curl -o /dev/null -s -w "Time: %{time_total}s\n" https://jalcocertech.web.app/ #~0.3s
+```

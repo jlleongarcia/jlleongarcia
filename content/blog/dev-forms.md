@@ -6,7 +6,7 @@ tags: ["Dev"]
 summary: "Easy Forms/Newsletters for Websites"
 ---
 
-
+To give some cool functionality to static websites, we can use **some tricks**.
 
 {{< callout type="info" >}}
   It is beneficial to [review some CSS Tricks](https://jalcocert.github.io/JAlcocerT/blog/dev-css/)
@@ -69,6 +69,19 @@ You ll still need a back end to process the calls (if you are using static sites
 ### MailerLite
 
 Another option is [MailerLite](https://www.mailerlite.com/invite/225babb421546).
+
+{{< details title="Setup MailerLite 📌" closed="true" >}}
+
+You will need to authenticate that you own the email and also the domain (with DNS).
+
+I am using Cloudflare for that domain, and the DNS were updated automatically via UI.
+
+There are some CName and txt records and they will be DNS only, not proxied.
+
+![Wordpress Google Page Speed Desktop](/blog_img/web/SaaS/mailerlite-domainsetup.png)
+
+
+{{< /details >}}
 
 ---
 

@@ -3,7 +3,7 @@ title: "[Review] Firebat AK2 PLUS"
 date: 2024-09-29T23:20:21+01:00
 draft: false
 tags: ["Tinkering"]
-summary: Testing Firebat Mini PC
+summary: Testing Firebat Mini PC and setting it as a home server
 url: firebat-ak2-plus-minipc-review
 ---
 
@@ -472,13 +472,10 @@ services:
 
 {{< /hextra/feature-grid >}}
 
-{{< cards >}}
-  {{< card link="/" title="Local Image" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Raw image under static directory." >}}
-  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="HTTPS Everywhere" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Setup NGINX with DuckDNS to have https certificates." method="Resize" options="600x q80 webp" >}}
-{{< /cards >}}
 
 
-{{< details title="Some tricks to Setup HTTPs across your server services 📌" closed="true" >}}
+
+{{< details title="Tips to Setup HTTPs across your services with Cloudflare & NGINX 📌" closed="true" >}}
 
 * Point your DNS to your server:
 

@@ -144,6 +144,8 @@ firebase init #configure files for firebase hosting / public directory is normal
 firebase deploy #you will get something like -> https://jalcocertech.web.app/
 ```
 
+* You can also try with [Cloudflare](/understanding-astro-ssg-components/#faq) or Github Pages.
+
 {{< /details >}}
 
 ### Is my website performing well?
