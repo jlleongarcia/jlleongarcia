@@ -1,23 +1,36 @@
 ---
-title: "Interesting IT Concepts: CI/CD"
+title: "Interesting IT Concepts"
 date: 2024-08-23T10:20:21+01:00
-draft: true
+draft: false
 tags: ["Dev"]
-description: 'Tinkering with a Raspberry Pi and Networking.'
+description: 'IT Concepts for Projects: CI/CD, webhooks, API calls...'
 summary: 'Github Actions'
 url: ''
 ---
+
+1. CI/CD and Github Actions
+2. How to Code on the go
+3. More: Microservices, WebHooks, API Calls...
 
 ## What it is CI/CD?
 
 ### How to use Github Actions CI/CD?
 
+GitHub Actions, a **CI/CD framework** provided by GitHub, allows you to automate the build, test, and deployment processes for your software projects.
 
-GitHub Actions, a **CI/CD framework** provided by GitHub, allows you to automate the build, test, and deployment processes for your software projects. With GitHub Actions, you can define workflows to automate tasks such as compiling code, running tests, performing code analysis, and generating build artifacts. It supports various programming languages and offers great flexibility in customizing your CI pipeline.
 
-In addition to Continuous Integration (CI), GitHub Actions also supports Continuous Deployment (CD) by integrating with different deployment strategies and environments. This allows you to automate the deployment of your application to various platforms and hosting services, such as cloud providers or dedicated servers, ensuring a seamless release process.
+{{< details title="About GH Actions 📌" closed="true" >}}
 
-This is how I've done it in my projects:
+With GitHub Actions, you can define workflows to automate tasks such as compiling code, running tests, performing code analysis, and generating build artifacts.
+
+It supports various programming languages and offers great flexibility in customizing your CI pipeline.
+
+In addition to Continuous Integration (CI), GitHub Actions also supports Continuous Deployment (CD) by integrating with different deployment strategies and environments.
+
+This allows you to automate the deployment of your application to various platforms and hosting services, such as cloud providers or dedicated servers, ensuring a seamless release process.
+{{< /details >}}
+
+This is how I've used **GH Actions in my projects:**
 
 {{< hextra/feature-grid >}}
  
@@ -42,12 +55,13 @@ This is how I've done it in my projects:
     link="https://jalcocert.github.io/web3/"
   >}}
 
+{{< callout type="info" >}}
+  Also this webpage is created with [HUGO and GH Actions!](https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml)
+{{< /callout >}}
 
 GitHub Workflows enable automatic Docker container creation given conditions (like a new push). To start, go to your repository, click on **Actions**, and then **New workflow**.
 
-
 You can select a workflow template that suits your project or follow the steps below to create your own `.yml` file for CI/CD.
-
 
 The CI/CD workflow configuration is stored in `.github/workflows/ci_cd.yml`:
 
@@ -71,7 +85,9 @@ jobs:
       uses: docker/setup-buildx-action@v1
 ```
 
-This setup prepares your Docker image. Next, you can push the image to a container registry, such as [GitHub Container Registry](#pushing-containers-to-ghcr) or [DockerHub](#pushing-docker-containers-to-dockerhub).
+This setup prepares your Docker image.
+
+Next, you can **push the image to a container registry**, such as [GitHub Container Registry](#pushing-containers-to-ghcr) or [DockerHub](#pushing-docker-containers-to-dockerhub).
 
 ### Pushing Containers to GitHub Container Registry
 
@@ -93,13 +109,15 @@ To push the created container to GitHub Container Registry, add the following to
         tags: ghcr.io/your_github_username/your_repo_name:v1.0        
 ```
 
-You’ll need a **CICD_TOKEN_For_This_WF** secret so GitHub can authenticate the action. Obtain this token from **GitHub Settings** under `Developer Settings -> Personal Access Tokens`.
+You’ll need a **CICD_TOKEN_For_This_WF** secret so GitHub can authenticate the action.
 
+Obtain this token from **GitHub Settings** under `Developer Settings -> Personal Access Tokens`.
 
 Next, add this token as a repository secret under `Repo Settings -> Secrets & variables -> Actions -> New repository Secret`.
 
-
-Ensure the secret name matches the variable used in your `.yml` configuration.
+{{< callout type="warning" >}}
+  Ensure the secret name matches the variable used in your `.yml` configuration.
+{{< /callout >}}
 
 To make your Docker image publicly accessible, set the package visibility to public under `https://github.com/yourGHuser?tab=packages` and update the **Visibility of the Package**.
 
@@ -108,8 +126,6 @@ Now, anyone can pull your Docker image using:
 ```sh
 docker pull ghcr.io/your_github_username/your_repo_name:v1.0
 ```
-
-
 
 ### Testing GH Actions Workflows locally
 
@@ -136,6 +152,8 @@ gh auth login #you can use HTTPs
 * https://github.com/login/device and paste the Code the CLI will give you
 
 ---
+
+## Other Concepts
 
 ### What are microservices?
 

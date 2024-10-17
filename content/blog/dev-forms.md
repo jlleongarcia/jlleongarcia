@@ -3,7 +3,7 @@ title: "Forms and Newsletters for your Website"
 date: 2024-09-07T23:20:21+01:00
 draft: false
 tags: ["Dev"]
-summary: "Easy Forms/Newsletters for Websites"
+summary: "Easy Forms/Newsletters for Websites: MailerLite and more"
 ---
 
 To give some cool functionality to static websites, we can use **some tricks**.
@@ -70,9 +70,17 @@ You ll still need a back end to process the calls (if you are using static sites
 
 Another option is [MailerLite](https://www.mailerlite.com/invite/225babb421546).
 
+It can help you collect emails with **signup forms and send Newsletters, also marketing campaigns.**
+
+They can work as **pop-ups or as embedded forms**.
+
+> At the time of writing, mailerlite is free up to 1k subs. They also have an email API, [mailersend](https://www.mailerlite.com/pricing-mailersend)
+
 {{< details title="Setup MailerLite 📌" closed="true" >}}
 
 You will need to authenticate that you own the email and also the domain (with DNS).
+
+Go to your [mailerlite dashboard UI](https://dashboard.mailerlite.com)
 
 I am using Cloudflare for that domain, and the DNS were updated automatically via UI.
 
@@ -80,8 +88,49 @@ There are some CName and txt records and they will be DNS only, not proxied.
 
 ![Wordpress Google Page Speed Desktop](/blog_img/web/SaaS/mailerlite-domainsetup.png)
 
+Create a new form and you will get the JS to place before the `</head>` of your web.
+
+```js
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', 'some_acount_id');
+</script>
+<!-- End MailerLite Universal -->
+```
+
+> You can also get a button, so that it opens as pop up:
+
+```html
+<a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'some_id_here', true)">Click here to show form</a>
+```
 
 {{< /details >}}
+
+
+{{< details title="MailerLite API with Python 📌" closed="true" >}}
+
+* https://dashboard.mailerlite.com/integrations/api
+
+
+{{< /details >}}
+
+{{< details title="MailerLite WebHooks to do...whatever 📌" closed="true" >}}
+
+* https://dashboard.mailerlite.com/integrations/webhooks
+
+{{< /details >}}
+
+You can also set **[automations](https://dashboard.mailerlite.com/automations) with MailerLite**: when a new sub -> then something.
+
+You can use this, for example, to send a welcome email.
+
+{{< callout type="info" >}}
+  MailerLite can be [integrated also with](https://www.mailerlite.com/integrations) GSheets, Zapier, Stripe, email verification tools...
+{{< /callout >}}
 
 ---
 
@@ -104,9 +153,10 @@ Generate a Google form and **add the iframe** wherever you want to place it:
 
 ### Formbricks
 
-You can use it for launching surveys or contact forms.
+You can use FormBricks for **launching surveys or contact forms.**
 
-* https://formbricks.com/
+Go to the [FormBricks UI](https://formbricks.com/)
+
 <!-- 
 https://app.formbricks.com/environments/cm0vgwasu00061484bqmicsbm/surveys -->
 
@@ -131,6 +181,35 @@ Before the </head> add:
 
 {{< /details >}}
 
+Setup FormBricks with no code, or with **code actions**
+
+```py
+Setting Up Code Actions
+
+For more granular control, you can implement actions directly in your codebase:
+
+    Configure the Action: First, add the action via the Formbricks web interface to make it available for survey configuration. After that you can fire an action using formbricks.track()
+
+    Track an Action: Use formbricks.track() to send an action event to Formbricks.
+
+Track an action
+
+formbricks.track("Action Name");
+
+Here is an example of how to fire an action when a user clicks a button:
+Track Button Click
+
+const handleClick = () => {
+  formbricks.track("Button Clicked");
+};
+
+return <button onClick={handleClick}>Click Me</button>;
+```
+
+{{< callout type="warning" >}}
+  It seems that FormBricks Forms can just be embedded and not opened as a hyperlink url.
+{{< /callout >}}
+
 ### GoodSheet
 
 {{< details title="Using GoodSheet.io 📌" closed="true" >}}
@@ -139,7 +218,7 @@ Before the </head> add:
 {{< /details >}}
 
 
-### symfony forms
+### Symfony Forms
 
 https://github.com/symfony/form
 
@@ -169,12 +248,10 @@ You can try their SaaS - https://heyform.net/pricing
 
 ## FAQ
 
-Check that your web is performing well with:
+Check that your **web is performing** well with [these tools](/create-your-website/#is-my-website-performing-well)
 
-* https://pagespeed.web.dev/
-* https://web-check.xyz/
-
-
+<!-- * https://pagespeed.web.dev/
+* https://web-check.xyz/ -->
 
 ### Other Tools
 
@@ -183,5 +260,8 @@ https://www.tawk.to/ - Talk to customers
 #### Appointments with cal.com
 
 
-* https://www.cal.com/
-  * You can integrate it with stripe to collect payment in advance of the meeting, also to require requestor email validation.
+Manage your appointments with [cal.com](https://www.cal.com/).
+
+* You can integrate it with:
+  * Stripe to collect payment in advance of the meeting
+  * Also to require requestor email validation

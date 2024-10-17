@@ -79,6 +79,12 @@ Lets add a domain we have at Cloudflare:
 
 **As Simple as that.**
 
+https://jalcocertech.xyz/
+
+{{< callout type="info" >}}
+  Yep, I own the JAlcocerTech domain and [we can collaborate](https://jalcocertech.xyz/) 
+{{< /callout >}}
+
 Now whenever I push changes to this repository, they will be available at:
 
 * Github Pages with free domain: <https://jalcocert.github.io/JAlcocerT/>

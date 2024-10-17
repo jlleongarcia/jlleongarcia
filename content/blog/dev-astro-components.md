@@ -40,6 +40,58 @@ https://verse-astro.vercel.app/
 curl -s https://verse-astro.vercel.app/sitemap.xml -o /dev/null -w "%{http_code}\n"
  -->
 
+We will need the package: `"@astrojs/sitemap": "^3.0.3"`
+
+
+
+{{< callout type="info" >}}
+  Thanks to [Astroverse Theme](https://github.com/IoTechCrafts/astroverse) to show how to setup sitemaps in astro
+{{< /callout >}}
+
+
+{{< details title="Check that the SiteMap Works 📌" closed="true" >}}
+
+```sh
+npm install @astrojs/sitemap
+```
+Then add it at `astro.config.mjs`
+
+```js
+import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
+
+// https://astro.build/config
+export default defineConfig({
+site: 'https://yourwebsite.com', // Replace with your site's URL, very important!
+integrations: [sitemap()],
+});
+```
+
+Before the </head> ends, add:
+
+```html
+<link rel='sitemap' href='/sitemap.xml' />
+<link rel='sitemap' href='/sitemap-index.xml' />
+```
+
+That will make your sitemap be at: `https://yoursite.com/sitemap.xml`
+
+```sh
+curl -s https://jalcocertech.xyz/sitemap.xml -o /dev/null -w "%{http_code}\n" #200 means its there!
+curl -s https://jalcocertech.xyz/sitemap-index.xml -o /dev/null -w "%{http_code}\n"
+```
+
+> Make sure to have a `robots.txt` in the `/public` directory specifying the path:
+
+```txt
+User-agent: *
+Disallow:
+
+Sitemap: https://yourwebsite.com/sitemap-index.xml
+```
+
+{{< /details >}}
+
 
 {{< details title="Check that the SiteMap Works 📌" closed="true" >}}
 
@@ -47,6 +99,7 @@ curl -s https://verse-astro.vercel.app/sitemap.xml -o /dev/null -w "%{http_code}
 #curl -s https://example.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
 curl -s https://jalcocertech.xyz/sitemap.xml -o /dev/null -w "%{http_code}\n" #200 means its there!
 curl -s https://cyclingthere.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://cyclingthere.com/sitemap-index.xml -o /dev/null -w "%{http_code}\n" #its here!
 curl -s https://iotechcrafts.com/sitemap.xml -o /dev/null -w "%{http_code}\n" 
 
 curl -s https://fossengineer.com/sitemap.xml -o /dev/null -w "%{http_code}\n" #hugo paper mod has it

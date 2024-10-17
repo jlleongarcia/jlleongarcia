@@ -517,6 +517,20 @@ services:
 
 
 
+{{< details title="Similar Small Factor PCs to consider 📌" closed="true" >}}
+
+* Used ones:
+  * Dell 3050 SFF Core i5 6th gen 16GB ~120$
+  * Lenovo M75q Tiny Ryzen 3200GE 8GB ~115$
+  * Lenovo M720q Tiny i3 8 gen. 8GB ~100$
+  * Make sure that these have HDMI
+
+* New mini pcs:
+  *  Intel N95 16+512G GK3 PLUS ~115$
+
+
+{{< /details >}}
+
 
 
 
