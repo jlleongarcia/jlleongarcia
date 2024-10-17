@@ -1,7 +1,7 @@
 ---
-title: "Astro with Cloudflare Pages and CI/CD"
-date: 2024-10-27T23:20:21+01:00
-draft: true
+title: "Astro Web with Cloudflare Pages and CI/CD"
+date: 2024-09-24T
+draft: false
 tags: ["Web","Dev"]
 description: 'Setup CI/CD for Astro website with Cloudflare Pages'
 summary: 'Astro Websites Automatic deployment with Cloudflare Pages and CICD'
@@ -36,22 +36,54 @@ You will Need a Github Account Authentication
 
 {{< details title="Detailed Process - Cloudflare and Github 📌" closed="true" >}}
 
-![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare-GithubPages.png)
+![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-GithubPages.png)
 
 
-![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare-Github-Connection.png)
+![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-Github-Connection.png)
 
 
-![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare-Github-Connection-Authorize.png)
+![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-Github-Connection-Authorize.png)
 
 
-![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare-Github-Connection-Deploy.png)
+![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-Github-Connection-Deploy.png)
 
 
-![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare-GithubPages-HUGO.png)
+![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-GithubPages-HUGO.png)
 
 
 > It does similarly as the [GH Action Workflow to Send HUGO to GH Pages](https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml)
 
 {{< /details >}}
 
+
+
+
+{{< details title="Detailed Process - Adding Cloudflare custom Domain 📌" closed="true" >}}
+
+I chose `jalcocertblog` as the name of the project.
+
+It will be available under the same name in the [Cloudflare CLI wrangler](/understanding-astro-ssg-components/#faq)
+
+Lets add a domain we have at Cloudflare:
+
+![Custom Domain CF Pages](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject.png)
+
+![Custom Domain CF Pages](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject-customdomain.png)
+
+![Custom Domain CF Pages](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject-customDNS.png)
+
+
+
+{{< /details >}}
+
+
+**As Simple as that.**
+
+Now whenever I push changes to this repository, they will be available at:
+
+* Github Pages with free domain: <https://jalcocert.github.io/JAlcocerT/>
+* Cloudflare with my own subdomain: <https://blog.jalcocertech.xyz/> (also the [free one](https://jalcocertblog.pages.dev/))
+
+You can see what has been going on with your deployments at: Workers and Pages -> name of your project, for me `jalcocertblog`
+
+![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-Deployed-GHProject-deployments.png)

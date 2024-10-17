@@ -239,6 +239,7 @@ Then, use it in your astro templates like:
 
 {{< dropdown title="How to deploy Astro to Cloudflare Pages? ⏬" closed="true" >}}
 
+It's all about using the **Cloudflare CLI wrangler** properly:
 
 * Create the project (you will need to [authenticate to Cloudflare](https://fossengineer.com/hosting-with-cloudflare-pages/)):
 

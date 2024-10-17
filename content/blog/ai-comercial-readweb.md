@@ -3,7 +3,7 @@ title: "Ask the Web with Streamlit and AI"
 date: 2024-10-17
 draft: false
 tags: ["Gen-AI","Python","Dev"]
-summary: 'Using Streamlit with OpenAI API and FireCrawl'
+summary: 'Using Streamlit with OpenAI API and FireCrawl to Scrap the Web for Info'
 url: 'scrap-and-chat-with-the-web'
 ---
 
