@@ -19,7 +19,7 @@ But how about just pushing the changes to a **Github Repository and let the CI/C
 
 ### Astro Site to Github Repository
 
-This is the first step.
+Push your code to a [Github Repository](https://jalcocert.github.io/JAlcocerT/github-gists).
 
 ### Setup Cloudflare to with with Github
 

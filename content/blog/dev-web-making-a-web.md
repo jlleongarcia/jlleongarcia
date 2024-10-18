@@ -97,7 +97,28 @@ When you hit deploy, the process will start: build environment -> clone git repo
   The domain and pages are [handled by Cloudflare](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/)
 {{< /callout >}}
 
+After it's deployed, you can just hit `Add custom domain`, in this case for `screwfastmoirealestate.pages.dev`, we will choose: `dm-real-estate.com`
 
+A CName record will be added automatically:
+
+![Cloudflare workers pages custom domain DNS Setup](/blog_img/web/success3-realestate/RealEstate-DNS.png)
+
+You can also add the `www.dm-real-estate.com` if you hit again `Set up a custom domain`.
+
+After Verification is completed, your Web deployment Workflow is Ready with **Cloudflare Pages and Workers plus a private Github Repository**.
+
+![Cloudflare workers subdomain Setup](/blog_img/web/success3-realestate/RealEstate-Domains.png)
+
+### Real Estate Web - Results
+
+You can have a look to [the website, here](https://dm-real-estate.com/).
+
+And it seems that **Google likes it**:
+
+![RealEstate Web - Performance](/blog_img/web/success3-realestate/RealEstate-Results.png)
+
+
+---
 
 ## Extra Functionality
 
