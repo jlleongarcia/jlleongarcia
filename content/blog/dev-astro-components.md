@@ -78,7 +78,7 @@ That will make your sitemap be at: `https://yoursite.com/sitemap.xml`
 
 ```sh
 curl -s https://jalcocertech.xyz/sitemap.xml -o /dev/null -w "%{http_code}\n" #200 means its there!
-curl -s https://jalcocertech.xyz/sitemap-index.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://jalcocertech.xyz/sitemap-index.xml -o /dev/null -w "%{http_code}\n" #could be
 ```
 
 > Make sure to have a `robots.txt` in the `/public` directory specifying the path:
@@ -88,6 +88,17 @@ User-agent: *
 Disallow:
 
 Sitemap: https://yourwebsite.com/sitemap-index.xml
+```
+
+It is a good moment now to go to **[google search](https://search.google.com/search-console/sitemaps?)** and insert the sitemap reference:
+
+![SiteMap Google Search](/blog_img/web/sitemap-google.png)
+
+Also, you can do it for **bing search**:
+
+```sh
+#curl "https://www.bing.com/ping?sitemap=https://yoursite.com/sitemap.xml"
+curl "https://www.bing.com/ping?sitemap=https://jalcocertech.xyz/sitemap-index.xml"
 ```
 
 {{< /details >}}

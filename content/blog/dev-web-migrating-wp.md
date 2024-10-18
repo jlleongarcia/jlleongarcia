@@ -360,7 +360,7 @@ You will get a report with what’s link working and what not when it comes to L
 
 {{< /details >}}
 
-### How to have email with your domain
+### How to have email with your Domain
 
 
 {{< details title="Get a Domain! 📌" closed="true" >}}
@@ -370,6 +370,8 @@ You will get a report with what’s link working and what not when it comes to L
 - [Squarespace Domains](https://www.squarespace.com/domains)
 - [GoDaddy](https://www.godaddy.com/domains)
 - [Namecheap](https://www.namecheap.com/domains/)
+
+> Lately im using Cloudflare and Porkbun
 
 {{< /details >}}
 

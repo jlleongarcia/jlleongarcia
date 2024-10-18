@@ -163,6 +163,11 @@ https://app.formbricks.com/environments/cm0vgwasu00061484bqmicsbm/surveys -->
 > Can be **linked with**: GSheets also with [cal.com](https://app.cal.com/auth/login), and [more integrations like webhooks](https://app.formbricks.com/environments/cm0vgwasu00061484bqmicsbm/integrations)
 
 
+If you link it with GSheets, you will have Formbricks Sheets Integration as an App in the [security tab of your gmail acc](https://myaccount.google.com/security-checkup)
+
+![Formbricks-GSheets](/blog_img/web/FormBricks_GSheets_App.png)
+
+
 {{< details title="Using FormsBricks 📌" closed="true" >}}
 
 ```sh

@@ -54,6 +54,8 @@ This is how I've used **GH Actions in my projects:**
     style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
     link="https://jalcocert.github.io/web3/"
   >}}
+{{< /hextra/feature-grid >}}
+
 
 {{< callout type="info" >}}
   Also this webpage is created with [HUGO and GH Actions!](https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml)
