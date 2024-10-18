@@ -3,10 +3,21 @@ title: "Getting started with Flask"
 date: 2024-10-02T05:20:21+01:00
 draft: false
 tags: ["Dev","Python"]
-description: 'How to use Flask'
-summary: 'How I learnt the basics to use Python Flask'
+description: 'How to use Flask. Get HTTPs with your domain for Flask Apps.'
+summary: 'How I learnt the basics to use Python Flask.'
 url: 'get-started-with-flask'
 ---
+
+A friend asked me recently to help him to [setup Python](https://jalcocert.github.io/JAlcocerT/guide-python/#installing-python-) and **he alredy made his first App!**
+
+I had to get a little bit familiar with this Python Framework.
+
+And we got his [Flask App with https and custom domain](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/#deploying-a-flask-app-like-a-pro). All configured and deployed publically on a server.
+
+{{< callout type="info" >}}
+  You can also [get your own Flask App Deployed](https://jalcocertech.xyz/)
+{{< /callout >}}
+
 
 ## Flask 101
 
@@ -241,22 +252,24 @@ Let'serve the Flask App with a Cloud Server. **With https and custom domain.**
 
 {{< /details >}}
 
-This is how it got configured:
+This is how the **Python Flask APP https** got configured:
 
 ![Flask Https NginX Setup Cloudflare Domain](/blog_img/apps/flask-nginx-cloudflare.png)
 
-
-
 {{< details title="Useful CLI commands to manage your Server for the Flask App 📌" closed="true" >}}
+
+The HTTPs config, works with DNS proxied with Cloudflare and also without it:
 
 ```sh
 ping 188.public.server.IP
 
 ping wella.jalcocertech.xyz #dns might take a while to propagate
-ping flask.jalcocertech.xyz #also works if cloudflare DNS record is proxied (this will hide your server IP)
+ping flask.jalcocertech.xyz #also works if cloudflare DNS record is proxied
 
 ping welladesk.duckdns.org
 ```
+
+> If you proxy it, your server IP will be hidden.
 
 ```yml
 version: "3"
@@ -292,7 +305,7 @@ networks:
 {{< /details >}}
 
 {{< callout type="info" >}}
-  This can be also applied to a [Home Server](https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/) together with [Cloudflare tunnels](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
+  **Alternative:** use a [Home Server](https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/) together with [Cloudflare tunnels](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/) to get https with your domain.
 {{< /callout >}}
 
 ### User Management with Flask

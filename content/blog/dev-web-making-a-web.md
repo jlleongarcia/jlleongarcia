@@ -13,8 +13,16 @@ url: 'astro-web-setup'
   * https://syrenare.com/
   * They are performing at up to ~1 second initial loading time!
 
+![Uptime Ira](/blog_img/web/success3-realestate/uptime-realestate-demo.png)
+
+![Uptime Ira](/blog_img/web/success3-realestate/uptime-casaensol.png)
+
+![Uptime Ira](/blog_img/web/success3-realestate/uptime-cano.png)
+
 
 ### Demo with Cloudflare Pages
+
+* I created a [Private repo with Github](https://github.com/JAlcocerT/ScrewFastMoiRealEstate)
 
 > Powered by [Astro 😍 ScrewFast](https://github.com/JAlcocerT/ScrewFast)
 
@@ -26,8 +34,24 @@ npm install
 npm run dev
 ```
 
-* it also has **starlight for the docs**!
+* It also has **starlight for the docs**!
+
+```sh
+npm run build
+```
 * Output -->> `./dist` or `.vercel/output/static/`
+
+
+```sh
+npm install -g serve #serve with npm
+
+#serve -s dist
+serve -s .vercel/output/static #http://localhost:3000
+
+#cd dist #serve with python
+cd .vercel/output/static
+python3 -m http.server 8000
+```
 
 ```sh
 npx wrangler pages project create
@@ -49,6 +73,17 @@ npx wrangler pages deploy .vercel/output/static #dist
 > Thanks to [Astro & mearashadowfax](https://github.com/mearashadowfax/ScrewFast)
 
 {{< /details >}}
+
+Just as we did [here](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#setup-cloudflare-workers-and-pages), but this time, **with a private repo**.
+
+
+![Cloudflare will build HUGO for us](/blog_img/web/success3-realestate/Cloudflare-GithubPages-HUGO.png)
+
+Normally, Astro pages push the build files to `./dist`, but this theme does it differently:
+
+![Cloudflare will build HUGO for us](/blog_img/web/success3-realestate/Cloudflare-BuildAstro.png)
+
+When you hit deploy, the process will start: build environment -> clone git repo -> build web files/
 
 {{< callout type="info" >}}
   The domain and pages are [handled by Cloudflare](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/)

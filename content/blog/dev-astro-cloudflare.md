@@ -33,29 +33,37 @@ You will Need a Github Account Authentication
 {{% /steps %}}
 
 
-
 {{< details title="Detailed Process - Cloudflare and Github 📌" closed="true" >}}
 
-![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-GithubPages.png)
+Go to the [Cloudflare UI](https://dash.cloudflare.com), and select the **overview, under Workers and Pages**.
 
+Create an App and connect to Github:
+
+![Cloudflare create an app](/blog_img/web/Cloudflare/Cloudflare-GithubPages.png)
+
+You will need to **authenticate** and select which repo/s will **Cloudflare be able to access**.
 
 ![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-Github-Connection.png)
 
+> It works with public and **also private repositories**!
 
 ![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-Github-Connection-Authorize.png)
 
 
 ![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-Github-Connection-Deploy.png)
 
+The only command needed is `hugo`, so that the static files are generated to `./public`:
 
-![Wordpress Google Page Speed Desktop](/blog_img/web/Cloudflare/Cloudflare-GithubPages-HUGO.png)
+![Cloudflare will build HUGO for us](/blog_img/web/Cloudflare/Cloudflare-GithubPages-HUGO.png)
 
 
 > It does similarly as the [GH Action Workflow to Send HUGO to GH Pages](https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml)
 
 {{< /details >}}
 
+This is how it will look in Cloudflare UI once setup:
 
+![Cloudflare Workers and Pages](/blog_img/web/Cloudflare/Github-Cloudflare-WorkersnPages.png)
 
 
 {{< details title="Detailed Process - Adding Cloudflare custom Domain 📌" closed="true" >}}
