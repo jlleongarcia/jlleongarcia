@@ -32,10 +32,11 @@ You will Need a Github Account Authentication
 
 {{% /steps %}}
 
+Go to the [Cloudflare UI](https://dash.cloudflare.com), and...
 
 {{< details title="Detailed Process - Cloudflare and Github 📌" closed="true" >}}
 
-Go to the [Cloudflare UI](https://dash.cloudflare.com), and select the **overview, under Workers and Pages**.
+...select the **overview, under Workers and Pages**.
 
 Create an App and connect to Github:
 

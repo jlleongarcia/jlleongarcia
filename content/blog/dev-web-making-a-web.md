@@ -62,7 +62,7 @@ npx wrangler pages project create
 
 
 ```sh
-#npx wrangler pages project list
+#npx wrangler pages project list #check existing projects
 npx wrangler pages deploy .vercel/output/static #dist 
 ```
 
@@ -76,14 +76,22 @@ npx wrangler pages deploy .vercel/output/static #dist
 
 Just as we did [here](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#setup-cloudflare-workers-and-pages), but this time, **with a private repo**.
 
+<!-- {{< callout type="warning" >}}
+I had to create a separate project with the wrangler (belonging to the repo).
+{{< /callout >}} -->
 
 ![Cloudflare will build HUGO for us](/blog_img/web/success3-realestate/Cloudflare-GithubPages-HUGO.png)
 
-Normally, Astro pages push the build files to `./dist`, but this theme does it differently:
+Normally, Astro pages push the build files to `./dist`, but this theme does it differently to `.vercel/...`
 
-![Cloudflare will build HUGO for us](/blog_img/web/success3-realestate/Cloudflare-BuildAstro.png)
+![Cloudflare will build Astro for us](/blog_img/web/success3-realestate/Cloudflare-BuildAstro.png)
 
 When you hit deploy, the process will start: build environment -> clone git repo -> build web files/
+
+> Astro will take a little bit longer than HUGO to build.
+
+![Cloudflare workers building Astro](/blog_img/web/success3-realestate/Cloudflare-WorkersnPages-Astro.png)
+
 
 {{< callout type="info" >}}
   The domain and pages are [handled by Cloudflare](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/)
