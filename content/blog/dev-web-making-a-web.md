@@ -22,7 +22,10 @@ url: 'astro-web-setup'
 
 ### Demo with Cloudflare Pages
 
-* I created a [Private repo with Github](https://github.com/JAlcocerT/ScrewFastMoiRealEstate)
+{{< callout type="info" >}}
+I created a [**Private repo with Github**](https://github.com/JAlcocerT/ScrewFastMoiRealEstate)
+{{< /callout >}}
+
 
 > Powered by [Astro 😍 ScrewFast](https://github.com/JAlcocerT/ScrewFast)
 
