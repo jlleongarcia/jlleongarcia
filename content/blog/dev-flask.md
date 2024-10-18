@@ -212,6 +212,8 @@ It utilizes Flask as its underlying web server and integrates several other libr
 
 ### Deploying a Flask App like a Pro
 
+Let'serve the Flask App with a Cloud Server. **With https and custom domain.**
+
 1. Get a server, for example [with Hetzner](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers)
 2. Setup the server with [docker and all goodies](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
 * Portainer is recommended for UI container management
@@ -223,14 +225,26 @@ It utilizes Flask as its underlying web server and integrates several other libr
 5. To get **https and your custom domain** for the Flask App, use [NGinX Proxy Manager as another container](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
 6. Point your **DNS to the Server IP as an A record** (with whatever domain registrar you chose)
 
+{{< details title="DuckDNS is a Free Option | We made it with Cloudflare Domains 📌" closed="true" >}}
+
+
 * If you need something **free**, you can try with a [**duckdns subdomain**: ](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/#how-to-get-https-locally-with-docker-services)
   * Remember to add the DSN Challenge with the **duckDNS** token when you'll be at the SSL tab (I placed 60s as propagation)
-* If you are using Cloudflare, you will need their [API Token](https://dash.cloudflare.com/profile/api-tokens)
+* To get **https with NGINX on a custom domain bought at Cloudflare**...
+  * Get the Cloudflare [API Token](https://dash.cloudflare.com/profile/api-tokens)
   * Go to Edit zone DNS. Zone Resources -> Include all zones (or a specific domain only) and create it. Add it as `dns_cloudflare_api_token=`
   * Thanks to [TechHut](https://www.youtube.com/watch?v=79e6KBYcVmQ), [DistroDomain](https://www.youtube.com/watch?v=JNFQOJP5VY0) for the related YT Videos
 * In NginX UI, you will add the: **container name and port** of the Flask App
 
 ![Flask Https NginX Setup](/blog_img/apps/flask-nginx-duckdns.png)
+
+
+{{< /details >}}
+
+This is how it got configured:
+
+![Flask Https NginX Setup Cloudflare Domain](/blog_img/apps/flask-nginx-cloudflare.png)
+
 
 
 {{< details title="Useful CLI commands to manage your Server for the Flask App 📌" closed="true" >}}

@@ -11,9 +11,13 @@ url: 'astro-web-setup'
   * https://www.inmobiliariacano.es/
   * https://casaensol.pl/
   * https://syrenare.com/
+  * They are performing at up to ~1 second initial loading time!
 
 
 ### Demo with Cloudflare Pages
+
+> Powered by [Astro 😍 ScrewFast](https://github.com/JAlcocerT/ScrewFast)
+
 
 {{< details title="Ready to Demo, with Free Cloudflare Pages 📌" closed="true" >}}
 
@@ -38,12 +42,21 @@ npx wrangler pages project create
 npx wrangler pages deploy .vercel/output/static #dist 
 ```
 
-* https://moises-era.pages.dev/
+* Demo deployed with [Cloudflare Pages](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#setup-cloudflare-workers-and-pages): `https://moises-era.pages.dev/`
   * https://a75e88ca.moises-era.pages.dev
 * https://pagespeed.web.dev/analysis/https-moises-era-pages-dev
 
-> Powered by [Astro 😍 ScrewFast](https://github.com/mearashadowfax/ScrewFast)
+> Thanks to [Astro & mearashadowfax](https://github.com/mearashadowfax/ScrewFast)
 
 {{< /details >}}
 
-https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/
+{{< callout type="info" >}}
+  The domain and pages are [handled by Cloudflare](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/)
+{{< /callout >}}
+
+
+
+## Extra Functionality
+
+* Newsletters and contact form added [with MailerLite](https://jalcocert.github.io/JAlcocerT/blog/dev-forms/#mailerlite)
+* GDPR Compliant out of the box

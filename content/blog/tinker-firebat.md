@@ -96,7 +96,7 @@ time cargo install --git https://github.com/astral-sh/rye rye
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/RPi/posts/minipc-vs-pi/" title="BMAX B4 Review" image="/blog_img/mini_pc/bmax_asrockx300.jpg" subtitle="SBC's vs BMAX MiniPC" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers" title="Cloud vs SBC's Image" image="/blog_img/RPi4_2_vs4gb.jpg" subtitle="Raspberry and Orange Pi's vs Hetzner" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers" title="Cloud vs SBC's Image" image="/blog_img/selfh/cloud-vs-sbc.png" subtitle="Raspberry and Orange Pi's SBCs vs Hetzner Cloud" >}}
 {{< /cards >}}
 
 > N95 was 5% faster when building [the Docker Image](https://github.com/JAlcocerT/Py_Trip_Planner/)
