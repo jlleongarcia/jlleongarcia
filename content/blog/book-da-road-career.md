@@ -103,17 +103,6 @@ The natural next step would be to create a personal Github Page.
     * Thats right, you won't have to pay for domain nor hosting.
     * This is an oportunity to get familiar with [CI/CD Tools](/software-development-methodologies-data-analytics/#cicd) like [**Github Actions**](/building-docker-container-images/#github-actions-x86) as well.
 
-
-<!-- Flexdashboards: bootstrap, css, framekow (a,b,c),mcustomize from R with {bslib} 
-RSHiny + bslib
-
-DASH - flask, plotly.js, react.js, dash_bootstrap_components
-
-streamlit
-heroku
-netlify? -->
-
-
 ### Software Development Methodologies (SDM)
 
 [Software development methodologies](/software-development-methodologies-data-analytics/) are vital as they provide structure, efficiency, and standardization to the complex process of creating software.

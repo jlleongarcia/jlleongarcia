@@ -240,6 +240,10 @@ https://github.com/gio-del/Astro-Theme-Astroway?tab=MIT-1-ov-file#readme
 
 ## FAQ
 
+{{< callout type="info" >}}
+  Whatever you try, make sure it pass the [Tips for Websites](https://jalcocert.github.io/JAlcocerT/create-your-website/#is-my-website-performing-well)
+{{< /callout >}}
+
 {{< dropdown title="How can I try an Astro Project? ⏬" closed="true" >}}
 
 ```sh
@@ -319,25 +323,26 @@ npx wrangler pages project list #this are the ones you uploaded already
 npx wrangler pages deployment list
 ```
 
-One **Final Step** (Thanks to [Project Brackets YT Video!](https://www.youtube.com/watch?v=aRYt02Mgy90)
+One **Final Step** - Thanks to [Project Brackets YT Video!](https://www.youtube.com/watch?v=aRYt02Mgy90)
 
-Remember to go to `Cloudflare Web UI` -> Workers and pages -> Select the project name as you uploaded with the CLI -> Custom Domains
+Remember to go to `Cloudflare Web UI` -> Workers and pages -> Select the project name as you uploaded with the CLI -> `Custom Domains`
 
 * If your domain is not with Cloudflare, they will ask you to use their **Name Authoritative NameServers**
 
 Something like: `fattouche.ns.cloudflare.com, leanna.ns.cloudflare.com`
 
-![Wordpress Google Page Speed Desktop](/blog_img/web/CloudFlarePages_CustomDomain_DNS.png)
+![Cloudflare Authoritative Name Servers](/blog_img/web/CloudFlarePages_CustomDomain_DNS.png)
 
 {{< /dropdown >}}
 
 ### ASTRO SEO PACKAGES
 
 * robots.txt - https://www.npmjs.com/package/astro-robots-txt#why-astro-robots-txt` (MIT Licensed ❤️)
+  * You also need a **sitemap**!
 
 * rss
 
-* Image Optimization
+* Image Optimization - It's built in in astro, and you dont want huge images for performance.
 
 ### Astro Cookies
 

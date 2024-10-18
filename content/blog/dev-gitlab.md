@@ -67,16 +67,87 @@ Dont forget to set:
 
 ```sh
 git config --global user.name "Jesus Alcocer"
-git config --global user.email "jesus_alcocer@something.com"
+git config --global user.email "jesus_alcocer@sthsthsth.com"
 ```
+
+---
+
+<!-- ## Gitlab Pages
+
+Failing bc the project is not in root, but at pacamara
+ -->
+
+## Use Cloudflare Workers and Pages with Gitlab
+
+I have tried it with a Private Gitlab repository.
+
+{{% steps %}}
+
+### Select a Gitlab Repository
+
+For testing purposes, I made it with [this one](https://gitlab.com/fossengineer1/cyclingthere)
+
+### Try the Theme
+
+```sh
+npm run dev #check
+npm run build
+```
+
+> Explore the results at: `localhost:4321`
+
+### Check the Built Files
+
+```sh
+npm install -g serve #serve with npm
+
+#serve -s dist #http://localhost:3000
+```
+
+{{% /steps %}}
+
+### The Workflow - Cloudflare 💖 Gitlab
+
+{{< details title="Details - Cloudflare with Gitlab 📌" closed="true" >}}
+
+1. Go to the [Cloudflare UI](https://dash.cloudflare.com), and...
+
+2. Select the **overview, under Workers and Pages**.
+
+3. **Click Create** an App, and go to the **Pages Tab**. Then, connect git - to Gitlab: 
+
+You will need to **authenticate** and select which repo/s will **Cloudflare be able to access**.
+
+> You can have more than one account authenticated
+
+4. As it is an Astro site, I keep both: `npm run build` and folder `/dist`
+
+...and then it failed, bc my project is at a subfolder, so I tweaked it to: `cd ./pacamara && npm run build` and `pacamara/dist`
+
+{{< /details >}}
+
+Once completed, you will see a **successful workflow**
+
+![Cloudflare Workers - Gitlab Repo Success](/blog_img/web/Cloudflare/CloudflareWorkersnPages-Gitlab.png)
+
+The project has the free subdomain: `cyclingthere.pages.dev`, but you can add yours as well.
+
+
+{{< callout type="info" >}}
+I've added this after my learnings with the real estate project, where I used [Cloudflare W&P with a Private Github Repo](https://jalcocert.github.io/JAlcocerT/astro-web-setup/)
+{{< /callout >}}
 
 ---
 
 ## Conclusions
 
-A **good readme** always helps...
+A **good readme** always helps...for any repo, including the Gitlab ones.
 
-For Python I like to start with the pre-requisites for the project:
+
+{{< details title="Example - Python Project 📌" closed="true" >}}
+
+
+For Python I like to start with the **pre-requisites for the project:**
 
 ```sh
 python -m venv openltabletstests_venv 
@@ -85,13 +156,18 @@ openltabletstests_venv\Scripts\activate #activate venv (windows)
 source openltabletstests_venv/bin/activate #(linux)
 ```
 
+And just install the dependencies:
+
 ```sh
 pip install -r requirements.txt 
 ```
 
+{{< /details >}}
+
+
 ### How to use Gitlab Container Registry
 
-There is live for contaienrs beyond Dockerhub and GHCR: try Gitlab CR
+There is live for contaienrs beyond Dockerhub and GHCR: try **Gitlab CR**
 
 1. **Authenticate with the GitLab Container Registry**  
    You can do this using the Docker CLI or the GitLab API.
@@ -103,7 +179,8 @@ There is live for contaienrs beyond Dockerhub and GHCR: try Gitlab CR
 3. **Push the tagged image to the GitLab Container Registry**  
    Use either the Docker CLI or the GitLab API.
 
-### Example: Pushing a Local Docker Image using the Docker CLI
+{{< details title="Example - Pushing a Local Docker Image using the Docker CLI 📌" closed="true" >}}
+
 
 ```bash
 # Authenticate with the GitLab Container Registry
@@ -120,15 +197,21 @@ Use docker push --all-tags to push all tags of an image to the registry.
 
 Use docker push --dry-run to test the push command without actually pushing the image.
 
+{{< /details >}}
+
+
 If using a self-hosted GitLab instance, configure the GitLab Container Registry to use a custom TLS certificate.
+
 
 
 ---
 
-## Gitea: a Gitlab Alternative
+## FAQ
+
+### Gitea - A Gitlab Alternative
 
 You can also setup [Gitea locally with containers](https://github.com/JAlcocerT/Docker/blob/main/Dev/GIT/Gitea_Docker-compose.yaml):
 
-![Spanish Historical CashFlow](/blog_img/selfh/gitea_install.png)
+![Gitea Install](/blog_img/selfh/gitea_install.png)
 
 This is another stack with [Gitea, Gitlab and Jenkins](https://github.com/JAlcocerT/Docker/blob/main/Z_Dockge/stacks/git/compose.yaml)

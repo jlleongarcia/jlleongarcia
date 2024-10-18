@@ -3,7 +3,7 @@ title: "Testing AI Ollama"
 date: 2024-10-02T05:20:21+01:00
 draft: true
 tags: ["Dev","Python"]
-description: 'How to use Flask'
+description: 'How to use '
 summary: 'How I Test AI Projects'
 url: 'ai-ollama'
 ---

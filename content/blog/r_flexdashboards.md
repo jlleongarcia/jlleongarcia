@@ -23,7 +23,7 @@ Flexdashboards support a variety of visual outputs, including tables, data frame
 
 The strength of Flexdashboards lies in their **simplicity and ease of deployment**. They use a simple markdown syntax, which makes it easy to layout and design the dashboard. They can be rendered as standalone HTML documents, which can be easily hosted on a variety of platforms, including GitHub Pages. This makes Flexdashboards an excellent choice for static reporting and when sharing insights with an audience that does not require real-time interaction with the underlying data.
 
-Flexdashboards are **static dashboards** - this means that they can be hosted like a static web page on Github pages, Gitlab pages...
+Flexdashboards are **static dashboards** - this means that they can be hosted like a **static web page** on Github pages, Gitlab pages...
 
 This does not mean that you can't have interactivity in flexdashboards, since you can, for example include plotly graphs and include widgets to filter the data.
 
@@ -100,6 +100,14 @@ Let's explore one example that I created. I created separated tabs to showcase d
 
 ## FAQ
 
+<!-- Flexdashboards: bootstrap, css, framekow (a,b,c),mcustomize from R with {bslib} 
+RSHiny + bslib
+
+DASH - flask, plotly.js, react.js, dash_bootstrap_components
+
+heroku
+netlify? -->
+
 ### Other Ways to Present Data with R
 
 #### How about Shiny?
@@ -127,7 +135,7 @@ However, **Shiny requires a running R session in the background**, which makes h
 
  -->
 
- ### Other F/OSS Static
+### Other F/OSS Static Stuff
 
 Impactful Data Driven Presentations:
 

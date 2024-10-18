@@ -11,13 +11,17 @@ url: 'astro-web-setup'
   * https://www.inmobiliariacano.es/
   * https://casaensol.pl/
   * https://syrenare.com/
-  * They are performing at up to ~1 second initial loading time!
+  * All are **performing slooow** at up to ~1 second initial for a simple http request!
 
 ![Uptime Ira](/blog_img/web/success3-realestate/uptime-realestate-demo.png)
 
 ![Uptime Ira](/blog_img/web/success3-realestate/uptime-casaensol.png)
 
 ![Uptime Ira](/blog_img/web/success3-realestate/uptime-cano.png)
+
+{{< callout type="info" >}}
+How much better is the result? [Jump to it](#real-estate-web---results)
+{{< /callout >}}
 
 
 ### Demo with Cloudflare Pages
@@ -83,9 +87,8 @@ Just as we did [here](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare
 I had to create a separate project with the wrangler (belonging to the repo).
 {{< /callout >}} -->
 
-![Cloudflare will build HUGO for us](/blog_img/web/success3-realestate/Cloudflare-GithubPages-HUGO.png)
 
-Normally, Astro pages push the build files to `./dist`, but this theme does it differently to `.vercel/...`
+Normally, Astro pages push the build files to `./dist`, but this theme does it differently to `./vercel/...`
 
 ![Cloudflare will build Astro for us](/blog_img/web/success3-realestate/Cloudflare-BuildAstro.png)
 
@@ -127,3 +130,7 @@ And it seems that **Google likes it**:
 
 * Newsletters and contact form added [with MailerLite](https://jalcocert.github.io/JAlcocerT/blog/dev-forms/#mailerlite)
 * GDPR Compliant out of the box
+
+{{< callout type="info" >}}
+Who said, **embedded Chatbot**?
+{{< /callout >}}

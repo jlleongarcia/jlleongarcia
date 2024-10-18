@@ -3,11 +3,22 @@ title: "My [AI] Youtube Workflow"
 date: 2024-10-02T05:20:21+01:00
 draft: true
 tags: ["Dev","Python"]
-description: 'How to use Flask'
+description: 'How to use '
 summary: 'How I Test AI Projects'
 url: 'openai-text2audio'
 ---
 
+{{< callout type="info" >}}
+  It all started with the [DJI OA5 Pro](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/) and continue with [the VideoEditingWF repo](https://github.com/JAlcocerT/VideoEditingRemotion)
+{{< /callout >}}
+
+## My Initial Workflow
+
+OBS to record -> Create audio with OpenAI API
+
+
+
+{{< details title="OpenAI API Audio creation - Example 📌" closed="true" >}}
 
 ```py
 import openai
@@ -49,6 +60,18 @@ response = client.audio.speech.create(
 response.stream_to_file(speech_file_path)
 ```
 
+
+{{< /details >}}
+
+
+### Updating My YT Video WF
+
+* OBSStudio to record + I record myself commenting the video
+* Then, that .mp4 gets a transcript, which is passed to the OpenAI API to generate an AI voice
+
+...
+
+---
 
 
 ## Other interesting AI Audio stuff
@@ -160,3 +183,11 @@ chmod +x cygwin_cibuildwheel_build.sh
 ```
 
 {{< /details >}}
+
+---
+
+## FAQ
+
+### Social Media Automation
+
+[Zapier](https://zapier.com/app/home)

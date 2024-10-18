@@ -48,6 +48,10 @@ sudo snap install shotcut --classic
 
 ## Conclusions of Osmo Action 5 Pro
 
+Make sure to **explore the resolutions and modes**.
+
+There is the possibility to record at FHD 1080p@240fps, but not with wide mode, for example.
+
 * You are required to [install DJI Mimo app](https://www.dji.com/pl/downloads/djiapp/dji-mimo) - which will allow you to activate the warranty + transfer files (no need for cable!) + receive firmware updates
     * The app is neither in Google not Apple store...❗
     * I would keep the .apk handy, as per my experience with the [DJI Tello Drone](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/)
@@ -65,7 +69,7 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
     * From 10% to 100% - ~40 min
     * If you leave the battery connected, it will loose ~2% charge during a night
 
-{{< details title="Watermark pictures with Python and Pillow 📌" closed="true" >}}
+{{< details title="Battery Drain Tests 📌" closed="true" >}}
 
 1. **0% to 60% at 23W**  
    - `Time = Energy for 60% ÷ 23W`
@@ -80,23 +84,29 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
    - `Total Time = Time (0-60%) + Time (60-85%) + Time (85-100%)` ~ 30 min
 {{< /details >}}
 
-* Memory wise 👌
-    * The built in is ~45GB
-    * I added a Kingston SD 128GB CL10 (up to 80mb/s reading and 10 mb/s of writing - which might be to slow)
-        * It is enough to record in there video at 1080p@30fps without micro-stops
-        * 1080p@30fps is around 4mb/s in size
-    * When transfering files to my laptop I saw up to 90MB/s speed
+* Memory wise 
+    * The built in is ~45GB 👌
+    * I added a **Kingston SD** 128GB CL10 (up to 80mb/s reading and **10 mb/s of writing** - which might be to slow)
+        * It is enough to record in there video at 1080p@30fps **without micro-stops**
+         * 1080p@30fps is around 4mb/s in size
+         * FHD - 1080@60fps/RS+/UW, its ~5mb/s and also works
+        * **Even 2.7k@30fps/RS/UltraWide works!** It's ~5.6mb/s in average size
+    * When transfering files to my laptop I saw up to 90MB/s speed (reading from SD, writing to SSD)
 
 * Transfering files:
     * Via the Mimo App
     * Via usb-c (**turn ON the camera first** and then connect the cable)
         * You will see one drive for the internal card and another for your SD card if any
-        * Transfer speed is ~25mb/s
+        * Transfer speed is ~25mb/s from the internal SD card
 
 * File size:
-    * Super night mode FHD (Full HD) 1920x**1080@30fps** has a 29.5mb/s video bitrate, making a 4.4gb for 20min duration. 
-    * Super night mode with UHD (Ultra High Definition) **3840**x2160@30fps - 4k@30fps makes a ~8gb file for 20 min duration and used 20% battery - the super night mode needs stabilization ON
+    * Super night mode FHD (**Full HD**) 1920x**1080@30fps** has a 29.5mb/s video bitrate, making a 4.4gb for 20min duration. 
+    * Super night mode with UHD (Ultra High Definition) **3840**x2160@30fps - **4k**@30fps makes a ~8gb file for 20 min duration and used 20% battery - the super night mode needs stabilization ON
     * **2688**x1522 resolution, aka 2.7K
+
+{{< callout type="warning" >}}
+  Stabilization is great during the day, but **not during the night.**
+{{< /callout >}}
 
 ### My Workflow with the DJI OA5-Pro
 

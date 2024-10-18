@@ -21,7 +21,7 @@ This is what we will be looking at today.
 pdf "/blog_pdf/OrangePi_5_RK3588S_User-Manual_v1.5.pdf"
 OrangePi_5_RK3588S_User-Manual_v1.5.pdf
 
-removed to be able to use Cloudflare Workers and Pages with this GH repo
+removed to be able to use Cloudflare WorkersandPages with this GH repo
 moved to the RPI repo
  -->
 

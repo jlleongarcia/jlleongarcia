@@ -3,13 +3,13 @@ title: "Testing AI projects"
 date: 2024-10-02T05:20:21+01:00
 draft: true
 tags: ["Dev","Python"]
-description: 'How to use Flask'
+description: 'How to use '
 summary: 'How I Test AI Projects'
 url: 'ai-projects'
 ---
 
 
-{{< details title="Edit 📌" closed="true" >}}
+{{< details title="Setup proper dev environment for Python 📌" closed="true" >}}
 
 
 ```sh

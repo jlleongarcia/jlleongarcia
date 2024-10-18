@@ -1,12 +1,16 @@
 ---
-title: "Testing ai Scrapping projects"
+title: "Testing ai Scrapping projects: GPT-Crawler"
 date: 2024-10-02T05:20:21+01:00
 draft: true
 tags: ["Dev","Python"]
-description: 'How to use Flask'
+description: 'How to use '
 summary: 'How I Test AI Projects'
 url: 'ai-projects-scrapping'
 ---
+
+{{< callout type="info" >}}
+https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/
+{{< /callout >}}
 
 ## GPT-CRAWLER
 
@@ -47,7 +51,7 @@ export const defaultConfig: Config = {
 
 ```
 
-https://chat.openai.com/gpts
+`https://chat.openai.com/gpts`
 
 Upload the output.json
 
@@ -73,8 +77,9 @@ Because of its simplicity and permissiveness, the ISC license is favored for pro
 
 ---
 
+## FAQ
 
-## Interesting Ways to add Memory to LLms
+### Interesting Ways to add Memory to LLms
 
 * https://github.com/cpacker/MemGPT
 
