@@ -346,7 +346,7 @@ We saw a few interesting ones:
 
 The [fuwari static blog made with Astro](https://github.com/saicaca/fuwari)...
 
-
+* Testing it with Github and clourflare: <jmodels.pages.dev>
 
 ---
 
