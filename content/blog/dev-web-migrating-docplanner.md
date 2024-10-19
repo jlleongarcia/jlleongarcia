@@ -131,7 +131,7 @@ FireCrawl can be integrated with: [CrewAI](https://fossengineer.com/ai-agents-cr
 
 Both probably an overkill, coming from a single pager.
 
-So I proposed this as a [landing single pager](https://github.com/mhyfritz/astro-landing-page) or this as sth more advance with blog as well, [portfolio](https://github.com/withastro/astro/tree/main/examples/portfolio) - Both **MIT Licensed**.
+So I proposed this as a [landing single pager](https://github.com/mhyfritz/astro-landing-page) or this as sth more advance with blog as well, **[portfolio](https://github.com/withastro/astro/tree/main/examples/portfolio)** - Both **MIT Licensed**.
 
 
 
@@ -155,3 +155,7 @@ npm install -g serve #serve with npm
 serve -s dist #http://localhost:3000
 ```
 {{< /details >}}
+
+And I used [Cloudflare together with github](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/), for the demo deployment.
+
+The result was available, after few minutes here: <https://morita-web.pages.dev/>

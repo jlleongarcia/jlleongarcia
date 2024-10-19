@@ -23,7 +23,7 @@ Push your code to a [Github Repository](https://jalcocert.github.io/JAlcocerT/gi
 
 ### Setup Cloudflare to with with Github
 
-Go to Cloudflare UI. Worker & Pages -> Overview. Create -> Pages -> Connect Git.
+Go to [Cloudflare UI](https://dash.cloudflare.com/). **Worker & Pages** -> Overview. Create -> Pages -> Connect Git.
 
 You will Need a Github Account Authentication
 

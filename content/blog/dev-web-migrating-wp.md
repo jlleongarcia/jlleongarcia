@@ -338,6 +338,16 @@ Puppeteer what?
 
 They have to **keep the original content**, but split it in English/SPanish in different files
 
+## Theme Proposal - HUGO
+
+We saw a few interesting ones:
+* https://github.com/manuelernestog/astropod
+* Astro verse, [ex VisVRS](https://verse-astro.vercel.app/)
+
+The [fuwari static blog made with Astro](https://github.com/saicaca/fuwari)...
+
+
+
 ---
 
 ## FAQ

@@ -54,6 +54,11 @@ Make sure to **explore the resolutions and modes**.
 
 There is the possibility to record at FHD 1080p@240fps, but not with wide mode, for example.
 
+* Video Modes
+   * TimeLapse 1h/3s Sunset Scene - 1080p@30 aka **1080P30/3s**- It makes 1 real hour to be 40s in the video and 93mb - 2.3mb/s
+      * It can also be 2.7k and 4k
+   * Hyperlapse during the night was having some glitches
+
 * You are required to [install DJI Mimo app](https://www.dji.com/pl/downloads/djiapp/dji-mimo) - which will allow you to activate the warranty + transfer files (no need for cable!) + receive firmware updates
     * The app is neither in Google not Apple store...❗
     * I would keep the .apk handy, as per my experience with the [DJI Tello Drone](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/)
@@ -93,6 +98,9 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
          * 1080p@30fps is around 4mb/s in size
          * FHD - 1080@60fps/RS+/UW, its ~5mb/s and also works
         * **Even 2.7k@30fps/RS/UltraWide works!** It's ~5.6mb/s in average size
+        * 2.7k@30/RS+/UW
+        * 4K@25/rs/uw
+        * 4K@48/ /
     * When transfering files to my laptop I saw up to 90MB/s speed (reading from SD, writing to SSD)
 
 * Transfering files:
