@@ -251,6 +251,48 @@ curl -s https://jmodels.net/robots.txt | head -n 10 #see the first 10 lines
 
 ### Scrapping Wordpress Content
 
+Let's get started with the **wordpress migration**.
+
+{{< dropdown title="Broken links? How to Use LinkChecker with Docker ⏬" closed="true" >}}
+
+* Use LinkChecker with the [GHCR Container Image](https://github.com/linkchecker/linkchecker/pkgs/container/linkchecker)
+
+```sh
+# docker run --rm -it -u $(id -u):$(id -g) ghcr.io/linkchecker/linkchecker:latest --verbose https://www.example.com
+
+podman run --rm -it ghcr.io/linkchecker/linkchecker:latest --verbose https://jmodels.net/ > linkchecker_jmodels.txt
+```
+
+To run linkchecker with docker-compose:
+
+```yml
+services:
+  linkchecker:
+    container_name: linkcheck
+    image: ghcr.io/linkchecker/linkchecker:latest
+    command: tail -f /dev/null  # Keep container alive
+    stdin_open: true            # Interactive mode
+    tty: true                   # Allocate a pseudo-TTY
+    # user: "${UID}:${GID}"       # Run as current user
+    # environment:
+    #   - UID=${UID}
+    #   - GID=${GID}
+    volumes:
+      - ./output:/output        # Bind mount a local directory for output
+    restart: "no"               # Do not restart after stopping
+```
+
+And just:
+
+```sh
+#UID=$(id -u) GID=$(id -g) docker-compose up -d
+docker exec -it linkcheck /bin/sh
+linkchecker --verbose https://jmodels.net/ > /output/linkchecker_jmodels.txt
+```
+
+
+{{< /dropdown >}}
+
 {{< callout type="info" >}}
   A post of what I learnt about [Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools), documented in this post the latest tech for scrap
 {{< /callout >}}

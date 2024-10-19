@@ -192,7 +192,8 @@ If you have a Google account, you can check these code snippets, as well as few 
 ## FAQ
 
 * JSON Formatter - https://jsonformatter.org/
-* Involved in Big Data Project? never forget to have a [Project Charter](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Project/Charter.md)
+
+* Involved in **Big Data Projects**? never forget to **have a [Project Charter](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Project/Charter.md)**
 
 ### Where to Learn more about Data Engineering?
 
@@ -213,7 +214,8 @@ If you are using PySpark, you are probably interested in making better **Explora
 
 ### PySpark FAQ
 
-* Why PySpark is called lazy?
+{{< details title="Why PySpark is called lazy? 📌" closed="true" >}}
+
 
 PySpark is considered "lazy" because it does not execute any code until it absolutely has to.
 
@@ -223,7 +225,11 @@ This allows Spark to **optimize the execution plan** by looking at all of the tr
 
 > It also allows Spark to delay execution until the result is actually needed, rather than executing every single transformation as soon as it is specified.
 
-* What to use, Spark or Pandas? What's the difference?
+{{< /details >}}
+
+{{< details title="What to use, Spark or Pandas? What's the difference? 📌" closed="true" >}}
+
+
 
 The choice between using Spark or Pandas depends on the type and size of data you are dealing with.
 
@@ -233,7 +239,10 @@ Spark also offers a range of features, such as **distributed processing, in-memo
 
 > The main difference between the two is that Pandas is designed to work with tabular data, while Spark is designed to work with both structured and unstructured data.
 
-* What is data redistributable?
+
+{{< /details >}}
+
+{{< details title="What is data redistributable? 📌" closed="true" >}}
 
 Data redistribution is the **process of transferring data** from one system or location to another. This can be done between different databases, platforms, or locations.
 
@@ -241,7 +250,11 @@ The purpose of data redistribution is to improve performance, enhance scalabilit
 
 Data redistribution is often used to move data between a production system and a test system or between different servers or clusters, to spread the load evenly or to make sure that the data is available in multiple locations in case of system failure or disaster recovery.
 
-* What is a partition?
+
+{{< /details >}}
+
+{{< details title="What is a partition? 📌" closed="true" >}}
+
 
 Partitions in Apache Spark are **logical divisions of data stored on a node in the cluster**.
 
@@ -251,11 +264,16 @@ By default, Spark uses a Hash Partitioner, which uses a hash function to determi
 
 Spark also supports Range Partitioning, which allows for data to be divided into partitions based on a range of values.
 
-* What is doing a GroupBy before a partition?
+
+{{< /details >}}
+
+{{< details title="What is doing a GroupBy before a partition? 📌" closed="true" >}}
 
 Doing a group by before partitioning means that the data is grouped together before being divided into partitions.
 
 This can be useful when performing certain calculations, as it allows for more efficient processing of the data. For example, if you have a table of data with multiple columns and you want to sum up values in one of the columns, you can group by that column before partitioning the data so that the sum for each group is only calculated once.
+
+{{< /details >}}
 
 #### What is Data Skew?
 
@@ -286,7 +304,7 @@ DONT REPEAT YOURSELF -->
 
 In our big project (Kafka), we need to make sure that the conveyor belt (Kafka) is working smoothly and that all the workers (computers) know what to do. This is where our notebook (ZooKeeper) comes in. ZooKeeper helps us keep track of the conveyor belt's status and makes sure all the workers are doing their jobs correctly. -->
 
-### Interesting F/OSS Tools for Big Data
+### Interesting Big Data Tools
 
 {{< dropdown title="What it is TRINO? ⏬" closed="true" >}}
 

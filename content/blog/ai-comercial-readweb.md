@@ -7,6 +7,8 @@ summary: 'Using Streamlit with OpenAI API and FireCrawl to Scrap the Web for Inf
 url: 'scrap-and-chat-with-the-web'
 ---
 
+## Selenium is Old School
+
 * Some Alternatives to Selenium:
   * https://github.com/ScrapeGraphAI/Scrapegraph-ai
   * https://github.com/mendableai/firecrawl
@@ -16,11 +18,22 @@ url: 'scrap-and-chat-with-the-web'
   A post of what I learnt about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
 {{< /callout >}}
 
+### ScrapeGraph
+
+[ScrapeGraph allows for open](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.
+
+
+---
+
+## Streamlit WebScrap
+
+Time to create something.
+
 ### Deploying
 
 Cloudflare Tunnels + Cloudflare Access Control
 
-## Conclusions
+### Conclusions
 
 {{< callout type="info" >}}
   Now you can try the app at:

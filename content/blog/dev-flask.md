@@ -12,7 +12,9 @@ A friend asked me recently to help him to [setup Python](https://jalcocert.githu
 
 I had to get a little bit familiar with this Python Framework.
 
-And we got his [Flask App with https and custom domain](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/#deploying-a-flask-app-like-a-pro). All configured and deployed publically on a server.
+And we got his [Flask App with https and custom domain](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/#deploying-a-flask-app-like-a-pro).
+
+A **Flask App** configured on a server, publically, **ready for anyone to use**.
 
 {{< callout type="info" >}}
   You can also [get your own Flask App Deployed](https://jalcocertech.xyz/)
@@ -184,6 +186,9 @@ if __name__ == '__main__':
 {{< /details >}}
 
 
+{{< details title="Example - Flask Project Structure 📌" closed="true" >}}
+
+
 ```
 /flask_project_app
 │
@@ -201,7 +206,11 @@ if __name__ == '__main__':
 
 * Placing your models in a dedicated `models.py` (or even splitting into multiple files for large applications) keeps all your database-related code in one place. It improves maintainability by decoupling the data structure from the business logic (routes) and app initialization.
 
-To run a flask app do:
+{{< /details >}}
+
+
+
+To **run a flask app**, do:
 
 ```sh
 flask run
@@ -213,7 +222,11 @@ And the UI will appear at: `localhost:5000`
 
 Dash, a **web application framework for Python**, is primarily built on top of Flask.
 
-It utilizes Flask as its underlying web server and integrates several other libraries and components to facilitate the development of interactive web applications, particularly for data visualization.
+{{< callout type="info" >}}
+  I used DASH for building a [Trip Planner as per Historical Weather](https://github.com/JAlcocerT/Py_Trip_Planner/) conditions
+{{< /callout >}}
+
+Dash utilizes Flask as its underlying web server and integrates several other libraries and components to facilitate the development of interactive web applications, particularly for data visualization.
 
 
 {{< cards cols="2" >}}
@@ -221,7 +234,7 @@ It utilizes Flask as its underlying web server and integrates several other libr
   {{< card link="https://github.com/JAlcocerT/Py_Trip_Planner/" title="Dash project example - Trip Planner with Weather" >}}
 {{< /cards >}}
 
-### Deploying a Flask App like a Pro
+## Deploying a Flask App like a Pro
 
 Let'serve the Flask App with a Cloud Server. **With https and custom domain.**
 

@@ -132,9 +132,13 @@ Once completed, you will see a **successful workflow**
 
 The project has the free subdomain: `cyclingthere.pages.dev`, but you can add yours as well.
 
+And yea...this is fast, **x3 faster than using firebase**:
+
+![Cloudflare vs Firebase](/blog_img/web/Cloudflare/ping-firebase-vs-cloudflare.png)
+
 
 {{< callout type="info" >}}
-I've added this after my learnings with the real estate project, where I used [Cloudflare W&P with a Private Github Repo](https://jalcocert.github.io/JAlcocerT/astro-web-setup/)
+I've added this after my learnings with a real estate project, where I used [Cloudflare W&P with a Private Github Repo](https://jalcocert.github.io/JAlcocerT/astro-web-setup/)
 {{< /callout >}}
 
 ---

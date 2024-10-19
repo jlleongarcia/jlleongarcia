@@ -20,7 +20,9 @@ First, A photo of the latest DJI Camera:
 
 ### How to edit Videos
 
-I was including [here](https://jalcocert.github.io/Linux/docs/debian/content_creation/) how to setup your PC for content creation.
+{{< callout type="info" >}}
+How to [setup your PC for content creation](https://jalcocert.github.io/Linux/docs/debian/content_creation/): OBSStudio, Shotcut, KDenLive...
+{{< /callout >}}
 
 {{< details title="Shotcut with OA5 Pro📌" closed="true" >}}
 

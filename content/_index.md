@@ -5,11 +5,13 @@ toc: false
 
 Hi There!
 
-Writing as I learn something helps me keeping the concepts in place.
-
-It can also help you to get started!
+I started writing few years ago as a way to keep my **learning process structured**.
 
 ## A Tech Blog?
+
+Writing as I learn something helps me **keeping the concepts in place**.
+
+It can also **help you** to get started!
 
 {{% details title="Why Starting a Tech Blog? 🚀" closed="true" %}}
 
