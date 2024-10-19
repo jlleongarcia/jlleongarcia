@@ -117,12 +117,41 @@ But actually, **FireCrawl provides markdown**, ready for LLMs:
 
 And time to translate. Yea, the original site its in turkish, and initially I went the [googletranslation](https://pypi.org/project/googletrans/#history) way, but the pkg is outdated and i got conflicts with httpx.
 
-Time to try [deep_translator](https://pypi.org/project/deep-translator/).
-
-
-
+Time to try [deep_translator](https://pypi.org/project/deep-translator/). And [the test](https://github.com/JAlcocerT/Scrap_Tools/blob/main/FireCrawl/Z_UseCase1-Nevin/firecrawl_output_parsertransdeepL.py) went fine.
 
 {{< callout type="info" >}}
 FireCrawl can be integrated with: [CrewAI](https://fossengineer.com/ai-agents-crewai/), LangChain, [Flowise](https://fossengineer.com/selfhosting-flowise-ai/), DifyAI, Zapier...
 {{< /callout >}}
 
+
+### Proposed Themes
+
+* https://agencex-astro.vercel.app/
+* https://astroship.web3templates.com/
+
+Both probably an overkill, coming from a single pager.
+
+So I proposed this as a [landing single pager](https://github.com/mhyfritz/astro-landing-page) or this as sth more advance with blog as well, [portfolio](https://github.com/withastro/astro/tree/main/examples/portfolio) - Both **MIT Licensed**.
+
+
+
+{{< details title="Testing Proposed Astro Themes 📌" closed="true" >}}
+
+```sh
+git clone https://github.com/withastro/astro
+cd ./examples/portfolio
+
+npm install
+npm run dev
+```
+
+Everything worked, so i created this [repo for the project](https://github.com/JAlcocerT/morita-web)
+
+
+```sh
+npm run build
+npm install -g serve #serve with npm
+
+serve -s dist #http://localhost:3000
+```
+{{< /details >}}

@@ -7,9 +7,9 @@ summary: 'Using Streamlit with OpenAI API and FireCrawl to Scrap the Web for Inf
 url: 'scrap-and-chat-with-the-web'
 ---
 
-## Selenium is Old School
+## Old School Scrapping
 
-* Some Alternatives to Selenium:
+* Some Alternatives to Selenium and BS4:
   * https://github.com/ScrapeGraphAI/Scrapegraph-ai
   * https://github.com/mendableai/firecrawl
   * https://github.com/unclecode/crawl4ai
@@ -22,6 +22,11 @@ url: 'scrap-and-chat-with-the-web'
 
 [ScrapeGraph allows for open](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.
 
+### FireCrawl
+
+{{< callout type="info" >}}
+  I used it for the [DocPlanner Migration](https://jalcocert.github.io/JAlcocerT/docplanner-web-migration/) and used [this repo](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_UseCase1-Nevin)
+{{< /callout >}}
 
 ---
 

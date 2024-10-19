@@ -4,7 +4,7 @@ date: 2024-08-17T23:20:21+01:00
 draft: true
 tags: ["Dev"]
 summary: 'How to get started with HUGO'
-url: 'using-hugo-websites'
+url: 'using-hugo-as-website'
 ---
 
 
