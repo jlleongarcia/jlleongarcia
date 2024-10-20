@@ -107,7 +107,7 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
     * Via the Mimo App
     * Via usb-c (**turn ON the camera first** and then connect the cable)
         * You will see one drive for the internal card and another for your SD card if any
-        * Transfer speed is ~25mb/s from the internal SD card
+        * Transfer speed is ~25mb/s from the internal SD card. To the [ThinkPad](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/) I saw ~28
 
 * File size:
     * Super night mode FHD (**Full HD**) 1920x**1080@30fps** has a 29.5mb/s video bitrate, making a 4.4gb for 20min duration. 
@@ -125,6 +125,132 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
     * [To MediaCMS](https://hub.docker.com/r/mediacms/mediacms/tags)
         * https://github.com/mediacms-io/mediacms/blob/main/docker-compose.yaml
         * https://mediacms.io/
+
+
+{{< details title="Video Editing Software - Setup📌" closed="true" >}}
+
+Lets get some [apps for content creation](https://jalcocert.github.io/Linux/docs/debian/content_creation/), together with dev tools:
+
+```sh
+#!/bin/bash
+
+# Function to prompt the user for yes/no input
+prompt_user() {
+    local prompt="$1"
+    local answer
+    while true; do
+        read -p "$prompt (y/n): " answer
+        case "$answer" in
+            [Yy]* ) return 0;;
+            [Nn]* ) return 1;;
+            * ) echo "Please answer y or n.";;
+        esac
+    done
+}
+
+# Install curl if not installed
+if ! command -v curl &> /dev/null; then
+    echo "Installing curl..."
+    sudo apt update && sudo apt install -y curl
+fi
+
+# Prompt to install content editing apps (Kdenlive, Shotcut)
+if prompt_user "Do you want to install content editing apps (Kdenlive, Shotcut)?"; then
+    echo "Installing content editing apps..."
+
+    # Add Flathub repository
+    echo "Adding Flathub repository..."
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+    # Install Kdenlive
+    echo "Installing Kdenlive..."
+    flatpak install -y flathub org.kde.kdenlive
+
+    # Install Shotcut via Snap
+    echo "Installing Shotcut..."
+    sudo snap install shotcut --classic
+
+    # Install missing JACK audio libraries for Shotcut
+    echo "Installing JACK audio libraries for Shotcut..."
+    sudo apt install -y libjack-jackd2-0 jackd
+else
+    echo "Skipping content editing apps installation."
+fi
+
+# Prompt to install development apps (VSCode, VSCodium, Python, Git, Node.js, Go, Hugo)
+if prompt_user "Do you want to install development apps (VSCode, VSCodium, Python, Git, Node.js, Go, Hugo)?"; then
+    echo "Installing development apps..."
+
+    # Install VSCode and VSCodium
+    echo "Installing Visual Studio Code..."
+    sudo apt update
+    sudo apt install -y software-properties-common apt-transport-https wget
+    wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+    sudo apt update
+    sudo apt install -y code
+
+    echo "Installing VSCodium..."
+    sudo snap install codium --classic
+
+    # Install Git
+    echo "Installing Git..."
+    sudo apt install -y git
+
+    # Install Python
+    echo "Installing Python..."
+    sudo apt install -y python3 python3-pip
+
+    # Install NVM, Node.js, and npm
+    echo "Installing Node.js and npm using NVM..."
+    if ! command -v nvm &> /dev/null; then
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+    fi
+    nvm install 20.12.2
+    nvm use 20.12.2
+
+    # Verify Node.js and npm
+    echo "Node.js version: $(node --version)"
+    echo "npm version: $(npm --version)"
+
+    # Install Go
+    echo "Installing Go..."
+    sudo snap install go --classic
+    echo "Go version: $(go version)"
+
+    # Install Hugo
+    echo "Installing Hugo..."
+    wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_0.108.0_linux-amd64.deb
+    sudo dpkg -i hugo_0.108.0_linux-amd64.deb
+    echo "Hugo version: $(hugo version)"
+else
+    echo "Skipping development apps installation."
+fi
+
+# Final version check and summary
+echo "Installation complete. Summary of versions installed:"
+
+# Content editing tools versions
+if prompt_user "Would you like to verify the versions of content editing tools installed?"; then
+    echo "Kdenlive: $(flatpak run org.kde.kdenlive --version 2>/dev/null | head -n 1)"
+    echo "Shotcut: $(shotcut --version 2>/dev/null || echo 'Shotcut is installed but the version command is not supported.')"
+fi
+
+# Development tools versions
+echo "VSCode version: $(code --version | head -n 1)"
+echo "VSCodium version: $(codium --version | head -n 1)"
+echo "Git version: $(git --version)"
+echo "Python version: $(python3 --version)"
+echo "Go version: $(go version)"
+echo "Hugo version: $(hugo version)"
+echo "Node.js version: $(node --version)"
+echo "npm version: $(npm --version)"
+```
+
+{{< /details >}}
 
 ---
 
@@ -151,19 +277,19 @@ You will need the [MoviePy Package](https://github.com/Zulko/moviepy)
 from moviepy.editor import VideoFileClip, concatenate_videoclips
 ```
 
-> Thanks to [NeuralNine yt Video](https://www.youtube.com/watch?v=Q2d1tYvTjRw)
+> Thanks to [NeuralNine YT Video](https://www.youtube.com/watch?v=Q2d1tYvTjRw)
 
 {{< /details >}}
 
 {{< callout type="info" >}}
-This is the repo I use for [my Video Editing WorkFlow](https://github.com/JAlcocerT/VideoEditingRemotion)
+This is the repo I use for [my Video Editing WorkFlow](https://github.com/JAlcocerT/VideoEditingRemotion), with [Remotion Coming soon](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/#video-as-a-code)
 {{< /callout >}}
 
 
 > Very Interesting way to make [video animations with python](https://zulko.github.io/moviepy/gallery.html#data-animations) and even [vector animations](https://zulko.github.io/blog/2014/09/20/vector-animations-with-python/)
 
 
-{{< details title="Audio for Videos 📌" closed="true" >}}
+{{< details title="Audio for Videos - Free Options📌" closed="true" >}}
 
 In [Youtube Studio](https://studio.youtube.com/channel/UCPPMA8ZEusAe5dVH6PbjZFA/music), you also have a library for audio that you can use freely on your videos.
 
