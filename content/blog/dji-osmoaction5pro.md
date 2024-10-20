@@ -39,7 +39,7 @@ sudo snap install shotcut --classic
 {{< details title="KDEnlive with OA5Pro 📌" closed="true" >}}
 
 ```sh
-sudo snap install shotcut --classic
+#sudo snap install shotcut --classic
 ```
 
 1. Open Shotcut, add the .mp4 file (not the [DJI's LRF](https://raw.githubusercontent.com/JAlcocerT/Docker/refs/heads/main/Backups/NextCloud/nc_mariadb.yml) - Low Resolution File used for the video playback)
@@ -101,6 +101,7 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
         * 2.7k@30/RS+/UW
         * 4K@25/rs/uw
         * 4K@48/ /
+        * 4k@100/RS+/UW - ~ 10min ~ 10% battery drained
     * When transfering files to my laptop I saw up to 90MB/s speed (reading from SD, writing to SSD)
 
 * Transfering files:
@@ -119,6 +120,93 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
 {{< /callout >}}
 
 ### My Workflow with the DJI OA5-Pro
+
+Delete the LRF files:
+
+```sh
+du -h --max-depth=1 #check space
+find . -name "*.LRF" -type f -delete #cleaning .LRF
+```
+And get VLC to see them:
+
+```sh
+sudo apt update
+sudo apt install vlc
+```
+
+See info about .MP4 in your folder:
+
+```sh
+sudo apt install ffmpeg
+#find . -type f -name "*.MP4" -exec ffprobe {} \;
+#find . -type f -name "*.MP4" -exec ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 {} \;
+
+#check .MP$ info recursively
+find . -type f -iname "*.mp4" -exec bash -c '
+  for file; do
+    name=$(basename "$file")
+    duration=$(ffprobe -v error -select_streams v:0 -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$file")
+    size=$(stat --format="%s" "$file")
+    resolution=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "$file")
+    
+    # FPS extraction
+    fps_raw=$(ffprobe -v error -select_streams v:0 -show_entries stream=r_frame_rate -of csv=p=0 "$file")
+    fps=$(echo "$fps_raw" | awk -F "/" '"'"'{ if ($2) print $1/$2; else print $1 }'"'"')
+
+    # Bitrate extraction in kbps
+    bitrate_bps=$(ffprobe -v error -show_entries format=bit_rate -of default=noprint_wrappers=1:nokey=1 "$file")
+    bitrate_kbps=$(echo "scale=2; $bitrate_bps / 1000" | bc -l)
+    
+    # Average MB/s calculation
+    avg_mbps=$(echo "scale=2; $bitrate_bps / 1000000000" | bc -l)
+
+    echo "Name: $name - Duration: ${duration}s - Size: ${size} GB - Resolution: $resolution - FPS: $fps - Bitrate: ${bitrate_kbps}kbps - Avg MB/s: ${avg_mbps}MB/s"
+  done
+' bash {} +
+```
+
+I Ordered them like so: `chmod +x organize_videos.sh ./organize_videos.sh`
+
+```sh
+#!/bin/bash
+
+#IT WILL MOVE THEM TO THE LOCATION WHERE YOU RUN THIS
+# Check for ffprobe installation
+if ! command -v ffprobe &> /dev/null; then
+  echo "ffprobe could not be found. Please install ffmpeg."
+  exit 1
+fi
+
+# Find and organize .mp4 files based on resolution
+find . -type f -iname "*.mp4" | while read -r file; do
+  name=$(basename "$file")
+  resolution=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "$file")
+
+  # Construct the folder name based on resolution
+  folder_name="$resolution"
+  
+  # Create the destination folder if it doesn't exist
+  mkdir -p "$folder_name"
+
+  # Move the file to the destination folder
+  mv "$file" "$folder_name/"
+  
+  # Output information about the file
+  echo "Moved: $name to $folder_name"
+done
+```
+
+or creating the subfolder in their find location....
+
+[Cut a video with KDenLive](https://www.youtube.com/watch?v=JMKRKv2ogKU&list=PLqazFFzUAPc7uQaoGxYwxGLk4_6fQrBvE&index=2)
+
+When ready, hit **CTRL+Enter to render**
+
+Before going to YT, I like to have Brave Browser:
+
+```sh
+sudo snap install brave
+```
 
 * Uploading the videos!
     * To youtube
