@@ -119,6 +119,9 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
   Stabilization is great during the day, but **not during the night.**
 {{< /callout >}}
 
+{{< youtube id="v=cqs4MkJ_4M4" autoplay="false" >}}
+
+
 ### My Workflow with the DJI OA5-Pro
 
 Delete the LRF files:
@@ -196,11 +199,44 @@ find . -type f -iname "*.mp4" | while read -r file; do
 done
 ```
 
-or creating the subfolder in their find location....
+or creating the subfolder in their find location....but not today.
+
+Let's jump to editing:
 
 [Cut a video with KDenLive](https://www.youtube.com/watch?v=JMKRKv2ogKU&list=PLqazFFzUAPc7uQaoGxYwxGLk4_6fQrBvE&index=2)
 
 When ready, hit **CTRL+Enter to render**
+
+> And this was soooo slow, can I just **join some videos together? YES, CLI can**
+
+```sh
+ls *.MP4 | sed "s/^/file '/; s/$/'/" > file_list.txt #add .mp4 of current folder to a list
+
+#du -sh ./* #check their size
+
+#generate a video with them
+ffmpeg -f concat -safe 0 -i file_list.txt -c copy output_video.mp4
+```
+
+**Check what was created:**
+
+```sh
+size=$(ffprobe -v error -select_streams v:0 -show_entries format=size -of default=noprint_wrappers=1:nokey=1 output_video.mp4) && \
+duration=$(ffprobe -v error -select_streams v:0 -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 output_video.mp4) && \
+fps=$(ffprobe -v error -select_streams v:0 -show_entries stream=r_frame_rate -of default=noprint_wrappers=1:nokey=1 output_video.mp4 | bc) && \
+resolution=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0:s=x output_video.mp4) && \
+echo "File: output_video.mp4" && \
+echo "Size: $(awk "BEGIN {printf \"%.2f GB\", $size / (1024^3)}")" && \
+echo "Duration: $(awk "BEGIN {printf \"%.2f minutes\", $duration / 60}")" && \
+echo "Resolution: $resolution" && \
+echo "FPS: $fps"
+```
+
+{{< callout type="info" >}}
+* It works fine as we have videos with same resolution on each folder already
+* If FPS are different, it will preserve the lower one
+{{< /callout >}}
+
 
 Before going to YT, I like to have Brave Browser:
 
