@@ -30,5 +30,10 @@ Once updated, we can connect the real domains with the build:
 
 * https://cozyknittingclub.com
 
+
+### Proposed Themes
+
+Astro Stablo
+
 ---
 

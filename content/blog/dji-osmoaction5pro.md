@@ -252,6 +252,11 @@ echo "npm version: $(npm --version)"
 
 {{< /details >}}
 
+```sh
+git config --global user.name "JAlcocerT"
+git config --global user.email "contact@jalcocertech.xyz"
+```
+
 ---
 
 ### Other topics related to Photo/Video
