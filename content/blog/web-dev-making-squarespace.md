@@ -19,11 +19,11 @@ There will be 2 records, like: `fattouche.ns.cloudflare.com`
 
 
 
-![Uptime Ira](/blog_img/web/success1-ckc/Cloudflare-SquareSpace-DNS.png)
+![Uptime Ira](/blog_img/web/success2-ckc/Cloudflare-SquareSpace-DNS.png)
 
-![Uptime Ira](/blog_img/web/success1-ckc/Cloudflare-SquareSpace-DNSChange.png)
+![Uptime Ira](/blog_img/web/success2-ckc/Cloudflare-SquareSpace-DNSChange.png)
 
-![Uptime Ira](/blog_img/web/success1-ckc/Cloudflare-SquareSpace-DNSChangeUpdate.png)
+![Change the NameServer to Cloudflare Ones](/blog_img/web/success2-ckc/Cloudflare-SquareSpace-DNSChangeUpdate.png)
 
 
 Once updated, we can connect the real domains with the build:
@@ -34,6 +34,11 @@ Once updated, we can connect the real domains with the build:
 ### Proposed Themes
 
 Astro Stablo
+
+* [Astro Foxi](https://github.com/alexadark/foxi-astro)
+    * https://github.com/oxygenna-themes/foxi-astro-theme
+* [Pacamara](https://github.com/palmiak/pacamara-headless)
+* [AllMyLinks](https://github.com/SofiDevO/allmylinks)
 
 ---
 
