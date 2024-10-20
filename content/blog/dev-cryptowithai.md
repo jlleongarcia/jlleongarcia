@@ -62,3 +62,7 @@ I was writing about web3 here: https://jalcocert.github.io/JAlcocerT/guide-web3
 
 * https://whycryptocurrencies.com/
 
+* BlockChain Scanners
+  * [ETHScan](https://etherscan.io/)
+  * [Solscan](https://solscan.io/)
+

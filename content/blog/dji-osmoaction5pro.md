@@ -18,11 +18,29 @@ First, A photo of the latest DJI Camera:
 
 {{< video "https://www.w3schools.com/tags/movie.mp4" >}} -->
 
+
+{{< callout type="info" >}}
+The [Pixel 8 Pro](https://jalcocert.github.io/JAlcocerT/pixel-8-pro-tricks/) is behaving perfectly for videos, but I wanted to try sth different.
+{{< /callout >}}
+
+### DJi OA5Pro Video Quality
+
+{{< callout type="info" >}}
+
+{{< /callout >}}
+
+```sh
+sudo apt install mediainfo
+mediainfo outputvideo.MP4 #ViesiejaiNightWalk.mp4
+```
+
 ### How to edit Videos
 
 {{< callout type="info" >}}
 How to [setup your PC for content creation](https://jalcocert.github.io/Linux/docs/debian/content_creation/): OBSStudio, Shotcut, KDenLive...
 {{< /callout >}}
+
+For simple cuts, I found easier to use ShotCut:
 
 {{< details title="Shotcut with OA5 Pro📌" closed="true" >}}
 
@@ -30,9 +48,9 @@ How to [setup your PC for content creation](https://jalcocert.github.io/Linux/do
 sudo snap install shotcut --classic
 ```
 
-1. Open Shotcut, add the .mp4 file (not the [DJI's LRF](https://raw.githubusercontent.com/JAlcocerT/Docker/refs/heads/main/Backups/NextCloud/nc_mariadb.yml) - Low Resolution File used for the video playback)
+1. Open Shotcut, **add the .mp4 file** (not the [DJI's LRF](https://raw.githubusercontent.com/JAlcocerT/Docker/refs/heads/main/Backups/NextCloud/nc_mariadb.yml) - Low Resolution File used for the video playback)
 2. On the top left side - **add filter**: audio mute / brightness / ...
-3. When you are done witht he changes: CTRLE+E to export as .mp4
+3. When you are done with the changes: **CTRL+E to export as .mp4**
 
 {{< /details >}}
 
@@ -59,9 +77,14 @@ There is the possibility to record at FHD 1080p@240fps, but not with wide mode, 
       * It can also be 2.7k and 4k
    * Hyperlapse during the night was having some glitches
 
-* You are required to [install DJI Mimo app](https://www.dji.com/pl/downloads/djiapp/dji-mimo) - which will allow you to activate the warranty + transfer files (no need for cable!) + receive firmware updates
-    * The app is neither in Google not Apple store...❗
-    * I would keep the .apk handy, as per my experience with the [DJI Tello Drone](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/)
+* You are required to [install DJI Mimo app](https://www.dji.com/pl/downloads/djiapp/dji-mimo) at least to get started.
+    * The App allow you to activate the warranty + transfer files (no need for cable!) + receive firmware updates
+
+{{< callout type="warning" >}}
+* The app is neither in Google not Apple store...❗
+* I would keep the .apk handy, as per my experience with the [DJI Tello Drone](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/)
+{{< /callout >}}
+
 
 {{< callout type="info" >}}
 As they required email registration, I put to test how seriously DJI takes privacy by using **[addy.io](https://github.com/anonaddy/docker) email aliases** ([ex-anonaddy](https://github.com/anonaddy/anonaddy?tab=readme-ov-file#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one))
@@ -137,7 +160,7 @@ sudo apt update
 sudo apt install vlc
 ```
 
-See info about .MP4 in your folder:
+See **info about .MP4's** in your folder:
 
 ```sh
 sudo apt install ffmpeg
@@ -216,6 +239,8 @@ ls *.MP4 | sed "s/^/file '/; s/$/'/" > file_list.txt #add .mp4 of current folder
 
 #generate a video with them
 ffmpeg -f concat -safe 0 -i file_list.txt -c copy output_video.mp4
+#ffmpeg -f concat -safe 0 -i file_list.txt -c:v copy -an output_video.mp4 #silenced video
+#ffmpeg -i output_video.mp4 -filter:v "setpts=PTS/4" -an fast_output_video.mp4 #
 ```
 
 **Check what was created:**
@@ -417,14 +442,17 @@ This is the repo I use for [my Video Editing WorkFlow](https://github.com/JAlcoc
 
 > Very Interesting way to make [video animations with python](https://zulko.github.io/moviepy/gallery.html#data-animations) and even [vector animations](https://zulko.github.io/blog/2014/09/20/vector-animations-with-python/)
 
+Sometimes we just have a hyperlapse video or a video that looks good visually, but the audio is not the best.
 
-{{< details title="Audio for Videos - Free Options📌" closed="true" >}}
+For those we can just silence all the volume and just put some music on top
 
-In [Youtube Studio](https://studio.youtube.com/channel/UCPPMA8ZEusAe5dVH6PbjZFA/music), you also have a library for audio that you can use freely on your videos.
+{{< details title="Audio for Videos - Free Options 📌" closed="true" >}}
+
+In [Youtube Studio](https://studio.youtube.com/channel/UCPPMA8ZEusAe5dVH6PbjZFA/music), you also have a library for **audio that you can use freely** on your videos.
 
 > I tried [freepd](https://freepd.com/) as per [this reddit post](https://www.reddit.com/r/Filmmakers/comments/wjq71o/does_anyone_know_where_to_get_copyright_free/)
 
-You can find open-source, royalty-free, or Creative Commons-licensed music from several platforms that offer chill music for video projects. Here are some great resources:
+You can find open-source, royalty-free, or Creative Commons-licensed music from **several platforms** that offer chill music for video projects
 
 ### 1. **Free Music Archive (FMA)**
    - **Website**: [https://freemusicarchive.org](https://freemusicarchive.org)

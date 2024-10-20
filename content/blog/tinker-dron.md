@@ -19,8 +19,8 @@ This is what I've learn with it so far.
 I have [forked](https://github.com/damiafuentes/DJITelloPy) and created a Docker Image with Python Code which is able to control the drone:
 * https://github.com/JAlcocerT/DJITelloPy
 
-* Hardware wise:
-    * The battery last ~10 min
+* Hardware Specs:
+    * The Battery last ~10 min
     * Weight ~80g
     * Price ~100$
     * It has an Intel CPU which **we can program with python**, 5MP Camera with 720p Live View Vision System, WIFI 802.11n 2.4G,
@@ -64,7 +64,7 @@ Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=12
     * An exam is generally required for drones weighing over 250 grams (0.55 pounds) in most countries.
     * Check your local regulations to ensure compliance, as rules can differ significantly by region.
 
-### DIY Dron Resources
+### DIY Drone Resources
 
 * Haga un PEQUEÑO dron Arduino con cámara FPV: ¿volará?
 
@@ -80,10 +80,51 @@ https://www.youtube.com/watch?v=hDjBi0ErDdw
 https://www.youtube.com/watch?v=0ql20JKrscQ
 https://github.com/jyjblrd/Low-Cost-Mocap
 https://github.com/jyjblrd/Low-Cost-Mocap?tab=MIT-1-ov-file#readme
+
 > Low cost motion capture system for room scale tracking
 
 
+### About Flying
+
+A very interesting [**video series about learning to fly**](https://www.youtube.com/watch?v=rPCMsYS-4oE&list=PLJZONA27OlBqEmWMyuyXD6p1xiFxQXk_K) on a Ultra Light Plane.
+
+* They also teach how to pilot drones: www.aeroilipamagna.es
+* But i discovered them for their initiation course
+
+{{< details title="What you need to know about ULM's 📌" closed="true" >}}
+
+- **Ultra-Light Motorized (ULM)**: Small, lightweight aircraft for recreational flying, training, and aerial photography. Simpler than traditional airplanes.
+
+- **Key Features**:
+  - **Lightweight**: Designed for small takeoff and landing spaces.
+  - **Simple controls**: Easier for beginners.
+  - **Open cockpit**: Offers an immersive flying experience.
+  - **Limited range and speed**: Smaller engines mean lower range and speed.
+  - **Regulations**: Specific licensing requirements depending on the country.
+
+- **Types of ULMs**:
+  - **Microlights**: Smallest and lightest, often single-seat.
+  - **Trikes**: Three-wheeled landing gear, separate pilot seat.
+  - **Powered Parachutes**: Parachute-like canopy, motor, and pilot harness.
+
+- **Popular ULM Models**:
+
+  - **Microlights**:
+    - **Bréguet 901**: Reliable French microlight.
+    - **Skyrider Sport**: Popular American two-seater.
+    - **Flight Design CTS**: Modern microlight with advanced avionics.
+
+  - **Trikes**:
+    - **Polaris Ranger**: Versatile for both flying and ground use.
+    - **Skychaser**: Powerful engine, comfortable seat.
+    - **Bensen Gyrocopter**: Unique autorotation capability.
+
+  - **Powered Parachutes**:
+    - **Skywalker X2**: Stable and predictable flight.
+    - **Paramotor UK Skywing**: British-made, engine options.
+    - **Duet Paramotor**: French-made two-seater.
+
+- **Conclusion**: ULMs provide affordable flying, but require proper training and safety regulations. Consider cost, performance, and maintenance when choosing a model.
 
 
-
-
+{{< /details >}}

@@ -193,3 +193,7 @@ Before we start writing Python scripts in GIMP, we need to install the Python-Fu
 * **Klipper** - https://github.com/Klipper3d/klipper
 
 >  Klipper is a 3d-printer firmware 
+
+### Other DIY Stuff
+
+* Someone made a [**3D Printed HydroFoil** and shared it in this YT Video](https://www.youtube.com/watch?v=Iz0Ar_6GvfA)
