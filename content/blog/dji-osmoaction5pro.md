@@ -12,6 +12,8 @@ First, A photo of the latest DJI Camera:
 
 ![DJI Osmo Action 5 Pro](/blog_img/hardware/dji_oa5pro.jpg)
 
+And some **test video**:
+
 {{< youtube "MlbJ3tY43vE" >}}
 
 <!-- https://demo.mediacms.io/view?m=ZLjVzLcCE
@@ -25,9 +27,19 @@ The [Pixel 8 Pro](https://jalcocert.github.io/JAlcocerT/pixel-8-pro-tricks/) is 
 
 ### DJi OA5Pro Video Quality
 
-{{< callout type="info" >}}
+Very simple: From 1080p, to 4K videos.
 
+Ratios 4:3 or 16:9.
+
+This is a 2.7K Video example, meaning 2688x1512 at 50FPS, during the day:
+
+{{< youtube "cqs4MkJ_4M4" >}}
+
+{{< callout type="info" >}}
+A regular TV can be 4K UHD, meaning 3840x2160. Be aware when recording that it can do x2160 or other
 {{< /callout >}}
+<!-- 
+but also x3840x1600? UW??? -->
 
 ```sh
 sudo apt install mediainfo
@@ -142,7 +154,7 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
   Stabilization is great during the day, but **not during the night.**
 {{< /callout >}}
 
-{{< youtube id="v=cqs4MkJ_4M4" autoplay="false" >}}
+{{< youtube id="TrhDGUzuxxc" autoplay="false" >}}
 
 
 ### My Workflow with the DJI OA5-Pro
