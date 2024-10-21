@@ -20,6 +20,13 @@ If you are looking for a quick and easy Ollama UI, you should have a look to the
 
 But, if you want to go one step further and get an understanding on how this work in Python, [keep reading](#the-streamlit-ollama-project) and you will learn how to create your Streamlit LLM Chat integrated with Ollama, that you can SelfHost.
 
+**Setup Ollama in 5 minutes as per**
+<!-- 
+https://www.youtube.com/watch?v=vukAQPCv7Tw -->
+
+{{< youtube "vukAQPCv7Tw" >}}
+
+
 <!-- https://github.com/AIDevBytes/Streamlit-Ollama-Chatbot -->
 
 <!-- https://github.com/JAlcocerT/Streamlit-Ollama-Chatbot -->

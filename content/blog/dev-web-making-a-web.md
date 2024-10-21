@@ -134,3 +134,8 @@ And it seems that **Google likes it**:
 {{< callout type="info" >}}
 Who said, **embedded Chatbot**?
 {{< /callout >}}
+
+### Real Estate Bot Agent
+
+* Follow up questions from the real state agent etc
+* Do you have family / car / pool
