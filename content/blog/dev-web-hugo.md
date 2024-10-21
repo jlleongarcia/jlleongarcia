@@ -1,12 +1,13 @@
 ---
 title: "How to use HUGO and make quick Websites"
-date: 2024-08-17T23:20:21+01:00
+date: 2024-09-06T23:20:21+01:00
 draft: true
 tags: ["Dev"]
-summary: 'How to get started with HUGO'
+summary: 'How to get started with HUGO and create Webs'
 url: 'using-hugo-as-website'
 ---
 
+To use HUGO, you just need 2 things:
 
 {{< details title="Setup GO & HUGO 📌" closed="true" >}}
 

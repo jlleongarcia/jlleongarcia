@@ -7,26 +7,41 @@ summary: "Developing like a PRO (via SSH or into a container)"
 ---
 
 
-Develop inside Docker container, without worrying about dependencies.
+Develop inside a Docker container / Server, without worrying about dependencies.
+
 
 1. Install VsCode
 2. Install the [Remote Development Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 3. Follow [the instructions to connect](https://code.visualstudio.com/docs/remote/ssh)
 * For SSH, you can do:
-  * CTRL+SHIFT+P ->> Remote SSH (Connect to Host)
-  * Add the IP and the user name
+  * `CTRL+SHIFT+P` ->> `Remote SSH (Connect to Host)`
+  * Add the user name amd the IP/Domain: `youruser@192.168.3.200`
   * Authenticate and Select the Platform (Linux?)
-* For container, do this instead
-  * 
 
-https://www.youtube.com/watch?v=J0NuOlA2xDc
+You will see that you are connected to the server in VSCode as per:
+
+![VSCode SSH Dev](/blog_img/selfh/remote-dev-ssh.png)
+
+
+
+{{< callout type="info" >}}
+Thanks to [this YT Video](https://www.youtube.com/watch?v=miyD4c1dnTU)
+{{< /callout >}}
+
+* For container, do this instead
+
+{{< youtube "J0NuOlA2xDc" >}}
+
+
+<!-- https://www.youtube.com/watch?v=J0NuOlA2xDc -->
 
 > Never install locally
 
-Remote Development with VSCode (SSH) :
-https://www.youtube.com/watch?v=miyD4c1dnTU
+---
 
-### Python
+## Setup Containers for Development
+
+### Containers for Python Apps
 
 ```yml
 version: '3.8'
@@ -42,7 +57,43 @@ services:
     command: tail -f /dev/null #keep it running
 ```
 
-### WEBS
+### Containers for WEBS
+
+
+### Node
+
+It will work for Astro sites, NextJS,...
+
+```yml
+version: '3'
+services:
+  app:
+    image: node:14
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: bash -c "npm install && npm run dev"
+    ports:
+      - 5000:5000
+```
+
+### HUGO
+
+
+* <https://hub.docker.com/r/klakegg/hugo>
+
+
+```yml
+version: "3.9"
+
+services:
+  hugo:
+    image: 0.107.0-ext-ubuntu-onbuild #klakegg/hugo:ext-alpine
+    volumes:
+      - ./mysite:/src
+    ports:
+      - "1313:1313"
+```
 
 #### Gatsby
 
@@ -66,24 +117,6 @@ volumes:
   app_data:
 ```
 
-### HUGO
-
-
-* <https://hub.docker.com/r/klakegg/hugo>
-
-
-```yml
-version: "3.9"
-
-services:
-  hugo:
-    image: 0.107.0-ext-ubuntu-onbuild #klakegg/hugo:ext-alpine
-    volumes:
-      - ./mysite:/src
-    ports:
-      - "1313:1313"
-```
-
 ### Jekyll
 
 * <https://wowthemesnet.github.io/mundana-theme-jekyll/index.html>
@@ -101,19 +134,4 @@ services:
     command: tail -f /dev/null #keep it running
 volumes:
   jekyll-site:  # Define the named volume her
-```
-
-### Node
-
-```yml
-version: '3'
-services:
-  app:
-    image: node:14
-    volumes:
-      - .:/app
-    working_dir: /app
-    command: bash -c "npm install && npm run dev"
-    ports:
-      - 5000:5000
 ```

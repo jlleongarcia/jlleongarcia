@@ -9,28 +9,28 @@ url: 'ai-useful-yet-simple'
 
 Some examples I have been testing with the [Streamlit MultiChat Summary](https://github.com/JAlcocerT/Streamlit-MultiChat).
 
-But it was time to **level up my Streamlit, again.**
+But it was time to **[level up my Streamlit](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#making-streamlit-better), again.**
+
+Lets make some **Business value driven projects!**
 
 ## A Neuromarketing Agent
 
-You don’t have to miss out
-They all laugh when…
-What sounds better than privacy?
-Is your Business performing at 100%? Here is the best/easiest way to find out
-
 {{< callout type="info" >}}
-* [Neuromarketing](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
+* [Neuromarketing with openAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
 {{< /callout >}}
 
 * CTA's
+    * Quieres el premium? No, correre el riesgo!
+    * You don’t have to miss out
+    * They all laugh when…
+    * What sounds better than privacy?
+    * Is your Business performing at 100%? Here is the best/easiest way to find out
+        * Measure, Check, Act
+
+![NeuroMKT1](/blog_img/outro/canva-free-trial-neuromkt.png)
 
 
-Quieres el premium? No, correre el riesgo!
-
-![Honda Civic 6](/blog_img/outro/canva-free-trial-neuromkt.png)
-
-
-![Honda Civic 6](/blog_img/outro/insurance-neuromarketing.png)
+![NeuroMKT2](/blog_img/outro/insurance-neuromarketing.png)
 
 
 ---

@@ -13,6 +13,8 @@ AI
 
 And now AI on the edge? AI-IOT?
 
+https://jalcocert.github.io/RPi/
+
 <!-- 
 Expertise:
     MQTT
