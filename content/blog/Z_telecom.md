@@ -296,10 +296,180 @@ This technology is a part of the broader category of fiber-optic access technolo
 
 ## Signals for Telecom
 
-* SNR
-* rssi
+{{< details title="SNR, RSSi, and T3/T4 Timeouts in Telecom Signals 📌" closed="true" >}}
+
+In telecommunications, various metrics and signals like SNR, RSSI, and T3/T4 timeouts are crucial for assessing the quality and reliability of network connections. Below is an overview of each:
+
+#### SNR (Signal-to-Noise Ratio)
+- **Definition**: SNR measures the ratio of signal power to noise power within a communication channel. It is a critical parameter in determining the quality of a transmission channel and its capacity to transmit data effectively without errors.
+- **Importance**: A higher SNR indicates a clearer signal with less background noise, leading to higher data throughput and fewer transmission errors. It is particularly important in environments with potential interference, such as wireless communications and broadband over coaxial cables.
+
+#### RSSI (Received Signal Strength Indicator)
+- **Definition**: RSSI is a measure of the power level that a receiving device picks up from the wireless signal. It is typically measured in decibels from 0 (zero) to -120dBm (a lower or more negative number means a weaker signal).
+- **Usage**: RSSI is used to estimate how well a device can hear a signal from a router or an access point, impacting the quality of the connection. It is crucial for setting up wireless networks to ensure sufficient coverage and performance.
+
+#### T3 and T4 Timeouts
+- **T3 Timeout**:
+  - **Definition**: A T3 timeout occurs when a cable modem does not receive a response from the CMTS (Cable Modem Termination System) after multiple retries of sending a request. It often indicates a problem in the upstream path in cable networks.
+  - **Implications**: Frequent T3 timeouts can lead to degraded service, increased latency, and intermittent connection issues.
+- **T4 Timeout**:
+  - **Definition**: A T4 timeout is declared when the cable modem has been unable to achieve upstream synchronization with the CMTS for a period extending beyond the maximum allowable time, typically 30 seconds.
+  - **Consequences**: This is more severe than a T3 timeout and can result in the modem failing to connect or dropping the connection entirely, often requiring a restart or intervention.
+
+### Practical Applications and Monitoring
+- **Network Performance Monitoring**: Service providers continuously monitor these parameters to manage network health. Adjustments are made based on SNR and RSSI readings to optimize performance, while T3/T4 timeouts help identify and troubleshoot connectivity issues.
+- **Installation and Maintenance**: Proper setup and regular maintenance of network equipment are crucial to maintaining good SNR and RSSI levels, thereby minimizing T3/T4 timeouts and ensuring reliable service delivery.
+
+Understanding and managing SNR, RSSI, and T3/T4 timeouts are fundamental aspects of maintaining high-quality and reliable telecommunications services. These metrics provide valuable insights into network conditions, helping technicians and engineers optimize infrastructure and address issues proactively.
+
+{{< /details >}}
+
+{{< details title="2.4G vs 5G 📌" closed="true" >}}
+
+In telecommunications, terms like 2.4G, 5G, 5GL, and 5GU refer to different wireless communication standards and frequency bands.
+
+ Each has specific characteristics that make them suitable for various applications:
+
+2.4G (2.4 GHz Wi-Fi) 2.4G refers to the 2.4 GHz frequency band used by Wi-Fi networks (IEEE 802.11 standards). It is one of the most common frequencies for wireless networking worldwide.
+- **Characteristics**:
+  - **Range**: Generally offers greater coverage area than higher frequencies due to its longer wavelength, which can better penetrate walls and other structures.
+  - **Interference**: More prone to interference as many devices (microwaves, Bluetooth devices, and other Wi-Fi networks) operate in this band.
+  - **Bandwidth**: Typically provides slower speeds compared to the 5 GHz band due to congestion and limited channel options.
+
+ 5G (5 GHz Wi-Fi) 5G in this context refers to the 5 GHz frequency band also used for Wi-Fi networks. It is not to be confused with 5G cellular technology.
+- **Characteristics**:
+  - **Range**: Shorter range than 2.4 GHz due to higher frequency, which has more difficulty penetrating solid objects.
+  - **Interference**: Less congested than the 2.4 GHz band, leading to less interference and typically faster, more reliable connections.
+  - **Bandwidth**: Supports higher data rates, ideal for bandwidth-intensive applications like streaming high-definition video.
+
+5GL (5G Low Band) 5GL refers to the low-band spectrum of 5G cellular networks. These frequencies are typically below 1 GHz.
+- **Characteristics**:
+  - **Coverage**: Excellent wide-area coverage and building penetration due to the long wavelengths of low-band frequencies.
+  - **Speed**: Lower data rates compared to mid-band and high-band 5G, but more consistent coverage across vast areas.
+  - **Application**: Ideal for providing broad 5G coverage, especially in rural areas where higher frequencies may not reach effectively.
+
+5GU (5G Ultra Wideband, often 5G High Band) 5GU often refers to the ultra-wideband or high-band spectrum used in 5G cellular networks, typically known as mmWave (millimeter wave) frequencies ranging from 24 GHz to 40 GHz and beyond.
+- **Characteristics**:
+  - **Speed**: Provides extremely high data rates and capacity, suitable for high-demand applications in dense urban environments.
+  - **Range**: Very limited coverage and poor building penetration due to the high frequency and short wavelengths.
+  - **Application**: Best used in densely populated urban areas or specific venues like stadiums and convention centers where large bandwidth is needed over a small area.
+
+The terms 2.4G and 5G when referring to Wi-Fi indicate different frequency bands, each with its advantages in terms of range, interference, and bandwidth. In the context of cellular technology, 5GL and 5GU distinguish between the low and high ends of the 5G spectrum, affecting coverage, speed, and application suitability.
+
+Understanding these differences is crucial for optimizing wireless network performance and selecting the right technology for specific needs.
+
+{{< /details >}}
 
 ## Other Acronyms
+
+
+{{< details title="VoIP 📌" closed="true" >}}
+
+- **VoIP (Voice over Internet Protocol)**: A technology that allows voice communications and multimedia sessions over Internet Protocol (IP) networks, such as the internet.
+  
+- **Functionality**:
+  - Converts analog voice signals into digital data packets.
+  - Data is transmitted over the internet or other packet-switched networks.
+  - At the destination, data packets are converted back into voice signals.
+
+- **Advantages**:
+  - **Cost-Effective**: Reduces call costs, especially for long-distance and international calls.
+  - **Scalability**: Easily scalable to accommodate growing business needs without significant infrastructure changes.
+  - **Flexibility**: Allows users to make and receive calls from multiple devices, including smartphones, laptops, and VoIP-specific handsets.
+  - **Rich Features**: Supports advanced call features like call forwarding, voicemail to email, and conference calling.
+
+- **Applications**:
+  - Used extensively in both personal communications and by businesses for daily operations.
+  - Integral to modern unified communications solutions, integrating with other communications technologies like video conferencing and instant messaging.
+
+- **Requirements**:
+  - Reliable high-speed internet connection.
+  - VoIP-enabled devices or software.
+  - Proper configuration and maintenance to ensure quality of service (QoS) and security.
+
+
+VoIP (Voice over Internet Protocol) typically involves devices or applications specifically designed to handle voice communications over internet protocols, rather than devices primarily intended for other functions like streaming media. Here are some typical devices and setups that are commonly used for VoIP:
+
+### Dedicated VoIP Phones
+- **Hardware-based VoIP Phones**: These look similar to traditional telephones but connect to the internet instead of a standard telephone line. They have built-in IP technology to manage the routing of voice data over an internet connection.
+
+### Computers
+- **Softphones**: Software applications installed on computers that enable voice calls over the internet using a microphone and speakers or a headset. Examples include Skype, Zoom, or Google Voice.
+
+### Mobile Devices
+- **VoIP Apps on Smartphones and Tablets**: Mobile devices can use apps like WhatsApp, Viber, or FaceTime Audio to make voice calls over the internet. These apps use the device’s data connection (Wi-Fi or cellular data) to transmit voice.
+
+### Analog Telephone Adapters (ATA)
+- **ATA Devices**: These devices allow traditional analog telephones to be connected to the internet for VoIP services. They convert analog voice signals into digital data that can be transmitted over the internet.
+
+### Specialized VoIP Adapters and Routers
+- **Integrated VoIP Routers**: Some routers come with built-in VoIP support, allowing direct connection of traditional phones and routing of VoIP calls alongside normal internet traffic.
+
+### Not Typically VoIP Devices
+- **Smart TVs**: While smart TVs are capable of internet connectivity and can support apps for streaming services like Netflix, they are generally not used for VoIP communications. Their primary function is media consumption rather than voice communication.
+
+VoIP technology is versatile and can be implemented across various devices, but it primarily revolves around voice communication capabilities rather than media streaming. Devices used for VoIP need to support audio input and output, have a stable internet connection, and be equipped with the necessary software to manage voice data packets.
+
+{{< /details >}}
+<!-- 
+Anomaly Detection - Video over IP
+
+- **Workshop - Anomaly Detection - Video over IP**
+
+  - **Current Setup for EOS Streamparser**:
+    - Anomaly detection is already in place for Vodafone Ziggo.
+    - Monitoring error code 2004.
+    - **Grafana Production Dashboard**: NL/EOS-Linear-Site-Anomaly_Detection-NL
+    - **Useful Grafana Dashboards**:
+      - **NL/VodafoneZiggo_SMC_FIXED**: [EOS Linear Site Anomaly Detection Details NL](https://dashboard.horizon.tv/d/ROz0DyMGz/eos-linear-site-anomaly-detection-details-nl?tab=visualization&orgId=1&from=1665054293989&to=1665140693990&var-site=AL04&var-severity=Critical%20%20%20Major%20%20%20Minor&var-alarm_state=Activate%20%20%20Confirmed%20%20%20Detected) - Focuses on unique EOS set-top boxes with errors.
+      - **NL/Apollo-ErrorDescriptions-NL**: [Apollo Error Descriptions NL](https://dashboard.horizon.tv/d/wHgSrQ3Mk/apollo-errordescriptions-nl?orgId=1)
+
+  - **Expansion to Apollo Set-Top Box**:
+    - Need to establish another model type and monitor additional error codes.
+    - **Error Codes for Apollo**:
+      - **2005**: Buffering error due to low bandwidth, applicable only for IP channels.
+      - **9994**: Connection problem - modem disconnected from the internet.
+      - **9995**: Connection problem - disconnected over WiFi.
+      - **9996**: Connection problem - disconnected over Ethernet.
+      - Collectively referred to as triple 9 x's (999x errors).
+    - Initial implementation with error code 2005, followed by the addition of other codes.
+
+  - **Considerations**:
+    - Determine if a separate dashboard is needed.
+    - Consider monitoring alarms for specific issues like DS SNR dropping, HFC related issues, or local signal issues.
+    - Trace back issues to specific CMTS or modem types.
+
+  - **Impact Assessment**:
+    - Monitor error codes 2005, 9994, 9995, 9996.
+    - Correlate these errors with modem models (MV1, MV2, M3...).
+    - Determine if the issue pertains to Apollo or EOS set-top boxes.
+    - Identify CM model/brand and relevant topology (e.g., AD16, AP03...).
+    - Utilize ServeAssure for mapping topology and adding CMTS names (Casa, Cisco, etc.).
+    - Analyze connection types (Ethernet/WiFi) and their correlation with errors.
+    - Identify common patterns such as WiFi connections with specific devices and firmware encountering frequent errors. -->
+
+{{< details title="What's a Set-top box📌" closed="true" >}}
+
+Set-top boxes (STBs) are primarily devices that receive and decode digital television broadcasts from satellite, cable, or broadband sources to display on a television or similar display device. They are not inherently Voice over Internet Protocol (VoIP) devices.
+
+ However, with the advancement in technology and integration of various services, some modern set-top boxes can support VoIP functionality if they are connected to the internet and have the necessary software and hardware capabilities to handle voice communications.
+
+Here's a breakdown of their functionalities:
+
+- **Primary Function of Set-Top Boxes**:
+  - Receive, decode, and display digital television signals.
+  - Provide access to on-demand content, streaming services, and interactive television applications.
+
+- **VoIP Functionality**:
+  - Some advanced set-top boxes can integrate VoIP features, allowing users to make voice calls over the internet.
+  - This integration typically requires the set-top box to be connected to the internet and configured with VoIP software.
+
+- **Device Integration**:
+  - Integration of multiple services like internet browsing, media streaming, and VoIP on a single device like a set-top box offers a unified home entertainment and communication solution.
+
+In summary, while traditional set-top boxes are not VoIP devices, the convergence of home technology can enable them to support VoIP services alongside their primary functions.
+
+{{< /details >}}
 
 {{< details title="What it is BackHaul 📌" closed="true" >}}
 
@@ -328,9 +498,35 @@ In summary, backhaul is a fundamental part of the telecommunications infrastruct
 
 - **RDK-B (Reference Design Kit for Broadband)**: RDK-B is an open-source software stack for broadband devices that is designed to standardize certain elements of these devices and accelerate the deployment of new services. It provides a common framework for powering customer-premises equipment (CPE) such as gateways, routers, and modems.
 
+
 <!-- OFW will have FirmwareVersion / ParentFirmwareVersion == LG-RDK 
 mv2 are legacy routers
 -->
+
+
+- **OTT (Over-The-Top)** refers to content and services provided over the internet that bypass traditional distribution. In the context of telecommunications, OTT services relate to media streaming, communication, and other internet-based services that do not require users to subscribe to traditional cable or satellite pay-TV services. Here’s a detailed look at OTT and its relevance:
+
+{{< details title="More about OTT 📌" closed="true" >}}
+
+- **Over-The-Top**: The term "over-the-top" implies that these services go 'over' a traditional cable or satellite TV system to provide content directly to viewers via the internet.
+- **Types of Services**:
+  - **Video Streaming**: Services like Netflix, Hulu, Amazon Prime Video, and Disney+ that offer on-demand content.
+  - **Audio Streaming**: Platforms such as Spotify, Apple Music, and Pandora.
+  - **Communication Services**: Applications like WhatsApp, Skype, and Zoom that provide messaging, voice, and video calling functionalities without the need for traditional telecommunication services.
+
+Relation to Telecom
+- **Data Traffic**: OTT services contribute significantly to data traffic on telecom networks. As more users stream high-definition video or engage in video conferencing, the demand for robust and high-speed data services increases.
+- **Revenue Models**: While OTT providers primarily generate revenue through subscriptions, advertisements, or pay-per-view models, telecom operators may leverage this demand by offering bundled data packages, high-speed internet plans, or partnering with OTT platforms.
+- **Network Infrastructure**: The rising popularity of OTT services pushes telecom companies to invest in upgrading their network infrastructure to handle increased data loads and provide uninterrupted, high-quality service.
+
+Impact and Trends
+- **Consumer Behavior**: The convenience and variety of content offered by OTT platforms have led to a shift in consumer behavior, with more users opting for internet-based entertainment solutions over traditional TV.
+- **Regulatory Attention**: The growth of OTT services has attracted regulatory scrutiny regarding issues like data privacy, net neutrality, and fair competition practices.
+- **Innovation and Competition**: The OTT space is highly competitive and drives continuous innovation in content delivery technologies, such as improved compression algorithms and adaptive streaming techniques.
+
+OTT services in telecommunications represent a significant shift in how content is delivered and consumed. They bypass traditional broadcast methods to provide direct-to-consumer streaming services via the internet. This shift not only affects consumer preferences and behaviors but also influences the strategic operations and infrastructure development of telecom companies. As OTT continues to grow, it remains a critical area for innovation, investment, and regulation in the telecom sector.
+
+{{< /details >}}
 
 
 
@@ -353,6 +549,8 @@ While RDK-B is focused on software standardization for broadband devices, OFT (O
 ---
 
 ## FAQ
+
+A common data model, CDM, or unified pipeline / wide table can help to correlate.
 <!-- 
 wifi pod/connect box -- plume cloud --- aws s3 bucket --- ODH preprocessing --- country specific data feed
 right now is 3hours
@@ -406,7 +604,8 @@ streamparser_kafka \
 {{< /details >}}
 
 {{< details title="Streaming vs Batch - kafka vs HDFS 📌" closed="true" >}}
-rdkb  - its streaming so we probably dont have HDFS
+
+* RDKb  - its streaming pipeline so we probably dont have HDFS
 
 {{< /details >}}
 
@@ -488,6 +687,180 @@ rdkb  - its streaming so we probably dont have HDFS
 
 {{< /details >}}
 
+
+{{< details title="Meeting Creation - Scheduler Template 📌" closed="true" >}}
+
+- **Meeting Creation**
+  - **How/what - Always use them!**
+    - The context of this meeting is ....
+    - The objectives of this meeting is to ... project planning, solving a problem, setting a goal, making a decision, or mapping out a customer journey...:
+      - **Inputs**:
+        
+      - **Challenges**:
+        
+      - **Understanding trade-offs**:
+        - **Option A**: Using existing unified pipeline
+        - **Option B**: Using only streamparser
+      - **Decision to be made**: @someone
+        - Which of the 2 routes to take?
+        - How can it be prioritized?
+      - **Estimations**: @someone
+        - What are the blockers that we might find?
+
+
+<!-- 
+Scheduling time in the only time slot where all stakeholders have availability for tomorrow.
+
+The objectives of this meeting are to plan and prioritize the workload to deploy the Anomaly Detection Model that has been prepared on the Unified Pipeline:
+   • Given the following inputs: 
+      ○ The notebooks with the model (it trains itself with the last 7d of HDFS data @Mishra, Ankur
+      ○ The high-level diagram
+      ○ Comment on the data aggregation column name
+   • How can the model be deployed on-prem?
+      ○ Is the Docker base image checked ready to accept this model?
+      ○ Will its execution affect any other pipelines?
+   • Estimations:
+      ○ How many story points will this activity take?
+      ○ What are any other blockers that we might find that can affect the ETA?
+
+   • Decisions to be made:
+      ○ How can the model be evaluated?
+         § Agreement on the Grafana (non-ML) and Kibana solution
+         § Further iterations when getting from client 'ground truth data' to the model hyperparameters
+      ○ Which Priority will get in the development queue?
+
+After model deployment and its validation, DA team will require 1-2 story points to be ready for the demo with the Grafana panels that will read from Graphite the model's output. -->
+
+{{< /details >}}
+
+{{< details title="Meeting Creation - Bug RCA 📌" closed="true" >}}
+
+- **BUG** - [Jira-123](#faq)
+
+  - **Context**:
+  
+  - **RCA** (Root Cause Analysis):
+  
+  - **Solution**:
+  
+  - **Next Steps**:
+
+{{< /details >}}
+
+{{< details title="Meeting Summary - Always! 📌" closed="true" >}}
+
+Certainly! Here's the meeting summary template formatted without headers and using bold for key sections:
+
+- **Meeting Details**
+  - **Date**: [Insert date]
+  - **Time**: [Insert time]
+  - **Location/Platform**: [Insert location or virtual platform used]
+  - **Attendees**: [List attendees and their roles or departments]
+
+- **Objective**
+  - Briefly state the purpose of the meeting. [E.g., To review project progress, discuss challenges, and plan next steps.]
+
+- **Key Discussion Points**
+  - **Topic 1**: [Summary of discussion]
+    - **Sub-point**: [Details]
+  - **Topic 2**: [Summary of discussion]
+    - **Sub-point**: [Details]
+  - **Topic 3**: [Summary of discussion]
+    - **Sub-point**: [Details]
+
+- **Decisions Made**
+  - **Decision 1**: [Details of the decision and who is responsible]
+  - **Decision 2**: [Details of the decision and who is responsible]
+  - **Decision 3**: [Details of the decision and who is responsible]
+
+- **Action Items**
+  - **[Action Item 1]**:
+    - **Assigned to**: [Name]
+    - **Deadline**: [Date]
+  - **[Action Item 2]**:
+    - **Assigned to**: [Name]
+    - **Deadline**: [Date]
+  - **[Action Item 3]**:
+    - **Assigned to**: [Name]
+    - **Deadline**: [Date]
+
+- **Challenges and Concerns**
+  - **Challenge 1**: [Description and proposed mitigation or solution]
+  - **Challenge 2**: [Description and proposed mitigation or solution]
+
+- **Next Steps**
+  - **[Next Step 1]**: [Details and responsible person or team]
+  - **[Next Step 2]**: [Details and responsible person or team]
+
+- **Additional Notes**
+  - [Any other information that attendees need to remember or consider]
+
+- **Follow-Up Meeting**
+  - **Scheduled Date**: [Insert date]
+  - **Objective**: [Insert objective of the follow-up meeting]
+
+- **Feedback on Meeting**
+  - [Optional: Any feedback from attendees or suggestions for improving future meetings]
+
+This format emphasizes key sections with bold text for clarity, ensuring that the summary is easy to read and navigate.
+
+<!-- Summarizing what we have discussed in this meeting - The issue we discussed is: how close to real time we can get the anomaly detection:
+   • By using the existing unified pipeline:
+      ○ Constrains: 
+         § PLUME data gets processed to start our pipeline already ~4h behind
+         § From that point the unified pipeline gets executed - I have checked and to perform all the joins in pick hours have found between 30-45 min
+         § Then, the aggregations to feed the model starts - This is around 5-10 min
+      ○ After this, that aggregated table has to be synced to GCS and feed the model.
+What we know for now, is that given the current topology (cmts, GW Type and GW Firmware), the model can predict anomalies in 5-10min.
+      ○ Finally, get the output to Graphite, so that its displayed on Grafana.
+      ○ Important: As we are using the unified pipeline, we will predict error on WIFI connected STB's only. Also the STB's that act as their own GW are not considered here.
+   • What we called, plan B - Model feed using only Streamparser: 
+Since the information that we are using for the anomaly detection (cmts, GW Type and GW Firmware) is found in Streamparser kafka topic, we could bypass waiting time of the plume data and perform:
+      ○ Perform the aggregation to feed the model with streamparser data only.
+      ○ Sync to GCS that table and execute the model.
+      ○ Get the output to grafana for the final display.
+      ○ Important: with this approach we will be detecting anomalies in both, WIFI and ETH connected STB's (we avoided client_stats). Also we would see SMT's as well. This might increase the processing time of the model to detect anomalies. But as our current data refresh it would be already accelerating everything by 4h.
+The next steps:
+   • We will continue with the first option for the upcoming demo of the dashboard with the anomaly detection.
+   • We expect that on WK10 (From next Tuesday) we can work with MLOps on the integration of the Trained Model into GCP.
+Please let me know if any further questions. -->
+<!-- 
+[Project Enhancement] Assistance Requested for Data Integration in Pipeline
+
+**Context:**
+To enhance our current project model, we require:
+  - Linking specific device data from the data parsing system with user statistics, focusing on individual device identifiers rather than group identifiers.
+  - Inclusion of devices connected to the latest generation hardware, which is currently missing from our data.
+
+**Objectives:**
+  - Address issues noted in internal tracking system entries #10501 and #10464.
+    - For the existing data flow: [Data Pipeline URL](#faq)
+    - Integrating data related to the latest hardware generation into the pipeline.
+    - Ensuring device identifiers (similar to user statistics identifiers) are included in the data parsing output.
+  - Collaborate with the Data Engineering and Data Science teams to decide on future actions and prioritize tasks.
+  - Discuss potential challenges and explore solutions to mitigate them.
+
+Please confirm your attendance by accepting the meeting invitation. If you are unable to attend, inform me at your earliest convenience so we can arrange another suitable time if needed. -->
+
+
+{{< /details >}}
+
+```mermaid
+graph LR
+    A[ODH-39479 Bring STB Mac to Streamparser] --> B[SMD-10817 EDA Design Modify Unified Pipeline to be per STB mac as well]
+    B --> C[SMD-10661 EDA Design to bring POD attributes]
+    C --> D[ODH Pipeline Implementation to use STB mac and bring POD attributes]
+    D --> E[DSMLE 1159/1160/1161]
+```
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 {{< callout type="info" >}}
 Managing **Project Expectations** with a [Project Charter](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Project/Charter.md  "Microsoft Project Charter Example {rel='nofollow'}").
 {{< /callout >}}
@@ -498,3 +871,25 @@ Managing **Project Expectations** with a [Project Charter](https://github.com/Az
 ### Prompts for Telecom Learning
 
 You are an expert telecom and network engineer who can summarize concepts in simple terms in markdown. You will use for readability bullet points, bold and underlines, but never h1 h2 or any header.
+
+
+
+
+
+
+
+<!-- 34:2C:C4:12:34:56
+342CC4B123456
+Loc_id: 6108a72c1970e1234567890
+ 
+ROUTER WSW: Compal Broadband Networks CH7465LG-LC 
+
+gmd --> 'id_type --->' CH7465LG ===> COMPAL MV1
+
+
+CH7465LG-NCIP-6.15.32p3-NOSH
+
+CH7465LG(-xx) - Compal MV1
+CH7465CE
+
+Plume agent NOC - needs to be activated -->

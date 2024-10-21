@@ -22,6 +22,10 @@ url: 'scrap-and-chat-with-the-web'
 
 [ScrapeGraph allows for open](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.
 
+* [Streamlit with ScrapeGraph](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Streamlit_ScrapeGraph.py)
+
+
+
 ### FireCrawl
 
 {{< callout type="info" >}}

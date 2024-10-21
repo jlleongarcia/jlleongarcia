@@ -139,3 +139,25 @@ Who said, **embedded Chatbot**?
 
 * Follow up questions from the real state agent etc
 * Do you have family / car / pool
+
+> From Idea to Impact, **with AI**
+
+<!-- 
+Observability Platform for LLMs
+  https://github.com/traceloop/openllmetry
+  https://github.com/langfuse/langfuse
+  
+  Epam Dial + prometheus + grafana
+  Or with LangSmith
+Also DataDog - https://docs.datadoghq.com/llm_observability/ -->
+
+<!-- Goals:
+  • AI Gen
+    LangChain
+    LocalModels: with Docker
+    From Streamlit to Chainlit / Gradio: https://pypi.org/project/gradio/
+    LLMOps: MLFlow, Airflow, VectorDBs… Onboarding Guide - GenAI-X Innovation Team - EPAM Knowledge Base
+      mlflow/mlflow: Open source platform for the machine learning lifecycle (github.com)
+    GPT4-Turbo
+  • V3 of ML trainnings - To include MLFlow
+Airflow to start some job? -->
