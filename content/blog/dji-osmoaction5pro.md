@@ -25,6 +25,11 @@ And some **test video**:
 The [Pixel 8 Pro](https://jalcocert.github.io/JAlcocerT/pixel-8-pro-tricks/) is behaving perfectly for videos, but I wanted to try sth different.
 {{< /callout >}}
 
+It's gonna be a companion for the **[next adventures](#adventures)**
+
+![Karting Adventure](/blog_img/Accidente_karting-min.gif)
+
+
 ### DJi OA5Pro Video Quality
 
 Very simple: From 1080p, to 4K videos.
@@ -536,3 +541,20 @@ These resources should help you find the perfect chill music for your video proj
 ### Video as a Code
 
 To create **video from code**, you can use the [React Framework - **Remotion**](https://www.youtube.com/watch?v=deg8bOoziaE&t=58s)
+
+A video is even better than a [Dashboard, like FlexDashboards](https://jalcocert.github.io/JAlcocerT/guide-r-flexdashboards-in-github-pages/).
+
+And much much better than just plaind ata
+
+### Outro
+
+For adventures
+
+* https://github.com/Flomp/wanderer - The trail catalogue that makes your GPS data searchable
+
+wanderer is a self-hosted trail database. You can upload your recorded tracks or create new ones and add various metadata to build an easily searchable catalogue.
+
+* Alternative Software - https://github.com/KonradIT/CamControl
+
+Open source app to connect with popular action cameras, replacing your vendor's closed source app system.
+

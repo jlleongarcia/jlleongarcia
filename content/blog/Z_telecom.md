@@ -865,6 +865,8 @@ graph TD;
 Managing **Project Expectations** with a [Project Charter](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Project/Charter.md  "Microsoft Project Charter Example {rel='nofollow'}").
 {{< /callout >}}
 
+![Cookies Meme](/blog_img/memes/features-vs-needs.png)
+
 #### More T-Shaped Skills
 
 

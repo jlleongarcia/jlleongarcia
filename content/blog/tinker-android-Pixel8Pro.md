@@ -49,3 +49,8 @@ you will need to restart and HDMI cable to enjoy :)
 
 * [2FAS](https://play.google.com/store/apps/details?id=com.twofasapp)
 * [Bitwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden)
+
+
+### Running Windows on Android
+
+* https://github.com/brunodev85/winlator

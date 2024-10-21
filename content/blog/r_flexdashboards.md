@@ -17,7 +17,10 @@ url: 'guide-r-flexdashboards-in-github-pages'
 
 Flexdashboards are a powerful tool for creating **dynamic, interactive dashboards within R**.
 
-Developed by RStudio, they leverage the infrastructure of R Markdown to allow users to build robust visual displays of information.
+Developed by RStudio, they leverage the infrastructure of R Markdown to allow users to build **robust visual displays of information**.
+
+
+![Dashboard Map Example](/blog_img/data-experiments/unemployment-evolution.gif)
 
 Flexdashboards support a variety of visual outputs, including tables, data frames, plots, and even more advanced interactive visualizations using packages such as plotly and leaflet.
 

@@ -1,12 +1,16 @@
 ---
-title: "Creating Apps with Python Flet"
+title: "First Look to Flutter Apps"
 date: 2025-10-17T23:20:21+01:00
 draft: true
 tags: ["Dev"]
 description: ''
-summary: 'Flutter Apps, but created with Python via Flet'
+summary: 'Flutter Apps. Created with Python via Flet and more'
 url: ''
 ---
+
+## FlutterFlow
+
+* https://app.flutterflow.io/project
 
 ## The Python Flet Project
 

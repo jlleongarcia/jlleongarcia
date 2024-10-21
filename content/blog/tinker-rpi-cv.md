@@ -235,8 +235,13 @@ A complete and local NVR designed for Home Assistant with AI object detection. U
 ---
 
 ## FAQ
-HA Desktop - https://flathub.org/apps/com.cassidyjames.butler
 
+* HA Desktop - https://flathub.org/apps/com.cassidyjames.butler
+
+MJPG-streamer takes JPGs from Linux-UVC compatible webcams, filesystem or other input plugins and streams them as M-JPEG via HTTP to webbrowsers, VLC and other software. It is the successor of uvc-streamer, a Linux-UVC streaming application with Pan/Tilt
+
+* https://github.com/jacksonliam/mjpg-streamer
+  * https://sourceforge.net/projects/mjpg-streamer/
 
 ### AI
 

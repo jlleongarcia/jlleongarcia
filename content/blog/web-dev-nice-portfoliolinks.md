@@ -83,6 +83,8 @@ It can be built published to **Github Pages** with this **sample Workflow**: [De
 
 In **less than ~1min**, your site will be refreshed at Github Pages.
 
+Other Interesting HUGO Themes: BlowFish, BeautifulHugo, 
+
 {{< /details >}}
 
 {{< details title="It all started testing this Astro Theme with TinaCMS📌" closed="true" >}}
@@ -138,7 +140,7 @@ You can use **Tina together with a Github Repository**
 
 {{< /details >}}
 
-<!-- ### Web Analytics - A Comparison
+### Web Analytics - A Comparison
 
 Microsoft Dynamics 365 enhances marketing efforts by offering the capability to send emails directly from within the context of the records you are working on. This feature integrates seamlessly with its robust marketing automation capabilities.
 
@@ -148,9 +150,15 @@ Microsoft Dynamics 365 enhances marketing efforts by offering the capability to 
 
 - **Adobe Analytics**: Known for its advanced capabilities in website analytics and customer journey intelligence. Adobe Analytics offers detailed insights into customer behaviors and preferences, going beyond basic traffic data to help understand deeper customer dynamics.
 
+
+<!-- 
 sf - secure forms
 aa - adobe analytics
 adf - azure data factory
-ac - adobe campaign
+ac - adobe campaign -->
 
-Together, these tools provide comprehensive solutions for refining marketing strategies, enhancing user engagement, and ultimately driving business growth through informed decision-making. -->
+Together, these tools provide comprehensive solutions for refining marketing strategies, enhancing user engagement, and ultimately driving business growth through informed decision-making.
+
+**They also eat cookies**
+
+![Cookies Meme](/blog_img/web/COOKIES.jpg)

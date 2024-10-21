@@ -19,7 +19,7 @@ A very interesting **small factor PC** with
 {{< callout type="info" >}}
 * It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/).
 
-* I went with [Zorin OS](https://zorin.com/os/) for simplicity.
+* I went with [Zorin OS](https://zorin.com/os/), a [Linux focused on simplicity](#faq).
 {{< /callout >}}
 
 
@@ -480,6 +480,157 @@ services:
 * Enter the FireBat AK2 Plus MiniPC **bios by pressing ESC**.
 
 
+{{< details title="Other Intersting Linux 📌" closed="true" >}}
+
+* Whonix / Tails  - Debian based
+* Qubes - Fedora based
+
+{{< /details >}}
+
+
+{{< details title="Customize Linux Visuals 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+{{< details title="Gaming on the Firebat with Linux 📌" closed="true" >}}
+
+* Get Steam running
+
+And then...
+
+{{< /details >}}
+
+{{< details title="Interesting Apps, for W11 and Linux 📌" closed="true" >}}
+
+Sure! Here's the list of applications and tools formatted in Markdown, organized into categories for better readability:
+
+### Virtualization and Remote Access
+- Tailscale
+- Oracle Virtual Box
+- VMware (Freemium)
+
+### VPN Services
+- Proton VPN
+- NordVPN
+- Windscribe (Freemium)
+
+### Development and Programming Tools
+- RStudio
+- Matlab
+- Octave
+- Python Anaconda Spider
+- OpenScad (FOSS)
+- Ansys (Mechanics)
+- MicroCap (Electronics)
+- CODESYS (Control Systems)
+
+### Password Managers and Security Tools
+- Bitwarden (Password Manager)
+- Authy (2FA)
+- ESET Online Scanner
+- AdwCleaner
+
+### Cloud Storage and Synchronization
+- Mega
+- Syncthing
+- OneDrive
+- Google Drive
+- ODrive
+- Nextcloud
+
+### Media and Entertainment
+- Spotify
+- VLC
+- Daemons Tools
+
+### Browsers and Online Tools
+- Mozilla
+- Brave
+- Chrome
+
+### Office and Productivity Software
+- WPS Office
+- Adobe Acrobat (PDF Reader)
+- Microsoft OneNote
+- Thunderbird
+- Photoscape
+- Nero
+- FrameFun (Photo Frames)
+
+### Android Emulation
+- Nox (Android Emulator)
+
+### System Monitoring and Optimization
+- OpenHardwareMonitor (System Temperature)
+- HWMonitor (System Temperature)
+- CPU-Z (System Information)
+- MSI Afterburner
+- GPU-Z
+- Ryzen Master
+
+### Communication and Collaboration
+- Discord
+- Raindrop
+
+### Graphic Design and 3D Modeling
+- FreeCAD
+- Ultimaker Cura
+- Inkscape
+- Photoshop
+
+### Miscellaneous
+- Proton (Miscellaneous)
+- F.lux (Night Light Reduction)
+- qBittorrent
+- Dreamweaver (Web Pages)
+- HP Deskjet 1510 Series (Printer Software)
+
+This Markdown list organizes the applications into categories, making it easier to understand the purpose and usage context of each app or tool.
+
+**FOR LINUX**
+
+### Virtualization Software
+- Oracle VM Virtual Box
+- VMware
+- vboxlinuxadditions.run
+
+### Development Tools
+- RStudio
+- Visual Studio Code
+- Octave
+- Python
+
+### Package Managers and Software Centers
+- Synaptic Package Manager
+- Flatpak
+- [Snapcraft](https://snapcraft.io/)
+
+### Gaming Platforms
+- Steam
+- Epic Games
+
+### Linux Distributions and Desktop Enhancements
+- Ubuntu - Gnome Extensions
+  - AppFolders Management Extension
+  - OpenWeather
+  - Gnome Tweaks Tool
+- Lubuntu
+  - Cairo Dock
+- Elementary
+  - Minimize Button
+  - Show Desktop
+  - Gnome Tweaks
+
+### System Tools and Utilities
+- Authy
+- Psensor
+- GtkStressTesting
+
+
+
+{{< /details >}}
+
 {{< hextra/feature-grid >}}
  
 {{< hextra/feature-card
@@ -676,3 +827,90 @@ A raspberry Pi inside a container - https://github.com/ptrsr/pi-ci
 ### How I Created the diagrams
 
 * Using **MermaidJS** with mermaid.live as per [this guide](https://fossengineer.com/free-diagram-tools/#mermaidjs)
+
+## ThrowBack on Hardware
+
+its crazy to see how much PCs have evolved in few decades.
+
+
+
+{{< details title="These are the ones I could try so far 📌" closed="true" >}}
+
+Here's the provided information summarized and organized in a Markdown format, categorizing the details about each PC and laptop by its specifications and timeline:
+
+### Desktop PCs
+
+#### 1. Primer PC Casa
+- **Date Purchased**: November 2001
+- **CPU**: Intel Celeron Coppermine 958 MHz
+- **Motherboard**: Gigabyte GA-6VXC7-4x(p), Chipset VIA VT82C694x Apollo Pro B3A
+- **RAM**: 256 MB PC133 SDRAM
+- **Graphics**: Nvidia Riva TNT2 M64 32 MB
+- **Monitor**: Nec Multisync 75F 17"
+- **Sound Card**: Creative SB PCI 128 (Ensoniq ES5880)
+- **Optical Drive**: LG CD-ROM CRD-8521B (52x)
+* Updated in 2007 to: AMD Athlon64 3600x2, 2x1GB GSkill DDR2 667mhz, later ATI hd5670 1gb
+
+#### 2. Mi Primer PC
+- **Date Purchased**: November 2005
+- **Update**: October 2009
+- **CPU**: AMD Athlon 64 3200+ (90nm)
+- **Motherboard**: Gigabyte GA-K8NF9
+- **RAM**: 2x512 MB Kingston DDR 400 MHz
+- **Graphics**: Nvidia 6200 TurboCache
+- **Monitor**: LG1717s, 
+* Updated to: AMD Athlon 5600x2,gigabyte ga-ma770-ds3, 2x1GB DDR2 667mhz, NVIDIA Gigabyte 8600GT, gigabyte ga-ma770-ds3
+
+#### 3. Mi Segundo PC
+- **Date Purchased**: May 2014
+- **CPU**: AMD Athlon 'x4' 750k (28nm)
+- **Motherboard**: gigabyte F2A55M-DS2   FM2 A55 micro atx
+- **RAM**: 2x1 GB Kingston DDR2 667 MHz
+- **Graphics**: Nvidia Gigabyte 8600 GT
+- **Storage**: Adata SU800 512 GB - OS
+
+### Laptops
+
+#### 1. Portatil Corporation
+- **CPU**: Intel i5 8250U x4 (14nm)
+- **RAM**: 4 GB 1600 MHz DDR3
+- **Storage**: 512 GB HDD
+- **Graphics**: Intel HD Graphics 5500
+
+#### 2. Lenovo Ideapad 100
+- **Date Purchased**: July 2016
+- **CPU**: Intel i3 5005U x2 (14 nm)
+- **RAM**: 4 GB 1600 MHz DDR3
+- **Storage**: HD 250 GB
+
+#### 3. Dell Inspiron Mini 1018
+- **Date Purchased**: 2012
+- **CPU**: Intel Atom N455 1.67 GHz
+- **RAM**: 1 GB
+- **Storage**: 320 GB HDD
+
+#### 4. Portatil Peq Lenovo Blanco
+- **Date Purchased**: September 2019
+- **CPU**: Celeron N3060
+- **RAM**: 4 GB
+- **Storage**: 500 GB HDD
+
+#### Portatil US - HP ProBook 5420s
+- **CPU**: Intel Celeron x2 P4500 (32nm)
+- **RAM**: 3 GB DDR3
+
+#### Custom Build in Aerocool CS105BK Case
+- **Case**: CAJA SEMITORRE AEROCOOL CS105BK
+  - **Dimensions**: 187 x 361 x 355 mm
+  - **GPU Clearance**: Up to 320 mm
+  - **CPU Cooler Clearance**: Up to 148 mm
+- **Motherboard**: Gigabyte B450M S2H (BIOS F41)
+- **CPU**: Ryzen 2200G
+- **RAM**: 8 GB x 1 3200 MHz G Skill, later 2x8GB
+- **Storage**:
+  - **SSD**: Crucial MX500 500 GB
+  - **HDD**: WD 1 TB - Data
+- **Power Supply**: Thermaltake Litepower II Black 450W
+- **Monitor**: LG Flatron W1946
+
+{{< /details >}}
