@@ -18,14 +18,16 @@ Develop inside a Docker container / Server, without worrying about dependencies.
   * Add the user name amd the IP/Domain: `youruser@192.168.3.200`
   * Authenticate and Select the Platform (Linux?)
 
-You will see that you are connected to the server in VSCode as per:
+You will see that **you are connected to the server in VSCode via SSH**.
+
+Pay attention to the bottom left side:
+
 
 ![VSCode SSH Dev](/blog_img/selfh/remote-dev-ssh.png)
 
 
-
 {{< callout type="info" >}}
-Thanks to [this YT Video](https://www.youtube.com/watch?v=miyD4c1dnTU)
+Thanks to [this YT Video](https://www.youtube.com/watch?v=miyD4c1dnTU), I could replicate it with my OrangePi5
 {{< /callout >}}
 
 * For container, do this instead

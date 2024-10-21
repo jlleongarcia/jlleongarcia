@@ -3,17 +3,25 @@ title: "[Review] Firebat AK2 PLUS"
 date: 2024-09-30T19:20:21+01:00
 draft: false
 tags: ["Tinkering"]
-summary: Testing Firebat Mini PC and setting it as a home server
+summary: Testing Firebat Mini PC and setting it as a Home Server
 url: firebat-ak2-plus-minipc-review
 ---
 
 
 ## The FIREBAT AK2 PLUS MiniPC
 
+A very interesting **small factor PC** with
+
 * Intel N100 (4 cores) 8GB@2600mhz 256GB (M.2 2280 SSD)
 * Dimensions: 13x13x4,5cm = 0,76L
 * Cost: ~75$
-* It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/): I went with [Zorin OS](https://zorin.com/os/)
+
+{{< callout type="info" >}}
+* It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/).
+
+* I went with [Zorin OS](https://zorin.com/os/) for simplicity.
+{{< /callout >}}
+
 
 <!-- {{< figure src="blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
 
@@ -22,7 +30,7 @@ url: firebat-ak2-plus-minipc-review
 <!-- {{< figure_tweaked src="/blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud v2" >}} -->
 
 
-![Firebat MiniPc](/blog_img/mini_pc/firebat.jpg)
+![Firebat MiniPc Overview](/blog_img/mini_pc/firebat.jpg)
 
 <!-- {{< figure src="images/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}} -->
 
@@ -31,11 +39,11 @@ url: firebat-ak2-plus-minipc-review
 
 * As you can see, the **RAM is not soldered**:
 
-![Firebat MiniPc](/blog_img/mini_pc/firebat-ram.jpg)
+![Firebat MiniPc RAM](/blog_img/mini_pc/firebat-ram.jpg)
 
 * For convenience, you can mount the additional 2,5 drive outside and then mount it again with 3 screws:
 
-![Firebat MiniPc](/blog_img/mini_pc/firebat-mounted.jpg)
+![Firebat MiniPc Extra HD](/blog_img/mini_pc/firebat-mounted.jpg)
 
 > All screws are provided as well
 

@@ -1,7 +1,7 @@
 ---
 title: "How to use HUGO and make quick Websites"
-date: 2024-09-06T23:20:21+01:00
-draft: true
+date: 2024-09-06
+draft: false
 tags: ["Dev"]
 summary: 'How to get started with HUGO and create Webs'
 url: 'using-hugo-as-website'

@@ -3,15 +3,12 @@ title: "CSS like a Pro"
 date: 2024-08-12T23:20:21+01:00
 draft: false
 tags: ["Dev"]
-summary: "CSS Frameworks I find amazing"
+summary: "CSS Frameworks I find amazing to make nice UI/X for Websites"
 ---
 
 In case you dont know yet, CSS is oart of the [front-end of websites](https://roadmap.sh/frontend).
 
 And you can make cool things, easily.
-
-
-
 
 
 ## Tailwind

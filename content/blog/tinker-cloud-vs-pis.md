@@ -11,11 +11,18 @@ Time to choose - where is it worth [to do SelfHosting](https://jalcocert.github.
 
 ## Analysis paralysis - Choosing Small Factor Computer 
 
-Sometime ago, I was doing some benchmarks about [Raspberry Pi vs Orange Pi](https://jalcocert.github.io/RPi/posts/pi-vs-orange/) and also about [Mini PCs vs those SBC](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/).
+Sometime ago, I was doing some benchmarks about **[Raspberry Pi vs Orange Pi](https://jalcocert.github.io/RPi/posts/pi-vs-orange/) and also about [Mini PCs vs those SBC](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/)**.
 
-Is it really worth to SelfHost? or can we just use **a Cloud Server for similar performance/price?**
+Lately, I have been giving [a try to cloud providers](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner).
 
-This is what we will be looking at today.
+Particularly, to Hetzner.
+
+Is it really worth to SelfHost?
+
+Or can we just use **a Cloud Server for similar performance/price?**
+
+This is what we will be looking at today. And make [some conclusions](#conclusions)
+
 
 <!-- 
 pdf "/blog_pdf/OrangePi_5_RK3588S_User-Manual_v1.5.pdf"
@@ -24,6 +31,19 @@ OrangePi_5_RK3588S_User-Manual_v1.5.pdf
 removed to be able to use Cloudflare WorkersandPages with this GH repo
 moved to the RPI repo
  -->
+
+### Asrock X300 and the BMAX B4
+
+The **Asrock has 1.92L** (155 x 155 x 80 mm) size in volume, and the bmax just 0.6L.
+
+What am I doing talking in liters?
+
+* 1.92L are about 1922 cm³ - Similar to the [displacement of a regular car](https://jalcocert.github.io/JAlcocerT/buying-car-data-analytics/)
+* 0.6L are ~ 600 cm³
+
+Yes, they **both are veeery compact**.
+
+You can have a reference a very popular referece, a pen:
 
 ![BMax B4 vs Asrock X300 Size](/blog_img/mini_pc/bmax_asrockx300.jpg)
 
@@ -55,9 +75,11 @@ moved to the RPI repo
 
 ![Bmax B4](/blog_img/mini_pc/bmax.jpg)
 
-But lately, I have been giving [a try to cloud providers](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner).
+### Single Board Computers
 
-And also, I got a new Raspberry Pi 4 (this time 4GB - ARM64, now that prices are reasonable):
+And also, I got a **new Raspberry Pi 4** (this time 4GB - ARM64)
+
+Now that prices are reasonable:
 
 ![Two RPI's 4](/blog_img/hardware/RPi4_2_vs4gb.jpg)
 
@@ -205,6 +227,8 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 {{< /details >}}
 
 ## Conclusions
+
+You have other options for hosting services, in the cloud:
 
 
 {{< cards cols="1" >}}
