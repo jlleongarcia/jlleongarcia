@@ -1,11 +1,11 @@
 ---
 title: "My [AI] Youtube Workflow"
-date: 2024-10-02T05:20:21+01:00
+date: 2024-11-07T05:20:21+01:00
 draft: true
-tags: ["Dev","Python"]
-description: 'How to use '
-summary: 'How I Test AI Projects'
-url: 'openai-text2audio'
+tags: ["Tinkering"]
+description: 'How to use AI to share more with others'
+summary: 'How Im slowly getting better at publishing to Youtube and creating content.'
+url: 'my-youtube-ai-workflow'
 ---
 
 {{< callout type="info" >}}
@@ -69,7 +69,135 @@ response.stream_to_file(speech_file_path)
 * OBSStudio to record + I record myself commenting the video
 * Then, that .mp4 gets a transcript, which is passed to the OpenAI API to generate an AI voice
 
-...
+> A friend gave me this cool idea:
+
+```py
+##1 abre archivo de audio transcribe y guarda como texto
+# metele la API Key y el path tuyo
+
+from openai import OpenAI
+
+ 
+
+# Initialize the OpenAI client with your API key
+
+client = OpenAI(api_key='')
+
+ 
+
+# Path to your audio file
+
+audio_file_path = r'C:\Users\diazc\OneDrive\Escritorio\speech-analyzer-app\audio_test_api.wav'
+
+ 
+
+# Open the audio file
+
+with open(audio_file_path, "rb") as audio_file:
+
+    # Transcribe the audio using Whisper model
+
+    transcription = client.audio.transcriptions.create(
+
+        model="whisper-1",
+
+        file=audio_file
+
+    )
+
+    # Print the transcription text
+
+    print(transcription.text)
+
+ 
+
+# Extract the transcription text
+
+transcription_text = transcription.text
+
+ 
+
+# Step 2: Save the transcription to a .txt file
+
+output_file_path = 'audio.txt'
+
+with open(output_file_path, 'w') as text_file:
+
+    text_file.write(transcription_text)
+
+ 
+
+# Step 3: Print confirmation
+
+print(f"Transcription saved to {output_file_path}")
+
+###Python Audio #2 abre archivo de texto y lo manda a chatGPT a que lo analice
+
+
+# cambia el path y mete la API Key
+
+ 
+
+import openai
+
+ 
+
+# Initialize the OpenAI client with your API key
+
+openai.api_key = ''
+
+ 
+
+# Path to the file containing the speech text (audio.txt)
+
+file_path = r'C:\Users\diazc\OneDrive\Escritorio\speech-analyzer-app\audio.txt'
+
+ 
+
+# Step 1: Read the content of the file
+
+with open(file_path, 'r') as file:
+
+    file_content = file.read()
+
+ 
+
+# Step 2: Create the prompt for GPT-4 using the content from the file
+
+analysis_prompt = f"You are an expert in public speaking. Analyze this speech: {file_content}"
+
+ 
+
+# Step 3: Send the prompt to GPT-4 for analysis
+
+response = openai.chat.completions.create(
+
+    model="gpt-4",
+
+    messages=[
+
+        {"role": "user", "content": analysis_prompt}
+
+    ]
+
+)
+
+
+# Step 4: Extract the analysis from the response
+
+analysis = response.choices[0].message.content
+
+ 
+
+# Step 5: Print the analysis
+
+print("Speech Analysis: ")
+
+print(analysis)
+
+```
+
+
 
 ---
 
@@ -190,4 +318,8 @@ chmod +x cygwin_cibuildwheel_build.sh
 
 ### Social Media Automation
 
-[Zapier](https://zapier.com/app/home)
+* [Zapier](https://zapier.com/app/home)
+
+* Canva seems to have it too
+
+* [IFTTT](https://ifttt.com/plans)

@@ -273,11 +273,36 @@ ssh casa@192.168.1.103 #ssh casa@100.... with tailscale VPN IP
 df -h #its /dev/sda1 and its already mounted at /media/casa/Datos_Copia_2
 ```
 
+> Yes, the **user is casa**
+
 ![Exploring FireBat Disks](/blog_img/mini_pc/firebat-disks.png)
 
 {{< /details >}}
 
 
+{{< details title="Mount the external HD consistently 📌" closed="true" >}}
+
+
+
+```sh
+mount | grep sda1 #show nothing at first
+sudo file -s /dev/sda1
+sudo blkid /dev/sda1
+sudo nano /etc/fstab
+UUID=your-disk-u-u-id  /media/casa/Datos_copia_2  ext4  defaults  0  2
+sudo mount -a
+df -h #ahora todo ok
+
+#sudo du -ah / | sort -rh | head -n 30
+```
+
+
+{{< /details >}}
+
+
+{{< callout type="info" >}}
+The external HD needs to be mounted at: `/media/casa/Datos_copia_2` so that all Media services will work
+{{< /callout >}}
 
 {{< details title="Configure FileBrowser with Syncthing 📌" closed="true" >}}
 

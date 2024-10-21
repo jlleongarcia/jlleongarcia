@@ -18,11 +18,29 @@ First, A photo of the latest DJI Camera:
 
 {{< video "https://www.w3schools.com/tags/movie.mp4" >}} -->
 
+
+{{< callout type="info" >}}
+The [Pixel 8 Pro](https://jalcocert.github.io/JAlcocerT/pixel-8-pro-tricks/) is behaving perfectly for videos, but I wanted to try sth different.
+{{< /callout >}}
+
+### DJi OA5Pro Video Quality
+
+{{< callout type="info" >}}
+
+{{< /callout >}}
+
+```sh
+sudo apt install mediainfo
+mediainfo outputvideo.MP4 #ViesiejaiNightWalk.mp4
+```
+
 ### How to edit Videos
 
 {{< callout type="info" >}}
 How to [setup your PC for content creation](https://jalcocert.github.io/Linux/docs/debian/content_creation/): OBSStudio, Shotcut, KDenLive...
 {{< /callout >}}
+
+For simple cuts, I found easier to use ShotCut:
 
 {{< details title="Shotcut with OA5 Pro📌" closed="true" >}}
 
@@ -30,16 +48,16 @@ How to [setup your PC for content creation](https://jalcocert.github.io/Linux/do
 sudo snap install shotcut --classic
 ```
 
-1. Open Shotcut, add the .mp4 file (not the [DJI's LRF](https://raw.githubusercontent.com/JAlcocerT/Docker/refs/heads/main/Backups/NextCloud/nc_mariadb.yml) - Low Resolution File used for the video playback)
+1. Open Shotcut, **add the .mp4 file** (not the [DJI's LRF](https://raw.githubusercontent.com/JAlcocerT/Docker/refs/heads/main/Backups/NextCloud/nc_mariadb.yml) - Low Resolution File used for the video playback)
 2. On the top left side - **add filter**: audio mute / brightness / ...
-3. When you are done witht he changes: CTRLE+E to export as .mp4
+3. When you are done with the changes: **CTRL+E to export as .mp4**
 
 {{< /details >}}
 
 {{< details title="KDEnlive with OA5Pro 📌" closed="true" >}}
 
 ```sh
-sudo snap install shotcut --classic
+#sudo snap install shotcut --classic
 ```
 
 1. Open Shotcut, add the .mp4 file (not the [DJI's LRF](https://raw.githubusercontent.com/JAlcocerT/Docker/refs/heads/main/Backups/NextCloud/nc_mariadb.yml) - Low Resolution File used for the video playback)
@@ -59,9 +77,14 @@ There is the possibility to record at FHD 1080p@240fps, but not with wide mode, 
       * It can also be 2.7k and 4k
    * Hyperlapse during the night was having some glitches
 
-* You are required to [install DJI Mimo app](https://www.dji.com/pl/downloads/djiapp/dji-mimo) - which will allow you to activate the warranty + transfer files (no need for cable!) + receive firmware updates
-    * The app is neither in Google not Apple store...❗
-    * I would keep the .apk handy, as per my experience with the [DJI Tello Drone](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/)
+* You are required to [install DJI Mimo app](https://www.dji.com/pl/downloads/djiapp/dji-mimo) at least to get started.
+    * The App allow you to activate the warranty + transfer files (no need for cable!) + receive firmware updates
+
+{{< callout type="warning" >}}
+* The app is neither in Google not Apple store...❗
+* I would keep the .apk handy, as per my experience with the [DJI Tello Drone](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/)
+{{< /callout >}}
+
 
 {{< callout type="info" >}}
 As they required email registration, I put to test how seriously DJI takes privacy by using **[addy.io](https://github.com/anonaddy/docker) email aliases** ([ex-anonaddy](https://github.com/anonaddy/anonaddy?tab=readme-ov-file#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one))
@@ -101,13 +124,14 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
         * 2.7k@30/RS+/UW, but I prefered the quality of the RS mode
         * 4K@25/rs/uw
         * And I got to **work in the SD** 4K@48/ / at ~7.5 mb/s
+        * 4k@100/RS+/UW - ~ 10min ~ 10% battery drained
     * When transfering files to my laptop I saw up to 90MB/s speed (reading from SD, writing to SSD)
 
 * Transfering files:
     * Via the Mimo App
     * Via usb-c (**turn ON the camera first** and then connect the cable)
         * You will see one drive for the internal card and another for your SD card if any
-        * Transfer speed is ~25mb/s from the internal SD card
+        * Transfer speed is ~25mb/s from the internal SD card. To the [ThinkPad](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/) I saw ~28
 
 * File size:
     * Super night mode FHD (**Full HD**) 1920x**1080@30fps** has a 29.5mb/s video bitrate, making a 4.4gb for 20min duration. 
@@ -118,13 +142,269 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
   Stabilization is great during the day, but **not during the night.**
 {{< /callout >}}
 
+{{< youtube id="v=cqs4MkJ_4M4" autoplay="false" >}}
+
+
 ### My Workflow with the DJI OA5-Pro
+
+Delete the LRF files:
+
+```sh
+du -h --max-depth=1 #check space
+find . -name "*.LRF" -type f -delete #cleaning .LRF
+```
+And get VLC to see them:
+
+```sh
+sudo apt update
+sudo apt install vlc
+```
+
+See **info about .MP4's** in your folder:
+
+```sh
+sudo apt install ffmpeg
+#find . -type f -name "*.MP4" -exec ffprobe {} \;
+#find . -type f -name "*.MP4" -exec ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 {} \;
+
+#check .MP$ info recursively
+find . -type f -iname "*.mp4" -exec bash -c '
+  for file; do
+    name=$(basename "$file")
+    duration=$(ffprobe -v error -select_streams v:0 -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$file")
+    size=$(stat --format="%s" "$file")
+    resolution=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "$file")
+    
+    # FPS extraction
+    fps_raw=$(ffprobe -v error -select_streams v:0 -show_entries stream=r_frame_rate -of csv=p=0 "$file")
+    fps=$(echo "$fps_raw" | awk -F "/" '"'"'{ if ($2) print $1/$2; else print $1 }'"'"')
+
+    # Bitrate extraction in kbps
+    bitrate_bps=$(ffprobe -v error -show_entries format=bit_rate -of default=noprint_wrappers=1:nokey=1 "$file")
+    bitrate_kbps=$(echo "scale=2; $bitrate_bps / 1000" | bc -l)
+    
+    # Average MB/s calculation
+    avg_mbps=$(echo "scale=2; $bitrate_bps / 1000000000" | bc -l)
+
+    echo "Name: $name - Duration: ${duration}s - Size: ${size} GB - Resolution: $resolution - FPS: $fps - Bitrate: ${bitrate_kbps}kbps - Avg MB/s: ${avg_mbps}MB/s"
+  done
+' bash {} +
+```
+
+I Ordered them like so: `chmod +x organize_videos.sh ./organize_videos.sh`
+
+```sh
+#!/bin/bash
+
+#IT WILL MOVE THEM TO THE LOCATION WHERE YOU RUN THIS
+# Check for ffprobe installation
+if ! command -v ffprobe &> /dev/null; then
+  echo "ffprobe could not be found. Please install ffmpeg."
+  exit 1
+fi
+
+# Find and organize .mp4 files based on resolution
+find . -type f -iname "*.mp4" | while read -r file; do
+  name=$(basename "$file")
+  resolution=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "$file")
+
+  # Construct the folder name based on resolution
+  folder_name="$resolution"
+  
+  # Create the destination folder if it doesn't exist
+  mkdir -p "$folder_name"
+
+  # Move the file to the destination folder
+  mv "$file" "$folder_name/"
+  
+  # Output information about the file
+  echo "Moved: $name to $folder_name"
+done
+```
+
+or creating the subfolder in their find location....but not today.
+
+Let's jump to editing:
+
+[Cut a video with KDenLive](https://www.youtube.com/watch?v=JMKRKv2ogKU&list=PLqazFFzUAPc7uQaoGxYwxGLk4_6fQrBvE&index=2)
+
+When ready, hit **CTRL+Enter to render**
+
+> And this was soooo slow, can I just **join some videos together? YES, CLI can**
+
+```sh
+ls *.MP4 | sed "s/^/file '/; s/$/'/" > file_list.txt #add .mp4 of current folder to a list
+
+#du -sh ./* #check their size
+
+#generate a video with them
+ffmpeg -f concat -safe 0 -i file_list.txt -c copy output_video.mp4
+#ffmpeg -f concat -safe 0 -i file_list.txt -c:v copy -an output_video.mp4 #silenced video
+#ffmpeg -i output_video.mp4 -filter:v "setpts=PTS/4" -an fast_output_video.mp4 #
+```
+
+**Check what was created:**
+
+```sh
+size=$(ffprobe -v error -select_streams v:0 -show_entries format=size -of default=noprint_wrappers=1:nokey=1 output_video.mp4) && \
+duration=$(ffprobe -v error -select_streams v:0 -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 output_video.mp4) && \
+fps=$(ffprobe -v error -select_streams v:0 -show_entries stream=r_frame_rate -of default=noprint_wrappers=1:nokey=1 output_video.mp4 | bc) && \
+resolution=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0:s=x output_video.mp4) && \
+echo "File: output_video.mp4" && \
+echo "Size: $(awk "BEGIN {printf \"%.2f GB\", $size / (1024^3)}")" && \
+echo "Duration: $(awk "BEGIN {printf \"%.2f minutes\", $duration / 60}")" && \
+echo "Resolution: $resolution" && \
+echo "FPS: $fps"
+```
+
+{{< callout type="info" >}}
+* It works fine as we have videos with same resolution on each folder already
+* If FPS are different, it will preserve the lower one
+{{< /callout >}}
+
+
+Before going to YT, I like to have Brave Browser:
+
+```sh
+sudo snap install brave
+```
 
 * Uploading the videos!
     * To youtube
     * [To MediaCMS](https://hub.docker.com/r/mediacms/mediacms/tags)
         * https://github.com/mediacms-io/mediacms/blob/main/docker-compose.yaml
         * https://mediacms.io/
+
+
+{{< details title="Video Editing Software - Setup📌" closed="true" >}}
+
+Lets get some [apps for content creation](https://jalcocert.github.io/Linux/docs/debian/content_creation/), together with dev tools:
+
+```sh
+#!/bin/bash
+
+# Function to prompt the user for yes/no input
+prompt_user() {
+    local prompt="$1"
+    local answer
+    while true; do
+        read -p "$prompt (y/n): " answer
+        case "$answer" in
+            [Yy]* ) return 0;;
+            [Nn]* ) return 1;;
+            * ) echo "Please answer y or n.";;
+        esac
+    done
+}
+
+# Install curl if not installed
+if ! command -v curl &> /dev/null; then
+    echo "Installing curl..."
+    sudo apt update && sudo apt install -y curl
+fi
+
+# Prompt to install content editing apps (Kdenlive, Shotcut)
+if prompt_user "Do you want to install content editing apps (Kdenlive, Shotcut)?"; then
+    echo "Installing content editing apps..."
+
+    # Add Flathub repository
+    echo "Adding Flathub repository..."
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+    # Install Kdenlive
+    echo "Installing Kdenlive..."
+    flatpak install -y flathub org.kde.kdenlive
+
+    # Install Shotcut via Snap
+    echo "Installing Shotcut..."
+    sudo snap install shotcut --classic
+
+    # Install missing JACK audio libraries for Shotcut
+    echo "Installing JACK audio libraries for Shotcut..."
+    sudo apt install -y libjack-jackd2-0 jackd
+else
+    echo "Skipping content editing apps installation."
+fi
+
+# Prompt to install development apps (VSCode, VSCodium, Python, Git, Node.js, Go, Hugo)
+if prompt_user "Do you want to install development apps (VSCode, VSCodium, Python, Git, Node.js, Go, Hugo)?"; then
+    echo "Installing development apps..."
+
+    # Install VSCode and VSCodium
+    echo "Installing Visual Studio Code..."
+    sudo apt update
+    sudo apt install -y software-properties-common apt-transport-https wget
+    wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+    sudo apt update
+    sudo apt install -y code
+
+    echo "Installing VSCodium..."
+    sudo snap install codium --classic
+
+    # Install Git
+    echo "Installing Git..."
+    sudo apt install -y git
+
+    # Install Python
+    echo "Installing Python..."
+    sudo apt install -y python3 python3-pip
+
+    # Install NVM, Node.js, and npm
+    echo "Installing Node.js and npm using NVM..."
+    if ! command -v nvm &> /dev/null; then
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+    fi
+    nvm install 20.12.2
+    nvm use 20.12.2
+
+    # Verify Node.js and npm
+    echo "Node.js version: $(node --version)"
+    echo "npm version: $(npm --version)"
+
+    # Install Go
+    echo "Installing Go..."
+    sudo snap install go --classic
+    echo "Go version: $(go version)"
+
+    # Install Hugo
+    echo "Installing Hugo..."
+    wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_0.108.0_linux-amd64.deb
+    sudo dpkg -i hugo_0.108.0_linux-amd64.deb
+    echo "Hugo version: $(hugo version)"
+else
+    echo "Skipping development apps installation."
+fi
+
+# Final version check and summary
+echo "Installation complete. Summary of versions installed:"
+
+# Content editing tools versions
+if prompt_user "Would you like to verify the versions of content editing tools installed?"; then
+    echo "Kdenlive: $(flatpak run org.kde.kdenlive --version 2>/dev/null | head -n 1)"
+    echo "Shotcut: $(shotcut --version 2>/dev/null || echo 'Shotcut is installed but the version command is not supported.')"
+fi
+
+# Development tools versions
+echo "VSCode version: $(code --version | head -n 1)"
+echo "VSCodium version: $(codium --version | head -n 1)"
+echo "Git version: $(git --version)"
+echo "Python version: $(python3 --version)"
+echo "Go version: $(go version)"
+echo "Hugo version: $(hugo version)"
+echo "Node.js version: $(node --version)"
+echo "npm version: $(npm --version)"
+```
+
+{{< /details >}}
+
+```sh
+git config --global user.name "JAlcocerT"
+git config --global user.email "contact@jalcocertech.xyz"
+```
 
 ---
 
@@ -151,25 +431,28 @@ You will need the [MoviePy Package](https://github.com/Zulko/moviepy)
 from moviepy.editor import VideoFileClip, concatenate_videoclips
 ```
 
-> Thanks to [NeuralNine yt Video](https://www.youtube.com/watch?v=Q2d1tYvTjRw)
+> Thanks to [NeuralNine YT Video](https://www.youtube.com/watch?v=Q2d1tYvTjRw)
 
 {{< /details >}}
 
 {{< callout type="info" >}}
-This is the repo I use for [my Video Editing WorkFlow](https://github.com/JAlcocerT/VideoEditingRemotion)
+This is the repo I use for [my Video Editing WorkFlow](https://github.com/JAlcocerT/VideoEditingRemotion), with [Remotion Coming soon](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/#video-as-a-code)
 {{< /callout >}}
 
 
 > Very Interesting way to make [video animations with python](https://zulko.github.io/moviepy/gallery.html#data-animations) and even [vector animations](https://zulko.github.io/blog/2014/09/20/vector-animations-with-python/)
 
+Sometimes we just have a hyperlapse video or a video that looks good visually, but the audio is not the best.
 
-{{< details title="Audio for Videos 📌" closed="true" >}}
+For those we can just silence all the volume and just put some music on top
 
-In [Youtube Studio](https://studio.youtube.com/channel/UCPPMA8ZEusAe5dVH6PbjZFA/music), you also have a library for audio that you can use freely on your videos.
+{{< details title="Audio for Videos - Free Options 📌" closed="true" >}}
+
+In [Youtube Studio](https://studio.youtube.com/channel/UCPPMA8ZEusAe5dVH6PbjZFA/music), you also have a library for **audio that you can use freely** on your videos.
 
 > I tried [freepd](https://freepd.com/) as per [this reddit post](https://www.reddit.com/r/Filmmakers/comments/wjq71o/does_anyone_know_where_to_get_copyright_free/)
 
-You can find open-source, royalty-free, or Creative Commons-licensed music from several platforms that offer chill music for video projects. Here are some great resources:
+You can find open-source, royalty-free, or Creative Commons-licensed music from **several platforms** that offer chill music for video projects
 
 ### 1. **Free Music Archive (FMA)**
    - **Website**: [https://freemusicarchive.org](https://freemusicarchive.org)

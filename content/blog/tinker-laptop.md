@@ -43,6 +43,29 @@ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
 
 ## My Setup for a Laptop
 
+Whether you want to [use Conky](https://jalcocert.github.io/Linux/docs/debian/conky_configuring_ubuntu/) or not...
+
+Give it a cool wallpaper, like [Garuda](https://jalcocert.github.io/Linux/docs/arch/garuda/) has:
+
+```sh
+wget "https://gitlab.com/garuda-linux/themes-and-settings/artwork/garuda-wallpapers/-/raw/master/src/garuda-wallpapers/Dr460nized%20Honeycomb.png?ref_type=heads&inline=false" -O Dr460nized_Honeycomb.png #download garuda wallpaper
+```
+
+You will probably want [Gitlab ready](https://jalcocert.github.io/JAlcocerT/how-to-use-gitlab/) and get [ready for SelfHosting](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/):
+
+```sh
+curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh
+#nano Selfhosting_101.sh #MAKE SURE YOU UNDERSTAND WHAT YOU WILL BE RUNNING
+
+chmod +x Selfhosting_101.sh
+sudo ./Selfhosting_101.sh
+```
+
+{{< callout type="info" >}}
+* [SelfH Script](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_101.sh)
+{{< /callout >}}
+
+
 
 {{< details title="Tailscale and DNS's 📌" closed="true" >}}
 

@@ -10,8 +10,13 @@ url: 'docplanner-web-migration'
 * Competitors / The initial site:
     * https://www.docplanner.com/
     * https://www.doktortakvimi.com/
+        * https://pro.doktortakvimi.com/fiyatlandirma
     * https://www.psikolognevinkeskin.com/
+    * https://www.psikolojisaati.com/
 * Chosen Domain: `psikolognevinkeskin.info`
+
+
+Currently paying **80 USD a MONTH** for that website
 
 
 {{< callout type="info" >}}
