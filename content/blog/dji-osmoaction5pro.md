@@ -98,9 +98,9 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
          * 1080p@30fps is around 4mb/s in size
          * FHD - 1080@60fps/RS+/UW, its ~5mb/s and also works
         * **Even 2.7k@30fps/RS/UltraWide works!** It's ~5.6mb/s in average size
-        * 2.7k@30/RS+/UW
+        * 2.7k@30/RS+/UW, but I prefered the quality of the RS mode
         * 4K@25/rs/uw
-        * 4K@48/ /
+        * And I got to **work in the SD** 4K@48/ / at ~7.5 mb/s
     * When transfering files to my laptop I saw up to 90MB/s speed (reading from SD, writing to SSD)
 
 * Transfering files:
