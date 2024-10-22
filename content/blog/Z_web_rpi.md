@@ -15,7 +15,11 @@ During this month, have decided to create a more **detailed guide on Github Page
 
 I will use this content as a personal wiki, so whenever I find some block that requires some effort to find out on the internet, will make a concise guide right here: <https://jalcocert.github.io/RPi/>
 
+Jekyll uses **Ruby language**.
+
+
 ---
+
 
 * References
     * The Jekyll Theme I use - https://github.com/cotes2020/jekyll-theme-chirpy
@@ -26,7 +30,7 @@ I will use this content as a personal wiki, so whenever I find some block that r
     * https://github.com/wowthemesnet/jekyll-theme-memoirs
 
 
-<!-- shodan
+<!-- shodan related to internet of the things
 
 Shodan is a specialized search engine that allows users to find Internet-connected devices. Unlike traditional search engines that index websites and pages, Shodan collects information about network-connected devices such as servers, security cameras, routers, printers, and IoT (Internet of Things) devices1. Here are some key points about Shodan:
 

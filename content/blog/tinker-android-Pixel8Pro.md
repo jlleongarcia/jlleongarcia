@@ -54,3 +54,8 @@ you will need to restart and HDMI cable to enjoy :)
 ### Running Windows on Android
 
 * https://github.com/brunodev85/winlator
+
+
+### Other Android Stuff
+
+You can also **emulate Linux inside Android**, like I did [with Termux, here](https://jalcocert.github.io/Linux/docs/privacy/android/#how-to-use-linux-on-android-with-termux).

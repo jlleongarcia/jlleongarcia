@@ -501,6 +501,20 @@ And then...
 
 {{< /details >}}
 
+
+{{< details title="How to fix a USB Drive in Windows 📌" closed="true" >}}
+
+```sh
+cmd
+diskpart
+list disk
+select disk 1
+clean
+create partition primary
+exit
+```
+{{< /details >}}
+
 {{< details title="Interesting Apps, for W11 and Linux 📌" closed="true" >}}
 
 Sure! Here's the list of applications and tools formatted in Markdown, organized into categories for better readability:
@@ -709,14 +723,10 @@ This Markdown list organizes the applications into categories, making it easier 
   * Lenovo M720q Tiny i3 8 gen. 8GB ~100$
   * Make sure that these have HDMI
 
-* New mini pcs:
+* New mini pcs: similar to the BMAX B4
   *  Intel N95 16+512G GK3 PLUS ~115$
 
-
 {{< /details >}}
-
-
-
 
 ### How to Benchmark the Firebat MiniPC
 
@@ -819,7 +829,7 @@ curl -6 ifconfig.me #ipv6 info
 
 ### How to use a RPi - Without a RPi
 
-A raspberry Pi inside a container - https://github.com/ptrsr/pi-ci
+[A raspberry Pi](https://jalcocert.github.io/RPi/) inside a container - https://github.com/ptrsr/pi-ci
 
 > A Raspberry **Pi emulator in a Docker image** that lets developers easily prepare and flash RPi configurations.
 

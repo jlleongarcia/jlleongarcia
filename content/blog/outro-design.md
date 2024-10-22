@@ -7,8 +7,14 @@ summary: ''
 url: 'dev-ai-tools'
 ---
 
-![Exploring FireBat Disks](/blog_img/outro/porsche.png)
+![Porsche design](/blog_img/outro/porsche.png)
 
+
+
+{{< details title="TinaCMS Setup with Astro📌" closed="true" >}}
+
+
+{{< /details >}}
 
 ---
 

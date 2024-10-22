@@ -9,6 +9,7 @@ summary: 'How to use gist as free image hosting'
 
 In VSCode, the **source control graph** can guide you on whats going on.
 
+
 ## Git 101
 
 Initialize git:
@@ -33,6 +34,33 @@ git commit -m "Initial commit"
 git remote add origin <remote_repository_url>
 git push -u origin master
 ```
+
+
+{{< details title="More GIT useful commands 📌" closed="true" >}}
+
+```sh
+git pull origin master	# Fetches and merges changes from the remote master branch to your local branch
+git branch --set-upstream-to=origin/master	# Sets the default upstream branch to origin/master for the current local branch
+
+git add README.md	# Adds the README.md file to the staging area, marking it for inclusion in the next commit
+git add .	# Adds all new and modified files to the staging area
+
+git commit -m "description of changes"	# Commits the staged changes to the local repository with a description "description of changes"
+git push	# Pushes the commits from your local branch to the corresponding remote branch
+git push origin master	# Pushes the commits from your local master branch to the remote master branch
+
+git rm -r -f .idea	# Recursively and forcefully removes the .idea directory from the project and stages the removal for commit
+
+git -ignore .idea/*	# Incorrect command, possibly meant to add '.idea/*' to a .gitignore file
+nano .gitignore	# Opens the .gitignore file in the nano editor to manually add rules
+
+git branch v01	# Creates a new branch named v01 based on the current branch
+git checkout master	# Switches to the master branch
+get merge v01 master	# Incorrect command, possibly meant to be 'git merge v01' while on master branch to merge changes from v01 into master
+git push origin master	# Pushes the commits from your local master branch to the remote master branch
+```
+
+{{< /details >}}
 
 
 ```sh

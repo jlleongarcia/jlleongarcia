@@ -87,6 +87,8 @@ sudo snap install shotcut --classic
 
 Make sure to **explore the resolutions and modes**.
 
+It can do photo and video. But for photo I still prefer [the Pixel](https://jalcocert.github.io/JAlcocerT/pixel-8-pro-tricks)
+
 There is the possibility to record at FHD 1080p@240fps, but not with wide mode, for example.
 
 * Video Modes
@@ -159,6 +161,8 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
   Stabilization is great during the day, but **not during the night.**
 {{< /callout >}}
 
+As you can see in this video, where Im just walking:
+
 {{< youtube id="TrhDGUzuxxc" autoplay="false" >}}
 
 
@@ -178,6 +182,10 @@ sudo apt install vlc
 ```
 
 See **info about .MP4's** in your folder:
+
+
+{{< details title="This my video CLI ordering files, editing - v1 with FFmpeg 📌" closed="true" >}}
+
 
 ```sh
 sudo apt install ffmpeg
@@ -241,11 +249,13 @@ done
 
 or creating the subfolder in their find location....but not today.
 
+
+{{< /details >}}
+
 Let's jump to editing:
 
-[Cut a video with KDenLive](https://www.youtube.com/watch?v=JMKRKv2ogKU&list=PLqazFFzUAPc7uQaoGxYwxGLk4_6fQrBvE&index=2)
-
-When ready, hit **CTRL+Enter to render**
+* [Cut a video with KDenLive](https://www.youtube.com/watch?v=JMKRKv2ogKU&list=PLqazFFzUAPc7uQaoGxYwxGLk4_6fQrBvE&index=2)
+    * When ready, hit **CTRL+Enter to render**
 
 > And this was soooo slow, can I just **join some videos together? YES, CLI can**
 
@@ -286,7 +296,7 @@ Before going to YT, I like to have Brave Browser:
 sudo snap install brave
 ```
 
-* Uploading the videos!
+* Videos are ready! Let's share videos!
     * To youtube
     * [To MediaCMS](https://hub.docker.com/r/mediacms/mediacms/tags)
         * https://github.com/mediacms-io/mediacms/blob/main/docker-compose.yaml
@@ -548,13 +558,14 @@ And much much better than just plaind ata
 
 ### Outro
 
-For adventures
+For adventures:
 
 * https://github.com/Flomp/wanderer - The trail catalogue that makes your GPS data searchable
 
 wanderer is a self-hosted trail database. You can upload your recorded tracks or create new ones and add various metadata to build an easily searchable catalogue.
 
-* Alternative Software - https://github.com/KonradIT/CamControl
+* [Spliit](https://github.com/spliit-app/spliit) - An alternative to Splitwise / Settleup where you dont have to register.
+
+* Alternative Software for Action cams - https://github.com/KonradIT/CamControl
 
 Open source app to connect with popular action cameras, replacing your vendor's closed source app system.
-

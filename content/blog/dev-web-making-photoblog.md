@@ -12,3 +12,18 @@ For this **client**, I had to make something **special**.
 She's a traveler, **photo adict**, content creator and artist.
 
 * https://nicokaiser.github.io/hugo-theme-gallery/animals/cats/
+
+---
+
+## New Web Workflow
+
+These days I have improved my Web creation/edition Workflow.
+
+Im now using Github+Cloudflare and Gitlab+Cloudflare for deployments.
+
+Time to say bye to my old friend Firebase. At least for now.
+
+And to make the dev workflow smoother when Im switching devices...
+
+* I develop via SSH with VSCode with the Opi5 as server
+* Everything gets synced thanks to this script

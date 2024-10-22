@@ -1,6 +1,6 @@
 ---
 title: "Life is Short. Dont waste it with the Wront Website."
-date: 2024-09-30T23:20:21+01:00
+date: 2024-09-30T1323:20:21+01:00
 draft: false
 tags: ["dev"]
 summary: 'Helping people by making them Websites. What I have built so far.'
@@ -72,4 +72,10 @@ https://web-check.xyz/check/https%3A%2F%2Fwww.buildingfuturecapital.com%2F
 
 Registry Expiry Date
 26 April 2025
- -->
+
+* Miguel alcocer photo blog
+
+* Gym Trainer - https://trenujswiadomie.pl/kokpit/
+
+* ecommerce - https://outficik.pl/
+-->
