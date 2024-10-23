@@ -88,7 +88,7 @@ There are some CName and txt records and they will be DNS only, not proxied.
 
 ![Wordpress Google Page Speed Desktop](/blog_img/web/SaaS/mailerlite-domainsetup.png)
 
-Create a new form and you will get the JS to place before the `</head>` of your web.
+**Create a new form** and you will get the JS to place before the `</head>` of your web.
 
 ```js
 <!-- MailerLite Universal -->
@@ -102,10 +102,15 @@ Create a new form and you will get the JS to place before the `</head>` of your 
 <!-- End MailerLite Universal -->
 ```
 
-> You can also get a button, so that it opens as pop up:
+> You can also get **MailerLite working with a button**, so that it opens as pop up:
 
 ```html
 <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'some_id_here', true)">Click here to show form</a>
+
+and use it with your components, for example
+<form id="simple-newsletter-form" class="input-container" method="post" action="javascript:void(0);" onsubmit="ml('show', 'some_id_here', true); return false;">
+    <input type="submit" value="Ready to Know?" class="ml-onclick-form" style="appearance: button; -webkit-appearance: button; cursor: pointer;">
+</form>
 ```
 
 {{< /details >}}

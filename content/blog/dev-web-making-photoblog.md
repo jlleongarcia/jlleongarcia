@@ -27,3 +27,28 @@ And to make the dev workflow smoother when Im switching devices...
 
 * I develop via SSH with VSCode with the Opi5 as server
 * Everything gets synced thanks to this script
+
+
+{{< details title="Testing Astro with Gitlab at Opi 📌" closed="true" >}}
+
+```sh
+git clone https://gitlab.com/fossengineer1/cyclingthere
+cd ./cyclingthere/pacamara
+```
+
+With a regular SSH, I can just use **nano to develop**
+```sh
+time npm install #~30s
+#npm audit fix --force
+
+npm run dev
+npm run build
+```
+
+But its possible to use VSCode with SSH and **see all the dev environment files**
+
+```sh
+
+```
+
+{{< /details >}}

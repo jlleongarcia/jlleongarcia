@@ -7,21 +7,25 @@ summary: "Developing like a PRO (via SSH or into a container)"
 ---
 
 
-Develop inside a Docker container / Server, without worrying about dependencies.
+Develop inside a **Docker container / Server**, without worrying about dependencies.
 
+First, you need to do the following:
 
-1. Install VsCode
+1. Install VSCode
 2. Install the [Remote Development Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 3. Follow [the instructions to connect](https://code.visualstudio.com/docs/remote/ssh)
-* For SSH, you can do:
-  * `CTRL+SHIFT+P` ->> `Remote SSH (Connect to Host)`
-  * Add the user name amd the IP/Domain: `youruser@192.168.3.200`
-  * Authenticate and Select the Platform (Linux?)
+
+
+### VSCode Dev via SSH
+
+For SSH connection, you can do:
+* `CTRL+SHIFT+P` ->> `Remote SSH (Connect to Host)`
+* Add the user name amd the IP/Domain: `youruser@192.168.3.200`
+* Authenticate and Select the Platform (Linux?)
 
 You will see that **you are connected to the server in VSCode via SSH**.
 
 Pay attention to the bottom left side:
-
 
 ![VSCode SSH Dev](/blog_img/selfh/remote-dev-ssh.png)
 
@@ -30,11 +34,15 @@ Pay attention to the bottom left side:
 Thanks to [this YT Video](https://www.youtube.com/watch?v=miyD4c1dnTU), I could replicate it with my OrangePi5
 {{< /callout >}}
 
-* For container, do this instead
+### VSCode Dev via Containers
+
+For container, do this instead
+
+```sh
+
+```
 
 {{< youtube "J0NuOlA2xDc" >}}
-
-
 <!-- https://www.youtube.com/watch?v=J0NuOlA2xDc -->
 
 > Never install locally
@@ -43,8 +51,11 @@ Thanks to [this YT Video](https://www.youtube.com/watch?v=miyD4c1dnTU), I could 
 
 ## Setup Containers for Development
 
+Dont forget about: `.gitignore`, `.dockerignore`
+
 ### Containers for Python Apps
 
+{{< details title="Python Docker Compose 📌" closed="true" >}}
 ```yml
 version: '3.8'
 
@@ -58,19 +69,66 @@ services:
     #command: python3 app.py
     command: tail -f /dev/null #keep it running
 ```
+{{< /details >}}
+
+
+{{< details title="Python Dockerfile 📌" closed="true" >}}
+
+{{< /details >}}
+
+{{< callout type="info" >}}
+Sample [Python Project](https://github.com/JAlcocerT/Streamlit-MultiChat) with these files
+{{< /callout >}}
+
 
 ### Containers for WEBS
+
+Node is a very popular one.
+
+But you may also need [GO](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#hugo), or [Ruby...](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#jekyll)
 
 
 ### Node
 
-It will work for Astro sites, NextJS,...
+It will work for **Astro sites, NextJS,...**
+
+
+{{< details title="Node Dockercompose 📌" closed="true" >}}
+
+```sh
+docker exec -it webcyclingthere /bin/bash
+#git --version
+#npm -v
+#node -v #you will see the specified version in the image
+npm run dev
+
+#npm uninstall react-slick slick-carousel #to fix sth
+```
 
 ```yml
 version: '3'
 services:
   app:
-    image: node:14
+    image: mynode_webapp:cyclingthere #node:20.12.2
+    container_name: webcyclingthere
+    volumes:
+      - /home/reisipi/dirty_repositories/cyclingthere:/app
+      - .:/app
+    working_dir: /app
+    command: tail -f /dev/null
+    #command: bash -c "npm install && npm run dev"
+    ports:
+      - 4321:4321
+      - 3000:3000
+```
+
+Other raw docker-compose:
+
+```yml
+version: '3'
+services:
+  app:
+    image: node:20.12.2
     volumes:
       - .:/app
     working_dir: /app
@@ -78,6 +136,45 @@ services:
     ports:
       - 5000:5000
 ```
+
+{{< /details >}}
+
+{{< details title="Node Dockerfile 📌" closed="true" >}}
+
+```sh
+sudo docker pull node:20.12.2
+docker build -t mynode_webapp:cyclingthere .
+```
+
+Depending where you run this, it will take more or less time.
+
+With a Opi5 I had ~2min33s
+
+```dockerfile
+# Use the official Node.js image.
+# https://hub.docker.com/_/node
+FROM node:20.12.2 #
+#https://hub.docker.com/layers/library/node/20.12.2/images/sha256-740804d1d9a2a05282a7a359446398ec5f233eea431824dd42f7ba452fa5ab98?context=explore
+
+# Create and change to the app directory.
+WORKDIR /usr/src/app
+
+# Install Astro globally
+#RUN npm install -g astro
+
+# Copy application dependency manifests to the container image.
+# A wildcard is used to ensure both package.json AND package-lock.json are copied.
+# Copying this separately prevents re-running npm install on every code change.
+COPY package*.json ./
+
+# Install production dependencies.
+RUN npm install
+
+# Copy local code to the container image.
+COPY . .
+```
+
+{{< /details >}}
 
 ### HUGO
 
@@ -97,7 +194,7 @@ services:
       - "1313:1313"
 ```
 
-#### Gatsby
+### Gatsby
 
 ```yml
 version: '3.8'
