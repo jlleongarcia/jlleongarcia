@@ -7,7 +7,7 @@ summary: "Testing  with LLMs"
 url: "how-to-use-prompt-caching"
 ---
 
-normally  API calls are stateless.
+Normally, API calls are stateless.
 
 * https://www.anthropic.com/news/prompt-caching
 

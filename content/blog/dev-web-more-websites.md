@@ -70,10 +70,11 @@ Like we did at the **Social Media Project!**
 
 https://web-check.xyz/check/https%3A%2F%2Fwww.buildingfuturecapital.com%2F
 
-Registry Expiry Date
-26 April 2025
+Registry Expiry Date - 26 April 2025
 
 * Miguel alcocer photo blog
+
+* JoseLuis Github
 
 * Gym Trainer - https://trenujswiadomie.pl/kokpit/
 

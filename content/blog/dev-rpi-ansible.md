@@ -7,9 +7,9 @@ summary: Learning about Ansible with SBCs
 url: ansible-with-raspberry-pi
 ---
 
-So you have a Raspberry Pi and want to get started with IoT Project.
+So you have a **Raspberry Pi** and want to get started with **IoT Project**.
 
-But let me guess, you dont have time to read all the Docs, you just want to connect the wirings and get the Data Flowing.
+But let me guess, you dont have time to read all the Docs, you just want to connect the wirings and get the **Data Flowing**.
 
 If that resonates with you, keep reading - I will show you how to **leverage Ansible**.
 

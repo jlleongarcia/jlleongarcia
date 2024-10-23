@@ -1,9 +1,9 @@
 ---
-title: "Dev with AI"
+title: "Dev with AI: Code Assistants,"
 date: 2024-09-03T23:20:21+01:00
 draft: true
 tags: ["Dev"]
-summary: ''
+summary: 'AI Tools to create better things. Faster.'
 url: 'dev-ai-tools'
 ---
 

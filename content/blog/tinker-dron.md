@@ -16,8 +16,13 @@ This is what I've learn with it so far.
 
 ## DJI Tello Python
 
-I have [forked](https://github.com/damiafuentes/DJITelloPy) and created a Docker Image with Python Code which is able to control the drone:
-* https://github.com/JAlcocerT/DJITelloPy
+I have [forked](https://github.com/damiafuentes/DJITelloPy) and created a Docker Image with **Python Code which is able to control the drone**.
+
+{{< callout type="info" >}}
+* [Dron code test in gitlab](https://gitlab.com/fossengineer1/dron) and in GH: https://github.com/JAlcocerT/DJITelloPy
+* And here, im experimenting with CV - [**C**omputer **V**ision stuff](https://gitlab.com/fossengineer1/cv)
+{{< /callout >}}
+
 
 * Hardware Specs:
     * The Battery last ~10 min

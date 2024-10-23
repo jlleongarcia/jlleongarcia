@@ -217,7 +217,7 @@ return <button onClick={handleClick}>Click Me</button>;
 ```
 
 {{< callout type="warning" >}}
-  It seems that FormBricks Forms can just be embedded and not opened as a hyperlink url.
+It seems that FormBricks Forms can just be embedded **and not opened as a hyperlink url**.
 {{< /callout >}}
 
 ### GoodSheet

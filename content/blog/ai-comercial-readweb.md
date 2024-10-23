@@ -31,7 +31,7 @@ Lesson learnt. A CV must be cool for the human eye, and understandable for the m
 
 
 {{< callout type="info" >}}
-And Applied it for [better CV and job search](https://gitlab.com/fossengineer1/cv-check)
+And Applied it for [**better CV** and job search](https://gitlab.com/fossengineer1/cv-check)
 {{< /callout >}}
 
 ### ScrapeGraph

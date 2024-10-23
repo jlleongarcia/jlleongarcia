@@ -13,7 +13,7 @@ In this post I am collecting some of the must know tricks to start your projects
 url: 'guide-python'
 ---
 
-As part of your Data Analytics journey, you will have to build **knowledge of Python**.
+As part of your **Data Analytics** journey, you will have to build **knowledge of Python**.
 
 In this post I am collecting some of the must know tricks to start your projects.
 
@@ -27,7 +27,9 @@ Python has evolved into a go-to choice for programmers across various domains. L
 
 ### History and Philosophy
 
-Python, created by Guido van Rossum in 1991, draws inspiration from Monty Python's Flying Circus, evident in whimsical names like "Spam" and "Eggs" in code samples. Its guiding philosophy, encapsulated in "The Zen of Python," prioritizes readability and simplicity, fostering a welcoming environment for beginners and seasoned developers alike.
+Python, created by Guido van Rossum in 1991, draws inspiration from Monty Python's Flying Circus, evident in whimsical names like "Spam" and "Eggs" in code samples.
+
+Its guiding philosophy, encapsulated in "The Zen of Python," prioritizes readability and simplicity, fostering a welcoming environment for beginners and seasoned developers alike.
 
 ### Syntax and Features
 

@@ -7,7 +7,7 @@ summary: 'How to get started with HUGO and create Webs'
 url: 'using-hugo-as-website'
 ---
 
-To use HUGO, you just need 2 things:
+To use HUGO, you just need **2 things**: GO language and HUGO.
 
 {{< details title="Setup GO & HUGO 📌" closed="true" >}}
 

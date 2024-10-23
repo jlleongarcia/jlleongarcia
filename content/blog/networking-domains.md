@@ -1,10 +1,10 @@
 ---
-title: "Networking - Understading Domains and DNS Setup"
+title: "Networking - Understanding Domains and DNS Setup"
 date: 2024-10-23T10:20:21+01:00
 draft: true
 tags: ["Dev"]
 description: 'How to Setup DNS for your Domains.'
-summary: ''
+summary: 'How to Setup DNS for your Domains'
 url: 'web-domain-basics'
 ---
 

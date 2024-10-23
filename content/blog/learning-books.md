@@ -9,7 +9,7 @@ url: 'learning-new-tools-oct-2024'
 ---
 
 
-https://bookstash.io/ - Top books recommended by famous folk, in 3m or less.
+* https://bookstash.io/ - Top books recommended by famous folk, in 3m or less.
 
 ---
 

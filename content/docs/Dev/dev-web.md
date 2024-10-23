@@ -26,19 +26,15 @@ as in the [withastro/starlight Theme](https://github.com/IoTechCrafts/starlight-
 {{< /details >}}
 
 
-{{< details title="How to get OGImage right 📌" closed="true" >}}
-
-
-
-> As seen in [Web3Templates - Stablo Theme](https://github.com/IoTechCrafts/stablo-astro-SSG)
-
+{{< details title="How to get OpenGraph - OGImage right 📌" closed="true" >}}
+> As seen in [Web3Templates - Stablo Theme](https://github.com/IoTechCrafts/stablo-astro-SSG) or in [AstroVerse/VisVRS](https://github.com/IoTechCrafts/astroverse)
 {{< /details >}}
 
 
 ## What Ive Learnt about Astro
 
 
-{{< details title="RaspAP with Mullvad 📌" closed="true" >}}
+{{< details title="How to Install Dependencies 📌" closed="true" >}}
 
 checking dependencies
 
@@ -55,6 +51,8 @@ npm install @astrojs/starlight --legacy-peer-deps #if you have some dep issues
 
 
 {{< details title="Better SEO for Astro 📌" closed="true" >}}
+
+* Seo Package for astro:
 
 ```astro
 import { AstroSeo } from '@astrolib/seo';
@@ -90,8 +88,7 @@ import photopost1b from '../../assets/image.jpg';
 
 {{< /details >}}
 
-
-
+---
 
 ## Tweaking HUGO Themes
 
@@ -128,6 +125,9 @@ WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, 
 
 * https://roadmap.sh/frontend
 * https://roadmap.sh/backend
+
+* How to get the HEX colors of websites - [SmartColorPicker extension](https://chromewebstore.google.com/detail/smart-color-picker/ilifjbbjhbgkhgabebllmlcldfdgopfl?hl=en)
+* Explore HEX colors with [Color Picker Chrome extension](https://chromewebstore.google.com/detail/color-picker-chrome-exten/apldhonppojnaadpeoghllcjealkkmem?gad_source=1&gclid=Cj0KCQjwveK4BhD4ARIsAKy6pMKC6wDlkEkSh9SsQ9wirszcseVvgQ1BAuWXai5FtBzsS66YMrB65YsaAp95EALw_wcB)
 
 You need markdown for these SSGs - https://github.com/Cveinnt/LetsMarkdown.com
 

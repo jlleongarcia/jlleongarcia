@@ -7,7 +7,7 @@ summary: 'How to get started with HUGO'
 url: 'minimalist-blog'
 ---
 
-paper mod
+paper mod Theme
 
 
 ### Minimalist Astro Blogs
