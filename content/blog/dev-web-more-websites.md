@@ -78,4 +78,10 @@ Registry Expiry Date
 * Gym Trainer - https://trenujswiadomie.pl/kokpit/
 
 * ecommerce - https://outficik.pl/
+
+---
+
+To try Astro+Ghost headlessCMS as described 
+https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#gatsby
+
 -->

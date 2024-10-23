@@ -137,7 +137,8 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
 
 {{< details title="Free SSG Deployment 📌" closed="true" >}}
 
-* With Firebase
+* With Firebase, the Free Tier allows for up to 10GB for ppl to download your content.
+  * Per month, and at least at the time of writing. This might (or not) change.
 
 ```sh
 firebase init #configure files for firebase hosting / public directory is normall public for HUGO and dist for Astro/nodes

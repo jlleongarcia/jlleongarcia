@@ -154,6 +154,26 @@ services:
       - 5000:5000
 ```
 
+```yml
+version: '3.8'
+
+services:
+  gatsby-dev:
+    image: gatsby-dev:latest
+    ports:
+      - "8001:8000"
+    volumes:
+      - app_data:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    # environment:
+    #   - NODE_ENV=development
+    command: tail -f /dev/null #keep it running      
+
+volumes:
+  node_modules:
+  app_data:
+```
+
 {{< /details >}}
 
 {{< details title="Node Dockerfile 📌" closed="true" >}}
@@ -211,27 +231,6 @@ services:
       - "1313:1313"
 ```
 
-### Gatsby
-
-```yml
-version: '3.8'
-
-services:
-  gatsby-dev:
-    image: gatsby-dev:latest
-    ports:
-      - "8001:8000"
-    volumes:
-      - app_data:/usr/src/app
-      - node_modules:/usr/src/app/node_modules
-    # environment:
-    #   - NODE_ENV=development
-    command: tail -f /dev/null #keep it running      
-
-volumes:
-  node_modules:
-  app_data:
-```
 
 ### Jekyll
 
@@ -251,3 +250,75 @@ services:
 volumes:
   jekyll-site:  # Define the named volume her
 ```
+
+
+### Gatsby
+
+Thanks to Gatsby, I heard for the first time about **headless CMS**
+
+There is a way to integrate **Ghost as CMS and use Gatsby as SSG**. Having the bost of both worlds.
+
+
+
+{{< details title="Ghost and Gatsby Together - headless CMS sample 📌" closed="true" >}}
+
+
+A starter template to build lightning fast websites with [Ghost](https://ghost.org/) & [Gatsby](https://gatsbyjs.org)
+
+**Demo:** https://gatsby.ghost.org/
+
+&nbsp;
+
+![gatsby-starter-ghost](https://user-images.githubusercontent.com/120485/50913567-8ab8e380-142c-11e9-9e78-de02ded12fc6.jpg)
+
+&nbsp;
+
+
+# Installing
+
+```bash
+# With Gatsby CLI
+gatsby new gatsby-starter-ghost https://github.com/TryGhost/gatsby-starter-ghost.git
+```
+
+```bash
+# From Source
+git clone https://github.com/TryGhost/gatsby-starter-ghost.git
+cd gatsby-starter-ghost
+```
+
+Then install dependencies
+
+```bash
+yarn
+```
+
+&nbsp;
+
+# Running
+
+Start the development server. You now have a Gatsby site pulling content from headless Ghost.
+
+```bash
+gatsby develop
+```
+{{< /details >}}
+
+
+
+---
+
+## Releted Concepts I discovered
+
+### Testing Astro with Ghost as HeadlessCMS
+
+* https://astro-ghostcms.xyz/
+  * https://gitlab.com/matthiesenxyz/astro-ghostcms
+  * https://github.com/MatthiesenXYZ/astro-ghostcms
+
+And with some interesting Themes supported!
+
+* https://github.com/MatthiesenXYZ/demo-starlightghostcms
+  * https://starlightdemo.astro-ghostcms.xyz/
+
+> Thanks to matthiesenxyz!
