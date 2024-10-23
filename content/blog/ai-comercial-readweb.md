@@ -18,6 +18,22 @@ url: 'scrap-and-chat-with-the-web'
   A post of what I learnt about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
 {{< /callout >}}
 
+
+Some time ago I was doing an interview and it was quite hard from them to see my CV.
+
+But..if I always send pdf's, whats wrong?
+
+It seems that there are some HR parsing systems that can interprete data.
+
+Sometimes breaking totally the initial format.
+
+Lesson learnt. A CV must be cool for the human eye, and understandable for the machines.
+
+
+{{< callout type="info" >}}
+And Applied it for [better CV and job search](https://gitlab.com/fossengineer1/cv-check)
+{{< /callout >}}
+
 ### ScrapeGraph
 
 [ScrapeGraph allows for open](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.

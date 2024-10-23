@@ -52,3 +52,12 @@ But its possible to use VSCode with SSH and **see all the dev environment files*
 ```
 
 {{< /details >}}
+
+
+
+{{< details title="Automatic Sync Scrypt 📌" closed="true" >}}
+
+
+
+
+{{< /details >}}

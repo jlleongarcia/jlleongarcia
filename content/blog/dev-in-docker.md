@@ -36,16 +36,33 @@ Thanks to [this YT Video](https://www.youtube.com/watch?v=miyD4c1dnTU), I could 
 
 ### VSCode Dev via Containers
 
-For container, do this instead
+For container, do this instead. 
+
+**Option 1**
+
+1. Get your Dockerfile Ready
+2. `CTRL+SHIFT+P` -> **Attach to running container**. Accept to run docker in wsl
+3. Steting up Dev Containers....
+
+**Option 2**
+
+1. Get your Dockerfile Ready
+2. `CTRL+SHIFT+P` -> **Add development container configuration files**. ->> `From Dockerfile`
+3. a `devcontainer.json` will be created
+4. Update the forwardPorts field of the json, for example with `"forwardPorts": [4321,4321],`
+5. Re-open command palette `CTRL+SHIFT+P`, select **DevContainer: reopen in container**
+
 
 ```sh
-
+docker exec -it webcyclingthere /bin/bash #see what happens inside the container
 ```
+
+**Thanks to** this [Maksim Ivanov YT Video](https://www.youtube.com/watch?v=mi8kpAgHYFo)
 
 {{< youtube "J0NuOlA2xDc" >}}
 <!-- https://www.youtube.com/watch?v=J0NuOlA2xDc -->
 
-> Never install locally
+> Remember, **Never install locally**
 
 ---
 

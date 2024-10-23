@@ -3,10 +3,13 @@ title: "Interesting Telecom Concepts"
 date: 2023-12-31T23:20:21+01:00
 draft: false
 tags: ["Self-Hosting","Web"]
-description: 'Interesting Telecom stuff I got to know'
+description: 'Interesting Telecom stuff I got to know while using Data lakehouse'
 summary: ''
 url: 'telecom-concepts-101'
 ---
+
+Building the data lakehouse by Bill Inmon. Helped me a lot. 
+
 
 
 {{< callout type="info" >}}

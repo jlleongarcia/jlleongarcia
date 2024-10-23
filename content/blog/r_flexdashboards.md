@@ -121,6 +121,7 @@ Shiny allows for real-time interaction, meaning that the user's inputs can direc
 
 However, **Shiny requires a running R session in the background**, which makes hosting a bit more complex compared to Flexdashboards. Shiny apps can be hosted using Shiny Server or RStudio's hosting service, ShinyApps.io.
 
+<!-- geojson -->
 
 <!-- 
 <https://r-graph-gallery.com/> -->
@@ -133,10 +134,12 @@ However, **Shiny requires a running R session in the background**, which makes h
 <https://rfun.library.duke.edu/portfolio/mapping_workshop/>
 <https://rfun.library.duke.edu/portfolio/dashboard_workshop/>
 <https://rfun.library.duke.edu/portfolio/shiny_workshop/>
+ -->
+
 
 ### How to create animations in R
 
- -->
+![Karting Adventure](/blog_img/dev/503.gif)
 
 ### Other F/OSS Static Stuff
 

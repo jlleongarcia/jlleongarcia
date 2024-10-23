@@ -69,6 +69,8 @@ response.stream_to_file(speech_file_path)
 * OBSStudio to record + I record myself commenting the video
 * Then, that .mp4 gets a transcript, which is passed to the OpenAI API to generate an AI voice
 
+![Karting Adventure](/blog_img/memes/ezoeazin.JPG)
+
 > A friend gave me this cool idea:
 
 ```py
@@ -317,6 +319,12 @@ chmod +x cygwin_cibuildwheel_build.sh
 ## FAQ
 
 ### Social Media Automation
+
+Social Media can be simplified
+
+![Forocoches3kbmw](/blog_img/memes/ezoeazin.jpg)
+
+
 
 * [Zapier](https://zapier.com/app/home)
 
