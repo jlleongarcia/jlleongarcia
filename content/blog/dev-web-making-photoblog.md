@@ -171,10 +171,27 @@ resources:
 ```
 
 * it supports several langauges with **i18n**, the file is `en.yaml`
-* it also support image zoom and download (in full quality)
+* it also support **image zoom and download** (in full quality)
+    * Thanks to PhotoSwipe and a lightbox gallery 
+
+> After I was happy with the changes, I moved the content of the sampleSite, to the main project folder:
+
+```sh
+rsync -av ./exampleSite/ .
+hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" --port=1319
+```
+
 {{< /details >}}
 
+After editing, I copied the files to my PC, to use Gitlab+Cloudflare.
 
+```sh
+scp -r username@192.168.0.117:/home/path1/path2/hugo-theme-gallery .
+
+#https://go.dev/dl/
+#https://github.com/gohugoio/hugo/releases/tag/v0.121.2
+./hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.171" --port=1319
+```
 
 ---
 
