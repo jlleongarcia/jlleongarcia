@@ -193,6 +193,34 @@ scp -r username@192.168.0.117:/home/path1/path2/hugo-theme-gallery .
 ./hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.171" --port=1319
 ```
 
+{{< details title="Deploying HUGO with Google Firebase 📌" closed="true" >}}
+
+```sh
+firebase login
+firebase init
+hugo
+firebase deploy
+```
+
+And to have the my domain linked...
+
+Went to [firebase UI](https://console.firebase.google.com/) -> Compilation -> hosting.
+
+Add a custom domain.
+
+Select my subdomain, and added a **CName + TXT record to the DNS**.
+
+For that domain, Im using cloudflare - so made sure that its **DNS only and not proxied records**
+
+{{< /details >}}
+
+
+{{< details title="Deploying HUGO with Gitlab + Cloudflare 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
 ---
 
 ## New Web Workflow
