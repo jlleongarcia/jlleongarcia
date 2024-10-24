@@ -220,6 +220,10 @@ return <button onClick={handleClick}>Click Me</button>;
 It seems that FormBricks Forms can just be embedded **and not opened as a hyperlink url**.
 {{< /callout >}}
 
+But, you can do **a cool trick**.
+
+To make a button call the JS that makes FormBricks pop out.
+
 ### GoodSheet
 
 {{< details title="Using GoodSheet.io 📌" closed="true" >}}

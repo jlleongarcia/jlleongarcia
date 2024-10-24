@@ -76,6 +76,13 @@ Registry Expiry Date - 26 April 2025
 
 * JoseLuis Github
 
+* Sofia - zofienkagram
+  * https://wnba.pl/ - another wordpress (good looking)
+  * monika ciolkowska - monikacio
+    * https://monikaciolkowska.portfoliobox.net/
+    * Using the low tier without domain of https://www.portfoliobox.net/pricing (46$/y)
+      * Interesting section with a table comparing services and faq (go below)
+
 * Gym Trainer - https://trenujswiadomie.pl/kokpit/
 
 * ecommerce - https://outficik.pl/
