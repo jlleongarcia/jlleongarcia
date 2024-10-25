@@ -410,7 +410,10 @@ As always, check the [performance of the site](https://jalcocert.github.io/JAlco
 
 ![HUGO Theme Gallery Carbon](/blog_img/web/success5-aga/photogallery-hugo-whilecyclingthere-carbon.png)
 
-But...they are using an **incompatible HUGO 0.118**, so...I went with the [manual Cloudflare CLI Pages](https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/#faq) way.
+But...they are using an **incompatible HUGO 0.118**, so...I went with the [**manual** Cloudflare CLI Pages](https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/#faq) way.
+
+
+![Cloufalre Wrangler CLI](/blog_img/web/success5-aga/cloudflare-cli-version.png)
 
 Probably sth to have a look with the `wrangler.toml` to see if the version can be specified. TBD.
 
@@ -429,7 +432,9 @@ npx wrangler pages deploy public #<BUILD_OUTPUT_DIRECTORY> and this time is HUGO
 #npx wrangler pages deployment list
 ```
 
-See the **Demo at: <https://agutek.pages.dev>**
+![Cloudflare Wrangler CLI with HUGO](/blog_img/web/success5-aga/cloudflare-hugo-deploy.png)
+
+See the **Demo at: <https://agutek.pages.dev>** or <https://enjoylittlethings.org/>
 
 <!--
 https://github.com/JAlcocerT/agutek-portfolioweb 
@@ -447,7 +452,7 @@ Time to say bye to my old friend Firebase.
 
 At least for now.
 
-And to make the dev workflow smoother when Im switching devices...
+And to make the **dev workflow smoother** when Im switching devices...
 
 * I develop via [SSH with VSCode](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/) with the Opi5 as server
 * All repos gets synced thanks to [this script](https://github.com/JAlcocerT/JAlcocerT/tree/main/Z_Clone_Repos) to the Opi5

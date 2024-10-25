@@ -20,11 +20,17 @@ url: 'astro-web-setup'
 ![Uptime Ira](/blog_img/web/success3-realestate/uptime-cano.png)
 
 {{< callout type="info" >}}
-How much better is the result? [Jump to it](#real-estate-web---results)
+How much better is **the result**? [Jump to it](#real-estate-web---results)
 {{< /callout >}}
 
 
+
 ### Demo with Cloudflare Pages
+
+Lets do this.
+
+![A quick project - meme](/blog_img/memes/zinedine-zidane-materazzi.gif#center)
+
 
 {{< callout type="info" >}}
 I created a [**Private repo with Github**](https://github.com/JAlcocerT/ScrewFastMoiRealEstate)
