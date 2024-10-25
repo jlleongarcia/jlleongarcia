@@ -27,12 +27,64 @@ It seems that there are some HR parsing systems that can interprete data.
 
 Sometimes breaking totally the initial format.
 
-Lesson learnt. A CV must be cool for the human eye, and understandable for the machines.
+Lesson learnt.
+
+A CV must be cool for the human eye, and understandable for the machines.
 
 
 {{< callout type="info" >}}
 And Applied it for [**better CV** and job search](https://gitlab.com/fossengineer1/cv-check)
 {{< /callout >}}
+
+Is it a good moment to look for a Job?
+
+Just have a look to **how many offers are available now** (and remote) vs the historical ones.
+
+{{< details title="Using bs4 and requests to Get a feel on the Job Market - Total offers vs Remote offers📌" closed="true" >}}
+
+Within the [CV Check Project](https://gitlab.com/fossengineer1/cv-check) at the [folder `./Scrap_Pracuj`](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj?ref_type=heads)...
+
+
+We are just pushing the data to a sqlite DB.
+
+The data is extarcted with the known approach of beautiful soup. Where you need to **input the Web structure**.
+
+
+{{< /details >}}
+
+{{< callout type="warning" >}}
+If the Web Structure Changes - This will need to be re-worked.
+{{< /callout >}}
+
+{{< details title="How to explore the SQLiteDB📌" closed="true" >}}
+
+```sh
+sudo apt install sqlite3
+sqlite3 --version
+
+sqlite3 ./job_offers_v3.db
+
+#SELECT * FROM your_table_name ORDER BY your_primary_key_column DESC LIMIT 5;
+
+#SELECT name FROM sqlite_master WHERE type='table';
+#.tables
+
+SELECT * FROM job_offers;
+SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
+
+#.quit
+
+```
+
+
+{{< /details >}}
+
+You can make it run every night by setting **CRON task with [a script](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Scrap_Pracuj/run_pracuj.sh?ref_type=heads)**.
+
+```sh
+df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space (see drives >3GB)
+```
+
 
 ### ScrapeGraph
 
