@@ -31,6 +31,11 @@ WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, 
 
 We are going to use **HUGO as SSG**, together with the great **[Hugo-Theme-Gallery](https://github.com/nicokaiser/hugo-theme-gallery)**
 
+
+###
+
+### Testing the Theme
+
 {{< details title="How to create a Photo Gallery with Hugo 📌" closed="true" >}}
 
 ```sh
@@ -175,11 +180,10 @@ services:
 
 {{< details title="Tweaking Hugo Theme Gallery 📌" closed="true" >}}
 
-
-* The content for the main page is it `_index.md`
+* The content for the **main page** is it `_index.md`
 * Every folder has photos and a `index.md`
     * In those files you can choose the **featured_image** and..
-    * If you want to add some description to the imgs
+    * If you want to add some description to the imgs...
 
 ```md
 resources:
@@ -187,8 +191,8 @@ resources:
     title: Brown tabby cat on white stairs by Alexander London
 ```
 
-* it supports several langauges with **i18n**, the file is `en.yaml`
-* it also support **image zoom and download** (in full quality)
+* It supports several langauges with **i18n**, the file is `en.yaml`
+* It also support **image zoom and download** (in full quality)
     * Thanks to PhotoSwipe and a lightbox gallery 
 * **OpenGraph/OG picture** seems to workout of the box - So your photo will be there when sharing to WhatsApp...
 
@@ -213,7 +217,7 @@ scp -r username@192.168.0.117:/home/path1/path2/hugo-theme-gallery .
 
 {{< details title="Deploying HUGO with Google Firebase 📌" closed="true" >}}
 
-Using **Firebase Free tier Hosting**
+Using **Firebase Free Tier Hosting**
 
 ```sh
 firebase login
@@ -239,13 +243,162 @@ For that domain, Im using cloudflare - so made sure that its **DNS only and not 
 
 {{< /details >}}
 
+### Hugo and Photo Gallery - Steps
 
-{{< details title="Deploying HUGO with Gitlab + Cloudflare 📌" closed="true" >}}
 
-<!-- 
-https://gitlab.com/fossengineer1/whilecyclingthere -->
+
+{{< details title="Go + HUGO + HugoThemeGallery 📌" closed="true" >}}
+
+We need [Go](https://go.dev/dl/) + **[HUGO extended](https://github.com/gohugoio/hugo/releases) version**:
+
+```sh
+#GO
+wget https://go.dev/dl/go1.23.2.linux-arm64.tar.gz
+sudo tar -C /usr/local -xzf go1.23.2.linux-arm64.tar.gz
+nano ~/.bashrc
+#write this in the end of the file
+export PATH=$PATH:/usr/local/go/bin
+#save
+source ~/.bashrc
+#go version #Go is updated!
+
+#HUGO
+wget https://github.com/gohugoio/hugo/releases/download/v0.121.2/hugo_extended_0.121.2_linux-arm64.deb
+sudo dpkg -i hugo_extended_0.121.2_linux-arm64.deb
+#hugo version
+```
+
+
+```sh
+hugo new site agutekportfolio
+cd ./agutekportfolio
+
+git init
+git submodule add https://github.com/IoTechCrafts/hugo-theme-gallery-ssg.git themes/hugo-theme-gallery-ssg
+
+#cd ~/dirty_repositories/my-hugo-site/themes/hugo-theme-gallery-ssg
+#rm -rf .git
+
+
+#cd themes/hugo-theme-gallery-ssg/exampleSite/ #test the sample site one more time
+# Install Hugo module
+#hugo mod get
+
+## TRY THE exampleSite THEME!
+# Pull example images from Unsplash
+#./pull-images.sh
+#hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" --port=1319
+```
+
+If the sample works, we can **download the photos from GDrive** like so:
+
+```sh
+sudo apt install python3 python3-pip python3-venv -y
+python3 -m venv myenv
+source myenv/bin/activate
+pip install gdown
+
+
+gdown --folder https://drive.google.com/drive/folders/1-abcd-234 #gdriveFolder with link read permissions
+```
+
+They will be downloaded on its folder, in this case `Agutek` and provide a `_index.md`, like:
+
+```md
+---
+description: My Memories from Azores
+featured_image: janis-ringli-UC1pzyJFyvs-unsplash.jpg
+keywords: [Animals, Photos, Cats, Dogs]
+title: Animals
+weight: 1
+menus: "main"
+# list pages require at least one image to be displayed.
+---
+```
+
+Which needs to be placed into `content`
+
+When you are **done adapting it**. Copy the content:
+
+```sh
+cp -r themes/hugo-theme-gallery-ssg/exampleSite/* . #copy the sample one to the main folder
+```
+
+Just need to do now:
+
+1. Edit the go.mod file from the main HUGO project folder from:
+
+```
+module github.com/nicokaiser/hugo-gallery-starter
+
+go 1.20
+
+require github.com/nicokaiser/hugo-theme-gallery/v4 v4.0.0 // indirect
+
+replace github.com/nicokaiser/hugo-theme-gallery/v4 => ../
+
+```
+
+To
+
+```
+module github.com/nicokaiser/hugo-gallery-starter
+
+go 1.20
+
+require github.com/nicokaiser/hugo-theme-gallery/v4 v4.0.0 // indirect
+```
+
+And then:
+```sh
+hugo mod get # Install Hugo module
+```
+
+Finally, **enjoy**:
+
+```sh
+#hugo server
+hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" --port=1319
+```
+
+> And you will have the **amazing HUGO sample theme** at `http://192.168.0.117:1319`
 
 {{< /details >}}
+
+
+See that everything builds with
+
+```sh
+hugo
+cd ./public
+python3 -m http.server 8081
+```
+
+{{< details title="Deploying HUGO with Gitlab + Cloudflare - Git Setup 📌" closed="true" >}}
+
+So we have our git init command done. But havent used it so much.
+
+Lets create and push this project to a Github Repository
+
+```sh
+git add .
+git commit -m "Initial commit of Hugo project"
+
+git remote add origin https://github.com/JAlcocerT/agutek-portfolioweb.git
+git push -u origin master #and this will push it!
+```
+
+For the OG to work, dont forget to update the URL at `hugo/toml` -> baseURL.
+
+You can choose the OG Image in this theme at `./content/_index.md` - features_image.
+
+{{< /details >}}
+
+![HUGO Theme Gallery Carbon](/blog_img/web/success5-aga/cloudflareWnP-Github-Hugo.png)
+
+{{< callout type="info" >}}
+Using the [forked Hugo Theme Gallery](https://github.com/IoTechCrafts/hugo-theme-gallery-ssg), to create [this Artist Portfolio](https://github.com/JAlcocerT/agutek-portfolioweb) and [this other](https://gitlab.com/fossengineer1/whilecyclingthere)
+{{< /callout >}}
 
 ## Results
 
@@ -256,6 +409,31 @@ As always, check the [performance of the site](https://jalcocert.github.io/JAlco
 {{< /callout >}}
 
 ![HUGO Theme Gallery Carbon](/blog_img/web/success5-aga/photogallery-hugo-whilecyclingthere-carbon.png)
+
+But...they are using an **incompatible HUGO 0.118**, so...I went with the [manual Cloudflare CLI Pages](https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/#faq) way.
+
+Probably sth to have a look with the `wrangler.toml` to see if the version can be specified. TBD.
+
+```sh
+#sudo npm install -g wrangler
+npx wrangler pages project create #this will install wrangler CLI the first time + Ask you to authenticate via Web Link
+
+#wrangler init
+#https://github.com/gohugoio/hugo/releases/tag/v0.121.2
+hugo #---> ./public
+
+npx wrangler pages deploy public #<BUILD_OUTPUT_DIRECTORY> and this time is HUGO!
+
+#Use **Wrangler** to obtain a list of all available projects for Direct Upload:
+#npx wrangler pages project list #this are the ones you uploaded already
+#npx wrangler pages deployment list
+```
+
+See the **Demo at: <https://agutek.pages.dev>**
+
+<!--
+https://github.com/JAlcocerT/agutek-portfolioweb 
+https://gitlab.com/fossengineer1/whilecyclingthere -->
 
 ---
 
