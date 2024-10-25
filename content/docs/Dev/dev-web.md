@@ -27,7 +27,8 @@ as in the [withastro/starlight Theme](https://github.com/IoTechCrafts/starlight-
 
 
 {{< details title="How to get OpenGraph - OGImage right 📌" closed="true" >}}
-> As seen in [Web3Templates - Stablo Theme](https://github.com/IoTechCrafts/stablo-astro-SSG) or in [AstroVerse/VisVRS](https://github.com/IoTechCrafts/astroverse)
+* As seen in [Web3Templates - Stablo Theme](https://github.com/IoTechCrafts/stablo-astro-SSG) or in [AstroVerse/VisVRS](https://github.com/IoTechCrafts/astroverse)
+* For HUGO, [HUGO Theme Gallery](https://github.com/nicokaiser/hugo-theme-gallery) has OG done right
 {{< /details >}}
 
 
@@ -107,18 +108,6 @@ If you are using HUGO, embedd your images with [this shortcode](https://raw.gith
 
 {{< /details >}}
 
-{{< details title="Themes I love for Galleries 📌" closed="true" >}}
-
-| **Description**                        | **Link**                                   |
-|----------------------------------------|--------------------------------------------|
-| PHP          | [NovaGallery](https://github.com/novafacile/novagallery)    |
-| Ghost                | [Compose Overview](https://docs.docker.com/compose/) |
-
-Ghost Themes: Handlebars, HTML, CSS, JavaScript, JSON.
-WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, and hooks.
-
-{{< /details >}}
-
 ---
 
 ## FAQ
@@ -126,7 +115,7 @@ WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, 
 * https://roadmap.sh/frontend
 * https://roadmap.sh/backend
 
-* How to get the HEX colors of websites - [SmartColorPicker extension](https://chromewebstore.google.com/detail/smart-color-picker/ilifjbbjhbgkhgabebllmlcldfdgopfl?hl=en)
+* How to get the **HEX colors** of websites - [SmartColorPicker extension](https://chromewebstore.google.com/detail/smart-color-picker/ilifjbbjhbgkhgabebllmlcldfdgopfl?hl=en)
 * Explore HEX colors with [Color Picker Chrome extension](https://chromewebstore.google.com/detail/color-picker-chrome-exten/apldhonppojnaadpeoghllcjealkkmem?gad_source=1&gclid=Cj0KCQjwveK4BhD4ARIsAKy6pMKC6wDlkEkSh9SsQ9wirszcseVvgQ1BAuWXai5FtBzsS66YMrB65YsaAp95EALw_wcB)
 
 You need markdown for these SSGs - https://github.com/Cveinnt/LetsMarkdown.com
@@ -137,7 +126,7 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
 
 {{< details title="Free SSG Deployment 📌" closed="true" >}}
 
-* With Firebase, the Free Tier allows for up to 10GB for ppl to download your content.
+* With **Firebase**, the Free Tier allows for up to 10GB for ppl to download your content.
   * Per month, and at least at the time of writing. This might (or not) change.
 
 ```sh
@@ -145,7 +134,7 @@ firebase init #configure files for firebase hosting / public directory is normal
 firebase deploy #you will get something like -> https://jalcocertech.web.app/
 ```
 
-* You can also try with [Cloudflare](/understanding-astro-ssg-components/#faq) or Github Pages.
+* You can also try with [Cloudflare](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#faq) or Github Pages.
 
 {{< /details >}}
 

@@ -84,7 +84,7 @@ Go to your [mailerlite dashboard UI](https://dashboard.mailerlite.com)
 
 I am using Cloudflare for that domain, and the DNS were updated automatically via UI.
 
-There are some CName and txt records and they will be DNS only, not proxied.
+There are some **CName and txt records** and they will be **DNS only**, not proxied.
 
 ![Wordpress Google Page Speed Desktop](/blog_img/web/SaaS/mailerlite-domainsetup.png)
 

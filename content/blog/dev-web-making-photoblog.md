@@ -9,10 +9,27 @@ url: 'creating-photo-centric-blog-with-hugo'
 
 For this **client**, I had to make something **special**.
 
-She's a traveler, **photo adict**, content creator and artist.
+She's a traveler, **Photo Adict**, content creator and Artist.
 
 * https://nicokaiser.github.io/hugo-theme-gallery/animals/cats/
 
+
+{{< details title="Themes I love for Galleries 📌" closed="true" >}}
+
+| **Description**                        | **Link**                                   |
+|----------------------------------------|--------------------------------------------|
+| PHP          | [NovaGallery](https://github.com/novafacile/novagallery)    |
+| Ghost                | [Compose Overview](https://docs.docker.com/compose/) |
+
+Ghost Themes: Handlebars, HTML, CSS, JavaScript, JSON.
+WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, and hooks.
+
+{{< /details >}}
+
+
+## HUGO Photo Gallery
+
+We are going to use **HUGO as SSG**, together with the great **[Hugo-Theme-Gallery](https://github.com/nicokaiser/hugo-theme-gallery)**
 
 {{< details title="How to create a Photo Gallery with Hugo 📌" closed="true" >}}
 
@@ -154,7 +171,7 @@ services:
 
 {{< /details >}}
 
-
+### Tweaking HUGO Theme Gallery
 
 {{< details title="Tweaking Hugo Theme Gallery 📌" closed="true" >}}
 
@@ -173,6 +190,7 @@ resources:
 * it supports several langauges with **i18n**, the file is `en.yaml`
 * it also support **image zoom and download** (in full quality)
     * Thanks to PhotoSwipe and a lightbox gallery 
+* **OpenGraph/OG picture** seems to workout of the box - So your photo will be there when sharing to WhatsApp...
 
 > After I was happy with the changes, I moved the content of the sampleSite, to the main project folder:
 
@@ -195,12 +213,16 @@ scp -r username@192.168.0.117:/home/path1/path2/hugo-theme-gallery .
 
 {{< details title="Deploying HUGO with Google Firebase 📌" closed="true" >}}
 
+Using **Firebase Free tier Hosting**
+
 ```sh
 firebase login
 firebase init
 hugo
 firebase deploy
 ```
+
+![Firebase Free Tier Limits](/blog_img/web/success5-aga/FirebaseHosting-FreeTier-Limits.png)
 
 And to have the my domain linked...
 
@@ -210,6 +232,9 @@ Add a custom domain.
 
 Select my subdomain, and added a **CName + TXT record to the DNS**.
 
+![Firebase Custom Domain](/blog_img/web/success5-aga/firebase-own-domain.png)
+
+
 For that domain, Im using cloudflare - so made sure that its **DNS only and not proxied records**
 
 {{< /details >}}
@@ -217,9 +242,20 @@ For that domain, Im using cloudflare - so made sure that its **DNS only and not 
 
 {{< details title="Deploying HUGO with Gitlab + Cloudflare 📌" closed="true" >}}
 
-
+<!-- 
+https://gitlab.com/fossengineer1/whilecyclingthere -->
 
 {{< /details >}}
+
+## Results
+
+
+
+{{< callout type="info" >}}
+As always, check the [performance of the site](https://jalcocert.github.io/JAlcocerT/create-your-website/#is-my-website-performing-well)
+{{< /callout >}}
+
+![HUGO Theme Gallery Carbon](/blog_img/web/success5-aga/photogallery-hugo-whilecyclingthere-carbon.png)
 
 ---
 
@@ -236,7 +272,7 @@ At least for now.
 And to make the dev workflow smoother when Im switching devices...
 
 * I develop via [SSH with VSCode](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/) with the Opi5 as server
-* Everything gets synced thanks to [this script](https://github.com/JAlcocerT/JAlcocerT/tree/main/Z_Clone_Repos)
+* All repos gets synced thanks to [this script](https://github.com/JAlcocerT/JAlcocerT/tree/main/Z_Clone_Repos) to the Opi5
 
 
 {{< details title="Testing Astro with Gitlab at Opi 📌" closed="true" >}}

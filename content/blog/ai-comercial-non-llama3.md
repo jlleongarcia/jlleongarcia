@@ -18,13 +18,17 @@ If you are looking for a quick and easy Ollama UI, you should have a look to the
 
 > Because you already know about [Ollama](https://github.com/ollama/ollama), right?
 
-But, if you want to go one step further and get an understanding on how this work in Python, [keep reading](#the-streamlit-ollama-project) and you will learn how to create your Streamlit LLM Chat integrated with Ollama, that you can SelfHost.
+But, if you want to go one step further and get an understanding on how this work in Python, [keep reading](#the-streamlit-ollama-project) and you will learn how to create your **Streamlit LLM Chat integrated with Ollama**, that you can SelfHost.
 
 **Setup Ollama in 5 minutes as per this video in Collaboration with [Data Zen Community](https://www.youtube.com/@DataZenCommunity/videos)**
 <!-- 
 https://www.youtube.com/watch?v=vukAQPCv7Tw 
 https://wearecommunity.io/events/tech-week/talks/78585
 -->
+
+{{< callout type="info" >}}
+Interesting [WeAreCommunity Talks](https://wearecommunity.io/events/tech-week/talks/78585)
+{{< /callout >}}
 
 {{< youtube "vukAQPCv7Tw" >}}
 
