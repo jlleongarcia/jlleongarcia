@@ -108,9 +108,59 @@ If you are using HUGO, embedd your images with [this shortcode](https://raw.gith
 
 {{< /details >}}
 
+{{< details title="How to add ads.txt to HUGO 📌" closed="true" >}}
+
+1. **Create an `ads.txt` file** in your Hugo project’s `static` directory. The `static` folder in Hugo is where you put any files you want to be copied directly to the root of your build output.
+
+2. **Add your content** to the `ads.txt` file:
+
+```plaintext
+   google.com, pub-123456, DIRECT, abcdef123456
+```
+
+3. **Build your Hugo site**:
+
+4. **Verify the output** by checking the `public` directory (Hugo's default output folder). You should find the `ads.txt` file in the root of `public`:
+
+
+5. **Deploy your site** as usual. The `ads.txt` file should now be available at `https://yourdomain.com/ads.txt`. 
+
+This method ensures that `ads.txt` is part of your site’s root directory in the final build output, as required by ad networks.
+
+{{< /details >}}
+
 ---
 
 ## FAQ
+
+{{< details title="Check that the SiteMap Works 📌" closed="true" >}}
+
+```sh
+#curl -s https://example.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://jalcocertech.xyz/sitemap.xml -o /dev/null -w "%{http_code}\n" #200 means its there!
+curl -s https://cyclingthere.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://cyclingthere.com/sitemap-index.xml -o /dev/null -w "%{http_code}\n" #its here!
+curl -s https://iotechcrafts.com/sitemap.xml -o /dev/null -w "%{http_code}\n" 
+
+curl -s https://fossengineer.com/sitemap.xml -o /dev/null -w "%{http_code}\n" #hugo paper mod has it
+
+#optional - check robots.txt
+curl -s https://jalcocertech.xyz/robots.txt | grep -i sitemap #look for sitemap direction
+curl -s https://iotechcrafts.com/robots.txt | head -n 10 #see the first 10 lines
+
+#example of path with robots
+curl -s https://bachatafests.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://bachatafests.com/robots.txt | head -n 10 #see the first 10 lines
+curl -s https://bachatafests.com/robots.txt | grep -i sitemap #look for sitemap direction
+curl -s https://bachatafests.com/sitemap_index.xml -o /dev/null -w "%{http_code}\n"
+```
+
+> Search for any **references to a sitemap URL** within the `robots.txt` file.
+
+If found sth, you can use that URL to check for the sitemap instead
+
+{{< /details >}}
+
 
 * https://roadmap.sh/frontend
 * https://roadmap.sh/backend

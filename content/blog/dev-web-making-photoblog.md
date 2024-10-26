@@ -388,21 +388,45 @@ git remote add origin https://github.com/JAlcocerT/agutek-portfolioweb.git
 git push -u origin master #and this will push it!
 ```
 
-For the OG to work, dont forget to update the URL at `hugo/toml` -> baseURL.
+For the **OG to work**, dont forget to update the URL at `hugo/toml` -> baseURL.
 
-You can choose the OG Image in this theme at `./content/_index.md` - features_image.
+You can choose the OG Image in this theme at `./content/_index.md` - featured_image.
 
 {{< /details >}}
+
+```sh
+curl -s https://enjoylittlethings.org/sitemap.xml -o /dev/null -w "%{http_code}\n" #Hugo theme gallery sitemap OK
+```
+
+Place the `robots.txt` file to `/static` as well:
+
+```txt
+User-agent: *
+Disallow: /private/
+Sitemap: https://enjoylittlethings.org/sitemap.xml
+```
+
+And now you have **robots.txt and sitemap.xml** ready:
+
+```sh
+curl -s https://enjoylittlethings.org/robots.txt #it has robots, but without sitemap, we can add it
+curl -s https://enjoylittlethings.org/robots.txt | grep -i sitemap #look for sitemap direction
+
+curl -s https://fossengineer.com/robots.txt #it has robots, but without sitemap, we can add it
+#curl -s https://fossengineer.com/robots.txt | head -n 10 #see the first 10 lines
+
+#curl -s https://while.cyclingthere.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+```
+
+Plus, a Theme that it is not only cool, but **eco friendly**:
 
 ![HUGO Theme Gallery Carbon](/blog_img/web/success5-aga/cloudflareWnP-Github-Hugo.png)
 
 {{< callout type="info" >}}
-Using the [forked Hugo Theme Gallery](https://github.com/IoTechCrafts/hugo-theme-gallery-ssg), to create [this Artist Portfolio](https://github.com/JAlcocerT/agutek-portfolioweb) and [this other](https://gitlab.com/fossengineer1/whilecyclingthere)
+Using the [forked Hugo Theme Gallery](https://github.com/IoTechCrafts/hugo-theme-gallery-ssg), to create [this **Artist Portfolio**](https://github.com/JAlcocerT/agutek-portfolioweb) and [this other](https://gitlab.com/fossengineer1/whilecyclingthere)
 {{< /callout >}}
 
 ## Results
-
-
 
 {{< callout type="info" >}}
 As always, check the [performance of the site](https://jalcocert.github.io/JAlcocerT/create-your-website/#is-my-website-performing-well)
@@ -413,7 +437,7 @@ As always, check the [performance of the site](https://jalcocert.github.io/JAlco
 But...they are using an **incompatible HUGO 0.118**, so...I went with the [**manual** Cloudflare CLI Pages](https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/#faq) way.
 
 
-![Cloufalre Wrangler CLI](/blog_img/web/success5-aga/cloudflare-cli-version.png)
+![Cloudflare Wrangler CLI](/blog_img/web/success5-aga/cloudflare-cli-version.png)
 
 Probably sth to have a look with the `wrangler.toml` to see if the version can be specified. TBD.
 

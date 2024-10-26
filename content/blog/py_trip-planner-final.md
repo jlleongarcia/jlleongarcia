@@ -24,7 +24,9 @@ Imagine a world where you're about to embark on a trip, you already know where y
 
 Not just the weather of yesteryears, but a glimpse into the future.
 
-Sounds like magic? Well, it's not.
+Sounds like **magic?**
+
+Well, it's not.
 
 > It's the power of Python and some coding.
 
