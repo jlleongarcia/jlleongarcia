@@ -130,7 +130,7 @@ You can have a look to the **crafted Website**:
 {{< /cards >}}
 
 {{< cards cols="2" >}}
-  {{< card link="https://github.com/JAlcocerT/ScrewFastMoiRealEstate/" title="Source Code" icon="Github" tag= "Code" >}}
+  {{< card link="https://github.com/JAlcocerT/ScrewFastMoiRealEstate/" title="Source Code" icon="github" tag= "Code" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/blog/dev-css/" title="CSS for Cool Sites" >}}
 {{< /cards >}}
 <!-- 

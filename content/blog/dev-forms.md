@@ -141,8 +141,9 @@ You can use this, for example, to send a welcome email.
 
 ## Contact Forms
 
-* Paid - https://formpress.org/pricing
+* Paid with KwesForms- https://formpress.org/pricing
     * https://kwesforms.com/pricing
+    * You place [whatever front end UI](https://jalcocert.github.io/JAlcocerT/blog/dev-css/#flowbite) you like and they manage the forms back end
 
 {{< details title="Using Google Forms 📌" closed="true" >}}
 

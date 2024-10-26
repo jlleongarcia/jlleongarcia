@@ -36,7 +36,7 @@ A CV must be cool for the human eye, and understandable for the machines.
 And Applied it for [**better CV** and job search](https://gitlab.com/fossengineer1/cv-check)
 {{< /callout >}}
 
-Is it a good moment to look for a Job?
+Is it a good moment to **look for a Job?**
 
 Just have a look to **how many offers are available now** (and remote) vs the historical ones.
 
@@ -53,7 +53,7 @@ The data is extarcted with the known approach of beautiful soup. Where you need 
 {{< /details >}}
 
 {{< callout type="warning" >}}
-If the Web Structure Changes - This will need to be re-worked.
+If the Web Structure Changes - Codes needs to be [re-worked, as it happened here](https://gitlab.com/fossengineer1/py_vacations/-/tree/main/Z_Scrap_bs4?ref_type=heads)
 {{< /callout >}}
 
 {{< details title="How to explore the SQLiteDB📌" closed="true" >}}
@@ -85,6 +85,11 @@ You can make it run every night by setting **CRON task with [a script](https://g
 df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space (see drives >3GB)
 ```
 
+## Scrapping with AI
+
+So, what can we do to make the code once, and scrap *forever*?
+
+There are few options!
 
 ### ScrapeGraph
 
@@ -95,6 +100,18 @@ df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space
 
 
 ### FireCrawl
+
+> "Ive got the Key for Success"
+
+{{< cards cols="1" >}}
+  {{< card link="/www.firecrawl.dev" title="FireCrawl API" >}}
+  {{< card link="https://platform.openai.com/api-keys" title="OpenAI API" >}}
+{{< /cards >}}
+
+{{< cards cols="2" >}}
+  {{< card link="/" title="Left Card" >}}
+  {{< card link="/" title="Right Card" >}}
+{{< /cards >}}
 
 {{< callout type="info" >}}
   I used it for the [DocPlanner Migration](https://jalcocert.github.io/JAlcocerT/docplanner-web-migration/) and used [this repo](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_UseCase1-Nevin)

@@ -17,8 +17,9 @@ And we got his [Flask App with https and custom domain](https://jalcocert.github
 A **Flask App** configured on a server, publically, **ready for anyone to use**.
 
 {{< callout type="info" >}}
-  You can also [get your own Flask App Deployed](https://jalcocertech.xyz/)
+[Get your own Flask App Deployed](https://jalcocertech.xyz/) or a [Custom Speech Rater AI App](https://github.com/JAlcocerT/Streamlit-Speech)
 {{< /callout >}}
+
 
 
 ## Flask 101

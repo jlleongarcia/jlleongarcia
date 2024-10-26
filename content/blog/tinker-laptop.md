@@ -11,11 +11,15 @@ As simple as it gets: it has a 8C/16T CPU, 16GB Ram and 500GB SSD.
 
 ![Lenovo Thinkpad x13](/blog_img/hardware/Lenovo_x13.jpg)
 
-It's 13', over 1kg of weight and 30.44x21,58x1,55cm, doing ~1.005L in volume
+**It's 13'**, over 1kg of weight and 30.44x21,58x1,55cm. 
+
+{{< callout type="info" >}}
+With **~1.005L in volume** its even smaller than the AsrockX300
+{{< /callout >}}
 
 It comes with W11 already installed, which I kept together with an Ubuntu installation (you need to desable Windows bitlocker first to be able to tweak the SDD space distribution)
 
-## Benchmarks
+## Benchmarks ThinkPad x13-G2
 
 {{< details title="Results - SysBench 📌" closed="true" >}}
 
@@ -72,7 +76,6 @@ sudo ./Selfhosting_101.sh
 
 I like to use **QUAD9 DNS's**:
 
-
 ```sh
 sudo nano /etc/resolv.conf
 ```
@@ -107,6 +110,13 @@ Even in your browser, you could go to: `http://orangepi5.abcdef.ts.net:9000` and
 {{< /details >}}
 
 
+### Sync and BackUps
+
+I love my Syncthing setup, but...
+
+Syncthing Android Apps is about to be gone.
+
+
 {{< details title="Connect to NextCloud as WebDav 📌" closed="true" >}}
 
 * You can install NextCloud Clients or...
@@ -132,10 +142,7 @@ Once you provide the user and pass, you will be able to see all the NC Files.
 
 {{< /details >}}
 
-### How to check dead Pixels
 
-* https://lcdtech.info/en/tests/dead.pixel.htm
-* https://deadpixeltest.org/colors/black
 
 ---
 
@@ -195,3 +202,9 @@ Connecting your laptop to your server with https:
   {{< card link="/" title="Local Image" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Raw image under static directory." >}}
   {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="HTTPS Everywhere" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Setup NGINX with DuckDNS to have https certificates." method="Resize" options="600x q80 webp" >}}
 {{< /cards >}}
+
+
+### How to Check dead Pixels
+
+* https://lcdtech.info/en/tests/dead.pixel.htm
+* https://deadpixeltest.org/colors/black
