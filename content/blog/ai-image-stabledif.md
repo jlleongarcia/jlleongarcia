@@ -17,6 +17,10 @@ How much is 2 years in GenAI?
 Well...lets find that out
 
 
+{{< details title="Stable Diffusion Models📌" closed="true" >}}
+
+{{< /details >}}
+
 ---
 
 ## FAQ

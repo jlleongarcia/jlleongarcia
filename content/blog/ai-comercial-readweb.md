@@ -237,6 +237,8 @@ Lets Find out
 
 There are few alternatives [to create a curriculum with code](https://fossengineer.com/open-source-curriculum/)
 
+And I was testing it Already [here](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#cv-with-ai)
+
 ### Summarize Github Readmes
 
 Summarize Github Readme (or actually any web).

@@ -19,6 +19,9 @@ Lets make some **Business value driven projects!**
 * [Neuromarketing with openAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
 {{< /callout >}}
 
+{{< details title="CTAs Examples that Ive found 📌" closed="true" >}}
+
+
 * CTA's
     * Quieres el premium? No, correre el riesgo!
     * You don’t have to miss out
@@ -33,9 +36,18 @@ Lets make some **Business value driven projects!**
 ![NeuroMKT2](/blog_img/outro/insurance-neuromarketing.png)
 
 
+{{< /details >}}
+
+
 ---
 
-## Slides Creation Agent
+## Work Companion
+
+{{< callout type="info" >}}
+Its all about the prompts, as we can see with **these use cases**
+{{< /callout >}}
+
+### Slides Creation Agent
 
 {{< callout type="info" >}}
 * [OpenAI PPT with Slidev](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_slidev.py
@@ -59,6 +71,8 @@ Lets make some **Business value driven projects!**
 * [Jira with OpenAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_create_ticket.py)
 {{< /callout >}}
 
+### Email with Ai
+
 
 ---
 
@@ -67,6 +81,12 @@ Lets make some **Business value driven projects!**
 {{< callout type="info" >}}
 * [CV with OpenAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_cv.py)
 {{< /callout >}}
+
+## Kindle Notes to AI
+
+Kindle notes are saved into a .txt in the device.
+
+I was storing notes for few years already and im really curious to see whats inside.
 
 ---
 
