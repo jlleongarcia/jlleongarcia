@@ -189,11 +189,16 @@ I mean, [FireCrawl needs an APi](https://www.firecrawl.dev/app/usage) to work (t
 
 Time to create something.
 
+{{< cards cols="1" >}}
+  {{< card link="/" title="Job Offer Assistant ~ CV-Check" >}}
+  {{< card link="/" title="Location Price Comparison ~ Py-Vacations" >}}
+{{< /cards >}}
+
 ### WebScrap Features
 
 1. Get summarized web content
 2. Get Youtube Summaries - Enhanced [**PhiData** project](https://jalcocert.github.io/JAlcocerT/summarize-yt-videos/) & [my fork](https://github.com/JAlcocerT/phidata)
-3. Get web search summarized 
+3. Get web search summarized - With [DuckDuckgo as per PhiData](https://docs.phidata.com/tools/duckduckgo#duckduckgo)
 
 
 
@@ -217,6 +222,16 @@ Its having a base CV and some instructions for the AI to tweak few details so th
 it resonates more with an offer.
 
 #### Exploring Job Offers with AI
+
+I tried with FireCrawl, but the juice of the offer is not captured
+
+i can imagine is due to some robots.txt info that it is blocking it
+
+But how about feeding pure HTML to OpenAI?
+
+And Using Other Scrappers like: Crawl4AI or ScrapeCraph?
+
+Lets Find out 
 
 ### Summarize Github Readmes
 

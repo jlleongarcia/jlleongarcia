@@ -1,6 +1,6 @@
 ---
 title: "Generating Images with AI - Stable Diffusion updates"
-date: 2024-10-26T23:20:21+01:00
+date: 2024-10-26
 draft: false
 tags: ["AI"]
 description: ""
