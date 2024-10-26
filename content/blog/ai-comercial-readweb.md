@@ -7,17 +7,19 @@ summary: 'Using Streamlit with OpenAI API and FireCrawl to Scrap the Web for Inf
 url: 'scrap-and-chat-with-the-web'
 ---
 
-## Old School Scrapping
 
-* Some Alternatives to Selenium and BS4:
+* **Some Alternatives to Selenium and BS4**:
   * https://github.com/ScrapeGraphAI/Scrapegraph-ai
   * https://github.com/mendableai/firecrawl
   * https://github.com/unclecode/crawl4ai
 
+But first, some recap on the old school.
+
 {{< callout type="info" >}}
-  A post of what I learnt about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
+A post of what I learnt about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
 {{< /callout >}}
 
+## Old School Scrapping
 
 Some time ago I was doing an interview and it was quite hard from them to see my CV.
 
@@ -29,8 +31,13 @@ Sometimes breaking totally the initial format.
 
 Lesson learnt.
 
-A CV must be cool for the human eye, and understandable for the machines.
+A CV must be cool for the human eye, and **understandable by machines**.
 
+But first, I want to know how many offers are out there.
+
+For sure there is some seasonality. Lets just have a daily look and see how is the market
+
+Or even better, lets make a script to do that.
 
 {{< callout type="info" >}}
 And Applied it for [**better CV** and job search](https://gitlab.com/fossengineer1/cv-check)
@@ -45,7 +52,7 @@ Just have a look to **how many offers are available now** (and remote) vs the hi
 Within the [CV Check Project](https://gitlab.com/fossengineer1/cv-check) at the [folder `./Scrap_Pracuj`](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj?ref_type=heads)...
 
 
-We are just pushing the data to a sqlite DB.
+We are just pushing the **data to a sqlite DB**.
 
 The data is extarcted with the known approach of beautiful soup. Where you need to **input the Web structure**.
 
@@ -58,11 +65,24 @@ If the Web Structure Changes - Codes needs to be [re-worked, as it happened here
 
 {{< details title="How to explore the SQLiteDB📌" closed="true" >}}
 
+After executing the script...
+
+```sh
+./run_pracuj.sh
+#/home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/run_pracuj.sh
+
+#just with python would do the same
+#python3 pracuj_v3.py
+```
+
+we will have records:
+
 ```sh
 sudo apt install sqlite3
 sqlite3 --version
 
 sqlite3 ./job_offers_v3.db
+#sqlite3 /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/job_offers_v3.db
 
 #SELECT * FROM your_table_name ORDER BY your_primary_key_column DESC LIMIT 5;
 
@@ -75,15 +95,33 @@ SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
 #.quit
 
 ```
-
-
 {{< /details >}}
-
 You can make it run every night by setting **CRON task with [a script](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Scrap_Pracuj/run_pracuj.sh?ref_type=heads)**.
 
+{{< details title="Setup CRON job to execute python -> Bs4 -> SQLiteDB📌" closed="true" >}}
+
+
+```sh
+nano run_pracuj.sh
+chmod +x /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/run_pracuj.sh
+./run_pracuj.sh
+
+crontab -e
+#0 0 * * * /path/to/your/run_pracuj.sh >> /path/to/your/logfile.log 2>&1
+0 23 * * * /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/run_pracuj.sh
+crontab -l
+#python3 pracuj_v3.py >> /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/script_output.log 2>&1
+```
+
+Look if you have space, still:
 ```sh
 df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space (see drives >3GB)
 ```
+
+{{< /details >}}
+
+
+
 
 ## Scrapping with AI
 
@@ -93,15 +131,23 @@ There are few options!
 
 ### ScrapeGraph
 
-[ScrapeGraph allows for open](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.
+I was testing[ ScrapeGraph with Streamlit here](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Streamlit_ScrapeGraph.py)
 
-* [Streamlit with ScrapeGraph](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Streamlit_ScrapeGraph.py)
+{{< callout type="info" >}}
+[ScrapeGraph **allows for open Models**](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.
+{{< /callout >}}
 
 
 
 ### FireCrawl
 
+FireCrawl makes it reale easy to parse Web Info.
+
 > "Ive got the Key for Success"
+
+{{< callout type="info" >}}
+I mean, [FireCrawl needs an APi](https://www.firecrawl.dev/app/usage) to work (there is free Tier)
+{{< /callout >}}
 
 {{< cards cols="1" >}}
   {{< card link="/www.firecrawl.dev" title="FireCrawl API" >}}
@@ -116,29 +162,72 @@ There are few options!
 
 
 {{< callout type="info" >}}
-  I used it for the [DocPlanner Migration](https://jalcocert.github.io/JAlcocerT/docplanner-web-migration/) - With [this repo](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_UseCase1-Nevin) and for 
+  I used it for the [DocPlanner Migration](https://jalcocert.github.io/JAlcocerT/docplanner-web-migration/) - With [this repo](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_UseCase1-Nevin) and for [WPMigration](https://gitlab.com/fossengineer1/py_vacations/-/tree/main/Z_Scrap_firecrawl?ref_type=heads#other---jmodels-sample)
 {{< /callout >}}
+
+* Sample FireCrawl to get [Numbeo Data and pushes it to Sqlite](https://gitlab.com/fossengineer1/py_vacations/-/blob/main/Z_Scrap_firecrawl/firecrawl_testv5.py?ref_type=heads) using [openAI API](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
+
+### Crawl4AI
+
+- **Crawl4AI** is an open-source Python library designed to simplify web crawling and data extraction, particularly for large language models (LLMs) and AI applications. It offers a user-friendly interface and a range of features, including:
+  
+  - **Ease of use:** Crawl4AI is designed to be easy to use, even for those new to web scraping.
+  
+  - **Fast performance:** It is built for speed, outperforming many paid services.
+  
+  - **LLM-friendly output:** It produces output formats that are easy for LLMs to process, such as JSON and cleaned HTML.
+  
+  - **Asynchronous support:** It can crawl multiple URLs simultaneously, making it efficient for large-scale projects.
+  
+  - **Media extraction:** It can extract and return all media tags, including images, audio, and video.
+  
+- Crawl4AI is available as a Python package and as a Docker image. It is a powerful tool for anyone who needs to extract data from the web for AI applications.
 
 ---
 
-## Streamlit WebScrap
+## WebScrap with Streamlit
 
 Time to create something.
 
-### Deploying
+### WebScrap Features
+
+1. Get summarized web content
+2. Get Youtube Summaries - Enhanced [**PhiData** project](https://jalcocert.github.io/JAlcocerT/summarize-yt-videos/) & [my fork](https://github.com/JAlcocerT/phidata)
+3. Get web search summarized 
+
+
+
+### Deploying WebScrap
 
 Cloudflare Tunnels + Cloudflare Access Control
 
-### Conclusions
+## Conclusions
 
 {{< callout type="info" >}}
-  Now you can try the app at:
+Now you can try the app at:
 {{< /callout >}}
+
+**What can we do now?**
+
+### Tweaking a CV as per Offer Info
+
+Its not lying.
+
+Its having a base CV and some instructions for the AI to tweak few details so that
+it resonates more with an offer.
+
+### Summarize Github Readmes
 
 
 --- 
 
 ## Resources
+
+### Related Projects
+
+* [Project YT2MD](https://github.com/bryanfriedman/yt2md) - Turn a YouTube video or playlist into Markdown file(s) to add to SSG site
+
+ 
 
 ### Streamlit Related Stuff
 

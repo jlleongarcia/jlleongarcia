@@ -116,6 +116,10 @@ I love my Syncthing setup, but...
 
 Syncthing Android Apps is about to be gone.
 
+```sh
+df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space (see drives >3GB)
+```
+
 
 {{< details title="Connect to NextCloud as WebDav 📌" closed="true" >}}
 

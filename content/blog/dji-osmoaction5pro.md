@@ -4,7 +4,7 @@ date: 2024-10-05T00:20:21+01:00
 draft: false
 tags: ["Tinkering"]
 summary: Learning how to edit videos with the OA5Pro
-description: Testing the OA5 Pro
+description: Testing the OA5 Pro and improving my Video Creation workflow
 url: 'dji-osmo-action-5-pro'
 ---
 
