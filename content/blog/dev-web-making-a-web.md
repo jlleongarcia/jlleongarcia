@@ -135,13 +135,13 @@ You can have a look to the **crafted Website**:
 {{< /cards >}} -->
 
 
-<!-- 
+
 {{< cards >}}
   {{< card link="../callout" title="Callout" icon="warning" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/" title="CF WnP Setup" icon="info" tag= "YT Channel" >}}
-  {{< card link="../callout" title="Card with blue tag" tag="tag text" tagType="info" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/" title="CF WnP Setup" tag= "YT Channel" >}}
+  {{< card link="../callout" title="Card with blue tag" tag="tag text sample" tagType="info" >}}
   {{< card link="https://dm-real-estate.com/" title="Real Estate Demo" >}}
-{{< /cards >}} -->
+{{< /cards >}}
 
 <!-- 
 
