@@ -1,6 +1,9 @@
 hugo.exe
 *venv/
 
+#GH Pages deployes it
+public/
+
 logs
 *.log
 npm-debug.log*

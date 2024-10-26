@@ -436,7 +436,7 @@ You will get a report with what’s link working and what not when it comes to L
 5. We need an Gmail App password - Go to Google Account and search for `app password`, just create one
 6. Add the new email address and hit next -> Then change the SMTP Server (from cloudflare to `smtp.gmail.com`, port 587), add the password you have created and as username is your original gmail address. Leave TLS ticked and hit add.
 
-> Kudos to [CodingEntrepreneur's video](https://www.youtube.com/watch?v=NmXWA08ly_s) for showing the process to send emails with our domain (using smtp.gmail.com)
+> **Kudos** to [CodingEntrepreneur's video](https://www.youtube.com/watch?v=NmXWA08ly_s) for showing the process to send emails with our domain (using smtp.gmail.com)
 
 {{< /details >}}
 

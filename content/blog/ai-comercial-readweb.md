@@ -103,15 +103,17 @@ There are few options!
 
 > "Ive got the Key for Success"
 
-{{< cards cols="1" >}}
+<!-- {{< cards cols="1" >}}
   {{< card link="/www.firecrawl.dev" title="FireCrawl API" >}}
   {{< card link="https://platform.openai.com/api-keys" title="OpenAI API" >}}
-{{< /cards >}}
+{{< /cards >}} -->
 
+<!--
 {{< cards cols="2" >}}
   {{< card link="/" title="Left Card" >}}
   {{< card link="/" title="Right Card" >}}
 {{< /cards >}}
+ -->
 
 {{< callout type="info" >}}
   I used it for the [DocPlanner Migration](https://jalcocert.github.io/JAlcocerT/docplanner-web-migration/) and used [this repo](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_UseCase1-Nevin)
@@ -169,7 +171,6 @@ volumes:
 
 #### How to Customize Streamlit Apps
 
-
 {{< details title="Remove the default Streamlit Sections 📌" closed="true" >}}
 
 * https://gist.github.com/Sven-Bo/1ad6efa04afc2e957717e5a5fc4320b8
@@ -186,9 +187,6 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 ```
 
 {{< /details >}}
-
-
-
 
 {{< details title="How to add Simple Auth to Streamlit -  📌" closed="true" >}}
 

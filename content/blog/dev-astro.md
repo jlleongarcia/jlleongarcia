@@ -52,7 +52,7 @@ node_modules
 
 {{< /details >}}
 
-{{< cards cols="1" >}}
+<!-- {{< cards cols="1" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/create-your-website/" title="Resources to Create Cool Websites" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/" title="Astro Components 101" >}}
 {{< /cards >}}
@@ -60,7 +60,7 @@ node_modules
 {{< cards cols="2" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/wordpress-migration-to-ssg/" title="Wordpress to SSG" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/guide-web3/" title="Web 3 with Astro" >}}
-{{< /cards >}}
+{{< /cards >}} -->
 
 
 
