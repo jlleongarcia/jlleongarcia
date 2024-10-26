@@ -127,6 +127,8 @@ If you are using HUGO, embedd your images with [this shortcode](https://raw.gith
 
 This method ensures that `ads.txt` is part of your site’s root directory in the final build output, as required by ad networks.
 
+![Firebase Custom Domain](/blog_img/web/ads-txt-public-hugo.png)
+
 {{< /details >}}
 
 ---
@@ -162,8 +164,12 @@ If found sth, you can use that URL to check for the sitemap instead
 {{< /details >}}
 
 
-* https://roadmap.sh/frontend
-* https://roadmap.sh/backend
+{{< cards cols="2" >}}
+  {{< card link="https://roadmap.sh/frontend" title="Front End RoadMap" >}}
+  {{< card link="https://roadmap.sh/backend" title="Back End RoadMap" >}}
+{{< /cards >}}
+
+
 
 * How to get the **HEX colors** of websites - [SmartColorPicker extension](https://chromewebstore.google.com/detail/smart-color-picker/ilifjbbjhbgkhgabebllmlcldfdgopfl?hl=en)
 * Explore HEX colors with [Color Picker Chrome extension](https://chromewebstore.google.com/detail/color-picker-chrome-exten/apldhonppojnaadpeoghllcjealkkmem?gad_source=1&gclid=Cj0KCQjwveK4BhD4ARIsAKy6pMKC6wDlkEkSh9SsQ9wirszcseVvgQ1BAuWXai5FtBzsS66YMrB65YsaAp95EALw_wcB)

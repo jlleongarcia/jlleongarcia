@@ -16,7 +16,7 @@ sidebar:
 {{< cards >}}
   {{< card link="../callout" title="Callout" icon="warning" >}}
   {{< card link="https://www.youtube.com/c/Jos%C3%A9MariaLabarta/videos" title="Jose Maria Labarta" icon="warning" tag= "YT Channel" >}}
-  {{< card link="/" title="No Icon" >}}
+  {{< card link="https://www.youtube.com/@CodingEntrepreneurs/videos" title="CodingEntrepreneur YT Channel" >}}
 {{< /cards >}}
 
 ## Interesting Blogs

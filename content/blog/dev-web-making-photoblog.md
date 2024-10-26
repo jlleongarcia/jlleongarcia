@@ -245,7 +245,21 @@ For that domain, Im using cloudflare - so made sure that its **DNS only and not 
 
 ### Hugo and Photo Gallery - Steps
 
+Now that we are clear that we want to move forward with this HUGO theme.
 
+We need to provide clear structure for the **user to modify the content later on**:
+
+{{< filetree/container >}}
+  {{< filetree/folder name="content" >}}
+    {{< filetree/file name="_index.md" >}}
+    {{< filetree/folder name="docs" state="closed" >}}
+      {{< filetree/file name="_index.md" >}}
+      {{< filetree/file name="introduction.md" >}}
+      {{< filetree/file name="introduction.fr.md" >}}
+    {{< /filetree/folder >}}
+  {{< /filetree/folder >}}
+  {{< filetree/file name="hugo.toml" >}}
+{{< /filetree/container >}}
 
 {{< details title="Go + HUGO + HugoThemeGallery 📌" closed="true" >}}
 

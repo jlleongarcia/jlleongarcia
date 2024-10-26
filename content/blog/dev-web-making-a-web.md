@@ -123,7 +123,29 @@ After Verification is completed, your Web deployment Workflow is Ready with **Cl
 
 ### Real Estate Web - Results
 
-You can have a look to [the website, here](https://dm-real-estate.com/). [Source Code](https://github.com/IoTechCrafts/ScrewFastMoises).
+You can have a look to the **crafted Website**:
+
+{{< cards cols="1" >}}
+  {{< card link="https://dm-real-estate.com/" title="Real Estate Demo" >}}
+{{< /cards >}}
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/JAlcocerT/ScrewFastMoiRealEstate/" title="Source Code" icon="Github" tag= "Code" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/blog/dev-css/" title="CSS for Cool Sites" >}}
+{{< /cards >}}
+<!-- 
+{{< cards >}}
+  {{< card link="../callout" title="Callout" icon="warning" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/" title="CF WnP Setup" icon="info" tag= "YT Channel" >}}
+  {{< card link="../callout" title="Card with blue tag" tag="tag text" tagType="info" >}}
+  {{< card link="https://dm-real-estate.com/" title="Real Estate Demo" >}}
+{{< /cards >}} -->
+
+<!-- 
+
+* [Source Code](https://github.com/JAlcocerT/ScrewFastMoiRealEstate). -->
+
+<!-- * [Source Code](https://github.com/IoTechCrafts/ScrewFastMoises). -->
 
 And it seems that **Google likes it**:
 

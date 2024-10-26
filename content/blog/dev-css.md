@@ -67,7 +67,7 @@ Automatically you can use:
 
 * https://flowbite.com/blocks/marketing/login/
   * Show the code and **copy the html** and the `tailwind.config.js`
-  * Thanks to [cfe yt video](https://www.youtube.com/watch?v=J5n1qZNNxfo) and [code](https://github.com/codingforentrepreneurs/kwesforms-landing)
+  * Thanks to [Coding for Entrepreneur YT video](https://www.youtube.com/watch?v=J5n1qZNNxfo) and [code](https://github.com/codingforentrepreneurs/kwesforms-landing)
 
 ```sh
 npm install flowbite
