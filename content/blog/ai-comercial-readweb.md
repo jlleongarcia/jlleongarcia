@@ -103,20 +103,20 @@ There are few options!
 
 > "Ive got the Key for Success"
 
-<!-- {{< cards cols="1" >}}
+{{< cards cols="1" >}}
   {{< card link="/www.firecrawl.dev" title="FireCrawl API" >}}
   {{< card link="https://platform.openai.com/api-keys" title="OpenAI API" >}}
-{{< /cards >}} -->
-
-<!--
-{{< cards cols="2" >}}
-  {{< card link="/" title="Left Card" >}}
-  {{< card link="/" title="Right Card" >}}
 {{< /cards >}}
- -->
+
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/mendableai/firecrawl" title="FireCrawl Github" >}}
+  {{< card link="https://docs.firecrawl.dev/sdks/python" title="FireCrawl Python Docs" >}}
+{{< /cards >}}
+
 
 {{< callout type="info" >}}
-  I used it for the [DocPlanner Migration](https://jalcocert.github.io/JAlcocerT/docplanner-web-migration/) and used [this repo](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_UseCase1-Nevin)
+  I used it for the [DocPlanner Migration](https://jalcocert.github.io/JAlcocerT/docplanner-web-migration/) - With [this repo](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_UseCase1-Nevin) and for 
 {{< /callout >}}
 
 ---

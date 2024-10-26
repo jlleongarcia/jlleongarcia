@@ -253,6 +253,8 @@ curl -s https://jmodels.net/robots.txt | head -n 10 #see the first 10 lines
 
 Let's get started with the **wordpress migration**.
 
+* [Sample FireCrawl Scrap](https://gitlab.com/fossengineer1/py_vacations/-/blob/main/Z_Scrap_firecrawl/firecrawl_test2.py?ref_type=heads)
+
 {{< dropdown title="Broken links? How to Use LinkChecker with Docker ⏬" closed="true" >}}
 
 * Use LinkChecker with the [GHCR Container Image](https://github.com/linkchecker/linkchecker/pkgs/container/linkchecker)

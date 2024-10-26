@@ -129,10 +129,10 @@ You can have a look to the **crafted Website**:
   {{< card link="https://dm-real-estate.com/" title="Real Estate Demo" >}}
 {{< /cards >}}
 
-<!-- {{< cards cols="2" >}}
+{{< cards cols="2" >}}
   {{< card link="https://github.com/JAlcocerT/ScrewFastMoiRealEstate/" title="Source Code" icon="github" tag= "Code" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/blog/dev-css/" title="CSS for Cool Sites" >}}
-{{< /cards >}} -->
+{{< /cards >}}
 
 
 

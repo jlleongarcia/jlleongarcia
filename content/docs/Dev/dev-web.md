@@ -131,6 +131,24 @@ This method ensures that `ads.txt` is part of your site’s root directory in th
 
 {{< /details >}}
 
+### HUGO with Github Pages & CICD
+
+Its very important to know the version that makes the theme work.
+
+Laos when you are using [Github Actions Workflow](https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml).
+
+{{< callout type="info" >}}
+The workflow configures [the base path to work properly](https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml#L57) as per your repo name
+{{< /callout >}}
+
+This Hextra Theme, as it is, for example, [runs fine with v0.117.0](https://github.com/gohugoio/hugo/releases/tag/v0.117.0):
+
+```sh
+hugo v0.117.0-b2f0696cad918fb61420a6aff173eb36662b406e+extended linux/amd64 BuildDate=2023-08-07T12:49:48Z VendorInfo=gohugoio
+```
+
+But not with higher versions like v0.124.
+
 ---
 
 ## FAQ
