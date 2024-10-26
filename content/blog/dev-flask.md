@@ -490,6 +490,58 @@ To implement a system where user registration, payments, and content access are 
 
 * Django: Can use Jinja2, but its native templating engine is preferred.
 
+* Example [YT - Build Full Stack Web Apps in Pure Python with Reflex - No Javascript Required](https://www.youtube.com/watch?v=ITOZkzjtjUA)
+
+
+#### Reflex
+
+Flet enables developers to easily build realtime web, mobile and desktop apps in Python. No frontend experience required.
+
+* [YT1 - Pure Python: Build a full stack ChatGPT-like UI. Reflex, Neon Postgres. Deploy with Docker to a VM](https://www.youtube.com/watch?v=NuNaI__4xiU)
+* [Build Full Stack Web Apps in Pure Python with Reflex - No Javascript Required](https://www.youtube.com/watch?v=ITOZkzjtjUA)
+
+
+#### Flet
+
+
+{{< details title="More About Flet 📌" closed="true" >}}
+
+
+- **Project Name:** Flet
+- **License:** Apache-2.0
+- **Stars:** [11.2k stars](/flet-dev/flet/stargazers)
+- **Forks:** [432 forks](/flet-dev/flet/forks)
+- **Main Website:** [flet.dev](https://flet.dev)
+
+### About the Project
+Flet is a framework that allows developers to easily create real-time web, mobile, and desktop applications in Python without requiring frontend development experience.
+
+### Main Features
+- **From Idea to App in Minutes:** Quickly develop internal tools, dashboards, data entry forms, kiosk apps, or prototypes with Flet.
+- **Simple Architecture:** Write monolith stateful apps in Python only and get multi-user, real-time Single-Page Application (SPA) without complex architectures.
+- **Batteries Included:** Flet provides a built-in web server with assets hosting and desktop clients, eliminating the need for additional SDKs or dependencies.
+- **Powered by Flutter:** Flet UI is built with Flutter, enabling professional-looking apps that can be delivered to any platform.
+- **Language-Agnostic:** Flet supports multiple languages, starting with Python and upcoming support for Go, C#, and others.
+- **Deliver to Any Device:** Deploy Flet apps as web apps, standalone desktop apps for Windows, macOS, and Linux, or as PWAs for mobile devices.
+
+### License
+The project is licensed under the Apache-2.0 license, allowing for open-source usage and modification.
+
+### Documentation
+- [Creating Flet apps in Python](https://flet.dev/docs/guides/python/getting-started)
+- [Controls reference](https://flet.dev/docs/controls)
+
+### Getting Started
+To run a sample "Counter" app in Python with Flet:
+1. Install the `flet` module using `pip install flet`.
+2. Run the program with `python counter.py`.
+3. Experience the app in a native OS window, providing an alternative to Electron.
+
+### Conclusion
+Flet is a powerful framework that simplifies the development of real-time applications in Python, offering a straightforward architecture, multi-platform delivery options, and language-agnostic support. Its inclusion of Flutter for UI design and ease of deployment make it a versatile choice for developers looking to create interactive apps without extensive frontend knowledge.
+
+{{< /details >}}
+
 ---
 
 ## Simpler Data Apps

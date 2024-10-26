@@ -150,7 +150,7 @@ I mean, [FireCrawl needs an APi](https://www.firecrawl.dev/app/usage) to work (t
 {{< /callout >}}
 
 {{< cards cols="1" >}}
-  {{< card link="/www.firecrawl.dev" title="FireCrawl API" >}}
+  {{< card link="www.firecrawl.dev" title="FireCrawl API" >}}
   {{< card link="https://platform.openai.com/api-keys" title="OpenAI API" >}}
 {{< /cards >}}
 
@@ -216,7 +216,13 @@ Its not lying.
 Its having a base CV and some instructions for the AI to tweak few details so that
 it resonates more with an offer.
 
+#### Exploring Job Offers with AI
+
 ### Summarize Github Readmes
+
+Summarize Github Readme (or actually any web).
+
+And...create [posts scheletons based on that info](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_GHRepo)
 
 
 --- 
@@ -224,6 +230,8 @@ it resonates more with an offer.
 ## Resources
 
 ### Related Projects
+
+* [Project YT2Doc](https://github.com/shun-liang/yt2doc) - YouTube, Apple Podcast (and more) to readable Markdown.
 
 * [Project YT2MD](https://github.com/bryanfriedman/yt2md) - Turn a YouTube video or playlist into Markdown file(s) to add to SSG site
 

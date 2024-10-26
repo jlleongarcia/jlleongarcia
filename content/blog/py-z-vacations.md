@@ -1,6 +1,6 @@
 ---
 title: "Vacation Planning - Costs, Weather and AI"
-date: 2024-10-26
+date: 2024-10-25
 draft: false
 tags: ["Dev","AI"]  
 description: "Python App to explore vacation destination."
