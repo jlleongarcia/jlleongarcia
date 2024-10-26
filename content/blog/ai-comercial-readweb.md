@@ -231,7 +231,11 @@ But how about feeding pure HTML to OpenAI?
 
 And Using Other Scrappers like: Crawl4AI or ScrapeCraph?
 
-Lets Find out 
+Lets Find out
+
+#### Creating Cv with Code
+
+There are few alternatives [to create a curriculum with code](https://fossengineer.com/open-source-curriculum/)
 
 ### Summarize Github Readmes
 

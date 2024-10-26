@@ -10,7 +10,7 @@ url: 'stable-difussion-free-generation'
 
 Exactly Two years ago from this moment I was able to generate the following:
 
-![Stable Difussion Sample](/img/GenAI/jalcocert-author.png)
+![Stable Difussion Sample](/blog_img/GenAI/jalcocert-author.png)
 
 How much is 2 years in GenAI? 
 
