@@ -17,3 +17,23 @@ hence using HUGO.
 
 ---
 
+### Setup the Blog with HUGO
+
+### Using AI to write quality Posts
+
+* https://github.com/premthomas/Ollama-and-Agents - Implementing Ollama and Agents to create a blogging bot
+
+
+
+#### Scrap + Tweak
+
+
+---
+
+## Conclusions
+
+For example [this project](https://gitlab.com/fossengineer1/fossengineerpapermod) using [this web scrapper for GH and making posts with](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_GHRepo)
+
+### FAQ
+
+Very Interesting Website to learn AI - https://www.promptingguide.ai/research/rag

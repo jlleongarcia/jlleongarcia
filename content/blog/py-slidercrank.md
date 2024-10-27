@@ -26,3 +26,14 @@ And working on the symbolic one: https://github.com/JAlcocerT/MultiBodySystemDyn
 * https://github.com/JAlcocerT/Slider-Crank
 
 * Optimum Gears - https://github.com/JAlcocerT/Private/tree/main/Py_optimum_gears
+
+
+---
+
+## FAQ
+
+* What are eigenvectors?
+
+https://www.youtube.com/watch?v=PFDu9oVAE-g
+
+* https://www.goodreads.com/book/show/13237758-in-pursuit-of-the-unknown

@@ -62,6 +62,7 @@ Automatically you can use:
 * https://flowbite.com/docs/getting-started/introduction/
 * https://flowbite.com/#components
 * https://flowbite.com/blocks/
+  * https://flowbite.com/blocks/marketing/login/
 
 {{< details title="Using FlowBite CSS 📌" closed="true" >}}
 

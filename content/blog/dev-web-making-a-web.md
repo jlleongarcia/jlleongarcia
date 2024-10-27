@@ -13,11 +13,11 @@ url: 'astro-web-setup'
   * https://syrenare.com/
   * All are **performing slooow** at up to ~1 second initial for a simple http request!
 
-![Uptime Ira](/blog_img/web/success3-realestate/uptime-realestate-demo.png)
+![Competitor 1](/blog_img/web/success3-realestate/uptime-realestate-demo.png)
 
-![Uptime Ira](/blog_img/web/success3-realestate/uptime-casaensol.png)
+![Competitor 2](/blog_img/web/success3-realestate/uptime-casaensol.png)
 
-![Uptime Ira](/blog_img/web/success3-realestate/uptime-cano.png)
+![Competitor 3](/blog_img/web/success3-realestate/uptime-cano.png)
 
 {{< callout type="info" >}}
 How much better is **the result**? [Jump to it](#real-estate-web---results)
@@ -37,8 +37,11 @@ I created a [**Private repo with Github**](https://github.com/JAlcocerT/ScrewFas
 {{< /callout >}}
 
 
-> Powered by [Astro 😍 ScrewFast](https://github.com/JAlcocerT/ScrewFast)
+> Powered by [Astro 😍 ScrewFast](https://github.com/JAlcocerT/ScrewFast) and some ideas from [Nebulix Shop](https://nebulix.unfolding.io/shop/buy-me-a-cocktail/)
 
+{{< callout type="info" >}}
+[Nebulix](https://github.com/unfolding-io/nebulix) supports Static CMS
+{{< /callout >}}
 
 {{< details title="Ready to Demo, with Free Cloudflare Pages 📌" closed="true" >}}
 
@@ -73,6 +76,7 @@ npx wrangler pages project create
 * Project name: **moises**
   * Images are at `./src/images`
 
+Now pushing the generated content to Cloudflare:
 
 ```sh
 #npx wrangler pages project list #check existing projects

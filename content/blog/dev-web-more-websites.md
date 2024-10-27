@@ -66,6 +66,9 @@ Like we did at the **Social Media Project!**
 
 <!-- More ppl to help - future CLIENTS
 
+* you dont need to pay for wordpress themes, its already there and it works
+  * https://generatepress.com/pricing/
+
 * Pablo Couto - https://www.buildingfuturecapital.com/
 
 https://web-check.xyz/check/https%3A%2F%2Fwww.buildingfuturecapital.com%2F

@@ -133,6 +133,8 @@ There are few options!
 
 I was testing[ ScrapeGraph with Streamlit here](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Streamlit_ScrapeGraph.py)
 
+* Docs [ScrapeGraph + OpenAI](https://scrapegraph-ai.readthedocs.io/en/latest/getting_started/examples.html)
+
 {{< callout type="info" >}}
 [ScrapeGraph **allows for open Models**](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.
 {{< /callout >}}

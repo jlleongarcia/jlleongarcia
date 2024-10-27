@@ -485,6 +485,9 @@ To implement a system where user registration, payments, and content access are 
 
 * FastAPI: Fully supports Jinja2 templates.
 
+[YT - Create a Video Membership Web App from Scratch with Python, NoSQL, & FastAPI](https://www.youtube.com/watch?v=KQ-u4RcFLBY)
+
+
 
 #### Django
 

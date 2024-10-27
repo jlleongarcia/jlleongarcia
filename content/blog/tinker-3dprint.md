@@ -197,3 +197,6 @@ Before we start writing Python scripts in GIMP, we need to install the Python-Fu
 ### Other DIY Stuff
 
 * Someone made a [**3D Printed HydroFoil** and shared it in this YT Video](https://www.youtube.com/watch?v=Iz0Ar_6GvfA)
+
+* [Micro Racer Car](https://github.com/StuckAtPrototype/Racer)
+  * https://www.youtube.com/watch?v=6jzG-BMannc

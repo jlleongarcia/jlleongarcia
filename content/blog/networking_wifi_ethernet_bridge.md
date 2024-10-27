@@ -500,6 +500,8 @@ Endpoint = ipaddress:51820
 
 ### Software for Routers
 
+* https://docs.gl-inet.com/router/en/4/interface_guide/tailscale/
+
 #### VyOS
 
 * https://github.com/runborg/vyos-pi-builder

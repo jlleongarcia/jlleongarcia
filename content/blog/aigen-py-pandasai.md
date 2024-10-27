@@ -230,6 +230,10 @@ If you would like to have a look to a project that implements RAG with UI:
 
 {{< /dropdown >}}
 
+### PandasAI Excel as DB with Groq
+
+* https://mer.vin/2024/05/pandas-ai-database-excel-chainlit/
+
 ---
 
 ## FAQ

@@ -28,8 +28,20 @@ Probably you will not find them on the firsts google results, yet they were help
 * https://www.jeffgeerling.com/
 * https://selfh.st/newsletter - Amazing weekly ideas!
 * https://theitguycj.com/self-host-and-share-your-videos-audio-and-pictures-with-mediacms/
+* https://blog.patshead.com/
 
 ### Interesting Docs
 
 * https://www.opensourcealternative.to/
 * https://osssoftware.org/
+
+### Interesting Videos
+
+* https://www.youtube.com/watch?v=pIZ_MXutC0o
+
+{{< youtube id="v=pIZ_MXutC0o" autoplay="false" >}}
+
+
+* https://www.youtube.com/watch?v=_VLZ4b9LHLs
+
+{{< youtube id="v=_VLZ4b9LHLs" autoplay="false" >}}
