@@ -171,6 +171,11 @@ I mean, [FireCrawl needs an APi](https://www.firecrawl.dev/app/usage) to work (t
 
 * Sample FireCrawl to get [Numbeo Data and pushes it to Sqlite](https://gitlab.com/fossengineer1/py_vacations/-/blob/main/Z_Scrap_firecrawl/firecrawl_testv5.py?ref_type=heads) using [openAI API](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
 
+
+FireCrawl is not giving me the juice of the offers, as [seen during Scrap-Tools Tests](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_PracujOffer)
+
+But, it can be done with [OpenAI+Pure parsed HTML](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
+
 ### Crawl4AI
 
 - **Crawl4AI** is an open-source Python library designed to simplify web crawling and data extraction, particularly for large language models (LLMs) and AI applications. It offers a user-friendly interface and a range of features, including:
