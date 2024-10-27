@@ -19,6 +19,8 @@ But first, some recap on the old school.
 A post of what I learnt about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
 {{< /callout >}}
 
+{{< youtube id="v=DJnH0jR8y5Q" autoplay="false" >}}
+
 ## Old School Scrapping
 
 Some time ago I was doing an interview and it was quite hard from them to see my CV.

@@ -186,6 +186,11 @@ It seems it got corrupted due to improper reboots.
 
 Enter the **boot menu** of the Lenovo Thinkpad x13 g2 by **pressing F12**
 
+* https://github.com/boschkundendienst/guacamole-docker-compose
+* https://www.proxmox.com/en/proxmox-virtual-environment/overview
+* https://github.com/FreeRDP/Remmina
+* https://github.com/TigerVNC/tigervnc
+
 {{< details title="Changing Power Profiles in your Laptop 📌" closed="true" >}}
 
 ```sh

@@ -331,3 +331,7 @@ Social Media can be simplified
 * Canva seems to have it too
 
 * [IFTTT](https://ifttt.com/plans)
+
+* N8N AI Automation
+
+[N8N with ollama video](https://www.youtube.com/watch?v=VDuA5xbkEjo)
