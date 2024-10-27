@@ -53,10 +53,13 @@ Its all about the prompts, as we can see with **these use cases**
 
 ### Slides Creation Agent
 
+[SliDev is an awsome project](https://fossengineer.com/how-to-use-slidev/) to generate PPT as code - **leveraging VueJS**.
+
+
 {{< callout type="info" >}}
-* [OpenAI PPT with Slidev](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_slidev.py
+* [OpenAI PPT with **Slidev**](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_slidev.py
 )
-* SliDev PPT for Streamlit Multichat
+* **SliDev PPT** for Streamlit Multichat - Deployed [here](https://jalcocert.github.io/Streamlit-MultiChat/1) using [GH Actions](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/.github/workflows/SliDev_CICD.yml)
     * [Result](https://jalcocert.github.io/Streamlit-MultiChat/1)
     * [Code](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/slidev)
 {{< /callout >}}

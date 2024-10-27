@@ -1,5 +1,5 @@
 ---
-title: "Creating a Photo Centered Blog"
+title: "Creating a Photo Centered Web"
 date: 2024-09-29T23:50:59+01:00
 draft: false
 tags: ["dev"]

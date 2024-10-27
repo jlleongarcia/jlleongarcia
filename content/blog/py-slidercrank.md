@@ -18,3 +18,11 @@ I exchanged some email with its creator, [GabeMorris12](https://github.com/gabem
 [I forked the project](https://github.com/JAlcocerT/mechanism) and Im trying to make a systematic approach for mechanism design here.
 {{< /callout >}}
 
+
+Created this simple version with python
+
+And working on the symbolic one: https://github.com/JAlcocerT/MultiBodySystemDynamics-MBSD-
+
+* https://github.com/JAlcocerT/Slider-Crank
+
+* Optimum Gears - https://github.com/JAlcocerT/Private/tree/main/Py_optimum_gears

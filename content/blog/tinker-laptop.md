@@ -45,6 +45,10 @@ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
 
 {{< /details >}}
 
+{{< callout type="info" >}}
+It feels much faster than the i7-1185G7+32Gb Ram that im using at work (specially with Linux)
+{{< /callout >}}
+
 ## My Setup for a Laptop
 
 Whether you want to [use Conky](https://jalcocert.github.io/Linux/docs/debian/conky_configuring_ubuntu/) or not...
@@ -146,6 +150,34 @@ Once you provide the user and pass, you will be able to see all the NC Files.
 
 {{< /details >}}
 
+### Using the ThinkPad w a Server
+
+I am using my OrangePi5 as server now.
+
+```mermaid
+graph TD
+    A[ThinkPad] --> B[Orange Pi 5]
+```
+
+
+{{< details title="Opi5 latest Linux tricks 📌" closed="true" >}}
+
+Could not find one of my 2tb drives...
+
+```sh
+
+```
+
+It seems it got corrupted due to improper reboots.
+
+**We need to unmount before reboots as well**
+
+```sh
+
+```
+
+
+{{< /details >}}
 
 
 ---

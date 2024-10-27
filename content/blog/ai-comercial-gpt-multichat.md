@@ -23,7 +23,6 @@ https://www.youtube.com/watch?v=9AXP7tCI9PI -->
 * https://platform.openai.com/docs/models/gpt-4o -->
 
 
-
 ## A MultiChat with Streamlit
 
 WIth this project, we will have a **[single Python Streamlit UI](#the-streamlit-multichat-project)** to Interact with:
