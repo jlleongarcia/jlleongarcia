@@ -3,7 +3,7 @@ title: "LLMs Function Calling"
 date: 2024-08-18T23:20:21+01:00
 draft: false
 tags: ["Dev"] 
-summary: "Testing function calling with OpenAI Models"
+summary: "Testing function calling with OpenAI Models. OpenAI Functions"
 url: "how-to-use-openai-function-calling"
 ---
 
@@ -16,7 +16,11 @@ url: "how-to-use-openai-function-calling"
 
 > Thanks to https://www.promptingguide.ai/applications/function_calling
 
-
+{{< callout type="info" >}}
+Testing it together with chainlit {{< callout type="info" >}}
+Thanks to [daveebbelaar repository](https://github.com/daveebbelaar/langchain-experiments)
+{{< /callout >}}
+{{< /callout >}}
 
 
 {{% details title="How to use OpenAI API? " closed="true" %}}

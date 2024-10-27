@@ -7,7 +7,7 @@ cover:
   alt: "ChatGPT Clone" # alt text
   caption: "Build a ChatGPT Clone with Streamlit." # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
-description: 'ChatGPT Clone with Streamlit'
+description: 'ChatGPT Clone with Streamlit, but supporting multiple LLMs. Streamlit-MultiChat'
 summary: 'Building a ChatGPT4 Clone with Streamlit. Use GPT4 and GPT-4o through their APIs and avoid the recurring monthly subscription bill for ChatGPT.'
 url: 'create-streamlit-chatgpt'
 ---
@@ -46,8 +46,12 @@ Lets have a look to the projects.
 
 ### Streamlit Chat with OpenAI
 
+I first had a look to this existing project.
+
+{{< callout type="info" >}}
 - The project is available on **GitHub** ✅
-  * {{< newtab url="https://github.com/dataprofessor/openai-chatbot" text="Project Source Code at GitHub" >}}
+  * {{< newtab url="https://github.com/dataprofessor/openai-chatbot" text="Project Source Code at GitHub" >}}. Credits to DataProfessor.
+{{< /callout >}}
 
 - You will need an API key from OpenAI to use the project ❎
   * {{< newtab url="https://platform.openai.com/api-keys" text="OpenAI API Keys" >}}
@@ -167,16 +171,34 @@ volumes:
 
 ## The Streamlit MultiChat Project
 
-* https://github.com/JAlcocerT/Streamlit-MultiChat
+{{< callout type="info" >}}
+The project's magic is publically available on **[GitHub](https://github.com/JAlcocerT/Streamlit-MultiChat)** ✅
+{{< /callout >}}
+ 
 
 ### SelfHosting Streamlit MultiChat
 
-Build the image:
+{{< callout type="info" >}}
+Build or use the [CICD Generated Container Image](https://fossengineer.com/docker-github-actions-cicd/)
+{{< /callout >}}
+
+
+{{< details title="Build & Deploy Streamlit-MultiChat 📌" closed="true" >}}
+
+**Build** the container image:
 
 ```sh
 podman build -t streamlit-multichat .
 ```
-and deploy with:
+
+{{< callout type="info" >}}
+You could use the [GHCR multi-architecture container Image](https://github.com/JAlcocerT/Streamlit-MultiChat/pkgs/container/streamlit-multichat). Generated with [this Workflow](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/.github/workflows/Streamlit_GHA_MultiArch.yml)
+{{< /callout >}}
+
+And deploy with docker-compose, where you have **environment variables to place your API's**
+
+* {{< newtab url="https://platform.openai.com/api-keys" text="OpenAI API Keys" >}}
+
 
 ```yml
 version: '3'
@@ -212,6 +234,9 @@ networks:
 
 #docker-compose up -d
 ```
+
+
+{{< /details >}}
 
 ---
 

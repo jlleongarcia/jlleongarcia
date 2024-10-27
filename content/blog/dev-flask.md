@@ -17,7 +17,7 @@ And we got his [Flask App with https and custom domain](https://jalcocert.github
 A **Flask App** configured on a server, publically, **ready for anyone to use**.
 
 {{< callout type="info" >}}
-[Get your own Flask App Deployed](https://jalcocertech.xyz/) or a [Custom Speech Rater AI App](https://github.com/JAlcocerT/Streamlit-Speech). With proper [OpenAI>0.28 Calls](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
+[Get your own Flask App Deployed](https://jalcocertech.xyz/) or a [Custom **Speech Rater AI App**](https://github.com/JAlcocerT/Streamlit-Speech). With proper [OpenAI>0.28 Calls](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
 {{< /callout >}}
 
 
@@ -546,7 +546,6 @@ Flet is a powerful framework that simplifies the development of real-time applic
 
 ## Simpler Data Apps
 
-* <https://docs.chainlit.io/get-started/overview>
 
 ### Streamlit
 
@@ -568,6 +567,14 @@ I've been using this one for a while now:
 
 * https://github.com/ObservedObserver/streamlit-shadcn-ui
 
+### Chainlit
+
+
+* <https://docs.chainlit.io/get-started/overview>
+
+{{< callout type="info" >}}
+I have been **testing Chainlit** and [OpenAIFunctions](https://github.com/JAlcocerT/how-to-use-openai-function-calling/) with [this repo](https://github.com/JAlcocerT/Chainlit-OpenAI-Functions)
+{{< /callout >}}
 
 ### More Dashboarding Tools
 

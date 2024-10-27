@@ -11,6 +11,10 @@ Some examples I have been testing with the [Streamlit MultiChat Summary](https:/
 
 But it was time to **[level up my Streamlit](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#making-streamlit-better), again.**
 
+* https://github.com/JAlcocerT/Streamlit-Speech
+* https://github.com/JAlcocerT/Streamlit-MultiChat
+* https://github.com/JAlcocerT/Py_RouteTracker
+
 Lets make some **Business value driven projects!**
 
 ## A Neuromarketing Agent
