@@ -23,10 +23,14 @@ The [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode
 
 For SSH connection, you can do:
 * `CTRL+SHIFT+P` ->> `Remote SSH (Connect to Host)`
-* Add the user name amd the IP/Domain: `youruser@192.168.3.200`
+* Add the user name amd the IP/Domain: `youruser@192.168.1.117`
 * Authenticate and Select the Platform (Linux?)
 
 You will see that **you are connected to the server in VSCode via SSH**.
+
+{{< callout type="info" >}}
+If you want to use it with Gitlab and dont want to input user/pass all the time, [get Gitlab WorkFlow extension](https://marketplace.visualstudio.com/items?itemName=GitLab.gitlab-workflow) for VSCode + CTRL SHIFT P + GitLab: Authenticate, just once.
+{{< /callout >}}
 
 Pay attention to the bottom left side:
 
@@ -38,6 +42,15 @@ Thanks to [this YT Video](https://www.youtube.com/watch?v=miyD4c1dnTU), I could 
 {{< /callout >}}
 
 ### VSCode Dev via Containers
+
+<!-- 
+* In vs code, get ms-vscode-remote.remote-containers -->
+<!-- https://www.youtube.com/watch?v=dihfA7Ol6Mw
+ -->
+<!-- 
+In vscode you can try with: remote development (ms-vscode-remote.vscode-remote-extensionpack)
+
+https://www.youtube.com/watch?v=mi8kpAgHYFo -->
 
 For container, do this instead. 
 

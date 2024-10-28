@@ -21,6 +21,11 @@ You can access them from `Settings->System->Developer options`.
 
 you will need to restart and HDMI cable to enjoy :)
 
+## Connecting a external drive
+
+* How To [Transfer Photos & Videos From Flash Drive To Google Pixel 8 / 8 Pro](https://www.youtube.com/watch?v=iF0mmzGUSnc)
+
+
 ---
 
 ## FAQ
