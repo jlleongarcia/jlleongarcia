@@ -74,6 +74,12 @@ sudo ./Selfhosting_101.sh
 {{< /callout >}}
 
 
+You might want to consider OS like:
+
+* NixOS - https://search.nixos.org/packages?channel=24.05&show=librewolf&size=50&sort=relevance&type=packages&query=librewolf
+* ZorinOS
+* KDE with some customization
+
 
 {{< details title="Tailscale and DNS's 📌" closed="true" >}}
 
@@ -114,6 +120,13 @@ Even in your browser, you could go to: `http://orangepi5.abcdef.ts.net:9000` and
 {{< /details >}}
 
 
+Then, if you want to do cool things with VSCode and a server...
+
+
+{{< callout type="info" >}}
+Setup a Server as [Remote dev environment](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/)
+{{< /callout >}}
+
 ### Sync and BackUps
 
 I love my Syncthing setup, but...
@@ -122,8 +135,12 @@ Syncthing Android Apps is about to be gone.
 
 ```sh
 df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space (see drives >3GB)
+df -h | awk 'NR==1 || $2 ~ /[GT]/'
+
+lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT | awk 'NR==1 || $2 ~ /[GT]/'
 ```
 
+With Syncthing, I sync my pixel at `/media/jalcocert/BackUp/Sync_Pixel`
 
 {{< details title="Connect to NextCloud as WebDav 📌" closed="true" >}}
 

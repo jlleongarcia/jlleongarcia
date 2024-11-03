@@ -7,6 +7,8 @@ summary: '.'
 url: 'understading-crypto-with-ai'
 ---
 
+
+
 {{< details title="What would Cicero Think about Crypto?" closed="true" >}}
 
 * Protection Against Arbitrary Power
@@ -49,12 +51,14 @@ Understanding SC's with LLMs: these are are some [interesting protocols](https:/
 
 * [SETH](https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84)
 
-### Interesting Stuff I found lately
+### Interesting Crypto Stuff I found lately
 
 * https://www.reddit.com/r/CryptoCurrency/comments/mnzv1c/defi_explained_lending_borrowing/
 * https://www.reddit.com/r/CryptoCurrency/comments/nletmi/defi_explained_the_full_guide/#:~:text=Decentralized%20Finance%20(DeFi)%20is%20a,protocols%20that%20work%20without%20intermediaries.
 
 I was writing about web3 here: https://jalcocert.github.io/JAlcocerT/guide-web3
+
+*  Full-Stack DApp Boilerplate for Substrate and ink! Smart Contracts  https://github.com/scio-labs/inkathon?ref=statichunt.com
 
 ---
 

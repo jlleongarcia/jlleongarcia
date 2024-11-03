@@ -168,6 +168,14 @@ As you can see in this video, where Im just walking:
 
 ### My Workflow with the DJI OA5-Pro
 
+I got inspired by this post: https://www.vanwerkhoven.org/blog/2021/photography-image-processing-workflow/
+
+And this is what I created so far
+
+{{< details title="Scaling video resolution with - Upscayl + Shotcut 📌" closed="true" >}}
+
+
+
 Delete the LRF files:
 
 ```sh
@@ -180,6 +188,10 @@ And get VLC to see them:
 sudo apt update
 sudo apt install vlc
 ```
+
+
+{{< /details >}}
+
 
 See **info about .MP4's** in your folder:
 
@@ -434,6 +446,10 @@ git config --global user.email "contact@jalcocertech.xyz"
 ```
 
 ---
+
+## FAQ
+
+* How to [view HEIC Images on Linux](https://www.baeldung.com/linux/view-heic-images)
 
 ### Other topics related to Photo/Video
 
