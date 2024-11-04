@@ -170,11 +170,14 @@ As you can see in this video, where Im just walking:
 
 I got inspired by this post: https://www.vanwerkhoven.org/blog/2021/photography-image-processing-workflow/
 
-And this is what I created so far
+And this is what I created so far...
+
+
+{{< callout type="info" >}}
+I decided to create [this repo with the scripts](https://github.com/JAlcocerT/YT-Video-Edition)
+{{< /callout >}}
 
 {{< details title="Scaling video resolution with - Upscayl + Shotcut 📌" closed="true" >}}
-
-
 
 Delete the LRF files:
 
@@ -189,18 +192,21 @@ sudo apt update
 sudo apt install vlc
 ```
 
-
 {{< /details >}}
 
 
 See **info about .MP4's** in your folder:
 
 
-{{< details title="This my video CLI ordering files, editing - v1 with FFmpeg 📌" closed="true" >}}
+{{< details title="Video CLI ordering files, editing - v1 with FFmpeg 📌" closed="true" >}}
 
+Get the pkg installed:
 
 ```sh
 sudo apt install ffmpeg
+```
+
+```sh
 #find . -type f -name "*.MP4" -exec ffprobe {} \;
 #find . -type f -name "*.MP4" -exec ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 {} \;
 
@@ -228,7 +234,25 @@ find . -type f -iname "*.mp4" -exec bash -c '
 ' bash {} +
 ```
 
-I Ordered them like so: `chmod +x organize_videos.sh ./organize_videos.sh`
+More info about your .MP4 Videos
+
+```sh
+for video in *.MP4; do
+    echo "File: $video"
+    mediainfo "$video" | grep -E 'Rotation|Width|Height|Format|Duration'
+done
+```
+
+or with:
+
+```sh
+for video in *.MP4; do
+    echo "File: $video"
+    ffprobe "$video"
+done
+```
+
+I ordered them like so: `chmod +x organize_videos.sh ./organize_videos.sh`
 
 ```sh
 #!/bin/bash
@@ -269,7 +293,9 @@ Let's jump to editing:
 * [Cut a video with KDenLive](https://www.youtube.com/watch?v=JMKRKv2ogKU&list=PLqazFFzUAPc7uQaoGxYwxGLk4_6fQrBvE&index=2)
     * When ready, hit **CTRL+Enter to render**
 
-> And this was soooo slow, can I just **join some videos together? YES, CLI can**
+> And this was soooo slow, can I just **join some videos together?**
+
+**YES, CLI can, thanks to ffmpeg pkg**
 
 ```sh
 ls *.MP4 | sed "s/^/file '/; s/$/'/" > file_list.txt #add .mp4 of current folder to a list
@@ -282,7 +308,7 @@ ffmpeg -f concat -safe 0 -i file_list.txt -c copy output_video.mp4
 #ffmpeg -i output_video.mp4 -filter:v "setpts=PTS/4" -an fast_output_video.mp4 #
 ```
 
-**Check what was created:**
+**Check what was created:** in this case, the `output_video.mp4` file
 
 ```sh
 size=$(ffprobe -v error -select_streams v:0 -show_entries format=size -of default=noprint_wrappers=1:nokey=1 output_video.mp4) && \
@@ -315,9 +341,9 @@ sudo snap install brave
         * https://mediacms.io/
 
 
-{{< details title="Video Editing Software - Setup📌" closed="true" >}}
+{{< details title="Video Editing Software - Setup 📌" closed="true" >}}
 
-Lets get some [apps for content creation](https://jalcocert.github.io/Linux/docs/debian/content_creation/), together with dev tools:
+Lets get some [apps for content creation](https://jalcocert.github.io/Linux/docs/debian/content_creation/), together with dev tools: Blender, OpenShot, KDenlive...
 
 ```sh
 #!/bin/bash
@@ -438,18 +464,25 @@ echo "Node.js version: $(node --version)"
 echo "npm version: $(npm --version)"
 ```
 
-{{< /details >}}
-
 ```sh
 git config --global user.name "JAlcocerT"
 git config --global user.email "contact@jalcocertech.xyz"
 ```
+{{< /details >}}
+
+
 
 ---
 
 ## FAQ
 
 * How to [view HEIC Images on Linux](https://www.baeldung.com/linux/view-heic-images)
+* How to reduce image quality in Linux to upload as YT Videocaption:
+
+```sh
+ffmpeg -i PXL_20241030_115355466.jpg -q:v 3 compressed_PXL_20241030_115355466.jpg
+#convert PXL_20241031_124037774.jpg -quality 85 compressed_PXL_20241031_124037774.jpg
+```
 
 ### Other topics related to Photo/Video
 

@@ -51,6 +51,18 @@ Understanding SC's with LLMs: these are are some [interesting protocols](https:/
 
 * [SETH](https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84)
 
+## Stable Coins
+
+* https://defillama.com/stablecoins
+* https://defillama.com/stablecoin/dai
+* https://defillama.com/stablecoins/Polygon
+
+## ERC20
+
+For example, the aave token is ERC20:
+
+* https://eth.blockscout.com/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9
+
 ### Interesting Crypto Stuff I found lately
 
 * https://www.reddit.com/r/CryptoCurrency/comments/mnzv1c/defi_explained_lending_borrowing/
@@ -58,7 +70,24 @@ Understanding SC's with LLMs: these are are some [interesting protocols](https:/
 
 I was writing about web3 here: https://jalcocert.github.io/JAlcocerT/guide-web3
 
+* https://www.reddit.com/r/defi/comments/1dl9ecu/most_reputable_respected_and_definitive_guides_on/
+
 *  Full-Stack DApp Boilerplate for Substrate and ink! Smart Contracts  https://github.com/scio-labs/inkathon?ref=statichunt.com
+
+
+* Top Protocols per Chain (for example Ethereum) - https://defillama.com/top-protocols
+* AAVE v3 is the most popular lending protocol for ETH at this moment - https://defillama.com/protocol/aave-v3?medianApy=true
+
+#### Some dApps
+
+Open Source, Permissionless & privacy conscious DeFi portfolio tracker
+
+
+* https://llamafolio.com/
+
+> Start visualising and tracking 434 protocols across 17 blockchains.
+
+
 
 ---
 
@@ -70,3 +99,5 @@ I was writing about web3 here: https://jalcocert.github.io/JAlcocerT/guide-web3
   * [ETHScan](https://etherscan.io/)
   * [Solscan](https://solscan.io/)
 
+* Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing **EVM based blockchains**.
+  * https://github.com/blockscout/blockscout

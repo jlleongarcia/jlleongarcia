@@ -120,7 +120,7 @@ Even in your browser, you could go to: `http://orangepi5.abcdef.ts.net:9000` and
 {{< /details >}}
 
 
-Then, if you want to do cool things with VSCode and a server...
+Then, if you want to do **cool things** with VSCode and a server...
 
 
 {{< callout type="info" >}}

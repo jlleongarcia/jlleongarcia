@@ -64,6 +64,7 @@ Its all about the prompts, as we can see with **these use cases**
     * [Code](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/slidev)
 {{< /callout >}}
 
+> You can also create **PPTs from markdown** with [Marpit](https://github.com/marp-team/marpit)
 
 ### Diagrams with AI
 

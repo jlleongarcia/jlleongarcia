@@ -8,8 +8,15 @@ summary: 'Tricks for Google Pixel 8 Pro.'
 url: 'pixel-8-pro-tricks'
 ---
 
+I Got a new phone recently.
 
-## Connecting Pixel 8 Pro to HDMI
+It promises years of updates. 
+
+Will it be better value for money than the Xiami PocoPhone F1 I got in 2019 for ~325$?
+
+## Pixel 8 Pro - How to
+
+### Connecting Pixel 8 Pro to HDMI
 
 1. **Activate developer mode** by: 
 
@@ -21,10 +28,22 @@ You can access them from `Settings->System->Developer options`.
 
 you will need to restart and HDMI cable to enjoy :)
 
-## Connecting a external drive
+### Connecting a external drive
 
 * How To [Transfer Photos & Videos From Flash Drive To Google Pixel 8 / 8 Pro](https://www.youtube.com/watch?v=iF0mmzGUSnc)
 
+
+## Pixel 8 Pro Conclusions
+
+For photos it is a beast. 
+
+. And I had a Huawei P30 Pro before.
+
+It can make **8160x4590 photos**, which you can apply zoom with easy and not loosing much quality.
+
+For videos, its up to **3840x2160 (4k UHD) at 60 fps** and 63.6 Mbit/s bitrate.
+
+> Get ready for some serious backup setup
 
 ---
 
