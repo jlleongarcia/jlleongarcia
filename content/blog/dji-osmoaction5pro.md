@@ -34,15 +34,17 @@ It's gonna be a companion for the **[next adventures](#adventures)**
 
 Very simple: From 1080p, to 4K videos.
 
-Ratios 4:3 or 16:9.
+Ratios 4:3 or 16:9, which is the one you one to use for Youtube, for example.
 
 This is a 2.7K Video example, meaning 2688x1512 at 50FPS, during the day:
 
 {{< youtube "cqs4MkJ_4M4" >}}
 
 {{< callout type="info" >}}
-A regular TV can be 4K UHD, meaning 3840x2160. Be aware when recording that it can do x2160 or other
+A regular TV can be **4K UHD, meaning 3840x2160**.
+Be aware when recording that it can do x2160 or other, depending if you choose W/UW and so on
 {{< /callout >}}
+
 <!-- 
 but also x3840x1600? UW??? -->
 
@@ -50,6 +52,8 @@ but also x3840x1600? UW??? -->
 sudo apt install mediainfo
 mediainfo outputvideo.MP4 #ViesiejaiNightWalk.mp4
 ```
+
+> Check video resolution, fps and more with [this script](https://github.com/JAlcocerT/YT-Video-Edition/blob/main/With_FFmpeg/z_video_info.sh)
 
 ### How to edit Videos
 
@@ -113,7 +117,7 @@ As they required email registration, I put to test how seriously DJI takes priva
 https://app.addy.io/docs/#account-details-GETapi-v1-account-details 
 -->
 
-* The battery is 1950mah and charges really fast 👌
+* The **battery is 1950mah** and charges really fast 👌
     * From 10% to 80% - ~30 min
     * From 10% to 100% - ~40 min
     * If you leave the battery connected, it will loose ~2% charge during a night
@@ -174,7 +178,7 @@ And this is what I created so far...
 
 
 {{< callout type="info" >}}
-I decided to create [this repo with the scripts](https://github.com/JAlcocerT/YT-Video-Edition)
+I decided to create [this repo with the **scripts**](https://github.com/JAlcocerT/YT-Video-Edition)
 {{< /callout >}}
 
 {{< details title="Scaling video resolution with - Upscayl + Shotcut 📌" closed="true" >}}
@@ -328,7 +332,7 @@ echo "FPS: $fps"
 {{< /callout >}}
 
 
-Before going to YT, I like to have Brave Browser:
+Before going to YT, I like to have **Brave Browser**:
 
 ```sh
 sudo snap install brave

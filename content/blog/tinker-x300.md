@@ -11,6 +11,8 @@ It is about time to put everything together.
 
 This year I got this compact ~2L box as my new personal computer (probably server at some point).
 
+Why a server? I went crazy and build it with 64GB RAM.
+
 {{< callout type="info" >}}
 * Processing power for my new YT Video creation: [Dji OA5Pro](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/) & [Pixel 8Pro](https://jalcocert.github.io/JAlcocerT/pixel-8-pro-tricks/) +++ [Video edition with ffmpeg](https://github.com/JAlcocerT/YT-Video-Edition) and [video with remotion](https://github.com/JAlcocerT/VideoEditingRemotion)
 * Companion for the [SBC's](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers), and the [ThinkPad](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/)
@@ -38,14 +40,27 @@ And now, I could see the configuration also in the System Settings UI, right at 
 
 {{< /details >}}
 
-{{< details title=" 📌" closed="true" >}}
+{{< details title="See Hardware Info and Disks Setup 📌" closed="true" >}}
 
+```sh
+lscpu
+#sudo lshw
 
+#sudo apt install lm-sensors
+#sensors
+```
+
+```sh
+df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space (see drives >3GB)
+df -h | awk 'NR==1 || $2 ~ /[GT]/'
+
+lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT | awk 'NR==1 || $2 ~ /[GT]/'
+```
 
 {{< /details >}}
 
 
-{{% details title="Asrock X300 Wifi Conenctivity 📌" closed="true" %}}
+{{% details title="Asrock X300 Wifi Connectivity 📌" closed="true" %}}
 
 Using an TP-Link Archer T3U (AC1300), which I upgraded to the **AC1300 T4U Plus** version.
 
@@ -118,6 +133,8 @@ But I decided to manage everything via the BIOS.
 
 So now the fan is at 30% up to 60 Celsius.
 
+> For Windows you can use [FanControl](https://github.com/Rem0o/FanControl.Releases) and AMD Adrenaline Software
+
 {{< details title="Changing Power Profiles 📌" closed="true" >}}
 
 ```sh
@@ -142,3 +159,16 @@ powerprofilesctl list
 {{< callout type="info" >}}
 The videos were filmed Spring this year, just put them together now
 {{< /callout >}}
+
+
+{{< details title="Keeping GIT tidy 📌" closed="true" >}}
+
+* With [Remote development](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/) and [git best practices](https://jalcocert.github.io/JAlcocerT/github-gists/#git-101) 
+
+```sh
+git add .
+git commit -m "some good msg"
+git push
+```
+
+{{< /details >}}

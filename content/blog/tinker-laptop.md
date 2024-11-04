@@ -131,7 +131,7 @@ Setup a Server as [Remote dev environment](https://jalcocert.github.io/JAlcocerT
 
 I love my Syncthing setup, but...
 
-Syncthing Android Apps is about to be gone.
+...Syncthing Android Apps is about to be gone
 
 ```sh
 df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space (see drives >3GB)
