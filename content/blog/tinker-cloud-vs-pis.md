@@ -45,30 +45,8 @@ Yes, they **both are veeery compact**.
 
 You can have a reference a very popular referece, a pen:
 
-![BMax B4 vs Asrock X300 Size](/blog_img/mini_pc/bmax_asrockx300.jpg)
+![BMax B4 vs Asrock X300 Size](/blog_img/hardware/bmax-b4.jpg)
 
-{{< figure 
-    src="/blog_img/mini_pc/bmax_asrockx300.jpg" 
-    link="https://www.youtube.com/@JAlcocerTech"
-    title="BMax-B4 Mini PC" 
-    caption="BMaxB4 vs Asrock X300." 
-    attr="Photo by JAlcocerT" 
-    attrlink="https://jalcocertech.xyz"
-    align="center"
->}}
-
-{{< figure src="/static/blog_img/mini_pc/bmax_asrockx300.jpg" alt="BMax B4 vs Asrock X300 Size" >}}
-
-{{< figure src="/blog_img/mini_pc/bmax_asrockx300.jpg"
-           alt="CV with a RPI4"
-           class="center"
-           link="https://example.com"
-           caption="This is an image of a BMAX ASRock x300 used as a mini PC."
-           title="Mini PC Setup"
-           target="_blank"
-           rel="noopener noreferrer"
-           width="300"
-           height="200" >}}
 
 * RAM is not soldered in the BMAX, and also you can add an additional 2,5 drive (screws not included)
 * The SSD drive it comes with is not 2280
