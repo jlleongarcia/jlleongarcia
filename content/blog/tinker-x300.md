@@ -13,7 +13,7 @@ This year I got this compact ~2L box as my new personal computer (probably serve
 
 Why a server? I went crazy and build it with 64GB RAM.
 
-![DJI Osmo Action 5 Pro](/blog_img/hardware/asrock-x300-box.jpg)
+![Asrock x300 boxes](/blog_img/hardware/asrock-x300-box.jpg)
 
 {{< callout type="info" >}}
 * Processing power for my new YT Video creation: [Dji OA5Pro](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/) & [Pixel 8Pro](https://jalcocert.github.io/JAlcocerT/pixel-8-pro-tricks/) +++ [Video edition with ffmpeg](https://github.com/JAlcocerT/YT-Video-Edition) and [video with remotion](https://github.com/JAlcocerT/VideoEditingRemotion)
@@ -150,11 +150,36 @@ powerprofilesctl list
 ## Conclusions of Asrock X300
 
 
+{{< details title="Benchmarks of Asrock x300 with Ryzen 5600G 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
+
+### What am I using it for right now?
+
+
+#### Video Editing 101
+
+I recently started to make some simple video edits.
+
+Video editing [with shell scripts](https://github.com/JAlcocerT/YT-Video-Edition/tree/main/With_FFmpeg) was interesting.
+
+But I needed to try [Python video editing with moviePy](https://github.com/JAlcocerT/YT-Video-Edition/tree/main/With_Python).
+
+And it can do crazy stuff.
+
+Like having **speech recognition** and silencing the parts with human voices...
+
+so that only the music is playing at those moments.
+
+
 ### What happened with the Bmax B4?
 
 I decided to give it to a friend.
 
-Reason being that I wanted an upgrade from my previous Desktop with a 2200G.
+Reason being that I wanted an upgrade in computing power from my previous Desktop with a 2200G.
 
 ![BMax B4 vs Asrock X300 Size](/blog_img/mini_pc/bmax_asrockx300.jpg)
 

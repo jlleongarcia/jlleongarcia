@@ -8,7 +8,7 @@ description: Testing the OA5 Pro and improving my Video Creation workflow
 url: 'dji-osmo-action-5-pro'
 ---
 
-First, A photo of the latest DJI Camera:
+First, A photo of the **latest DJI Action Camera**:
 
 ![DJI Osmo Action 5 Pro](/blog_img/hardware/dji_oa5pro.jpg)
 
