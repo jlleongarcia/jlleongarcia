@@ -13,7 +13,7 @@ This year I got this compact ~2L box as my new personal computer (probably serve
 
 Why a server? I went crazy and build it with 64GB RAM.
 
-![Asrock x300 boxes](/blog_img/hardware/asrock-x300-box.jpg)
+![Asrock x300 boxes](/blog_img/hardware/x300.jpg)
 
 {{< callout type="info" >}}
 * Processing power for my new YT Video creation: [Dji OA5Pro](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/) & [Pixel 8Pro](https://jalcocert.github.io/JAlcocerT/pixel-8-pro-tricks/) +++ [Video edition with ffmpeg](https://github.com/JAlcocerT/YT-Video-Edition) and [video with remotion](https://github.com/JAlcocerT/VideoEditingRemotion)
@@ -89,6 +89,8 @@ dig google.com
 sudo apt-get install speedtest-cli
 speedtest-cli #speedtest-cli --simple
 ```
+
+* The Opi5 with cable has 780/60 for comparison.
 
 > Got 195mb/s and 58mb/s with the T3U and **218/59 with the t4U Plus**.
 
@@ -174,6 +176,11 @@ Like having **speech recognition** and silencing the parts with human voices...
 
 so that only the music is playing at those moments.
 
+#### AI Stuff
+
+* Generating Content - [like so](<https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_GHRepo)>)
+* Better CVs for all
+* Better vacation planning
 
 ### What happened with the Bmax B4?
 

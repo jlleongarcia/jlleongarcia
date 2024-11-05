@@ -227,8 +227,13 @@ Now you can try the app at:
 
 Its not lying.
 
-Its having a base CV and some instructions for the AI to tweak few details so that
-it resonates more with an offer.
+Its having a base CV and some instructions for the AI to tweak few details so that it resonates more with an offer.
+
+#### Reading CV Info
+
+I tried with: Resume-Parser, Spacy (yes, the [NER](https://jalcocert.github.io/JAlcocerT/nlp-tools/#name-entity-recognition)!), ~~pyresparser~~ and pdfminer.
+
+> [ResumeParser](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/testing_resumeparser.py?ref_type=heads) & [PDFminer](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/testing_pdfminer.py?ref_type=heads), gave me the best and **simplest results**
 
 #### Exploring Job Offers with AI
 
