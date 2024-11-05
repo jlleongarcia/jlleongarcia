@@ -65,7 +65,7 @@ The data is extarcted with the known approach of beautiful soup. Where you need 
 If the Web Structure Changes - Codes needs to be [re-worked, as it happened here](https://gitlab.com/fossengineer1/py_vacations/-/tree/main/Z_Scrap_bs4?ref_type=heads)
 {{< /callout >}}
 
-{{< details title="How to explore the SQLiteDB📌" closed="true" >}}
+{{< details title="How to explore the SQLiteDB 📌" closed="true" >}}
 
 After executing the script...
 
@@ -98,10 +98,19 @@ SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
 
 ```
 {{< /details >}}
-You can make it run every night by setting **CRON task with [a script](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Scrap_Pracuj/run_pracuj.sh?ref_type=heads)**.
+
+You can make it **run every night** by setting **CRON task with [a script](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Scrap_Pracuj/run_pracuj.sh?ref_type=heads)**.
+
+And after few days...this is how it looks like:
+
+{{< rawhtml >}} 
+<iframe src="/videos/combined_job_offers_plot_05-11-2024.html"
+style="width: 100%; height: 450px;"></iframe>
+{{< /rawhtml >}}
+
+Is it a good moment? Up to you.
 
 {{< details title="Setup CRON job to execute python -> Bs4 -> SQLiteDB📌" closed="true" >}}
-
 
 ```sh
 nano run_pracuj.sh
@@ -234,6 +243,10 @@ Its having a base CV and some instructions for the AI to tweak few details so th
 I tried with: Resume-Parser, Spacy (yes, the [NER](https://jalcocert.github.io/JAlcocerT/nlp-tools/#name-entity-recognition)!), ~~pyresparser~~ and pdfminer.
 
 > [ResumeParser](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/testing_resumeparser.py?ref_type=heads) & [PDFminer](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/testing_pdfminer.py?ref_type=heads), gave me the best and **simplest results**
+
+{{< callout type="info" >}}
+Sample [St Web App with PDFMiner](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/z_st_pdfminer.py?ref_type=heads)
+{{< /callout >}}
 
 #### Exploring Job Offers with AI
 

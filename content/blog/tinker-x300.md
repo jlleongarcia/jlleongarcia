@@ -172,6 +172,10 @@ But I needed to try [Python video editing with moviePy](https://github.com/JAlco
 
 And it can do crazy stuff.
 
+{{< callout type="info" >}}
+[Video Edition Repo](https://github.com/JAlcocerT/YT-Video)
+{{< /callout >}}
+
 Like having **speech recognition** and silencing the parts with human voices...
 
 so that only the music is playing at those moments.
@@ -179,7 +183,7 @@ so that only the music is playing at those moments.
 #### AI Stuff
 
 * Generating Content - [like so](<https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_GHRepo)>)
-* Better CVs for all
+* [Better CVs](https://gitlab.com/fossengineer1/cv-check) for all
 * Better vacation planning
 
 ### What happened with the Bmax B4?
