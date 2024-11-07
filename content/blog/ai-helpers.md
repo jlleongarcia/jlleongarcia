@@ -7,15 +7,22 @@ summary: 'Make AI be helpful. While learning to make Streamlit better.'
 url: 'ai-useful-yet-simple'
 ---
 
-Some examples I have been testing with the [Streamlit MultiChat Summary](https://github.com/JAlcocerT/Streamlit-MultiChat).
 
-But it was time to **[level up my Streamlit](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#making-streamlit-better), again.**
+I started with streamlit with some sample apps for [route gpx tracking](https://github.com/JAlcocerT/Py_RouteTracker)
 
-* https://github.com/JAlcocerT/Streamlit-Speech
-* https://github.com/JAlcocerT/Streamlit-MultiChat
-* https://github.com/JAlcocerT/Py_RouteTracker
+But this year I have been testing more features with the [Streamlit MultiChat Summary](https://github.com/JAlcocerT/Streamlit-MultiChat).
 
-Lets make some **Business value driven projects!**
+Anyways, it was time to **[level up my Streamlit](#making-streamlit-better), again.**
+
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/JAlcocerT/Streamlit-Speech" title="Streamlit Speech Rater PoC" >}}
+  {{< card link="https://github.com/JAlcocerT/Streamlit-MultiChat" title="MultiChat" >}}
+{{< /cards >}}
+
+
+
+And why not doing it while making some **Business value driven projects!**
 
 ## A Neuromarketing Agent
 
@@ -88,6 +95,8 @@ I love the SliDev project so much, that [I forked it](https://github.com/JAlcoce
 
 It all started with [CV with OpenAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_cv.py)
 
+Thanks to this app I have been able to level up my Streamlit with many new features.
+
 {{< callout type="info" >}}
 And continued with [this repo](https://gitlab.com/fossengineer1/cv-check) with a Streamlit Web App
 {{< /callout >}}
@@ -110,43 +119,29 @@ I was storing notes for few years already and im really curious to see whats ins
 
 ### User Authentication
 
-There will be some diagrams here, with Mermaid ofc.
-
-{{< details title="Simple User/Pass Challenge for Streamlit 📌" closed="true" >}}
-
-* It just require a single additional file to your App
-* [Example in Streamlit-Multichat](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Auth_functions.py) - A very simple one that allow certain user/passwords to access an app
-
-
-
-> Thanks to Naashonomics and [the code](https://github.com/naashonomics/pandas_templates/blob/master/login.py)
-
-{{< /details >}}
-
-```mermaid
-flowchart TD
-    Start([User Arrives at App]) --> LoginPrompt{User enters<br>username & password}
-    
-    LoginPrompt -->|Input redentials| AuthCheck["Check credentials<br>against Auth_functions.py"]
-
-    AuthCheck -->|Valid credentials| Welcome["Display Welcome Message<br>and access to the app"]
-    AuthCheck -->|Invalid credentials| LoginPrompt
-
-    Welcome -->|Logout| LoginPrompt
-```
+There will be some diagrams here, with [Mermaid ofc](https://fossengineer.com/free-diagram-tools/#mermaidjs).
 
 {{< dropdown title="Simple User/Pass Challenge for Streamlit 👇" closed="true" >}}
 
-* It just require a single additional file to your App
+**Pros**
+1. It just require a single additional file to bring Auth to the App
+2. Completely Free and no dependencies with 3rd parties
+**Cons**
+1. Hardcoded values (~Okeish for a PoC)
+
 * [Example in Streamlit-Multichat](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Auth_functions.py) - A very simple one that allow certain user/passwords to access an app
 
-
+![Simple Streamlit Auth](/blog_img/apps/streamlit/ST_AuthFunction.png)
 
 > Thanks to Naashonomics and [the code](https://github.com/naashonomics/pandas_templates/blob/master/login.py)
 
+
+
+{{< /dropdown >}}
+
 ```mermaid
 flowchart TD
-    Start([User Arrives at App]) --> LoginPrompt{User enters<br>username & password}
+    Start([User Arrives at App 🙊]) --> LoginPrompt{User enters<br>username & password}
     
     LoginPrompt -->|Input redentials| AuthCheck["Check credentials<br>against Auth_functions.py"]
 
@@ -155,14 +150,119 @@ flowchart TD
 
     Welcome -->|Logout| LoginPrompt
 ```
+
+But to place real users fast into the features loop...
+
+It is interesting at least to get them to provide the email in exchange for getting early access.
+
+![Simple Streamlit Email Challenge](/blog_img/apps/streamlit/ST_EmailChallenge-UI.png)
+
+
+{{< dropdown title="Email Challenge for Streamlit based on MailerLite 👇" closed="true" >}}
+
+* **Pros** 
+1. Integrated with MailerLite API
+* With double opt-in, you will get just verified emails
+2. No hardcoded values in the app
+* **Cons** MailerLite Free Tier finishes at 1k subs
+* [Example Code in CV-Check](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_CVCheck_pdfmineropenAI_v3.py?ref_type=heads) - A very simple one that allow certain user/passwords to access an app
+
+
+
+
+{{< /dropdown >}}
+
+```mermaid
+flowchart TD
+    Start([User Arrives at App 🙊]) --> DevModeCheck{Check DEV_MODE}
+    
+    DevModeCheck -->|DEV_MODE=True| MainOptions["App Features Access 😊 "]
+    DevModeCheck -->|DEV_MODE=False| EmailEntry["Prompt user for email"]
+    
+    EmailEntry -->|Email Entered| SubscriptionCheck["Check email subscription with MailerLite API"]
+    EmailEntry -->|No Email Entered| EndInfo["Show 'Please enter email' message"]
+
+    SubscriptionCheck -->|Subscribed| SuccessWelcome["Welcome Message and Log Success"]
+    SubscriptionCheck -->|Not Subscribed| Warning["Show warning: Email not subscribed and Log Failure"]
+
+    SuccessWelcome --> MainOptions
+    MainOptions --> OptionSelected{User selects an option}
+    
+    OptionSelected -->|Analyze CV Template| AnalyzeCV["Run Analyze CV function"]
+    OptionSelected -->|CV To Offer| AdaptCV["Run Adapt CV to Offer function"]
+    OptionSelected -->|Offer Overview| OfferOverview["Run Offer Overview function"]
+
+    Warning --> Start
+```
+
+{{< dropdown title="Email Challenge for ST based on MailerLite+FormBricks 👇" closed="true" >}}
+
+* **Pros** 
+1. Integrated with MailerLite API
+* With MailerLite double opt-in, you will get just verified emails
+2. No hardcoded values in the app
+* **Cons** MailerLite Free Tier finishes at 1k subs
+* [Example Code here](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_CVCheck_pdfmineropenAI_v3a.py)
+
+
+
 
 {{< /dropdown >}}
 
 
-* 
+
+```mermaid
+flowchart TD
+    Start([User Arrives at App 🙊]) --> DevModeCheck{BackEnd Checks DEV_MODE}
+    
+    DevModeCheck -->|DEV_MODE=True| MainOptions["App Features Access 😍"]
+    DevModeCheck -->|DEV_MODE=False| EmailEntry["Prompt user for email"]
+    
+    EmailEntry -->|Email Entered| SubscriptionCheck
+    EmailEntry -->|No Email Entered| EndInfo["Show 'Please enter email' message"]
+
+    %% Subscription checks surrounded in a box
+    subgraph BackendElements [BE Subscription Logic]
+        SubscriptionCheck["Check email subscription with MailerLite API"]
+        SubscriptionCheck -->|Subscribed via MailerLite| SuccessWelcome["Welcome Message and Log Success"]
+        SubscriptionCheck -->|Not in MailerLite| FormBricksCheck["Check email in FormBricks Google Sheet"]
+        
+        FormBricksCheck -->|Subscribed in FormBricks| SuccessWelcome
+        FormBricksCheck -->|Not Subscribed in Either| Warning["Show warning: Email not subscribed and Log Failure"]
+    end
+
+    SuccessWelcome --> MainOptions
+    MainOptions --> OptionSelected{User selects an option}
+    
+    OptionSelected -->|Analyze CV Template| AnalyzeCV["Run Analyze CV function"]
+    OptionSelected -->|CV To Offer| AdaptCV["Run Adapt CV to Offer function"]
+    OptionSelected -->|Offer Overview| OfferOverview["Run Offer Overview function"]
+
+    Warning --> Start
+```
+
+But...how about paywalls?
+
+Some time ago I tried [this streamlit paywall simple example](https://github.com/parker84/streamlit-paywall-simple-example)
+
+but it didnt quite work for me. 
+
+It was the time to check [Stripe API together with Streamlit](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Z_Tests/Stripe?ref_type=heads)
+
+{{< details title="Stripe Paywall for Streamlit 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+{{< callout type="info" >}}
+Streamlit has very useful [sessions states](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state)
+{{< /callout >}}
 
 ### Streamlit Github CI/CD
 
-To use Github Actions to create automatic container images for your streamlit projects, you will need such [configuration file](https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml).
+To use **Github Actions** to create automatic **container images** for your streamlit projects, you will need such [configuration file](https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml).
 
-And to follow [these steps](https://fossengineer.com/docker-github-actions-cicd/).
+
+{{< callout type="info" >}}
+Just follow [these steps](https://fossengineer.com/docker-github-actions-cicd/).
+{{< /callout >}}
