@@ -31,8 +31,8 @@ menu:
       name: Blog
       pageRef: /blog
       weight: 2      
-    - name: Linkedin ↗
-      url: "https://www.linkedin.com/in/jalcocert/"
+    - name: Cool Stuff ↗
+      url: "https://jalcocertech.xyz/"
       weight: 4
     - name: Search
       weight: 5

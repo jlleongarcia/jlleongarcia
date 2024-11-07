@@ -222,6 +222,10 @@ python3 query_pracuj_sqlite_v3b.py
 
 * Better vacation planning
 
+#### Web Stuff
+
+* https://jalcocert.github.io/JAlcocerT/portfolio-websites/
+
 
 
 ### What happened with the Bmax B4?

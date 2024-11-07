@@ -3,7 +3,7 @@ title: "Can AI be: Neuromarketer, PPT Creator..."
 date: 2024-10-21
 draft: false
 tags: ["dev"]
-summary: 'Make AI be helpful. While Making Streamlit better.'
+summary: 'Make AI be helpful. While learning to make Streamlit better.'
 url: 'ai-useful-yet-simple'
 ---
 
@@ -110,7 +110,55 @@ I was storing notes for few years already and im really curious to see whats ins
 
 ### User Authentication
 
+There will be some diagrams here, with Mermaid ofc.
+
+{{< details title="Simple User/Pass Challenge for Streamlit 📌" closed="true" >}}
+
+* It just require a single additional file to your App
 * [Example in Streamlit-Multichat](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Auth_functions.py) - A very simple one that allow certain user/passwords to access an app
+
+
+
+> Thanks to Naashonomics and [the code](https://github.com/naashonomics/pandas_templates/blob/master/login.py)
+
+{{< /details >}}
+
+```mermaid
+flowchart TD
+    Start([User Arrives at App]) --> LoginPrompt{User enters<br>username & password}
+    
+    LoginPrompt -->|Input redentials| AuthCheck["Check credentials<br>against Auth_functions.py"]
+
+    AuthCheck -->|Valid credentials| Welcome["Display Welcome Message<br>and access to the app"]
+    AuthCheck -->|Invalid credentials| LoginPrompt
+
+    Welcome -->|Logout| LoginPrompt
+```
+
+{{< dropdown title="Simple User/Pass Challenge for Streamlit 👇" closed="true" >}}
+
+* It just require a single additional file to your App
+* [Example in Streamlit-Multichat](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Auth_functions.py) - A very simple one that allow certain user/passwords to access an app
+
+
+
+> Thanks to Naashonomics and [the code](https://github.com/naashonomics/pandas_templates/blob/master/login.py)
+
+```mermaid
+flowchart TD
+    Start([User Arrives at App]) --> LoginPrompt{User enters<br>username & password}
+    
+    LoginPrompt -->|Input redentials| AuthCheck["Check credentials<br>against Auth_functions.py"]
+
+    AuthCheck -->|Valid credentials| Welcome["Display Welcome Message<br>and access to the app"]
+    AuthCheck -->|Invalid credentials| LoginPrompt
+
+    Welcome -->|Logout| LoginPrompt
+```
+
+{{< /dropdown >}}
+
+
 * 
 
 ### Streamlit Github CI/CD

@@ -3,7 +3,7 @@ title: "From Wordpress to a Cool Website"
 date: 2024-09-23T10:20:21+01:00
 draft: false
 tags: ["dev"]
-summary: 'Migrating Wordpress to Cool Websites'
+summary: 'Migrating Wordpress to Cool Websites. Faster, Cleaner, Better SEO and DIY Design.'
 url: 'wordpress-migration-to-ssg'
 ---
 
@@ -11,7 +11,7 @@ I was talking with my father about websites the other day and...
 
 I realized how much **more we can do with SSG's than with wordpress**.
 
-It all started trying to add Web Analytics to his site.
+It all started [trying to add Web Analytics](https://fossengineer.com/selfhosting-umami-with-docker/) to the site.
 
 {{< details title="How to know if a website uses GAnalytics 📌" closed="true" >}}
 

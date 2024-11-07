@@ -1,5 +1,5 @@
 ---
-title: "Life is Short. Dont waste it with the Wront Website."
+title: "Life is Short. Dont waste it with the `Wront` Website."
 date: 2024-09-30
 draft: false
 tags: ["dev"]
@@ -13,23 +13,48 @@ It all started few years ago with my own travel blog.
 Later on, my first business website followed.
 
 {{< cards >}}
-  {{< card link="https://cyclingthere.com" title="My Travel Adventures" image="/blog_img/mini_pc/bmax_asrockx300.jpg" subtitle="I can write and also create interesting photo galleries" >}}
-  {{< card link="https://iotechcrafts.com/" title="Business Website" image="/blog_img/selfh/cloud-vs-sbc.png" subtitle="AI & IoT Consulting Services" >}}
+  {{< card link="https://cyclingthere.com" title="My Travel Adventures" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="I can write and also create interesting photo galleries about my travel experiences" >}}
+  {{< card link="https://iotechcrafts.com/" title="Business Website" image="/blog_img/web/WebsSnapshots/Web_IoTechCrafts.png" subtitle="A Website for Agency - AI & IoT Consulting Services" >}}
 {{< /cards >}}
 
-And then I saw people close to me, who needed help.
+And then I saw **people close to me, who needed help**.
 
 ## Custom Websites
 
-These websites followed:
+Then...started customizing websites:
 
 {{< cards >}}
-  {{< card link="https://cozyknittingclub-web.pages.dev/" title="Content Creator Blog" image="/blog_img/mini_pc/bmax_asrockx300.jpg" subtitle="I can write and also create interesting photo galleries" >}}
-  {{< card link="https://morita-web.pages.dev//" title="Health Care Site" image="/blog_img/selfh/cloud-vs-sbc.png" subtitle="AI & IoT Consulting Services" >}}
-    {{< card link="https://moises-era.pages.dev//" title="Real Estate Official Site" image="/blog_img/selfh/cloud-vs-sbc.png" subtitle="AI & IoT Consulting Services" >}}
-    {{< card link="https://jmodels.net/" title="Scale Modelling Blog" image="/blog_img/selfh/cloud-vs-sbc.png" subtitle="Fantastic Blog with ~1K Posts" >}}
-    {{< card link="https://ira-english.pages.dev/" title="Personal Business Landing" image="/blog_img/selfh/cloud-vs-sbc.png" subtitle="AI & IoT Consulting Services" >}}
+  {{< card link="https://cozyknittingclub.com/" title="Content Creator Blog" image="/blog_img/web/WebsSnapshots/Web_CKC.png" subtitle="For an instagramer who loves knitting" >}}
+  {{< card link="https://morita-web.pages.dev//" title="Health Care Site" image="/blog_img/web/WebsSnapshots/Web_Nevin.png" subtitle="Because the brain is as important as the body" >}}
+    {{< card link="https://dm-real-estate.com/" title="Real Estate Official Site" image="/blog_img/web/WebsSnapshots/Web_realestate.png" subtitle="A Real Estate Business Site for Spain" >}}
+    {{< card link="https://jmodels.net/" title="Scale Modelling Blog" image="/blog_img/web/WebsSnapshots/Web-jmodels.png" subtitle="Fantastic Blog with ~1K Posts about Modelling" >}}
+    {{< card link="https://ira-english.pages.dev/" title="Personal Business Landing" image="/blog_img/web/WebsSnapshots/Web_EnglishIra.png" subtitle="Landing Page for a well Known English Teacher" >}}
+    {{< card link="https://enjoylittlethings.org/" title="Travel Adict Photo Gallery" image="/blog_img/web/WebsSnapshots/Web_PhotoGalleryAGA.png" subtitle="Because Photo & Travel lovers need something more than instagram" >}}    
+    {{< card link="https://jalcocert.github.io/Portfolio/" title="All your Links" image="/blog_img/web/WebsSnapshots/Web_PortfolioLinks.png" subtitle="Sleek collection of important Links" >}} 
+    {{< card link="https://iodoctor.iotechcrafts.com/" title="Doctor Consultation" image="/blog_img/web/WebsSnapshots/Web_IoDoctor.png" subtitle="Landing and WebApp for Scheduling Doctor Appointments" >}}            
 {{< /cards >}}
+
+
+{{< details title="All powered by HUGO & Astro 📌" closed="true" >}}
+
+* https://github.com/JAlcocerT/cozyknittingclub-web
+* https://github.com/JAlcocerT/morita-web
+* https://github.com/JAlcocerT/ScrewFastMoiRealEstate
+  * https://jalcocert.github.io/JAlcocerT/astro-web-setup/
+* https://jalcocert.github.io/JAlcocerT/wordpress-migration-to-ssg/
+* https://github.com/JAlcocerT/ira-web
+* https://github.com/JAlcocerT/agutek-portfolioweb
+  * https://jalcocert.github.io/JAlcocerT/creating-photo-centric-blog-with-hugo/
+* https://github.com/JAlcocerT/Portfolio
+
+
+```sh
+npm run dev
+
+hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.171" --port=1319
+```
+
+{{< /details >}}
 
 ---
 
@@ -52,7 +77,7 @@ Gain deeper insights with comprehensive location/referrer based analytics and co
 Collect email addresses and phone numbers directly from your Linktree to build your own visitor list
 Marketing tech capabilities including SEO settings, Google Analytics, Zapier, and Mailchimp integrations -->
 
-* Example, this [artist profile](https://linktr.ee/bogusia.adryan)
+* Examples, this [artist profile](https://linktr.ee/bogusia.adryan) and this [awsome designer profile](https://linktr.ee/karwozniak)
     * And somethin' like:
         * https://github.com/jpanther/lynx - MIT!
         * https://github.com/SofiDevO/allmylinks
