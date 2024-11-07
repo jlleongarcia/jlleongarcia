@@ -55,6 +55,7 @@ Its all about the prompts, as we can see with **these use cases**
 
 [SliDev is an awsome project](https://fossengineer.com/how-to-use-slidev/) to generate PPT as code - **leveraging VueJS**.
 
+I love the SliDev project so much, that [I forked it](https://github.com/JAlcocerT/slidev).
 
 {{< callout type="info" >}}
 * [OpenAI PPT with **Slidev**](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_slidev.py
@@ -67,7 +68,6 @@ Its all about the prompts, as we can see with **these use cases**
 > You can also create **PPTs from markdown** with [Marpit](https://github.com/marp-team/marpit)
 
 ### Diagrams with AI
-
 
 {{< callout type="info" >}}
 * [OpenAI + mermaid](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_mermaid.py)
@@ -86,8 +86,16 @@ Its all about the prompts, as we can see with **these use cases**
 
 ## CV with AI
 
+It all started with [CV with OpenAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_cv.py)
+
 {{< callout type="info" >}}
-* [CV with OpenAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_cv.py)
+And continued with [this repo](https://gitlab.com/fossengineer1/cv-check) with a Streamlit Web App
+{{< /callout >}}
+
+## Speech Rater with AI
+
+{{< callout type="info" >}}
+[SpeechRater](https://github.com/JAlcocerT/streamlitspeechrater) and [StreamlitSpeech](https://github.com/JAlcocerT/Streamlit-Speech)
 {{< /callout >}}
 
 ## Kindle Notes to AI
@@ -102,7 +110,8 @@ I was storing notes for few years already and im really curious to see whats ins
 
 ### User Authentication
 
-* [Example in Streamlit-Multichat](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Auth_functions.py)
+* [Example in Streamlit-Multichat](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Auth_functions.py) - A very simple one that allow certain user/passwords to access an app
+* 
 
 ### Streamlit Github CI/CD
 

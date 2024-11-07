@@ -557,10 +557,14 @@ I've been using this one for a while now:
 {{< cards cols="1" >}}
   {{< card link="https://github.com/streamlit/streamlit" title="Streamlit in Github" >}}
 {{< /cards >}}
-{{< cards cols="2" >}}
+{{< cards cols="3" >}}
   {{< card link="https://github.com/JAlcocerT/ask-multiple-pdfs" title="Streamlit Ask PDF" >}}
   {{< card link="https://github.com/JAlcocerT/Streamlit-MultiChat" title="MultiChat: OpenAI, Anthropic, Ollama,..." >}}
+  {{< card link="https://github.com/JAlcocerT/phidata/blob/main/Z_DeployMe/Docker-Compose.yml" title="YT Summarizer with Groq API by PhiData" >}}  
 {{< /cards >}}
+
+
+
 <!-- 
   {{< card link="https://github.com/JAlcocerT/Py_Double_Pendulum" title="Streamlit Double Pendulum" >}} -->
 
@@ -590,7 +594,7 @@ I have been **testing Chainlit** and [OpenAIFunctions](https://github.com/JAlcoc
   * <https://shiny.rstudio.com/py/gallery/>
 
 
-pygwalker
+{{< details title="PyGWalker: Turn your pandas dataframe into an interactive UI for visual analysis 📌" closed="true" >}}
 
 * https://kanaries.net/pygwalker
 * https://github.com/Kanaries/pygwalker
@@ -600,7 +604,11 @@ pygwalker
 * https://docs.kanaries.net/pygwalker/use-pygwalker-with-streamlit.en
   * https://github.com/Kanaries/pygwalker?tab=readme-ov-file#tested-environments
 
-> PyGWalker: Turn your pandas dataframe into an interactive UI for visual analysis
+{{< /details >}}
+
+
+
+
 
 
 <!-- https://github.com/AIAnytime/Document-Buddy-App -->

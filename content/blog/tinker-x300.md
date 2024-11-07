@@ -178,13 +178,51 @@ And it can do crazy stuff.
 
 Like having **speech recognition** and silencing the parts with human voices...
 
-so that only the music is playing at those moments.
+...so that only the music is playing at those moments.
 
 #### AI Stuff
 
 * Generating Content - [like so](<https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_GHRepo)>)
-* [Better CVs](https://gitlab.com/fossengineer1/cv-check) for all
+    * Already working for interesting sites, like [this](https://gitlab.com/fossengineer1/fossengineerpapermod)
+* [Better CVs](https://gitlab.com/fossengineer1/cv-check) for all with [OpenAI API](https://platform.openai.com/usage)
+    * [MailerLite API to check emails](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/MailerLite/test_mailerlite_v1.py?ref_type=heads), makes it easy to place a [small wall to streamlit](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_CVCheck_pdfmineropenAI_v2b.py?ref_type=heads)
+        * If you choose doble opt-in, they will verify the email
+    * But we could also use [FormBricks](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Z_Tests/FormBricks?ref_type=heads) as a wall
+        * You can get feedback on the users needs before/after trying the app
+        * If you connect the form with GSheets and make python read it, you have a simple way to compare emails for access
+        * Forms can be embed on email, on website (as iframe or pop up) and...with a simple link.
+    * Or...a real paywall, with [StripeAPI](https://dashboard.stripe.com/apps)
+        * It allow to have [pricing tables](https://dashboard.stripe.com/test/pricing-tables/create), to embed on your website with a async scrypt that you can copy paste
+        * Stripe API is crazy cool - YOu can get info about sessions, customers (which product/ subscription have they bought, if its on trial, active...)
+    * Keeping the [prompts tidy & consistent](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Prompts?ref_type=heads)
+    * And Streamlit can be customized in cool ways with option menu and [bootstrap icons](https://icons.getbootstrap.com/)
+    * And improvement the way I build my [docker-compose with API keys](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_DeployMe/Docker-Compose.yml?ref_type=heads)
+    * Oh, and even [gitlab CI/CD](https://gitlab.com/fossengineer1/cv-check/-/blob/main/.gitlab-ci.yml?ref_type=heads) testing!
+        * You can see their status at the [jobs tab](https://gitlab.com/fossengineer1/cv-check/-/jobs)
+    * Better [sqlite logs to see](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Consolidate_logins.py?ref_type=heads) who actually uses it
+
+{{< details title="Exploring SQLite content 📌" closed="true" >}}
+
+I made similar thing Check [whats in there](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/#old-school-scrapping)
+
+```sh
+sqlite3 ./login_log.db
+#.tables
+
+SELECT * FROM login_logs;
+SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
+#.quit
+```
+
+```sh
+python3 query_pracuj_sqlite_v3b.py
+```
+
+{{< /details >}}
+
 * Better vacation planning
+
+
 
 ### What happened with the Bmax B4?
 
@@ -234,6 +272,7 @@ The videos were filmed Spring this year, just put them together now
 {{< details title="Keeping GIT tidy 📌" closed="true" >}}
 
 * With [Remote development](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/) and [git best practices](https://jalcocert.github.io/JAlcocerT/github-gists/#git-101) 
+    * Dont forget about the [Gitlab Workflow Extension](https://marketplace.visualstudio.com/items?itemName=GitLab.gitlab-workflow)
 
 ```sh
 git add .
