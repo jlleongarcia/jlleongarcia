@@ -249,8 +249,16 @@ but it didnt quite work for me.
 
 It was the time to check [Stripe API together with Streamlit](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Z_Tests/Stripe?ref_type=heads)
 
-{{< details title="Stripe Paywall for Streamlit 📌" closed="true" >}}
+{{< details title="Stripe Emails with Active Subscription Paywall for Streamlit 📌" closed="true" >}}
 
+* **Pros** 
+1. Integrated with Stripe API
+2. No hardcoded values in the app
+3. You can check if a certain [mail has any active/trialing subscription](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/Stripe/stripe_check_customers_activesub_v1a.py?ref_type=heads)
+4. Or if it has a specific subscription
+* **Cons** 3rd parties dependencies
+* No email verification - but card verification
+* No password verification for a given email
 
 {{< /details >}}
 
