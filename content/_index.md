@@ -36,8 +36,9 @@ Beyond personal growth, a tech blog allows you to contribute to the tech communi
 ### More
 
 {{< cards >}}
-  {{< card link="blog" title="Blog" icon="book-open" >}}
-  {{< card link="https://jalcocertech.xyz" title="Collaborations ↗" icon="user" >}}
+  <!-- {{< card link="blog" title="Blog" icon="book-open" >}} -->
+  {{< card link="https://jalcocertech.xyz/" title="JAlcocerTech ↗" icon="book-open" >}}
+  {{< card link="https://cal.com/jalcocertech/consulting" title="Collaborations ↗" icon="user" >}}
 {{< /cards >}}
 
 {{< hextra/feature-grid >}}
@@ -65,6 +66,6 @@ Beyond personal growth, a tech blog allows you to contribute to the tech communi
 
 {{< /hextra/feature-grid >}}
 
-{{< cards cols="1" >}}
+<!-- {{< cards cols="1" >}}
   {{< card link="https://jalcocert.github.io/Portfolio/" title="Portfolio Links ↗" icon="user" >}}
-{{< /cards >}}
+{{< /cards >}} -->

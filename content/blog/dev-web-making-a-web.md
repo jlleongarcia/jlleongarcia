@@ -176,6 +176,14 @@ Who said, **embedded Chatbot**?
 
 > From Idea to Impact, **with AI**
 
+
+{{% details title="Embedded Chat for your website 🚀" closed="true" %}}
+
+* Paid/Chat Options - Chaport
+* More options: Chatwoot
+
+{{% /details %}}
+
 <!-- 
 Observability Platform for LLMs
   https://github.com/traceloop/openllmetry

@@ -117,6 +117,14 @@ I was storing notes for few years already and im really curious to see whats ins
 
 ## Making Streamlit Better
 
+{{< details title="Better Docker-Compose for Streamlit Apps 📌" closed="true" >}}
+
+* For passing important variables, we could do it via the `./streamlit/secrets.toml` [file](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/.streamlit), with this kind of [command at the docker compose](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_DeployMe/Docker-Compose.yml)
+* But, they can also be passed as environment variables, with this kind of [docker-compose](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_DeployMe/Docker-Compose.yml?ref_type=heads)
+
+{{< /details >}}
+
+
 ### User Authentication
 
 There will be some diagrams here, with [Mermaid ofc](https://fossengineer.com/free-diagram-tools/#mermaidjs).
@@ -202,7 +210,8 @@ flowchart TD
 * With MailerLite double opt-in, you will get just verified emails
 2. No hardcoded values in the app
 * **Cons** MailerLite Free Tier finishes at 1k subs
-* [Example Code here](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_CVCheck_pdfmineropenAI_v3a.py)
+
+> [Example Code here](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_CVCheck_pdfmineropenAI_v3a.py). This module [for MailerLite](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Auth_Ways/Auth_Mailerlite.py?ref_type=heads) and this one for [FormBricks via GSheets](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Auth_Ways/Auth_FormBricks.py?ref_type=heads)
 
 
 
@@ -253,18 +262,75 @@ It was the time to check [Stripe API together with Streamlit](https://gitlab.com
 
 * **Pros** 
 1. Integrated with Stripe API
-2. No hardcoded values in the app
+2. No hardcoded values in the app, [get all the clients](https://docs.stripe.com/api/customers/list)
 3. You can check if a certain [mail has any active/trialing subscription](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/Stripe/stripe_check_customers_activesub_v1a.py?ref_type=heads)
 4. Or if it has a specific subscription
-* **Cons** 3rd parties dependencies
+* **Cons** 
+* 3rd parties dependencies
 * No email verification - but card verification
 * No password verification for a given email
 
+> [This module](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Auth_Ways/Auth_Stripe.py?ref_type=heads) checks if a given email has ever been a customer / have active subscription / have particular products_id subs
+
 {{< /details >}}
+
+
+In the end, I made a EmailWall Module that combines the 3 checks, according to what the user wants to check agains in [the `.env` variable](https://gitlab.com/fossengineer1/cv-check/-/blob/main/.env.sample?ref_type=heads)
+
+
+```mermaid
+graph TD
+    A[is_email_subscribed]
+    
+    A -->|Check MailerLite| ML[check_mailerlite_subscription]
+    ML -->|Subscribed| ML_Yes["MailerLite: Subscribed"]
+    ML -->|Not Subscribed| ML_No["MailerLite: Not Subscribed"]
+    
+    A -->|Check FormBricks| FB[check_formbricks_subscription]
+    FB -->|Subscribed| FB_Yes["FormBricks: Subscribed"]
+    FB -->|Not Subscribed| FB_No["FormBricks: Not Subscribed"]
+    
+    A -->|Check Stripe| Stripe
+
+    subgraph Orchestrator Stripe Check
+        Stripe[orchestrator_stripe]
+        Stripe -->|Check if customer email exists| SE[check_stripe_email]
+        SE -- Yes --> SS[has_specific_active_or_trialing_subscription]
+        SE -- No --> SNE["Stripe: Customer does not exist"]
+        
+        SS -->|Active/Trialing subscription found| SAT["Stripe: Subscribed"]
+        SS -->|No active or trialing subscription found| SNA["Stripe: Not Subscribed"]
+    end
+```
 
 {{< callout type="info" >}}
 Streamlit has very useful [sessions states](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state)
 {{< /callout >}}
+
+
+Big **thanks to Fanilo Andrianasolo** for the great Streamlit Videos
+* Keep up to date with the latest [streamlit utilities](https://docs.streamlit.io/develop/api-reference/utilities)
+* And [streamlit components](https://streamlit.io/components)
+
+{{< youtube "lnvzyw1KCs0" >}}
+
+{{< details title="Upcoming & Cool Streamlit Features 📌" closed="true" >}}
+
+[**Streamlit Roadmap**](https://github.com/streamlit/roadmap)
+
+* https://github.com/kajarenc/stauthlib
+    * Google Auth done easy?
+* [Folium Maps Selections](https://github.com/streamlit/streamlit/issues/8653)
+    * https://github.com/streamlit/streamlit/pull/9377
+* [Pure html to streamlit app](https://docs.streamlit.io/develop/api-reference/utilities/st.html) - Ready from v1.40.0
+    * st.html content is not iframed. Executing JavaScript is not supported at this time.
+
+
+
+> https://github.com/streamlit/cookbook
+
+{{< /details >}}
+
 
 ### Streamlit Github CI/CD
 

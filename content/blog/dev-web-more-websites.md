@@ -8,7 +8,7 @@ url: 'portfolio-websites'
 ---
 
 
-It all started few years ago with my own travel blog.
+It all started few years ago with my **own travel blog**.
 
 Later on, my first business website followed.
 
@@ -51,8 +51,11 @@ Then...started customizing websites:
 ```sh
 npm run dev
 
+#hugo server
 hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.171" --port=1319
 ```
+
+> The baseURL if you are doing dev in a server 
 
 {{< /details >}}
 
@@ -77,6 +80,8 @@ Gain deeper insights with comprehensive location/referrer based analytics and co
 Collect email addresses and phone numbers directly from your Linktree to build your own visitor list
 Marketing tech capabilities including SEO settings, Google Analytics, Zapier, and Mailchimp integrations -->
 
+### Scaling Ideas
+
 * Examples, this [artist profile](https://linktr.ee/bogusia.adryan) and this [awsome designer profile](https://linktr.ee/karwozniak)
     * And somethin' like:
         * https://github.com/jpanther/lynx - MIT!
@@ -86,6 +91,34 @@ Marketing tech capabilities including SEO settings, Google Analytics, Zapier, an
 {{< callout type="info" >}}
 Like we did at the **Social Media Project!**
 {{< /callout >}}
+
+* **Automatic Invoices**
+  * With Stripe as payment gateway, they create the invoices for your product/services automatically
+  * There are some project to [create invoices with open software](https://fossengineer.com/open-source-invoice-creator/).
+
+
+{{% details title="ServerLess-Invoices Setup 🚀" closed="true" %}}
+
+Create and manage invoices in your browser. Serverless Invoices is a free invoicing tool for freelancers and small businesses. 
+
+**Made with Vue.js.** 
+
+```sh
+git clone https://github.com/mokuappio/serverless-invoices.git
+#https://github.com/JAlcocerT/serverless-invoices
+
+cd serverless-invoices
+#rm -rf .git
+
+docker build . -t mokuappio/serverless-invoices
+docker run -p 89:8080 -d --rm mokuappio/serverless-invoices
+```
+
+You can print to pdf, add your logo, taxes, CSS...
+
+* Or use their Saas: https://app.mokuapp.io/login
+
+{{% /details %}}
 
 <!-- * Proposed: bogusiabachata.pro -->
 
