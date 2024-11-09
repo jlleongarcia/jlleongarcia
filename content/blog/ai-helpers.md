@@ -437,6 +437,7 @@ Big **thanks to Fanilo Andrianasolo** for the great Streamlit Videos
     * st.html content is not iframed. Executing JavaScript is not supported at this time.
 * Charts Selections!!
 * There are now [widgets](https://docs.streamlit.io/develop/api-reference/widgets) for both, [audio_input](https://docs.streamlit.io/develop/api-reference/widgets/st.audio_input) and camera_input
+    * It resonates a lot with [Speech-Rater](#speech-rater-with-ai) and with [Computer Vision](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/#dji-tello-python)
 
 
 > https://github.com/streamlit/cookbook, I tried many of these during [the testing phase for AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests)
@@ -455,9 +456,11 @@ explaining whats going to be released...now.
 {{< /details >}}
 
 
-### Streamlit Github CI/CD
+### Streamlit CI/CD
 
-To use **Github Actions** to create automatic **container images** for your streamlit projects, you will need such [configuration file](https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml).
+* With Github
+
+To use **Github Actions** to create automatic **container images** for your streamlit projects, you will need **such [configuration file](https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml)**.
 
 
 {{< callout type="info" >}}
