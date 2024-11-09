@@ -114,6 +114,8 @@ docker build . -t mokuappio/serverless-invoices
 docker run -p 89:8080 -d --rm mokuappio/serverless-invoices
 ```
 
+> There is an awsome [Dockerfile example](https://github.com/JAlcocerT/serverless-invoices/blob/main/Dockerfile) on how to bundle a Node App for Production
+
 You can print to pdf, add your logo, taxes, CSS...
 
 * Or use their Saas: https://app.mokuapp.io/login

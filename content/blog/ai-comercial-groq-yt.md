@@ -180,7 +180,7 @@ It uses **QEMU** together with **docker buildx** command to build **x86 and ARM6
 {{< /dropdown >}}
 
 
-And once you are done, deploy it as a Docker Compose Stack:
+And once you are done, deploy the AI youtube summarizer as a **Docker Compose Stack**:
 
 ```yml
 version: '3.8'
@@ -206,7 +206,88 @@ services:
 #     external: true
 ```
 
-> For Production deployment, you can use [NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/) or [Cloudflare Tunnels](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/) to get HTTPs
+> For Production deployment, you can use [NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/) or [Cloudflare Tunnels](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/) to get HTTPs.
+
+{{< details title="Docker Compose Stack for GenAI Apps: YT Summarizer, Ollama and MultiChat 📌" closed="true" >}}
+
+
+* https://github.com/JAlcocerT/phidata/pkgs/container/phidata
+* This is my [AI-Gen docker Compose](https://github.com/JAlcocerT/Docker/blob/main/Z_Dockge/stacks/z_aigen/compose.yaml)
+
+```yml
+version: '3.8'
+
+services:
+  phidata_service: 
+    image: ghcr.io/jalcocert/phidata:yt-groq #phidata:yt_summary_groq
+    container_name: phidata_yt_groq
+    ports:
+      - "8502:8501"    
+    environment:
+      - GROQ_API_KEY="gsk_dummy-groq-api" # your_api_key_here
+    command: streamlit run cookbook/llms/groq/video_summary/app.py
+    restart: always
+    networks:
+      - cloudflare_tunnel
+
+  streamlit_multichat:
+    image: ghcr.io/jalcocert/streamlit-multichat:latest
+    container_name: streamlit_multichat
+    volumes:
+      - ai_streamlit_multichat:/app
+    working_dir: /app
+    command: /bin/sh -c "\
+            mkdir -p /app/.streamlit && \
+            echo 'OPENAI_API_KEY = "sk-dummy-openai-key"' > /app/.streamlit/secrets.toml && \
+            echo 'GROQ_API_KEY = "dummy-groq-key"' >> /app/.streamlit/secrets.toml && \
+            echo 'ANTHROPIC_API_KEY = "sk-dummy-anthropic-key"' >> /app/.streamlit/secrets.toml && \
+            streamlit run Z_multichat_Auth.py
+    ports:
+      - "8501:8501"
+    networks:
+      - cloudflare_tunnel
+    restart: always
+      # - nginx_default   
+
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    ports:
+      - "11434:11434" #Ollama API
+    volumes:
+      #- ollama_data:/root/.ollama
+      - /home/Docker/AI/Ollama:/root/.ollama
+    networks:
+      - ollama_network      
+
+  ollama-webui:
+    image: ghcr.io/ollama-webui/ollama-webui:main
+    container_name: ollama-webui
+    ports:
+      - "3000:8080" # 3000 is the UI port
+    environment:
+      - OLLAMA_BASE_URL=http://192.168.3.200:11434
+    # add-host:
+    #   - "host.docker.internal:host-gateway"
+    volumes:
+      - /home/Docker/AI/OllamaWebUI:/app/backend/data
+    restart: always          
+    networks:
+      - ollama_network    
+
+networks:
+  cloudflare_tunnel:
+    external: true
+  ollama_network:
+    external: false
+  # nginx_default:
+  #   external: true
+
+volumes:
+  ai_streamlit_multichat:
+```
+
+{{< /details >}}
 
 
 {{< dropdown title="How to SelfHost the Streamlit AI App with Cloudflare ⏬" closed="true" >}}
@@ -448,14 +529,14 @@ https://www.youtube.com/watch?v=ZBrXW3iZyKY
 
 #### How to install AI easily
 
-Some F/OSS Projects to help us get started with AI:
+Some F/OSS Projects to help us **get started with AI**:
 
 * https://pinokio.computer/
   * https://github.com/pinokiocomputer/pinokio
 
 > AI Browser - MIT ❤️ Licensed!
 
-And if you need, these are some FREE Vector Stores for AI Projects
+And if you need, these are some **FREE Vector Stores** for AI Projects
 
 
 | **Project/Tool**              | **Link**                                                                                             |

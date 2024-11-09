@@ -3,12 +3,12 @@ title: "Getting started with Flask"
 date: 2024-10-02T05:20:21+01:00
 draft: false
 tags: ["Dev","Python"]
-description: 'How to use Flask. Get HTTPs with your domain for Flask Apps.'
+description: 'How to use Flask. Get HTTPs with your domain for Flask Apps. Compared to other Web App Frameworks'
 summary: 'How I learnt the basics to use Python Flask.'
 url: 'get-started-with-flask'
 ---
 
-A friend asked me recently to help him to [setup Python](https://jalcocert.github.io/JAlcocerT/guide-python/#installing-python-) and **he alredy made his first App!**
+A friend asked me recently to help him to [setup Python](https://jalcocert.github.io/JAlcocerT/guide-python/#installing-python-) and **he alredy made his first Web App!**
 
 I had to get a little bit familiar with this Python Framework.
 
@@ -224,7 +224,7 @@ And the UI will appear at: `localhost:5000`
 Dash, a **web application framework for Python**, is primarily built on top of Flask.
 
 {{< callout type="info" >}}
-  I used DASH for building a [Trip Planner as per Historical Weather](https://github.com/JAlcocerT/Py_Trip_Planner/) conditions
+  I used **DASH** for building a [**Trip Planner** as per Historical Weather](https://github.com/JAlcocerT/Py_Trip_Planner/) conditions
 {{< /callout >}}
 
 Dash utilizes Flask as its underlying web server and integrates several other libraries and components to facilitate the development of interactive web applications, particularly for data visualization.
@@ -474,8 +474,45 @@ To implement a system where user registration, payments, and content access are 
 
 
 {{< callout type="info" >}}
-  You can also use [tools like LogTo](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
+  You can also use tools like **LogTo**
 {{< /callout >}}
+
+
+{{< details title="More about LogTo 📌" closed="true" >}}
+
+# LogTo Resources and Tutorials
+
+| **Resource**                                   | **Link**                                                                                         |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| **Protected App Recipe**                       | [Documentation](https://docs.logto.io/docs/recipes/protected-app/)                                |
+| **Manage Users (Admin Console) Recipe**        | [Documentation](https://docs.logto.io/docs/recipes/manage-users/admin-console/)                   |
+| **Webhooks Recipe**                            | [Documentation](https://docs.logto.io/docs/recipes/webhooks/) | 
+| **Webhooks URL**                               | [Link](https://cloud.logto.io/yourtenantid/webhooks)                                             |
+
+---
+
+## LogTo Tutorials
+
+- **Social Sign-in Experience**:
+  - Video: [Social Sign-in with LogTo](https://www.youtube.com/watch?v=sv60N9eW8Ew)
+
+{{< youtube id="sv60N9eW8Ew" autoplay="false" >}}
+
+- **Authenticate Users via Email**:
+  - Simple and secure email-based user authentication.
+
+- **Create a Protected App**:
+  - Add authentication with ease and speed for your app.
+  - The Protected App feature maintains user sessions and proxies app requests securely.
+  - Built on Cloudflare Workers for top-tier performance with 0ms cold start worldwide.
+  - [Protected App Documentation](https://docs.logto.io/docs/recipes/protected-app/)
+
+- **Build Your App’s Authentication**:
+  - Set up app authentication quickly, no coding required.
+  - Video: [App Authentication in Clicks](https://www.youtube.com/watch?v=ZBrXW3iZyKY)
+
+
+{{< /details >}}
 
 ---
 
@@ -541,9 +578,82 @@ To run a sample "Counter" app in Python with Flet:
 3. Experience the app in a native OS window, providing an alternative to Electron.
 
 ### Conclusion
+
 Flet is a powerful framework that simplifies the development of real-time applications in Python, offering a straightforward architecture, multi-platform delivery options, and language-agnostic support. Its inclusion of Flutter for UI design and ease of deployment make it a versatile choice for developers looking to create interactive apps without extensive frontend knowledge.
 
 {{< /details >}}
+
+This is an **awsome video**, as always, from Fireship.
+
+You can see how many frameworks+languages pairs to make web app are out there.
+
+
+{{< youtube "FQPlEnKav48" >}}
+
+But if you dont have time to see it all...you can always use the [PhiData Youtube Summarizer with Groq Image](https://github.com/JAlcocerT/phidata/pkgs/container/phidata) that I [described here](https://jalcocert.github.io/JAlcocerT/summarize-yt-videos/)
+
+{{< details title="How could I not summarize the video... 📌" closed="true" >}}
+
+- **Ruby on Rails**: Known for simplicity and an "opinionated" approach, Rails offers a robust set of tools, including Active Record (ORM) and a powerful CLI.
+- **Django**: **Python-based**, Django is appreciated for its ease of use and "batteries-included" philosophy, providing built-in features like an admin interface and ORM.
+- **Laravel**: A PHP framework with a modular, flexible structure, Laravel emphasizes simplicity and user-friendly design.
+- **Next.js**: Part of the **React ecosystem**, Next.js offers a minimalistic, JavaScript-based approach, with a focus on simplicity and ease.
+- **Spring**: A comprehensive Java framework, Spring is known for its robustness and complexity, including a strong CLI and ORM.
+- **ASP.NET**: Maintained by Microsoft, ASP.NET offers modularity and flexibility, with a strong emphasis on simplicity.
+  * The primary language for .NET development is **C#**. .NET is a versatile framework by Microsoft that supports multiple languages, but C# is by far the most widely used and developed specifically for the .NET ecosystem.
+- **Phoenix**: An Elixir-based framework, Phoenix is celebrated for high performance and scalability, with robust tooling, including ORM support and a powerful CLI.
+- **Jin**: **Go-based**, Jin is minimalist and simple, focusing on lightweight performance and ease of use.
+- **Rocket**: A **Rust-based** framework, Rocket provides low-level control with a comprehensive set of tools, including ORM support and a strong CLI.
+- **Vapor**: Swift-based, Vapor is modern and simple, offering a robust toolset with ORM and a powerful CLI.
+
+**Takeaways**: Fireship crowns **Ruby on Rails** as the best full-stack framework, citing its simplicity, ease of use, and tool robustness.
+
+Ultimately, the best choice depends on the specific needs and goals of each project, as each framework has unique strengths and weaknesses.
+
+
+
+{{< /details >}}
+
+{{< details title="What it is an ORM? 📌" closed="true" >}}
+
+An **ORM (Object-Relational Mapper)** is a tool or library that helps developers interact with databases in an easier and more intuitive way by allowing them to work with data as if they were simple objects in their programming language.
+
+Instead of writing raw SQL queries, developers use objects and methods in their code, and the ORM translates these actions into SQL commands that the database can execute.
+
+Here’s how ORMs work and their main benefits:
+
+1. **Mapping Objects to Database Tables**: An ORM maps classes (representing tables) and instances (representing rows) in code to the structure of a relational database. Each object corresponds to a row in the database, and each class attribute corresponds to a column in the table.
+
+2. **CRUD Operations**: ORMs make **Create**, **Read**, **Update**, and **Delete** operations easier by providing methods for these actions. For example, instead of manually writing SQL to insert a row, you could create an object and save it, and the ORM would handle the SQL for you.
+
+3. **Data Abstraction**: ORMs abstract database-specific code, allowing developers to write database-agnostic code. This means it’s easier to switch between different databases, as the ORM handles the differences in SQL syntax or database behavior.
+
+4. **Security and Error Reduction**: ORMs can help prevent SQL injection attacks by using parameterized queries under the hood. They also reduce the likelihood of syntax errors, as developers don’t have to write raw SQL queries.
+
+Examples of popular ORMs include:
+- **Django ORM** (for Python)
+- **SQLAlchemy** (for Python)
+- **Entity Framework** (for .NET, typically with C#)
+
+With ORMs, developers can work at a higher level of abstraction, making database interactions simpler and code more maintainable.
+
+In the JavaScript and Next.js ecosystem, there are several ORMs designed for interacting with databases. Here are some popular options:
+
+* Prisma: A modern, type-safe ORM for Node.js and TypeScript, ideal for Next.js projects.
+* Sequelize: A mature ORM for Node.js, supporting SQL databases with a feature-rich API.
+* TypeORM: A TypeScript-first ORM that supports complex models and database relationships.
+* Mongoose: An ODM tailored for MongoDB, widely used for schema-based data modeling.
+* Objection.js: A flexible ORM built on Knex.js, suitable for SQL databases with direct SQL access.
+
+{{< /details >}}
+
+So this is it for now.
+
+Do you need some quick PoC? I would stick to Streamlit.
+
+Do you expect it to scale and custom functions to appear? Think about Flask.
+
+> Choose wisely!
 
 ---
 
@@ -552,14 +662,14 @@ Flet is a powerful framework that simplifies the development of real-time applic
 
 ### Streamlit
 
-I've been using this one for a while now:
+I've been using Streamlit one for a while now:
 
-{{< cards cols="1" >}}
-  {{< card link="https://github.com/streamlit/streamlit" title="Streamlit in Github" >}}
+{{< cards cols="2">}}
+  {{< card link="https://github.com/streamlit/streamlit" title="Streamlit Official Repo in Github" >}}
+    {{< card link="https://github.com/JAlcocerT/Streamlit-MultiChat" title="MultiChat: OpenAI, Anthropic, Ollama,..." >}}
 {{< /cards >}}
-{{< cards cols="3" >}}
+{{< cards cols="2" >}}
   {{< card link="https://github.com/JAlcocerT/ask-multiple-pdfs" title="Streamlit Ask PDF" >}}
-  {{< card link="https://github.com/JAlcocerT/Streamlit-MultiChat" title="MultiChat: OpenAI, Anthropic, Ollama,..." >}}
   {{< card link="https://github.com/JAlcocerT/phidata/blob/main/Z_DeployMe/Docker-Compose.yml" title="YT Summarizer with Groq API by PhiData" >}}  
 {{< /cards >}}
 
@@ -589,9 +699,15 @@ I have been **testing Chainlit** and [OpenAIFunctions](https://github.com/JAlcoc
 * Superset
 * Grafana
 
-* Shiny in Python: For now I just used [Shiny with R](https://jalcocert.github.io/JAlcocerT/R-Stocks/)
+* Shiny in Python
   * <https://shiny.rstudio.com/py/gallery/>
   * <https://shiny.rstudio.com/py/gallery/>
+  
+{{< callout type="info" >}}
+For now I just used [Shiny with R](https://jalcocert.github.io/JAlcocerT/R-Stocks/) as described in [this post](https://jalcocert.github.io/JAlcocerT/R-Stocks/)
+{{< /callout >}}
+
+
 
 
 {{< details title="PyGWalker: Turn your pandas dataframe into an interactive UI for visual analysis 📌" closed="true" >}}
@@ -603,6 +719,8 @@ I have been **testing Chainlit** and [OpenAIFunctions](https://github.com/JAlcoc
 * https://github.com/Kanaries/pygwalker-in-streamlit
 * https://docs.kanaries.net/pygwalker/use-pygwalker-with-streamlit.en
   * https://github.com/Kanaries/pygwalker?tab=readme-ov-file#tested-environments
+
+> It can be integrated with Streamlit!
 
 {{< /details >}}
 
@@ -657,6 +775,8 @@ WebSocket connections are useful for games or web sites that need to display liv
 * WebSockets are best for real-time communication where low latency is crucial.
 * MQTT excels in low-bandwidth environments and is optimized for IoT applications.
 * RabbitMQ is suitable for scenarios requiring reliable message delivery and complex routing logic.
+
+There is also Web RTC (Real Time Communication)
 
 ### Interesting stuff I learnt recently
 
