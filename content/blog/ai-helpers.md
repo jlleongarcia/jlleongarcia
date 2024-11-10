@@ -30,11 +30,19 @@ This is how [CV-Check // CVCreAItor](https://gitlab.com/fossengineer1/cv-check) 
 
 Looking at [Streamlit Roadmap](https://roadmap.streamlit.app/), more ideas will pop up
 
-## A Neuromarketing Agent
+## For Entrepreneurs
+
+{{< callout type="info" >}}
+To investigate this, was key - **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
+{{< /callout >}}
+
+### A Neuromarketing Agent
 
 It is hard to be a solo-preneur...
 
-unless you have some help. Like the help of **EntrepreAI**
+unless you have some help.
+
+Like the help of **EntrepreAI**
 
 {{< callout type="info" >}}
 * [Neuromarketing with openAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
@@ -60,7 +68,7 @@ unless you have some help. Like the help of **EntrepreAI**
 
 > Many of these were just [Tests during Streamlit-Multichat](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/Z_Tests/OpenAI) few months ago
 
-## YT Summarizer
+### YT Summarizer
 
 There are great videos out there.
 
@@ -314,9 +322,16 @@ flowchart TD
 
 {{< dropdown title="Email Challenge for ST based on MailerLite+FormBricks 👇" closed="true" >}}
 
+FormBricks is an open source Survey Platform.
+
+You can make very interesting polls and embedd them or reference them with a link into your Apps. The Survey Type **Link Survey** was very helpful for this case.
+
+It has very cool integrations, like with GSheets, which you can use:
+
 * **Pros** 
 1. Integrated with MailerLite API
 * With MailerLite double opt-in, you will get just verified emails
+* You can use Formbricks as another EmailWall with the GSheets integration
 2. No hardcoded values in the app
 * **Cons** MailerLite Free Tier finishes at 1k subs
 
@@ -412,6 +427,21 @@ graph TD
     end
 ```
 
+{{< dropdown title="Supabase as Streamlit Auth 👇" closed="true" >}}
+
+I read that it is a little bit tricky to implement.
+
+Maybe they are not there yet?
+
+
+{{< /dropdown >}}
+
+{{< dropdown title="Emails for Registered Users - AWS SES and more 👇" closed="true" >}}
+
+Amazon simple email service...or what else?
+
+{{< /dropdown >}}
+
 {{< callout type="info" >}}
 Streamlit has very useful [sessions states](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state)
 {{< /callout >}}
@@ -466,3 +496,18 @@ To use **Github Actions** to create automatic **container images** for your stre
 {{< callout type="info" >}}
 Just follow [these steps](https://fossengineer.com/docker-github-actions-cicd/).
 {{< /callout >}}
+
+### Deploying Streamlit
+
+You can use Streamlit Cloud Services.
+
+But you can also **host Streamlit with your own Domain**.
+
+{{< callout type="info" >}}
+You can use [Cloudflare tunnels](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
+{{< /callout >}}
+
+
+![Cloudflare Tunnels for Streamlit Deployment Example](/blog_img/apps/streamlit/CVCreAItor-CloudflareTunnel.png)
+
+Remember to use: `container_name:container_port`

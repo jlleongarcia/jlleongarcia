@@ -12,12 +12,17 @@ It all started few years ago with my **own travel blog**.
 
 Later on, my first business website followed.
 
+
 {{< cards >}}
   {{< card link="https://cyclingthere.com" title="My Travel Adventures" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="I can write and also create interesting photo galleries about my travel experiences" >}}
   {{< card link="https://iotechcrafts.com/" title="Business Website" image="/blog_img/web/WebsSnapshots/Web_IoTechCrafts.png" subtitle="A Website for Agency - AI & IoT Consulting Services" >}}
 {{< /cards >}}
 
 And then I saw **people close to me, who needed help**.
+
+But what can you do when there are **many unknown unknowns**?
+
+Maybe...Clarify with [an **AI Powered** Presentation](https://fc9dafcc.creaitivewebsites.pages.dev)
 
 ## Custom Websites
 
