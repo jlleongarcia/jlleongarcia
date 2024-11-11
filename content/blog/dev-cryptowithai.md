@@ -1,13 +1,40 @@
 ---
-title: "Crypto with AI"
-date: 2024-12-27T23:20:21+01:00
-draft: true
+title: "Crypto. Now with AI"
+date: 2024-11-10
+draft: false
 tags: ["Dev"]
-summary: '.'
+summary: 'Two buzz words in one. Understand crypto once and for all. This time thanks to AI'
 url: 'understading-crypto-with-ai'
 ---
 
+Here we go again...
 
+I was testing [Astro Bento Portfolio + Github Pages + Github CI/CD](https://github.com/JAlcocerT/web3) with the resulting Web3/Crypto related microblog [here](https://jalcocert.github.io/web3/).
+
+And some time ago I was having a look to this **amazing BlockChain/Solidity FreeCodeCamp course:**
+
+{{< youtube "gyMwXuJrbJQ" >}}
+
+
+<!-- 
+inspired by CryptaIQ and keeping that intelligent, AI-powered vibe:
+
+    ProtocolAI – Simple and clear, focusing on AI-powered protocol insights.
+    DeCryptIQ – Emphasizing crypto and intelligent insights with a "decryption" feel.
+    BlockWise – Suggests wisdom and understanding of blockchain protocols.
+    CryptoLens – Implies a clear view or “lens” into understanding crypto.
+    ChainSage – Conveys expertise and guidance in blockchain.
+    Protocolize – Playful and suggests simplifying protocols with AI.
+    InsightChain – Focuses on providing deep insights into blockchain protocols.
+    CryptoCompass – Implies navigating and understanding the crypto landscape.
+    IntelliChain – A combination of intelligence and blockchain, emphasizing smart analysis.
+    BlockIQ – Short, catchy, and focused on intelligent blockchain insights. -->
+
+
+
+{{< callout type="info" >}}
+I decided to create [the InsighChAIn Project](https://github.com/JAlcocerT/PyInsightChAIn). Knowledge from [the Scrap project](https://github.com/JAlcocerT/Scrap_Tools) and practically from [CVCreAItor](/ai-useful-yet-simple/).
+{{< /callout >}}
 
 {{< details title="What would Cicero Think about Crypto?" closed="true" >}}
 
@@ -44,6 +71,8 @@ But...I think many of us know how to use AI already (particularly LLMs) - to get
 
 Understanding SC's with LLMs: these are are some [interesting protocols](https://dappradar.com/rankings/defi?sort=tvlInFiat&order=desc)
 
+{{% details title="More about protocols... 🚀" closed="true" %}}
+
 * https://lido.fi/ - Decentralized [Staking ETH](https://stake.lido.fi/) (get stETH and use stETH in DeFi)
 * https://yearn.fi/
 * https://compound.finance/
@@ -51,24 +80,79 @@ Understanding SC's with LLMs: these are are some [interesting protocols](https:/
 
 * [SETH](https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84)
 
-## Stable Coins
 
-* https://defillama.com/stablecoins
-* https://defillama.com/stablecoin/dai
-* https://defillama.com/stablecoins/Polygon
+{{% /details %}}
 
-## ERC20
+## Crypto Analytics
 
-For example, the aave token is ERC20:
+There are of course some platforms already for this.
 
-* https://eth.blockscout.com/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9
+{{< details title="Crypto - SelfServing Dashboards & Analytics Platforms: Dune and more 📌" closed="true" >}}
+
+I have used [Dune-Analytics](https://dune.com/), together with [SQL](/sql-data-analytics/)
+
+{{< callout type="info" >}}
+Particularly, to make a [UniSwap Protocol Dashboard](https://dune.com/fossengineer/uniswap).
+{{< /callout >}}
+
+
+1. **DeBank**:
+   - **Free Tier**: DeBank offers a free version that includes basic features for tracking and managing decentralized finance (DeFi) portfolios, such as token balances, transaction histories, and portfolio insights across multiple chains.
+   - **Usage**: Popular among users for its clean, easy-to-use interface and chain aggregation features.
+
+2. **Zapper**:
+   - **Free Tier**: Zapper provides free access to basic DeFi portfolio tracking and yield farming analytics. It aggregates data from various DeFi protocols and presents it in a unified dashboardsage**: A favorite for users tracking multiple DeFi investments across different platforms, with an intuitive user interface.
+
+3. **Nansen**:
+   - **Free Tier**: The free version of Nansen offers basic tracking features but with significant limitations, including access to limited data on wallet activity and DeFi protocols .
+   - Advanced features, such as more detailed analytics, deeper insights into DeFi protocols, and enhanced filtering, are available through paid plans.
+
+4. **Dune Analytics**:
+   - **Free Tier**: Dune offers a free version that allows users to query and visualize blockchain data using SQL. However, query limits and access to certain advanced dashboards are restricted .
+   - **Paid Features plans** unlock higher query limits, private dashboards, and greater customization options for advanced users, particularly useful for researchers and developers.
+
+5. **Messari**:
+   - **Free Tier**: Messari’s free tier provides limited access to crypto data and analysis, such as basic market insights and some reports .
+   - **Paid Features**: Forled research, advanced analytics, and exclusive reports, Messari offers premium subscriptions. These are typically used by institutional investors and analysts.
+
+- **Nansen** and **Messari** are particularly popular among institutional investors due to their advanced data features and research reports. 
+- **DeBank** and **Zapper** are favored by DeFi enthusiasts for their user-friendly interfaces and portfolio tracking capabilities.
+- **Dune Analytics** appeals to data-driven users and developers, especially those who are **comfortable with SQL and need deep access to blockchain data**.
+
+For many casual users, **DeBank** and **Zapper** provide sufficient features, while **Nansen** and **Messari** are more suited for power users needing professional-grade analysis.
+
+{{< /details >}}
+
+
+---
+
+## Crypto Resources
+
+* BlockChain Scanners
+  * [ETHScan](https://etherscan.io/)
+  * [Solscan](https://solscan.io/)
+
+* Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing **EVM based blockchains**.
+  * https://github.com/blockscout/blockscout
+
+{{< callout type="info" >}}
+If you want to read one and only one book aboyt Crypto - [WhyCryptoCurrencies](https://whycryptocurrencies.com/)
+{{< /callout >}}
+
+
+
 
 ### Interesting Crypto Stuff I found lately
 
 * https://www.reddit.com/r/CryptoCurrency/comments/mnzv1c/defi_explained_lending_borrowing/
 * https://www.reddit.com/r/CryptoCurrency/comments/nletmi/defi_explained_the_full_guide/#:~:text=Decentralized%20Finance%20(DeFi)%20is%20a,protocols%20that%20work%20without%20intermediaries.
 
-I was writing about web3 here: https://jalcocert.github.io/JAlcocerT/guide-web3
+> I was writing [about web3 here](https://jalcocert.github.io/JAlcocerT/guide-web3). 
+
+{{< callout type="info" >}}
+If you have a website, I show you [how to also have a Web3 Compatible website](/guide-web3/)
+{{< /callout >}}
+
 
 * https://www.reddit.com/r/defi/comments/1dl9ecu/most_reputable_respected_and_definitive_guides_on/
 
@@ -89,15 +173,14 @@ Open Source, Permissionless & privacy conscious DeFi portfolio tracker
 
 
 
----
+#### Stable Coins
 
-## Crypto Resources
+* https://defillama.com/stablecoins
+* https://defillama.com/stablecoin/dai
+* https://defillama.com/stablecoins/Polygon
 
-* https://whycryptocurrencies.com/
+#### ERC20
 
-* BlockChain Scanners
-  * [ETHScan](https://etherscan.io/)
-  * [Solscan](https://solscan.io/)
+For example, the aave token is ERC20:
 
-* Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing **EVM based blockchains**.
-  * https://github.com/blockscout/blockscout
+* https://eth.blockscout.com/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9

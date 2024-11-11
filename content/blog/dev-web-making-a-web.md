@@ -166,23 +166,34 @@ And it seems that **Google likes it**:
 * GDPR Compliant out of the box
 
 {{< callout type="info" >}}
-Who said, **embedded Chatbot**?
+Who said, **embedded Chatbot**? Maybe [Flowise AI](https://fossengineer.com/selfhosting-flowise-ai/)?
 {{< /callout >}}
+
+![Flowise AI Example](/blog_img/GenAI/pdf-flowise.png)
+
+{{% details title="More Embedded ChatBots for your website... 🚀" closed="true" %}}
+
+* Paid/Chat Options - ChaPort
+* **SelfHosted Options:** [ChatWoot](https://fossengineer.com/selfhosting-chatwoot/), [LangFlow](https://fossengineer.com/free-open-source-chat-bots/)
+
+{{% /details %}}
 
 ### Real Estate Bot Agent
 
-* Follow up questions from the real state agent etc
-* Do you have family / car / pool
+But, if you really want something to perform with your data...
+
+...make it yourself.
+
+* Features it should be able to reply:
+  * Follow up questions from the real state agent etc
+  * Do you have family / car / pool
 
 > From Idea to Impact, **with AI**
 
 
-{{% details title="Embedded Chat for your website 🚀" closed="true" %}}
-
-* Paid/Chat Options - Chaport
-* More options: Chatwoot
-
-{{% /details %}}
+{{< callout type="info" >}}
+You could say this is all **a [Data-ChatBot](https://github.com/JAlcocerT/Data-Chat)**
+{{< /callout >}}
 
 <!-- 
 Observability Platform for LLMs

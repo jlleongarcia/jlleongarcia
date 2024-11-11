@@ -1,9 +1,9 @@
 ---
-title: "Vacation Planning - Costs, Weather and AI"
+title: "Vacation Planning - Recommendations, Costs, Weather [With AI]"
 date: 2024-10-25
 draft: false
 tags: ["Dev","AI"]  
-description: "Python App to explore vacation destination."
+description: "Python App to explore vacation destination. LLMs ❤️ Data"
 summary: 'Where to go. When to go. Can I go?'
 url: 'vacation-planner-python'
 isPinned: false
@@ -19,6 +19,10 @@ But we need something more to decide where and how to go next.
 {{< callout type="info" >}}
 Related project [Source Code](https://gitlab.com/fossengineer1/py_vacations)
 {{< /callout >}}
+
+<!-- {{< callout type="info" >}}
+https://github.com/JAlcocerT/PyVacAItions
+{{< /callout >}} -->
 
 
 ## Py-VacAItions
