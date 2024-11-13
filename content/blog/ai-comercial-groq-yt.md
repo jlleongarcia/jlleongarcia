@@ -34,6 +34,12 @@ Thanks to the **Groq LPU API** we have a programmatic way for developers to inte
 
 Today, we are going to use **Groq API with F/OSS Models** to...[chat with a Youtube video](#selfhosting-groq-video-summaries).
 
+**With LLaMa3 and crazy inference speed**
+
+{{< callout type="info" >}}
+Everything is covered at my [Forked Repository **phiData**](https://github.com/JAlcocerT/phidata/tree/main) with a [**GroqAPI**](https://console.groq.com/keys)
+{{< /callout >}}
+
 
 <!-- - You will need an **API key from Groq** to use the project - The models might be open, but you wont have full local control over them and send queries to a 3rd Party ❎
   * {{< newtab url="https://console.groq.com/keys" text="Get the Groq API Keys" >}}
@@ -67,7 +73,17 @@ https://console.groq.com/keys -->
 
 The phi-data repository contains several sample applications like this one, but our focus today will be at: `phidata/cookbook/llms/groq/video_summary`
 
-It is very simple to get Youtube video summaries with Groq, we are going to do it systematically with Docker.
+{{< callout type="info" >}}
+And I have created a [contaimer image at ghcr](https://github.com/JAlcocerT/phidata/pkgs/container/phidata). Using [Github Actions](https://fossengineer.com/docker-github-actions-cicd/), ofc.
+{{< /callout >}}
+
+
+It is very simple to get **Youtube video summaries with Groq**, we are going to do it systematically with Docker.
+
+The PhiData Teams has made our life even easier, with some modules:
+* See how to [query a LLM with groq](https://github.com/JAlcocerT/phidata/blob/main/cookbook/llms/groq/video_summary/groq_sample_qq.py)
+* And how to [list the available LLMs at groqAPI](https://github.com/JAlcocerT/phidata/blob/main/cookbook/llms/groq/video_summary/groq_available_models.py) (because there s more to come..)
+
 
 {{< dropdown_docker title="Really, Just Get Docker 🐋👇" closed="true" >}}
 

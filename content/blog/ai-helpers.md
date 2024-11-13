@@ -76,10 +76,28 @@ But there are hidden between...too much fluff.
 
 But the PhiData team put together an awsome idea that I decided to Fork and bundle automatically in a Container for further reach...
 
-...a **youtube AI summarization tool** which uses Groq for very fast inference:
+...a **youtube AI summarization tool** which uses Groq for very fast inference.
 
-* https://github.com/JAlcocerT/phidata
-* I explained the process at [this blog post](https://jalcocert.github.io/JAlcocerT/summarize-yt-videos/)
+{{< callout type="info" >}}
+My PhiData [YT Summarizer with Groq API Fork](https://github.com/JAlcocerT/phidata). 
+{{< /callout >}}
+
+I explained the process at [this blog post](https://jalcocert.github.io/JAlcocerT/summarize-yt-videos/)
+
+And now have been testing a little bit more the GroqAPI.
+
+Of course there are new models: LLaMa3.1's and LLaMa 3.2's
+
+{{< details title="GroqAPI Tinkering - Available LLMs and more 📌" closed="true" >}}
+
+With [this code](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_Tests/Groq_API/groq_available_models.py) you can see all the models available at groqAPI.
+
+And with [this sample streamlit app](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_Tests/Groq_API/st_groq_qq_v1.py) - you can query each available model.
+
+> I was testing how each of them can perform to sample questions.
+
+{{< /details >}}
+
 
 ```sh
 docker pull ghcr.io/jalcocert/phidata:yt-groq #https://github.com/users/JAlcocerT/packages/container/package/phidata
@@ -166,6 +184,12 @@ volumes:
 ```
 
 {{< /details >}}
+
+But that is old school already.
+
+I have created an improved agent that allow us not just to summarize the YT Video - but to **chat with the youtube video content**.
+
+It is part of the AIssistant.
 
 ---
 
