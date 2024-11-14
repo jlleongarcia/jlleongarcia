@@ -85,6 +85,41 @@ The PhiData Teams has made our life even easier, with some modules:
 * And how to [list the available LLMs at groqAPI](https://github.com/JAlcocerT/phidata/blob/main/cookbook/llms/groq/video_summary/groq_available_models.py) (because there s more to come..)
 
 
+The magic happens at **the assistant.py module**
+
+```mermaid
+flowchart TD
+    A[Start] --> B{Choose Summarizer Function}
+    
+    B -->|get_chunk_summarizer| C1[Define model and debug_mode]
+    B -->|get_video_summarizer| C2[Define model and debug_mode]
+    
+    C1 --> D1[Initialize Assistant with parameters]
+    C2 --> D2[Initialize Assistant with parameters]
+    
+    D1 --> E[Pass model parameter to Groq API]
+    D2 --> E
+
+    E --> F[Set Assistant Properties]
+    F --> G1[Define Assistant Name, Description]
+    F --> G2[Set Instructions and Template Format]
+    F --> G3[Enable Markdown & Debug Mode]
+    
+    G1 --> H[Return Assistant Instance]
+    G2 --> H
+    G3 --> H
+    
+    H --> I[Execute Summary Generation]
+    
+    I --> J[Generate Report Using Model-Specific Prompt]
+    J --> K[Add Dynamic Date and Model Info to Report]
+    K --> L[Generate Final Markdown Report]
+    
+    L --> M[End]
+```
+
+
+
 {{< dropdown_docker title="Really, Just Get Docker 🐋👇" closed="true" >}}
 
 We will use this Dockerfile to capture the App we are interested from the repository and bundle it:
@@ -304,6 +339,40 @@ volumes:
 ```
 
 {{< /details >}}
+
+Now that you have your Youtube Summarizer running...
+
+...if you are interested - this is **the overall App flow** in the **Streamlit Youtube Summarizer with Groq**:
+
+```mermaid
+graph TD
+    A[Start App] --> B[Load .env variables]
+    B --> C[Check Authentication]
+    C -->|Authenticated| D[Fetch Models from Groq API]
+    D --> E{Models Available?}
+    E -->|Yes| F[Display Model Selection Dropdown]
+    F --> G[User Selects Model]
+    G --> H[Set Chunk Size via Slider]
+    H --> I[User Enters YouTube Video URL]
+    I --> J{Generate Report Button Clicked?}
+    
+    J -->|Yes| K[Store Video URL in Session State]
+    K --> L[Fetch Video Data using YouTubeTools]
+    L --> M[Fetch Video Captions]
+    M --> N{Captions Available?}
+    N -->|Yes| O[Chunk Captions based on Chunk Size]
+    
+    O --> P{Multiple Chunks?}
+    P -->|Yes| Q[Summarize Each Chunk with Selected Model]
+    Q --> R[Combine Chunk Summaries]
+    R --> S[Display Final Summary]
+    
+    P -->|No| T[Summarize Single Caption with Selected Model]
+    T --> S
+
+    E -->|No| U[Display No LLMs available Message]
+    N -->|No| V[Display - Could Not Parse Video - Message]
+```
 
 
 {{< dropdown title="How to SelfHost the Streamlit AI App with Cloudflare ⏬" closed="true" >}}

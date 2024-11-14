@@ -191,6 +191,21 @@ I have created an improved agent that allow us not just to summarize the YT Vide
 
 It is part of the AIssistant.
 
+https://console.groq.com/docs/examples
+
+
+{{< details title="More about GroqAPI 📌" closed="true" >}}
+
+* https://console.groq.com/docs/examples
+* https://github.com/groq/groq-api-cookbook
+* https://console.groq.com/playground
+
+It has [Speech capabilities](https://console.groq.com/docs/speech-text) like transcriptions & Translations!
+
+And ofc, [vision, with Llama 3.2 Vision](https://console.groq.com/docs/vision) at this moment.
+{{< /details >}}
+
+* Ask questions with Groq + Function Calling + DuckDB SQl Queries- [Example](https://replit.com/t/groqcloud/repls/Execute-Verified-SQL-Queries-with-Function-Calling/view#README.md)
 ---
 
 ## Work Companion
@@ -213,13 +228,17 @@ I love the SliDev project so much, that [I forked it](https://github.com/JAlcoce
     * [Code](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/slidev)
 {{< /callout >}}
 
-> You can also create **PPTs from markdown** with [Marpit](https://github.com/marp-team/marpit)
+> You can also create **PPTs from markdown** with [Marp](https://github.com/marp-team/marpit) or with [RemarkJS](https://fossengineer.com/create-ppt-with-code/#remark)
 
 ### Diagrams with AI
 
+Because [mermaidJS is so cool](https://fossengineer.com/free-diagram-tools/#mermaidjs) not to use it also with AI.
+
 {{< callout type="info" >}}
-* [OpenAI + mermaid](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_mermaid.py)
+I made some test with [OpenAI + mermaid](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_mermaid.py). Now, is one of the [Agents of AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_AIgents/OpenAI_mermaid.py)
 {{< /callout >}}
+
+You can use those diagrams with SSG (like HUGO, Astro...) and also for Slides creation with SliDev
 
 ### Ticket Creation with AI
 
@@ -239,20 +258,52 @@ It all started with [CV with OpenAI](https://github.com/JAlcocerT/Streamlit-Mult
 Thanks to this app I have been able to level up my Streamlit with many new features.
 
 {{< callout type="info" >}}
-And continued with [this repo](https://gitlab.com/fossengineer1/cv-check) with a Streamlit Web App
+And continued with [the CV-Check repo](https://gitlab.com/fossengineer1/cv-check) with a Streamlit Web App.
 {{< /callout >}}
 
 ## Speech Rater with AI
+
+
+It all started with a friend doing public speaking courses.
 
 {{< callout type="info" >}}
 [SpeechRater](https://github.com/JAlcocerT/streamlitspeechrater) and [StreamlitSpeech](https://github.com/JAlcocerT/Streamlit-Speech)
 {{< /callout >}}
 
+And since OpenAI can **transcribe (Audio to Text)**...
+
+{{< details title="Using whisper model with OpenAI to have A2T 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
+And Text can be summarized / be asked questions...
+
+{{< details title="Then just use a regular query to a LLM via: OpenAI/Groq/Anthropic/Ollama... 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
+```mermaid
+flowchart TD
+    A[User opens Streamlit app] --> B[User records audio]
+    B --> C[Audio sent to Whisper model for transcription]
+    C --> D[Transcribed text]
+    D --> E[Text sent to OpenAI GPT LLM]
+    E --> F[Generated response from GPT]
+    F --> G[User engages in live chat to improve speech]
+```
+
+
 ## Kindle Notes to AI
 
-Kindle notes are saved into a .txt in the device.
+Kindle notes are saved into a `.txt` in the device.
 
 I was storing notes for few years already and im really curious to see whats inside.
+
+> I gave it a try with Google's NotebookLLM, but...custom is custom
 
 ---
 
