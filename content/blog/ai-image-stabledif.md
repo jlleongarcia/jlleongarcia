@@ -21,6 +21,12 @@ Well...lets find that out
 
 {{< /details >}}
 
+## Using APIs to Generate Images from Text 
+
+{{< callout type="info" >}}
+I tested **Dalle3 Model via OpenAI API** (while dev [StreamlitMultichat](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main)), at [this script](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/Pict_for_SliDev-DaLLe/Dalle3SliDev.py)
+{{< /callout >}}
+
 ---
 
 ## FAQ
@@ -34,3 +40,7 @@ It was all possible thanks to [this DotCSV YT Video](https://www.youtube.com/wat
 > Does it work now?
 
 ### Foocus
+
+### Flux
+
+### Using HuggingFace

@@ -16,10 +16,12 @@ url: 'scrap-and-chat-with-the-web'
 But first, some recap on the old school.
 
 {{< callout type="info" >}}
-A post of what I learnt about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
+A post of what I learnt about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)** 💻
 {{< /callout >}}
 
-{{< youtube id="v=DJnH0jR8y5Q" autoplay="false" >}}
+{{< youtube "DJnH0jR8y5Q" >}}
+
+<!-- {{< youtube id="v=DJnH0jR8y5Q" autoplay="false" >}} -->
 
 ## Old School Scrapping
 
@@ -141,28 +143,30 @@ df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space
 
 So, what can we do to make the code once, and scrap *forever*?
 
-There are few options!
+There are **few options**!
 
 ### ScrapeGraph
+
+**ScrapeGraph** is a Free [Python scraper based on AI](https://github.com/ScrapeGraphAI/Scrapegraph-ai) 
 
 I was testing[ ScrapeGraph with Streamlit here](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Streamlit_ScrapeGraph.py)
 
 * Docs [ScrapeGraph + OpenAI](https://scrapegraph-ai.readthedocs.io/en/latest/getting_started/examples.html)
 
 {{< callout type="info" >}}
-[ScrapeGraph **allows for open Models**](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.
+[ScrapeGraph **allows for open Models - via Ollama**](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.
 {{< /callout >}}
 
 
 
 ### FireCrawl
 
-FireCrawl makes it reale easy to parse Web Info.
+[FireCrawl](https://github.com/mendableai/firecrawl) makes it really easy to parse Web Info.
 
 > "Ive got the Key for Success"
 
 {{< callout type="info" >}}
-I mean, [FireCrawl needs an APi](https://www.firecrawl.dev/app/usage) to work (there is free Tier)
+I mean, [FireCrawl **needs an API**](https://www.firecrawl.dev/app/usage) to work (there is free Tier)
 {{< /callout >}}
 
 {{< cards cols="1" >}}
@@ -183,14 +187,21 @@ I mean, [FireCrawl needs an APi](https://www.firecrawl.dev/app/usage) to work (t
 
 * Sample FireCrawl to get [Numbeo Data and pushes it to Sqlite](https://gitlab.com/fossengineer1/py_vacations/-/blob/main/Z_Scrap_firecrawl/firecrawl_testv5.py?ref_type=heads) using [openAI API](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
 
+### Other Ways
 
 FireCrawl is not giving me the juice of the offers, as [seen during Scrap-Tools Tests](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_PracujOffer)
 
-But, it can be done with [OpenAI+Pure parsed HTML](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
+But... it can be done with [**OpenAI+Pure parsed HTML**](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
+
+Using [OpenAI API](https://github.com/openai/openai-python) seems to be a reliable way when the web structure is not changing too much.
 
 ### Crawl4AI
 
-- **Crawl4AI** is an open-source Python library designed to simplify web crawling and data extraction, particularly for large language models (LLMs) and AI applications. It offers a user-friendly interface and a range of features, including:
+- [**Crawl4AI** is an open-source Python library](https://fossengineer.com/crawl4ai-open-source-web-crawler/) designed to simplify web crawling and data extraction, particularly for large language models (LLMs) and AI applications.
+
+See the [Crawl4AI code](https://github.com/unclecode/crawl4ai)
+
+It offers a user-friendly interface and a range of features, including:
   
   - **Ease of use:** Crawl4AI is designed to be easy to use, even for those new to web scraping.
   
@@ -204,15 +215,18 @@ But, it can be done with [OpenAI+Pure parsed HTML](https://gitlab.com/fossengine
   
 - Crawl4AI is available as a Python package and as a Docker image. It is a powerful tool for anyone who needs to extract data from the web for AI applications.
 
+[![Star History Chart](https://api.star-history.com/svg?repos=ScrapeGraphAI/Scrapegraph-ai,unclecode/crawl4ai,mendableai/firecrawl&,type=Date)](https://star-history.com/#ScrapeGraphAI/Scrapegraph-ai&unclecode/crawl4ai&mendableai/firecrawl&Date)
+
+
 ---
 
 ## WebScrap with Streamlit
 
-Time to create something.
+**Time to create**. Something.
 
 {{< cards cols="1" >}}
-  {{< card link="/" title="Job Offer Assistant ~ CV-Check" >}}
-  {{< card link="/" title="Location Price Comparison ~ Py-Vacations" >}}
+  {{< card link="https://gitlab.com/fossengineer1/cv-check" title="Job Offer Assistant ~ CV-Check / CV CreAItor" >}}
+  {{< card link="https://gitlab.com/fossengineer1/py_vacations" title="Location Price Comparison ~ Py-Vacations / VacAItions" >}}
 {{< /cards >}}
 
 ### WebScrap Features

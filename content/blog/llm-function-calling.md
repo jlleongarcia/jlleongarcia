@@ -243,6 +243,14 @@ By using modular building blocks with minimal abstractions, Octomind's team can 
 
 ### Generating Images with OpenAI
 
+You can use Dalle Text2Image models via the openAI API
+
+
+
+{{< callout type="info" >}}
+I tested it during StreamlitMultichat, at [this script](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/Pict_for_SliDev-DaLLe/Dalle3SliDev.py)
+{{< /callout >}}
+
 ### Understanding Images with Claude
 
 * https://docs.anthropic.com/en/docs/build-with-claude/vision

@@ -68,7 +68,13 @@ Like the help of **EntrepreAI**
 
 > Many of these were just [Tests during Streamlit-Multichat](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/Z_Tests/OpenAI) few months ago
 
-### YT Summarizer
+### Automatic Blog Creation
+
+Using already a SSG for your websites?
+
+If a LLM can write markdown...why not using it to create posts assisted with AI?
+
+### YT Summarizer and More
 
 There are great videos out there.
 
@@ -187,11 +193,18 @@ volumes:
 
 But that is old school already.
 
-I have created an improved agent that allow us not just to summarize the YT Video - but to **chat with the youtube video content**.
 
-It is part of the AIssistant.
+I have created an improved agent that allows us not just to summarize the YT Video - but to <u>**chat with the YouTube video** content</u>.
 
-https://console.groq.com/docs/examples
+
+
+{{< callout type="info" >}}
+It is part of the AIssistant. Right here.
+{{< /callout >}}
+
+And it can be used via the **groq API** too. 
+
+* https://console.groq.com/docs/examples
 
 
 {{< details title="More about GroqAPI 📌" closed="true" >}}
@@ -203,9 +216,23 @@ https://console.groq.com/docs/examples
 It has [Speech capabilities](https://console.groq.com/docs/speech-text) like transcriptions & Translations!
 
 And ofc, [vision, with Llama 3.2 Vision](https://console.groq.com/docs/vision) at this moment.
+
 {{< /details >}}
 
-* Ask questions with Groq + Function Calling + DuckDB SQl Queries- [Example](https://replit.com/t/groqcloud/repls/Execute-Verified-SQL-Queries-with-Function-Calling/view#README.md)
+* **Cool sample:** Ask questions with Groq + Function Calling + DuckDB SQl Queries- [Example](https://replit.com/t/groqcloud/repls/Execute-Verified-SQL-Queries-with-Function-Calling/view#README.md)
+
+
+### Creating Audio for YT
+
+Imagine that you have recorded some procedure that you want to share with the rest of the world.
+
+But you want to automate the process of explaining it.
+
+How about using AI to generate a .mp3 that will be explaining the video for you?
+
+> And actually...that text could be also AI generated. Also the Youtube Video Description.
+
+
 ---
 
 ## Work Companion
@@ -272,7 +299,7 @@ It all started with a friend doing public speaking courses.
 
 And since OpenAI can **transcribe (Audio to Text)**...
 
-{{< details title="Using whisper model with OpenAI to have A2T 📌" closed="true" >}}
+{{< details title="Using whisper model with OpenAI to have Audio2Text 📌" closed="true" >}}
 
 
 
@@ -307,17 +334,27 @@ I was storing notes for few years already and im really curious to see whats ins
 
 ---
 
-## Making Streamlit Better
+## Conclusions
+
+### Making Streamlit Better
 
 {{< details title="Better Docker-Compose for Streamlit Apps 📌" closed="true" >}}
 
-* For passing important variables, we could do it via the `./streamlit/secrets.toml` [file](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/.streamlit), with this kind of [command at the docker compose](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_DeployMe/Docker-Compose.yml)
-* But, they can also be passed as environment variables, with this kind of [docker-compose](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_DeployMe/Docker-Compose.yml?ref_type=heads)
+For passing important variables (like API keys)
+
+* We could do it via the `./streamlit/secrets.toml` [file](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/.streamlit), with this kind of [**command** at the docker compose](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_DeployMe/Docker-Compose.yml)
+* But, they can also be passed as **environment variables**, with this kind of [docker-compose](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_DeployMe/Docker-Compose.yml?ref_type=heads)
+
+{{< /details >}}
+
+{{< details title="PPT with SliDev to describe the Project 📌" closed="true" >}}
+
+
 
 {{< /details >}}
 
 
-### User Authentication
+#### User Authentication
 
 There will be some diagrams here, with [Mermaid ofc](https://fossengineer.com/free-diagram-tools/#mermaidjs).
 
@@ -521,7 +558,7 @@ Amazon simple email service...or what else?
 Streamlit has very useful [sessions states](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state)
 {{< /callout >}}
 
-### Streamlit New Features
+#### Streamlit New Features
 
 Big **thanks to Fanilo Andrianasolo** for the great Streamlit Videos
 * Keep up to date with the latest [streamlit utilities](https://docs.streamlit.io/develop/api-reference/utilities)
@@ -560,10 +597,110 @@ explaining whats going to be released...now.
 
 {{< /details >}}
 
+### What Ive learnt with this one
+
+{{< details title="Better Python PKG management with requirements.txt... 📌" closed="true" >}}
+
+**A Trick** for seeing which packages have actually been installed from the ones at `requirements.txt`
+
+```sh
+#pip install -r requirements.txt
+
+#pip freeze | grep -E '^(anthropic|streamlit)=='
+#pip freeze | grep -Ff requirements.txt
+pip freeze | grep -E "^($(paste -sd '|' requirements.txt))=="
+```
+
+{{< /details >}}
+
+
+{{< details title="How to load a .env in memory with CLI 📌" closed="true" >}}
+
+```sh
+source .env
+#export GROQ_API_KEY="your-api-key-here"
+#set GROQ_API_KEY=your-api-key-here
+#$env:GROQ_API_KEY="your-api-key-here"
+echo $GROQ_API_KEY $OPENAI_API_KEY $ANTHROPIC_API_KEY
+```
+
+{{< /details >}}
+
+
+---
+
+## FAQ
+
+### How to Query Different APIs
+
+#### LLMs - OpenAI,Anthropic, Groq...
+
+* https://console.anthropic.com/workbench/
+* https://console.groq.com/keys
+* https://platform.openai.com/api-keys
+
+{{< details title="Query OpenAI LLM Models >1 📌" closed="true" >}}
+
+A sample **API call to OpenAI>1**, for example to [create tickets](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_create_ticket.py)
+
+But, the **user/system prompts can be better modularized** if we go with this approach of [the markdown summarizer](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_AIgents/OpenAI_MDSummarizer_v1.py)
+
+{{< /details >}}
+
+{{< details title="Query Claude LLMs via Anthropic API 📌" closed="true" >}}
+
+Sample [Anthropic Claude Models API call](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests/ST_Anthropic)
+
+See their [docs for more examples](https://docs.anthropic.com/en/prompt-library/meeting-scribe)
+
+> [Anthropic API calls first tested](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/streamlit_anthropic2.py) during StreamlitMultichat
+
+* Opus models are the most powerful, but **Sonnet LLMs** are a balance between speed/cost/quality of the reply
+* There is alrady Vision and Computer Use capabilities in beta...
+
+{{< /details >}}
+
+Normally the latest **Anthropic (Claude Models)** are accesible very soon on **AWS Bedrock API** - As they invested a lot in the company
+
+{{< details title="Query LLMs via Groq API - Crazy Inference 📌" closed="true" >}}
+
+Sample [Groq Models API call](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_Tests/Groq_API/groq_api_query.py)
+
+See [available models via groq API](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_Tests/Groq_API/groq_available_models.py)
+
+{{< /details >}}
+
+{{< details title="Query LLMs via Ollama API - Open LLMs 📌" closed="true" >}}
+
+1. [Setup Ollama](https://fossengineer.com/selfhosting-llms-ollama/)
+2. Download a LLM via Ollama
+3. Use this sample script to query the LLM via Ollama Python API
+
+> [Ollama API calls first tested](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/ollama_chatbot.py) during StreamlitMultichat
+
+{{< /details >}}
+
+{{< details title="Query LLMs via Mistral API 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
+{{< details title="Query LLMs via GroK API 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ScrapeGraphAI/Scrapegraph-ai,unclecode/crawl4ai,mendableai/firecrawl&,type=Date)](https://star-history.com/#ScrapeGraphAI/Scrapegraph-ai&unclecode/crawl4ai&mendableai/firecrawl&Date)
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ollama/ollama-python,openai/openai-python,anthropic/anthropic-sdk-python,groq/groq-api-python&type=Date)](https://star-history.com/#ollama/ollama-python&openai/openai-python&anthropic/anthropic-sdk-python&groq/groq-api-python&Date)
+
 
 ### Streamlit CI/CD
 
-* With Github
+* With Github - using dockerx to get a multiarch (x86 & ARM64) Container Image
 
 To use **Github Actions** to create automatic **container images** for your streamlit projects, you will need **such [configuration file](https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml)**.
 
@@ -572,11 +709,14 @@ To use **Github Actions** to create automatic **container images** for your stre
 Just follow [these steps](https://fossengineer.com/docker-github-actions-cicd/).
 {{< /callout >}}
 
+* You can also build the container image manually
+  * Following [this sample steps](https://github.com/JAlcocerT/phidata/tree/main/Z_DeployMe)
+
 ### Deploying Streamlit
 
 You can use Streamlit Cloud Services.
 
-But you can also **host Streamlit with your own Domain**.
+But you can also **host Streamlit with your own Domain**. And without paying extra.
 
 {{< callout type="info" >}}
 You can use [Cloudflare tunnels](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)

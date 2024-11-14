@@ -39,9 +39,14 @@ If you want, you can try these projects, first:
 1. [Install Python](/guide-python/#installing-python-) 🐍
 2. Clone the repository
 3. And [install Python dependencies](/guide-python/#how-to-install-python-dependencies)
-* We will be using venv first and later create a Docker version for SelfHosting the GenAI App. 
+* We will be using venv first and later create a Docker [Container version with GH Ci/CD](https://github.com/JAlcocerT/Streamlit-MultiChat/pkgs/container/streamlit-multichat) for SelfHosting the GenAI App. 
 
-Lets have a look to the projects.
+
+{{< callout type="info" >}}
+See [**Streamlit-Multichat** Source Code](https://github.com/JAlcocerT/Streamlit-MultiChat) 💻 and the [SliDev PPT about the App](https://jalcocert.github.io/Streamlit-MultiChat/1)
+{{< /callout >}}
+
+Lets have a look to **the projects that have made this possible**.
 
 ### Streamlit Chat with OpenAI
 
@@ -239,9 +244,16 @@ networks:
 
 ---
 
-## Conclusion
+## Conclusion - And what I learnt
 
 Now you are free to **prompt those different models!**
+
+During the process, I also explored: [SliDev PPTs](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/slidev), [ScrapeGraph](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/ScrapeGraph/test_scrapegraph_stv2.py), [DaLLe](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/Z_Tests/Pict_for_SliDev-DaLLe), [Streamlit Auth](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/Z_Tests/Auth_sqlite) and [OpenAI as Custom Agents](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/Z_Tests/OpenAI).
+
+It was also a good chance to use **Github Actions CI/CD with buildx** - to get **[MultiArch container image](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/.github/workflows/Streamlit_GHA_MultiArch.yml)**.
+
+
+And ofc, the **SliDev PPT** is also using **Github Actions with Pages** and it is built with a different workflow. [This one](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/.github/workflows/SliDev_CICD.yml)
 
 {{< details title="Interesting Prompts 📌" closed="true" >}}
 
@@ -303,6 +315,9 @@ _[Insert text]_
 
 {{< /dropdown >}}
 
+
+Once you get to know how to use an API, is quite easy to add new ones.
+
 And feel free to use any of these:
 
 
@@ -335,14 +350,14 @@ And feel free to use any of these:
 
 {{< /dropdown >}} -->
 
-Remember to link the GHCR Package with your repository Readme:
+Remember to link the **GHCR Package** with your repository Readme:
 
 ![GHCR Connecting Package to Repository](/blog_img/GH_package_to_repo.png)
 
 
 {{< dropdown title="Using buildx with Github Actions to create x86 and ARM64 images ⏬" closed="true" >}}
 
-We need to define a Github Actions workflow with **buildx**:
+We need to define a **Github Actions workflow** with **buildx**:
 
 ```yml
 name: CI/CD Build MultiArch
