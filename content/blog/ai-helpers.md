@@ -74,7 +74,9 @@ Using already a SSG for your websites?
 
 If a LLM can write markdown...why not using it to create posts assisted with AI?
 
-### YT Summarizer and More
+### Youtube Stuff
+
+#### YT Summarizer and More
 
 There are great videos out there.
 
@@ -222,7 +224,7 @@ And ofc, [vision, with Llama 3.2 Vision](https://console.groq.com/docs/vision) a
 * **Cool sample:** Ask questions with Groq + Function Calling + DuckDB SQl Queries- [Example](https://replit.com/t/groqcloud/repls/Execute-Verified-SQL-Queries-with-Function-Calling/view#README.md)
 
 
-### Creating Audio for YT
+#### Creating Audio for YT
 
 Imagine that you have recorded some procedure that you want to share with the rest of the world.
 
@@ -232,6 +234,17 @@ How about using AI to generate a .mp3 that will be explaining the video for you?
 
 > And actually...that text could be also AI generated. Also the Youtube Video Description.
 
+#### Video as a Code
+
+Is it even possible to create a full .mp4 with AI?
+
+
+
+{{< callout type="info" >}}
+From Data to Streamlit to Animation to Video, which [I tested in AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests/ST_AutomaticYTVideo). To the to be checked [RemotionJS for VideoAsACode](https://github.com/JAlcocerT/VideoEditingRemotion)
+{{< /callout >}}
+
+In the meantime, I will stay with real life with the [DJI Action cam](/dji-osmo-action-5-pro/) and [my repo for putting the videos together](https://github.com/JAlcocerT/YT-Video-Edition)
 
 ---
 
@@ -558,6 +571,16 @@ Amazon simple email service...or what else?
 Streamlit has very useful [sessions states](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state)
 {{< /callout >}}
 
+If you are on a PoC stage, having a very simple and realiable way to bypass from any auth an email, is really helpful.
+
+This is why I added such option with the module described below.
+
+{{< details title="Email bypass for the EmailWall - PoC Simple Auth Setup 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
 #### Streamlit New Features
 
 Big **thanks to Fanilo Andrianasolo** for the great Streamlit Videos
@@ -625,6 +648,8 @@ echo $GROQ_API_KEY $OPENAI_API_KEY $ANTHROPIC_API_KEY
 ```
 
 {{< /details >}}
+
+
 
 
 ---
