@@ -1,11 +1,11 @@
 ---
-title: "Stocks with Python and Streamlit"
+title: "Stocks with Python"
 date: 2024-10-23
 draft: false
 tags: ["Python"]
-description: ""
+description: "A Cooler R/Stocks - This time with Python. And with proper auth"
 summary: 'A Cooler R/Stocks - This time with Python. And with proper auth'
-url: 'python-stocks-app'
+url: 'python-stocks-webapp'
 ---
 
 
