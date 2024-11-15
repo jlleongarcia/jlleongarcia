@@ -27,6 +27,13 @@ Well...lets find that out
 I tested **Dalle3 Model via OpenAI API** (while dev [StreamlitMultichat](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main)), at [this script](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/Pict_for_SliDev-DaLLe/Dalle3SliDev.py)
 {{< /callout >}}
 
+### Other Interesting APIs
+
+https://mammouth.ai/pricing
+
+> Get access to multiple AI models for the price of one.
+
+
 ---
 
 ## FAQ

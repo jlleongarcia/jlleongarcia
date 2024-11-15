@@ -138,6 +138,7 @@ EXPOSE 1319
 # Start Hugo server
 CMD ["hugo", "server", "--bind=0.0.0.0", "--baseURL=http://192.168.0.117", "--port=1319"]
 #hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" --port=1319
+#hugo server --bind="0.0.0.0" --baseURL="http://100.104.143.77" --port=1319
 
 #docker build -t hugo_gallery .
 #docker run -d -p 1319:1319 --name hugo_gallery_instance --restart unless-stopped hugo_gallery tail -f /dev/null

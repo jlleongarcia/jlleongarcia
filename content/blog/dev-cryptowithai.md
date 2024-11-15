@@ -11,6 +11,10 @@ Here we go again...
 
 I was testing [Astro Bento Portfolio + Github Pages + Github CI/CD](https://github.com/JAlcocerT/web3) with the resulting Web3/Crypto related microblog [here](https://jalcocert.github.io/web3/).
 
+{{< callout type="warning" >}}
+This post is just describing the process to apply data analytics with crypto. Not any recommendation or financial advice of any type.
+{{< /callout >}}
+
 And some time ago I was having a look to this **amazing BlockChain/Solidity FreeCodeCamp course:**
 
 {{< youtube "gyMwXuJrbJQ" >}}
@@ -33,7 +37,7 @@ inspired by CryptaIQ and keeping that intelligent, AI-powered vibe:
 
 
 {{< callout type="info" >}}
-I decided to create [the InsighChAIn Project](https://github.com/JAlcocerT/PyInsightChAIn). Knowledge from [the Scrap project](https://github.com/JAlcocerT/Scrap_Tools) and practically from [CVCreAItor](/ai-useful-yet-simple/).
+I decided to create [the **InsighChAIn Project**](https://github.com/JAlcocerT/PyInsightChAIn). Knowledge from [the Scrap project](https://github.com/JAlcocerT/Scrap_Tools) and practically from [CVCreAItor](/ai-useful-yet-simple/) 💻 
 {{< /callout >}}
 
 {{< details title="What would Cicero Think about Crypto?" closed="true" >}}
@@ -121,7 +125,59 @@ Particularly, to make a [UniSwap Protocol Dashboard](https://dune.com/fossengine
 
 For many casual users, **DeBank** and **Zapper** provide sufficient features, while **Nansen** and **Messari** are more suited for power users needing professional-grade analysis.
 
+
+
 {{< /details >}}
+
+
+### Exploring Protocols
+
+Solidity is not the only language you can use with Polygon. While it's the most popular language for developing smart contracts on Polygon due to its compatibility with the Ethereum Virtual Machine (EVM), other languages can be used indirectly.
+
+Here are some other options:
+
+Indirectly through Compilation:
+
+Vyper: A Python-like language that compiles to EVM bytecode, allowing you to write smart contracts in a more Pythonic style.   
+Yul: A low-level assembly language for the EVM, which can be used for highly optimized or specific use cases.
+
+So if the Analytics part is clear...
+
+...and blockchain data is public?
+
+How about exploring one protocol as an example? 
+
+> Let's give it a try to **PolyMarket**
+
+
+* Its kind of a prediction market...place? Lets find out how many transactions are happening
+  * https://defillama.com/protocol/polymarket#information
+  * Transactions - https://polygonscan.com/txs?a=0x4bfb41d5b3570defd03c39a9a4d8de6bd8b8982e
+
+{{< details title="About PolyMarket... 📌" closed="true" >}}
+
+
+Polymarket Overview: **A decentralized application on the Polygon blockchain** for predicting real-world events like elections and sports.
+
+Functionality: Users buy shares based on their predictions; share prices fluctuate with user confidence. Correct predictions yield profits, while incorrect ones result in losses.
+Prediction Examples: Includes political outcomes (e.g., presidential elections) and pop culture events (e.g., TikTok's potential ban in the U.S.).
+Liquidity Providers: Essential for market function; they deposit funds into a share pool and earn rewards, including weekly payouts in USDC.
+Important Considerations:
+    Not available in the U.S.; users should verify local laws.
+    Distinction between actual probabilities and market opinions is crucial.
+Key Takeaways:
+    Users can profit from accurate predictions.
+    Liquidity providers ensure market efficiency.
+    Awareness of local regulations is necessary before participation.
+
+
+{{< /details >}}
+
+
+{{< youtube "GvT_Fycvt14" >}}
+
+#### The Code - BlockChain Transaction Analyzer
+
 
 
 ---
@@ -131,6 +187,7 @@ For many casual users, **DeBank** and **Zapper** provide sufficient features, wh
 * BlockChain Scanners
   * [ETHScan](https://etherscan.io/)
   * [Solscan](https://solscan.io/)
+  * https://polygonscan.com/
 
 * Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing **EVM based blockchains**.
   * https://github.com/blockscout/blockscout

@@ -1,9 +1,9 @@
 ---
-title: "Can AI be: Neuromarketer, PPT Creator..."
+title: "Can [AI] be the all in one Assistant?"
 date: 2024-10-21
 draft: false
 tags: ["dev"]
-summary: 'Make AI be helpful. While learning to make Streamlit better.'
+summary: 'Make AI be helpful with an AIssistant: Neuromarketer, PPT Creator... While learning to make Streamlit better.'
 url: 'ai-useful-yet-simple'
 ---
 
@@ -21,20 +21,28 @@ Anyways, it was time to **[level up my Streamlit](#making-streamlit-better), aga
 {{< /cards >}}
 
 
-
 And why not doing it while making some **Business value driven projects!**
 
+Looking at [Streamlit Roadmap](https://roadmap.streamlit.app/), more ideas will pop up.
+
 {{< callout type="info" >}}
-This is how [CV-Check // CVCreAItor](https://gitlab.com/fossengineer1/cv-check) and [AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant) were born
+This is how [CV-Check // **CVCreAItor**](https://gitlab.com/fossengineer1/cv-check) and [**AIssistant**](https://github.com/JAlcocerT/Streamlit-AIssistant) were born 🔥💻
 {{< /callout >}}
 
-Looking at [Streamlit Roadmap](https://roadmap.streamlit.app/), more ideas will pop up
+{{< cards cols="2" >}}
+  {{< card link="https://gitlab.com/fossengineer1/cv-check" title="CV Project" >}}
+  {{< card link="https://github.com/JAlcocerT/Streamlit-AIssistant" title="AIssistant Project" >}}
+{{< /cards >}}
+
+Thanks to the investigations during 
+{{< cards cols="1" >}}
+  {{< card link="https://github.com/JAlcocerT/Scrap_Tools" title="Scrapping Tools" >}}
+  {{< card link="https://github.com/JAlcocerT/Scrap_Tools" title="Scrapping Tools Post" >}}
+{{< /cards >}}
+
+
 
 ## For Entrepreneurs
-
-{{< callout type="info" >}}
-To investigate this, was key - **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
-{{< /callout >}}
 
 ### A Neuromarketing Agent
 
@@ -45,7 +53,7 @@ unless you have some help.
 Like the help of **EntrepreAI**
 
 {{< callout type="info" >}}
-* [Neuromarketing with openAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
+I tried first [Neuromarketing with openAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
 {{< /callout >}}
 
 {{< details title="CTAs Examples that Ive found 📌" closed="true" >}}
@@ -295,10 +303,14 @@ You can use those diagrams with SSG (like HUGO, Astro...) and also for Slides cr
 
 It all started with [CV with OpenAI](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_cv.py)
 
+{{< callout type="info" >}}
+To investigate this, was key - **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)**
+{{< /callout >}}
+
 Thanks to this app I have been able to level up my Streamlit with many new features.
 
 {{< callout type="info" >}}
-And continued with [the CV-Check repo](https://gitlab.com/fossengineer1/cv-check) with a Streamlit Web App.
+And continued with [**the CV-Check repo**](https://gitlab.com/fossengineer1/cv-check) with a Streamlit Web App 💻
 {{< /callout >}}
 
 ## Speech Rater with AI
@@ -306,8 +318,10 @@ And continued with [the CV-Check repo](https://gitlab.com/fossengineer1/cv-check
 
 It all started with a friend doing public speaking courses.
 
+And this idea appeared...
+
 {{< callout type="info" >}}
-[SpeechRater](https://github.com/JAlcocerT/streamlitspeechrater) and [StreamlitSpeech](https://github.com/JAlcocerT/Streamlit-Speech)
+[SpeechRater](https://github.com/JAlcocerT/streamlitspeechrater) and [StreamlitSpeech](https://github.com/JAlcocerT/Streamlit-Speech) 🔥💻
 {{< /callout >}}
 
 And since OpenAI can **transcribe (Audio to Text)**...
@@ -621,6 +635,10 @@ explaining whats going to be released...now.
 {{< /details >}}
 
 ### What Ive learnt with this one
+
+{{< callout type="info" >}}
+Very useful to do [Remote Development via SSH](/blog/dev-in-docker/). Using [LangTrace](https://github.com/Scale3-Labs/langtrace?tab=readme-ov-file) as observaility for LLMs
+{{< /callout >}}
 
 {{< details title="Better Python PKG management with requirements.txt... 📌" closed="true" >}}
 
