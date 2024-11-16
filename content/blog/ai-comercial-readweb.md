@@ -151,13 +151,21 @@ There are **few options**!
 
 I was testing[ ScrapeGraph with Streamlit here](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Streamlit_ScrapeGraph.py)
 
+With ScrapeGraph, you just need an **API for LLM** and just ask questions about the content of a website!
+
 * Docs [ScrapeGraph + OpenAI](https://scrapegraph-ai.readthedocs.io/en/latest/getting_started/examples.html)
 
 {{< callout type="info" >}}
 [ScrapeGraph **allows for open Models - via Ollama**](https://fossengineer.com/scrapping-with-llms/#scrapegraph-with-ollama) and also closed LLMs to work with it.
 {{< /callout >}}
 
+But if you are looking for a quick thing...
 
+...with OpenAI is really quick. Plus you already have the API plugged in for any other purpuse.
+
+Like summarizing the resulting `.json` file of the scrapt or any other workflow.
+
+This is what I made with [this script - combining ScrapeGraph with OpenAI API Call](https://github.com/JAlcocerT/Scrap_Tools/blob/main/ScrapeGraph/sample6_sg_openai.py)
 
 ### FireCrawl
 
@@ -229,13 +237,7 @@ flowchart TD
 Now given an **article/github repository** - you can get a **summary** very fast and decide if its worth exploring further. [Here you have such **script**.](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_UseCase3-Artic%26GHRepos)
 {{< /callout >}}
 
-### Other Ways
 
-FireCrawl is not giving me the juice of the offers, as [seen during Scrap-Tools Tests](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_PracujOffer)
-
-But... it can be done with [**OpenAI+Pure parsed HTML**](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
-
-Using [OpenAI API](https://github.com/openai/openai-python) seems to be a reliable way when the web structure is not changing too much.
 
 ### Crawl4AI
 
@@ -258,6 +260,25 @@ It offers a user-friendly interface and a range of features, including:
 - Crawl4AI is available as a Python package and as a Docker image. It is a powerful tool for anyone who needs to extract data from the web for AI applications.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ScrapeGraphAI/Scrapegraph-ai,unclecode/crawl4ai,mendableai/firecrawl&,type=Date)](https://star-history.com/#ScrapeGraphAI/Scrapegraph-ai&unclecode/crawl4ai&mendableai/firecrawl&Date)
+
+### Other Ways
+
+FireCrawl is not giving me the juice of the offers, as [seen during Scrap-Tools Tests](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_PracujOffer)
+
+But... it can be done with [**OpenAI+Pure parsed HTML**](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
+
+Using [OpenAI API](https://github.com/openai/openai-python) seems to be a reliable way when the web structure is not changing too much.
+<!-- 
+https://github.com/openai/openai-python
+https://github.com/wention/BeautifulSoup4
+
+[![Star History Chart](https://api.star-history.com/svg?repos=openai/openai-python,unclecode/crawl4ai,wention/BeautifulSoup4&,type=Date)](https://star-history.com/#openai/openai-python&unclecode/crawl4ai&wention/BeautifulSoup4&Date)
+ -->
+
+
+You could do similarly with other LLMs via their APIs
+
+[![Star History Chart](https://api.star-history.com/svg?repos=openai/openai-python&type=Date)](https://star-history.com/#openai/openai-python&Date)
 
 
 ---

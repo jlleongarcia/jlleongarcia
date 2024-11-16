@@ -173,7 +173,7 @@ But I needed to try [Python video editing with moviePy](https://github.com/JAlco
 And it can do crazy stuff.
 
 {{< callout type="info" >}}
-[Video Edition Repo](https://github.com/JAlcocerT/YT-Video)
+[Video Edition Repo](https://github.com/JAlcocerT/YT-Video). Using **[ffmpeg](https://github.com/JAlcocerT/YT-Video-Edition/tree/main/With_FFmpeg)**. Or using [**Python MoviePy**](https://github.com/JAlcocerT/YT-Video-Edition/tree/main/With_Python) which worked for Windows/Linux
 {{< /callout >}}
 
 Like having **speech recognition** and silencing the parts with human voices...

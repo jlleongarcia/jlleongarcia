@@ -8,7 +8,9 @@ summary: 'Spacy Python Ner'
 url: 'nlp-tools'
 ---
 
-The first time I got the change to use a NLP was with [detoxify](https://pypi.org/project/detoxify/), which classifies comments with PyTorch and Transformers.
+The first time I got the change to use a NLP was with [**detoxify**](https://pypi.org/project/detoxify/), which classifies comments with PyTorch and Transformers.
+
+Kind of sentiment analysis tool.
 
 But there are other **interesting tools**.
 

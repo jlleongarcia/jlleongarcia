@@ -62,6 +62,9 @@ content
 
 ## Conclusions
 
+This goes one step further than the previous project RStocks.
+
+And definitely much more than the older FlexDashboards in R.
 
 ### Stock Questions - Answered
 
@@ -117,6 +120,11 @@ Similar projects include **Firefly III** and **GnuCash**.
 * https://dividendsandincome.com/2024/04/08/how-my-dividend-growth-portfolios-income-keeps-expanding/
 
 * https://engineeredportfolio.com/
+
+
+{{< callout type="info" >}}
+You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/author/B0BW46JD83?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true) one with AI. How? with an [**AIssistant**](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#kindle-notes-to-ai) 
+{{< /callout >}}
 
 
 ### Interesting Financial Data Sites

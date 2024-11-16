@@ -37,9 +37,12 @@ This is how [CV-Check // **CVCreAItor**](https://gitlab.com/fossengineer1/cv-che
 Thanks to the investigations during 
 {{< cards cols="1" >}}
   {{< card link="https://github.com/JAlcocerT/Scrap_Tools" title="Scrapping Tools" >}}
-  {{< card link="https://github.com/JAlcocerT/Scrap_Tools" title="Scrapping Tools Post" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web" title="Scrapping Tools Post" >}}
 {{< /cards >}}
 
+**Let it be leverage**
+
+<!-- <iframe src="https://giphy.com/embed/Fpp3zIRlFgqf7pL0DW" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/kruk-jordankruk-jordan-Fpp3zIRlFgqf7pL0DW">via GIPHY</a></p> -->
 
 
 ## For Entrepreneurs
@@ -359,9 +362,30 @@ I was storing notes for few years already and im really curious to see whats ins
 
 > I gave it a try with Google's NotebookLLM, but...custom is custom
 
+### Creating an Ebook
+
+I mean, an AI Assisted e-book.
+
 ---
 
 ## Conclusions
+
+Potentially, you can choose any other LLMs to reply to you.
+
+Its all about getting proper API calls to each of them.
+
+I have chosen OpenAI API for the project.
+
+<!-- [![Star History Chart](https://api.star-history.com/svg?repos=openai/openai-python&type=Date)](https://star-history.com/#openai/openai-python&Date)
+
+* https://github.com/ollama/ollama-python
+* https://github.com/anthropics/anthropic-sdk-python -->
+
+[![Star History Chart](https://api.star-history.com/svg?repos=openai/openai-python,anthropics/anthropic-sdk-python,ollama/ollama-python&,type=Date)](https://star-history.com/#openai/openai-python&anthropic-sdk-python&ollama/ollama-python&Date)
+
+
+But you have sample API calls to other models (via APIs) at the Streamlit Multichar project.
+
 
 ### Making Streamlit Better
 
@@ -830,7 +854,7 @@ In conclusion, Latitude simplifies the process of integrating AI into products w
 
 > Among other DBs, [latitude works with SQLite](https://docs-analytics.latitude.so/sources/sqlite)!
 
-### Key Features:
+Key Features:
 - **Database Connectivity**: Latitude can connect to a variety of databases and data warehouses, providing flexibility for different environments and data sources.
 - **Parameterized SQL Queries as API Endpoints**: It allows users to create parameterized SQL queries and expose them as API endpoints, making it easy to query data dynamically and integrate with other systems.
 - **Interactive Visualizations**: Latitude supports interactive data visualizations in frontend frameworks (such as React, Svelte, and Vue), or alternatively, it can display them within iframes for easy embedding in web pages.
@@ -838,20 +862,20 @@ In conclusion, Latitude simplifies the process of integrating AI into products w
 - **Security**: Latitude is SSL-ready and includes protections against SQL injection, ensuring secure communication between the client and the database.
 - **Community-driven**: The project encourages contributions from developers, fostering an active open-source community.
 
-### Use Cases:
+Use Cases:
 - **Quick Dashboard Creation**: Developers can rapidly build dashboards and visualizations, allowing end-users to explore and interact with data without extensive custom development.
 - **Single-command Deployment**: Latitude can be deployed quickly with a single command, making it easier for developers to get up and running without complex configurations.
 - **Framework Integration**: Latitude integrates seamlessly with popular frontend frameworks like React, Svelte, and Vue, which are commonly used for building modern web applications.
 
-### Community and Support:
+Community and Support:
 - Latitude has an active community on **Slack**, where developers can collaborate, share insights, and get support.
 - Comprehensive **documentation** is available to guide users through the setup process and help with integration into various systems.
 
-### Current Status:
+Current Status:
 - The project is **no longer maintained** as the focus has shifted to a new project, **Latitude LLM**, which likely focuses on new features or different capabilities.
 - Existing users can still use the codebase and license as-is, though no new updates are being released.
 
-### Conclusion:
+Conclusion:
 Latitude simplifies the integration of embedded analytics for developers, allowing for easy creation and deployment of dashboards, visualizations, and queries. Its simplicity and integration with modern frontend frameworks make it a valuable tool for building analytics-rich applications.
 
 Similar projects to Latitude include:
@@ -859,6 +883,78 @@ Similar projects to Latitude include:
 - **Metabase**: Another open-source analytics platform that focuses on simple setup and user-friendly dashboards.
 
 {{< /details >}}
+
+#### Gaps to Cover
+
+There are ofc tools already waiting to be used...
+
+{{< details title="To learn how to interact with real time internet data - GNews, Perplexica,... 📌" closed="true" >}}
+
+**GNews** - https://github.com/ranahaani/GNews
+
+- **Summary:**  
+  _GNews_ is a lightweight Python package that provides an API to search for articles on Google News, returning results in JSON format. It supports fetching articles by keywords, topics, and locations, making it versatile for news aggregation.  
+
+- **Key Features:**  
+  - **Lightweight:** Easy to use with minimal setup.  
+  - **Integration:** Fetches articles directly from Google News RSS Feed.  
+  - **Global Support:** Covers over **141 countries** and **41 languages**.  
+  - **Structured Results:** Returns data in JSON format for easy parsing.  
+
+- **Pros:**  
+  - **Simple Installation:** No complex dependencies.  
+  - **Convenience:** Eliminates the need for custom scrapers.  
+  - **Flexible Searches:** Supports a variety of search parameters.  
+
+- **Cons:**  
+  - _Limited Sources:_ Only fetches from Google News.  
+  - _Dependency:_ Relies on the availability of Google News RSS feeds.  
+
+- **Alternatives:**  
+  - NewsAPI  
+  - ContextualWeb News API  
+  - Bing News Search API  
+
+
+From Perplexica to **OpenSearch GPT** [AI Search Engines!] - https://github.com/supermemoryai/opensearch-ai
+
+**OpenSearch GPT**, an open-source, AI-powered search engine that personalizes search results by learning from user interactions. It emphasizes key features like its **Mem Zero** memory system for remembering past interactions, its robust technological framework, and its versatility as a tool for writing assistance and data management. 
+
+OpenSearch GPT aims to enhance productivity and streamline workflows, offering transparency and flexibility as an alternative to proprietary search engines.
+
+---
+
+Key Points
+- **Personalization:** Delivers tailored search results by learning from user behavior.
+- **Memory System:** Includes **Mem Zero** to retain past interactions and improve relevance.
+- **Technology Framework:** Built using **Versal AI ADK** and **Next.js** for a robust experience.
+- **Versatility:** Functions as a writing assistant and supports data management tasks.
+- **Open Source:** Provides transparency and customization options for users.
+
+---
+ Pros and Cons
+
+**Pros:**
+- Highly personalized search experience.
+- Open-source design allows community involvement and customization.
+- Supports a range of functionalities for diverse use cases.
+
+**Cons:**
+- Requires Google account sign-in to access the platform.
+- May pose a learning curve for users new to open-source tools.
+
+---
+
+Alternatives
+- **Perplexity AI**
+- **OpenAI's Search Engine Prototype**
+
+
+{{< /details >}}
+
+<!-- [![Star History Chart](https://api.star-history.com/svg?repos=ollama/ollama-python,openai/openai-python,anthropic/anthropic-sdk-python,groq/groq-api-python&type=Date)](https://star-history.com/#ollama/ollama-python&openai/openai-python&anthropic/anthropic-sdk-python&groq/groq-api-python&Date) -->
+
+[![Star History Chart](https://api.star-history.com/svg?repos=supermemoryai/opensearch-ai,ranahaani/GNews&type=Date)](https://star-history.com/#supermemoryai/opensearch-ai&ranahaani/GNews&Date)
 
 ---
 
