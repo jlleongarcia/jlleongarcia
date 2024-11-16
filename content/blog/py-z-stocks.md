@@ -21,7 +21,9 @@ The project [**source code**](https://gitlab.com/fossengineer1/py_stocks)💻
 For user authentication: clear/supabase/logto...
 * https://clerk.com/docs
 * https://github.com/clerk/clerk-sdk-python/blob/main/README.md
-
+* https://www.reddit.com/r/Supabase/comments/1dvabn6/what_is_the_best_solution_to_use_supabase_auth/
+* https://www.reddit.com/r/nextjs/comments/1bvda9r/officially_hate_supabase_auth/?rdt=40537
+* https://www.reddit.com/r/Supabase/comments/xaxecr/authentication_with_supabase_is_easy_almost/
 
 
 
@@ -57,6 +59,14 @@ content
     ├── _index.md // <- /blog/
     └── post-1.md // <- /blog/post-1/
 ```
+
+## Conclusions
+
+
+### Stock Questions - Answered
+
+* Stocks overperforming SP500 in xyz period / last xyz months
+* YoC when I stopped investing at a certain point of time (Dave van Knapp made a all in approach, but it can serve to see what happens after a DCA strategy)
 
 ---
 
@@ -105,6 +115,9 @@ Similar projects include **Firefly III** and **GnuCash**.
 
 * https://dividendsandincome.com/author/dave-van-knapp/
 * https://dividendsandincome.com/2024/04/08/how-my-dividend-growth-portfolios-income-keeps-expanding/
+
+* https://engineeredportfolio.com/
+
 
 ### Interesting Financial Data Sites
 

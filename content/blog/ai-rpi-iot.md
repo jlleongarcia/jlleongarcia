@@ -99,3 +99,19 @@ services:
       - HOST_USER_ID=1000
       - HOST_USER_GID=1000
 ```
+
+---
+
+
+## Outro
+
+### IoT Projects I Worked on
+
+* https://jalcocert.github.io/RPi/posts/rpi-iot-dht1122-mongo/
+* https://jalcocert.github.io/RPi/posts/rpi-iot-dht11-influxdb/
+
+If you like those, there are [more here](https://jalcocert.github.io/RPi/categories/iot-data-analytics/)
+
+Push to MongoDB. See the data properly.
+
+* https://github.com/anasjaber/mongo-explorer

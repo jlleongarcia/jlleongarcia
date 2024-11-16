@@ -66,3 +66,9 @@ for string in strings_to_check:
 ## Conclusions
 
 Nowadays you can also **use LLMs** for this kind of tasks.
+
+But...it is always great to keep handy this kind of tools.
+
+### Interesting Offline Tools - Translations
+
+* https://github.com/LibreTranslate/LibreTranslate

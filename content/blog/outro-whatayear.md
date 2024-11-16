@@ -40,7 +40,7 @@ url: 'this-year-was-crazy'
 
 As always, a new year comes with **opportunities to get better**.
 
-{{< details title="SuperProductivity 📌" closed="true" >}}
+{{< details title="SuperProductivity... 📌" closed="true" >}}
 
 * https://github.com/johannesjo/super-productivity
 
@@ -70,6 +70,26 @@ Similar projects include **Todoist** and **Trello**, which also focus on task ma
 
 
 Would be amazing **to be better at what matters the most for us**.
+
+In the meantime...
+
+## Stop Coding as in 2023
+
+
+{{< details title="AI Asisted Dev Tools...Codeium? Copilot?Aide?Cursor...? 📌" closed="true" >}}
+
+{{< /details >}}
+
+
+
+
+{{< details title="AI Asisted Web Search... 📌" closed="true" >}}
+
+Perplexity? Or **Perplexica**?
+
+
+
+{{< /details >}}
 
 ---
 

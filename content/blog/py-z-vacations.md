@@ -241,7 +241,8 @@ DB4S is a valuable tool for users needing an intuitive interface for SQLite data
 
 ### Interesting software for Vacations
 
-
+* https://organicmaps.app/news/
+* 
 {{< details title="Spliit 📌" closed="true" >}}
 
 * https://github.com/spliit-app/spliit
