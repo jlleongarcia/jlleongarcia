@@ -63,3 +63,50 @@ content
 ## FAQ
 
 ### How to use AI LLM Agents to get posts with this program as Source
+
+### Interesting Software for Finances
+
+{{< details title="Crypto is...back? 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+* https://github.com/serversideup/financial-freedom
+
+`Financial Freedom` is an open-source financial management tool.
+
+It serves as an alternative to commercial apps like Mint and YNAB.
+
+This project addresses privacy concerns by allowing users to self-host their financial data.
+
+Users can run the application on any device with Docker support, enhancing control over their financial information.
+
+Key features include:
+
+- **Supports any bank**: Integrate with various banking institutions.
+  
+- **Private synchronization**: Ensures data privacy during synchronization.
+
+- **Self-hosting**: Run on AWS, Digital Ocean, or even Raspberry Pi.
+
+- **Budgeting tools**: Helps in managing cash flow and setting budgets.
+
+- **Global currency support**: Manages finances in multiple currencies.
+
+The project is actively being developed, inviting community involvement through contributions.
+
+Users can follow progress on GitHub, join discussions on Discord, or sponsor the project.
+
+Conclusion: `Financial Freedom` empowers users to manage finances privately and securely.
+
+Similar projects include **Firefly III** and **GnuCash**.
+
+### Interesting Financial Stories
+
+* https://dividendsandincome.com/author/dave-van-knapp/
+* https://dividendsandincome.com/2024/04/08/how-my-dividend-growth-portfolios-income-keeps-expanding/
+
+### Interesting Financial Data Sites
+
+* https://www.multpl.com/
+  * it has Sp500 PE Ratios, 10y treausry rates...

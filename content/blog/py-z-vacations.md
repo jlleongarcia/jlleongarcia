@@ -169,7 +169,7 @@ Although **SQLite** is in the **public domain**, its development is managed by j
 
 In **October 2022**, a new fork called **libSQL** was introduced, with a focus on **community-controlled development**. It retains **SQL-like compatibility** with SQLite, but introduces new features to address some of SQLite’s limitations.
 
-### Key features of **libSQL**:
+Key features of **libSQL**:
 - **One database per user**: This approach could **improve performance**, **reduce latency**, and **enhance security**.
 - **Server mode**: Allows access to the database via **HTTP**.
 - **Native replication system**: Enables embedded **replica features**.
@@ -178,7 +178,7 @@ In **October 2022**, a new fork called **libSQL** was introduced, with a focus o
 - **Shared schema across multiple databases**: Makes it easier to manage databases together.
 - **Vector queries**: Optimized for **AI applications**, enabling complex data operations.
 
-### Benefits and Challenges of libSQL:
+Benefits and Challenges of libSQL:
 - **Performance**: The one-database-per-user model can significantly **boost performance** and reduce **latency**, but it may create challenges with **data retrieval** and **combining data** across different locations.
 - **Security**: Enhanced **security** through encryption and the isolated nature of individual user databases.
 - However, retrieving and combining data from different databases may **not be practical** in all cases, especially when data is spread across geographically distant locations.
@@ -190,6 +190,111 @@ SQLite may be **underappreciated**, but with libSQL, it becomes even more powerf
 
 {{< /details >}}
 
+
+
+{{< details title="Reading SQLite DBs 📌" closed="true" >}}
+
+You can explore a SQLite via a script, like we did [during the Scrapping Post](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/#old-school-scrapping)
+
+There is a cool project for this - https://github.com/sqlitebrowser/sqlitebrowser
+
+**sqlitebrowser** - DB Browser for SQLite (DB4S) is an open-source tool for creating, designing, and editing SQLite database files.
+
+It simplifies database management for users and developers, eliminating the need for complex SQL commands.
+
+**Key Features:**
+
+- Visual interface resembling a spreadsheet.
+
+- Allows creation and modification of database files.
+
+- Supports searching, editing, and deleting database records.
+
+- Facilitates importing/exporting of data in various formats (CSV, SQL).
+
+- Offers SQL query capabilities with result inspection.
+
+- Provides graphical plotting of data.
+
+**Key Information:**
+
+- Continuous and nightly builds are available for download.
+
+- Compatible with Windows, macOS, Linux, and FreeBSD.
+
+- Installation options include package managers like Chocolatey, Homebrew, and Snap.
+
+- The project has a rich history of community contributions and updates.
+
+**Conclusions:**
+
+DB4S is a valuable tool for users needing an intuitive interface for SQLite database management. 
+
+**Similar Projects:**
+
+- DBeaver: A universal database tool for developers.
+
+- HeidiSQL: A lightweight SQL client for MySQL, SQL Server, and PostgreSQL.
+
+
+{{< /details >}}
+
+### Interesting software for Vacations
+
+
+{{< details title="Spliit 📌" closed="true" >}}
+
+* https://github.com/spliit-app/spliit
+
+Spliit is a free and open-source alternative to Splitwise, aimed at simplifying expense sharing among friends and family.
+
+It addresses the need for a user-friendly platform to manage shared expenses without the hassle of ads or fees.
+
+Key Features:
+
+- Create and share groups for expense tracking.
+
+- Add detailed expenses with descriptions.
+
+- Display balances within groups.
+
+- Create reimbursement expenses.
+
+- Progressive Web App (PWA) functionality.
+
+- Option to split expenses unevenly.
+
+- Ability to upload images and scan receipts for expenses.
+
+- Future features may include recurring expenses and import from Splitwise.
+
+Technology Stack:
+
+1. **Next.js** for web application framework.
+
+2. **TailwindCSS** for styling.
+
+3. **Prisma** for database access.
+
+4. **Vercel** for hosting.
+
+Contribution:
+
+- Open to community contributions.
+
+- Options for financial support available.
+
+Local Development:
+
+- Clone the repository and set up a local PostgreSQL server.
+
+- Follow setup instructions to run the application locally or in a Docker container.
+
+Spliit offers a robust solution for managing shared expenses and simplifies the process for users. 
+
+Similar projects include **Tricount** and **Splitwise** itself.
+
+{{< /details >}}
 
 
 ### Using hoppscotch

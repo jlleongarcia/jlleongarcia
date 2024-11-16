@@ -80,7 +80,8 @@ Understanding SC's with LLMs: these are are some [interesting protocols](https:/
 * https://lido.fi/ - Decentralized [Staking ETH](https://stake.lido.fi/) (get stETH and use stETH in DeFi)
 * https://yearn.fi/
 * https://compound.finance/
-* https://aavescan.com/polygon-v3/0x8f3cf7ad23cd3cadbd9735aff958023239c6a0630xa97684ead0e402dc232d5a977953df7ecbab3cdb
+* https://aavescan.com
+  * https://aavescan.com/polygon-v3/0x8f3cf7ad23cd3cadbd9735aff958023239c6a0630xa97684ead0e402dc232d5a977953df7ecbab3cdb
 
 * [SETH](https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84)
 
@@ -134,12 +135,18 @@ For many casual users, **DeBank** and **Zapper** provide sufficient features, wh
 
 Solidity is not the only language you can use with Polygon. While it's the most popular language for developing smart contracts on Polygon due to its compatibility with the Ethereum Virtual Machine (EVM), other languages can be used indirectly.
 
-Here are some other options:
+{{< details title="Here are some other options 📌" closed="true" >}}
 
 Indirectly through Compilation:
 
 Vyper: A Python-like language that compiles to EVM bytecode, allowing you to write smart contracts in a more Pythonic style.   
 Yul: A low-level assembly language for the EVM, which can be used for highly optimized or specific use cases.
+
+{{< /details >}}
+
+
+
+
 
 So if the Analytics part is clear...
 

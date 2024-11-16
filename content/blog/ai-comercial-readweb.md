@@ -187,6 +187,48 @@ I mean, [FireCrawl **needs an API**](https://www.firecrawl.dev/app/usage) to wor
 
 * Sample FireCrawl to get [Numbeo Data and pushes it to Sqlite](https://gitlab.com/fossengineer1/py_vacations/-/blob/main/Z_Scrap_firecrawl/firecrawl_testv5.py?ref_type=heads) using [openAI API](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_neumkt.py)
 
+#### Cool Thing to do With FireCrawl API
+
+{{< details title="Get a page Info, scrap it, and more cool things with FireCrawl API 📌" closed="true" >}}
+
+It can be a companion for web-check.xyz and to know which links, pictures we have in a given page.
+
+Very useful for web migrations.
+
+
+{{< /details >}}
+
+Firecrawl can serve as a tool to see whats referenced on a page - As per the extracted `linksonpage`
+
+It can Give you the [content of a link directly in markdown](https://github.com/JAlcocerT/Scrap_Tools/blob/main/FireCrawl/Z_UseCase2-Articles/Scrap_LinkInfo_v2a.py) - [see the script](https://github.com/JAlcocerT/Scrap_Tools/blob/main/FireCrawl/Z_UseCase2-Articles/Scrap_LinkInfo_Sum_v3a.py). Which also summarizes it with OpenAI.
+
+
+```mermaid
+flowchart TD
+    A[Start] --> B[Load environment variables]
+    B --> C[Initialize OpenAI and Firecrawl API clients]
+    C --> D{API keys loaded?}
+    D -->|No| E[Raise EnvironmentError]
+    D -->|Yes| F[Iterate through URLs]
+    F --> G[Scrape URL and save data in multiple formats]
+    G --> H{Scrape successful?}
+    H -->|No| I[Skip to next URL]
+    H -->|Yes| J[Save JSON, Markdown, Links, og:title]
+    J --> K[Extract content from H1 matching og:title]
+    K --> L{Content found?}
+    L -->|No| M[Skip to next URL]
+    L -->|Yes| N[Save filtered content to file]
+    N --> O[Summarize filtered content using OpenAI]
+    O --> P[Save summarized content to file]
+    P --> Q[Move to next URL]
+    Q --> F
+    F --> R[End]
+```
+
+{{< callout type="info" >}}
+Now given an **article/github repository** - you can get a **summary** very fast and decide if its worth exploring further. [Here you have such **script**.](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_UseCase3-Artic%26GHRepos)
+{{< /callout >}}
+
 ### Other Ways
 
 FireCrawl is not giving me the juice of the offers, as [seen during Scrap-Tools Tests](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_PracujOffer)
