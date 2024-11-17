@@ -225,6 +225,8 @@ And it can be used via the **groq API** too.
 * https://console.groq.com/docs/examples
 * https://github.com/groq/groq-api-cookbook
 * https://console.groq.com/playground
+  * https://pypi.org/project/groq/
+  * https://github.com/groq/groq-python
 
 It has [Speech capabilities](https://console.groq.com/docs/speech-text) like transcriptions & Translations!
 

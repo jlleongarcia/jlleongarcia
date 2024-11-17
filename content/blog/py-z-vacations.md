@@ -138,6 +138,11 @@ Its been a while since I got to know about [**CrewAI**](https://fossengineer.com
 
 Not its time to do something with it
 
+
+#### Adding memory to the AI to know your preferences
+
+* https://docs.mem0.ai/examples/personal-travel-assistant
+
 ---
 
 ## FAQ

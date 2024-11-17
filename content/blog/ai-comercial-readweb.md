@@ -3,7 +3,7 @@ title: "Ask the Web with Streamlit and AI"
 date: 2024-10-17
 draft: false
 tags: ["Gen-AI","Python","Dev"]
-summary: 'Using Streamlit with OpenAI API and FireCrawl to Scrap the Web for Info. Compared with other scrapping methods.'
+summary: 'Using Streamlit with OpenAI API and FireCrawl to Scrap the Web for Info. Compared with other scrapping Crawl4AI, ScrapeGraph and EmbedChain'
 url: 'scrap-and-chat-with-the-web'
 ---
 
@@ -145,6 +145,8 @@ So, what can we do to make the code once, and scrap *forever*?
 
 There are **few options**!
 
+With these, you forget about inspecting web pages and look for the html tricks to make a systematic scrap.
+
 ### ScrapeGraph
 
 **ScrapeGraph** is a Free [Python scraper based on AI](https://github.com/ScrapeGraphAI/Scrapegraph-ai) 
@@ -165,7 +167,7 @@ But if you are looking for a quick thing...
 
 Like summarizing the resulting `.json` file of the scrapt or any other workflow.
 
-This is what I made with [this script - combining ScrapeGraph with OpenAI API Call](https://github.com/JAlcocerT/Scrap_Tools/blob/main/ScrapeGraph/sample6_sg_openai.py)
+This is what I made with [this script - **combining ScrapeGraph with OpenAI API Call to summarize**](https://github.com/JAlcocerT/Scrap_Tools/blob/main/ScrapeGraph/sample6_sg_openai.py)
 
 ### FireCrawl
 
@@ -246,17 +248,12 @@ Now given an **article/github repository** - you can get a **summary** very fast
 See the [Crawl4AI code](https://github.com/unclecode/crawl4ai)
 
 It offers a user-friendly interface and a range of features, including:
-  
-  - **Ease of use:** Crawl4AI is designed to be easy to use, even for those new to web scraping.
-  
-  - **Fast performance:** It is built for speed, outperforming many paid services.
-  
-  - **LLM-friendly output:** It produces output formats that are easy for LLMs to process, such as JSON and cleaned HTML.
-  
-  - **Asynchronous support:** It can crawl multiple URLs simultaneously, making it efficient for large-scale projects.
-  
-  - **Media extraction:** It can extract and return all media tags, including images, audio, and video.
-  
+- **Ease of use:** Crawl4AI is designed to be easy to use, even for those new to web scraping.
+- **Fast performance:** It is built for speed, outperforming many paid services.
+- **LLM-friendly output:** It produces output formats that are easy for LLMs to process, such as JSON and cleaned HTML.
+- **Asynchronous support:** It can crawl multiple URLs simultaneously, making it efficient for large-scale projects.
+- **Media extraction:** It can extract and return all media tags, including images, audio, and video.
+
 - Crawl4AI is available as a Python package and as a Docker image. It is a powerful tool for anyone who needs to extract data from the web for AI applications.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ScrapeGraphAI/Scrapegraph-ai,unclecode/crawl4ai,mendableai/firecrawl&,type=Date)](https://star-history.com/#ScrapeGraphAI/Scrapegraph-ai&unclecode/crawl4ai&mendableai/firecrawl&Date)
@@ -265,9 +262,10 @@ It offers a user-friendly interface and a range of features, including:
 
 FireCrawl is not giving me the juice of the offers, as [seen during Scrap-Tools Tests](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_PracujOffer)
 
-But... it can be done with [**OpenAI+Pure parsed HTML**](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
+But... it can be done with  [**1) OpenAI+Pure parsed HTML**](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
 
 Using [OpenAI API](https://github.com/openai/openai-python) seems to be a reliable way when the web structure is not changing too much.
+
 <!-- 
 https://github.com/openai/openai-python
 https://github.com/wention/BeautifulSoup4
@@ -280,6 +278,57 @@ You could do similarly with other LLMs via their APIs
 
 [![Star History Chart](https://api.star-history.com/svg?repos=openai/openai-python&type=Date)](https://star-history.com/#openai/openai-python&Date)
 
+And other library I saw, was **2) embedchain** (now included in the [mem0 repo](https://github.com/mem0ai/mem0))
+
+With mem0/embedchain, we are going a little bit further than just scrapping.
+
+> The Memory layer for your AI apps 
+
+You can ofc use embedchain to ask questions about a web!
+
+{{< callout type="info" >}}
+Or...use just **embedchain without API** - [Embed online resources **(web urls) and ask** questions about them with **this script**](https://github.com/JAlcocerT/Scrap_Tools/blob/main/EmbedChain/sample_scrap_qna2.py)
+{{< /callout >}}
+
+When you run the script, you will see that it is embedding content to a ChromaDB under the hood.
+
+{{< details title="More about the mem0 project 📌" closed="true" >}}
+
+
+[Mem0](https://github.com/mem0ai/mem0/tree/main) is a memory layer that improves AI applications by enabling personalized user interactions through intelligent memory management. 
+
+This project addresses the need for AI systems that can remember user preferences and evolve over time, enhancing fields like customer support and personalized learning.
+
+- **Key Features:**
+  1. Multi-level memory retention for users, sessions, and AI agents.
+  2. Adaptive personalization that improves with user interactions.
+  3. Developer-friendly API for seamless application integration.
+  4. Cross-platform consistency for uniform behavior across devices.
+  5. Managed service option for hassle-free hosting.
+
+- **Pros:**
+  - Elevates user experience with tailored interactions.
+  - Versatile support for various AI applications and use cases.
+  - Simplifies setup and integration with existing systems.
+
+- **Cons:**
+  - Requires a large language model (LLM), which may not suit all users.
+  - Self-hosting may demand additional technical expertise.
+
+- **Alternatives:**
+  - OpenAI's memory management solutions.
+  - Other AI memory frameworks like Rasa or Dialogflow.
+
+Mem0 offers a promising solution for personalized AI interactions.
+
+
+{{< /details >}}
+
+You will **need mem0 API**, or to [plug one of your favourite LLMs, as per the docs](https://docs.mem0.ai/components/llms/overview) to do other cool things with mem0.
+
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mem0ai/mem0&type=Date)](https://star-history.com/#mem0ai/mem0&Date)
 
 ---
 
