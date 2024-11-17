@@ -142,6 +142,27 @@ You can print to pdf, add your logo, taxes, CSS...
 
 {{% /details %}}
 
+
+* **Menu websites at ~500 eur/year**
+  * http://cartalia.org/
+    * http://ukelele.cartalia.org/
+  * https://www.upmenu.com/pricing/
+* https://www.covermanager.com/en
+* https://www.mojstolik.pl/dla-restauracji
+
+* Hosting Costs:
+  * https://banahosting.com/web-hosting ~5eur/month
+  * https://webtolearn.pl/cennik ~20eur/month
+
+* Customer management systems
+  * https://wakems.com/index.php
+  * https://clubspeed.com/pricing/
+
+* Custom websites
+  * https://zeon.studio/estimate-project
+  * https://hormigasenlanube.com/
+  * https://lyk-website.pl/brief/
+
 <!-- * Proposed: bogusiabachata.pro -->
 
 <!-- More ppl to help - future CLIENTS

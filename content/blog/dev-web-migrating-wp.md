@@ -348,7 +348,10 @@ We saw a few interesting ones:
 
 The [fuwari static blog made with Astro](https://github.com/saicaca/fuwari)...
 
-* Testing it with Github and clourflare: <jmodels.pages.dev>
+
+{{< callout type="info" >}}
+Testing it with Github and CloudFlare: <https://jmodels-web.pages.dev/>
+{{< /callout >}}
 
 ---
 
@@ -470,25 +473,6 @@ It's worth to try few of them - not all the content is indexed in the same way a
 * Static Websites with python: Check Nikola, the SSG written in python
 * [Coding For Entrepreneur Github](https://github.com/codingforentrepreneurs?tab=repositories)!
 
-* **Menu websites at ~500 eur/year**
-  * http://cartalia.org/
-    * http://ukelele.cartalia.org/
-  * https://www.upmenu.com/pricing/
-* https://www.covermanager.com/en
-* https://www.mojstolik.pl/dla-restauracji
-
-* Hosting Costs:
-  * https://banahosting.com/web-hosting ~5eur/month
-  * https://webtolearn.pl/cennik ~20eur/month
-
-* Customer management systems
-  * https://wakems.com/index.php
-  * https://clubspeed.com/pricing/
-
-* Custom websites
-  * https://zeon.studio/estimate-project
-  * https://hormigasenlanube.com/
-  * https://lyk-website.pl/brief/
 
 * **Other ways to get a personal blog**
   * [btw](https://github.com/btw-so/btw)

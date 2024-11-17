@@ -114,6 +114,8 @@ But we can have a custom tool with BS4.
 
 In this case, we had to go through ~1k different urls.
 
+That was a good reason to go with a HUGO Theme as well.
+
 Each post has 2 different languages.
 
 {{% /steps %}}
@@ -122,7 +124,7 @@ Each post has 2 different languages.
 
 Making sure that all info is there by knowing the web categories
 
-#### Category 1
+#### Category 1 Posts
 
 Example - *De hombres y maquinas* <https://jmodels.net/2020/08/10/de-hombres-maquinas-554-ilyushin-db-3/>
 
@@ -140,9 +142,9 @@ curl -s https://jmodels.net/robots.txt | grep -i sitemap #look for sitemap direc
 
 3) Inspecting a URL with content - https://jmodels.net/de-hombres-y-maquinas/aire-air/ilyushin-db-3/
 * Inspecting it, we have content at `<div class="post-content clear">`
-* So with a new script...
 
-4) Plug the scrapped content to an LLM to **get the markdown**
+4) Plug the scrapped content to an LLM to **get the markdown**, while preserving the initial structure
+* This script takes the [info from the given div, and feeds it to OpenAI API to get `.md`](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_AIgents/WebMigrAItion/Fetch_Post_Info/get_postwithcontent_openai_v2a.py)
 5) If you already have a theme selected, you ar every close to have one post migrated
 
 

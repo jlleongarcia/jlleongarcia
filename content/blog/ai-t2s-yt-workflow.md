@@ -191,7 +191,7 @@ streamlit run test_audioinput.py --server.address=0.0.0.0 --server.port=8501
 But thats the story of **the SpeechRAIter Project**.
 {{< /callout >}}
 
-And maybe a future...**podcast creator** with AI and this Astro Theme?
+And maybe a future...**podcast creator** with AI and [the AstroPod Theme](https://github.com/manuelernestog/astropod)?
 
 ### Quick Vlogs as a Code
 
@@ -209,7 +209,7 @@ You can also try to silence, include another audio as background (Rencoding need
 3) Find interesting data - Create an **animation with Streamlit** - Record with OBS - Upload to Youtube
   
 {{< callout type="info" >}}
-[As tested during AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests/ST_AutomaticYTVideo)
+[As tested during AIssistant - STAutomaticYTVideo](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests/ST_AutomaticYTVideo)
 {{< /callout >}}
 
 
