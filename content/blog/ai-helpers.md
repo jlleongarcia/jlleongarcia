@@ -251,6 +251,9 @@ Initially, I was using [these simple scripts](https://github.com/JAlcocerT/JAlco
 
 But these are much better...
 
+Oh, and it uses [OpenAI Text2Speech](https://platform.openai.com/docs/guides/text-to-speech)
+
+
 #### Video as a Code
 
 Is it even possible to create a full .mp4 with AI?

@@ -10,6 +10,8 @@ url: 'my-youtube-ai-workflow'
 
 It all started with the [DJI OA5 Pro](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/)
 
+It takes ~1h48min/41.5GB of video at 2.7k/RS/Standard/60fps to fill the internal memory.
+
 ...And continued with the [**x300** *as a video creation center...*](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/#video-editing-101)
 
 If you need help summarizing YT Videos content you can try:
@@ -82,9 +84,9 @@ The initial scripts I used are at [YT_Audios](https://github.com/JAlcocerT/JAlco
 ![Karting Adventure](/blog_img/memes/ezoeazin.JPG)
 
 
+{{< details title="A friend gave me this cool idea [AI & Audio Transcription] 📌" closed="true" >}}
 
-{{< details title="A friend gave me this cool idea [AI & Audio] 📌" closed="true" >}}
-
+It uses the **Whisper** model to make the audio2text conversion/transcription:
 
 ```py
 ##1 abre archivo de audio transcribe y guarda como texto
@@ -92,109 +94,66 @@ The initial scripts I used are at [YT_Audios](https://github.com/JAlcocerT/JAlco
 
 from openai import OpenAI
 
- 
-
 # Initialize the OpenAI client with your API key
-
 client = OpenAI(api_key='')
-
  
-
 # Path to your audio file
-
 audio_file_path = r'C:\Users\diazc\OneDrive\Escritorio\speech-analyzer-app\audio_test_api.wav'
 
  
-
 # Open the audio file
-
 with open(audio_file_path, "rb") as audio_file:
-
     # Transcribe the audio using Whisper model
-
     transcription = client.audio.transcriptions.create(
-
         model="whisper-1",
-
         file=audio_file
-
     )
 
     # Print the transcription text
-
     print(transcription.text)
 
  
 
 # Extract the transcription text
-
 transcription_text = transcription.text
-
  
 
 # Step 2: Save the transcription to a .txt file
-
 output_file_path = 'audio.txt'
 
 with open(output_file_path, 'w') as text_file:
-
     text_file.write(transcription_text)
 
- 
-
 # Step 3: Print confirmation
-
 print(f"Transcription saved to {output_file_path}")
 
 ###Python Audio #2 abre archivo de texto y lo manda a chatGPT a que lo analice
 
-
-# cambia el path y mete la API Key
-
- 
-
 import openai
-
- 
-
 # Initialize the OpenAI client with your API key
-
 openai.api_key = ''
 
- 
 
 # Path to the file containing the speech text (audio.txt)
-
 file_path = r'C:\Users\diazc\OneDrive\Escritorio\speech-analyzer-app\audio.txt'
 
  
 
 # Step 1: Read the content of the file
-
 with open(file_path, 'r') as file:
-
     file_content = file.read()
 
  
 
 # Step 2: Create the prompt for GPT-4 using the content from the file
-
 analysis_prompt = f"You are an expert in public speaking. Analyze this speech: {file_content}"
 
- 
-
 # Step 3: Send the prompt to GPT-4 for analysis
-
 response = openai.chat.completions.create(
-
-    model="gpt-4",
-
+    model="gpt-4o-mini",
     messages=[
-
         {"role": "user", "content": analysis_prompt}
-
     ]
-
 )
 
 
@@ -214,6 +173,25 @@ print(analysis)
 
 {{< /details >}}
 
+{{< callout type="info" >}}
+For a **transcription with OpenAI + Whisper**, [you have this script](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_Tests/ST_AudioSpeechRater/audio2text_OpenAI.py)
+For **Text to Audio** - [using tts1, this script](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests/ST_CreateYTAudio)
+{{< /callout >}}
+
+
+It is quite clear that Combining those with a the [new **Audio feature on Streamlit**](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_Tests/test_audioinput.py) can create **sth cool**.
+
+```sh
+#streamlit run test_audioinput.py
+#streamlit run test_audioinput.py --server.address=0.0.0.0
+streamlit run test_audioinput.py --server.address=0.0.0.0 --server.port=8501
+```
+
+{{< callout type="info" >}}
+But thats the story of **the SpeechRAIter Project**.
+{{< /callout >}}
+
+And maybe a future...**podcast creator** with AI and this Astro Theme?
 
 ### Quick Vlogs as a Code
 
@@ -228,7 +206,7 @@ You can also try to silence, include another audio as background (Rencoding need
 
 #### Data Driven Videos with Streamlit
 
-3) Find interesting data - Create an animation - Record with OBS - Upload to Youtube
+3) Find interesting data - Create an **animation with Streamlit** - Record with OBS - Upload to Youtube
   
 {{< callout type="info" >}}
 [As tested during AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests/ST_AutomaticYTVideo)

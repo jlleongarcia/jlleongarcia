@@ -10,7 +10,7 @@ draft: true
 #    alt: "From Fiction to Function: A Hands-On Guide to Open Source LLM Models.." # alt text
 #    caption: "From Fiction to Function: A Hands-On Guide to Open Source LLM Models." # display caption
 tags: ["Gen-AI"]
-description: ''
+description: 'From Computer Vision to AI with Vision'
 summary: ''
 url: 'multi-modal-models'
 ---

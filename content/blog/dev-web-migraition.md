@@ -16,7 +16,15 @@ It's always great to having a look to the initial pages to know what to expect f
 
 * WebCheck - 
 * Gte all url/pages of a website - A must to migrate everything!
-* Are there any broken links?
+* Are there [any broken links](https://fossengineer.com/nextjs-ssg/#do-i-got-any-broken-links)?
+
+```sh
+#podman run --rm -it ghcr.io/linkchecker/linkchecker:latest --verbose https://fossengineer.com > linkchecker_output.txt
+
+docker run --rm -it -u $(id -u):$(id -g) ghcr.io/linkchecker/linkchecker:latest --verbose https://www.jmodels.net
+
+pip3 install linkchecker
+```
 
 {{< /details >}}
 
