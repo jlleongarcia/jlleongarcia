@@ -73,6 +73,14 @@ Would be amazing **to be better at what matters the most for us**.
 
 In the meantime...
 
+
+
+{{< details title="Im getting better at photo/video edditing 📌" closed="true" >}}
+
+* https://github.com/JAlcocerT/YT-Video-Edition
+
+{{< /details >}}
+
 ## Stop Coding as in 2023
 
 
@@ -126,3 +134,38 @@ For Node.js developers, learning Go can open doors to better performance and sca
 In conclusion, Go is a great language for developers aiming to build high-performance, scalable applications, and it serves as a valuable addition to a developer’s toolkit. Similar languages, like **Rust** and **Deno**, also focus on performance and safety, making them worth exploring.
 
 {{< /details >}}
+
+
+
+
+
+{{< details title="Maybe next year...[Linux Stuff] 📌" closed="true" >}}
+
+SysLinuxOS is a specialized Debian-based Linux distribution tailored for system administrators. 
+
+It addresses the need for a robust operating system equipped with tools for networking and system management. 
+
+**Key Features:**
+1. Debian-based with extensive networking and systems tools pre-installed.
+2. Supports multiple languages; offers GNOME and MATE desktop environments.
+3. Includes a variety of security and monitoring tools for enhanced system management.
+
+**Pros:**
+- Comprehensive selection of pre-installed tools for system administration.
+- User-friendly with improved hardware support and customization options.
+- Regular updates aligned with Debian releases.
+
+**Cons:**
+- Desktop may appear cluttered due to numerous monitoring displays.
+- May require additional configuration for specific user needs.
+
+**Alternatives:**
+- Ubuntu Server
+- CentOS
+- Fedora Server
+
+SysLinuxOS provides a solid foundation for system administrators, but users should be aware of its potential clutter.
+
+
+{{< /details >}}
+

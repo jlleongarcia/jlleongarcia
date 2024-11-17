@@ -382,7 +382,7 @@ These tools combined will allow your Flask app to handle user registration, logi
 
 To implement a system where user registration, payments, and content access are tied together using **Flask**, **Stripe**, and **MailerLite**, you can break down the logic as follows:
 
-### 1. **User Sign-Up and Newsletter Subscription (MailerLite)**
+1. **User Sign-Up and Newsletter Subscription (MailerLite)**
    - **MailerLite** will handle newsletter subscriptions. Users first sign up using their email.
    - After subscribing, the user receives a confirmation email containing a **verification code** (which you generate). This code will allow them to create an account in the Flask app.
 
@@ -396,7 +396,7 @@ To implement a system where user registration, payments, and content access are 
    - The Flask app makes an API call to MailerLite to add the user to your newsletter.
    - Upon successful subscription, the Flask app generates a unique verification code and sends an email (via MailerLite or Flask-Mail) to the user.
 
-### 2. **Account Creation with Verification Code**
+2. **Account Creation with Verification Code**
    - The user can now use the verification code they received to create a username and password for logging into the Flask app.
    
    **Tools:**
@@ -409,7 +409,7 @@ To implement a system where user registration, payments, and content access are 
    - The Flask app verifies the code and creates a new user account.
    - The user can now log in using their email/username and password.
 
-### 3. **User Dashboard with Password Management and Services**
+3. **User Dashboard with Password Management and Services**
    - After logging in, the user can manage their account (e.g., change their password) and see a list of services that can be purchased via **Stripe**.
    
    **Tools:**
@@ -421,7 +421,7 @@ To implement a system where user registration, payments, and content access are 
    - Once logged in, users can update their password and view a list of available services fetched via the Stripe API.
    - They can initiate a payment for any service.
 
-### 4. **Stripe Payment Integration**
+4. **Stripe Payment Integration**
    - After a successful payment, the Stripe API will capture the email used for payment.
    - The system will verify if the payment email matches the email tied to the logged-in user. If they match, the user will get access to premium content or additional services.
 
@@ -436,7 +436,7 @@ To implement a system where user registration, payments, and content access are 
 
 ---
 
-### Example Flow and Tool Summary:
+Example Flow and Tool Summary:
 
 1. **Sign-Up (MailerLite Integration)**:
    - User submits their email on Flask app.
@@ -460,7 +460,7 @@ To implement a system where user registration, payments, and content access are 
 
 ---
 
-### Required Libraries:
+Required Libraries:
 1. **Flask** – Core framework.
 2. **Flask-SQLAlchemy** – ORM for interacting with SQLite database.
 3. **Flask-Login** – User session management.
@@ -480,8 +480,6 @@ To implement a system where user registration, payments, and content access are 
 
 {{< details title="More about LogTo 📌" closed="true" >}}
 
-# LogTo Resources and Tutorials
-
 | **Resource**                                   | **Link**                                                                                         |
 |------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | **Protected App Recipe**                       | [Documentation](https://docs.logto.io/docs/recipes/protected-app/)                                |
@@ -491,7 +489,7 @@ To implement a system where user registration, payments, and content access are 
 
 ---
 
-## LogTo Tutorials
+LogTo Tutorials
 
 - **Social Sign-in Experience**:
   - Video: [Social Sign-in with LogTo](https://www.youtube.com/watch?v=sv60N9eW8Ew)
@@ -518,9 +516,13 @@ To implement a system where user registration, payments, and content access are 
 
 ### Flask Alternatives
 
+<!-- [![Star History Chart](https://api.star-history.com/svg?repos=django/django,tiangolo/fastapi,tornadoweb/tornado,bottlepy/bottle,cherrypy/cherrypy,sanic-org/sanic,Pylons/pyramid,falconry/falcon,hugapi/hug,pgjones/quart&type=Date)](https://star-history.com/#django/django&tiangolo/fastapi&tornadoweb/tornado&bottlepy/bottle&cherrypy/cherrypy&sanic-org/sanic&Pylons/pyramid&falconry/falcon&hugapi/hug&pgjones/quart&Date) -->
+
+[![Star History Chart](https://api.star-history.com/svg?repos=pallets/flask,django/django,tiangolo/fastapi,tornadoweb/tornado,bottlepy/bottle,cherrypy/cherrypy,sanic-org/sanic,Pylons/pyramid,falconry/falcon,hugapi/hug,pgjones/quart,streamlit/streamlit,flet-dev/flet,reflex-dev/reflex&type=Date)](https://star-history.com/#pallets/flask&django/django&tiangolo/fastapi&tornadoweb/tornado&bottlepy/bottle&cherrypy/cherrypy&sanic-org/sanic&Pylons/pyramid&falconry/falcon&hugapi/hug&pgjones/quart&streamlit/streamlit&flet-dev/flet&reflex-dev/reflex&Date)
+
 #### FastAPI
 
-* FastAPI: Fully supports Jinja2 templates.
+* [FastAPI](https://github.com/tiangolo/fastapi): Fully supports Jinja2 templates.
 
 [YT - Create a Video Membership Web App from Scratch with Python, NoSQL, & FastAPI](https://www.youtube.com/watch?v=KQ-u4RcFLBY)
 
@@ -528,35 +530,65 @@ To implement a system where user registration, payments, and content access are 
 
 #### Django
 
-* Django: Can use Jinja2, but its native templating engine is preferred.
+* [Django](https://github.com/django/django): Can use Jinja2, but its native templating engine is preferred.
 
 * Example [YT - Build Full Stack Web Apps in Pure Python with Reflex - No Javascript Required](https://www.youtube.com/watch?v=ITOZkzjtjUA)
 
 
 #### Reflex
 
-Flet enables developers to easily build realtime web, mobile and desktop apps in Python. No frontend experience required.
+[Reflex](https://github.com/reflex-dev/reflex) enables developers the creation of **full-stack web applications** using **pure Python**. 
+
+No frontend experience required.
 
 * [YT1 - Pure Python: Build a full stack ChatGPT-like UI. Reflex, Neon Postgres. Deploy with Docker to a VM](https://www.youtube.com/watch?v=NuNaI__4xiU)
 * [Build Full Stack Web Apps in Pure Python with Reflex - No Javascript Required](https://www.youtube.com/watch?v=ITOZkzjtjUA)
 
+{{< details title="More About Reflex 📌" closed="true" >}}
+
+It addresses the need for a JavaScript-free development environment, making it easier for Python developers to build and deploy complex applications.
+
+- **Key Features:**
+  1. Write both frontend and backend in Python.
+  2. Easy to start with; scalable for complex applications.
+  3. Instant deployment capabilities.
+
+- **Pros:**
+  - No need to learn JavaScript.
+  - Fast refreshes for instant feedback during development.
+  - Active community and regular updates.
+
+- **Cons:**
+  - Still in alpha for hosting services.
+  - Limited built-in components compared to more established frameworks.
+
+- **Alternatives:**
+  - Django
+  - Flask
+  - FastAPI
+
+Reflex simplifies full-stack development with Python but is still evolving. Other frameworks provide more maturity.
+
+{{< /details >}}
+
 
 #### Flet
 
+[Flet](https://github.com/flet-dev/flet) enables developers to easily build realtime web, mobile and desktop apps in Python.
 
 {{< details title="More About Flet 📌" closed="true" >}}
 
 
 - **Project Name:** Flet
 - **License:** Apache-2.0
-- **Stars:** [11.2k stars](/flet-dev/flet/stargazers)
-- **Forks:** [432 forks](/flet-dev/flet/forks)
+- **Stars:** 11.2k stars
+- **Forks:** 432 forks
 - **Main Website:** [flet.dev](https://flet.dev)
 
-### About the Project
+About the Project
 Flet is a framework that allows developers to easily create real-time web, mobile, and desktop applications in Python without requiring frontend development experience.
 
-### Main Features
+Main Features
 - **From Idea to App in Minutes:** Quickly develop internal tools, dashboards, data entry forms, kiosk apps, or prototypes with Flet.
 - **Simple Architecture:** Write monolith stateful apps in Python only and get multi-user, real-time Single-Page Application (SPA) without complex architectures.
 - **Batteries Included:** Flet provides a built-in web server with assets hosting and desktop clients, eliminating the need for additional SDKs or dependencies.
@@ -564,22 +596,22 @@ Flet is a framework that allows developers to easily create real-time web, mobil
 - **Language-Agnostic:** Flet supports multiple languages, starting with Python and upcoming support for Go, C#, and others.
 - **Deliver to Any Device:** Deploy Flet apps as web apps, standalone desktop apps for Windows, macOS, and Linux, or as PWAs for mobile devices.
 
-### License
+
 The project is licensed under the Apache-2.0 license, allowing for open-source usage and modification.
 
-### Documentation
+Documentation
 - [Creating Flet apps in Python](https://flet.dev/docs/guides/python/getting-started)
 - [Controls reference](https://flet.dev/docs/controls)
 
-### Getting Started
+Getting Started
 To run a sample "Counter" app in Python with Flet:
 1. Install the `flet` module using `pip install flet`.
 2. Run the program with `python counter.py`.
 3. Experience the app in a native OS window, providing an alternative to Electron.
 
-### Conclusion
+Flet is a powerful framework that simplifies the development of real-time applications in Python, offering a straightforward architecture, multi-platform delivery options, and language-agnostic support. 
 
-Flet is a powerful framework that simplifies the development of real-time applications in Python, offering a straightforward architecture, multi-platform delivery options, and language-agnostic support. Its inclusion of Flutter for UI design and ease of deployment make it a versatile choice for developers looking to create interactive apps without extensive frontend knowledge.
+Its inclusion of Flutter for UI design and ease of deployment make it a versatile choice for developers looking to create interactive apps without extensive frontend knowledge.
 
 {{< /details >}}
 

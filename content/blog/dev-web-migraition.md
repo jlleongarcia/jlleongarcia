@@ -22,6 +22,10 @@ I was expecting to just use the latest [AI Scrapping tools that I learnt here](h
 
 ...but **Python+BS4** can do very interesting tricks.
 
+{{< callout type="info" >}}
+It was very helpful to have thes [Scraping Tools Repo](https://github.com/JAlcocerT/Scrap_Tools) and to have [this related post](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/) 💻 
+{{< /callout >}}
+
 Lets have a look.
 
 
@@ -31,7 +35,7 @@ Lets have a look.
 
 * https://jalcocert.github.io/JAlcocerT/astro-web-setup/
 
-{{< details title="Getting All the Images from the Web to Migrate 📌" closed="true" >}}
+{{< details title="Getting All the Images from the Web to Migrate [BS4] 📌" closed="true" >}}
 
 You can do the following:
 
