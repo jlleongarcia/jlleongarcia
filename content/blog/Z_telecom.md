@@ -40,7 +40,7 @@ Get Ready for Diagrams: mermaid or DrawIO
 5. **Over-the-Top (OTT) Services**  
    Sling TV, YouTube TV, and Hulu + Live TV deliver content over the internet without cable or satellite providers.
    
-6. **Social Media Platforms**  
+6. **Social M. Platforms**  
    Facebook, Instagram, and Twitter allow video sharing within networks.
 
 ### Optical Network Terminal (ONT)

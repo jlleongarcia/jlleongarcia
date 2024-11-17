@@ -327,7 +327,6 @@ Mem0 offers a promising solution for personalized AI interactions.
 You will **need mem0 API**, or to [plug one of your favourite LLMs, as per the docs](https://docs.mem0.ai/components/llms/overview) to do other cool things with mem0.
 
 
-
 [![Star History Chart](https://api.star-history.com/svg?repos=mem0ai/mem0&type=Date)](https://star-history.com/#mem0ai/mem0&Date)
 
 ---

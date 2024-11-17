@@ -12,9 +12,11 @@ url: 'how-to-migrate-a-website'
 It's always great to having a look to the initial pages to know what to expect from them.
 
 
-{{< details title="Checking that a Website works - or in this case, what we will have to migrate 📌" closed="true" >}}
+{{< details title="Checking that a Website works - or in this case, what we will have to Migrate 📌" closed="true" >}}
 
 * WebCheck - 
+* Gte all url/pages of a website - A must to migrate everything!
+* Are there any broken links?
 
 {{< /details >}}
 

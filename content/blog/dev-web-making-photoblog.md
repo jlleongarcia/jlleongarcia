@@ -474,7 +474,10 @@ npx wrangler pages deploy public #<BUILD_OUTPUT_DIRECTORY> and this time is HUGO
 
 ![Cloudflare Wrangler CLI with HUGO](/blog_img/web/success5-aga/cloudflare-hugo-deploy.png)
 
+
+{{< callout type="info" >}}
 See the **Demo at: <https://agutek.pages.dev>** or <https://enjoylittlethings.org/>
+{{< /callout >}}
 
 <!--
 https://github.com/JAlcocerT/agutek-portfolioweb 

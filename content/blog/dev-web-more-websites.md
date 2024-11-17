@@ -87,6 +87,17 @@ Marketing tech capabilities including SEO settings, Google Analytics, Zapier, an
 
 ### Scaling Ideas
 
+These are some ideas of whats coming next.
+
+Making websites 1 by 1 its kind of slow.
+
+But there are very well known services that provide interesting service without human interaction.
+
+1) [Linktree](https://linktr.ee/s/pricing/)
+2) [linkbio](https://www.linknbio.com/pricing)
+3) [Glow (F/OSS)](https://github.com/tryglow/glow)
+4) 
+
 * Examples, this [artist profile](https://linktr.ee/bogusia.adryan) and this [awsome designer profile](https://linktr.ee/karwozniak)
     * And somethin' like:
         * https://github.com/jpanther/lynx - MIT!
@@ -99,7 +110,7 @@ Like we did at the **Social Media Project!**
 
 * **Automatic Invoices**
   * With Stripe as payment gateway, they create the invoices for your product/services automatically
-  * There are some project to [create invoices with open software](https://fossengineer.com/open-source-invoice-creator/).
+  * There are some project to [create invoices with open software](https://fossengineer.com/open-source-invoice-creator/) - **Serverless Invoices** worked great for me!
 
 
 {{% details title="ServerLess-Invoices Setup 🚀" closed="true" %}}

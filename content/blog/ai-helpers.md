@@ -207,12 +207,12 @@ volumes:
 But that is old school already.
 
 
-I have created an improved agent that allows us not just to summarize the YT Video - but to <u>**chat with the YouTube video** content</u>.
+I have created an improved agent that allows us not just to summarize the YT Video - but to <u>**chat with a YouTube video** content</u>.
 
 
 
 {{< callout type="info" >}}
-It is part of the AIssistant. Right here.
+It is part of the AIssistant. [This script Right here](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_AIgents/Z_Groq_YTSummaries_appv4.py) - Get summary + Chat with it
 {{< /callout >}}
 
 And it can be used via the **groq API** too. 
@@ -246,6 +246,10 @@ But you want to automate the process of explaining it.
 How about using AI to generate a .mp3 that will be explaining the video for you?
 
 > And actually...that text could be also AI generated. Also the Youtube Video Description.
+
+Initially, I was using [these simple scripts](https://github.com/JAlcocerT/JAlcocerT/tree/main/Z_YT_Audios).
+
+But these are much better...
 
 #### Video as a Code
 
@@ -318,10 +322,13 @@ Thanks to this app I have been able to level up my Streamlit with many new featu
 And continued with [**the CV-Check repo**](https://gitlab.com/fossengineer1/cv-check) with a Streamlit Web App 💻
 {{< /callout >}}
 
+And there are people already making money with similar tools: 
+* https://aiapply.co/
+* https://enhancv.com/ai-resume-builder/
+
 ## Speech Rater with AI
 
-
-It all started with a friend doing public speaking courses.
+It all started with **a friend doing public speaking courses**.
 
 And this idea appeared...
 

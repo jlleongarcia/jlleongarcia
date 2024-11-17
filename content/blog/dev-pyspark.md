@@ -20,7 +20,7 @@ When talking about PySpark, we are talking about **Big Data** and [Python](/JAlc
 
 
 <!-- Understanding Big Data 5V’s.
-Understanding Big Data use cases (e.g. IoT, social media analysis, ML models, log analytics, etc.).
+Understanding Big Data use cases (e.g. IoT, S0cial media analysis, ML models, log analytics, etc.).
 Understanding Data Lake concept.
 Understanding major architecture layers and their functions (Sources, Ingestion, Storage, Processing, Presentation, Security, Governance).
 

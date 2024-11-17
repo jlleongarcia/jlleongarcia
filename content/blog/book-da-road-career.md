@@ -1,6 +1,6 @@
 ---
 title: "[Guide] Kickstart Your Career in Data Analytics "
-date: 2023-06-04T23:20:21+01:00
+date: 2023-06-04
 draft: false
 tags: ["Career"]
 description: 'How to start a (Self-taught) career in data analytics. The skills you need and tips on your first steps.'
@@ -460,7 +460,7 @@ A data warehouse is a specialized database that is designed for storing and anal
 
 Data warehouses are typically used by businesses to track their performance, identify trends, and make better decisions.
 
-This data is **typically structured**, because it is easier to store and query structured data. However, data warehouses can also be used to store real-time data, such as sensor data or social media data. This data is often semi-structured or unstructured, because it is difficult to predict the format of this data.
+This data is **typically structured**, because it is easier to store and query structured data. However, data warehouses can also be used to store real-time data, such as sensor data or Social M. data. This data is often semi-structured or unstructured, because it is difficult to predict the format of this data.
 
 If you are storing semi-structured or unstructured data in a data warehouse, then you will need to use a tool to transform the data into a structured format before it can be stored in the data warehouse. This process is called **ETL** (extract, transform, and load).
 

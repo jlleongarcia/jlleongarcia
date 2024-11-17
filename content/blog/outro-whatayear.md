@@ -1,12 +1,39 @@
 ---
 title: "What a year..."
-date: 2024-11-16
-draft: true
+date: 2024-11-17
+draft: false
 tags: ["Dev"]
-summary: ''
+description: 'Looking back to the learnings of this year'
+summary: 'Looking back to the learnings of this year'
 url: 'this-year-was-crazy'
 ---
 
+One of the most interesting concepts Ive learn this year:
+
+1) **bikeshedding** 
+2) **show your work**
+3) **finish what you start**
+
+
+Most interesting things ive completed
+
+{{% steps %}}
+
+### Webs
+
+This is the first step.
+
+```sh
+#hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" 
+#hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" --port=1313
+#hugo server --bind="0.0.0.0" --baseURL="http://100.104.143.77" --port=1319
+```
+
+### Webs with AI
+
+This is the second step.
+
+{{% /steps %}}
 
 
 {{< details title="Python is the most popular language - Again 📌" closed="true" >}}
@@ -33,8 +60,8 @@ url: 'this-year-was-crazy'
 
 {{< details title="Not more, but better SelfHosting 📌" closed="true" >}}
 
-* Selfhosted.show
-* 
+* <https://Selfhosted.show>
+* <https://selfh.st/>
 
 {{< /details >}}
 
@@ -80,6 +107,11 @@ In the meantime...
 * https://github.com/JAlcocerT/YT-Video-Edition
 
 {{< /details >}}
+
+
+{{< callout type="info" >}}
+For Photos I am using [this kind of Hugo Gallery](https://jalcocert.github.io/JAlcocerT/creating-photo-centric-blog-with-hugo/) - <https://while.cyclingthere.com/>
+{{< /callout >}}
 
 ## Stop Coding as in 2023
 

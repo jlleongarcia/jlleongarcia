@@ -1,22 +1,29 @@
 ---
 title: "My [AI] Youtube Workflow"
-date: 2024-11-07T05:20:21+01:00
-draft: true
+date: 2024-11-07
+draft: false
 tags: ["Tinkering"]
-description: 'How to use AI to share more with others'
+description: 'How to use AI to share more (and hopefully better content) with others'
 summary: 'How Im slowly getting better at publishing to Youtube and creating content.'
 url: 'my-youtube-ai-workflow'
 ---
 
+It all started with the [DJI OA5 Pro](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/)
+
+...And continued with the [**x300** *as a video creation center...*](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/#video-editing-101)
+
+If you need help summarizing YT Videos content you can try:
+
 {{< callout type="info" >}}
-  It all started with the [DJI OA5 Pro](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/) and continue with [the VideoEditingWF repo](https://github.com/JAlcocerT/VideoEditingRemotion)
+With the [YT Groq Summarizer](https://jalcocert.github.io/JAlcocerT/summarize-yt-videos/) by PhiData. Or with the [AIssistant YT Summarizer](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_AIgents/Z_Groq_YTSummaries_appv4.py).
 {{< /callout >}}
 
 ## My Initial Workflow
 
-OBS to record -> Create audio with OpenAI API
+### OBS + OpenAI [Whisper]
 
-
+1) OBS to record video. Then create audio with OpenAI API
+* API Required - https://platform.openai.com/api-keys
 
 {{< details title="OpenAI API Audio creation - Example 📌" closed="true" >}}
 
@@ -63,15 +70,21 @@ response.stream_to_file(speech_file_path)
 
 {{< /details >}}
 
+{{< callout type="info" >}}
+The initial scripts I used are at [YT_Audios](https://github.com/JAlcocerT/JAlcocerT/tree/main/Z_YT_Audios). The more advance version of **handling audio with AI** is at AIssistant tests
+{{< /callout >}}
 
-### Updating My YT Video WF
+#### Updating My YT Video WF [AI Powered]
 
 * OBSStudio to record + I record myself commenting the video
 * Then, that .mp4 gets a transcript, which is passed to the OpenAI API to generate an AI voice
 
 ![Karting Adventure](/blog_img/memes/ezoeazin.JPG)
 
-> A friend gave me this cool idea:
+
+
+{{< details title="A friend gave me this cool idea [AI & Audio] 📌" closed="true" >}}
+
 
 ```py
 ##1 abre archivo de audio transcribe y guarda como texto
@@ -199,7 +212,36 @@ print(analysis)
 
 ```
 
+{{< /details >}}
 
+
+### Quick Vlogs as a Code
+
+2) Using ffmpeg or Python MoviePy
+
+{{< callout type="info" >}}
+Rencoding? save time not doing it. If the parts have similar resolution/fps/codecs and other features, you dont need to.
+With [this Script you can **bundle together videos** with MoviePy on W11/Linux](https://github.com/JAlcocerT/YT-Video-Edition/blob/main/With_Python/joinALLvideosFolderNoRencod2.py)
+{{< /callout >}}
+
+You can also try to silence, include another audio as background (Rencoding needed for those)
+
+#### Data Driven Videos with Streamlit
+
+3) Find interesting data - Create an animation - Record with OBS - Upload to Youtube
+  
+{{< callout type="info" >}}
+[As tested during AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests/ST_AutomaticYTVideo)
+{{< /callout >}}
+
+
+#### Videos with RemotionJS
+
+4) 
+
+{{< callout type="info" >}}
+See [the VideoEditingWF repo](https://github.com/JAlcocerT/VideoEditingRemotion)
+{{< /callout >}}
 
 ---
 
@@ -335,3 +377,8 @@ Social Media can be simplified
 * N8N AI Automation
 
 [N8N with ollama video](https://www.youtube.com/watch?v=VDuA5xbkEjo)
+
+
+#### Social Media Management Apps
+
+- [Shoutify](https://github.com/TechSquidTV/Shoutify)

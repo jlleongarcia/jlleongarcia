@@ -203,7 +203,7 @@ Redis is open-source software released under the BSD license. It is available fo
 
 - **Caching:** Redis can be used to cache frequently accessed data, such as user profiles or product information. This can improve the performance of applications by reducing the number of times the database needs to be accessed.
 - **Data streaming:** Redis can be used to stream data in real time. This can be used for applications such as real-time analytics or live chat.
-- **Real-time applications:** Redis can be used to build real-time applications that require high performance and scalability. This includes applications such as social media platforms, gaming applications, and financial trading applications.
+- **Real-time applications:** Redis can be used to build real-time applications that require high performance and scalability. This includes applications such as s0cial media platforms, gaming applications, and financial trading applications.
 
 ---
 

@@ -13,8 +13,7 @@ url: 'tbd-topics'
 - [Open Source Alternative - Add Project](https://www.opensourcealternative.to/add-project)
 - [Privacy Tools](https://www.privacytools.io/)
 
-## Social Media Management Apps
-- [Shoutify](https://github.com/TechSquidTV/Shoutify)
+
 
 ## Analytics Tools
 - [KNIME](https://www.knime.com/)
