@@ -3,7 +3,7 @@ title: "Streamlit MigrAItion - Making cool Webs from old ones "
 date: 2024-11-14
 draft: false
 tags: ["AI"]
-description: ""
+description: "Using AI to migrate websites to SSG. Faster, Cooler and Cleaner."
 summary: 'Using AI to migrate websites to SSG. For Real Estate and Wordpress projects.'
 url: 'how-to-migrate-a-website'
 ---
@@ -11,6 +11,9 @@ url: 'how-to-migrate-a-website'
 
 It's always great to having a look to the initial pages to know what to expect from them.
 
+Is it everything working?
+
+Hows the initial Performance of the Site?
 
 {{< details title="Checking that a Website works - or in this case, what we will have to Migrate 📌" closed="true" >}}
 
@@ -24,6 +27,19 @@ It's always great to having a look to the initial pages to know what to expect f
 docker run --rm -it -u $(id -u):$(id -g) ghcr.io/linkchecker/linkchecker:latest --verbose https://www.jmodels.net
 
 pip3 install linkchecker
+```
+
+{{< /details >}}
+
+{{< details title="Check SiteMap/Robots.txt of a Web 📌" closed="true" >}}
+
+```sh
+#curl -s https://example.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
+curl -s https://jmodels.net/sitemap.xml -o /dev/null -w "%{http_code}\n" #hugo paper mod has it
+
+#optional - check robots.txt
+curl -s https://jmodels.net/robots.txt | grep -i sitemap #look for sitemap direction
+curl -s https://jmodels.net/robots.txt | head -n 10 #see the first 10 lines
 ```
 
 {{< /details >}}
@@ -60,6 +76,78 @@ You can do the following:
 
 {{< /details >}}
 
+
+{{< callout type="info" >}}
+See how the [Real Estate Web Project was created](https://jalcocert.github.io/JAlcocerT/astro-web-setup/) from Scratch with Astro.
+{{< /callout >}}
+
 ## A Wordpress Migration
 
-https://jalcocert.github.io/JAlcocerT/wordpress-migration-to-ssg/
+{{< callout type="info" >}}
+See how these Themes were [proposed as alternative to a Wordpress Web](https://jalcocert.github.io/JAlcocerT/wordpress-migration-to-ssg/).
+{{< /callout >}}
+
+{{% steps %}}
+
+### Inspect SiteMap with Python
+
+I created this Python Script to [Inspect (and save) the SiteMaps](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_AIgents/WebMigrAItion/GetUrls/check_sitemapv1.py)
+
+### Use AI Generated Script to get all URLs
+
+I used chatgpt to create the following...
+
+Another [Py scripts that saves as `.csv` all the different urls](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_AIgents/WebMigrAItion/GetUrls/check_sitemapv3_geturls.py) Links as per the SiteMap
+
+> For the future, you can do these 2 steps with ONE SCRIPT
+
+Always good to check if there are broken links referenced in each original posts - For correction.
+
+### Scrap & Get all info (as it is of one Link)
+
+For Scrapping, there are few options [as we saw: Crawl4AI, ScrapeGraph, FireCrawlAI...](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/)
+
+But we can have a custom tool with BS4.
+
+
+### Leverage Time - Get info...of ALL Links
+
+In this case, we had to go through ~1k different urls.
+
+Each post has 2 different languages.
+
+{{% /steps %}}
+
+### Custom BS4 Tool
+
+Making sure that all info is there by knowing the web categories
+
+#### Category 1
+
+Example - *De hombres y maquinas* <https://jmodels.net/2020/08/10/de-hombres-maquinas-554-ilyushin-db-3/>
+
+1) See how the html is structured
+* In this case, they are under `<div class="content clear fleft" id="content">`
+2) Create a BS4 scrpt to get the content
+* Here, it redirects to this link - https://jmodels.net/de-hombres-y-maquinas/aire-air/ilyushin-db-3/
+* It was not flagged in the sitexml, but checking the robots...there is another sitemap `https://jmodels.net/news-sitemap.xml`
+
+```sh
+curl -s https://jmodels.net/robots.txt | grep -i sitemap #look for sitemap direction
+```
+
+* And its also not there...**TBC!!!**
+
+3) Inspecting a URL with content - https://jmodels.net/de-hombres-y-maquinas/aire-air/ilyushin-db-3/
+* Inspecting it, we have content at `<div class="post-content clear">`
+* So with a new script...
+
+4) Plug the scrapped content to an LLM to **get the markdown**
+5) If you already have a theme selected, you ar every close to have one post migrated
+
+
+
+---
+
+## FAQ
+

@@ -48,6 +48,16 @@ It was all possible thanks to [this DotCSV YT Video](https://www.youtube.com/wat
 
 ### Foocus
 
+### Confy-UI
+
 ### Flux
 
 ### Using HuggingFace
+
+
+### Text2Video
+
+So in 2024...it is text two video.
+
+* Mochi-1 - https://www.youtube.com/watch?v=WKyaGpiOjW4
+* 

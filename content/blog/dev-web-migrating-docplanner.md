@@ -16,11 +16,11 @@ url: 'docplanner-web-migration'
 * Chosen Domain: `psikolognevinkeskin.info`
 
 
-Currently paying **80 USD a MONTH** for that website
+Currently paying **80 USD a MONTH** for that website (and...marketplace)
 
 
 {{< callout type="info" >}}
-Time to use [FireCrawl as scrap tool](https://github.com/JAlcocerT/Scrap_Tools), to get the content
+Time to use [**FireCrawl** as scrap tool](https://github.com/JAlcocerT/Scrap_Tools), to get the content
 {{< /callout >}}
 
 ## Analyzing the Initial Status
