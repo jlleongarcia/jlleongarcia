@@ -9,6 +9,8 @@ url: 'python-stocks-webapp'
 ---
 
 
+
+
 {{< callout type="info" >}}
 After [Weather Planning](https://jalcocert.github.io/JAlcocerT/trip-planner-with-weather/), there is also the financial aspects of travelling
 {{< /callout >}}
@@ -70,6 +72,18 @@ And definitely much more than the older FlexDashboards in R.
 
 * Stocks overperforming SP500 in xyz period / last xyz months
 * YoC when I stopped investing at a certain point of time (Dave van Knapp made a all in approach, but it can serve to see what happens after a DCA strategy)
+
+
+### Interesting Pkgs I got to learn
+
+* Data Load Tool - https://github.com/dlt-hub/dlt
+
+> the open-source Python library for data loading
+
+* How to inspect a SQL DB with AI (without knowing much about it...)
+  * https://github.com/alex-wolf-ps/dbchatpro/tree/main
+  * https://www.youtube.com/watch?v=REw3y_Jv3Ig&t=0s
+  * Paid alternative - https://www.outerbase.com/
 
 ---
 

@@ -247,7 +247,10 @@ DB4S is a valuable tool for users needing an intuitive interface for SQLite data
 ### Interesting software for Vacations
 
 * https://organicmaps.app/news/
-* 
+* https://github.com/joaovitoriasilva/endurain
+* https://github.com/johanohly/AirTrail
+
+
 {{< details title="Spliit 📌" closed="true" >}}
 
 * https://github.com/spliit-app/spliit
@@ -305,7 +308,9 @@ Similar projects include **Tricount** and **Splitwise** itself.
 
 ### Using hoppscotch
 
-### HA
+### HomeAssistant
+
+With HA we also can...
 
 <https://pirateweather.net/en/latest/ha/>
 
