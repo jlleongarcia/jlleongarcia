@@ -15,7 +15,14 @@ One of the most interesting concepts Ive learn this year:
 3) **finish what you start**
 
 
-Most interesting things ive completed
+Most interesting things ive completed.
+
+A very impactful video I saw
+
+{{< youtube id="v=KSaS9m8O2Rc" autoplay="false" >}}
+
+With this channels: https://www.youtube.com/@TheDiaryOfACEO
+
 
 {{% steps %}}
 
@@ -32,6 +39,15 @@ This is the first step.
 ### Webs with AI
 
 This is the second step.
+
+### CMS for SSGs
+
+* DecapCMS
+
+### Get Better
+
+* https://stateofjs.com/en-US
+* Web Analytics: with Umami or Tianji
 
 {{% /steps %}}
 
@@ -105,6 +121,11 @@ In the meantime...
 {{< details title="Im getting better at photo/video edditing 📌" closed="true" >}}
 
 * https://github.com/JAlcocerT/YT-Video-Edition
+
+And to be investigated...
+
+* https://github.com/k4yt3x/video2x
+* You could also do it by applying UpScayl to each photogram of a video...
 
 {{< /details >}}
 

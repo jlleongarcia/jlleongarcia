@@ -114,7 +114,9 @@ But we can have a custom tool with BS4.
 
 In this case, we had to go through ~1k different urls.
 
-That was a good reason to go with a HUGO Theme as well.
+That was a good reason to go with a HUGO Theme as well. Fuwari Astro was also an alternative.
+
+Big thanks yo CaiJimmy/hugo-theme-stack-starter.
 
 Each post has 2 different languages.
 

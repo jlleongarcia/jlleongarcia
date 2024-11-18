@@ -85,6 +85,10 @@ Gain deeper insights with comprehensive location/referrer based analytics and co
 Collect email addresses and phone numbers directly from your Linktree to build your own visitor list
 Marketing tech capabilities including SEO settings, Google Analytics, Zapier, and Mailchimp integrations -->
 
+* Helping local places get a better website - https://menu.cocolounge.pl/
+  * https://cocolounge.pl/
+  * https://www.dotnpixel.pl/about.html
+
 ### Scaling Ideas
 
 These are some ideas of whats coming next.
@@ -96,7 +100,7 @@ But there are very well known services that provide interesting service without 
 1) [Linktree](https://linktr.ee/s/pricing/)
 2) [linkbio](https://www.linknbio.com/pricing)
 3) [Glow (F/OSS)](https://github.com/tryglow/glow)
-4) 
+4) https://www.stan.store/
 
 * Examples, this [artist profile](https://linktr.ee/bogusia.adryan) and this [awsome designer profile](https://linktr.ee/karwozniak)
     * And somethin' like:
@@ -107,6 +111,9 @@ But there are very well known services that provide interesting service without 
 {{< callout type="info" >}}
 Like we did at the **Social Media Project!**
 {{< /callout >}}
+
+* Weddings...
+* bodas.net
 
 * **Automatic Invoices**
   * With Stripe as payment gateway, they create the invoices for your product/services automatically

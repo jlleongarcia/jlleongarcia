@@ -151,6 +151,7 @@ powerprofilesctl list
 
 ## Conclusions of Asrock X300
 
+* https://github.com/masonr/yet-another-bench-script
 
 {{< details title="Benchmarks of Asrock x300 with Ryzen 5600G 📌" closed="true" >}}
 

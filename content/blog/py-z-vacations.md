@@ -249,6 +249,7 @@ DB4S is a valuable tool for users needing an intuitive interface for SQLite data
 * https://organicmaps.app/news/
 * https://github.com/joaovitoriasilva/endurain
 * https://github.com/johanohly/AirTrail
+* https://github.com/seanmorley15/AdventureLog
 
 
 {{< details title="Spliit 📌" closed="true" >}}
@@ -324,6 +325,8 @@ After [Weather Planning](https://jalcocert.github.io/JAlcocerT/trip-planner-with
 
 
 ### Scrapping and LLMs
+
+Get Google Flights information with python.
 
 
 {{< cards cols="1" >}}

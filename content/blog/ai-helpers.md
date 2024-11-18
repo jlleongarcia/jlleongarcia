@@ -236,6 +236,7 @@ And ofc, [vision, with Llama 3.2 Vision](https://console.groq.com/docs/vision) a
 
 * **Cool sample:** Ask questions with Groq + Function Calling + DuckDB SQl Queries- [Example](https://replit.com/t/groqcloud/repls/Execute-Verified-SQL-Queries-with-Function-Calling/view#README.md)
 
+> You can also check this project - [**yt2doc** - for YT to markdown transcription](https://github.com/shun-liang/yt2doc)
 
 #### Creating Audio for YT
 
@@ -253,6 +254,8 @@ But these are much better...
 
 Oh, and it uses [OpenAI Text2Speech](https://platform.openai.com/docs/guides/text-to-speech)
 
+
+> You can also have realistic AI audio (TTS) generated with 11ElevenLabs or...[Local Realtime voice AI con Ichigo](https://github.com/homebrewltd/ichigo)
 
 #### Video as a Code
 
@@ -973,6 +976,8 @@ Alternatives
 ## FAQ
 
 ### How to Query Different APIs
+
+You can also use OpenRouter API to query many different model providers...
 
 #### LLMs - OpenAI,Anthropic, Groq...
 

@@ -140,8 +140,10 @@ Similar projects include **Firefly III** and **GnuCash**.
 You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/author/B0BW46JD83?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true) one with AI. How? with an [**AIssistant**](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#kindle-notes-to-ai) 
 {{< /callout >}}
 
+* https://www.visualcapitalist.com/top-sp-500-stocks-return/
 
 ### Interesting Financial Data Sites
 
 * https://www.multpl.com/
   * it has Sp500 PE Ratios, 10y treausry rates...
+* https://www.wallstreetmojo.com/trailing-pe-vs-forward-pe/
