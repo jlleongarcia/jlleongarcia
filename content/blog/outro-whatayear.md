@@ -23,6 +23,9 @@ A very impactful video I saw
 
 With this channels: https://www.youtube.com/@TheDiaryOfACEO
 
+And cool food for thoughs on this posts:
+
+* 
 
 {{% steps %}}
 
@@ -67,6 +70,26 @@ This is the second step.
 {{< /details >}}
 
 
+
+
+{{< details title="Better Server Management and Networking 📌" closed="true" >}}
+
+* I got one of these [portable 4g usb routers with sim - OLAX-U90](https://allegro.pl/oferta/modem-router-4g-lte-wifi-olax-car-audio-hotspot-13172600554)
+  * Once plugged in, you get a wifi SSID to connect to and manage the router: `192.168.0.1`
+    * Credentials are written on the device & it will ask you about SIM pin
+  * If a valid sim is plugged, you can see the SMS and also make it provide internet connectivity
+
+![4g-OLAX-Portable-Router](/blog_img/mini_pc/4g-router.png)
+
+* Networking with the Pi was improved
+  * [Wifi2Ethernet bridge with Wireguard](https://jalcocert.github.io/JAlcocerT/raspberry-pi-networking/)
+
+* And I learnt a few things about Servers with the [X300](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/)
+  * Better Benchmarks
+  * Easier SelfHosting
+  
+
+{{< /details >}}
 
 {{< details title="Crypto is...back? 📌" closed="true" >}}
 
