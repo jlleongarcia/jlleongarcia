@@ -615,7 +615,7 @@ Its inclusion of Flutter for UI design and ease of deployment make it a versatil
 
 {{< /details >}}
 
-This is an **awsome video**, as always, from Fireship.
+This is an **awsome video**, as always, from **Fireship**.
 
 You can see how many frameworks+languages pairs to make web app are out there.
 

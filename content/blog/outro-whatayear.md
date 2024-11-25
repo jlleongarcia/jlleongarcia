@@ -17,19 +17,26 @@ One of the most interesting concepts Ive learn this year:
 
 Most interesting things ive completed.
 
-A very impactful video I saw
+A very **impactful video** I saw:
 
+<!-- 
 {{< youtube id="v=KSaS9m8O2Rc" autoplay="false" >}}
+-->
+
+{{< youtube "KSaS9m8O2Rc" >}}
+
 
 With this channels: https://www.youtube.com/@TheDiaryOfACEO
 
-And cool food for thoughs on this posts:
+And cool **food for thoughs** on these posts:
 
-* 
+* https://www.nickgracilla.com/posts/stop-doing-a-place/
+
+## Webs
 
 {{% steps %}}
 
-### Webs
+### Webs101
 
 This is the first step.
 
@@ -47,7 +54,7 @@ This is the second step.
 
 * DecapCMS
 
-### Get Better
+### Get Better at Webs
 
 * https://stateofjs.com/en-US
 * Web Analytics: with Umami or Tianji
@@ -70,7 +77,77 @@ This is the second step.
 {{< /details >}}
 
 
+## Servers
 
+{{% steps %}}
+
+### Better SelfHosting
+
+With this post and this script
+
+
+### Doing Better with Pi's
+
+I got an additional **Pi4** (this time 4GB Ram, 64 bits) and was helpful to:
+* Explore Computer vision
+  * With a RPi Camera - https://jalcocert.github.io/JAlcocerT/raspberry-pi-camera-setup/
+  * And a DJI Drone that can be controlled with python - https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/
+* Tinker with VPNs, Wireguard and Wifi2Eth bridge
+
+
+### Built a new PC!
+
+* The x300 - https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/
+* And learnt more about benchmarks 
+
+{{% /steps %}}
+
+
+{{< details title="Starting with a RPi-101 | version 2024 📌" closed="true" >}}
+
+* Get an OS for the RPi - https://jalcocert.github.io/RPi/posts/getting-started/
+  * I suggest BullsEye/Debian11
+  * I got some docker image issue with some [IoT Project](https://jalcocert.github.io/RPi/categories/iot-data-analytics/) 
+    * Was unable to install the Python sensor dependencies with Bookworm (strange, I know)
+
+```sh
+lsfblk -f #check whats the SD Card to install the OS
+sudo umount /dev/sda1
+#sudo lsof +f -- /dev/sda1 #whats using the partition?
+```
+
+* Use the **SelfHosting Script** - https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/
+
+```sh
+curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh
+#nano Selfhosting_101.sh #MAKE SURE YOU UNDERSTAND WHAT YOU WILL BE RUNNING
+
+chmod +x Selfhosting_101.sh
+sudo ./Selfhosting_101.sh
+```
+
+* Get to know the relevant private IPs of your Pi with:
+
+```sh
+ifconfig
+#ifconfig eth0 | grep "inet " | awk '{ print $2 }' #if ETH Connected
+#ifconfig tailscale0 | grep "inet " | awk '{ print $2 }' #for Tailscale
+```
+
+**Optional** - Save the OS image and share it with the torrent for others.
+
+Normally the RPi team keeps them [here](https://www.raspberrypi.com/software/operating-systems/), with links pointing to [this repo](https://downloads.raspberrypi.com/raspios_oldstable_lite_arm64/images/raspios_oldstable_lite_arm64-2024-10-28/), but just in case!
+
+```sh
+wget https://downloads.raspberrypi.com/raspios_oldstable_lite_arm64/images/raspios_oldstable_lite_arm64-2024-10-28/2024-10-22-raspios-bullseye-arm64-lite.img.xz.torrent
+```
+
+{{< /details >}}
+
+
+{{< callout type="info" >}}
+You can share with others the RPi OS Image via Torrent [with Docker, QBitrorrent & VPN](https://fossengineer.com/selfhosting-qBittorrent-with-docker-and-VPN/)
+{{< /callout >}}
 
 {{< details title="Better Server Management and Networking 📌" closed="true" >}}
 
@@ -156,6 +233,34 @@ And to be investigated...
 {{< callout type="info" >}}
 For Photos I am using [this kind of Hugo Gallery](https://jalcocert.github.io/JAlcocerT/creating-photo-centric-blog-with-hugo/) - <https://while.cyclingthere.com/>
 {{< /callout >}}
+
+
+## D&A
+
+{{% steps %}}
+
+### Big Data
+
+* Got the chance to work with Google Cloud/GCP
+
+> Domain Knowledge is always key - https://jalcocert.github.io/JAlcocerT/telecom-concepts-101/
+
+### Cloud
+
+This is the second step.
+
+### Python is Easy!
+
+* Environments are not a secret anymore 
+  * https://jalcocert.github.io/JAlcocerT/guide-python/
+  * https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/
+
+### Cool AI Stuff with python
+
+{{% /steps %}}
+
+
+
 
 ## Stop Coding as in 2023
 
