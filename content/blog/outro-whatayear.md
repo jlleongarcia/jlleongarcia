@@ -83,7 +83,7 @@ This is the second step.
 
 ### Better SelfHosting
 
-With this post and this script
+With [this post](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/) and this script
 
 
 ### Doing Better with Pi's
@@ -105,7 +105,7 @@ I got an additional **Pi4** (this time 4GB Ram, 64 bits) and was helpful to:
 
 {{< details title="Starting with a RPi-101 | version 2024 📌" closed="true" >}}
 
-* Get an OS for the RPi - https://jalcocert.github.io/RPi/posts/getting-started/
+* Get an [OS for the RPi with RPi-Imager](https://jalcocert.github.io/RPi/posts/getting-started/)
   * I suggest BullsEye/Debian11
   * I got some docker image issue with some [IoT Project](https://jalcocert.github.io/RPi/categories/iot-data-analytics/) 
     * Was unable to install the Python sensor dependencies with Bookworm (strange, I know)
@@ -119,6 +119,7 @@ sudo umount /dev/sda1
 * Use the **SelfHosting Script** - https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/
 
 ```sh
+#ssh jalcocert@192.168.0.155 #SSH has to be enabled with CLI or during OS Installation with RPi-Imager
 curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh
 #nano Selfhosting_101.sh #MAKE SURE YOU UNDERSTAND WHAT YOU WILL BE RUNNING
 
@@ -126,10 +127,11 @@ chmod +x Selfhosting_101.sh
 sudo ./Selfhosting_101.sh
 ```
 
-* Get to know the relevant private IPs of your Pi with:
+* Get to know the **relevant private IPs** of your Pi with:
 
 ```sh
-ifconfig
+ifconfig #I can see that my Pi is 192.168.0.155 when connected via ETH and that the mac starts with D8:3A:...
+ifconfig eth0 | grep -A 10 "<global>" #check mac, and transfered packages
 #ifconfig eth0 | grep "inet " | awk '{ print $2 }' #if ETH Connected
 #ifconfig tailscale0 | grep "inet " | awk '{ print $2 }' #for Tailscale
 ```
@@ -165,12 +167,6 @@ You can share with others the RPi OS Image via Torrent [with Docker, QBitrorrent
   * Better Benchmarks
   * Easier SelfHosting
   
-
-{{< /details >}}
-
-{{< details title="Crypto is...back? 📌" closed="true" >}}
-
-
 {{< /details >}}
 
 
@@ -180,6 +176,15 @@ You can share with others the RPi OS Image via Torrent [with Docker, QBitrorrent
 * <https://selfh.st/>
 
 {{< /details >}}
+
+## Crypto
+
+{{< details title="Crypto is...back? 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+
 
 As always, a new year comes with **opportunities to get better**.
 
@@ -237,35 +242,62 @@ For Photos I am using [this kind of Hugo Gallery](https://jalcocert.github.io/JA
 
 ## D&A
 
+A huge consolidation of knowledge in this area.
+
 {{% steps %}}
 
 ### Big Data
 
 * Got the chance to work with Google Cloud/GCP
+* Could use interesting tools: Databricks, Trino SQL, ...
+* Never forget the Big Picture
+  * Diagrams can be done with: DrawIO, MermaidJS, Python Diagrams...
 
 > Domain Knowledge is always key - https://jalcocert.github.io/JAlcocerT/telecom-concepts-101/
 
 ### Cloud
 
-This is the second step.
+
 
 ### Python is Easy!
 
 * Environments are not a secret anymore 
   * https://jalcocert.github.io/JAlcocerT/guide-python/
   * https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/
+* Always use GIT...
+  * With Github, Gitlab, or whatever you want. But *back* your code
+  * You can also remote dev - 
 
 ### Cool AI Stuff with python
+
+* I touched the Surface of Flask
+* But went quite deep into Streamlit with few Projects
+  * Multi-Purpose Assistant
+  * Multi-Chat
 
 {{% /steps %}}
 
 
 
+{{< details title="MTG Notes Template 📌" closed="true" >}}
 
-## Stop Coding as in 2023
+
+{{< /details >}}
 
 
-{{< details title="AI Asisted Dev Tools...Codeium? Copilot?Aide?Cursor...? 📌" closed="true" >}}
+{{< details title="Weekly Work Template... 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+---
+
+## Next Year 
+
+### Stop Coding as in 2023
+
+
+{{< details title="AI Asisted Dev Tools...Codeium?ContinueDev? Copilot?Aide?Cursor?Cline...? 📌" closed="true" >}}
 
 {{< /details >}}
 
