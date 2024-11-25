@@ -83,22 +83,37 @@ This is the second step.
 
 ### Better SelfHosting
 
-With [this post](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/) and this script
+With [this post](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/) and [**this script**](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_101.sh)
 
 
 ### Doing Better with Pi's
 
 I got an additional **Pi4** (this time 4GB Ram, 64 bits) and was helpful to:
-* Explore Computer vision
-  * With a RPi Camera - https://jalcocert.github.io/JAlcocerT/raspberry-pi-camera-setup/
-  * And a DJI Drone that can be controlled with python - https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/
-* Tinker with VPNs, Wireguard and Wifi2Eth bridge
+
+* Explored **Computer Vision**
+  * With a [RPi Camera](https://jalcocert.github.io/JAlcocerT/raspberry-pi-camera-setup/)
+  * And a [DJI Drone that can be controlled with python](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/)
+* Tinker with [VPNs, Wireguard and Wifi2Eth Bridge](https://jalcocert.github.io/JAlcocerT/raspberry-pi-networking/)
+* Learnt more about **device efficiency** and its relation with [power consumption](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/)
+  * A pi can be powered with the original 15W usb-c adapter (5.1V/3A DC)
+    * But as long as your adapter is able to sustain at 5V a current up to 3A it will work
+    * In idle the Pi4 sits ~4W, meaning ~0.8A (Voltage is the constant)
 
 
 ### Built a new PC!
 
-* The x300 - https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/
-* And learnt more about benchmarks 
+The [x300](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/) is here!
+
+
+* Learnt more about **benchmarks** and compared it with: [Firebat](https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/), [BMAX-B4](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#asrock-x300-and-the-bmax-b4) and...even the [ThinkPad](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/)
+* Also got amazed one more time with ARM CPUs efficiency, thanks to both [Opi5 and the RPi's](https://jalcocert.github.io/RPi/posts/pi-vs-orange/)
+
+### Third Party Servers
+
+It was the year to go [beyond Google Compute Engine](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#gcp-free-tier-deploy---cli) and the (as per my experience) arbitrary Oracle Free Tier.
+
+* I tried [Hetzner Cloud](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#analysis-paralysis---choosing-small-factor-computer)
+
 
 {{% /steps %}}
 
@@ -177,12 +192,121 @@ You can share with others the RPi OS Image via Torrent [with Docker, QBitrorrent
 
 {{< /details >}}
 
+
+## D&A
+
+A huge consolidation of knowledge in this area.
+
+{{% steps %}}
+
+### The Big Picture
+
+* Before going to Big Data, dont forget **the Big Picture**
+  * [**Diagrams** saved me hours](https://jalcocert.github.io/JAlcocerT/how-to-use-mermaid-diagrams/) of explaining hard concepts.
+    * They can be done with: DrawIO, [MermaidJS](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#diagrams-with-ai), Python Diagrams...
+    * They help me explain from brainstorm session output to MQTT & RabbitMQ workflows!!
+
+* Share knowledge with a Presentation as a Code: [**SliDev**](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#slides-creation-agent) or [Marp, RemarkJS](https://fossengineer.com/create-ppt-with-code/)
+    * [**SliDev example** with GHPages + Github Actions](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/slidev)
+
+> Domain Knowledge is always key - https://jalcocert.github.io/JAlcocerT/telecom-concepts-101/
+
+### Big Data & Cloud
+
+* Got the chance to work with Google Cloud/GCP
+* Could use interesting tools: Databricks, Trino SQL, ...
+* 
+
+### Python is Easy!
+
+* Environments are not a secret anymore 
+  * Its not just [Python](https://jalcocert.github.io/JAlcocerT/guide-python/)
+  * Or [PySpark](https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/) is not a big secret
+
+{{< details title="But having a Python env is this simple 📌" closed="true" >}}
+
+```sh
+#git clone https://github.com/JAlcocerT/DataChat
+
+#python --version
+python3 -m venv video_python_venv #create a Python virtual environment
+python -m venv video_python_venv
+
+video_python_venv\Scripts\activate #activate venv (windows)
+source video_python_venv/bin/activate #(linux)
+
+#deactivate #when you are done
+
+#pip install -r requirements.txt
+
+source .env
+#export GROQ_API_KEY="your-api-key-here"
+#set GROQ_API_KEY=your-api-key-here
+#$env:GROQ_API_KEY="your-api-key-here"
+echo $GROQ_API_KEY $OPENAI_API_KEY $ANTHROPIC_API_KEY
+
+streamlit run Z_ST_AIssistant_v1.py
+
+# git add .
+# git commit -m "better st offer analyzer"
+# git push
+```
+
+{{< /details >}}
+
+* Always **use GIT**...
+  * With [Github](https://jalcocert.github.io/JAlcocerT/github-gists), [Gitlab](https://jalcocert.github.io/JAlcocerT/how-to-use-gitlab/), or [whatever you want](https://fossengineer.com/selfhosting-Gitea-docker/). But *backup* your code.
+  * You can also do [remote/docker dev](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/)
+
+### Cool AI Stuff
+
+* I touched the Surface of [Flask](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/)
+* But went quite **deep into Streamlit** with few Projects
+  * [Multi-Purpose Assistant](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/)
+  * [Multi-Chat](https://github.com/JAlcocerT/Streamlit-MultiChat)
+  * Learnt more about [**Scrapping** and combined it with AI](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/)
+* Went from the Ollama API to try several **3rd party LLMs**
+  * OpenAI
+  * Anthropic
+  * Groq: LLama3 / 3.1 / 3.2 models are really good!
+* Made another test to the latest T2I (text 2 image) models
+  * https://jalcocert.github.io/JAlcocerT/stable-difussion-free-generation/
+
+{{% /steps %}}
+
+
+{{< callout type="warning" >}}
+I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/api/)
+{{< /callout >}}
+
+{{< details title="MTG Notes Template 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+
+{{< details title="Weekly Work Template... 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+
 ## Crypto
+
+* https://jalcocert.github.io/JAlcocerT/understading-crypto-with-ai/
 
 {{< details title="Crypto is...back? 📌" closed="true" >}}
 
 
 {{< /details >}}
+
+{{< callout type="warning" >}}
+Its probably time to go back and make [a better Web3](https://jalcocert.github.io/JAlcocerT/guide-web3/)
+{{< /callout >}}
+
+---
+
+## Outro
 
 
 
@@ -221,7 +345,7 @@ Would be amazing **to be better at what matters the most for us**.
 
 In the meantime...
 
-
+* https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/
 
 {{< details title="Im getting better at photo/video edditing 📌" closed="true" >}}
 
@@ -239,56 +363,7 @@ And to be investigated...
 For Photos I am using [this kind of Hugo Gallery](https://jalcocert.github.io/JAlcocerT/creating-photo-centric-blog-with-hugo/) - <https://while.cyclingthere.com/>
 {{< /callout >}}
 
-
-## D&A
-
-A huge consolidation of knowledge in this area.
-
-{{% steps %}}
-
-### Big Data
-
-* Got the chance to work with Google Cloud/GCP
-* Could use interesting tools: Databricks, Trino SQL, ...
-* Never forget the Big Picture
-  * Diagrams can be done with: DrawIO, MermaidJS, Python Diagrams...
-
-> Domain Knowledge is always key - https://jalcocert.github.io/JAlcocerT/telecom-concepts-101/
-
-### Cloud
-
-
-
-### Python is Easy!
-
-* Environments are not a secret anymore 
-  * https://jalcocert.github.io/JAlcocerT/guide-python/
-  * https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/
-* Always use GIT...
-  * With Github, Gitlab, or whatever you want. But *back* your code
-  * You can also remote dev - 
-
-### Cool AI Stuff with python
-
-* I touched the Surface of Flask
-* But went quite deep into Streamlit with few Projects
-  * Multi-Purpose Assistant
-  * Multi-Chat
-
-{{% /steps %}}
-
-
-
-{{< details title="MTG Notes Template 📌" closed="true" >}}
-
-
-{{< /details >}}
-
-
-{{< details title="Weekly Work Template... 📌" closed="true" >}}
-
-
-{{< /details >}}
+### Closing Thoughts for 2024
 
 ---
 
@@ -381,4 +456,3 @@ SysLinuxOS provides a solid foundation for system administrators, but users shou
 
 
 {{< /details >}}
-

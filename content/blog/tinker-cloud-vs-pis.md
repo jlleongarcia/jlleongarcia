@@ -99,7 +99,7 @@ No discussion here - The Raspberries are the absolute winners.
 
 Also in software support.
 
-> I have to comment that **I prefer BullsEye** over Bookworm for the Pi's for IoT/CV Projects
+> I have to comment that **I prefer BullsEye** over Bookworm for the Pi's for [IoT/CV Projects](https://jalcocert.github.io/RPi/categories/iot-data-analytics/)
 
 {{< details title="OrangePi 5 with Latest Kernel 📌" closed="true" >}}
 * [Installing OS](https://jalcocert.github.io/RPi/posts/getting-started/) with latest kernel thanks to [Joshua-Riek](https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5b.html)
