@@ -633,27 +633,24 @@ https://www.youtube.com/watch?v=Y9YbCvzAwas
 
 #### How can I use LLMs to help me code
 
-* Open Source VSCode extensions:
-  * https://github.com/codota/TabNine
-    [MIT](https://github.com/codota/TabNine?tab=MIT-1-ov-file#readme)
-    https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode
+Open Source **VSCode extensions**:
 
-* Tabby
-https://fossengineer.com/selfhosting-Tabby-coding-assistant/
+* https://github.com/codota/TabNine
+  * [MIT](https://github.com/codota/TabNine?tab=MIT-1-ov-file#readme)
+ * https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode
 
-* https://github.com/sourcegraph/cody
-AI that knows your entire codebase
-https://sourcegraph.com/docs/cody
-https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai
+* [Tabby](https://fossengineer.com/selfhosting-Tabby-coding-assistant/)
+
+* https://github.com/sourcegraph/cody - AI that knows your entire codebase
+  * https://sourcegraph.com/docs/cody
+  * https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai
 
 * https://sourcegraph.com/docs/cody/usage-and-pricing
 
-* Codeium
-https://github.com/Exafunction/CodeiumVisualStudio
-  https://marketplace.visualstudio.com/items?itemName=Codeium.CodeiumVS
-https://github.com/Exafunction/codeium-chrome
+* [Codeium](https://github.com/Exafunction/CodeiumVisualStudio)
+  * https://marketplace.visualstudio.com/items?itemName=Codeium.CodeiumVS
+  * https://github.com/Exafunction/codeium-chrome
 
 * Rivet - https://github.com/Ironclad/rivet/releases
 
 * Codestral Mamba (Open Source Coding Model from MistralAI)
-

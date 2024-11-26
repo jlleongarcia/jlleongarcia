@@ -8,14 +8,11 @@ summary: 'Looking back to the learnings of this year'
 url: 'this-year-was-crazy'
 ---
 
-One of the most interesting concepts Ive learn this year:
+One of the most **interesting concepts** Ive learn this year:
 
-1) **bikeshedding** 
-2) **show your work**
-3) **finish what you start**
-
-
-Most interesting things ive completed.
+1) **Bike-shedding** 
+2) **Show your work** - Together with the [First 5 Clients Framework](https://www.acquisition.com/training/leads4)
+3) **Finish what you start**
 
 A very **impactful video** I saw:
 
@@ -31,6 +28,24 @@ With this channels: https://www.youtube.com/@TheDiaryOfACEO
 And cool **food for thoughs** on these posts:
 
 * https://www.nickgracilla.com/posts/stop-doing-a-place/
+  * https://www.nickgracilla.com/posts/year-in-review-template/
+* https://blog.cavelab.dev/2022/01/a-person-that-writes/
+
+
+*I was lucky to find them! As the "search algorithms" are not placing this high valuable content in front of your eyes*
+
+
+{{< details title="Examples of People Doing Cool Stuff 📌" closed="true" >}}
+
+* https://blog.cavelab.dev/2021/11/wifi-relays-for-ventilation/
+
+{{< /details >}}
+
+
+---
+
+*Most interesting things ive completed...*
+
 
 ## Webs
 
@@ -45,6 +60,9 @@ This is the first step.
 #hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" --port=1313
 #hugo server --bind="0.0.0.0" --baseURL="http://100.104.143.77" --port=1319
 ```
+* Explore new libraries:
+  * CSS - 
+  * JS - 
 
 ### Webs with AI
 
@@ -58,6 +76,10 @@ This is the second step.
 
 * https://stateofjs.com/en-US
 * Web Analytics: with Umami or Tianji
+
+Need to have a look to me RPi site, as there is sth wrong with the Jekyll automatic CI/CD build.
+
+Probably will need to [migrate from Jekyll](https://simplyexplained.com/blog/migrating-this-blog-from-jekyll-to-eleventy/) at some point to HUGO/Astro.
 
 {{% /steps %}}
 
@@ -276,7 +298,7 @@ streamlit run Z_ST_AIssistant_v1.py
 
 
 {{< callout type="warning" >}}
-I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/api/)
+I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/api/), Grok, Gemini...
 {{< /callout >}}
 
 {{< details title="MTG Notes Template 📌" closed="true" >}}
@@ -295,7 +317,14 @@ I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/a
 
 * https://jalcocert.github.io/JAlcocerT/understading-crypto-with-ai/
 
+> A recap on [BlockChain](https://simplyexplained.com/videos/how-does-a-blockchain-work/)
+
 {{< details title="Crypto is...back? 📌" closed="true" >}}
+
+With KYC both, Binance and Kraken worked fine to me.
+
+According to [reddit](https://www.reddit.com/r/BitcoinBeginners/comments/k6gm2d/best_exchange_without_needing_to_verify_id/), hodlhodl is a place to exchange BTC without KYC
+> No keys, no coins - Make sure you understand how wallets work. 
 
 
 {{< /details >}}
@@ -306,9 +335,7 @@ Its probably time to go back and make [a better Web3](https://jalcocert.github.i
 
 ---
 
-## Outro
-
-
+## Looking Forward
 
 As always, a new year comes with **opportunities to get better**.
 
@@ -367,29 +394,10 @@ For Photos I am using [this kind of Hugo Gallery](https://jalcocert.github.io/JA
 
 ---
 
-## Next Year 
-
-### Stop Coding as in 2023
+### Next Year 
 
 
-{{< details title="AI Asisted Dev Tools...Codeium?ContinueDev? Copilot?Aide?Cursor?Cline...? 📌" closed="true" >}}
-
-{{< /details >}}
-
-
-
-
-{{< details title="AI Asisted Web Search... 📌" closed="true" >}}
-
-Perplexity? Or **Perplexica**?
-
-
-
-{{< /details >}}
-
----
-
-{{< details title="Maybe next year... 📌" closed="true" >}}
+{{< details title="Maybe next year...Dev Stuff 📌" closed="true" >}}
 
 **Go**
 
@@ -403,7 +411,7 @@ Go has become a popular language due to several key strengths that align with th
 
 The popularity of **Go** has been further driven by the rise of **Kubernetes**, which is written in Go and has become a core part of cloud-native environments.
 
-### Summary of Transitioning to Go for Node.js Developers:
+Summary of Transitioning to Go for Node.js Developers:
 
 - **Go's Performance**: As a compiled language, it offers faster execution compared to interpreted languages like JavaScript.
 - **Concurrency in Go**: Goroutines and channels allow for easy management of concurrent tasks, making Go ideal for scalable applications.
@@ -456,3 +464,23 @@ SysLinuxOS provides a solid foundation for system administrators, but users shou
 
 
 {{< /details >}}
+
+#### Stop Coding as in 2023
+
+
+{{< details title="AI Asisted Dev Tools...Codeium?ContinueDev? Copilot?Aide?Cursor?Cline...? 📌" closed="true" >}}
+
+{{< /details >}}
+
+
+
+
+{{< details title="AI Asisted Web Search... 📌" closed="true" >}}
+
+Perplexity? Or **Perplexica**?
+
+
+
+{{< /details >}}
+
+---

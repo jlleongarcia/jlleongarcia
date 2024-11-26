@@ -93,6 +93,18 @@ import photopost1b from '../../assets/image.jpg';
 
 ## Tweaking HUGO Themes
 
+[HUGO](https://fossengineer.com/web-guide-Hugo/) is great.
+
+The [HUGO Setup](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/) was the first SSG that I could get working back in the days.
+
+
+{{< details title="HUGO Themes I Like📌" closed="true" >}}
+
+* You can combine HUGO with RevealJS to create [awsome presentations](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#slides-creation-agent)!
+  * Similarly to what we can do with [**SliDev** - Example at MultiChat](https://jalcocert.github.io/JAlcocerT/create-streamlit-chatgpt/#a-multichat-with-streamlit)
+  * HUGO + RevealJS - [Sample1](https://github.com/joshed-io/reveal-hugo), [Sample2](https://github.com/RealOrangeOne/hugo-theme-revealjs)
+
+{{< /details >}}
 
 If you are using HUGO, embedd your images with [this shortcode](https://raw.githubusercontent.com/gohugoio/hugo/master/tpl/tplimpl/embedded/templates/shortcodes/figure.html)
 
@@ -108,7 +120,7 @@ If you are using HUGO, embedd your images with [this shortcode](https://raw.gith
 
 {{< /details >}}
 
-{{< details title="How to add ads.txt to HUGO 📌" closed="true" >}}
+{{< details title="How to add `ads.txt` to HUGO 📌" closed="true" >}}
 
 1. **Create an `ads.txt` file** in your Hugo project’s `static` directory. The `static` folder in Hugo is where you put any files you want to be copied directly to the root of your build output.
 
@@ -133,7 +145,7 @@ This method ensures that `ads.txt` is part of your site’s root directory in th
 
 ### HUGO with Github Pages & CICD
 
-Its very important to know the version that makes the theme work.
+Its very important to know the **HUGO version** that makes the theme work.
 
 Laos when you are using [Github Actions Workflow](https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml).
 
@@ -148,6 +160,52 @@ hugo v0.117.0-b2f0696cad918fb61420a6aff173eb36662b406e+extended linux/amd64 Buil
 ```
 
 But not with higher versions like v0.124.
+
+## Deployments
+
+
+{{% steps %}}
+
+### Select a SSG
+
+This is the first step.
+
+
+### Tweak the Theme and Build
+
+This is the second step.
+
+### Select the Deployment Method
+
+* Firebase
+* Github Pages or Gitlab Pages
+* Cloudflare
+* AWS S3 Buckets - https://blog.cavelab.dev/2021/08/deploying-hugo-blog-to-s3/
+* Others - Netlify, Server with NGINX... 
+
+> See a [benchmark of Static Hosting](https://simplyexplained.com/blog/benchmarking-static-website-hosting-providers/)
+
+{{< details title="Free SSG Deployment 📌" closed="true" >}}
+
+* With **Firebase**, the Free Tier allows for up to 10GB for ppl to download your content.
+  * Per month, and at least at the time of writing. This might (or not) change.
+
+```sh
+firebase init #configure files for firebase hosting / public directory is normall public for HUGO and dist for Astro/nodes
+firebase deploy #you will get something like -> https://jalcocertech.web.app/
+```
+
+* You can also try with [Cloudflare](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#faq) or Github Pages.
+
+{{< /details >}}
+
+### Get Better at Webs
+
+* https://stateofjs.com/en-US
+* Web Analytics: with Umami or Tianji
+
+{{% /steps %}}
+
 
 ---
 
@@ -182,6 +240,13 @@ If found sth, you can use that URL to check for the sitemap instead
 {{< /details >}}
 
 
+
+{{< details title="How to Optimize Web Images - WebP 📌" closed="true" >}}
+
+* https://simplyexplained.com/blog/implementing-webp-images-on-eleventy-site/
+
+{{< /details >}}
+
 {{< cards cols="2" >}}
   {{< card link="https://roadmap.sh/frontend" title="Front End RoadMap" >}}
   {{< card link="https://roadmap.sh/backend" title="Back End RoadMap" >}}
@@ -198,19 +263,7 @@ You need markdown for these SSGs - https://github.com/Cveinnt/LetsMarkdown.com
 docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
 ```
 
-{{< details title="Free SSG Deployment 📌" closed="true" >}}
 
-* With **Firebase**, the Free Tier allows for up to 10GB for ppl to download your content.
-  * Per month, and at least at the time of writing. This might (or not) change.
-
-```sh
-firebase init #configure files for firebase hosting / public directory is normall public for HUGO and dist for Astro/nodes
-firebase deploy #you will get something like -> https://jalcocertech.web.app/
-```
-
-* You can also try with [Cloudflare](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#faq) or Github Pages.
-
-{{< /details >}}
 
 ### Is my website performing well?
 
@@ -245,3 +298,7 @@ It's worth to try few of them - not all the content is indexed in the same way a
 {{< callout type="info" >}}
 **Thanks to Ecosia** I could find how to add Web Analytics to the Jekyll Chirpy Theme!
 {{< /callout >}}
+
+### Enhancing a Site
+
+* https://blog.cavelab.dev/2022/01/comments-again/

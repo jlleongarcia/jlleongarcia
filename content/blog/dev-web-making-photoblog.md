@@ -11,8 +11,9 @@ For this **client**, I had to make something **special**.
 
 She's a traveler, **Photo Adict**, content creator and Artist.
 
+*Thanks to NicoKaiser and CaveLab for the content:*
 * https://nicokaiser.github.io/hugo-theme-gallery/animals/cats/
-
+* https://blog.cavelab.dev/2021/04/photo-gallery-posts/
 
 {{< details title="Themes I love for Galleries 📌" closed="true" >}}
 
