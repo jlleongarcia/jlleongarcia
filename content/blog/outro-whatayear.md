@@ -53,29 +53,27 @@ And cool **food for thoughs** on these posts:
 
 ### Webs101
 
-This is the first step.
+This is the first step: Setup HUGO or Setup Astro.
 
 ```sh
 #hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" 
 #hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" --port=1313
 #hugo server --bind="0.0.0.0" --baseURL="http://100.104.143.77" --port=1319
 ```
+
 * Explore new libraries:
-  * CSS - 
-  * JS - 
+  * [CSS](https://jalcocert.github.io/JAlcocerT/blog/dev-css/)
+  * [JS](https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/#chartjs)
 
 ### Webs with AI
 
-This is the second step.
-
-### CMS for SSGs
-
-* DecapCMS
+From an [AI driven content](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#automatic-blog-creation) web, to [migrating webs with AI](https://jalcocert.github.io/JAlcocerT/how-to-migrate-a-website/)
 
 ### Get Better at Webs
 
 * https://stateofjs.com/en-US
 * Web Analytics: with Umami or Tianji
+* CMS for Webs: DecapCMS, ...
 
 Need to have a look to me RPi site, as there is sth wrong with the Jekyll automatic CI/CD build.
 
@@ -108,6 +106,8 @@ Probably will need to [migrate from Jekyll](https://simplyexplained.com/blog/mig
 With [this post](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/) and [**this script**](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_101.sh)
 
 
+* Understood better [how DNS works](https://jalcocert.github.io/Linux/docs/privacy/#changing-linux-dns) and went fully with BitWarden+ 2FAS Auth
+
 ### Doing Better with Pi's
 
 I got an additional **Pi4** (this time 4GB Ram, 64 bits) and was helpful to:
@@ -120,7 +120,17 @@ I got an additional **Pi4** (this time 4GB Ram, 64 bits) and was helpful to:
   * A pi can be powered with the original 15W usb-c adapter (5.1V/3A DC)
     * But as long as your adapter is able to sustain at 5V a current up to 3A it will work
     * In idle the Pi4 sits ~4W, meaning ~0.8A (Voltage is the constant)
+* [Used Ansible!](https://jalcocert.github.io/Linux/docs/linux__cloud/ansible/) Combined an [IoT Project (DHT-Mongo-Metabase)](https://jalcocert.github.io/RPi/posts/rpi-ansible/)
 
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/JAlcocerT/rpi-mjpg-streamer" title="RPi Streamer" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/pi-vs-orange/#the-raspberry-pi-4" title="A Raspberry Pi? A SBC?" >}}
+{{< /cards >}}
+
+{{< callout type="warning" >}}
+Definitely want to go back to the IoT Projects and do sth with Small Solar Panels
+{{< /callout >}}
 
 ### Built a new PC!
 
@@ -136,6 +146,7 @@ It was the year to go [beyond Google Compute Engine](https://jalcocert.github.io
 
 * I tried [Hetzner Cloud](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#analysis-paralysis---choosing-small-factor-computer)
 
+> Also gave it a try to Podman Containers, [Termux Virtualization](https://jalcocert.github.io/Linux/docs/privacy/android/#how-to-use-linux-on-android-with-termux). Oh and with [QEMU i can create multiarch containers images with Github Actions](https://jalcocert.github.io/JAlcocerT/create-streamlit-chatgpt/#conclusion---and-what-i-learnt)!
 
 {{% /steps %}}
 
@@ -185,10 +196,14 @@ wget https://downloads.raspberrypi.com/raspios_oldstable_lite_arm64/images/raspi
 
 
 {{< callout type="info" >}}
-You can share with others the RPi OS Image via Torrent [with Docker, QBitrorrent & VPN](https://fossengineer.com/selfhosting-qBittorrent-with-docker-and-VPN/)
+You can share with others the **RPi OS Image via Torrent** [with Docker, QBitrorrent & VPN](https://fossengineer.com/selfhosting-qBittorrent-with-docker-and-VPN/)
 {{< /callout >}}
 
-{{< details title="Better Server Management and Networking 📌" closed="true" >}}
+{{< details title="Better Networking 📌" closed="true" >}}
+
+This year I changed [my router](https://github.com/Exafunction/CodeiumVisualStudio)!
+Went from a **Compal MV1 to a NE6037** (still COAX, I know!)
+
 
 * I got one of these [portable 4g usb routers with sim - OLAX-U90](https://allegro.pl/oferta/modem-router-4g-lte-wifi-olax-car-audio-hotspot-13172600554)
   * Once plugged in, you get a wifi SSID to connect to and manage the router: `192.168.0.1`
@@ -200,12 +215,14 @@ You can share with others the RPi OS Image via Torrent [with Docker, QBitrorrent
 * Networking with the Pi was improved
   * [Wifi2Ethernet bridge with Wireguard](https://jalcocert.github.io/JAlcocerT/raspberry-pi-networking/)
 
-* And I learnt a few things about Servers with the [X300](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/)
-  * Better Benchmarks
-  * Easier SelfHosting
-  
+
 {{< /details >}}
 
+
+I learnt a few things **about Servers** with the [X300](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/)
+* Better Benchmarks
+* Easier SelfHosting
+  
 
 {{< details title="Not more, but better SelfHosting 📌" closed="true" >}}
 
@@ -225,8 +242,8 @@ A huge consolidation of knowledge in this area.
 
 * Before going to Big Data, dont forget **the Big Picture**
   * [**Diagrams** saved me hours](https://jalcocert.github.io/JAlcocerT/how-to-use-mermaid-diagrams/) of explaining hard concepts.
-    * They can be done with: DrawIO, [MermaidJS](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#diagrams-with-ai), Python Diagrams...
-    * They help me explain from brainstorm session output to MQTT & RabbitMQ workflows!!
+    * They can be done with: [DrawIO](https://fossengineer.com/selfhosting-drawio-with-docker/), [MermaidJS](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#diagrams-with-ai), Python Diagrams, [ExcaliDraw](https://fossengineer.com/selfhosting-excalidraw/), ...
+    * They help me explain from `brainstorm sessions output` to `MQTT & RabbitMQ` workflows!!
 
 * Share knowledge with a Presentation as a Code: [**SliDev**](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#slides-creation-agent) or [Marp, RemarkJS](https://fossengineer.com/create-ppt-with-code/)
     * [**SliDev example** with GHPages + Github Actions](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/slidev)
@@ -236,7 +253,7 @@ A huge consolidation of knowledge in this area.
 ### Big Data & Cloud
 
 * Got the chance to work with Google Cloud/GCP
-* Could use interesting tools: Databricks, Trino SQL, ...
+* Could use interesting tools: Databricks, Trino (ex Presto-SQL), ...
 * 
 
 ### Python is Easy!
@@ -244,6 +261,8 @@ A huge consolidation of knowledge in this area.
 * Environments are not a secret anymore 
   * Its not just [Python](https://jalcocert.github.io/JAlcocerT/guide-python/)
   * Or [PySpark](https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/) is not a big secret
+* Neither it is having a [cool readme](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/README.md)
+
 
 {{< details title="But having a Python env is this simple 📌" closed="true" >}}
 
@@ -303,6 +322,8 @@ I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/a
 
 {{< details title="MTG Notes Template 📌" closed="true" >}}
 
+Initially, I had this one for Telecom
+
 
 {{< /details >}}
 
@@ -311,6 +332,9 @@ I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/a
 
 
 {{< /details >}}
+
+![Cat product Meme](/blog_img/memes/features-vs-needs.png)
+*The final user always has the last word on rating what you've built*
 
 
 ## Crypto
@@ -323,9 +347,16 @@ I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/a
 
 With KYC both, Binance and Kraken worked fine to me.
 
-According to [reddit](https://www.reddit.com/r/BitcoinBeginners/comments/k6gm2d/best_exchange_without_needing_to_verify_id/), hodlhodl is a place to exchange BTC without KYC
+According to [reddit](https://www.reddit.com/r/BitcoinBeginners/comments/k6gm2d/best_exchange_without_needing_to_verify_id/), hodlhodl is a place to exchange BTC without KYC.
+
 > No keys, no coins - Make sure you understand how wallets work. 
 
+```sh
+flatpak install flathub org.electrum.electrum #BTC
+
+flatpak install flathub org.featherwallet.Feather #Monero
+#flatpak install flathub org.getmonero.Monero
+```
 
 {{< /details >}}
 

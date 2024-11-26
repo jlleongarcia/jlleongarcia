@@ -29,6 +29,8 @@ It's gonna be a companion for the **[next adventures](#adventures)**
 
 ![Karting Adventure](/blog_img/Accidente_karting-min.gif)
 
+Definitely a huge upgrade in quality to the [RPi Camera I tested](https://jalcocert.github.io/JAlcocerT/raspberry-pi-camera-setup/)
+
 
 ### DJi OA5Pro Video Quality
 

@@ -363,14 +363,16 @@ https://github.com/radix-ui/primitives - Unstyled, accessible, open source React
 
 #### ChartJS
 
-https://github.com/chartjs/Chart.js
-https://www.chartjs.org/
-https://github.com/chartjs/Chart.js?tab=MIT-1-ov-file#readme
+* https://github.com/chartjs/Chart.js
+* https://www.chartjs.org/
+* https://github.com/chartjs/Chart.js?tab=MIT-1-ov-file#readme
 
 > Simple yet flexible JavaScript charting library for the modern web
 Simple HTML5 Charts using the <canvas> tag
 
+#### Swiper
 
+* https://github.com/nolimits4web/swiper
 
 #### MermaidJS
 

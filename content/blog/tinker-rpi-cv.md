@@ -10,6 +10,13 @@ url: 'raspberry-pi-camera-setup'
 
 ## Raspberry Pi + Camera
 
+It is time to have a companion for my Raspberry Pi 4.
+
+{{< cards cols="2" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/getting-started/" title="Get Started with a RPi" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/pi-vs-orange/#the-raspberry-pi-4" title="A Raspberry Pi? A SBC?" >}}
+{{< /cards >}}
+
 ### Hardware
 
 
@@ -23,87 +30,109 @@ https://www.youtube.com/watch?v=UxsiBxcXbYc -->
 
 ### Taking Pictures and Streaming Video
 
-Enable the camera:
+
+{{< details title="Connect to your Pi via SSH 📌" closed="true" >}}
+
+When installing the OS with RPi-Imager you can choose to have SSH enabled.
+
+Or you can enable it later [like so](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
 
 ```sh
-sudo raspi-config #Interface Options -> I1 Enable (legacy) camera Support #bullseye 6.1kernel
-#you will be prompt to reboot
+ssh re@192.168.0.232
+```
+
+{{< /details >}}
+
+**Enable the camera**:
+
+```sh
+sudo raspi-config #Interface Options
+#-->> I1 Enable (legacy) camera Support #bullseye 6.1kernel
+sudo reboot #you will be prompt to reboot
 ```
 
 Take a picture simply with: <!-- https://www.youtube.com/watch?v=yhM1NhD-kGs -->
 
 ```sh
 raspistill -o pico.jpg
-#scp yourraspbiuser@192.168.3.130:/home/reisipi/pico.jpg . #copy it to windows CMD
+#scp yourraspbiuser@192.168.0.232:/home/reisipi/pico.jpg . #copy it to windows CMD
 ```
 
 #### Save Pictures Every 60s
+
+Get the sample script at my [RPi Repo](https://github.com/JAlcocerT/RPi/tree/main/Z_RPi_Cam)!
 
 ```sh
 mkdir -p ~/growth
 nano capture_images.sh
 ./capture_images.sh
 ```
+
 {{< callout type="info" >}}
-* Get the sample script at my [RPi Repo](https://github.com/JAlcocerT/RPi/tree/main/Z_RPi_Cam)!
-* See/Download the images while being created [with Filebrowser](https://github.com/JAlcocerT/Docker/blob/main/Z_Dockge/stacks/syncthingfilebrowser/compose.yaml)
+See/Download the images while being created [with Filebrowser](https://github.com/JAlcocerT/Docker/blob/main/Z_Dockge/stacks/syncthingfilebrowser/compose.yaml)
 {{< /callout >}}
 
-* And now video streaming with:
+#### Pi Camera - Video Streaming
 
-{{< card link="https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/" title="Card with tag" icon="warning" tag= "Setup Docker" >}}
+And now video streaming with:
+
+{{< card link="https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/" title="Get ready for SelfHosting" icon="warning" tag= "Setup Docker" >}}
 
 ```sh
-git clone https://github.com/meinside/rpi-mjpg-streamer #https://github.com/JAlcocerT/rpi-mjpg-streamer
+git clone https://github.com/meinside/rpi-mjpg-streamer 
+#git clone https://github.com/JAlcocerT/rpi-mjpg-streamer
 cd rpi-mjpg-streamer
 ```
 
 {{< callout type="info" >}}
-I [forked it](https://github.com/JAlcocerT/rpi-mjpg-streamer), just in case :)
+I [forked it](https://github.com/JAlcocerT/rpi-mjpg-streamer) 💻 just in case!
 {{< /callout >}}
 
-Build the image:
+**Build the image** (use the user/pass that you'd like!)
 
 ```sh
-sudo docker build -t streamer:latest \
-		--build-arg PORT=9999 \
-		--build-arg RESOLUTION=400x300 \
-		--build-arg FPS=24 \
-		--build-arg ANGLE=0 \
-		--build-arg FLIPPED=false \
-		--build-arg MIRRORED=false \
-		--build-arg USERNAME=user \
-		--build-arg PASSWORD=some-password \
-		.
+sudo docker build --no-cache -t streamer:latest \
+    --build-arg PORT=9999 \
+    --build-arg RESOLUTION=400x300 \
+    --build-arg FPS=24 \
+    --build-arg ANGLE=0 \
+    --build-arg FLIPPED=false \
+    --build-arg MIRRORED=false \
+    --build-arg USERNAME=user \
+    --build-arg PASSWORD=some-password \
+    .
 ```
 
-Deploy the image:
+*This took ~2min in my RPi4 2GB*
+
+**Deploy the container** image: with CLI or with Docker-Compose
 
 ```sh
 docker run -p 9999:9999 --device /dev/video0 -it streamer:latest
 ```
 
-{{< details title="streamer Docker Compose 📌" closed="true" >}}
+{{< details title="Streamer Docker Compose 📌" closed="true" >}}
 
 ```yml
 version: '3'
 services:
   streamer:
     image: streamer:latest
-    container_name: streamer
+    container_name: streamer_rpi_cam
     ports:
       - "9999:9999"
     devices:
       - "/dev/video0:/dev/video0"
     stdin_open: true
     tty: true
+    restart: unless-stopped
 ```
 
 {{< /details >}}
 
 And we will have the interface ready at the specified port: `localhost:9999` and user/password as per your specifications while building the image.
 
-> Working **up to GNU v11** (not available in bookworm!)
+> Working **up to GNU Debian v11 - Bullseye** (not available in bookworm!)
 
 ---
 
@@ -224,10 +253,7 @@ A complete and local NVR designed for Home Assistant with AI object detection. U
 ### Other Options for CV with RPi
 
 * https://github.com/silvanmelchior/RPi_Cam_Web_Interface
-
-
-
-<https://www.youtube.com/watch?v=tT5gHNDBHXo>
+* <https://www.youtube.com/watch?v=tT5gHNDBHXo>
 
 
 
@@ -238,7 +264,9 @@ A complete and local NVR designed for Home Assistant with AI object detection. U
 
 * HA Desktop - https://flathub.org/apps/com.cassidyjames.butler
 
-MJPG-streamer takes JPGs from Linux-UVC compatible webcams, filesystem or other input plugins and streams them as M-JPEG via HTTP to webbrowsers, VLC and other software. It is the successor of uvc-streamer, a Linux-UVC streaming application with Pan/Tilt
+MJPG-streamer takes JPGs from Linux-UVC compatible webcams, filesystem or other input plugins and streams them as M-JPEG via HTTP to webbrowsers, VLC and other software.
+
+It is the successor of uvc-streamer, a Linux-UVC streaming application with Pan/Tilt
 
 * https://github.com/jacksonliam/mjpg-streamer
   * https://sourceforge.net/projects/mjpg-streamer/
@@ -250,14 +278,15 @@ MJPG-streamer takes JPGs from Linux-UVC compatible webcams, filesystem or other 
 
 * For code: https://ollama.com/library/deepseek-coder
     * https://ollama.com/library/phind-codellama
+
 * Daily: https://ollama.com/library/gemma
-https://ollama.com/library/orca-mini
-https://ollama.com/library/tinyllama
+  * https://ollama.com/library/orca-mini
+  * https://ollama.com/library/tinyllama
 
 
 ### How to use Ollama with a Raspberry Pi
 
-You can [SelfHost Ollama with Docker](https://fossengineer.com/selfhosting-llms-ollama/) and choose a small enough model that it will fit in the RAM.
+You can [**SelfHost Ollama** with Docker](https://fossengineer.com/selfhosting-llms-ollama/) and choose a small enough model that it will fit in the RAM.
 
 Build multimodal AI applications with cloud-native stack:
 * <https://github.com/jina-ai/jina>
@@ -272,13 +301,12 @@ Build multimodal AI applications with cloud-native stack:
 
 ### More
 
-How to Install Raspberri Pi camera and Troubleshoot errors | Upgrade Bios Firmware on Raspberry Pi
-https://www.youtube.com/watch?v=Z8cs1cRrc5A
+[How to Install Raspberri Pi camera and Troubleshoot errors | Upgrade Bios Firmware on Raspberry Pi](https://www.youtube.com/watch?v=Z8cs1cRrc5A)
 
 
 
-<https://www.youtube.com/watch?v=tT5gHNDBHXo>
 
+{{< youtube "tT5gHNDBHXo" >}}
 
 
 

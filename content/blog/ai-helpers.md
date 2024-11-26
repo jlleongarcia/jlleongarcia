@@ -279,6 +279,8 @@ Its all about the prompts, as we can see with **these use cases** that give life
 
 ### Slides Creation Agent
 
+Presentations as a code, noways means AI driven ppt's.
+
 [SliDev is an awsome project](https://fossengineer.com/how-to-use-slidev/) to generate PPT as code - **leveraging VueJS**.
 
 I love the SliDev project so much, that [I forked it](https://github.com/JAlcocerT/slidev).

@@ -1,9 +1,10 @@
 ---
 title: "Learning about 3D Printing and more"
-date: 2024-08-10T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Tinkering"]
 summary: abcd
+url: 'starting-with-3dprinting'
 ---
 
 ## Choosing a Printer
@@ -159,7 +160,8 @@ Can't wait to make some mechanism design and see it work.
 
 <!-- https://www.youtube.com/watch?v=qQmQ9ZpvHUo -->
 
-{{< youtube id="v=qQmQ9ZpvHUo" autoplay="false" >}}
+<!-- {{< youtube id="v=qQmQ9ZpvHUo" autoplay="false" >}} -->
+{{< youtube "qQmQ9ZpvHUo" >}}
 
 
 ---

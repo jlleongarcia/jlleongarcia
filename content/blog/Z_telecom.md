@@ -10,11 +10,13 @@ url: 'telecom-concepts-101'
 
 Building the data lakehouse by Bill Inmon. Helped me a lot. 
 
-
+https://jalcocert.github.io/RPi/posts/self-internet-monit/
 
 {{< callout type="info" >}}
-Get Ready for Diagrams: mermaid or DrawIO
+Measure your Home Internet Speed with: [WYL and OpenSpeedTest/SpeedTest Tracker](https://jalcocert.github.io/RPi/posts/self-internet-monit/)
 {{< /callout >}}
+
+
 
 ## Telecom Concepts
 
@@ -140,7 +142,9 @@ MoCA technology provides an effective way to enhance home network performance by
 
 ### Optical Network Terminal (ONT)
 
-**ONT (Optical Network Terminal)** is a device used in fiber-optic internet setups like Fiber to the Home (FTTH) or Fiber to the Building (FTTB). It converts the optical signal from the carrier’s network into electronic signals that can be used by home devices (computers, routers, TVs).
+**ONT (Optical Network Terminal)** is a device used in fiber-optic internet setups like Fiber to the Home (FTTH) or Fiber to the Building (FTTB).
+
+It converts the optical signal from the carrier’s network into electronic signals that can be used by home devices (computers, routers, TVs).
 
 - **Function**: Converts light signals into electronic signals.
 - **Ports**: Provides Ethernet, telephone, and sometimes video outputs.
@@ -553,7 +557,7 @@ While RDK-B is focused on software standardization for broadband devices, OFT (O
 
 ## FAQ
 
-A common data model, CDM, or unified pipeline / wide table can help to correlate.
+A Common Data Model (**CDM**) / unified pipeline / wide table can help to correlate issues.
 <!-- 
 wifi pod/connect box -- plume cloud --- aws s3 bucket --- ODH preprocessing --- country specific data feed
 right now is 3hours
@@ -561,12 +565,14 @@ phase 1 (28 weeks) --- 90 min
 phase 2 = phase 1 + 12 weeks --- 20/40 min
  -->
 
+Typical Gateways (Routers) Models: remember the **differences between DSL<COAX<Fiber**.
+
 | GW Type       | GW Model  | Comment                                                                 |
 |---------------|-----------|-------------------------------------------------------------------------|
 | TG2492LG(-xx) | Arris Mv1 | Arris/CommScope This has an issue and can have a case when              |
 | TG3492LG(-xx) | MV2       | This model has a fan and reports its speed                              |
 | CH7465LG(-xx) | Compal MV1| Most popular in CH (Jan 2023) [Compal CH7465LG-VM](https://portforward.com/compal/ch7465lg-vm/) |
-| F3896LG       | MV2+      | Hub5 in Virgin Media they call it                                       |
+| F3896LG       | MV2+      | Hub5 in Virgin Media                                   |
 | F5685LGB      | MV3 Bosa  |                                                                         |
 | F5685LGE      | MV3 Eth   |                                                                         |
 
@@ -575,6 +581,9 @@ To Analyze such data, [PySpark is highly beneficial](https://jalcocert.github.io
 {{< /callout >}}
 
 {{< details title="PySpark Examples 📌" closed="true" >}}
+
+* https://jalcocert.github.io/JAlcocerT/guide-python/
+* https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/
 
 ```py
 #Countdistinct one column when another a certain condition
@@ -600,20 +609,22 @@ streamparser_kafka \
 
 
 {{< details title="Sometimes you need Data Engineering Magic 📌" closed="true" >}}
+
 - **Pod as Root Node**: For customers without a Cable Modem (CM) provided by LibG, control over these pods is not possible; only monitoring of pod behavior is feasible.
+
 - **TCID Usage**: Instead of using MAC addresses, an ODH-generated ID (TCID) should be considered as a primary key for these cases.
    - **Data Filtering**: It may be necessary to introduce a filter in our pipelines to identify scenarios where the pods act as root nodes and no CM is present.
    - **Data Collection by Plume**: Pods equipped with **OpenSync software** can send their logs to the Plume cloud for monitoring. This includes pods that do not have a parent CM but are capable of sending data due to the presence of OpenSync software.
 {{< /details >}}
 
-{{< details title="Streaming vs Batch - kafka vs HDFS 📌" closed="true" >}}
+{{< details title="Streaming vs Batch - Kafka Topics vs HDFS 📌" closed="true" >}}
 
-* RDKb  - its streaming pipeline so we probably dont have HDFS
+* RDKb  - its streaming pipeline so we probably dont have HDFS paths
 
 {{< /details >}}
 
 
-{{< details title="It all started testing this Astro Theme 📌" closed="true" >}}
+{{< details title="How to read Kafka Topics with JHub 📌" closed="true" >}}
 
 {{< /details >}}
 
@@ -628,6 +639,8 @@ streamparser_kafka \
 {{< /details >}}
 
 #### Kibana and ES have something to say
+
+You can use DSL queries to explore data within Kibana, which pulls from Elastic Search DB.
 
 ### Workflow for Effectiveness
 
@@ -752,8 +765,6 @@ After model deployment and its validation, DA team will require 1-2 story points
 
 {{< details title="Meeting Summary - Always! 📌" closed="true" >}}
 
-Certainly! Here's the meeting summary template formatted without headers and using bold for key sections:
-
 - **Meeting Details**
   - **Date**: [Insert date]
   - **Time**: [Insert time]
@@ -805,7 +816,6 @@ Certainly! Here's the meeting summary template formatted without headers and usi
 - **Feedback on Meeting**
   - [Optional: Any feedback from attendees or suggestions for improving future meetings]
 
-This format emphasizes key sections with bold text for clarity, ensuring that the summary is easy to read and navigate.
 
 <!-- Summarizing what we have discussed in this meeting - The issue we discussed is: how close to real time we can get the anomaly detection:
    • By using the existing unified pipeline:
@@ -848,11 +858,17 @@ Please confirm your attendance by accepting the meeting invitation. If you are u
 
 {{< /details >}}
 
+{{< callout type="info" >}}
+Get Ready for Diagrams: Mermaid / DrawIO / Python Diagrams / ExcaliDraw
+{{< /callout >}}
+
+It a good idea to use [Diagrams, like Mermaid Charts](https://fossengineer.com/free-diagram-tools/#mermaidjs):
+
 ```mermaid
 graph LR
-    A[ODH-39479 Bring STB Mac to Streamparser] --> B[SMD-10817 EDA Design Modify Unified Pipeline to be per STB mac as well]
-    B --> C[SMD-10661 EDA Design to bring POD attributes]
-    C --> D[ODH Pipeline Implementation to use STB mac and bring POD attributes]
+    A[STB Mac to Streamparser] --> B[EDA Design Modify Unified Pipeline per STB mac]
+    B --> C[EDA Design to bring new attributes]
+    C --> D[Pipeline Implementation - Dev/DE]
     D --> E[DSMLE 1159/1160/1161]
 ```
 
@@ -868,14 +884,19 @@ graph TD;
 Managing **Project Expectations** with a [Project Charter](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Project/Charter.md  "Microsoft Project Charter Example {rel='nofollow'}").
 {{< /callout >}}
 
-![Cookies Meme](/blog_img/memes/features-vs-needs.png)
+![Cat product Meme](/blog_img/memes/features-vs-needs.png)
 
 #### More T-Shaped Skills
 
 
-### Prompts for Telecom Learning
+#### Prompts for Telecom
 
-You are an expert telecom and network engineer who can summarize concepts in simple terms in markdown. You will use for readability bullet points, bold and underlines, but never h1 h2 or any header.
+Learning Telecom concepts its now possible with AI:
+
+
+You are an expert telecom and network engineer who can summarize concepts in simple terms in markdown.
+
+You will use for readability bullet points, bold and underlines, but never h1 h2 or any header.
 
 
 

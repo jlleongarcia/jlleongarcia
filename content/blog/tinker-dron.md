@@ -13,22 +13,26 @@ This is what I've learn with it so far.
 
 ![DJI Tello Dron](/blog_img/hardware/dji-dron.png)
 
+The dron has a camera as well, similar to the [RPi Camera tested here](https://jalcocert.github.io/JAlcocerT/raspberry-pi-camera-setup/)
+
 
 ## DJI Tello Python
+
+If there are some doubts, I wanted to try and control the drone with...code.
 
 I have [forked](https://github.com/damiafuentes/DJITelloPy) and created a Docker Image with **Python Code which is able to control the drone**.
 
 {{< callout type="info" >}}
-* [Dron code test in gitlab](https://gitlab.com/fossengineer1/dron) and in GH: https://github.com/JAlcocerT/DJITelloPy
+[Dron Code test in Gitlab](https://gitlab.com/fossengineer1/dron) and in GH: https://github.com/JAlcocerT/DJITelloPy 💻
 * And here, im experimenting with CV - [**C**omputer **V**ision stuff](https://gitlab.com/fossengineer1/cv)
 {{< /callout >}}
 
 
-* Hardware Specs:
+* **Hardware** Specs:
     * The Battery last ~10 min
     * Weight ~80g
     * Price ~100$
-    * It has an Intel CPU which **we can program with python**, 5MP Camera with 720p Live View Vision System, WIFI 802.11n 2.4G,
+    * It has an Intel CPU which **we can program with python**, 5MP Camera with **720p** Live View Vision System, WIFI 802.11n 2.4G,
 
 So far it can do the following:
 
@@ -39,7 +43,9 @@ So far it can do the following:
 
 Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=1286s) that helped to get started.
 
-{{< youtube id="v=LmEcyQnfpDA" autoplay="false" >}}
+<!-- {{< youtube id="v=LmEcyQnfpDA" autoplay="false" >}} -->
+{{< youtube "LmEcyQnfpDA" >}}
+
 
 ### Computer Vision without a Dron
 
@@ -58,7 +64,7 @@ Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=12
 * There are official Apps for DJI Tello (Manufactured by Ryze)
     * [iOS App](https://apps.apple.com/us/app/tello/id1330559633)
     * Android - The **official app seems outdated** and non compatible with my Android
-        A Free Demo alternative is [this one](https://play.google.com/store/apps/details?id=com.volatello.tellofpv.demo)
+      *  A Free Demo alternative is [this one](https://play.google.com/store/apps/details?id=com.volatello.tellofpv.demo)
 
 ### About Dron Regulations
 

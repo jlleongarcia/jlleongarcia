@@ -12,7 +12,9 @@ summary: ''
 url: 'how-to-use-anthropic-api'
 ---
 
-## Examples
+It time to use Claude LLMs.
+
+Lets have a look to Anthropic API and its models.
 
 ### Claude API + Streamlit 
 
@@ -48,8 +50,6 @@ https://console.anthropic.com/settings/plans
 
 ### Getting Access to Anthropic API
 
-### Get
-
 
 The Power of Claude 3 API: Building a Generative AI App with Anthropic Claude AI
 
@@ -70,6 +70,8 @@ claude-3-opus-20240229", "claude-3-sonnet-20240229"
 
 Fireship
 
-{{< youtube id="v=m_xoN8KlP3w" autoplay="false" >}}
+<!-- {{< youtube id="v=m_xoN8KlP3w" autoplay="false" >}} -->
+{{< youtube "m_xoN8KlP3w" >}}
+
 
 * Groq - https://console.groq.com/keys

@@ -14,7 +14,7 @@ Exactly Two years ago from this moment I was able to generate the following:
 
 How much is 2 years in GenAI? 
 
-Well...lets find that out
+Well...lets find that out.
 
 
 {{< details title="Stable Diffusion Models📌" closed="true" >}}
@@ -42,7 +42,8 @@ https://mammouth.ai/pricing
 
 It was all possible thanks to [this DotCSV YT Video](https://www.youtube.com/watch?v=rgKBjRLvjLs)
 
-{{< youtube id="v=rgKBjRLvjLs" autoplay="false" >}}
+<!-- {{< youtube id="v=rgKBjRLvjLs" autoplay="false" >}} -->
+{{< youtube "rgKBjRLvjLs" >}}
 
 > Does it work now?
 
