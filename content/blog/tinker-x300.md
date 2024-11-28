@@ -274,7 +274,11 @@ chmod +x Benchmark101.sh
 ./Benchmark101.sh
 ```
 
-https://github.com/geerlingguy/sbc-reviews
+{{< callout type="info" >}}
+Other Benchmarks: [SBC-Reviews](https://github.com/geerlingguy/sbc-reviews) / [RPi-benchmark](https://github.com/aikoncwd/rpi-benchmark)
+{{< /callout >}}
+
+
 
 {{% details title="Testing CPU Performance - SysBench, TripPlanner, build Astral-sh,..." closed="true" %}}
 
@@ -335,6 +339,41 @@ sudo stress --cpu  8 --timeout 120
 
 {{% /details %}}
 
+{{% details title="Testing **Internet Connectivity** 📌" closed="true" %}}
+
+```sh
+ip addr show
+hostname -I
+
+#sudo apt-get install net-tools
+#ifconfig
+
+ping -c 4 192.168.0.1 #gateway
+ping -c 4 192.168.0.117 #ping the orange pi which is connected to same device
+ping 9.9.9.9 #ping quad9 dns server
+```
+
+```sh
+sudo apt-get install dnsutils -y #dns resolution
+nslookup github.com 
+dig google.com
+```
+
+```sh
+sudo apt-get install speedtest-cli
+speedtest-cli #speedtest-cli --simple
+```
+
+* Regular browser speed test: https://www.speedtest.pl/
+
+```sh
+curl -sS https://ipinfo.io/json #the command to use
+curl -sS http://ip-api.com/json/ #provides info about country, ISP, ...
+curl -6 ifconfig.me #ipv6 info 
+```
+
+{{% /details %}}
+
 #### Hardware Table Comparison
 
 Hardware / Computing Power / Volume / Energy Consumption
@@ -351,10 +390,10 @@ Here's a consolidated version of the data from all the tables into a single tabl
 | BMAX B4 (16 GB)            | Intel N95 (x4 cores Alder-Lake)                    | $150  | ~26.9k                       | ~4.2k/15.34k                  | ~45s             | -                    | 6750                     | 179.33                                 | 28.00                                 |
 | **FireBat AK2 Plus (8 GB)**| Intel N100 (x4 cores Alder-Lake)                   | $75   | ~35k                        | ~1.8k/6.4k                    | ~47s             | 2min 45s             | **3525**                  | 466.67                                 | 24.00                                 |
 | AMD 2200g                  | -                                                  | -     | ~26.9k                       | ~4.2k/15.34k                  | -                | -                    | -                        | -                                      | -                                     |
-| AMD 5600G                  | -                                                  | -     | -                           | -                             | -                | -                    | -                        | -                                      | -                                     |
+| **AMD 5600G**                  | -                                                  | -     | -                           | -                             | -                | -                    | -                        | -                                      | -                                     |
 | Hetzner                    | -                                                  | -     | -                           | -                             | -                | 6min 15s             | -                        | -                                      | -                                     |
 
-### Explanation:
+Explanation:
 - **Device**: The name of the device.
 - **CPU**: The CPU specifications of the device.
 - **Price**: The price of the device in USD.
@@ -368,9 +407,6 @@ Here's a consolidated version of the data from all the tables into a single tabl
 
 This table combines the information across all your tests, and it should give you a comprehensive overview of the devices, their performance, and their costs.
 
-Sure! Here's how the information you provided can be incorporated into the large table, combining all the sections you've mentioned:
-
----
 
 | Device                     | Sysbench (4 threads)    | Sysbench (8 threads)  | Tot (4 threads) 7 zip    | Docker Build       | Max Temp | Peak Temp (Docker Build) | Avg Temp (Docker Build) | Idle Power | Max (Power & Temp Seen) | Power Adapter | Yearly 🔌 Cost (USD) | Release Date     | CPU Benchmark (4 threads)  | CPU Benchmark (8 threads) | Build Time (Astral-SH) |
 |----------------------------|-------------------------|------------------------|--------------------------|---------------------|----------|--------------------------|--------------------------|------------|-------------------------|---------------|-----------------------|------------------|---------------------------|---------------------------|-------------------------|
@@ -383,9 +419,8 @@ Sure! Here's how the information you provided can be incorporated into the large
 | Raspberry Pi 5 8GB         | -                       | -                      | 2.7k/10k                 | -                   | -        | -                        | -                        | -          | -                       | -             | -                    | -                | -                         | -                         | 4min 30s                |
 | AMD 2200g                  | ~26.9k events           | -                      | ~4.2k/15.34k             | -                   | -        | -                        | -                        | -          | -                       | -             | -                    | -                | ~44225 events             | -                         | -                       |
 | AMD 5850U (AMD Ryzen 7)    | ~72k events             | ~121k events            | -                        | -                   | -        | -                        | -                        | -          | -                       | -             | -                    | Jan 2021         | ~72k events               | ~121k events              | -                       |
-| AMD 5600G (AMD Ryzen 5)    | ~79k events             | ~123k events (12 threads ~130k) | ~6.1k/24.1k (7zip)     | -                   | -        | -                        | -                        | -          | -                       | -             | -                    | April 2021      | ~79k events               | ~123k events              | -                       |
+| **AMD 5600G (AMD Ryzen 5)**    | ~79k events             | ~123k events (12 threads ~130k) | ~6.1k/24.1k (7zip)     | -                   | -        | -                        | -                        | -          | -                       | -             | -                    | April 2021      | ~79k events               | ~123k events              | -                       |
 
----
 
 Now, the large table includes:
 
@@ -399,6 +434,52 @@ Now, the large table includes:
 
 This provides a comprehensive view of all the devices' performance and specifications in one table.
 
+## Desktop with VPS as VPN with Wireguard
+
+Time to combine a Desktop, like the X300 + [Hetzner](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#other-clouds) to get a **custom VPN connection** with Wireguard.
+
+
+{{% steps %}}
+
+### Server Setup
+
+* Before going to Big Data, dont forget **the Big Picture**
+  * [**Diagrams** saved me hours](https://jalcocert.github.io/JAlcocerT/how-to-use-mermaid-diagrams/) of explaining hard concepts.
+
+
+### Wireguard Setup
+
+* Got the chance to work with Google Cloud/GCP
+* Could use interesting tools: Databricks, Trino (ex Presto-SQL), ...
+
+
+{{< details title="But having a Python env is this simple 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+
+### Connecting the Wireguard Client
+
+{{< details title="Check the Desktop IP 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+### [Optional] - Setup Wifi2ETH Bridge
+
+You can do this steps with a Raspberry Pi (connected to WIFI) as Wireguard  client.
+
+Which will then provide VPN access to your desktop via the Ethernet cable.
+
+{{< details title="Details 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+{{% /steps %}}
+
+
 ---
 
 ## FAQ
@@ -411,9 +492,9 @@ This provides a comprehensive view of all the devices' performance and specifica
 * https://lowendbox.com/
 * https://www.netcup.de/
 
-    RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud, Hetzner…
-    vast.ai,
-    Google Colab TPU…
+RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud, Hetzner…
+vast.ai,
+Google Colab TPU…
 
 * <https://cloud.google.com/free>
   * PUB/SUB <https://cloud.google.com/free/docs/free-cloud-features#pub-sub>
@@ -422,11 +503,7 @@ This provides a comprehensive view of all the devices' performance and specifica
 
 * AWS IoT - <https://www.youtube.com/watch?v=hgQ-Ewrm48c>
 
-### Using HuggingFace for LLMs
 
-* https://huggingface.co/spaces
-* https://www.youtube.com/watch?v=_Ua6065p-Cw
-* https://www.youtube.com/watch?v=_Ua6065p-Cw
 
 {{< /details >}}
 
@@ -436,12 +513,11 @@ This provides a comprehensive view of all the devices' performance and specifica
   {{< card link="https://lambdalabs.com/" title="Lambdalabs GPUs" >}}    
 {{< /cards >}}
 
-{{< details title="OS Inside Containers: RPi emulator / Windows / macOS 📌" closed="true" >}}
+{{< details title="**OS Inside Containers**: RPi emulator / Windows / macOS 📌" closed="true" >}}
 
 A raspberry Pi inside a container - https://github.com/ptrsr/pi-ci
 
 > A Raspberry **Pi emulator in a Docker image** that lets developers easily prepare and flash RPi configurations.
-
 
 
 {{< /details >}}
@@ -459,7 +535,17 @@ git push
 
 {{< /details >}}
 
-### How I Edited this video
+
+
+### Outro
+
+#### Using HuggingFace for LLMs
+
+* https://huggingface.co/spaces
+* https://www.youtube.com/watch?v=_Ua6065p-Cw
+* https://www.youtube.com/watch?v=_Ua6065p-Cw
+
+#### How I Edited this video
 
 * Video was recorded with a Huawei P30 and Iphone 15Pro - Back in ~Apr2024
 * I Have silenced it as learn with the [DJI Workflow](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/#my-workflow-with-the-dji-oa5-pro)

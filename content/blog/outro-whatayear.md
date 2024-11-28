@@ -238,7 +238,7 @@ Went from a **Compal MV1 to a NE6037** (still COAX, I know!)
 
 
 I learnt a few things **about Servers** with the [X300](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/)
-* Better Benchmarks
+* Better [Benchmarks](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/#benchmarks-101)
 * Easier SelfHosting
   
 
@@ -272,7 +272,6 @@ A huge consolidation of knowledge in this area.
 
 * Got the chance to work with Google Cloud/GCP
 * Could use interesting tools: Databricks, Trino (ex Presto-SQL), ...
-* 
 
 ### Python is Easy!
 

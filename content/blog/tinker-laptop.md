@@ -221,7 +221,7 @@ powerprofilesctl list
 {{< /details >}}
 
 
-{{% details title="Testing Internet Connectivity of a new Laptop 📌" closed="true" %}}
+{{% details title="Testing **Internet Connectivity** of a new Laptop 📌" closed="true" %}}
 
 ```sh
 ip addr show
