@@ -393,6 +393,8 @@ Here's a consolidated version of the data from all the tables into a single tabl
 | **AMD 5600G**                  | -                                                  | -     | -                           | -                             | -                | -                    | -                        | -                                      | -                                     |
 | Hetzner                    | -                                                  | -     | -                           | -                             | -                | 6min 15s             | -                        | -                                      | -                                     |
 
+> Hetzner CX22 Cloud Server ~2.35 eur +23% VAT ~3$/month
+
 Explanation:
 - **Device**: The name of the device.
 - **CPU**: The CPU specifications of the device.
@@ -438,28 +440,94 @@ This provides a comprehensive view of all the devices' performance and specifica
 
 Time to combine a Desktop, like the X300 + [Hetzner](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#other-clouds) to get a **custom VPN connection** with Wireguard.
 
+> Use the [Hetzner Setup Script](https://github.com/JAlcocerT/Linux/blob/main/Z_Cloud/Hetzner_101.sh) or the[ SelfHosting script](https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh)
 
 {{% steps %}}
 
 ### Server Setup
 
-* Before going to Big Data, dont forget **the Big Picture**
-  * [**Diagrams** saved me hours](https://jalcocert.github.io/JAlcocerT/how-to-use-mermaid-diagrams/) of explaining hard concepts.
+I am spinning a Hetzner server with this [Wireguard Server DockerCompose](https://github.com/JAlcocerT/Docker/blob/main/Security/VPNs/Wireguard_docker_compose.yaml)
 
+
+{{< details title="Connect via SSH & Setup WireGuard📌" closed="true" >}}
+
+```sh
+ssh root@serverip #or use a terminal via
+```
+
+
+Lets do it with [wgeasy](https://github.com/wg-easy/wg-easy), or if you prefer with [WireGuard](https://github.com/JAlcocerT/Docker/blob/main/Security/VPNs/Wireguard_docker_compose.yaml)
+
+```sh
+#create the hashed PWD
+docker run --rm -it ghcr.io/wg-easy/wg-easy wgpw 'YOUR_PASSWORD'
+
+docker run --rm -it ghcr.io/wg-easy/wg-easy wgpw 'YOUR_PASSWORD' | sed 's/\$/\$\$/g'
+
+```
+
+{{< callout type="warning" >}}
+* Don't wrap the generated hash password in single quotes when you use docker-compose.yml. Instead, replace each $ symbol with two $$ symbols. [Example](https://github.com/wg-easy/wg-easy/blob/master/How_to_generate_an_bcrypt_hash.md)
+
+* You'll get different results (for the same given pass) because the hash is salted
+{{< /callout >}}
+
+```sh
+version: "3.8"  # Specify Docker Compose version (optional)
+
+services:
+  wg-easy:
+    image: ghcr.io/wg-easy/wg-easy
+    container_name: wg-easy
+    environment:
+      LANG: en  # Set the language for the web UI
+      WG_HOST: 188.245.198.60  # Replace with your actual server IP
+      PASSWORD_HASH: thisishashed!  # Replace with your generated password hash
+      PORT: 51821  # Web UI port
+      WG_PORT: 51820  # WireGuard UDP port
+    volumes:
+      - "/home/your_user/.wg-easy:/etc/wireguard"  # Mount local configuration directory (replace with absolute path)
+    ports:
+      - "51820:51820/udp"  # Publish WireGuard UDP port
+      - "51821:51821/tcp"  # Publish Web UI port
+    cap_add:
+      - NET_ADMIN  # Grant network administration capabilities
+      - SYS_MODULE  # Grant access to load kernel modules (potentially risky)
+    sysctls:
+      net.ipv4.conf.all.src_valid_mark: "1"  # Enable source address validation
+      net.ipv4.ip_forward: "1"  # Enable IP forwarding
+    restart: unless-stopped  # Restart container if it crashes
+
+# Optional Networks (if needed)
+# networks:
+#   wg_network:
+#     driver: bridge  # Define a bridge network (optional)
+```
+
+{{< /details >}}
+
+```sh
+curl -sS https://ipinfo.io/json #the command to use
+#  "org": "AS24940 Hetzner Online GmbH",
+```
 
 ### Wireguard Setup
 
-* Got the chance to work with Google Cloud/GCP
-* Could use interesting tools: Databricks, Trino (ex Presto-SQL), ...
 
-
-{{< details title="But having a Python env is this simple 📌" closed="true" >}}
+{{< details title="Check that the Wireguard Connection works 📌" closed="true" >}}
 
 
 {{< /details >}}
 
 
 ### Connecting the Wireguard Client
+
+Setup a regular Wireguard Client in Windows / Linux.
+
+Or use Gluetun
+* https://fossengineer.com/using-bard-selfhosting-firefox-with-vpn-and-docker/#vpn---via-docker-gluetun
+* https://github.com/qdm12/gluetun-wiki/blob/main/setup/wireguard.md
+* https://github.com/qdm12/gluetun-wiki/blob/main/setup/providers/custom.md
 
 {{< details title="Check the Desktop IP 📌" closed="true" >}}
 
@@ -471,6 +539,8 @@ Time to combine a Desktop, like the X300 + [Hetzner](https://jalcocert.github.io
 You can do this steps with a Raspberry Pi (connected to WIFI) as Wireguard  client.
 
 Which will then provide VPN access to your desktop via the Ethernet cable.
+
+> Wifi2Eth [Post1](https://jalcocert.github.io/RPi/posts/rpi-wifi-ethernet-bridge/) and Post2
 
 {{< details title="Details 📌" closed="true" >}}
 

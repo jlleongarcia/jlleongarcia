@@ -164,7 +164,7 @@ It was the year to go [beyond Google Compute Engine](https://jalcocert.github.io
 
 * I tried [Hetzner Cloud](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#analysis-paralysis---choosing-small-factor-computer)
 
-> Also gave it a try to Podman Containers, [Termux Virtualization](https://jalcocert.github.io/Linux/docs/privacy/android/#how-to-use-linux-on-android-with-termux). Oh and with [QEMU i can create multiarch containers images with Github Actions](https://jalcocert.github.io/JAlcocerT/create-streamlit-chatgpt/#conclusion---and-what-i-learnt)!
+> Also gave it a try to Podman Containers, [Termux Virtualization](https://jalcocert.github.io/Linux/docs/privacy/android/#how-to-use-linux-on-android-with-termux). Oh and with [QEMU i can create **MultiArch containers** images with Github Actions](https://jalcocert.github.io/JAlcocerT/create-streamlit-chatgpt/#conclusion---and-what-i-learnt)!
 
 {{% /steps %}}
 
