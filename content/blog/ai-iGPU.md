@@ -1,6 +1,6 @@
 ---
 title: "How to use iGPU's for local AI" 
-date: 2024-08-15T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Docker","Gen-AI"]
 description: ''

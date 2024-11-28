@@ -1,15 +1,20 @@
 ---
 title: Deploying Kubernetes in SBCs - K3s
 author: JAlcocerT
-date: 2024-12-01 00:10:00 +0800
-categories: [IoT & Data Analytics]
+date: 2025-12-31
 draft: true
+---
+
+K8s vs K3s...
+
+<!-- 
+categories: [IoT & Data Analytics]
+
 tags: [Sensors,Python,MongoDB]
 image:
   path: /img/metabase.png
   alt: IoT Project with Python, MongoDB, DHT11/22 sensors and Metabase.
-render_with_liquid: false
----
+render_with_liquid: false -->
 
 Kubernetes - A tool to manage and automate automated workflows in the cloud. It orchestrates the infrastructure to accomodate the changes in workload.
 

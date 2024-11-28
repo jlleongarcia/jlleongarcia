@@ -1,9 +1,9 @@
 ---
 title: "Testing AI projects"
-date: 2024-10-02T05:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Dev","Python"]
-description: 'How to use '
+description: 'How to use the latest AI Project. With Code and Systematically.'
 summary: 'How I Test AI Projects'
 url: 'ai-projects'
 ---

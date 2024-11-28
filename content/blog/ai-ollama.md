@@ -1,6 +1,6 @@
 ---
 title: "Testing AI Ollama"
-date: 2024-10-02T05:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Dev","Python"]
 description: 'How to use '

@@ -1,6 +1,6 @@
 ---
 title: "Programatic Web Search"
-date: 2024-10-15T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Dev"]
 url: 'search-web-with-python'

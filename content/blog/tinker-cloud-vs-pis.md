@@ -49,7 +49,7 @@ You can have a reference a very popular referece, a pen:
 
 
 * RAM is not soldered in the BMAX, and also you can add an additional 2,5 drive (screws not included)
-* The SSD drive it comes with is not 2280
+* The SSD drive it comes with **is not 2280** (I got surprised with that)
 
 ![Bmax B4](/blog_img/mini_pc/bmax.jpg)
 

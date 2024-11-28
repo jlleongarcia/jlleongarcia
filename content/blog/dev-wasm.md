@@ -1,6 +1,6 @@
 ---
 title: "WASM"
-date: 2025-11-05T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["dev"]
 description: 'Must know data concepts and techniques for your career in Analytics.'

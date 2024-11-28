@@ -1,6 +1,6 @@
 ---
 title: "Vision Models: LLaVa, Pixtral and LLaMa 3.2 "
-date: 2024-10-17T00:20:21+01:00
+date: 2025-12-31
 draft: true
 # cover:
 #    image: "/img/GenAI/LLMs_Locally_LLamas.png" # image path/url 
@@ -14,6 +14,12 @@ description: 'From Computer Vision to AI with Vision'
 summary: ''
 url: 'multi-modal-models'
 ---
+
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/JAlcocerT/rpi-mjpg-streamer" title="RPi Streamer" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/" title="DJI Drone + Camera with Py" >}}
+{{< /cards >}}
 
 https://www.youtube.com/watch?v=Y2ldwg8xsgE
 

@@ -10,7 +10,7 @@ url: firebat-ak2-plus-minipc-review
 
 ## The FIREBAT AK2 PLUS MiniPC
 
-A very interesting **small factor PC** with
+A very interesting **Small Factor PC** with
 
 * Intel N100 (4 cores) 8GB@2600mhz 256GB (M.2 2280 SSD)
 * Dimensions: 13x13x4,5cm = 0,76L
@@ -97,7 +97,7 @@ time cargo install --git https://github.com/astral-sh/rye rye
 | Raspberry Pi 4 4GB          | ~3480s             | -                  |
 | Orange Pi 5                 | ~1777s             | 5min 20s           |
 | BMAX B4 N95                 | ~45s               | -                  |
-| **Firebat AK2 Plus N100**       | ~47s               | 2min 45s           |
+| **Firebat AK2 Plus N100**   | ~47s               | 2min 45s           |
 | AMD 5600G                   | -                  | -                  |
 | RPi 5 8GB                   | -                  | 4min 30s           |
 | Hetzner                     | -                  | 6min 15s           |

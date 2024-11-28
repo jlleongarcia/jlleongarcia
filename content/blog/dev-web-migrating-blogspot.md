@@ -1,6 +1,6 @@
 ---
 title: "From Blogspot to a Cool Website"
-date: 2024-10-23T10:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["dev"]
 summary: 'Migrating Blogspot to a Responsive Websites'

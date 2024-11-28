@@ -1,6 +1,6 @@
 ---
 title: "[Learning] Books and summaries"
-date: 2024-10-05T00:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Tinkering"]
 summary: Learning how to 
@@ -13,6 +13,6 @@ url: 'learning-new-tools-oct-2024'
 
 ---
 
-## Epub to AudioBook with python
+## Epub to AudioBook with Python
 
 * https://github.com/C-Loftus/QuickPiperAudiobook?ref=selfh.st

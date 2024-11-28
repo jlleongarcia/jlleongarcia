@@ -1,6 +1,6 @@
 ---
 title: "Creating an e-Commerce"
-date: 2024-09-27T10:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["dev"]
 summary: 'Creating an eCommerce'

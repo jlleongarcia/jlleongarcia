@@ -1,6 +1,6 @@
 ---
 title: "How to use HF"
-date: 2024-08-12T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Dev"]
 summary: "Developing like a PRO (via SSH or into a container)"

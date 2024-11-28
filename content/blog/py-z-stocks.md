@@ -20,6 +20,14 @@ After [Weather Planning](https://jalcocert.github.io/JAlcocerT/trip-planner-with
 The project [**source code**](https://gitlab.com/fossengineer1/py_stocks)💻 
 {{< /callout >}}
 
+If all of this sounds familiar. It is because it is actually familiar.
+
+{{< callout type="info" >}}
+Sometime ago I was doing similar Project in **R Shiny** - [R/Stocks](https://jalcocert.github.io/JAlcocerT/R-Stocks/)
+{{< /callout >}}
+
+## PyStocks
+
 For user authentication: clear/supabase/logto...
 * https://clerk.com/docs
 * https://github.com/clerk/clerk-sdk-python/blob/main/README.md
@@ -135,6 +143,9 @@ Similar projects include **Firefly III** and **GnuCash**.
 
 * https://engineeredportfolio.com/
 
+* https://wtfhappenedin1971.com/
+* https://whycryptocurrencies.com/
+
 
 {{< callout type="info" >}}
 You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/author/B0BW46JD83?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true) one with AI. How? with an [**AIssistant**](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#kindle-notes-to-ai) 
@@ -142,8 +153,26 @@ You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/a
 
 * https://www.visualcapitalist.com/top-sp-500-stocks-return/
 
-### Interesting Financial Data Sites
+### Interesting Financial Data WebSites
 
 * https://www.multpl.com/
   * it has Sp500 PE Ratios, 10y treausry rates...
 * https://www.wallstreetmojo.com/trailing-pe-vs-forward-pe/
+
+
+- https://stockanalysis.com/ esta es buena para stocks, etfs no
+- https://www.justetf.com/uk/ esta es un screener de ETFs muy bueno, además están todas las variantes monetarias de cada ETF
+- https://divvydiary.com/en/?via=elisa&gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOIN8XXGkoEZZbfhufMr55Y2kSIuAGXDP4Lb1LYgLlRMnezpTUl2tkAaAp2kEALw_wcB esta la encontré el otro día, ofrece datos históricos de stocks y algún ETF (FUSD te lo da pero IDUS no), pero mola que me da el ISIN rápido, entonces veo rápidamente en qué país cotiza
+- https://tools.mhinvest.com/mhichart una web app que tiene una idea muy parecida a la que pensamos en su momento, pero no considera seguir metiendo gasolina, parte de una cantidad inicial y listo.
+
+* https://www.marketbeat.com/
+
+* https://www.cazadividendos.com/
+
+* https://www.gurufocus.com/
+* https://www.morningstar.com/stocks/xnys/pg/quote
+
+#### Financial Data Apps
+
+https://stockevents.app/en
+https://stockle.app/

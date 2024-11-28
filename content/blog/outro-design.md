@@ -1,6 +1,6 @@
 ---
 title: "About Designs"
-date: 2024-09-03T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Dev"]
 summary: ''

@@ -9,9 +9,11 @@ url: 'portfolio-website-for-social-media'
 
 ## A Better way to Show your Work
 
-We all have awsome stuff done, but on our phone.
+We all have **awsome stuff done**, but on our phone.
 
-Let's give others the chance to benefit from our ideas/project/services. Make it available for them.
+Let's give others the chance to benefit from our ideas/project/services.
+
+**Make it available for them.**
 
 {{< callout type="info" >}}
 You can do similarly in a VPS Server, like this one we used for Flask

@@ -1,6 +1,6 @@
 ---
 title: "[Learning] Interesting Tools to have a Look"
-date: 2024-10-05T00:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Tinkering"]
 summary: Learning how to 

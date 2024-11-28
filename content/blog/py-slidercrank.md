@@ -1,6 +1,6 @@
 ---
 title: "The most popular Mechanism in Python - Slider-Crank"
-date: 2024-10-30T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Python","Mechanics"]
 description: ""
@@ -9,6 +9,10 @@ url: 'python-mechanism'
 ---
 
 Last year I got to know this **awsome project**: <https://github.com/gabemorris12/mechanism>
+
+{{< callout type="info" >}}
+Related Project Code is 
+{{< /callout >}}
 
 I exchanged some email with its creator, [GabeMorris12](https://github.com/gabemorris12).
 

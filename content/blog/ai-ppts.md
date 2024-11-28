@@ -1,11 +1,11 @@
 ---
 title: "How to create awsome Presentations" 
-date: 2024-08-15T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Tinkering"]
 description: ''
 summary: ''
-url: 'mastering-presentations'
+url: 'creating-presentations'
 ---
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Trying NixOS with VMs"
-date: 2024-10-30T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Tinkering"]
 summary: 'How to use VMs and try a new OS like NixOS'

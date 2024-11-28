@@ -13,8 +13,39 @@ Its all about **Knowledge of Crowds**
 
 Some time ago, I made a [Trip Planner Web App](https://github.com/JAlcocerT/Py_Trip_Planner), based purely on weather patterns as [described here](https://jalcocert.github.io/JAlcocerT/trip-planner-with-weather/).
 
+{{< details title="[How to] Spin the Python Trip Planner! 📌" closed="true" >}}
 
-But we need something more to decide where and how to go next.
+* Follow the [repo instructions](https://github.com/JAlcocerT/Py_Trip_Planner/tree/main/Deploy)
+
+```sh
+git clone https://github.com/JAlcocerT/Py_Trip_Planner && cd ./Py_Trip_Planner
+
+#docker build -t trip_planner .
+DOCKER_BUILDKIT=1 docker build --no-cache --progress=plain -t trip_planner .
+
+docker run -d \
+  --name tripplanner \
+  -p 8051:8050 \
+  --restart unless-stopped \
+  trip_planner #ghcr.io/jalcocert/py_trip_planner #fossengineer/trip_planner
+```
+
+Or...Use the following **docker compose**:
+
+```yml
+version: "2"
+services:
+  tripplanner:
+    image: trip_planner #ghcr.io/jalcocert/py_trip_planner #fossengineer/trip_planner
+    container_name: tripplanner
+    ports:
+      - 8051:8050
+    restart: unless-stopped
+```
+
+{{< /details >}}
+
+But we need something more to decide **where and how to go next**.
 
 {{< callout type="info" >}}
 Related project [**Source Code**](https://gitlab.com/fossengineer1/py_vacations) 💻
@@ -24,6 +55,44 @@ Related project [**Source Code**](https://gitlab.com/fossengineer1/py_vacations)
 https://github.com/JAlcocerT/PyVacAItions
 {{< /callout >}} -->
 
+**THE USE CASE** - Plan a Trip To MRK
+
+<!-- 
+* Hotel 
+  * Avenue Houmane El Fatouaki, 30 APT N°1, Marrakech, Medina, 40000 Marrakesh, Morocco
+  * https://maps.app.goo.gl/PuPUZhHAykdFYrVa6
+* Marrakesh Menara Airport - RAK
+* To see in MRK
+  * https://en.wikipedia.org/wiki/Saadian_Tombs - 700m from Hotel
+  * https://en.wikipedia.org/wiki/Bahia_Palace - 600m
+  * Madrasa Ben Youssef - 1.5KM
+  * El Badi Palace - 1.6km
+  * https://el-fenn.com/majorelle-gardens/ - 3km
+* City Break
+  * Ouzoud Waterfalls - 150KM - https://www.viator.com/tours/Marrakech/Ouzoud-Waterfalls-Full-Day-Trip-from-Marrakech/d5408-7674P21
+  * Essaouira Athlantic Coast - 250km
+   
+To get to Essaouira, the coastal city from Marrakech, you have a few options:
+
+1. Bus:
+
+CTM: This is a reliable and affordable option. There's one departure per day, taking about 3 hours.
+Supratours: Offers multiple daily departures, also taking around 3 hours.
+2. Taxi:
+
+A faster option, taking about 2.5 hours. However, it's more expensive.
+3. Rental Car:
+
+Gives you the most flexibility to explore the scenic route and stop at your own pace.
+Time Zone:
+
+Morocco is on Western European Time (WET), which is the same as CET.
+
+Currency:
+
+The currency in Morocco is the Moroccan Dirham (MAD). As of November 2023, the exchange rate is approximately 10 Moroccan Dirham to 1 US Dollar. However, exchange rates fluctuate, so it's best to check the current rate before your trip.
+
+ -->
 
 
 ## Py-VacAItions

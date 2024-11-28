@@ -10,9 +10,9 @@ url: 'this-year-was-crazy'
 
 One of the most **interesting concepts** Ive learn this year:
 
-1) **Bike-shedding** 
-2) **Show your work** - Together with the [First 5 Clients Framework](https://www.acquisition.com/training/leads4)
-3) **Finish what you start**
+1) **Bike-Shedding** 
+2) **Show your Work** - Together with the [First 5 Clients Framework](https://www.acquisition.com/training/leads4)
+3) **Finish what you Start**
 
 A very **impactful video** I saw:
 
@@ -44,7 +44,7 @@ And cool **food for thoughs** on these posts:
 
 ---
 
-*Most interesting things ive completed...*
+*Most interesting things i've completed...*
 
 
 ## Webs
@@ -53,7 +53,7 @@ And cool **food for thoughs** on these posts:
 
 ### Webs101
 
-This is the first step: Setup HUGO or Setup Astro.
+This is the first step: [Setup HUGO](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/) or Setup Astro.
 
 ```sh
 #hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" 
@@ -61,7 +61,7 @@ This is the first step: Setup HUGO or Setup Astro.
 #hugo server --bind="0.0.0.0" --baseURL="http://100.104.143.77" --port=1319
 ```
 
-* Explore new libraries:
+* Explore new libraries to improve Themes:
   * [CSS](https://jalcocert.github.io/JAlcocerT/blog/dev-css/)
   * [JS](https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/#chartjs)
 
@@ -317,7 +317,7 @@ streamlit run Z_ST_AIssistant_v1.py
 
 
 {{< callout type="warning" >}}
-I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/api/), Grok, Gemini...
+I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/api/), Grok, Gemini...maybe [Sambanova](https://www.reddit.com/r/LocalLLaMA/comments/1d3hw9r/sambanova_system_reaches_1000_tokens_per_second/) [cloud](https://cloud.sambanova.ai/)?
 {{< /callout >}}
 
 {{< details title="MTG Notes Template 📌" closed="true" >}}
@@ -335,6 +335,12 @@ Initially, I had this one for Telecom
 
 ![Cat product Meme](/blog_img/memes/features-vs-needs.png)
 *The final user always has the last word on rating what you've built*
+
+{{< callout type="warning" >}}
+Need to see [DLT](https://github.com/dlt-hub/dlt) - data load tool (dlt) is an open source Python library that makes data loading easy 🛠️
+
+
+{{< /callout >}}
 
 
 ## Crypto
@@ -501,6 +507,10 @@ SysLinuxOS provides a solid foundation for system administrators, but users shou
 
 {{< details title="AI Asisted Dev Tools...Codeium?ContinueDev? Copilot?Aide?Cursor?Cline...? 📌" closed="true" >}}
 
+* ClaudeDev / [Cline](https://github.com/cline/cline) - https://www.youtube.com/watch?v=vU0LY8-P52A
+* ContnueDev - https://www.youtube.com/watch?v=qXNecVIxRi0&t=13s
+
+
 {{< /details >}}
 
 
@@ -510,7 +520,25 @@ SysLinuxOS provides a solid foundation for system administrators, but users shou
 
 Perplexity? Or **Perplexica**?
 
+* https://github.com/rashadphz/farfalle - 🔍 AI search engine - self-host with local or cloud LLMs
+* https://github.com/InternLM/MindSearch - 🔍 An LLM-based Multi-agent Framework of Web Search Engine (like Perplexity.ai Pro and SearchGPT)
+* Tavily
+* https://github.com/developersdigest/llm-answer-engine - Build a Perplexity-Inspired Answer Engine Using Next.js, Groq, Llama-3, Langchain, OpenAI, Upstash, Brave & Serper
 
+
+
+
+
+{{< /details >}}
+
+
+{{< details title="What about MultiAgents? 📌" closed="true" >}}
+
+[CrewAI + Groq Tutorial: Crash Course for Beginners](https://www.youtube.com/watch?v=8bAv5FQBD2M&t=56s)
+
+* https://github.com/ag2ai/ag2 - AG2 (formerly AutoGen) is a programming framework for agentic AI. Join the community at:
+
+* CrewAI Agent Orchestration - https://www.youtube.com/watch?v=3Uxdggt88pY
 
 {{< /details >}}
 

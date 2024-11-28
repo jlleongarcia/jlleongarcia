@@ -1,7 +1,7 @@
 ---
 title: "Interesting Email Tools"
-date: 2024-11-06
-draft: false
+date: 2025-12-31
+draft: true
 tags: ["Dev"]
 summary: 'How to do email stuff...with code.'
 url: 'programatic-emails'
@@ -17,6 +17,8 @@ url: 'programatic-emails'
 **Introduction**
 
 KnockMail is a tool designed to verify the existence of email addresses. 
+
+* https://www.youtube.com/watch?v=0XnbAdDcDoE
 
 It addresses the problem of email validation, helping users confirm whether an email address is active or not. 
 
@@ -52,3 +54,9 @@ This can be essential for businesses and developers to maintain clean email list
 KnockMail is a useful tool for email verification, enhancing communication reliability. 
 
 Similar projects include Hunter.io and NeverBounce, which offer email validation services.
+
+---
+
+## MailTrap
+
+* https://mailtrap.io/signin

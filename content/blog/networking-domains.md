@@ -1,6 +1,6 @@
 ---
 title: "Networking - Understanding Domains and DNS Setup"
-date: 2024-10-23T10:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Dev"]
 description: 'How to Setup DNS for your Domains.'

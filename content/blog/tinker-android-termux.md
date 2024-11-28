@@ -1,6 +1,6 @@
 ---
 title: "Using Linux in Android - Termux"
-date: 2024-10-15T23:20:21+01:00
+date: 2025-12-31
 draft: true
 tags: ["Dev"]
 summary: I always wanted to run Docker on Android - Here is how to do it

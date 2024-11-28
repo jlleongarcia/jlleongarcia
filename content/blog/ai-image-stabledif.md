@@ -33,7 +33,6 @@ https://mammouth.ai/pricing
 
 > Get access to multiple AI models for the price of one.
 
-
 ---
 
 ## FAQ
@@ -58,12 +57,34 @@ It was all possible thanks to [this DotCSV YT Video](https://www.youtube.com/wat
 
 ### Text2Video
 
-So in 2024...it is text two video.
+So in 2024...it is text to video.
 
 * Mochi-1 - https://www.youtube.com/watch?v=WKyaGpiOjW4
 * AI Video generation with HeGyGe
+
+InVideo - 
+
+* Workflow: go to Elon Munsk Twitter -> ChatGPT to create the speech
+    * Create thumbnail with **Flux** (via [SeArt.ai](https://www.seaart.ai/)), 9/16 format for YT Short
+    * Then go with the speech to elevenlabs (T2S) - Download Audio
+        * https://temp-mail.org/en/
+    * Use CapCut
+
+* https://www.youtube.com/@XSynop
+    * https://www.youtube.com/shorts/Nb_Lpq_5KVc
+* https://www.youtube.com/@fakegurus/shorts
+
+{{< callout type="info" >}}
+With seart you can do **Image2Video - I2V**
+{{< /callout >}}
 
 ### GPUs for AI
 
 * RunPod
 * Kutrim
+
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/JAlcocerT/rpi-mjpg-streamer" title="RunPod" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/pi-vs-orange/#the-raspberry-pi-4" title="Kutrim" >}}
+{{< /cards >}}
