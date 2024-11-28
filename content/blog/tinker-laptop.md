@@ -17,7 +17,9 @@ As simple as it gets: it has a 8C/16T CPU, 16GB Ram and 500GB SSD.
 With **~1.005L in volume** its even smaller than the AsrockX300
 {{< /callout >}}
 
-It comes with W11 already installed, which I kept together with an Ubuntu installation (you need to desable Windows bitlocker first to be able to tweak the SDD space distribution)
+It comes with W11 already installed, which I kept together with an Ubuntu installation (you need to desable Windows bitlocker first to be able to tweak the SDD space distribution).
+
+For a quick Windows setup, I used [Chocolatey](https://jalcocert.github.io/JAlcocerT/how-to-use-chocolatey-windows/)
 
 ## Benchmarks ThinkPad x13-G2
 

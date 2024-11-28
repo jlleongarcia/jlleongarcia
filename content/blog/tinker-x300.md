@@ -7,7 +7,7 @@ summary: Checking my new small factor computer - Asrock x300 with AMD 5600G
 url: asrock-x300-home-server
 ---
 
-It is about time to put everything together.
+It is about **time to put everything together**.
 
 This year I got this compact ~2L box as my new personal computer (probably server at some point).
 
@@ -23,7 +23,9 @@ Why a server? I went crazy and build it with 64GB RAM.
 
 ## Asrock x300 How to
 
-Im using Ubuntu KDE plasma with Kernel 6.8. Customized [like so](https://jalcocert.github.io/Linux/docs/debian/conky_configuring_ubuntu/#how-to-tweak-kde-plasma).
+Im using **Ubuntu KDE Plasma** with Kernel 6.8. Customized [like so](https://jalcocert.github.io/Linux/docs/debian/conky_configuring_ubuntu/#how-to-tweak-kde-plasma).
+
+
 
 {{< details title="Screen/Display Setup in Linux 📌" closed="true" >}}
 
@@ -260,19 +262,189 @@ Reason being that I wanted an upgrade in computing power from my previous Deskto
            width="300"
            height="200" >}}
 
+### Benchmarks 101
+
+Its always a good start to [get ready for SelfHosting](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/).
+
+For **Quick Benchmarks**, just do:
+
+```sh
+curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Benchmark101.sh
+chmod +x Benchmark101.sh
+./Benchmark101.sh
+```
+
+https://github.com/geerlingguy/sbc-reviews
+
+{{% details title="Testing CPU Performance - SysBench, TripPlanner, build Astral-sh,..." closed="true" %}}
+
+Check CPU cores and test with **sysbench**:
+
+```sh
+#cat /proc/cpuinfo
+#uname -a
+#nproc
+sudo apt install sysbench -y
+sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
+```
+
+* Benchmark with **7zip**:
+
+```sh
+sudo apt-get install p7zip-full
+7z b -mmt
+7z b -mmt4
+7z b
+```
+
+and with **7zr**:
+
+```sh
+7zr b -mmt1
+```
+
+* [Trip Planner](https://github.com/JAlcocerT/Py_Trip_Planner/) **docker build** time:
+
+```sh
+git clone https://github.com/JAlcocerT/Py_Trip_Planner/
+cd Py_Trip_Planner
+
+sudo bash -c 'time docker pull python:3.8' #let's remove the time of downloading the Python base image from the equation, it was ~1 min!
+
+#docker build -t pytripplanner .
+sudo bash -c 'time docker build --no-cache -t pytripplanner .'
+#sudo bash -c 'time podman build -t pytripplanner .'
+```
+
+* **Astral-sh** Python Dependency Manager:
+
+```sh
+apt install cargo
+#cargo install --git https://github.com/astral-sh/rye rye
+time cargo install --git https://github.com/astral-sh/rye rye
+```
+
+* Just simple **stress test**:
+
+```sh
+sudo apt-get install stress-ng
+
+sudo stress --cpu  8 --timeout 120
+```
+
+
+{{% /details %}}
+
+#### Hardware Table Comparison
+
+Hardware / Computing Power / Volume / Energy Consumption
+
+
+Here's a consolidated version of the data from all the tables into a single table. The columns are organized to combine all the relevant information:
+
+| Device                     | CPU                                                | Price | Sysbench (4 threads) (events) | Tot (4 threads) 7 zip (events) | Docker Build (s) | Build Astral (Time) | Docker Build (s/Price) | CPU Benchmark (4 threads) (events/Price) | Tot (4 threads) 7 zip (events/Price) |
+|----------------------------|----------------------------------------------------|-------|-----------------------------|-------------------------------|------------------|----------------------|--------------------------|----------------------------------------|---------------------------------------|
+| Raspberry Pi 4 2GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)    | $35   | ~1.7k                       | 1622/6311                     | ~3672s           | 10min 7s             | 128520                   | 48.57                                  | 46.34                                 |
+| Raspberry Pi 4 4GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)    | $55   | ~28k                        | 1442/5508                     | ~3480s           | -                    | 191400                   | 509.09                                 | 26.49                                 |
+| Orange Pi 5                | Rockchip RK3588S (4x Cortex-A76 + 4x Cortex-A55)  | $150  | ~38k                        | 2.7k/11.8k                    | ~1777s           | 5min 20s             | 266550                   | 253.33                                 | 18.00                                 |
+| Raspberry Pi 5 8GB         | -                                                  | -     | -                           | 2.7k/10k                      | -                | 4min 30s             | -                        | -                                      | -                                     |
+| BMAX B4 (16 GB)            | Intel N95 (x4 cores Alder-Lake)                    | $150  | ~26.9k                       | ~4.2k/15.34k                  | ~45s             | -                    | 6750                     | 179.33                                 | 28.00                                 |
+| **FireBat AK2 Plus (8 GB)**| Intel N100 (x4 cores Alder-Lake)                   | $75   | ~35k                        | ~1.8k/6.4k                    | ~47s             | 2min 45s             | **3525**                  | 466.67                                 | 24.00                                 |
+| AMD 2200g                  | -                                                  | -     | ~26.9k                       | ~4.2k/15.34k                  | -                | -                    | -                        | -                                      | -                                     |
+| AMD 5600G                  | -                                                  | -     | -                           | -                             | -                | -                    | -                        | -                                      | -                                     |
+| Hetzner                    | -                                                  | -     | -                           | -                             | -                | 6min 15s             | -                        | -                                      | -                                     |
+
+### Explanation:
+- **Device**: The name of the device.
+- **CPU**: The CPU specifications of the device.
+- **Price**: The price of the device in USD.
+- **Sysbench (4 threads) (events)**: The results from the `sysbench` CPU test for 4 threads, in events.
+- **Tot (4 threads) 7 zip (events)**: The results from the 7zip benchmark for 4 threads (compression and decompression speeds).
+- **Docker Build (s)**: The time it takes to build the Docker image (in seconds).
+- **Build Astral (Time)**: The time it takes to install or build the Astral dependency manager.
+- **Docker Build (s/Price)**: The ratio of Docker build time in seconds to the price of the device.
+- **CPU Benchmark (4 threads) (events/Price)**: The ratio of the CPU benchmark events to the price of the device.
+- **Tot (4 threads) 7 zip (events/Price)**: The ratio of 7zip benchmark events to the price of the device.
+
+This table combines the information across all your tests, and it should give you a comprehensive overview of the devices, their performance, and their costs.
+
+Sure! Here's how the information you provided can be incorporated into the large table, combining all the sections you've mentioned:
+
+---
+
+| Device                     | Sysbench (4 threads)    | Sysbench (8 threads)  | Tot (4 threads) 7 zip    | Docker Build       | Max Temp | Peak Temp (Docker Build) | Avg Temp (Docker Build) | Idle Power | Max (Power & Temp Seen) | Power Adapter | Yearly 🔌 Cost (USD) | Release Date     | CPU Benchmark (4 threads)  | CPU Benchmark (8 threads) | Build Time (Astral-SH) |
+|----------------------------|-------------------------|------------------------|--------------------------|---------------------|----------|--------------------------|--------------------------|------------|-------------------------|---------------|-----------------------|------------------|---------------------------|---------------------------|-------------------------|
+| Raspberry Pi 4 2GB         | ~1.7k events            | -                      | 1622/6311                | ~3672s              | -        | ~46°C                    | ~39°C                   | ~2/3w      | 6W                      | 5V 3A         | ~$5                  | June 2019        | ~1.7k events              | -                         | 10min 7s                |
+| Raspberry Pi 4 4GB         | ~28k events             | -                      | 1442/5508                | ~3480s              | -        | -                        | -                        | ~2/3w      | 6W                      | 5V 3A         | ~$5                  | June 2019        | ~28k events               | -                         | 10min 7s                |
+| Orange Pi 5                | ~38k events             | ~50k events             | 2.7k/11.8k               | ~1777s              | 80°C     | ~65°C                    | ~50°C                   | ~3/5w      | 8W, 80°C                 | 5V 4A         | ~$8                  | November 2022    | ~38k events               | ~50k events               | 5min 20s                |
+| BMAX B4                    | -                       | -                      | -                        | ~45 seconds         | 64°C fan | -                        | -                        | 9W         | 18W & 64°C, fan          | -             | ~$14                 | -                | -                         | -                         | -                       |
+| **FireBat AK2 Plus**       | ~35k events             | -                      | ~1.8k/6.4k               | ~3525s              | -        | -                        | -                        | -          | -                       | -             | -                    | -                | ~46052.63 events          | -                         | -                       |
+| **FireBat AK2 Plus N100**  | -                       | -                      | -                        | ~47s                | 64°C     | -                        | -                        | -          | -                       | -             | -                    | -                | ~46052.63 events          | -                         | 2min 45s                |
+| Raspberry Pi 5 8GB         | -                       | -                      | 2.7k/10k                 | -                   | -        | -                        | -                        | -          | -                       | -             | -                    | -                | -                         | -                         | 4min 30s                |
+| AMD 2200g                  | ~26.9k events           | -                      | ~4.2k/15.34k             | -                   | -        | -                        | -                        | -          | -                       | -             | -                    | -                | ~44225 events             | -                         | -                       |
+| AMD 5850U (AMD Ryzen 7)    | ~72k events             | ~121k events            | -                        | -                   | -        | -                        | -                        | -          | -                       | -             | -                    | Jan 2021         | ~72k events               | ~121k events              | -                       |
+| AMD 5600G (AMD Ryzen 5)    | ~79k events             | ~123k events (12 threads ~130k) | ~6.1k/24.1k (7zip)     | -                   | -        | -                        | -                        | -          | -                       | -             | -                    | April 2021      | ~79k events               | ~123k events              | -                       |
+
+---
+
+Now, the large table includes:
+
+- Sysbench performance (4 and 8 threads)
+- 7zip performance (Tot 4 threads)
+- Docker build times and temperatures
+- Idle power consumption, max power usage, and yearly cost
+- Release dates for devices
+- CPU benchmark results (4 and 8 threads)
+- Build time for Astral-SH
+
+This provides a comprehensive view of all the devices' performance and specifications in one table.
+
 ---
 
 ## FAQ
 
-### How I Edited this video
 
-* Video was recorded with a Huawei P30 and Iphone 15Pro - Back in ~Apr2024
-* I Have silenced it as learn with the [DJI Workflow](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/#my-workflow-with-the-dji-oa5-pro)
 
-{{< callout type="info" >}}
-The videos were filmed Spring this year, just put them together now
-{{< /callout >}}
+{{< details title="Other Cloud Resources 📌" closed="true" >}}
 
+* Digital Ocean - https://www.digitalocean.com/pricing
+* https://lowendbox.com/
+* https://www.netcup.de/
+
+    RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud, Hetzner…
+    vast.ai,
+    Google Colab TPU…
+
+* <https://cloud.google.com/free>
+  * PUB/SUB <https://cloud.google.com/free/docs/free-cloud-features#pub-sub>
+
+<https://www.youtube.com/watch?v=jYIgcdIW1yk>
+
+* AWS IoT - <https://www.youtube.com/watch?v=hgQ-Ewrm48c>
+
+### Using HuggingFace for LLMs
+
+* https://huggingface.co/spaces
+* https://www.youtube.com/watch?v=_Ua6065p-Cw
+* https://www.youtube.com/watch?v=_Ua6065p-Cw
+
+{{< /details >}}
+
+{{< cards cols="3" >}}
+  {{< card link="https://www.vultr.com/pricing/#cloud-gpu" title="Vultr Cloud GPUs" >}}
+  {{< card link="https://vast.ai/pricing" title="VastAI GPUs" >}}
+  {{< card link="https://lambdalabs.com/" title="Lambdalabs GPUs" >}}    
+{{< /cards >}}
+
+{{< details title="OS Inside Containers: RPi emulator / Windows / macOS 📌" closed="true" >}}
+
+A raspberry Pi inside a container - https://github.com/ptrsr/pi-ci
+
+> A Raspberry **Pi emulator in a Docker image** that lets developers easily prepare and flash RPi configurations.
+
+
+
+{{< /details >}}
 
 {{< details title="Keeping GIT tidy 📌" closed="true" >}}
 
@@ -286,3 +458,13 @@ git push
 ```
 
 {{< /details >}}
+
+### How I Edited this video
+
+* Video was recorded with a Huawei P30 and Iphone 15Pro - Back in ~Apr2024
+* I Have silenced it as learn with the [DJI Workflow](https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/#my-workflow-with-the-dji-oa5-pro)
+
+{{< callout type="info" >}}
+The videos were filmed Spring this year, just put them together now
+{{< /callout >}}
+

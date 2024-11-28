@@ -18,6 +18,7 @@ A very interesting **Small Factor PC** with
 
 {{< callout type="info" >}}
 * It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/).
+  * Left Windows 11 as dual boot, with [chocolatey ready](https://jalcocert.github.io/JAlcocerT/how-to-use-chocolatey-windows/)
 
 * I went with [Zorin OS](https://zorin.com/os/), a [Linux focused on simplicity](#faq).
 {{< /callout >}}
@@ -123,10 +124,16 @@ Energy costs ~0.25Eur/Kwh
 
 
 * For docker builds, it seems that the ARM architecture lags compared to x86 (lower is better)
-  * During docker builds with ARM i observe that only 1 core is used
+
+{{< callout type="warning" >}}
+During docker builds with ARM, I observed that **only 1 core is used**
+{{< /callout >}}
+
 * The OrangePi5 is a great rival when having into consideration the performance and volume
 
 ### FireBat - Computing vs Price
+
+
 | Device                     | CPU                                                | Price | Docker Build (s/Price) | CPU Benchmark (4 threads) (events/Price) | Tot (4 threads) 7 zip (events/Price) |
 |----------------------------|----------------------------------------------------|-------|-------------------------|--------------------------------------------|---------------------------------------|
 | Raspberry Pi 4 2GB         | Broadcom BCM2711 Quad-core (4x ARM Cortex-A72)   | $35   | 128520                  | 48.57                                      | 46.34                                 |
@@ -136,7 +143,7 @@ Energy costs ~0.25Eur/Kwh
 | Orange Pi 5 (8 GB)        | Rockchip RK3588S (4x Cortex-A76 + 4x Cortex-A55) | $150  | 266550                  | 253.33                                     | 18.00                                 |
 
 
-* The firebat is the most competitive of my list in building docker images versus price (lower is better)
+* The Firebat is the most competitive of my list in building docker images versus price (lower is better)
 * The Pi's 4 win the Sysbench and 7zip versus price due to their lower price ratio
 
 
@@ -272,7 +279,7 @@ nslookup google.com #see that now you are using quad9 DNS
 {{< /details >}}
 
 
-{{< details title="Inspects the disks 📌" closed="true" >}}
+{{< details title="Inspects the Disks 📌" closed="true" >}}
 
 Connect with ssh as:
 
@@ -457,8 +464,11 @@ Explore more apps:
 
 ### FireBat Trip Planner
 
+How about using this [Trip Planner Project?](https://github.com/JAlcocerT/Py_Trip_Planner/)
 
 {{< details title="Setup Trip Planner 📌" closed="true" >}}
+
+
 
 ```yml
 version: "2"
@@ -517,7 +527,7 @@ exit
 
 {{< details title="Interesting Apps, for W11 and Linux 📌" closed="true" >}}
 
-Sure! Here's the list of applications and tools formatted in Markdown, organized into categories for better readability:
+A list of applications and tools, organized into categories
 
 ### Virtualization and Remote Access
 - Tailscale

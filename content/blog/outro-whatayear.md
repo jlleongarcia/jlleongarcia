@@ -115,14 +115,21 @@ Probably will need to [migrate from Jekyll](https://simplyexplained.com/blog/mig
 
 ## Servers
 
+A new Windows setup is easy [with Chocolatey](https://jalcocert.github.io/JAlcocerT/how-to-use-chocolatey-windows/)
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/JAlcocerT/rpi-mjpg-streamer" title="RPi Streamer" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/pi-vs-orange/#the-raspberry-pi-4" title="A Raspberry Pi? A SBC?" >}}
+{{< /cards >}}
+
 {{% steps %}}
 
 ### Better SelfHosting
 
-With [this post](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/) and [**this script**](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_101.sh)
+With [this post](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/) and [**this SelfHosting script**](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_101.sh)
 
 
-* Understood better [how DNS works](https://jalcocert.github.io/Linux/docs/privacy/#changing-linux-dns) and went fully with BitWarden+ 2FAS Auth
+* Understood better [how DNS works](https://jalcocert.github.io/Linux/docs/privacy/#changing-linux-dns) and went fully with *BitWarden + 2FAS Auth*
 
 ### Doing Better with Pi's
 
@@ -136,13 +143,8 @@ I got an additional **Pi4** (this time 4GB Ram, 64 bits) and was helpful to:
   * A pi can be powered with the original 15W usb-c adapter (5.1V/3A DC)
     * But as long as your adapter is able to sustain at 5V a current up to 3A it will work
     * In idle the Pi4 sits ~4W, meaning ~0.8A (Voltage is the constant)
-* [Used Ansible!](https://jalcocert.github.io/Linux/docs/linux__cloud/ansible/) Combined an [IoT Project (DHT-Mongo-Metabase)](https://jalcocert.github.io/RPi/posts/rpi-ansible/)
+* [Used **Ansible**!](https://jalcocert.github.io/Linux/docs/linux__cloud/ansible/) Combined an [IoT Project (DHT-Mongo-Metabase)](https://jalcocert.github.io/RPi/posts/rpi-ansible/)
 
-
-{{< cards cols="2" >}}
-  {{< card link="https://github.com/JAlcocerT/rpi-mjpg-streamer" title="RPi Streamer" >}}
-  {{< card link="https://jalcocert.github.io/RPi/posts/pi-vs-orange/#the-raspberry-pi-4" title="A Raspberry Pi? A SBC?" >}}
-{{< /cards >}}
 
 {{< callout type="warning" >}}
 Definitely want to go back to the IoT Projects and do sth with Small Solar Panels

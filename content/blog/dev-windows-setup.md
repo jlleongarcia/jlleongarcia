@@ -36,7 +36,7 @@ Run podman compose up (podman CLI v4.7.0+) or docker-compose in a directory with
 podman compose up
 ```
 
-You will need windows subsystem for linux (WSL)
+You will need Windows Subsystem for Linux (**WSL**)
 
 ```sh
 wsl --install

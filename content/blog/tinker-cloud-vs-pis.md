@@ -198,6 +198,10 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 * Hetzner Shared vCPU (4x Skylake @2ghz) 8GB	~45s
 
 ### Astral-SH Build Time
+
+A comparison between the SBCs and Hetzner.
+
+
 {{< details title="Building Astral-SH 📌" closed="true" >}}
 
 | Platform | opi    | rpi4b 2gb | RPi 5 8GB | Hetzner  |
@@ -210,7 +214,7 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 
 ## Conclusions
 
-You have other options for hosting services, in the cloud:
+You have other options for **hosting services**, in the cloud:
 
 
 {{< cards cols="1" >}}

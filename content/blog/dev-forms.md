@@ -1,6 +1,6 @@
 ---
 title: "Forms and Newsletters for your Website"
-date: 2024-09-07T23:20:21+01:00
+date: 2024-09-08T23:20:21+01:00
 draft: false
 tags: ["Dev"]
 summary: "Easy Forms/Newsletters for Websites: MailerLite and more"
