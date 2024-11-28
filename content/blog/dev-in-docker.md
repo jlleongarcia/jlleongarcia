@@ -121,7 +121,7 @@ Node is a very popular one.
 But you may also need [GO](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#hugo), or [Ruby...](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#jekyll)
 
 
-### Node
+#### Node
 
 It will work for **Astro sites, NextJS,...**
 
@@ -229,7 +229,7 @@ COPY . .
 
 {{< /details >}}
 
-### HUGO
+#### HUGO
 
 
 * <https://hub.docker.com/r/klakegg/hugo>
@@ -248,7 +248,7 @@ services:
 ```
 
 
-### Jekyll
+#### Jekyll
 
 * <https://wowthemesnet.github.io/mundana-theme-jekyll/index.html>
 
@@ -268,7 +268,7 @@ volumes:
 ```
 
 
-### Gatsby
+#### Gatsby
 
 Thanks to Gatsby, I heard for the first time about **headless CMS**
 
@@ -290,7 +290,7 @@ A starter template to build lightning fast websites with [Ghost](https://ghost.o
 &nbsp;
 
 
-# Installing
+**Installing**
 
 ```bash
 # With Gatsby CLI
@@ -311,7 +311,7 @@ yarn
 
 &nbsp;
 
-# Running
+**Running**
 
 Start the development server. You now have a Gatsby site pulling content from headless Ghost.
 

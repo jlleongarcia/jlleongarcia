@@ -91,7 +91,7 @@ Personally, I find **HUGO** a fantastic option (I migrated this blog to HUGO fro
     * Another [SSG](https://ssg-dataset.streamlit.app/)'s that can serve as HUGO alternatives (free and open source) are:
         * Jekyll (Ruby)
         * Gatsby (Js)
-        * Astro
+        * Astro (Js)
 {{< /dropdown >}}
 
 

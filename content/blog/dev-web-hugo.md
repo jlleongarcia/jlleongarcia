@@ -36,7 +36,7 @@ wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_0.108.0_li
 ```
 {{< /details >}}
 
-Now you can spin a server and make HUGO Remote Development in it.
+Now you can spin a server and make HUGO [Remote Development](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker) in it.
 
 But...you can also use **ARM SBCs with HUGO**
 

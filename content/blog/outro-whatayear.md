@@ -53,12 +53,12 @@ And cool **food for thoughs** on these posts:
 
 ### Webs101
 
-This is the first step: [Setup HUGO](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/) or Setup Astro.
+This is the first step: [Setup HUGO](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/) or [Setup Astro](/using-astro-as-website).
+
+You can also deploy [SSG with Containers](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#containers-for-webs)
 
 ```sh
-#hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" 
 #hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" --port=1313
-#hugo server --bind="0.0.0.0" --baseURL="http://100.104.143.77" --port=1319
 ```
 
 * Explore new libraries to improve Themes:
