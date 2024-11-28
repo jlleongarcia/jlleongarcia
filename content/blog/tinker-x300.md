@@ -524,7 +524,9 @@ curl -sS https://ipinfo.io/json #the command to use
 
 Setup a regular Wireguard Client in Windows / Linux.
 
-Or use Gluetun
+Also on [Android](https://play.google.com/store/apps/details?id=com.wireguard.android&hl=en-US).
+
+Or use Gluetun as Client.
 * https://fossengineer.com/using-bard-selfhosting-firefox-with-vpn-and-docker/#vpn---via-docker-gluetun
 * https://github.com/qdm12/gluetun-wiki/blob/main/setup/wireguard.md
 * https://github.com/qdm12/gluetun-wiki/blob/main/setup/providers/custom.md
