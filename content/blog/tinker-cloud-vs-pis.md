@@ -21,7 +21,11 @@ Is it really worth to SelfHost?
 
 Or can we just use **a Cloud Server for similar performance/price?**
 
-This is what we will be looking at today. And make [some conclusions](#conclusions)
+This is what we will be looking at today.
+
+* BMax B4
+* Raspberry Pi 4's (2GB and 4GB)
+ And make [some conclusions](#conclusions)
 
 
 <!-- 
@@ -34,7 +38,7 @@ moved to the RPI repo
 
 ### Asrock X300 and the BMAX B4
 
-The **Asrock has 1.92L** (155 x 155 x 80 mm) size in volume, and the bmax just 0.6L.
+The **Asrock has 1.92L** (155 x 155 x 80 mm) size in volume, and the **BMax just 0.6L**.
 
 What am I doing talking in liters?
 
@@ -48,7 +52,7 @@ You can have a reference a very popular referece, a pen:
 ![BMax B4 vs Asrock X300 Size](/blog_img/hardware/bmax-b4.jpg)
 
 
-* RAM is not soldered in the BMAX, and also you can add an additional 2,5 drive (screws not included)
+* RAM is not soldered in the BMAX, and also you can **add an additional 2,5 drive** (screws not included)
 * The SSD drive it comes with **is not 2280** (I got surprised with that)
 
 ![Bmax B4](/blog_img/mini_pc/bmax.jpg)
@@ -64,15 +68,15 @@ Now that prices are reasonable:
 There is a bunch of information on the internet: reddit, youtube and decided to create this post as both, **a systematic guide and the results of testing** that I could perform.
 
 {{< callout type="info" >}}
-How to run [these tests](#faq)
+How to run [these tests/benchmarks](#faq)
 {{< /callout >}}
 
 * What I the testing results include:
   * Raspberry Pi 4 2/4GB
   * Raspberry Pi 5 8GB
-  * Orange Pi 5 8GB
-  * BMAX B4
-  * Hetzner Cloud
+  * [Orange Pi 5 8GB](https://jalcocert.github.io/RPi/posts/pi-vs-orange/#benchmarking-the-docker-build-process)
+  * [BMAX B4](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/)
+  * [Hetzner Cloud](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner) - Amazing internet speed...
 
 > **Big Thanks to [Alex](https://www.linkedin.com/in/dunayeu/) 🙌** - For sharing the results of the Raspberry **Pi 5 8GB**  
 

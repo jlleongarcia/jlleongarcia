@@ -17,7 +17,7 @@ After [Weather Planning](https://jalcocert.github.io/JAlcocerT/trip-planner-with
 
 
 {{< callout type="info" >}}
-The project [**source code**](https://gitlab.com/fossengineer1/py_stocks)💻 
+The project [**source code**](https://gitlab.com/fossengineer1/py_stocks) - PyStocks 💻 
 {{< /callout >}}
 
 If all of this sounds familiar. It is because it is actually familiar.
@@ -25,6 +25,15 @@ If all of this sounds familiar. It is because it is actually familiar.
 {{< callout type="info" >}}
 Sometime ago I was doing similar Project in **R Shiny** - [R/Stocks](https://jalcocert.github.io/JAlcocerT/R-Stocks/)
 {{< /callout >}}
+
+{{< details title="API's I was using with R/Stocks 📌" closed="true" >}}
+
+* [PriceR](https://jalcocert.github.io/JAlcocerT/r-priceR-package-guide/#what-is-pricer-about)
+* [QuantDL](https://jalcocert.github.io/JAlcocerT/r-quandl-package-guide/#how-to-use-the-quandl-package) - [API](https://docs.data.nasdaq.com/v1.0/docs/getting-started) required
+* [QuantMod](https://jalcocert.github.io/JAlcocerT/r-Quantmod-package-guide/#how-to-use-the-quantmod-package)
+* [yfR - yahoo finance in R](https://jalcocert.github.io/JAlcocerT/r-yfR-package-guide/#the-yfr-package)
+
+{{< /details >}}
 
 ## PyStocks
 

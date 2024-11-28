@@ -196,17 +196,29 @@ volumes:
 
 ```sh
 sudo docker pull node:20.12.2
-docker build -t mynode_webapp:cyclingthere .
+#docker build -t mynode_webapp:cyclingthere .
+docker build -t mynode_web:web3 .
 ```
 
 Depending where you run this, it will take more or less time.
 
-With a Opi5 I had ~2min33s
+* With a [Opi5](https://jalcocert.github.io/RPi/posts/pi-vs-orange/) I had ~2min33s
+* With a Pi4 4GB ~2min18s
+
+```sh
+sudo docker run -d -p 4321:4321 --name astro-web3 mynode_web:web3 tail -f /dev/null
+#docker run -d -p 3000:3000 --name astro-web3 mynode_web:web3
+docker exec -it astro-web3 bash
+npm run dev --host
+
+#docker run -d -p 3001:3000 --name astro-web33 mynode_web:web3 npm run dev
+```
+
 
 ```dockerfile
 # Use the official Node.js image.
 # https://hub.docker.com/_/node
-FROM node:20.12.2 #
+FROM node:20.12.2
 #https://hub.docker.com/layers/library/node/20.12.2/images/sha256-740804d1d9a2a05282a7a359446398ec5f233eea431824dd42f7ba452fa5ab98?context=explore
 
 # Create and change to the app directory.
@@ -225,12 +237,19 @@ RUN npm install
 
 # Copy local code to the container image.
 COPY . .
+
+#If you'd like to set npm run dev as the default command for the container
+# Add this line at the end of your Dockerfile
+#CMD ["npm", "run", "dev"]
 ```
 
 {{< /details >}}
 
 #### HUGO
 
+{{< callout type="info" >}}
+This Website is made with HUGO! - See [Source Code](https://github.com/JAlcocerT/JAlcocerT)
+{{< /callout >}}
 
 * <https://hub.docker.com/r/klakegg/hugo>
 
@@ -249,6 +268,12 @@ services:
 
 
 #### Jekyll
+
+{{< callout type="info" >}}
+I have used Jekyll with the [RPi Web project](https://jalcocert.github.io/RPi/) as covered on [this post](https://jalcocert.github.io/JAlcocerT/raspberrypi-starting-guide/)
+{{< /callout >}}
+
+
 
 * <https://wowthemesnet.github.io/mundana-theme-jekyll/index.html>
 

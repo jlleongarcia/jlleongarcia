@@ -42,7 +42,7 @@ install.packages("quantmod")
 
 You can use QuanDl to query historical stocks information in R the following way:
 
-First log your API key:
+First log your **API key**: https://docs.data.nasdaq.com/v1.0/docs/getting-started
 
 ```r
 # Get your API key from quandl.com and include it on a 'config.yaml' file

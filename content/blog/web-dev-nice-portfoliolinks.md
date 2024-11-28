@@ -81,13 +81,16 @@ git checkout main
 git push origin main
 ```
 
-It can be built published to **Github Pages** with this **sample Workflow**: [Dev Hugo -> Push Changes -> CICD Magic](https://github.com/JAlcocerT/Portfolio/blob/main/.github/workflows/hugo.yml)
-
-In **less than ~1min**, your site will be refreshed at Github Pages.
-
-Other Interesting HUGO Themes: BlowFish, BeautifulHugo, 
-
 {{< /details >}}
+
+
+It can be built when published to **Github Pages** with this **sample Workflow**: [Dev Hugo -> Push Changes -> CICD Magic](https://github.com/JAlcocerT/Portfolio/blob/main/.github/workflows/hugo.yml)
+
+In **less than ~1min**, your site will be refreshed at **Github Pages**.
+
+> Thanks to Github Pages + Github Actions CI/CD!
+
+Other Interesting HUGO Themes: BlowFish, BeautifulHugo, ...
 
 {{< details title="It all started testing this Astro Theme with TinaCMS📌" closed="true" >}}
 

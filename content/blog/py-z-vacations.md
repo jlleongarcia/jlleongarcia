@@ -9,7 +9,6 @@ url: 'vacation-planner-python'
 isPinned: false
 ---
 
-Its all about **Knowledge of Crowds**
 
 Some time ago, I made a [Trip Planner Web App](https://github.com/JAlcocerT/Py_Trip_Planner), based purely on weather patterns as [described here](https://jalcocert.github.io/JAlcocerT/trip-planner-with-weather/).
 
@@ -48,7 +47,7 @@ services:
 But we need something more to decide **where and how to go next**.
 
 {{< callout type="info" >}}
-Related project [**Source Code**](https://gitlab.com/fossengineer1/py_vacations) 💻
+Related project [**Source Code**](https://gitlab.com/fossengineer1/py_vacations) - **PyVacAItions** 💻
 {{< /callout >}}
 
 <!-- {{< callout type="info" >}}
@@ -137,6 +136,11 @@ content
 
 
 {{< /details >}}
+
+### Numbeo Data
+
+Its all about **Knowledge of Crowds**
+
 
 {{< details title="First Knowledge Adquisition (with FireCrawl + openAI) 📌" closed="true" >}}
 

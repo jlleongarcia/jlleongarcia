@@ -53,12 +53,28 @@ And cool **food for thoughs** on these posts:
 
 ### Webs101
 
-This is the first step: [Setup HUGO](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/) or [Setup Astro](/using-astro-as-website).
+This is the first step: [Setup HUGO](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/) or [Setup Astro](/JAlcocerT/using-astro-as-website).
 
 You can also deploy [SSG with Containers](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#containers-for-webs)
 
 ```sh
 #hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.117" --port=1313
+
+#npm run dev
+```
+
+```mermaid
+graph TD
+    A[Build SSG] -->|Choose one | B[GitHub Pages]
+    A -->|of these | C[Firebase]
+    A -->|deployments| D[Cloudflare Pages]
+    B --> E[Add your custom domain - OPTIONAL]
+    C --> E
+    D --> E
+
+    click B href "https://jalcocert.github.io/JAlcocerT/portfolio-website-for-social-media/#demo-results" "Visit GitHub Pages"
+    click C href "https://fossengineer.com/hosting-with-firebase/#getting-started-with-firebase-hosting" "Visit Firebase Hosting"
+    click D href "https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/" "Visit Cloudflare Pages"
 ```
 
 * Explore new libraries to improve Themes:
@@ -71,11 +87,11 @@ From an [AI driven content](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-
 
 ### Get Better at Webs
 
-* https://stateofjs.com/en-US
-* Web Analytics: with Umami or Tianji
+Good recap of whats going on at JS: https://stateofjs.com/en-US
+* Web Analytics: with [Umami](https://fossengineer.com/selfhosting-umami-with-docker/) or Tianji
 * CMS for Webs: DecapCMS, ...
 
-Need to have a look to me RPi site, as there is sth wrong with the Jekyll automatic CI/CD build.
+Need to have a look to [my RPi site](https://jalcocert.github.io/RPi/), as there is sth wrong with the Jekyll automatic CI/CD build.
 
 Probably will need to [migrate from Jekyll](https://simplyexplained.com/blog/migrating-this-blog-from-jekyll-to-eleventy/) at some point to HUGO/Astro.
 
