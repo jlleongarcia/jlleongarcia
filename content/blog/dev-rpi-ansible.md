@@ -1,9 +1,9 @@
 ---
-title: "Ansible and Raspberry Pi"
-date: 2024-08-10T23:20:21+01:00
-draft: true
+title: "[IoT] Ansible and Raspberry Pi"
+date: 2024-09-02
+draft: false
 tags: ["Dev"]
-summary: Learning about Ansible with SBCs
+summary: Learning about Ansible with SBCs. Together with the IoT Project DHT/InfluxDB
 url: ansible-with-raspberry-pi
 ---
 
@@ -49,7 +49,6 @@ So this is it from the Setup side. Now choose the IoT Project you want to have r
 ### Mongo Project
 
 > Im Talking about: [Raspberry Pi - DHT to MongoDB](https://jalcocert.github.io/RPi/posts/rpi-iot-dht1122-mongo/)
-{: .prompt-info }
 
 So you want to have the project that pulls data from DHT11 or DHT22, sends it from Python to Mongo and then Display it in Metabase?
 
@@ -72,7 +71,6 @@ docker exec -it dht_sensor_mongo sh
 
 
 > Working for me on [RaspiOS Bullseye](https://downloads.raspberrypi.com/raspios_armhf/images/raspios_armhf-2023-05-03/), **not in Bookworm** due to Adafruit not detecting the platform properly.
-{: .prompt-info }
 
 
 ### Influx Project
@@ -81,8 +79,8 @@ docker exec -it dht_sensor_mongo sh
 ansible-playbook ./RPi/Z_ansible/Ansible_py_dht_influx_grafana.yml -i inventory.ini #execute Influx Project Playbook
 ```
 
-> This is the one: [Raspberry Pi - DHT to InfluxDB](https://jalcocert.github.io/RPi/posts/rpi-iot-dht11-influxdb/)
-{: .prompt-info }
+> This is the one - [Raspberry Pi - DHT to InfluxDB](https://jalcocert.github.io/RPi/posts/rpi-iot-dht11-influxdb/). There is a GHCR Image too <https://github.com/JAlcocerT/RPi/blob/main/.github/workflows/python-dht-build.yml>
+
 
 ---
 
@@ -113,4 +111,4 @@ Why shouldnt we do it with our Pi's?
 
 <https://jalcocert.github.io/RPi/posts/selfhosting-with-docker/>
 
-You can also try [containers with Podman](https://fossengineer.com/docker-alternatives-for-data-analytics/)
+You can also try [containers with **Podman**](https://fossengineer.com/docker-alternatives-for-data-analytics/)

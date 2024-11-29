@@ -565,19 +565,19 @@ phase 1 (28 weeks) --- 90 min
 phase 2 = phase 1 + 12 weeks --- 20/40 min
  -->
 
-Typical Gateways (Routers) Models: remember the **differences between DSL<COAX<Fiber**.
+Typical Gateways (Routers) Models: remember the **differences between DSL<COAX<<<Fiber**.
 
 | GW Type       | GW Model  | Comment                                                                 |
 |---------------|-----------|-------------------------------------------------------------------------|
 | TG2492LG(-xx) | Arris Mv1 | Arris/CommScope This has an issue and can have a case when              |
 | TG3492LG(-xx) | MV2       | This model has a fan and reports its speed                              |
-| CH7465LG(-xx) | Compal MV1| Most popular in CH (Jan 2023) [Compal CH7465LG-VM](https://portforward.com/compal/ch7465lg-vm/) |
+| CH7465LG(-xx) | Compal MV1| Very popular CM [Compal CH7465LG-VM](https://portforward.com/compal/ch7465lg-vm/) |
 | F3896LG       | MV2+      | Hub5 in Virgin Media                                   |
 | F5685LGB      | MV3 Bosa  |                                                                         |
 | F5685LGE      | MV3 Eth   |                                                                         |
 
 {{< callout type="info" >}}
-To Analyze such data, [PySpark is highly beneficial](https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/)
+To Analyze such data, [PySpark is highly beneficial](https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/). As well as [D&A guidelines](https://jalcocert.github.io/JAlcocerT/self-taught-career-guide-for-data-analytics/) and [DataModelling](https://jalcocert.github.io/JAlcocerT/data-basics-for-data-analytics/)
 {{< /callout >}}
 
 {{< details title="PySpark Examples 📌" closed="true" >}}

@@ -20,6 +20,6 @@ Related **Project Source Code** is here: <https://github.com/JAlcocerT/Py_RouteT
 
 ### More
 
-Some time ago I tried Torque (Lite and Pro) Android apps to read OBD info from a car.
+Some time ago I tried Torque (Lite and Pro) Android apps to read [OBD](https://github.com/JAlcocerT/RPi/tree/main/Z_IoT/OBD2) info from a car.
 
 Would be great to build a real time dashboard with such data to place as onboard panel.

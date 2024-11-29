@@ -22,7 +22,9 @@ There are some concepts that will require your attention and understanding to bu
 
 ## Data Modelling Techniques
 
-Data modeling is the process of creating a visual representation of the relationships, structure, and organization of data within a system. We will be designing a database structure that accurately represents the data requirements of an organization or system
+Data modeling is the process of creating a **visual representation** of the relationships, structure, and organization of data within a system.
+
+We will be designing a database structure that accurately represents the data requirements of an organization or system
 
 It helps us to define how data should be stored, processed, and accessed to meet the needs of an application or business process. 
 

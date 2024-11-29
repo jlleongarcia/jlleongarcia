@@ -5,21 +5,30 @@ draft: true
 tags: ["Self-Hosting"]
 ---
 
-# Raspberry Pi together with: Dht11, Python InfluxDB and Docker
+Raspberry Pi together with: Dht11, Python InfluxDB and Docker
 
 If you already have a RPi at home and a DHT11 sensor, you can perfectly get started with this project.
 
-We are going to read **Temperature and Humidity data** from the sensor, save it into an InfluxDB (*say Hi to time-series DBs*) and display the output in Grafana (*Because terminal is great, but we want to make a cool end to end project*).
+We are going to:
 
-And docker? yes, let's put everything together and create a reliable Stack that we can share across any other RPi and forget about dependencies. Lets get started.
+1. Read **Temperature and Humidity data** from the sensor
+2. Save it into an InfluxDB (*say Hi to time-series DBs*) 
+3. Display the output in Grafana (*Because terminal is great, but we want to make a cool end to end project*).
+
+And docker? yes, let's put everything together and create a reliable Stack that we can share across any other RPi and forget about dependencies.
+
+4. There is a [GHCR Image](https://github.com/JAlcocerT/RPi/blob/main/.github/workflows/python-dht-build.yml) too
+
 
 **We can use Raspberry Pi 32/64 bits for this project.**
 
 ## Python
 
-Credits to <https://www.thegeekpub.com/236867/using-the-dht11-temperature-sensor-with-the-raspberry-pi/> for the initial scheleton of the code.
+Credits to [thegeekpub](https://www.thegeekpub.com/236867/using-the-dht11-temperature-sensor-with-the-raspberry-pi/) for the initial scheleton of the code.
 
-I have adapted it so that instead of printing the values, it will push them to an InfluxDB that we are going to self-host as well.
+I have adapted it so that instead of printing the values, it will **push the records to an InfluxDB** 
+
+And yes, we are going to [self-host InfluxDB](#influxdb) as well.
 
 ```py
 import Adafruit_DHT
@@ -150,10 +159,12 @@ volumes:
 
 If you go inside the InfluxDB container, you can execute the following to check that everything is working as it should:
 
+```sh
 influx
 show databases
 use sensor_data
 show measurements
+```
 
 ```sql
 SELECT * FROM dht_sensor

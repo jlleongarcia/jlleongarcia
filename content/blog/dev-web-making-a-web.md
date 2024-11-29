@@ -33,7 +33,7 @@ Lets do this.
 
 
 {{< callout type="info" >}}
-I created a [**Private repo with Github**](https://github.com/JAlcocerT/ScrewFastMoiRealEstate)
+I created a [**Private repo with Github**](https://github.com/JAlcocerT/ScrewFastMoiRealEstate). Which is deployed with CF Pages: <screwfastmoirealestate.pages.dev>
 {{< /callout >}}
 
 
