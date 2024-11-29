@@ -560,3 +560,73 @@ Perplexity? Or **Perplexica**?
 {{< /details >}}
 
 ---
+
+
+
+## VectorDBs
+
+When you are using [embedding models](https://www.youtube.com/watch?v=QdDoFfkVkcw) to give LLMs context about your files, this is where that knowledge goes.
+
+And there are many Vector DBs that you can use with Linux
+
+{{< tabs items="VectorAdmin,ChromaDB,Other Vector DBs" >}}
+
+  {{< tab >}}
+  Manage them with [VectorAdmin and Docker](https://fossengineer.com/what-are-vector-dbs/#selfhosting-vectoradmin-with-docker)
+  {{< /tab >}}
+  {{< tab >}}
+  [ChromaDB with Docker](https://fossengineer.com/selfhosting-chroma-vector-db/)
+  {{< /tab >}}
+  {{< tab >}}QDrant{{< /tab >}}
+
+{{< /tabs >}}
+
+All of this tech will work in Linux and **with just CPU**, if you dont have a GPU handy.
+
+---
+
+## More & More
+
+### Can I use LLMs to Code?
+
+Yes, there are many ways to replace Github Copilot for Free:
+
+* [Tabby](https://fossengineer.com/selfhosting-Tabby-coding-assistant/)
+* [LLama Coder](https://github.com/ex3ndr/llama-coder) in a [vscode extension](https://marketplace.visualstudio.com/items?itemName=ex3ndr.llama-coder&ssr=false#review-details)
+  * [CodeLLama in HF](https://huggingface.co/codellama/CodeLlama-70b-hf)
+* Others: Bito, Codeium, or [Adrenaline](https://github.com/shobrook/adrenaline/)
+
+### Choosing the Right Model
+
+
+{{% details title="LLM Quantization" closed="true" %}}
+* GPTQ quantization, a state-of-the-art method featured in research papers, offers minimal performance loss compared to previous techniques. It's most efficient on NVIDIA GPUs when the model fits entirely in VRAM.
+* GGML, a machine learning library by Georgi Gerganov (who also developed llama.cpp for running local LLMs on Mac), performs best on Apple or Intel hardware.
+
+Thanks: https://aituts.com/local-llms/#Which_Quantization
+
+{{< /details >}}
+
+#### Which LLMs are Trending?
+
+{{% details title="You can always check the LLM's Leaderboards" closed="true" %}}
+
+* <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard>
+* With **ELO** Rating: <https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard>
+    * <https://chat.lmsys.org/?arena>
+
+* Examples: use them also with GPT4All or TextGenWebUI
+  * <https://huggingface.co/TheBloke/Llama-2-13B-Chat-fp16/tree/main>
+  * <https://huggingface.co/docs/transformers/main/model_doc/mpt>
+    * And [this one](https://www.mosaicml.com/mpt) you can train it and use commercially: https://www.mosaicml.com/training
+
+> You can also check this repository: https://github.com/sindresorhus/awesome-chatgpt and https://github.com/f/awesome-chatgpt-prompts
+{{< /details >}}
+
+
+### Where to host in the Cloud?
+
+If you need big GPU power, you can always try https://www.runpod.io/gpu-instance/pricing and similar services.
+
+* https://accounts.hetzner.com/_ray/pow (I tried the CX22 model x2 vCPU)
+* https://cloud.digitalocean.com

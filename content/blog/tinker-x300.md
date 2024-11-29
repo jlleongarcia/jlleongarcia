@@ -75,6 +75,9 @@ hostname -I
 
 #sudo apt-get install net-tools
 #ifconfig
+#ifconfig eth0 | grep -A 10 "<global>" #check mac, and transfered packages
+ifconfig eth0 | grep "inet " | awk '{ print $2 }' #if ETH Connected - SEE THE LOCAL IP
+#ifconfig tailscale0 | grep "inet " | awk '{ print $2 }' #for Tailscale
 
 ping -c 4 192.168.0.1 #gateway
 ping -c 4 192.168.0.117 #ping the orange pi which is connected to same device
@@ -90,6 +93,10 @@ dig google.com
 ```sh
 sudo apt-get install speedtest-cli
 speedtest-cli #speedtest-cli --simple
+
+sudo snap install fast
+fast
+#npm install --global fast-cli && fast
 ```
 
 * The Opi5 with cable has 780/60 for comparison.
@@ -359,9 +366,14 @@ nslookup github.com
 dig google.com
 ```
 
+Test the connectivity speed with:
 ```sh
 sudo apt-get install speedtest-cli
 speedtest-cli #speedtest-cli --simple
+
+#sudo apt install snapd -y
+sudo snap install fast
+fast
 ```
 
 * Regular browser speed test: https://www.speedtest.pl/
@@ -465,7 +477,6 @@ Lets do it with [wgeasy](https://github.com/wg-easy/wg-easy), or if you prefer w
 docker run --rm -it ghcr.io/wg-easy/wg-easy wgpw 'YOUR_PASSWORD'
 
 docker run --rm -it ghcr.io/wg-easy/wg-easy wgpw 'YOUR_PASSWORD' | sed 's/\$/\$\$/g'
-
 ```
 
 {{< callout type="warning" >}}
@@ -561,13 +572,14 @@ Which will then provide VPN access to your desktop via the Ethernet cable.
 {{< details title="Other Cloud Resources 📌" closed="true" >}}
 
 * Hetzner
+* https://www.vultr.com/pricing/
+* OVH - https://www.ovhcloud.com/pl/black-friday/
 * Digital Ocean - https://www.digitalocean.com/pricing
 * https://lowendbox.com/
 * https://www.netcup.de/
-* contabo
-* OVH - https://www.ovhcloud.com/pl/black-friday/
+* Contabo
 
-RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud,vast.ai,Google Colab TPU…
+RunPod, Linode, Paper Space, Lambda Cloud, vast.ai, Google Colab TPU…
 
 * <https://cloud.google.com/free>
   * PUB/SUB <https://cloud.google.com/free/docs/free-cloud-features#pub-sub>

@@ -166,7 +166,7 @@ And it seems that **Google likes it**:
 * GDPR Compliant out of the box
 
 {{< callout type="info" >}}
-Who said, **embedded Chatbot**? Maybe [Flowise AI](https://fossengineer.com/selfhosting-flowise-ai/)?
+Who said, **embedded Chatbot**? Maybe [Flowise AI](https://fossengineer.com/selfhosting-flowise-ai/)? Or just a [LLM over custom data](#real-estate-bot-agent)?
 {{< /callout >}}
 
 ![Flowise AI Example](/blog_img/GenAI/pdf-flowise.png)
@@ -182,7 +182,7 @@ Who said, **embedded Chatbot**? Maybe [Flowise AI](https://fossengineer.com/self
 
 But, if you really want something to perform with your data...
 
-...make it yourself.
+...**make it yourself**.
 
 * Features it should be able to reply:
   * Follow up questions from the real state agent etc
