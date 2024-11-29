@@ -560,17 +560,14 @@ Which will then provide VPN access to your desktop via the Ethernet cable.
 
 {{< details title="Other Cloud Resources 📌" closed="true" >}}
 
+* Hetzner
 * Digital Ocean - https://www.digitalocean.com/pricing
-* https://lowendbox.com/
-* https://www.netcup.de/
 * https://lowendbox.com/
 * https://www.netcup.de/
 * contabo
 * OVH - https://www.ovhcloud.com/pl/black-friday/
 
-RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud, Hetzner…
-vast.ai,
-Google Colab TPU…
+RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud,vast.ai,Google Colab TPU…
 
 * <https://cloud.google.com/free>
   * PUB/SUB <https://cloud.google.com/free/docs/free-cloud-features#pub-sub>

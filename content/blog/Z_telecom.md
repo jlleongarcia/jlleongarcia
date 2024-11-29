@@ -626,7 +626,7 @@ streamparser_kafka \
 
 {{< details title="How to read Kafka Topics with JHub 📌" closed="true" >}}
 
-You can check **this code**
+You can check **[this code](https://github.com/JAlcocerT/Private/tree/main/ZZ_Telecom/Y2024)**
 
 {{< /details >}}
 
