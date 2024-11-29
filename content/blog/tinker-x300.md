@@ -600,9 +600,39 @@ RunPod, Linode, Paper Space, Lambda Cloud, vast.ai, Google Colab TPU…
 
 {{< details title="**OS Inside Containers**: RPi emulator / Windows / macOS 📌" closed="true" >}}
 
-A raspberry Pi inside a container - https://github.com/ptrsr/pi-ci
+1. A raspberry Pi inside a container - https://github.com/ptrsr/pi-ci
 
 > A Raspberry **Pi emulator in a Docker image** that lets developers easily prepare and flash RPi configurations.
+
+2. Thanks to the [Dockur Project](https://github.com/dockur/windows) and by using the [Image](https://hub.docker.com/r/dockurr/windows#!)
+
+Use Windows inside Docker with:
+
+```yml
+version: '3.3'
+
+services:
+  windows:
+    image: dockurr/windows
+    container_name: windows
+    devices:
+      - /dev/kvm
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "8006:8006" #UI
+      - "3389:3389/tcp"
+      - "3389:3389/udp"
+    stop_grace_period: 2m
+    restart: on-failure
+    volumes:
+      - ./data:/storage
+    environment:
+      RAM_SIZE: 8GB
+      CPU_CORES: 3
+      DISK_SIZE: 75GB
+      VERSION: "win10"
+```
 
 
 {{< /details >}}
@@ -638,4 +668,3 @@ git push
 {{< callout type="info" >}}
 The videos were filmed Spring this year, just put them together now
 {{< /callout >}}
-

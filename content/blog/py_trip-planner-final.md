@@ -20,9 +20,15 @@ isPinned: false
 
 ## Trip Planner with Weather
 
-Imagine a world where you're about to embark on a trip, you already know where you are going and now, there is an App that also whispers in your ear about the weather.
+Imagine a world where you're about to embark on a trip.
 
-Not just the weather of yesteryears, but a glimpse into the future.
+You already know where you are going and now, there is an App that also whispers in your ear about the weather.
+
+Not just the **weather of yesteryears**, but a glimpse into the future.
+
+{{< callout type="info" >}}
+Python Trip Planner [Source Code](https://github.com/JAlcocerT/Py_Trip_Planner). Deploy with the [GHCR Image](https://github.com/JAlcocerT/Py_Trip_Planner/pkgs/container/py_trip_planner) or [build it yourself](https://github.com/JAlcocerT/Py_Trip_Planner/tree/main/Deploy)
+{{< /callout >}}
 
 Sounds like **magic?**
 

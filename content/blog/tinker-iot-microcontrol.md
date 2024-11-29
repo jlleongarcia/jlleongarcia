@@ -1,5 +1,5 @@
 ---
-title: "Setup RPi Pico W and ESP32 "
+title: "[IoT] Setup RPi Pico W and ESP32 "
 date: 2024-09-02T23:20:21+01:00
 draft: false
 tags: ["Tinkering"]

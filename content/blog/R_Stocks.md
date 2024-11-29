@@ -23,6 +23,11 @@ After some time of using R and loving it, I was wondering if there was any [open
 
 Since I found nothing on Github, I decided to start it myself - *This is how the [R Stocks project](#the-app-r-stocks) started*.
 
+
+{{< callout type="info" >}}
+R/Stocks [Source Code](https://github.com/JAlcocerT/R_Stocks). Deploy with [GHCR image](https://github.com/JAlcocerT/R_Stocks/pkgs/container/r-stocks) or [build it DIY version](https://github.com/JAlcocerT/R_Stocks/tree/main/Z_Deploy_Me)
+{{< /callout >}}
+
 With such a project, you not only get the chance to create something cool but also to learn and discover great tools.
 
 * Libraries that are used to fetch the main financial data: 

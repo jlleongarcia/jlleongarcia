@@ -13,7 +13,7 @@ And you can make cool things, easily.
 
 ## Tailwind
 
-https://tailwindui.com/components
+* https://tailwindui.com/components
 
 ### Libraries Built on Top of Tailwind CSS
 

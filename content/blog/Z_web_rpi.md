@@ -17,45 +17,60 @@ I will use this content as a personal wiki, so whenever I find some block that r
 
 Jekyll uses **Ruby language**.
 
+{{< details title="Ruby + jekyll + Chirpy Setup 📌" closed="true" >}}
+
+There are two ways!
+
+1. Clone the [starter](https://github.com/cotes2020/chirpy-starter) and name it as `urusername.github.io`
+
+This will spin up GHPages & GH Action automatically and provide the theme ready for action.
+
+
+2. Pro way: 
+
+```sh
+git clone https://github.com/cotes2020/jekyll-theme-chirpy && cd ./jekyll-theme-chirpy
+```
+
+```sh
+sudo apt install ruby-full build-essential zlib1g-dev
+
+#https://jekyllrb.com/docs/ruby-101/#gems
+echo '# Install Ruby Gems to ~/.gem' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/.gem"' >> ~/.bashrc
+echo 'export PATH="$HOME/.gem/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+#gem update --system
+gem install jekyll bundler
+
+##ARM64
+# curl -sSL https://get.rvm.io | bash -s stable
+# source ~/.rvm/scripts/rvm
+# rvm install 3.1
+sudo apt install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev
+rvm install 3.1 --disable-binary
+
+
+```
+
+See the magic of **Jekyll+Chirpy** at work:
+
+```sh
+#git clone https://github.com/cotes2020/jekyll-theme-chirpy && cd ./jekyll-theme-chirpy
+bash tools/init.sh #initialize
+bundle
+$ bundle exec jekyll s #local server - http://127.0.0.1:4000
+```
+
+{{< /details >}}
 
 ---
-
 
 * References
     * The Jekyll Theme I use - https://github.com/cotes2020/jekyll-theme-chirpy
     * https://zweilosec.github.io/posts/jekyll-chirpy-github-pages-blog/
-    * Adding Web Analytics to Jekyll Chirpy - https://aouledissa.com/posts/Jekyll-Google-Analytics-4-Integration-With-Chirpy-Theme/
+    * Adding **Web Analytics to Jekyll Chirpy** - https://aouledissa.com/posts/Jekyll-Google-Analytics-4-Integration-With-Chirpy-Theme/
 
 * Other Interesting jekyll Themes
     * https://github.com/wowthemesnet/jekyll-theme-memoirs
-
-
-<!-- shodan related to internet of the things
-
-Shodan is a specialized search engine that allows users to find Internet-connected devices. Unlike traditional search engines that index websites and pages, Shodan collects information about network-connected devices such as servers, security cameras, routers, printers, and IoT (Internet of Things) devices1. Here are some key points about Shodan:
-
-Search Engine for Internet-Connected Devices: Shodan is often referred to as the “world’s first search engine for Internet of Things (IoT) devices.” It provides a way to discover various types of servers, webcams, routers, and other devices connected to the Internet. -->
-
-<!-- 
-arduino
-https://www.youtube.com/watch?v=DPqiIzK97K0 -->
-
-<!-- 
-
-RYLR 998, a blue chip equipped with a LoRa ultra-long-range modem, perfect for various hardware integrations including Raspberry Pi, Arduino, and ESP-32.
-
-https://www.youtube.com/watch?v=9azEfCQNhSA
-
-Takeaways
-
-The Ryder 998 is a low-power, low-cost chip that can send messages over 12 miles without any infrastructure.
-LoRa technology has the potential to disrupt the status quo of communication technology.
-The Ryder 998 can be used in a variety of applications, including IoT, emergency response, and extreme outdoor activities.
-The chip's low power consumption and versatility make it an attractive option for many industries. -->
-
-
-
-<!-- SHODAN
-
-Search engine similar to Google
-What Is Shodan? Shodan is a search engine similar to Google. But while Google searches for websites, Shodan searches for devices that are connected to the internet. Users can perform a search using the Shodan search engine based on an IP address, device name, city, and/or a variety of other technical categories. -->

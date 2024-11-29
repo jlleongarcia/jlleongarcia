@@ -1,9 +1,7 @@
 ---
-title: Running LLMs in SBCs
+title: Running LLMs in SBCs and the Cloud
 author: JAlcocerT
-date: 2024-12-31 00:10:00 +0800
-categories: [IoT & Data Analytics]
-tags: [Sensors,Python,MongoDB]
+date: 2025-12-31
 draft: true
 ---
 

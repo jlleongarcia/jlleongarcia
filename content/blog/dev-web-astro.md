@@ -62,3 +62,9 @@ ifconfig
 ifconfig eth0 | grep "inet " | awk '{ print $2 }' #if ETH Connected - SEE THE LOCAL IP
 #ifconfig tailscale0 | grep "inet " | awk '{ print $2 }' #for Tailscale
 ```
+
+---
+
+{{< callout type="info" >}}
+You can use [Astro with Github Pages + GH Actions](https://github.com/JAlcocerT/web3/actions)
+{{< /callout >}}

@@ -114,14 +114,20 @@ Here's how you can use `cassandra-driver` to push data to a Cassandra database:
 
 Make sure to replace `'your_keyspace_name'` and `'your_table_name'` with your desired keyspace and table names, and customize the table schema and data as needed.
 
-With these steps, you can push data from Python to Cassandra using the `cassandra-driver` library. Be sure to have a running Cassandra cluster with the appropriate configuration and keyspace set up before running the code.
+With these steps, you can push data from Python to Cassandra using the `cassandra-driver` library.
+
+Be sure to have a running Cassandra cluster with the appropriate configuration and keyspace set up before running the code.
 
 
 ## KAFKA
 
-Yes, Python can push data to Apache Kafka. Kafka is a distributed streaming platform that allows you to publish and consume streams of records, and there are Python libraries and clients available to work with Kafka.
+**Kafka is a distributed streaming platform** that allows you to publish and consume streams of records, and there are Python libraries and clients available to work with Kafka.
 
 One popular Python library for interacting with Kafka is `confluent-kafka-python`, which is a Python wrapper for the Confluent Kafka client. You can use this library to produce (push) data to Kafka topics.
+
+> I got to know about Kafka for IoT during [this experience](https://jalcocert.github.io/JAlcocerT/telecom-concepts-101/).
+
+And Python can push data to Apache Kafka.
 
 Here's an example of how to use `confluent-kafka-python` to produce data to a Kafka topic:
 
@@ -131,7 +137,7 @@ First, you need to install the library using pip:
 pip install confluent-kafka
 ```
 
-Now, you can use the following Python code to produce data to a Kafka topic:
+Now, you can use the following Python code to **produce data to a Kafka topic**:
 
 ```python
 from confluent_kafka import Producer
@@ -309,3 +315,34 @@ However, there are also some limitations to in-memory data stores:
 3. **Cost**: RAM can be more expensive than traditional disk storage, so scaling up an in-memory database can be cost-prohibitive for large datasets.
 
 In-memory data stores are commonly used for various applications, including real-time analytics, caching, session management, and high-frequency trading, where fast data access and low-latency responses are critical. Popular examples of in-memory data stores include Redis, Memcached, and various in-memory database systems.
+
+
+<!-- shodan related to internet of the things
+
+Shodan is a specialized search engine that allows users to find Internet-connected devices. Unlike traditional search engines that index websites and pages, Shodan collects information about network-connected devices such as servers, security cameras, routers, printers, and IoT (Internet of Things) devices1. Here are some key points about Shodan:
+
+Search Engine for Internet-Connected Devices: Shodan is often referred to as the “world’s first search engine for Internet of Things (IoT) devices.” It provides a way to discover various types of servers, webcams, routers, and other devices connected to the Internet. -->
+
+<!-- 
+arduino
+https://www.youtube.com/watch?v=DPqiIzK97K0 -->
+
+<!-- 
+
+RYLR 998, a blue chip equipped with a LoRa ultra-long-range modem, perfect for various hardware integrations including Raspberry Pi, Arduino, and ESP-32.
+
+https://www.youtube.com/watch?v=9azEfCQNhSA
+
+Takeaways
+
+The Ryder 998 is a low-power, low-cost chip that can send messages over 12 miles without any infrastructure.
+LoRa technology has the potential to disrupt the status quo of communication technology.
+The Ryder 998 can be used in a variety of applications, including IoT, emergency response, and extreme outdoor activities.
+The chip's low power consumption and versatility make it an attractive option for many industries. -->
+
+
+
+<!-- SHODAN
+
+Search engine similar to Google
+What Is Shodan? Shodan is a search engine similar to Google. But while Google searches for websites, Shodan searches for devices that are connected to the internet. Users can perform a search using the Shodan search engine based on an IP address, device name, city, and/or a variety of other technical categories. -->

@@ -149,3 +149,9 @@ ifconfig
 ifconfig eth0 | grep "inet " | awk '{ print $2 }' #if ETH Connected - SEE THE LOCAL IP
 #ifconfig tailscale0 | grep "inet " | awk '{ print $2 }' #for Tailscale
 ```
+
+---
+
+{{< callout type="info" >}}
+You can use [HUGO with Github Pages + GH Actions](https://github.com/JAlcocerT/Linux/actions). Look at those **~5s build times** ~30/40s e2e!
+{{< /callout >}}

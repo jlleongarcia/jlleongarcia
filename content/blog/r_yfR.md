@@ -8,11 +8,13 @@ summary: 'You might be curious about getting historical stock price on companies
 url: 'r-yfR-package-guide'
 ---
 
-# The yfR Package
+The yfR Package - Data from Yahoo Finance for your Projects in R.
 
 ## What is yfR?
 
-If you are looking for data sources for your projects, I am sure that using financial data has come to your mind at some point. We are going to see how to make available to in R **historical stock data**.
+If you are looking for data sources for your projects, I am sure that using financial data has come to your mind at some point.
+
+We are going to see how to make available to in R **historical stock data**.
 
 **yfR** is a new package available in R that will simplify the financial data collection from [Yahoo Finance](https://finance.yahoo.com/ "Yahoo Finance {rel='nofollow'}").
 

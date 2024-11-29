@@ -630,3 +630,9 @@ If you need big GPU power, you can always try https://www.runpod.io/gpu-instance
 
 * https://accounts.hetzner.com/_ray/pow (I tried the CX22 model x2 vCPU)
 * https://cloud.digitalocean.com
+
+Clouds ( & GPU Clouds)
+
+* RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud, [Hetzner](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner)...
+* vast.ai, 
+* Google Colab TPU...

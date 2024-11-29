@@ -5,13 +5,21 @@ draft: false
 summary: Analyzing phone Sensors with PhyPhox and Python
 ---
 
+With **PhyPhox**, you convert your smartphone into a very cool instrument to measure different physical parameters.
+
+I have tinkered a little bit with: accelerometer and the gps
+
 {{< callout type="info" >}}
-Related Project Code is <https://github.com/JAlcocerT/Py_RouteTracker>
+Related **Project Source Code** is here: <https://github.com/JAlcocerT/Py_RouteTracker>
 {{< /callout >}}
-
-
 
 
 ![PhyPhox Karting](/blog_img/IMG_20240302_132540.jpg)
 
 {{< youtube "Ku3y3NJJURw" >}}
+
+### More
+
+Some time ago I tried Torque (Lite and Pro) Android apps to read OBD info from a car.
+
+Would be great to build a real time dashboard with such data to place as onboard panel.
