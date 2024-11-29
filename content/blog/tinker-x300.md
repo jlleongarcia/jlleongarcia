@@ -440,13 +440,15 @@ This provides a comprehensive view of all the devices' performance and specifica
 
 Time to combine a Desktop, like the X300 + [Hetzner](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#other-clouds) to get a **custom VPN connection** with Wireguard.
 
-> Use the [Hetzner Setup Script](https://github.com/JAlcocerT/Linux/blob/main/Z_Cloud/Hetzner_101.sh) or the[ SelfHosting script](https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh)
+> Use the [Hetzner Setup Script](https://github.com/JAlcocerT/Linux/blob/main/Z_Cloud/Hetzner_101.sh) or the[ SelfHosting script](https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh) as described [here](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
 
 {{% steps %}}
 
 ### Server Setup
 
-I am spinning a Hetzner server with this [Wireguard Server DockerCompose](https://github.com/JAlcocerT/Docker/blob/main/Security/VPNs/Wireguard_docker_compose.yaml)
+I am spinning a Hetzner Server.
+
+Then, with this [Wireguard Server DockerCompose](https://github.com/JAlcocerT/Docker/blob/main/Security/VPNs/Wireguard_docker_compose.yaml)...
 
 
 {{< details title="Connect via SSH & Setup WireGuard📌" closed="true" >}}
@@ -456,7 +458,7 @@ ssh root@serverip #or use a terminal via
 ```
 
 
-Lets do it with [wgeasy](https://github.com/wg-easy/wg-easy), or if you prefer with [WireGuard](https://github.com/JAlcocerT/Docker/blob/main/Security/VPNs/Wireguard_docker_compose.yaml)
+Lets do it with [wgeasy](https://github.com/wg-easy/wg-easy), or if you prefer with plane [WireGuard](https://github.com/JAlcocerT/Docker/blob/main/Security/VPNs/Wireguard_docker_compose.yaml)
 
 ```sh
 #create the hashed PWD
@@ -556,13 +558,15 @@ Which will then provide VPN access to your desktop via the Ethernet cable.
 
 ## FAQ
 
-
-
 {{< details title="Other Cloud Resources 📌" closed="true" >}}
 
 * Digital Ocean - https://www.digitalocean.com/pricing
 * https://lowendbox.com/
 * https://www.netcup.de/
+* https://lowendbox.com/
+* https://www.netcup.de/
+* contabo
+* OVH - https://www.ovhcloud.com/pl/black-friday/
 
 RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud, Hetzner…
 vast.ai,

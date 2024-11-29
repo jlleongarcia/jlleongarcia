@@ -626,12 +626,20 @@ streamparser_kafka \
 
 {{< details title="How to read Kafka Topics with JHub 📌" closed="true" >}}
 
+You can check **this code**
+
 {{< /details >}}
 
 
 ### Why Grafana is Great for IoT Data
 
 <!-- facebook from fbprophet prophet model also (takes seasonality and trend into account) -->
+
+You can use the Grafana as a SaaS or deploy your own.
+
+I deployed my [Grafana with a RPi4](https://jalcocert.github.io/RPi/posts/selfh-grafana-monit/).
+
+And you can do many tricks with it, like using [Grafana to display Sensor Data](https://jalcocert.github.io/RPi/posts/rpi-iot-MLX90614/).
 
 
 {{< details title="What it is Cardinality and Why it matters 📌" closed="true" >}}
@@ -640,7 +648,10 @@ streamparser_kafka \
 
 #### Kibana and ES have something to say
 
-You can use DSL queries to explore data within Kibana, which pulls from Elastic Search DB.
+You can use **DSL queries** to explore data within Kibana, which pulls from **Elastic Search** DB.
+
+> **Kibana** is very useful to see **Streaming Data** (from Kafka topics, or [IoT devices: like this DHT22](https://jalcocert.github.io/RPi/posts/rpi-iot-dht22-ES/))
+
 
 ### Workflow for Effectiveness
 
