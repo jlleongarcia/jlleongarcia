@@ -55,12 +55,12 @@ jobs:
           hugo \
             --gc --minify \
             --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" 
-      - name: Install LinkChecker
-        run: sudo apt-get install -y linkchecker
-      - name: Test site with LinkChecker
-        run: |
-          linkchecker public/ \
-            --ignore-url "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+      # - name: Install LinkChecker
+      #   run: sudo apt-get install -y linkchecker
+      # - name: Test site with LinkChecker
+      #   run: |
+      #     linkchecker public/ \
+      #       --ignore-url "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

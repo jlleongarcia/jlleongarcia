@@ -466,19 +466,19 @@ If you are storing semi-structured or unstructured data in a data warehouse, the
 
 Specifically designed to support **OLAP operations**. They store large amounts of historical and transactional data in a structured format optimized for analytical processing. 
 
-* The data in a [data warehouse](/data-basics-for-data-analytics/#data-warehousing) is typically organized into dimensions and measures, forming a multidimensional model that allows for slicing, dicing, drill-down, and roll-up operations.
-    * You will need to understand how ETL and ELT compare in DWH Architecture as [Data Integration Methods](/data-basics-for-data-analytics/#etl-and-elt-in-dwh-architecture)
-    * As well as the STAR vs SNOWFLAKE schemas as the [DWH Dimensional Modelling Approaches](/data-basics-for-data-analytics/#dimensional-modeling-concepts)
-    * [Data Modelling](/data-basics-for-data-analytics/#data-modelling-techniques) will be fundamental
+* The data in a [data warehouse](/JAlcocert/data-basics-for-data-analytics/#data-warehousing) is typically organized into dimensions and measures, forming a multidimensional model that allows for slicing, dicing, drill-down, and roll-up operations.
+    * You will need to understand how ETL and ELT compare in DWH Architecture as [Data Integration Methods](/JAlcocert/data-basics-for-data-analytics/#etl-and-elt-in-dwh-architecture)
+    * As well as the STAR vs SNOWFLAKE schemas as the [DWH Dimensional Modelling Approaches](/JAlcocert/data-basics-for-data-analytics/#dimensional-modeling-concepts)
+    * [Data Modelling](/JAlcocert/data-basics-for-data-analytics/#data-modelling-techniques) will be fundamental
 
 
 {{< dropdown title="DWH's and Data Marts Examples" closed="true" >}}
 
 #### Some DWH Examples
 
-* [BigQuery](/data-basics-for-data-analytics/#big-query) is an example of a cloud-based data warehouse offered by Google Cloud. It is a serverless and highly scalable platform that allows users to analyze massive datasets using SQL queries. 
+* [BigQuery](/JAlcocert/data-basics-for-data-analytics/#big-query) is an example of a cloud-based data warehouse offered by Google Cloud. It is a serverless and highly scalable platform that allows users to analyze massive datasets using SQL queries. 
 * Other well known data warehousing solution include is **Snowflake**:
-    * [Snowflake](/data-basics-for-data-analytics/#snowflake) follows a multi-cluster shared data architecture, where compute and storage are separated. This allows for scalable compute resources and on-demand scaling.
+    * [Snowflake](/JAlcocert/data-basics-for-data-analytics/#snowflake) follows a multi-cluster shared data architecture, where compute and storage are separated. This allows for scalable compute resources and on-demand scaling.
     * BigQuery, on the other hand, utilizes a columnar storage system with a serverless architecture that automatically scales resources as needed.
     *  Snowflake uses a structured, optimized storage format called *Micro-partitions*, which allows for efficient data storage and query performance.
     * BigQuery employs a *columnar storage* format called Capacitor, which compresses and stores data column-wise, enabling high performance for analytical queries.
@@ -498,17 +498,17 @@ Data marts are often used to improve the performance of queries and to reduce th
 
 * Data lakes are a good choice for storing large amounts of data of all types, including **structured, semi-structured, and unstructured data**. However, data lakes can be difficult to manage and query, and they can be slow for analytical workloads.
     * We already learnt about Data warehouses are a good choice for storing structured data for analytical workloads. However, data warehouses can be expensive to build and maintain, and they can be difficult to scale.
-* [Data Lake Houses](/data-basics-for-data-analytics/#data-lake-house) enable organizations to store and process raw data while maintaining the ability to apply structure, governance, and efficient querying for analytics purposes.
+* [Data Lake Houses](/JAlcocert/data-basics-for-data-analytics/#data-lake-house) enable organizations to store and process raw data while maintaining the ability to apply structure, governance, and efficient querying for analytics purposes.
     * It uses a **data lake** to store all of the data, and it uses a **data warehouse** to provide a layer of structure and governance for the data. This allows businesses to store all of their data in a single repository, and it allows them to use the data for both analytical and operational workloads.
-    * In many Data Lake house arquitectures, you will find [Databricks](/data-basics-for-data-analytics/#databricks) as the unified data analytics platform, powered by [Spark](/guide-python-PySpark/).
+    * In many Data Lake house arquitectures, you will find [Databricks](/JAlcocert/data-basics-for-data-analytics/#databricks) as the unified data analytics platform, powered by [Spark](/JAlcocert/guide-python-PySpark/).
 
 ### Data Integration Services
 
 It's all about bringing data together from different places and making it work together effectively.
 
 * They combine data from multiple sources into a unified and coherent view, enabling organizations to gain insights, make informed decisions, and drive business value.
-    * [Data integration services](/data-basics-for-data-analytics/#data-integration-services) help overcome the challenges of *data silos*, where information is scattered across various systems or departments.
-    * One example of a data integration service is **[Azure Data Factory (ADF)](data-basics-for-data-analytics/#azure-data-factory)**. ADF allows you to create data pipelines that connect to different data sources, such as databases, cloud storage, or web services, and bring the data into a central location.
+    * [Data integration services](/JAlcocert/data-basics-for-data-analytics/#data-integration-services) help overcome the challenges of *data silos*, where information is scattered across various systems or departments.
+    * One example of a data integration service is **[Azure Data Factory (ADF)](/JAlcocertdata-basics-for-data-analytics/#azure-data-factory)**. ADF allows you to create data pipelines that connect to different data sources, such as databases, cloud storage, or web services, and bring the data into a central location.
     * Google Cloud and Amazon Web Services (AWS) offer their own equivalents to Azure Data Factory for data integration services: *Google Cloud Data Fusion and AWS Glue.*
 
 <!-- ### Big Data -->
@@ -516,9 +516,9 @@ It's all about bringing data together from different places and making it work t
 ### Visualizations
 
 * Mind the end user experience. You will benefit of [this UI/UX overview](/better-visualizations-data-analytics).
-    * Make sure that the [UI is usable](/better-visualizations-data-analytics/#ideas-for-ui)
+    * Make sure that the [UI is usable](/JAlcocert/better-visualizations-data-analytics/#ideas-for-ui)
     * The UI is important, but [how you tell the *story*](/story-telling-data-analytics/#building-your-story-with-data) will make the difference.
-* Having some best practices in mind about [Business Intelligence skills](/business-intelligence-data-analytics/) will be beneficial.
+* Having some best practices in mind about [Business Intelligence skills](/JAlcocert/business-intelligence-data-analytics/) will be beneficial.
 * Experiment with the [wireframes and mockups](/business-analytics-skills/#prototyping-mockups-and-wireframes) to prototype and design data visualizations, dashboards, and reports
     * Try different layouts, [data representations](/better-visualizations-data-analytics/#different-problems---different-chart-types), and interactivity to create engaging and actionable insights for end-users.
 
