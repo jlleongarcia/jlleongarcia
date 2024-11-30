@@ -214,3 +214,30 @@ Also DataDog - https://docs.datadoghq.com/llm_observability/ -->
     GPT4-Turbo
   • V3 of ML trainnings - To include MLFlow
 Airflow to start some job? -->
+
+### Checks Before Web Delivery
+
+{{% details title="More Embedded ChatBots for your website... 🚀" closed="true" %}}
+
+Links can be checked with **LinkChecker**.
+
+* Use LinkChecker with the [GHCR Container Image](https://github.com/linkchecker/linkchecker/pkgs/container/linkchecker)
+
+```sh
+# docker run --rm -it -u $(id -u):$(id -g) ghcr.io/linkchecker/linkchecker:latest --verbose https://https://www.psikolognevinkeskin.com/
+
+podman run --rm -it ghcr.io/linkchecker/linkchecker:latest --verbose https://www.psikolognevinkeskin.com/ > linkchecker_psyc.txt
+```
+
+Resulting at:
+
+```txt
+That's it. 53 links in 53 URLs checked. 5 warnings found. 0 errors found.
+Stopped checking at 2024-10-19 07:34:09+000 (12 seconds)
+```
+
+**Alternatively, linkchecker can do its job during the build with Github Actions.**
+
+Create a WF with 3 jobs: build, test (Linkcheck here, informative), deploy. Like this one with HUGO.
+
+{{% /details %}}
