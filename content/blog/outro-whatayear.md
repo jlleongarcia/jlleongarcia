@@ -1,5 +1,5 @@
 ---
-title: "What a year..."
+title: "What a Year..."
 date: 2024-11-17
 draft: false
 tags: ["Dev"]
@@ -91,9 +91,9 @@ Good recap of whats going on at JS: https://stateofjs.com/en-US
 * Web Analytics: with [Umami](https://fossengineer.com/selfhosting-umami-with-docker/) or Tianji
 * CMS for Webs: DecapCMS, ...
 
-Need to have a look to [my RPi site](https://jalcocert.github.io/RPi/), as there is sth wrong with the Jekyll automatic CI/CD build.
+After few months, fixed [my RPi site](https://jalcocert.github.io/RPi/), as there was sth wrong with the Jekyll automatic CI/CD build.
 
-Probably will need to [migrate from Jekyll](https://simplyexplained.com/blog/migrating-this-blog-from-jekyll-to-eleventy/) at some point to HUGO/Astro.
+Maybe will need to [migrate from Jekyll](https://simplyexplained.com/blog/migrating-this-blog-from-jekyll-to-eleventy/) at some point to HUGO/Astro.
 
 {{% /steps %}}
 

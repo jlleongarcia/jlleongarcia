@@ -13,9 +13,15 @@ url: 'raspberrypi-starting-guide'
 
 During this month, have decided to create a more **detailed guide on Github Pages on how to get started with a Raspberry Pi.**
 
-I will use this content as a personal wiki, so whenever I find some block that requires some effort to find out on the internet, will make a concise guide right here: <https://jalcocert.github.io/RPi/>
+I will use this content as a **personal wiki**, so whenever I find some block that requires some effort to find out on the internet, will make a concise guide right here: <https://jalcocert.github.io/RPi/>
+
+So this is kind of website project + IoT and Linux with a Raspberry Pi kind of thing.
 
 Jekyll uses **Ruby language**.
+
+And thanks to the community, there are Themes that you can use completely free.
+
+So: Free Theme, Free Hosting, Free Github(sub)domain...Let's create something interesting with it.
 
 {{< details title="Ruby + jekyll + Chirpy Setup 📌" closed="true" >}}
 
@@ -62,6 +68,15 @@ bash tools/init.sh #initialize
 bundle
 bundle exec jekyll s #local server - http://127.0.0.1:4000
 #bundle exec jekyll serve --host 192.168.1.100 --port 4000
+```
+
+The page logo (favicon) can be changed thanks to the folder `assets/img`.
+
+Another **important files** are `_data/authors.yml` and `_config.yml`
+
+```yml
+baseurl: "/internetofthings"
+url: "https://jalcocert.github.io"
 ```
 
 {{< /details >}}
