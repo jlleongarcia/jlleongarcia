@@ -7,7 +7,11 @@ summary: 'Interesting stuff Ive learn along the way when trying to make better W
 url: 'create-your-website'
 ---
 
-You can create cool static websites with these frameworks, and also with [Remix](https://github.com/jacob-ebey/remix-ssg)
+You can create cool static websites with these frameworks, and also with [Remix](https://github.com/jacob-ebey/remix-ssg).
+
+I mean, with HUGO, Astro, NodeJS, jekyll...
+
+And if you are new to Websites, do it (The Web [Deployment](#select-the-deployment-method)) with [Github Pages](https://jalcocert.github.io/JAlcocerT/how-to-use-github-pages/) to get a free subdomain with it.
 
 {{< details title="Important Files for all Webs 📌" closed="true" >}}
 
@@ -33,6 +37,11 @@ as in the [withastro/starlight Theme](https://github.com/IoTechCrafts/starlight-
 
 
 ## What Ive Learnt about Astro
+
+
+{{< callout type="info" >}}
+[Astro **Setup**](https://jalcocert.github.io/JAlcocerT/using-astro-as-website/) once and for all
+{{< /callout >}}
 
 
 {{< details title="How to Install Dependencies 📌" closed="true" >}}
@@ -95,7 +104,7 @@ import photopost1b from '../../assets/image.jpg';
 
 [HUGO](https://fossengineer.com/web-guide-Hugo/) is great.
 
-The [HUGO Setup](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/) was the first SSG that I could get working back in the days.
+The [HUGO **Setup**](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/) was the first SSG that I could get working back in the days.
 
 
 {{< details title="HUGO Themes I Like📌" closed="true" >}}
@@ -145,7 +154,7 @@ This method ensures that `ads.txt` is part of your site’s root directory in th
 
 ### HUGO with Github Pages & CICD
 
-Its very important to know the **HUGO version** that makes the theme work.
+Its very important to know the **HUGO Version** that makes the theme work.
 
 Laos when you are using [Github Actions Workflow](https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml).
 
@@ -159,7 +168,13 @@ This Hextra Theme, as it is, for example, [runs fine with v0.117.0](https://gith
 hugo v0.117.0-b2f0696cad918fb61420a6aff173eb36662b406e+extended linux/amd64 BuildDate=2023-08-07T12:49:48Z VendorInfo=gohugoio
 ```
 
-But not with higher versions like v0.124.
+But **not with higher versions like v0.124**.
+
+{{< callout type="info" >}}
+[Setup HUGO ](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/)properly!
+{{< /callout >}}
+
+---
 
 ## Deployments
 
@@ -177,9 +192,9 @@ This is the second step.
 
 ### Select the Deployment Method
 
-* Firebase
-* Github Pages or Gitlab Pages
-* Cloudflare
+* [Firebase](https://fossengineer.com/hosting-with-firebase/)
+* [Github Pages](https://jalcocert.github.io/JAlcocerT/how-to-use-github-pages/) or Gitlab Pages
+* [Cloudflare](https://fossengineer.com/hosting-with-cloudflare-pages/)
 * AWS S3 Buckets - https://blog.cavelab.dev/2021/08/deploying-hugo-blog-to-s3/
 * Others - Netlify, Server with NGINX... 
 

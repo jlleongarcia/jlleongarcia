@@ -20,7 +20,7 @@ source solvingerror_venv/bin/activate #(linux)
 Install them with:
 
 ```sh
-pip install beautifulsoup4 openpyxl pandas numpy
+pip install beautifulsoup4 openpyxl pandas numpy==2.0.0
 pip install -r requirements.txt #all at once
 
 
@@ -30,6 +30,9 @@ pip list
 ```
 {{< /details >}}
 
+A good readme does the trick for any project.
+
+This is a [good Python Project Readme.](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/README.md)
 
 {{< details title="Why I love Streamlit for Quick UI's 📌" closed="true" >}}
 

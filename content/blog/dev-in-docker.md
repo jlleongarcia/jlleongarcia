@@ -54,6 +54,18 @@ https://www.youtube.com/watch?v=mi8kpAgHYFo -->
 
 For container, do this instead. 
 
+1. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+```sh
+ext install ms-vscode-remote.remote-containers
+```
+2. Clone your repository:
+
+For Docker Desktop: Start VS Code and clone your repo [in a container volume.](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume)
+For Docker Engine: Clone your repo locally, then [open it in a container](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container) via VS Code.
+
+3. Wait for the Dev Containers setup to complete.
+
 **Option 1**
 
 1. Get your Dockerfile Ready
@@ -88,6 +100,12 @@ Dont forget about: `.gitignore`, `.dockerignore`
 
 ### Containers for Python Apps
 
+I enjoy creating Data Driven apps with python.
+
+And I like to do them so that they work reliably and sistematically.
+
+Docker helps me with it.
+
 {{< details title="Python Docker Compose 📌" closed="true" >}}
 ```yml
 version: '3.8'
@@ -104,15 +122,13 @@ services:
 ```
 {{< /details >}}
 
-
-{{< details title="Python Dockerfile 📌" closed="true" >}}
-
-{{< /details >}}
+You will also need a `Dockerfile` and most likely a `requirements.txt`
 
 {{< callout type="info" >}}
 Sample [Python Project](https://github.com/JAlcocerT/Streamlit-MultiChat) with these files
 {{< /callout >}}
 
+---
 
 ### Containers for WEBS
 

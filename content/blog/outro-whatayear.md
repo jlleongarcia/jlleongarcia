@@ -112,10 +112,12 @@ Maybe will need to [migrate from Jekyll](https://simplyexplained.com/blog/migrat
 
 {{< /details >}}
 
+> There is something about the AI, LLMs, [**LangChain**](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-pdfs/) that has sth to do with it...
+
 
 ## Servers
 
-A new Windows setup is easy [with Chocolatey](https://jalcocert.github.io/JAlcocerT/how-to-use-chocolatey-windows/)
+A new Windows setup is easy [with **Chocolatey**](https://jalcocert.github.io/JAlcocerT/how-to-use-chocolatey-windows/)
 
 {{< cards cols="2" >}}
   {{< card link="https://github.com/JAlcocerT/rpi-mjpg-streamer" title="RPi Streamer" >}}
@@ -144,7 +146,7 @@ I got an additional **Pi4** (this time 4GB Ram, 64 bits) and was helpful to:
     * But as long as your adapter is able to sustain at 5V a current up to 3A it will work
     * In idle the Pi4 sits ~4W, meaning ~0.8A (Voltage is the constant)
 * [Used **Ansible**!](https://jalcocert.github.io/Linux/docs/linux__cloud/ansible/) Combined an [IoT Project (DHT-Mongo-Metabase)](https://jalcocert.github.io/RPi/posts/rpi-ansible/)
-
+* Put together few **AI Projects** to work on the RPi [here](https://jalcocert.github.io/RPi/posts/raspberry-ai-projects/)
 
 {{< callout type="warning" >}}
 Definitely want to go back to the IoT Projects and do sth with Small Solar Panels
