@@ -3,7 +3,7 @@ title: "A Website for a Phd"
 date: 2024-09-22T10:20:21+01:00
 draft: false
 tags: ["dev"]
-summary: 'Helping improve scientific knowledge. Improving the day to day of a researcher '
+summary: 'Helping improve scientific knowledge. Improving the day to day of a researcher.'
 url: 'web-for-researcher'
 ---
 

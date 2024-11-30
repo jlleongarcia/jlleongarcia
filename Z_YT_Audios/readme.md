@@ -1,3 +1,7 @@
+Better YT Workflow on [this post](https://jalcocert.github.io/JAlcocerT/my-youtube-ai-workflow/)
+
+---
+
 # OpenAI
 
 ```sh
@@ -5,8 +9,9 @@
 #pip show openai
 ```
 
-
+```sh
 export OPENAI_API_KEY=sk-... # on Linux/Mac
+```
 
 ## API
 

@@ -1,6 +1,6 @@
 ---
 title: "[IoT] Ansible and Raspberry Pi"
-date: 2024-09-02
+date: 2024-08-27
 draft: false
 tags: ["Dev"]
 summary: Learning about Ansible with SBCs. Together with the IoT Project DHT/InfluxDB

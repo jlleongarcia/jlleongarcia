@@ -3,7 +3,7 @@ title: "DASH Apps with Docker and Google Cloud Run"
 date: 2023-03-12T23:20:21+01:00
 draft: false
 tags: ["Python","Docker","DASH"]
-description: 'Deploying DASH apps for free using Docker and Google Cloud run.'
+description: 'Deploying DASH apps using Docker and Google Cloud run - GCR.'
 summary: 'Guide - How to use Google Cloud Run free tier to deploy your Python DASH apps.'
 url: 'dash-docker-gcr'
 ---
