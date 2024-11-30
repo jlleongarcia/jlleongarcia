@@ -1,5 +1,5 @@
 ---
-title: "IoT Meets AI. With a Raspberry Pi"
+title: "[IoT] Meets AI. With a Raspberry Pi"
 date: 2025-12-31
 draft: true
 tags: ["Tinkering"]
@@ -149,6 +149,9 @@ They are particularly well-suited for **various AI applications**, including:
 NPUs typically utilize a manycore architecture with specialized instructions and data formats optimized for AI algorithms. This allows them to handle complex neural networks efficiently.
 
 NPUs are often integrated into mobile processors from companies like Apple, Huawei, and Samsung. They are also available as standalone chips from some manufacturers.
+
+### How to Deploy Node-Red with Docker
+
 
 ---
 

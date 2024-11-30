@@ -668,3 +668,13 @@ git push
 {{< callout type="info" >}}
 The videos were filmed Spring this year, just put them together now
 {{< /callout >}}
+
+<!-- 
+https://openbenchmarking.org/result/2403181-NE-TESTBENCH60
+https://openbenchmarking.org/result/2403181-NE-TESTORANG02 -->
+
+<!-- ### How to Monitor MiniPC Temperatures
+https://www.youtube.com/watch?v=h1kyncK--vQ
+-->
+
+<!-- {% include embed/{youtube}.html id='{h1kyncK--vQ}' %} -->
