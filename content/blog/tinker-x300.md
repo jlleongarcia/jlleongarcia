@@ -458,7 +458,7 @@ Time to combine a Desktop, like the X300 + [Hetzner](https://jalcocert.github.io
 
 ### Server Setup
 
-I am spinning a Hetzner Server.
+I am spinning a [Hetzner (Cloud) Server](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner). Like the one Benchmarked on [this post](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/).
 
 Then, with this [Wireguard Server DockerCompose](https://github.com/JAlcocerT/Docker/blob/main/Security/VPNs/Wireguard_docker_compose.yaml)...
 

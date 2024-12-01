@@ -3,15 +3,20 @@ title: "Customizing a Web for Real Estate"
 date: 2024-09-27T10:20:21+01:00
 draft: false
 tags: ["dev"]
-summary: 'Creating a responsive Astro site - Real Estate oriented'
+summary: 'Creating a responsive Astro site - Real Estate Oriented'
 url: 'astro-web-setup'
 ---
+
+How to make a **cool website for Real Estate?**
+
+**[Astro](https://jalcocert.github.io/JAlcocerT/create-your-website/) SSG** is the Answer.
 
 * Competitors / Ideas :
   * https://www.inmobiliariacano.es/
   * https://casaensol.pl/
   * https://syrenare.com/
   * All are **performing slooow** at up to ~1 second initial for a simple http request!
+* **Result**: <https://dm-real-estate.com/>
 
 ![Competitor 1](/blog_img/web/success3-realestate/uptime-realestate-demo.png)
 
@@ -33,8 +38,10 @@ Lets do this.
 
 
 {{< callout type="info" >}}
-I created a [**Private repo with Github**](https://github.com/JAlcocerT/ScrewFastMoiRealEstate). Which is deployed with CF Pages: <screwfastmoirealestate.pages.dev>
+I created a [**Private repo with Github**](https://github.com/JAlcocerT/ScrewFastMoiRealEstate) with the **Real Estate Web** Project
 {{< /callout >}}
+
+Which is deployed with [CF Pages](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/): **<screwfastmoirealestate.pages.dev>**
 
 
 > Powered by [Astro 😍 ScrewFast](https://github.com/JAlcocerT/ScrewFast) and some ideas from [Nebulix Shop](https://nebulix.unfolding.io/shop/buy-me-a-cocktail/)
@@ -192,7 +199,7 @@ But, if you really want something to perform with your data...
 
 
 {{< callout type="info" >}}
-You could say this is all **a [Data-ChatBot](https://github.com/JAlcocerT/Data-Chat)**
+You could say this is all **a [Data-ChatBot](https://github.com/JAlcocerT/Data-Chat)**. LlamaIndex + Mem0 does the trick.
 {{< /callout >}}
 
 <!-- 
@@ -215,9 +222,23 @@ Also DataDog - https://docs.datadoghq.com/llm_observability/ -->
   • V3 of ML trainnings - To include MLFlow
 Airflow to start some job? -->
 
+### AI Driven Website Migration
+
+Do you have tons of images in and old website?
+
+Maybe a Wordpress, Ghost or Wix?
+
+Not a problem. You can quickly use **AI to create a migration script**.
+
+In the end, Astro (and other SSGs) are all about markdown files and images.
+
+{{< callout type="info" >}}
+For this Real Estate Web project I used [this assistant](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_AIgents/WebMigrAItion), migrating the images with this [**AI script**](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_AIgents/WebMigrAItion/OpenAI_MigrateWebInfo_v2.py).
+{{< /callout >}}
+
 ### Checks Before Web Delivery
 
-{{% details title="More Embedded ChatBots for your website... 🚀" closed="true" %}}
+{{% details title="How to Use LinkChecker... 🚀" closed="true" %}}
 
 Links can be checked with **LinkChecker**.
 
