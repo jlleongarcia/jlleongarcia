@@ -18,7 +18,7 @@ https://medium.com/@cleancoder/build-a-chatbot-in-minutes-with-chainlit-gpt-4-an
 https://github.com/satwikide/Generative-AI-explorer
  -->
 
-Langchain is a very hot topic right now in the AI space.
+**Langchain** is a very hot topic right now in the AI space.
 
 I found an amazing project and video from Alejandro AO and decided to make a few tweaks so that more people can deploy it and try the project.
 
@@ -26,6 +26,7 @@ I found an amazing project and video from Alejandro AO and decided to make a few
   {{< card link="https://github.com/JAlcocerT/ask-multiple-pdfs/" title="My Fork in Github" icon="book-open" >}}
   {{< card link="https://www.youtube.com/watch?v=e9hJZrT7HLw" title="YT Video on SelfHosting chat with PDF ↗" icon="user" >}}
 {{< /cards >}}
+
 
 - The Project is done in **Python Streamlit** for the UI part ✅
   * {{< newtab url="https://github.com/alejandro-ao/ask-multiple-pdfs" text="Project Source Code at Github" >}}

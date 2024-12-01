@@ -21,6 +21,8 @@ Starting a tech blog can be beneficial for several reasons:
 
 2. **Build Your Online Presence**: In today's digital age, having a strong online presence is crucial. By consistently publishing quality content on your tech blog, you demonstrate your passion, knowledge, and expertise in your chosen domain. This can open up opportunities for networking, collaborations, and career growth.
 
+Personally, it made a great companion to fix concepts, from: [Linux](https://github.com/JAlcocerT/Linux), [Docker](https://github.com/JAlcocerT/Docker) and more!
+
 {{% /details %}}
 
 {{% details title="Share and Connect 🌍" closed="true" %}}

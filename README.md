@@ -6,18 +6,20 @@
     * **AI Projects**
         * [Multi-Provider Chat](https://github.com/JAlcocerT/Streamlit-MultiChat)
         * [Chat with your PDFS](https://github.com/JAlcocerT/ask-multiple-pdfs)
-    *   **IoT & Edge Data Analytics** - several public projects with the [Raspberry Pi](https://jalcocert.github.io/RPi/)
+    *   **IoT & Edge Data Analytics** - See the projects & source code with the [Raspberry Pi](https://jalcocert.github.io/RPi/)
 
  
-- 📝 I regularly update the content on *[my Tech Blog](https://jalcocertech.xyz/)* <a href="https://jalcocertech.xyz"><img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/jalcocertech2.svg" alt="Subscribe via RSS" height="25" style="vertical-align: bottom;"/></a>
-    * I love sharing with others - I have created these public guides for [Linux](https://jalcocert.github.io/Linux) and [Docker](https://github.com/JAlcocerT/Docker).
+- 📝 Benefit from my learning process on [my **Tech Blog**](https://jalcocert.github.io/JAlcocerT/) <a href="https://jalcocertech.xyz"><img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/jalcocertech2.svg" alt="Subscribe via RSS" height="25" style="vertical-align: bottom;"/></a>
 
-- ⚙️Simulations: *I also like to understand how machines work*
+
+- ⚙️ Simulations: *I also like to understand how machines work*
     * [Slider-Crank](https://github.com/JAlcocerT/Slider-Crank) - a DASH app that helps to visualize the physics of a Slider-Crank mechanism
     * [Bike Simulator](https://github.com/JAlcocerT/Bike_dynamic_simulator) - Bike/Motorbike simulator (RT Computational Multi-Body System Dynamics)
 
-- **Fun fact**: I am combining my 🚵 passion with [my Trip Planner App](https://github.com/JAlcocerT/Py_Trip_Planner) for my Bike trip across Europe.
+- **Fun fact**: I am combining my 🚵 passion with [my Trip Planner App](https://github.com/JAlcocerT/Py_Trip_Planner) for my Bike trips.
  
+[**For Collaborations** →](https://jalcocertech.xyz/)
+
 <h3 align="center">Connect with me: 📫</h3>
 <p align="center">
 <a href="https://linkedin.com/in/jalcocert" target="blank">
@@ -26,5 +28,7 @@
 <a href="https://jalcocertech.xyz">
     <img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/JAT.svg" alt="Description of the image" height="30" style="vertical-align: middle;" />
 </a>
+
+
 
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=jalcocert&label=Profile%20views&color=0e75b6&style=flat" alt="jalcocert" /> </p>
