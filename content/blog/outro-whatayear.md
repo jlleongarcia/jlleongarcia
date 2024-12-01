@@ -112,7 +112,7 @@ Maybe will need to [migrate from Jekyll](https://simplyexplained.com/blog/migrat
 
 {{< /details >}}
 
-> There is something about the AI, LLMs, [**LangChain**](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-pdfs/) that has sth to do with it...
+> There is something about the AI, LLMs, [**LangChain**](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/) that has sth to do with it...
 
 
 ## Servers

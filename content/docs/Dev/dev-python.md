@@ -8,6 +8,36 @@ url: 'useful-python-stuff'
 ---
 
 
+
+{{< details title="Why I love Streamlit for Quick UI's 📌" closed="true" >}}
+
+Streamlit uses a combination of front-end technologies to create its user interface, primarily leveraging React.js, a popular JavaScript library for building user interfaces.
+
+- **React.js**: Used for building dynamic and responsive user interfaces.
+- **WebSockets**: Maintains a real-time connection between the client and server for instant updates.
+- **Tornado**: A Python framework that handles long-lived connections and supports the server's real-time operations.
+- **Custom Components**: Allows integration of additional web technologies like JavaScript, enhancing functionality.
+- **Bootstrap**: Provides styling and theming capabilities to customize the appearance of applications (CSS Framework).
+- **Widgets and Markdown**: Supports a variety of interactive widgets and Markdown for easy UI development.
+
+This setup enables you to **quickly create interactive web apps using Python**, without needing extensive frontend development skills.
+
+{{< /details >}}
+
+## Python Apps Reliability
+
+A good readme does the trick for any project.
+
+This is a [good Python Project Readme.](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/README.md)
+
+
+
+
+### Python Virtual Envs
+
+
+There are several ways to install [Python Dependencies](https://fossengineer.com/python-dependencies-for-ai/).
+
 {{< details title="Make the dependencies Work: Venv's in Python 📌" closed="true" >}}
 
 ```sh
@@ -30,21 +60,23 @@ pip list
 ```
 {{< /details >}}
 
-A good readme does the trick for any project.
 
-This is a [good Python Project Readme.](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/README.md)
+### Containers for Python Apps
 
-{{< details title="Why I love Streamlit for Quick UI's 📌" closed="true" >}}
+Making sure a Python app will *always* work is by [building & using containers](https://fossengineer.com/building-docker-container-images/).
 
-Streamlit uses a combination of front-end technologies to create its user interface, primarily leveraging React.js, a popular JavaScript library for building user interfaces.
+{{< details title="Local container build 📌" closed="true" >}}
 
-- **React.js**: Used for building dynamic and responsive user interfaces.
-- **WebSockets**: Maintains a real-time connection between the client and server for instant updates.
-- **Tornado**: A Python framework that handles long-lived connections and supports the server's real-time operations.
-- **Custom Components**: Allows integration of additional web technologies like JavaScript, enhancing functionality.
-- **Bootstrap**: Provides styling and theming capabilities to customize the appearance of applications (CSS Framework).
-- **Widgets and Markdown**: Supports a variety of interactive widgets and Markdown for easy UI development.
+```sh
+#docker build -t trip_planner .
+DOCKER_BUILDKIT=1 docker build --no-cache --progress=plain -t trip_planner .
+```
 
-This setup enables you to **quickly create interactive web apps using Python**, without needing extensive frontend development skills.
+{{< /details >}}
+
+
+{{< details title="CI/CD container build 📌" closed="true" >}}
+
+You can use tools like: Jenkins, or Github Actions CI/CD Workflows
 
 {{< /details >}}

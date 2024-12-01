@@ -28,6 +28,11 @@ You guessed it. They are using **LangChain**.
 [LangChain is an alternative](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/#other-foss-ways-to-chat-with-your-data) to [PandasAI](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/).
 
 
+
+{{< callout type="info" >}}
+I am creating a public repo with all sort if interesting libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)**
+{{< /callout >}}
+
 ## Chat with CSV with LangChain
 
 You will need to have:
@@ -62,3 +67,33 @@ And run the Streamlit App:
 ```sh
 streamlit run main.py
 ```
+
+### Understanding CSV with LangChain App
+
+This is the general workflow of the Python app:
+
+
+```mermaid
+graph TD
+    A[Load environment variables with dotenv] --> B{Check if OPENAI_API_KEY is set?}
+    B -- No --> C[Exit program]
+    B -- Yes --> D[Set Streamlit page config and header]
+    D --> E[User uploads CSV file]
+    E --> F{CSV file uploaded?}
+    F -- No --> G[Wait for CSV upload]
+    F -- Yes --> H[Create CSV agent using Langchain and OpenAI]
+    H --> I[User inputs question]
+    I --> J{Is a question provided?}
+    J -- No --> K[Wait for question]
+    J -- Yes --> L[Process the question with agent]
+    L --> M[Display result using Streamlit]
+```
+
+
+---
+
+## FAQ
+
+Other Tools to **Chat over custom data** (and locally~) is [PrivateGPT](https://fossengineer.com/selfhosting-privateGPT/)
+
+{{< youtube "Ib3nQu5bB_k" >}}
