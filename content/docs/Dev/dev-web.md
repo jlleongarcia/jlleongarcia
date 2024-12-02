@@ -219,8 +219,19 @@ firebase deploy #you will get something like -> https://jalcocertech.web.app/
 * https://stateofjs.com/en-US
 * Web Analytics: with Umami or Tianji
 
+
+{{< callout type="info" >}}
+Some CSS will do the Trick. As well as JS libraries like: PhotoSwipe,...
+{{< /callout >}}
+
 {{% /steps %}}
 
+
+## Setup a Static CMS
+
+There are many alternatives!
+
+1. https://github.com/payloadcms/payload
 
 ---
 
@@ -317,3 +328,13 @@ It's worth to try few of them - not all the content is indexed in the same way a
 ### Enhancing a Site
 
 * https://blog.cavelab.dev/2022/01/comments-again/
+
+### Other Software to Create a Page
+
+Does all of this sounds too complex for the first website?
+
+Try with:
+
+* Instant land
+* Wordpress or Ghost
+* Writefreely

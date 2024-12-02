@@ -279,21 +279,31 @@ Its all about the prompts, as we can see with **these use cases** that give life
 
 ### Slides Creation Agent
 
+There are really cool infographics out there.
+
+Like infograpia.com or others
+
+But better to have a ppt than nothing at all.
+
+Well, but this wont be just "a powerpoint". They can be sleek. And done with code.
+
 Presentations as a code, noways means AI driven ppt's.
 
 [SliDev is an awsome project](https://fossengineer.com/how-to-use-slidev/) to generate PPT as code - **leveraging VueJS**.
 
 I love the SliDev project so much, that [I forked it](https://github.com/JAlcocerT/slidev).
 
-{{< callout type="info" >}}
 * [OpenAI PPT with **Slidev**](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_slidev.py
 )
 * **SliDev PPT** for Streamlit Multichat - Deployed [here](https://jalcocert.github.io/Streamlit-MultiChat/1) using [GH Actions](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/.github/workflows/SliDev_CICD.yml)
     * [Result](https://jalcocert.github.io/Streamlit-MultiChat/1)
     * [Code](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/slidev)
-{{< /callout >}}
 
+
+
+{{< callout type="info" >}}
 > You can also create **PPTs from markdown** with [Marp](https://github.com/marp-team/marpit) or with [RemarkJS](https://fossengineer.com/create-ppt-with-code/#remark)
+{{< /callout >}}
 
 ### Diagrams with AI
 

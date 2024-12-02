@@ -142,11 +142,11 @@ nslookup google.com #see that now you are using quad9 DNS
 
 As per [this post](https://askubuntu.com/questions/22108/how-to-control-fan-speed)
 
-But I decided to manage everything via the BIOS.
+But I decided to manage everything via the **BIOS**.
 
 So now the fan is at 30% up to 60 Celsius.
 
-> For Windows you can use [FanControl](https://github.com/Rem0o/FanControl.Releases) and AMD Adrenaline Software
+> For Windows you can use [FanControl](https://github.com/Rem0o/FanControl.Releases) and AMD Adrenaline Software. You also have `thinkfan` for [Thinkpads](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/)
 
 {{< details title="Changing Power Profiles 📌" closed="true" >}}
 

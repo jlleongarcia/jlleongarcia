@@ -112,3 +112,7 @@ Why shouldnt we do it with our Pi's?
 <https://jalcocert.github.io/RPi/posts/selfhosting-with-docker/>
 
 You can also try [containers with **Podman**](https://fossengineer.com/docker-alternatives-for-data-analytics/)
+
+### How to Find proper RPi Pins?
+
+* https://pinout.xyz/

@@ -152,6 +152,8 @@ I got an additional **Pi4** (this time 4GB Ram, 64 bits) and was helpful to:
 Definitely want to go back to the IoT Projects and do sth with Small Solar Panels
 {{< /callout >}}
 
+**Sources of inspiration**: [randomgarage](https://www.randomgarage.com/2018/12/raspberry-pi-automated-irrigation-system.html)
+
 ### Built a new PC!
 
 The [x300](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/) is here!
@@ -248,6 +250,7 @@ I learnt a few things **about Servers** with the [X300](https://jalcocert.github
 
 * <https://Selfhosted.show>
 * <https://selfh.st/>
+* [This post](https://fossengineer.com/selfhosting-favourite-aug-2024/)
 
 {{< /details >}}
 

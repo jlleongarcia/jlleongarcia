@@ -170,6 +170,12 @@ You can print to pdf, add your logo, taxes, CSS...
   * https://hormigasenlanube.com/
   * https://lyk-website.pl/brief/
 
+* More competitors
+  * Taplink
+  * bento.me
+  * https://getallmylinks.com/
+  * https://subscribepage.io/listy#
+
 <!-- * Proposed: bogusiabachata.pro -->
 
 <!-- More ppl to help - future CLIENTS

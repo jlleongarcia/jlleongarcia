@@ -6,18 +6,20 @@ draft: false
 #     image: "https://socialify.git.ci/alejandro-ao/ask-multiple-pdfs/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
 #     alt: "ChatPDF" # alt text
 #     caption: "SelfHosting A RAG App to chat with PDFs." # display caption under cover
-tags: ["Docker","Gen-AI","Python","Dev","Self-Hosting"]
-description: 'Why LangChain is great for AI Project'
+tags: ["Gen-AI","Python","Dev"]
+description: 'Why LangChain is great for AI Projects. How to RAG with LangChain'
 summary: 'How to create a Streamlit App that uses LangChain to chat with your data.'
 url: 'how-to-chat-with-your-data'
 ---
 
-As [commented earlier this year](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-pdfs/), I was inspired by Alejandro AO and its **Python AI projects**.
+As [commented earlier this year](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-pdfs/), I was inspired by **Alejandro AO** and its **Python AI projects**.
 
 
 [I commented the PDF one **here** →](/JAlcocerT/how-to-chat-with-pdfs)
 
-You guessed it. They are using **LangChain**.
+You guessed it.
+
+They are using **LangChain**.
 
 {{< cards >}}
   {{< card link="https://github.com/JAlcocerT/ask-multiple-pdfs/" title="My Fork in Github for Ask Multiple PDFs ↗" icon="book-open" >}}

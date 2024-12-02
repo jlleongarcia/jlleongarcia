@@ -152,6 +152,14 @@ ifconfig eth0 | grep "inet " | awk '{ print $2 }' #if ETH Connected - SEE THE LO
 
 ---
 
+Talking from the experience.
+
+HUGO is great to have a quick blog going for free. Thats what ive done with my [Linux Repo](https://github.com/JAlcocerT/Linux)
+
 {{< callout type="info" >}}
 You can use [HUGO with Github Pages + GH Actions](https://github.com/JAlcocerT/Linux/actions). Look at those **~5s build times** ~30/40s e2e!
 {{< /callout >}}
+
+This video can be helpful to get going (hugo blowfish theme)
+
+{{< youtube "-05mOdHmQVc" >}}
