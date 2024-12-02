@@ -169,7 +169,7 @@ Pass the `wg config file` via Tailscale with CLI or just create it manually via 
 {{< /callout >}}
 
 ```sh
-sudo nano /etc/wireguard/wg0.conf
+sudo nano /etc/wireguard/wg0.conf #WRITE HERE YOUR WIREGUARD CONFIG
 #nano /etc/wireguard/your_vpn_wireguard_configuration.conf #configure with CLI
 #cp /home/Downloads/your_vpn_wireguard_configuration.conf /etc/wireguard #if download the config
 
