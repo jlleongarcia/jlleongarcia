@@ -1,6 +1,6 @@
 ---
 title: "What a Year..."
-date: 2024-11-17
+date: 2024-12-02
 draft: false
 tags: ["Dev"]
 description: 'Looking back to the learnings of this year'
@@ -452,6 +452,9 @@ For Photos I am using [this kind of Hugo Gallery](https://jalcocert.github.io/JA
 
 ### Next Year 
 
+Use [LiteLLM](https://github.com/BerriAI/litellm) to unify the LLMs API calls across providers..and use [screenshot2code](https://github.com/abi/screenshot-to-code) to make cooler website designs
+
+[Cline/ClaudeDev](https://www.youtube.com/watch?v=TPjZ-E9WR6c)
 
 {{< details title="Maybe next year...Dev Stuff 📌" closed="true" >}}
 

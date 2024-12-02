@@ -3,7 +3,7 @@ title: "Cloud vs Pi's: What Should I get?"
 date: 2024-08-10T23:20:21+01:00
 draft: false
 tags: ["Dev"]
-summary: Comparing SBCs performance with the Cloud - Raspberry Pi, Orange Pi, Mini PC, Cloud...?
+summary: Comparing SBCs performance with the Cloud - Raspberry Pi, Orange Pi, Mini PC (BMax-B4),...?
 url: cloud-vs-single-board-computers
 ---
 

@@ -52,6 +52,8 @@ It was all possible thanks to [this DotCSV YT Video](https://www.youtube.com/wat
 
 ### Flux
 
+https://www.youtube.com/watch?v=r-uH1C_Vi08
+
 ### Using HuggingFace
 
 

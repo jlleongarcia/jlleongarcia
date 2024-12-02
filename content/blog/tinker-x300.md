@@ -452,7 +452,7 @@ This provides a comprehensive view of all the devices' performance and specifica
 
 Time to combine a Desktop, like the X300 + [Hetzner](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#other-clouds) to get a **custom VPN connection** with Wireguard.
 
-> Use the [Hetzner Setup Script](https://github.com/JAlcocerT/Linux/blob/main/Z_Cloud/Hetzner_101.sh) or the[ SelfHosting script](https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh) as described [here](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
+> Use the [Hetzner Setup Script](https://github.com/JAlcocerT/Linux/blob/main/Z_Cloud/Hetzner_101.sh) or the[ **SelfHosting Script**](https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh) as described [here](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
 
 {{% steps %}}
 
@@ -555,7 +555,7 @@ You can do this steps with a Raspberry Pi (connected to WIFI) as Wireguard  clie
 
 Which will then provide VPN access to your desktop via the Ethernet cable.
 
-> Wifi2Eth [Post1](https://jalcocert.github.io/RPi/posts/rpi-wifi-ethernet-bridge/) and Post2
+> Wifi2Eth [Post1](https://jalcocert.github.io/RPi/posts/rpi-wifi-ethernet-bridge/) and [Post2](https://jalcocert.github.io/JAlcocerT/raspberry-pi-networking/)
 
 {{< details title="Details 📌" closed="true" >}}
 

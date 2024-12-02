@@ -3,7 +3,7 @@ title: "Networking - Wifi to Ethernet Bridge"
 date: 2024-08-23T10:20:21+01:00
 draft: false
 tags: ["Dev"]
-description: 'Tinkering with a Raspberry Pi and Networking.'
+description: 'Tinkering with a Raspberry Pi and Networking. Wifi2Ethernet with Wireguard.'
 summary: 'Raspberry Pi - Wifi2Ethernet Bridge (With Wireguard) and more'
 url: 'raspberry-pi-networking'
 ---
@@ -100,9 +100,9 @@ cp /home/Downloads/your_vpn_wireguard_configuration.conf /etc/wireguard #downloa
 sudo wg-quick your_vpn_wireguard_configuration #the name of the .conf file that you have downloaded
 ```
 
-This will make your wireguard client to be connected to the server.
+This will make your **wireguard client to be connected** to the server.
 
-Do you want to [check your public IP?](#faq)
+Do you want to [check your **public IP**?](#faq)
 
 ```sh
 curl -sS https://ipinfo.io/json #the command to use
@@ -198,7 +198,45 @@ with this version, you can route the traffic through any Wireguard Traffic (from
 
 ## FAQ
 
-* Portable Router (Alternative to RPi) - GL.iNet GL-SFT1200 or the GL.iNet GL-MT300N-V2 (which should be powered via the usb port of a laptop).
+
+{{< details title="RaspAP with NordVPN 📌" closed="true" >}}
+
+* https://my.nordaccount.com
+
+{{< /details >}}
+
+{{< details title="RaspAP with ProtonVPN 📌" closed="true" >}}
+
+* https://account.protonvpn.com/login
+  * https://account.protonvpn.com/downloads
+
+```
+[Interface]
+# Bouncing = 2
+# NAT-PMP (Port Forwarding) = off
+# VPN Accelerator = on
+PrivateKey = +some/pri/key=
+Address = address/32
+DNS = 10.2.0.1
+
+[Peer]
+# NL-FREE#103073
+PublicKey = +some/string=
+AllowedIPs = 0.0.0.0/0
+Endpoint = ipaddress:51820
+```
+
+{{< /details >}}
+
+{{< details title="RaspAP with Mullvad 📌" closed="true" >}}
+
+* https://mullvat.net
+
+{{< /details >}}
+
+
+
+* Portable Router (Alternative to RPi) - `GL.iNet GL-SFT1200` or the `GL.iNet GL-MT300N-V2` (which should be powered via the usb port of a laptop).
 
 <!-- https://www.amazon.pl/GL-iNet-GL-SFT1200-Bezpieczny-podr%C3%B3%C5%BCny-router/dp/B09N72FMH5/ref=pd_rhf_se_s_pd_crcd_d_sccl_2_3/261-2737239-8107716?pd_rd_w=uqRgK&content-id=amzn1.sym.757a6f22-e200-4cac-9f98-1486b52768de&pf_rd_p=757a6f22-e200-4cac-9f98-1486b52768de&pf_rd_r=75AC129RPCM5ZV4H0PGW&pd_rd_wg=Ta2ss&pd_rd_r=71ffd9b4-1178-4b1d-b73d-f53d847a88ed&pd_rd_i=B09N72FMH5&psc=1 -->
 
@@ -304,17 +342,16 @@ sudo apt install -t buster-backports libseccomp2
 
 {{% steps %}}
 
-### Step 1
+### Get your VPS public IP
 
-Get your VPS public IP
 
 ```sh
 ip -4 -brief a #you will need to use it
 ```
 
-### Step 2
+### [Install Docker](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
 
-[Install Docker](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/) and use the stack below.
+And use the stack/docker config below!
 
 {{% /steps %}}
 
@@ -452,6 +489,8 @@ volumes:
 
 {{< /details >}}
 
+---
+
 ### How to Setup RaspAP
 
 * Make sure you have a compatible Wifi USB - https://github.com/morrownr/USB-WiFi
@@ -462,41 +501,7 @@ curl -sL https://install.raspap.com | bash #https://docs.raspap.com/
 
 > Go to `http://raspberrypi.local` and access it with `admin/secret`. You will see a network called `raspi-webgui`, pass `ChangeMe`
 
-{{< details title="RaspAP with NordVPN 📌" closed="true" >}}
-
-* https://my.nordaccount.com
-
-{{< /details >}}
-
-{{< details title="RaspAP with ProtonVPN 📌" closed="true" >}}
-
-* https://account.protonvpn.com/login
-  * https://account.protonvpn.com/downloads
-
-```
-[Interface]
-# Bouncing = 2
-# NAT-PMP (Port Forwarding) = off
-# VPN Accelerator = on
-PrivateKey = +some/pri/key=
-Address = address/32
-DNS = 10.2.0.1
-
-[Peer]
-# NL-FREE#103073
-PublicKey = +some/string=
-AllowedIPs = 0.0.0.0/0
-Endpoint = ipaddress:51820
-```
-
-{{< /details >}}
-
-{{< details title="RaspAP with Mullvad 📌" closed="true" >}}
-
-* https://mullvat.net
-
-{{< /details >}}
-
+---
 
 ### Software for Routers
 
