@@ -1,1 +1,0 @@
-Blog Post about **DJi Tello [here](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/)**
