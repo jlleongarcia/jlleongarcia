@@ -277,7 +277,7 @@ A huge consolidation of knowledge in this area.
 
 ### Python is Easy!
 
-* Environments are not a secret anymore 
+* [Environments](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/#python-virtual-envs) are not a secret anymore 
   * Its not just [Python](https://jalcocert.github.io/JAlcocerT/guide-python/)
   * Or [PySpark](https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/) is not a big secret
 * Neither it is having a [cool readme](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/README.md)
