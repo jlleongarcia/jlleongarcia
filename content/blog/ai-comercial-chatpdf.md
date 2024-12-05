@@ -23,8 +23,8 @@ https://github.com/satwikide/Generative-AI-explorer
 I found an amazing project and video from Alejandro AO and decided to make a few tweaks so that more people can deploy it and try the project.
 
 {{< cards >}}
-  {{< card link="https://github.com/JAlcocerT/ask-multiple-pdfs/" title="My Fork in Github" icon="book-open" >}}
-  {{< card link="https://www.youtube.com/watch?v=e9hJZrT7HLw" title="YT Video on SelfHosting chat with PDF ↗" icon="user" >}}
+  {{< card link="https://github.com/JAlcocerT/ask-multiple-pdfs/" title="My Fork in Github - AskMultiPlePDFs" icon="book-open" >}}
+  {{< card link="https://www.youtube.com/watch?v=e9hJZrT7HLw" title="YT Video on SelfHosting Chat with PDF ↗" icon="user" >}}
 {{< /cards >}}
 
 

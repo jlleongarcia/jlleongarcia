@@ -7,7 +7,7 @@ draft: false
 #     alt: "ChatPDF" # alt text
 #     caption: "SelfHosting A RAG App to chat with PDFs." # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
-description: 'Why LangChain is great for AI Projects. How to RAG with LangChain'
+description: 'Why LangChain is great for AI Projects. How to RAG with LangChain: CSV and DB examples.'
 summary: 'How to create a Streamlit App that uses LangChain to chat with your data.'
 url: 'how-to-chat-with-your-data'
 ---
@@ -17,12 +17,14 @@ As [commented earlier this year](https://jalcocert.github.io/JAlcocerT/how-to-ch
 
 [I commented the PDF one **here** →](/JAlcocerT/how-to-chat-with-pdfs)
 
+But today, it is the **time for CSV's.**
+
 You guessed it.
 
-They are using **LangChain**.
+We will be using **LangChain** as RAG framework to provide the **CSV context to the LLM**.
 
 {{< cards >}}
-  {{< card link="https://github.com/JAlcocerT/ask-multiple-pdfs/" title="My Fork in Github for Ask Multiple PDFs ↗" icon="book-open" >}}
+  {{< card link="https://github.com/JAlcocerT/ask-multiple-pdfs/" title="My previous Fork in GH for Ask Multiple PDFs ↗" icon="book-open" >}}
   {{< card link="https://github.com/JAlcocerT/langchain-ask-csv" title="My Fork in Github for Ask CSV ↗" icon="user" >}}
 {{< /cards >}}
 
@@ -30,9 +32,8 @@ They are using **LangChain**.
 [LangChain is an alternative](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/#other-foss-ways-to-chat-with-your-data) to [PandasAI](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/).
 
 
-
 {{< callout type="info" >}}
-I am creating a public repo with all sort if interesting libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)**
+I am creating a public repo with all sort if interesting RAG libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)**
 {{< /callout >}}
 
 ## Chat with CSV with LangChain
@@ -40,8 +41,12 @@ I am creating a public repo with all sort if interesting libraries to **[Chat ov
 You will need to have:
 
 * [Python installed](https://jalcocert.github.io/JAlcocerT/guide-python/#installing-python-) and a [virtual environment](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/) ready.
-* The OpenAI API keys - * https://platform.openai.com/api-keys
+* The OpenAI API keys - https://platform.openai.com/api-keys
 
+
+{{< callout type="info" >}}
+See the modified working code [here](https://github.com/JAlcocerT/langchain-ask-csv) 💻
+{{< /callout >}}
 
 These are the libraries you will need:
 
@@ -49,7 +54,11 @@ These are the libraries you will need:
 pip install langchain python-dotenv streamlit openai
 ```
 
+{{< callout type="warning" >}}
 But that way will install the latest version of each.
+{{< /callout >}}
+
+
 
 Which may cause incompatibilities in the future.
 
@@ -91,6 +100,11 @@ graph TD
     L --> M[Display result using Streamlit]
 ```
 
+## Chat with a DB with LangChain
+
+{{< callout type="info" >}}
+One more time, thanks to AlejandroAO this have been possible. The working code is on my [data-chat repo](https://github.com/JAlcocerT/langchain-ask-csv) 💻 as it was not provided an original one.
+{{< /callout >}}
 
 ---
 
@@ -99,3 +113,8 @@ graph TD
 Other Tools to **Chat over custom data** (and locally~) is [PrivateGPT](https://fossengineer.com/selfhosting-privateGPT/)
 
 {{< youtube "Ib3nQu5bB_k" >}}
+
+You can also try:
+
+* [PandasAI](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/)
+* LlamaIndex
