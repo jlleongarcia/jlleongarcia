@@ -17,7 +17,7 @@ As [commented earlier this year](https://jalcocert.github.io/JAlcocerT/how-to-ch
 
 [I commented the PDF one **here** →](/JAlcocerT/how-to-chat-with-pdfs)
 
-But today, it is the **time for CSV's.**
+But today, it is the **time for [CSV's](#chat-with-csv-with-langchain)** and with **[Databases](#chat-with-a-db-with-langchain)**!
 
 You guessed it.
 
@@ -101,6 +101,12 @@ graph TD
 ```
 
 ## Chat with a DB with LangChain
+
+It's not that SQL is impossible to learn.
+
+But why not using AI as leverage to help us with D&A tasks?
+
+And it is possible thanks to LangChain and the great work of AlejandroAO
 
 {{< callout type="info" >}}
 One more time, thanks to AlejandroAO this have been possible. The working code is on my [data-chat repo](https://github.com/JAlcocerT/langchain-ask-csv) 💻 as it was not provided an original one.
