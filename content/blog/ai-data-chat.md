@@ -14,7 +14,7 @@ url: 'how-to-use-rags-with-python'
 
 
 {{< callout type="info" >}}
-The **[Data-ChatBot](https://github.com/JAlcocerT/Data-Chat)**
+The **[Data-ChatBot](https://github.com/JAlcocerT/Data-Chat)** 💻 
 {{< /callout >}}
 
 ## How to use RAGs
@@ -32,7 +32,7 @@ We can build very interesting QnA over knowledge apps: https://github.com/langch
 
 ### General RAG Architecture
 
-This is the general idea of a RAG architecture:
+This is the general idea of a **RAG architecture**:
 
 ```mermaid
 flowchart TD
@@ -63,16 +63,20 @@ flowchart TD
 And as you can imagine, there as few frameworks already out there.
 
 {{< callout type="info" >}}
-Normally, you will see that RAG frameworks relate with: [VectorDBs](#vectordbs)
+Normally, you will see that [RAG frameworks relate](#interesting-rag-resoures) with: [VectorDBs](#vectordbs), Embedding Models and [LLMs](#interesting-api-keys-for-llms)
 {{< /callout >}}
 
 ## RAG Frameworks
 
 ### ChatBot for Real Estate - LlamaIndex
 
-LlamaIndex + **Mem0** does the trick.
+**[LLamaIndex](https://github.com/run-llama/llama_index)** is awsome.
 
-How Exactly? See [this repo folder](https://github.com/JAlcocerT/Data-Chat/tree/main/LLamaIndex/With_Mem0)
+And for a real estate agent bot, LlamaIndex + **Mem0** does the trick.
+
+How Exactly?
+
+See [this repo folder](https://github.com/JAlcocerT/Data-Chat/tree/main/LLamaIndex/With_Mem0). You will need [OpenAI & Anthropic APIs](#interesting-api-keys-for-llms)
 
 
 {{< callout type="info" >}}
@@ -81,11 +85,15 @@ For the [Real Estate Web Project](https://github.com/JAlcocerT/ScrewFastMoiRealE
 
 ### Exploring LangChain
 
-The [LangChain](https://github.com/langchain-ai/langchain) framework is amazing.
+The [**LangChain**](https://github.com/langchain-ai/langchain) framework is amazing.
 
+* https://pypi.org/project/langchain/
+* https://python.langchain.com/v0.2/docs/introduction/
+
+It can helpful chat with PDFs, even with CSV's or a Database!
 
 {{< cards cols="2" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/" title="Blog on LangChain" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/" title="Blog on LangChain (CSV & DB)" >}}
   {{< card link="https://github.com/JAlcocerT/Data-Chat/tree/main/LangChain" title="LangChain in DataChat" >}}
 {{< /cards >}}
 
@@ -96,6 +104,9 @@ You might be interested to see also [LangGraph](https://github.com/langchain-ai/
 ### Exploring PandasAI
 
 I was using the [**PandasAI**](https://github.com/Sinaptik-AI/pandas-ai) project previously to `talk with dataframes` as covered on [this Post](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/)
+
+* https://pypi.org/project/pandasai/
+* https://platform.openai.com/
 
 {{< cards cols="2" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/" title="Blog on PandasAI" >}}
@@ -120,6 +131,14 @@ It seems that the [embedchain project](https://fossengineer.com/embedchain-ai/) 
 
 ## Summing Up
 
+We have seen some interesting **RAG Frameworks working in Python**
+
+[![Star History Chart](https://api.star-history.com/svg?repos=langchain-ai/langchain,run-llama/llama_index,deepset-ai/haystack,Sinaptik-AI/pandas-ai&type=Date)](https://star-history.com/#langchain-ai/langchain&run-llama/llama_index&deepset-ai/haystack&Sinaptik-AI/pandas-ai&type=Date)
+
+Whats next from here?
+
+Why not building something cool?
+
 
 [![Star History Chart](https://api.star-history.com/svg?repos=langchain-ai/langchain,deepset-ai/haystack,Sinaptik-AI/pandas-ai&,type=Date)](https://star-history.com/langchain-ai/langchain&deepset-ai/haystack&Sinaptik-AI/pandas-ai&Date)
 
@@ -142,3 +161,5 @@ LLMs that have already appeared:
 
 #### VectorDBs
 
+* qdrant - https://fossengineer.com/selfhosting-vector-admin-docker/
+* ChromaDB -  https://fossengineer.com/selfhosting-chromadb-docker/

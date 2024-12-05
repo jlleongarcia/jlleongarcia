@@ -33,7 +33,7 @@ We will be using **LangChain** as RAG framework to provide the **CSV context to 
 
 
 {{< callout type="info" >}}
-I am creating a public repo with all sort if interesting RAG libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)**
+I am creating a public repo with all sort if interesting RAG libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)** 💻 
 {{< /callout >}}
 
 ## Chat with CSV with LangChain
