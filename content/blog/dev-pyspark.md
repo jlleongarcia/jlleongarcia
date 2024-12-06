@@ -279,7 +279,9 @@ This can be useful when performing certain calculations, as it allows for more e
 
 Data skew is an **uneven distribution of data in a dataset**, which can be caused by a variety of factors including transformations such as joins, groupBy, and orderBy.
 
-Data skew can have a variety of implications, such as increased lock contention, reduced database concurrency, and decreased performance. Data skew **can be measured using the skewness coefficient**, which is a measure of the asymmetry of the data in a dataset.
+Data skew can have a variety of implications, such as increased lock contention, reduced database concurrency, and decreased performance.
+
+Data skew **can be measured using the skewness coefficient**, which is a measure of the asymmetry of the data in a dataset.
 
 <!-- 
 

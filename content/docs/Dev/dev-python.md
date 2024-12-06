@@ -7,7 +7,9 @@ summary: 'Interesting stuff Ive learn along the way when trying to use Python'
 url: 'useful-python-stuff'
 ---
 
+If you have [Python Installed](https://jalcocert.github.io/JAlcocerT/guide-python/#installing-python-) already.
 
+You can do very cool things with it.
 
 {{< details title="Why I love Streamlit for Quick UI's 📌" closed="true" >}}
 

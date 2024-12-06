@@ -71,10 +71,15 @@ sudo apt install python3.11 -y
 {{< /dropdown >}}
 
 
-Dont forget to add it to the PATH if you are on Windows - Then check the version with:
+Dont forget to add it to the PATH if you are on Windows - Then **check the version** with:
 
 ```sh
 python --version
+```
+
+```py
+import sys
+print(sys.version)
 ```
 
 You can also start an interactive session and try it:

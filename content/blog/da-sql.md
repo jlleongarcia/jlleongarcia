@@ -130,9 +130,13 @@ ORDER BY COUNT(CustomerID) DESC;
 
 UNION combines the results of two or more SELECT queries vertically (appending rows), while a JOIN combines rows from two or more tables horizontally (adding columns) based on a related column between them.
 
-The UNION operation is used to combine the results of two or more SELECT queries into a single result set. It eliminates duplicate rows from the results. Each SELECT query within the UNION must have the same number of columns and those columns must have similar data types. The columns in each SELECT statement must also be in the same order. The UNION operator is used when you want to combine rows from similar tables or datasets, essentially stacking the results vertically.
+The UNION operation is used to combine the results of two or more SELECT queries into a single result set. It eliminates duplicate rows from the results.
 
-For example, if you have two tables - "Sales2019" and "Sales2020" - with the same structure, and you want to create a list of all unique customers in both years, you could use a UNION to do this.
+Each SELECT query within the UNION must have the same number of columns and those columns must have similar data types.
+
+The columns in each SELECT statement must also be in the same order. The UNION operator is used when you want to combine rows from similar tables or datasets, essentially stacking the results vertically.
+
+**For example,** if you have two tables - "Sales2019" and "Sales2020" - with the same structure, and you want to create a list of all unique customers in both years, you could use a UNION to do this.
 
 ```sql
 SELECT CustomerName FROM Sales2019
@@ -145,8 +149,6 @@ SELECT CustomerName FROM Sales2020;
 But what are joins?
 
 {{< tweet user="stratebi" id="1231889201198772224" >}}
-
-
 
 
 ### HAVING AND WHERE
@@ -299,7 +301,9 @@ Aliasing renames a table or a column temporarily by giving another name. The use
 
 Common Table Expression (CTE): A CTE is defined using a WITH clause at the beginning of a query, followed by a subquery enclosed in parentheses. It's like creating a temporary result set that you can reference within the main query.
 
-In SQL, a WITH statement, also known as a Common Table Expression (CTE), is used to define a temporary result set that can be referred to within the context of a SELECT, INSERT, UPDATE, or DELETE statement. Common Table Expressions provide a way to break down complex queries into more manageable, named, and often recursive parts.
+In SQL, a WITH statement, also known as a Common Table Expression (CTE), is used to define a temporary result set that can be referred to within the context of a SELECT, INSERT, UPDATE, or DELETE statement. 
+
+Common Table Expressions provide a way to break down complex queries into more manageable, named, and often recursive parts.
 
 
 
@@ -405,7 +409,7 @@ Subqueries can be powerful tools for extracting data based on conditions or calc
 
 ### Useful Concepts for SQL
 
-Some Data Modelling concepts great to keep in mind for SQL.
+Some **Data Modelling concepts** great to keep in mind for SQL.
 
 * **Normalization** is a process of organizing data in a database in a way that **minimizes redundancy and dependency**.
   * Redundancy is when the same data is stored in multiple places in the database. This can lead to problems, such as data inconsistency and wasted space. Dependency is when one piece of data depends on another piece of data. This can also lead to problems, such as data integrity issues.
@@ -498,6 +502,7 @@ It's important to note that the decision to create an index should be based on c
 Optimizing SQL queries can help to improve the performance of a database and the applications that use it.
 
 Efficient SQL queries consider factors like the use of indexes, appropriate join strategies, and minimizing data retrieval.
+
 Avoiding unnecessary subqueries and reducing the number of rows processed can improve efficiency.
 
 * Some best practices for SQL query optimization are:
@@ -551,7 +556,7 @@ https://trino.io/ecosystem/index.html
     
     -->
 
-https://github.com/trinodb/trino
+* https://github.com/trinodb/trino
 
 
 
@@ -560,7 +565,8 @@ Open Source, **Distributed**, paralell processing, SQL query language.
 Let the platform run TRINO (bring your data) - https://www.starburst.io/platform/starburst-galaxy/
 
 Data from where? https://trino.io/ecosystem/data-source.html
-  From Kafka, to MariaDB, Google Sheets, MongoDB, DRUID, Prometheus...
+
+From Kafka, to MariaDB, Google Sheets, MongoDB, DRUID, Prometheus...
 
 Object S torage: HDFS, amazon S3, GCS
 
@@ -586,18 +592,18 @@ Tabular data format -
 
 You are using a cluster of servers to process the queries
 
-
+```sql
 FROM "catalog.schema.table"
 
 SHOW CATALOGS;
 SHOW TABLES FROM catalog.schema
 
 SHOW FUNCTIONS like 'concat%'
-
+```
 
 #### Trino Clients
 
-https://trino.io/ecosystem/client.html
+* https://trino.io/ecosystem/client.html
 
 * Redash
 * Superset
@@ -621,4 +627,3 @@ https://github.com/pgadmin-org/pgadmin4 -->
 ```sh
 docker run -d -p 8888:8888 gethue/hue:latest
 ```
-

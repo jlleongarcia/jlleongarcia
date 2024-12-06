@@ -106,21 +106,20 @@ It's not that SQL is impossible to learn.
 
 But why not using AI as leverage to help us with D&A tasks?
 
-And it is possible thanks to LangChain and the great work of AlejandroAO
+And it is possible thanks to LangChain with [Python](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/) and the great work of AlejandroAO
 
 {{< callout type="info" >}}
 One more time, thanks to AlejandroAO this have been possible. The working code is on my [data-chat repo](https://github.com/JAlcocerT/langchain-ask-csv) 💻 as it was not provided an original one.
 {{< /callout >}}
 
 
-
-{{< callout type="info" >}}
-Useful Tools for DBs:
+{{< details title="Useful Tools for DBs 📌" closed="true" >}}
 
 * [ChartDB](https://github.com/chartdb/chartdb) - Database diagrams editor that allows you to visualize and design your DB with a single query.
 * [SQLiteViz](https://github.com/lana-k/sqliteviz)
 * [SQliteBrowser](https://github.com/sqlitebrowser/sqlitebrowser)
-{{< /callout >}}
+
+{{< /details >}}
 
 ---
 
@@ -132,5 +131,5 @@ Other Tools to **Chat over custom data** (and locally~) is [PrivateGPT](https://
 
 You can also try:
 
-* [PandasAI](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/)
+* [PandasAI](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/) which I covered
 * LlamaIndex
