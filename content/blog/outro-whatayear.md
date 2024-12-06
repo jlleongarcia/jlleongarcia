@@ -1,6 +1,6 @@
 ---
 title: "What a Year..."
-date: 2024-12-02
+date: 2024-12-06
 draft: false
 tags: ["Dev"]
 description: 'Looking back to the learnings of this year'

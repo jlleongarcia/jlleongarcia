@@ -413,7 +413,7 @@ I mean, an AI Assisted e-book.
 
 ## Conclusions
 
-Potentially, you can choose any other LLMs to reply to you.
+Potentially, you can choose [any other LLMs via API](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#interesting-api-keys-for-llms) to reply to you.
 
 Its all about getting proper API calls to each of them.
 

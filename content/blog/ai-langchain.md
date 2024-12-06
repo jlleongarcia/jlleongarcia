@@ -112,6 +112,16 @@ And it is possible thanks to LangChain and the great work of AlejandroAO
 One more time, thanks to AlejandroAO this have been possible. The working code is on my [data-chat repo](https://github.com/JAlcocerT/langchain-ask-csv) 💻 as it was not provided an original one.
 {{< /callout >}}
 
+
+
+{{< callout type="info" >}}
+Useful Tools for DBs:
+
+* [ChartDB](https://github.com/chartdb/chartdb) - Database diagrams editor that allows you to visualize and design your DB with a single query.
+* [SQLiteViz](https://github.com/lana-k/sqliteviz)
+* [SQliteBrowser](https://github.com/sqlitebrowser/sqlitebrowser)
+{{< /callout >}}
+
 ---
 
 ## FAQ

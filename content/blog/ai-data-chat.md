@@ -90,7 +90,11 @@ The [**LangChain**](https://github.com/langchain-ai/langchain) framework is amaz
 * https://pypi.org/project/langchain/
 * https://python.langchain.com/v0.2/docs/introduction/
 
-It can helpful chat with PDFs, even with CSV's or a Database!
+It can helpful to:
+
+1. Chat with PDFs
+2. Even with CSV's...
+3. ...or a Database!
 
 {{< cards cols="2" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/" title="Blog on LangChain (CSV & DB)" >}}
@@ -124,7 +128,7 @@ pip install haystack-ai
 
 ### EmbedChain - Mem0
 
-It seems that the [embedchain project](https://fossengineer.com/embedchain-ai/) got absorbed into a bigger one. Im talking about the mem0 framework.
+It seems that the [embedchain project](https://fossengineer.com/embedchain-ai/) got absorbed into a bigger one. Im talking about the **mem0 framework**.
 
 
 ---

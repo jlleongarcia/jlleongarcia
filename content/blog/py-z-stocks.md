@@ -79,6 +79,18 @@ content
     └── post-1.md // <- /blog/post-1/
 ```
 
+### AI Features for PyStocks
+
+Chat with the pulled financial data thanks to [LangChain](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#exploring-langchain).
+
+
+
+{{< callout type="info" >}}
+I was exploring on [this post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-a-db-with-langchain) and [related repo](https://github.com/JAlcocerT/Data-Chat/tree/main/LangChain), how to use **LangChain as RAG with OpenAI API so that given a DB**, we can use Natural Language to interact with it.
+{{< /callout >}}
+
+
+
 ## Conclusions
 
 This goes one step further than the previous project RStocks.
