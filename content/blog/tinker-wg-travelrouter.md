@@ -36,6 +36,7 @@ And if for some reason you are no table to do **port forwarding** with your home
 2. Change the master password & select the language
 3. 
 
+![MT3000 Admin PWD](/blog_img/hardware/GL-MT3000-pwd.png)
 
 ## Closing Thoughts
 

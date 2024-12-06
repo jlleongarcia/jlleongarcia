@@ -66,9 +66,15 @@ You can have a look to this at [ventusky](https://www.ventusky.com/?p=51;73;1&l=
 
 ### The Pareto Principle: 80/20 and Chaos
 
-You might've heard of the [80/20 rule](https://fossengineer.com/pareto-principle-for-data-analytics/): 80% of effects come from 20% of causes. It's seen everywhere, from business to nature. 
+You might've heard of the **80/20 rule**: 80% of effects come from 20% of causes.
 
-But what's chaos got to do with it? The Pareto Principle is a manifestation of non-linear dynamics. Small inputs (the 20%) can lead to significant outputs (the 80%), much like the unpredictable swings of our double pendulum.
+**It's seen everywhere**, from business to nature. 
+
+But what's chaos got to do with it?
+
+The Pareto Principle is a manifestation of **non-linear dynamics**. 
+
+Small inputs (the 20%) can lead to significant outputs (the 80%), much like the unpredictable swings of our double pendulum.
 
 ### Newton Got It... Kinda Right
 

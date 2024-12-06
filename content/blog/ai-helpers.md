@@ -315,7 +315,7 @@ I made some test with [OpenAI + mermaid](https://github.com/JAlcocerT/Streamlit-
 
 You can use those diagrams with SSG (like HUGO, Astro...) and also for Slides creation with SliDev.
 
-Interesting MermaidJS Features:
+Interesting **MermaidJS Features**:
 
 1. Make it look [handDrawn](https://mermaid.js.org/intro/syntax-reference.html#selecting-layout-algorithms)
 2. [Markdown Strings](https://mermaid.js.org/syntax/flowchart.html#markdown-strings)
@@ -330,6 +330,11 @@ flowchart TD
     B-->D(fa:fa-spinner loading)
     B-->E(A fa:fa-camera-retro perhaps?)
 ```
+
+{{< callout type="info" >}}
+There are [more Tools for Diagrams](https://jalcocert.github.io/JAlcocerT/how-to-use-mermaid-diagrams). 
+{{< /callout >}}
+
 
 ### Ticket Creation with AI
 
