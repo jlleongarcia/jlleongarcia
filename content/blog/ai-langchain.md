@@ -121,6 +121,114 @@ One more time, thanks to AlejandroAO this have been possible. The working code i
 
 {{< /details >}}
 
+
+You can see that the **DB is loaded** and we can see its **Schema**.
+
+Actually, we can make already a **MermaidJS ER diagram** to represent it:
+
+```mermaid
+erDiagram
+    Album {
+        int AlbumId PK
+        varchar Title
+        int ArtistId FK
+    }
+    Artist {
+        int ArtistId PK
+        varchar Name
+    }
+    Customer {
+        int CustomerId PK
+        varchar FirstName
+        varchar LastName
+        varchar Company
+        varchar Address
+        varchar City
+        varchar State
+        varchar Country
+        varchar PostalCode
+        varchar Phone
+        varchar Fax
+        varchar Email
+        int SupportRepId FK
+    }
+    Employee {
+        int EmployeeId PK
+        varchar LastName
+        varchar FirstName
+        varchar Title
+        int ReportsTo FK
+        datetime BirthDate
+        datetime HireDate
+        varchar Address
+        varchar City
+        varchar State
+        varchar Country
+        varchar PostalCode
+        varchar Phone
+        varchar Fax
+        varchar Email
+    }
+    Genre {
+        int GenreId PK
+        varchar Name
+    }
+    Invoice {
+        int InvoiceId PK
+        int CustomerId FK
+        datetime InvoiceDate
+        varchar BillingAddress
+        varchar BillingCity
+        varchar BillingState
+        varchar BillingCountry
+        varchar BillingPostalCode
+        decimal Total
+    }
+    InvoiceLine {
+        int InvoiceLineId PK
+        int InvoiceId FK
+        int TrackId FK
+        decimal UnitPrice
+        int Quantity
+    }
+    MediaType {
+        int MediaTypeId PK
+        varchar Name
+    }
+    Playlist {
+        int PlaylistId PK
+        varchar Name
+    }
+    PlaylistTrack {
+        int PlaylistId PK
+        int TrackId PK
+    }
+    Track {
+        int TrackId PK
+        varchar Name
+        int AlbumId FK
+        int MediaTypeId FK
+        int GenreId FK
+        varchar Composer
+        int Milliseconds
+        int Bytes
+        decimal UnitPrice
+    }
+
+    %% Relationships
+    Album ||--o{ Artist : "belongs to"
+    Track ||--o{ Album : "belongs to"
+    Track ||--o{ MediaType : "uses"
+    Track ||--o{ Genre : "categorized as"
+    PlaylistTrack ||--o{ Playlist : "contains"
+    PlaylistTrack ||--o{ Track : "contains"
+    Invoice ||--o{ Customer : "issued to"
+    InvoiceLine ||--o{ Invoice : "part of"
+    InvoiceLine ||--o{ Track : "tracks"
+    Customer ||--o{ Employee : "assisted by"
+    Employee ||--o{ Employee : "reports to"
+```
+
 ---
 
 ## FAQ
@@ -133,3 +241,8 @@ You can also try:
 
 * [PandasAI](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/) which I covered
 * LlamaIndex
+
+
+* https://console.anthropic.com/settings/keys
+    * https://docs.anthropic.com/en/docs/about-claude/models
+* https://platform.openai.com/api-keys

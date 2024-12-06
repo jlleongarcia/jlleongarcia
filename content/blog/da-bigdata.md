@@ -116,8 +116,7 @@ You can now have conversations with a DB via LLMs as described here with LangCha
 #### Snowflake
 
 {{< cards >}}
-  {{< card link="https://wetrustindata.com/data_vault_with_snowflake/" title="Data Vault with Snowflake ↗
-" icon="book-open" >}}
+  {{< card link="https://wetrustindata.com/data_vault_with_snowflake/" title="Data Vault w Snowflake ↗" icon="book-open" >}}
 {{< /cards >}}
 
 ### PySpark
