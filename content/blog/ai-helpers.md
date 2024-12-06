@@ -313,7 +313,23 @@ Because [mermaidJS is so cool](https://fossengineer.com/free-diagram-tools/#merm
 I made some test with [OpenAI + mermaid](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/OpenAI/openai_mermaid.py). Now, is one of the [Agents of AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_AIgents/OpenAI_mermaid.py)
 {{< /callout >}}
 
-You can use those diagrams with SSG (like HUGO, Astro...) and also for Slides creation with SliDev
+You can use those diagrams with SSG (like HUGO, Astro...) and also for Slides creation with SliDev.
+
+Interesting MermaidJS Features:
+
+1. Make it look [handDrawn](https://mermaid.js.org/intro/syntax-reference.html#selecting-layout-algorithms)
+2. [Markdown Strings](https://mermaid.js.org/syntax/flowchart.html#markdown-strings)
+3. Support for [FontAwsome Icons](https://mermaid.js.org/syntax/flowchart.html#basic-support-for-fontawesome)
+
+
+```mermaid
+flowchart TD
+    B["Mermaid with fa:fa-robot "]
+    B-->C["`The **cat**
+  in the hat -  fa:fa-ban forbidden`"]
+    B-->D(fa:fa-spinner loading)
+    B-->E(A fa:fa-camera-retro perhaps?)
+```
 
 ### Ticket Creation with AI
 
