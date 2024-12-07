@@ -17,7 +17,10 @@ When it comes to deploying a Dash Docker App, you have two main options: self-ho
 
 * The project in [Github - Py_Trip_Planner](https://github.com/JAlcocerT/Py_Trip_Planner "Python Trip Planner with Weather in Github {rel='nofollow'}") 
 
-* Don't have a IDE right now? Have a look to the .ipynb notebook that I used to integrate the packages with Google Colaboratory:
+Don't have a IDE right now?
+
+Have a look to the .ipynb notebook that I used to integrate the packages with Google Colaboratory:
+
  [![Google Colab](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Py_Trip_Planner/blob/main/TripPlanner.ipynb "Google Colaboratory: Python Trip Planner {rel='nofollow'}") 
 
 

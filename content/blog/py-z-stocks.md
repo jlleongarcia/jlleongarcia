@@ -90,6 +90,9 @@ I was exploring on [this post](https://jalcocert.github.io/JAlcocerT/how-to-chat
 {{< /callout >}}
 
 
+Chat with a DB applied for finance - <https://github.com/JAlcocerT/Data-Chat/tree/main/LangChain/PyStocksDB>
+
+
 
 ## Conclusions
 

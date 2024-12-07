@@ -102,16 +102,18 @@ graph TD
 
 ## Chat with a DB with LangChain
 
-It's not that SQL is impossible to learn.
+It's not that [SQL](https://jalcocert.github.io/JAlcocerT/sql-data-analytics/) is impossible to learn.
 
-But why not using AI as leverage to help us with D&A tasks?
+But why not using **AI as leverage** to help us with D&A tasks?
 
-And it is possible thanks to LangChain with [Python](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/) and the great work of AlejandroAO
+And it is possible thanks to **LangChain with [Python](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/)** and the great work of AlejandroAO
 
 {{< callout type="info" >}}
-One more time, thanks to AlejandroAO this have been possible. The working code is on my [data-chat repo](https://github.com/JAlcocerT/langchain-ask-csv) 💻 as it was not provided an original one.
+One more time, thanks to **AlejandroAO** this have been possible. The **working code** is on my [data-chat **repo**](https://github.com/JAlcocerT/Data-Chat/tree/main/LangChain/ChatWithDB) 💻 as it was not provided an original one.
 {{< /callout >}}
 
+
+ [![Google Colab](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/test_langchainChatDB.ipynb "Google Colaboratory: Python Notebook {rel='nofollow'}") 
 
 {{< details title="Useful Tools for DBs 📌" closed="true" >}}
 
