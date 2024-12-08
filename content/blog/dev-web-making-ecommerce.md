@@ -8,7 +8,15 @@ url: 'creating-ecommerce'
 ---
 
 
+### Competitors
 
+* zezam.io
+
+
+## Streamlit as eCommerce
+
+* https://github.com/streamlit/files-connection
+* https://github.com/bleumink/streamlit-keycloak
 ---
 
 <!-- * https://outficik.pl/

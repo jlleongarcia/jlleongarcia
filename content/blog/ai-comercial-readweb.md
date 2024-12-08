@@ -352,6 +352,8 @@ You will **need mem0 API**, or to [plug one of your favourite LLMs, as per the d
 
 Cloudflare Tunnels + Cloudflare Access Control
 
+---
+
 ## Conclusions
 
 {{< callout type="info" >}}
@@ -360,11 +362,33 @@ Now you can try the app at:
 
 **What can we do now?**
 
+
+1. Cool CV Stuff
+2. Understading Repositories Much better (and faster)
+3. Github Quick Summaries!
+
+
+
+
+{{< details title="Tools to get Repo Information 📌" closed="true" >}}
+
+* https://github.com/cmooredev/RepoReader
+  * https://github.com/JAlcocerT/RepoReader
+
+Summarize Github Readme (or actually any web).
+
+And...create [posts **scheletons** based on that info](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_GHRepo)
+
+{{< /details >}}
+
+
 ### Tweaking a CV as per Offer Info
 
 Its not lying.
 
 Its having a base CV and some instructions for the AI to tweak few details so that it resonates more with an offer.
+
+> There are some AI Resume Builder out there - like `rezi.ai`
 
 #### Reading CV Info
 
@@ -386,7 +410,7 @@ But how about feeding pure HTML to OpenAI?
 
 And Using Other Scrappers like: Crawl4AI or ScrapeCraph?
 
-Lets Find out
+**Lets Find out**
 
 #### Creating Cv with Code
 
@@ -394,11 +418,17 @@ There are few alternatives [to create a curriculum with code](https://fossengine
 
 And I was testing it Already [here](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#cv-with-ai)
 
+{{< callout type="info" >}}
+You can tweak it for other sites, like `nl.indeed.com`
+{{< /callout >}}
+
 ### Summarize Github Readmes
 
 Summarize Github Readme (or actually any web).
 
 And...create [posts scheletons based on that info](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_GHRepo)
+
+
 
 
 --- 

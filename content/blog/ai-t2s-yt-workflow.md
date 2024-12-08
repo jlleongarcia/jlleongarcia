@@ -338,13 +338,25 @@ chmod +x cygwin_cibuildwheel_build.sh
 
 ## FAQ
 
+### TelePrompter for Youtube Videos
+
+* https://qprompt.app/
+
+```sh
+flatpak install flathub com.cuperino.qprompt
+flatpak run com.cuperino.qprompt
+```
+
+
 ### Social Media Automation
 
 Social Media can be simplified
 
 ![Forocoches3kbmw](/blog_img/memes/ezoeazin.jpg)
 
+* Postiz-App - https://github.com/gitroomhq/postiz-app
 
+> 📨 The ultimate social media scheduling tool, with a bunch of AI 🤖 and Apache 2.0!
 
 * [Zapier](https://zapier.com/app/home)
 

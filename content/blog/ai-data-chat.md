@@ -136,6 +136,17 @@ pip install haystack-ai
 
 It seems that the [embedchain project](https://fossengineer.com/embedchain-ai/) got absorbed into a bigger one. Im talking about the **mem0 framework**.
 
+### Llama-Index
+
+You might Know Llama-Index because of its RAG capabilities.
+
+* https://github.com/run-llama/llama_index
+* https://docs.llamaindex.ai/en/stable/
+
+> LlamaIndex is a framework for building context-augmented generative AI applications with LLMs including agents and workflows.
+
+
+
 
 ### PydanticAI
 
@@ -187,6 +198,10 @@ LLMs that have already appeared:
 * OpenAI API - 
 * ANthropic API - 
 * GROQ APO - 
+
+### Running LLMs Locally
+
+* [GPT4ALL Guide](https://fossengineer.com/genai-with-python-gpt4all/) - https://github.com/nomic-ai/gpt4all
 
 ### Interesting RAG Resoures
 
