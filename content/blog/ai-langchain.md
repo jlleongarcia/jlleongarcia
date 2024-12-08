@@ -289,7 +289,7 @@ erDiagram
 
 
 
-### LangChain Setup for DB
+### LangChain Setup to Chat with DB
 
 Make a venv, install the [requirements](https://github.com/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/requirements.txt) and load the API keys:
 
@@ -317,12 +317,26 @@ pip install -r requirements.txt
 
 {{< /details >}}
 
+
+
 ### Wrapping Up LangChain with DB
 
 I could replicate the working code from AlejandroAO by using:
 
 1. The [v1.4.5 sample DB version](https://github.com/lerocha/chinook-database/releases/tag/v1.4.5).
 2. Python 3.12.3 for x86 and venvs
+3. Im using MySQL 8.0
+
+We can put all of this into containers with [this `docker-compose`](https://github.com/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/docker-compose.yml):
+
+```sh
+###docker exec -it mysql_db bash
+###docker exec -it mysql_db mysql -u myuser -p chinook
+```
+
+{{< callout type="info" >}}
+To use containers you will need Docker installed. Or just be ready for SelfHosting.
+{{< /callout >}}
 
 ---
 

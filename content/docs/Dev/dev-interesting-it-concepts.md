@@ -14,10 +14,28 @@ url: ''
 
 ## Containers
 
+I love to use [containers for SelfHosting](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
+
 {{< details title="How to Setup Docker? 📌" closed="true" >}}
 
 ```sh
-
+echo "Updating system and installing required packages..." && \
+sudo apt-get update && \
+sudo apt-get upgrade -y && \
+echo "Downloading Docker installation script..." && \
+sudo curl -fsSL https://get.docker.com -o get-docker.sh && \
+sudo sh get-docker.sh && \
+echo "Docker installed successfully. Checking Docker version..." && \
+sudo docker version && \
+echo "Testing Docker installation with 'hello-world' image..." && \
+sudo docker run hello-world && \
+echo "Installing Docker Compose..." && \
+sudo apt install docker-compose -y && \
+echo "Docker Compose installed successfully. Checking version..." && \
+sudo docker-compose --version && \
+echo "Checking status of Docker service..." && \
+sudo systemctl status docker | grep "Active" && \
+sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 ```
 
 {{< /details >}}
@@ -25,7 +43,24 @@ url: ''
 
 {{< details title="How to Setup Podman? 📌" closed="true" >}}
 
-
+```sh
+echo "Updating system and installing required packages..." && \
+sudo apt-get update && \
+sudo apt-get upgrade -y && \
+echo "Installing Podman..." && \
+sudo apt-get -y install podman && \
+echo "Podman installed successfully. Checking Podman version..." && \
+podman --version && \
+echo "Testing Podman installation with 'hello-world' image..." && \
+sudo podman run hello-world && \
+echo "Installing Podman Compose..." && \
+sudo apt-get -y install podman-compose && \
+echo "Podman Compose installed successfully. Checking version..." && \
+podman-compose --version && \
+echo "Checking status of Podman service..." && \
+sudo systemctl status podman | grep "Active" && \
+sudo podman run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/podman/podman.sock:/var/run/podman/podman.sock -v portainer_data:/data portainer/portainer-ce
+```
 
 {{< /details >}}
 

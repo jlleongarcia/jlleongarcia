@@ -149,6 +149,14 @@ I was using Pydantic this year.
 
 
 
+{{< details title="What it is Pydantic? 📌" closed="true" >}}
+
+Pydantic is a data validation and settings management library in Python. 
+
+It’s widely used for validating data and ensuring that inputs conform to the expected types and formats.
+
+{{< /details >}}
+
 
 ---
 

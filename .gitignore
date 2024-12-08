@@ -1,6 +1,8 @@
 hugo.exe
 *venv/
 
+get-docker.sh
+
 #GH Pages deployes it
 public/
 

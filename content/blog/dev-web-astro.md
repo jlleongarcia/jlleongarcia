@@ -7,7 +7,7 @@ summary: 'How to get started with Astro to create Webs. NPM & Node Setup.'
 url: 'using-astro-as-website'
 ---
 
-To use HUGO, you just need **2 things**: NPM and NodeJS.
+To use **ASTRO**, you just need **2 things**: NPM and NodeJS.
 
 * https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 * https://nodejs.org/en/download/package-manager
@@ -68,3 +68,7 @@ ifconfig eth0 | grep "inet " | awk '{ print $2 }' #if ETH Connected - SEE THE LO
 {{< callout type="info" >}}
 You can use [Astro with Github Pages + GH Actions](https://github.com/JAlcocerT/web3/actions)
 {{< /callout >}}
+
+Interesting Astro Themes:
+
+* AstroWind (which uses [Tailwind CSS](https://jalcocert.github.io/JAlcocerT/blog/dev-css/#competitors-to-tailwind-css))
