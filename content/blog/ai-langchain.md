@@ -113,7 +113,9 @@ One more time, thanks to **AlejandroAO** this have been possible. The **working 
 {{< /callout >}}
 
 
- [![Google Colab](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/test_langchainChatDB.ipynb "Google Colaboratory: Python Notebook {rel='nofollow'}") 
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/test_langchainChatDB.ipynb)
+
+
 
 {{< details title="Useful Tools for DBs 📌" closed="true" >}}
 
