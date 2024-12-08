@@ -116,17 +116,71 @@ One more time, thanks to **AlejandroAO** this have been possible. The **working 
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/test_langchainChatDB.ipynb)
 
 
+### Database Setup
 
-{{< details title="Useful Tools for DBs 📌" closed="true" >}}
+{{< details title="How to Setup MySQL? 📌" closed="true" >}}
 
-* [ChartDB](https://github.com/chartdb/chartdb) - Database diagrams editor that allows you to visualize and design your DB with a single query.
-* [SQLiteViz](https://github.com/lana-k/sqliteviz)
-* [SQliteBrowser](https://github.com/sqlitebrowser/sqlitebrowser)
+The original post from Alejandro allow to elect sqlite or Mysql.
+
+I went with **mysql** as per:
+
+```sh
+sudo apt update
+sudo apt install mysql-server -y
+sudo systemctl start mysql
+sudo systemctl status mysql
+sudo systemctl enable mysql #start at boot
+
+sudo mysql -u root -p
+```
+
+```sh
+#mysql --version #mysql  Ver 8.0.40-0ubuntu0.24.04.1 for Linux on x86_64 ((Ubuntu))
+```
+
+
+{{< /details >}}
+
+Now that MYSQL is installed, we can load the **sample DB**.
+
+{{< details title="Loading the Sample DB - chinook-database 📌" closed="true" >}}
+
+We can get the [Chinook DB as example](https://github.com/lerocha/chinook-database) from their [**releases on Github**](https://github.com/lerocha/chinook-database/releases)
+
+```sh
+CREATE DATABASE chinook;
+USE chinook;
+SOURCE chinook.sql; --or the name of your SQL file to load the database
+SOURCE Chinook_MySql.sql; --or the name of your SQL file to load the database
+
+SHOW TABLES;
+SELECT * FROM Album LIMIT 10;
+DESCRIBE Artist;
+SHOW FULL TABLES;
+```
+
 
 {{< /details >}}
 
 
 You can see that the **DB is loaded** and we can see its **Schema**.
+
+```sql
+SELECT 
+    TABLE_NAME AS `Table`, 
+    COLUMN_NAME AS `Column`, 
+    DATA_TYPE AS `Data Type`, 
+    CHARACTER_MAXIMUM_LENGTH AS `Max Length`, 
+    IS_NULLABLE AS `Nullable`, 
+    COLUMN_KEY AS `Key`, 
+    COLUMN_DEFAULT AS `Default Value`
+FROM 
+    INFORMATION_SCHEMA.COLUMNS
+WHERE 
+    TABLE_SCHEMA = 'Chinook'
+ORDER BY 
+    TABLE_NAME, ORDINAL_POSITION;
+```
 
 Actually, we can make already a **MermaidJS ER diagram** to represent it:
 
@@ -233,9 +287,54 @@ erDiagram
     Employee ||--o{ Employee : "reports to"
 ```
 
+
+
+### LangChain Setup for DB
+
+Make a venv, install the [requirements](https://github.com/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/requirements.txt) and load the API keys:
+
+```sh
+python3 -m venv datachat_venv #create the venv Linux
+#python -m venv datachat_venv #create the venv W
+
+#datachat_venv\Scripts\activate #activate venv (windows)
+source datachat_venv/bin/activate #(linux)
+
+pip install -r requirements.txt
+```
+
+{{< details title="Load your OpenAI API Key 📌" closed="true" >}}
+
+```sh
+#source .env
+
+#export OPENAI_API_KEY="your-api-key-here"
+#set OPENAI_API_KEY=your-api-key-here
+#$env:OPENAI_API_KEY="your-api-key-here"
+
+#echo $OPENAI_API_KEY
+```
+
+{{< /details >}}
+
+### Wrapping Up LangChain with DB
+
+I could replicate the working code from AlejandroAO by using:
+
+1. The [v1.4.5 sample DB version](https://github.com/lerocha/chinook-database/releases/tag/v1.4.5).
+2. Python 3.12.3 for x86 and venvs
+
 ---
 
 ## FAQ
+
+{{< details title="More Useful Tools for DBs 📌" closed="true" >}}
+
+* [ChartDB](https://github.com/chartdb/chartdb) - Database diagrams editor that allows you to visualize and design your DB with a single query.
+* [SQLiteViz](https://github.com/lana-k/sqliteviz)
+* [SQliteBrowser](https://github.com/sqlitebrowser/sqlitebrowser)
+
+{{< /details >}}
 
 Other Tools to **Chat over custom data** (and locally~) is [PrivateGPT](https://fossengineer.com/selfhosting-privateGPT/)
 

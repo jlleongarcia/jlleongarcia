@@ -7,7 +7,7 @@ draft: false
 #     alt: "ChatPDF" # alt text
 #     caption: "SelfHosting A RAG App to chat with PDFs." # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
-description: 'Better Networking while Traveling with GL-MT3000 and Tailscale VPN.'
+description: 'Better Networking while Traveling with GL-MT3000 with Wireguard (and Tailscale) VPN.'
 summary: 'How to use a travel router to access home resources while abroad.'
 url: 'travel-router-gl-mt3000-review'
 ---
@@ -28,12 +28,20 @@ And if for some reason you are no table to do **port forwarding** with your home
 
 ...you will have come across already with **TailScale**
 
-> This is why I got a GL-MT3000 Router, to combine it with Tailscale VPN
+> This is why I got a GL-MT3000 Router, to combine it with [Tailscale VPN](#tailscale-and-gl-mt3000)
 
 ## GL-MT3000 Travel Router
 
-* It uses OpenWRT as firmware
+
+The [GL.iNet](https://www.gl-inet.com/community/) GL-MT3000 has been a very interestin surprise this year.
+
+* It uses OpenWRT as firmware and has AX3000 Wifi6 capabilities
 * Currently using it with 
+
+
+{{< callout type="info" >}}
+An alternative to the [Raspberry Pi as Travel Router](https://jalcocert.github.io/RPi/posts/rpi-wifi-ethernet-bridge/)
+{{< /callout >}}
 
 ## Setup GL-MT3000 Router
 
@@ -180,18 +188,22 @@ With subnet routes:
 
 This setup enables seamless access to all devices in your subnet, even when you're remote!
 
+
+{{< /details >}}
+
+
 ```mermaid
 graph TD
-    subgraph Subnet A (192.168.8.0/24)
-        A1[Device 1 (192.168.8.10)]
-        A2[Device 2 (192.168.8.20)]
-        A3[Device 3 (192.168.8.30)]
+    subgraph Subnet A 192.168.8.0/24
+        A1[Device 1 192.168.8.10]
+        A2[Device 2 192.168.8.20]
+        A3[Device 3 192.168.8.30]
     end
 
-    subgraph Subnet B (10.0.0.0/24)
-        B1[Device 4 (10.0.0.10)]
-        B2[Device 5 (10.0.0.20)]
-        B3[Device 6 (10.0.0.30)]
+    subgraph Subnet B 10.0.0.0/24
+        B1[Device 4 10.0.0.10]
+        B2[Device 5 10.0.0.20]
+        B3[Device 6 10.0.0.30]
     end
 
     subgraph VPN/Router
@@ -199,7 +211,7 @@ graph TD
     end
 
     subgraph Tailscale Network
-        T1[Home Desktop (Exit Node)]
+        T1[Home Desktop Exit Node]
         T2[Remote Laptop]
     end
 
@@ -210,16 +222,12 @@ graph TD
     B1 --- R
     B2 --- R
     B3 --- R
-    R -- Advertises Subnets --> Tailscale Network
+    R -- Advertises Subnets --> TailscaleNetwork
     T2 -- Sends Requests to Subnets --> T1
     T1 -- Routes Traffic to Subnets --> R
-    R -- Forwards to --> Subnet A
-    R -- Forwards to --> Subnet B
+    R -- Forwards to --> SubnetA
+    R -- Forwards to --> SubnetB
 ```
-
-{{< /details >}}
-
-
 
 **Travel Router Configuration**
 
@@ -240,8 +248,16 @@ sudo tailscale set --advertise-routes=192.168.8.0/24,10.0.0.0/24
 - Other devices in your Tailscale network will be able to reach the devices on these subnets through the travel router.
 
 {{< callout type="info" >}}
-Once you do this at the GL-MT3000 SSH terminal, go to tailscale admin panel and for the router **activate the subnet route**
+Once you do this at the **GL-MT3000 SSH terminal**, go to tailscale admin panel and for the router **activate the subnet route**
 {{< /callout >}}
+
+{{< details title="How to do SSH to the MT-3000 Router? 📌" closed="true" >}}
+
+```sh
+ssh root@192.168.8.1 #the password es the same you set to login to the router ADMIN PANEL
+```
+
+{{< /details >}}
 
 ---
 
@@ -262,7 +278,7 @@ On your desktop (the device acting as the exit node):
    - **`--advertise-exit-node`**: Makes the desktop an exit node for internet-bound traffic from other Tailscale devices.
 
 {{< callout type="info" >}}
-Once you do this at make sure that in the Tailscale Admin UI the home device is selected as exit node.
+Once you do this at make sure that in the Tailscale Admin UI the home device is **selected as exit node**.
 {{< /callout >}}
 
 ---
@@ -286,13 +302,7 @@ Once you do this at make sure that in the Tailscale Admin UI the home device is 
 - Verify your public IP address (e.g., by visiting [https://whatismyipaddress.com/](https://whatismyipaddress.com/)) to confirm internet traffic is routed through the desktop.
 
 
-{{< details title="How to do SSH to the MT-3000 Router? 📌" closed="true" >}}
 
-```sh
-ssh root@192.168.8.1 #the password es the same you set to login to the router ADMIN PANEL
-```
-
-{{< /details >}}
 
 ```mermaid
 graph TD
@@ -317,4 +327,5 @@ We can also use [Wireguard and OpenVPN](#interesting-vpns-solutions) with the ML
 * Tailscale
 * HeadScale
 * ZeroTier
-* Wireguard - Requires Port Forwarding at home
+* Wireguard - Requires Port Forwarding at home (with a VPS/Cloud Server you dont need it)
+    * WGEasy

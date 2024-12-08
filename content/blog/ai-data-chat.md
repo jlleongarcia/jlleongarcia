@@ -105,6 +105,12 @@ It can helpful to:
 You might be interested to see also [LangGraph](https://github.com/langchain-ai/langgraph)
 {{< /callout >}}
 
+#### LangChain PandasDF Chat
+
+{{< callout type="info" >}}
+Kind of [PandasAI](#exploring-pandasai), but with LangChain
+{{< /callout >}}
+
 ### Exploring PandasAI
 
 I was using the [**PandasAI**](https://github.com/Sinaptik-AI/pandas-ai) project previously to `talk with dataframes` as covered on [this Post](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/)
@@ -113,7 +119,7 @@ I was using the [**PandasAI**](https://github.com/Sinaptik-AI/pandas-ai) project
 * https://platform.openai.com/
 
 {{< cards cols="2" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/" title="Blog on PandasAI" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/" title="Blog about PandasAI" >}}
   {{< card link="https://github.com/JAlcocerT/Data-Chat/tree/main/PandasAI" title="Pandas AI in DataChat" >}}
 {{< /cards >}}
 
@@ -129,6 +135,19 @@ pip install haystack-ai
 ### EmbedChain - Mem0
 
 It seems that the [embedchain project](https://fossengineer.com/embedchain-ai/) got absorbed into a bigger one. Im talking about the **mem0 framework**.
+
+
+### PydanticAI
+
+I was using Pydantic this year.
+
+* https://github.com/pydantic/pydantic-ai
+* https://ai.pydantic.dev/
+* https://pypi.org/project/pydantic-ai/
+
+> Agent Framework / shim to use Pydantic with LLMs. **MIT Licensed!**
+
+
 
 
 ---
