@@ -1,6 +1,6 @@
 ---
 title: "Crypto. Now with AI"
-date: 2024-11-10
+date: 2024-12-09
 draft: false
 tags: ["Dev"]
 summary: 'Two buzz words in one. Understand crypto once and for all. This time thanks to AI'
@@ -12,7 +12,7 @@ Here we go again...
 I was testing [Astro Bento Portfolio + Github Pages + Github CI/CD](https://github.com/JAlcocerT/web3) with the resulting Web3/Crypto related microblog [here](https://jalcocert.github.io/web3/).
 
 {{< callout type="warning" >}}
-This post is just describing the process to apply data analytics with crypto. Not any recommendation or financial advice of any type.
+This post is just describing the process to apply data analytics with crypto. **Not any recommendation or financial advice of any type.**
 {{< /callout >}}
 
 And some time ago I was having a look to this **amazing BlockChain/Solidity FreeCodeCamp course:**
