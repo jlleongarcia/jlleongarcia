@@ -11,7 +11,7 @@ description: 'How to use LangChain to chat with a Pandas DF.'
 url: 'using-langchain-with-pandas-df'
 ---
 
-What if we could use AI to chat about weather patterns in a location?
+What if we could use **AI to chat about weather** patterns in a location?
 
 By using Langchain, together with pandas DF, we will extract relevant information.
 
@@ -43,7 +43,7 @@ I am creating a public repo with all sort if interesting RAG libraries to **[Cha
 ### Pre Requisites
 
 * [Python installed](https://jalcocert.github.io/JAlcocerT/guide-python/#installing-python-) and a [virtual environment](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/) ready.
-* The OpenAI API keys - https://platform.openai.com/api-keys
+* The OpenAI API keys - <https://platform.openai.com/api-keys>
 
 
 {{< callout type="info" >}}
@@ -61,13 +61,13 @@ See the modified working code [here](https://github.com/JAlcocerT/langchain-ask-
 ## FAQ
 
 
-You can also try:
+You can also try, these below (Which I already covered)
 
-* [PandasAI](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/) which I covered
+* [PandasAI](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/)
 * LlamaIndex
 
+### API Keys for LLMs
 
 * https://console.anthropic.com/settings/keys
     * https://docs.anthropic.com/en/docs/about-claude/models
 * https://platform.openai.com/api-keys
-

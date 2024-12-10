@@ -227,7 +227,7 @@ See [the VideoEditingWF repo](https://github.com/JAlcocerT/VideoEditingRemotion)
 ## Other interesting AI Audio stuff
 
 
-{{< details title="Whishper 📌" closed="true" >}}
+{{< details title="WhiSHper 📌" closed="true" >}}
 
 
 
