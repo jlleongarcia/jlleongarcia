@@ -15,7 +15,7 @@ url: 'using-blender-with-ai'
 This year I saw a very cool video about **design patterns**.
 
 
-https://www.youtube.com/watch?v=8UAsN9wvePE
+<!-- https://www.youtube.com/watch?v=8UAsN9wvePE -->
 {{< youtube "8UAsN9wvePE" >}}
 
 {{< callout type="info" >}}
@@ -48,6 +48,12 @@ You can always download the versions from: <https://www.blender.org/download/>
 
 ### Blender as a Code
 
+Blender with Python Scripting.
+
+{{< youtube "mJU7owctel4" >}}
+
+Thanks to <https://github.com/CGArtPython/blender_plus_python/tree/main>
+
 ### Blender with AI
 
 Image generations models are really interesting.
@@ -58,8 +64,19 @@ With controlnet and flux
 
 https://www.reddit.com/r/comfyui/comments/1ekv3tx/poseable_humans_with_flux_blender_playbook/
 
+#### ControlNet vs
+
+With Control net, we can provide more than a text prompt to get the desired results from the T2I models.
+
+I mean, we can provide images as prompts!
+
+
+{{< youtube "o7N6Fbtg84E" >}}
+
 
 ## Conclusions
+
+
 
 ---
 
@@ -75,6 +92,13 @@ https://github.com/gd3kr/BlenderGPT
 Blender Add-ons 
 https://github.com/agmmnn/awesome-blender
 https://awesome-blender.netlify.app/
+
+### Blender Ad-ons
+
+BlendAI: A versatile suite of AI tools, including image-to-3D, text-to-3D, and more.   
+BlendAI Library Pro: Another powerful collection of AI tools, offering features like image-to-3D, text-to-HDRI, and text-to-PBR.   
+Autodepth AI: Creates depth maps from images, crucial for many AI-powered 3D workflows.   
+3D AI Studio: A comprehensive suite of AI tools for 3D artists, covering a wide range of tasks.   
 
 
 ### Benchmarks with Blender
