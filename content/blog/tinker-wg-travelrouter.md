@@ -332,3 +332,4 @@ We can also use [Wireguard and OpenVPN](#interesting-vpns-solutions) with the ML
 
 * Wireguard Linux Clients
     * https://github.com/TunSafe/TunSafe?tab=readme-ov-file#readme
+    * https://github.com/UnnoTed/wireguird
