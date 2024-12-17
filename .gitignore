@@ -3,6 +3,8 @@ hugo.exe
 
 get-docker.sh
 
+*.tar.gz
+
 #GH Pages deployes it
 public/
 

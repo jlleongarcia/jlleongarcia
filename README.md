@@ -1,34 +1,37 @@
-<h1 align="center">Hi 👋, Welcome to my Github</h1>
-<h3 align="center">Let's have a look to my latest projects</h3>
+![act-logo](https://raw.githubusercontent.com/wiki/nektos/act/img/logo-150.png)
 
+# Overview [![push](https://github.com/nektos/act/workflows/push/badge.svg?branch=master&event=push)](https://github.com/nektos/act/actions) [![Join the chat at https://gitter.im/nektos/act](https://badges.gitter.im/nektos/act.svg)](https://gitter.im/nektos/act?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Go Report Card](https://goreportcard.com/badge/github.com/nektos/act)](https://goreportcard.com/report/github.com/nektos/act) [![awesome-runners](https://img.shields.io/badge/listed%20on-awesome--runners-blue.svg)](https://github.com/jonico/awesome-runners)
 
-- 🔥⚡ Lately I have been working on:
-    * **AI Projects**
-        * [Multi-Provider Chat](https://github.com/JAlcocerT/Streamlit-MultiChat)
-        * [Chat with your PDFS](https://github.com/JAlcocerT/ask-multiple-pdfs)
-    *   **IoT & Edge Data Analytics** - See the projects & source code with the [Raspberry Pi](https://jalcocert.github.io/RPi/)
+> "Think globally, `act` locally"
 
- 
-- 📝 Benefit from my learning process on [my **Tech Blog**](https://jalcocert.github.io/JAlcocerT/) <a href="https://jalcocertech.xyz"><img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/jalcocertech2.svg" alt="Subscribe via RSS" height="25" style="vertical-align: bottom;"/></a>
+Run your [GitHub Actions](https://developer.github.com/actions/) locally! Why would you want to do this? Two reasons:
 
+- **Fast Feedback** - Rather than having to commit/push every time you want to test out the changes you are making to your `.github/workflows/` files (or for any changes to embedded GitHub actions), you can use `act` to run the actions locally. The [environment variables](https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables#default-environment-variables) and [filesystem](https://help.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners#filesystems-on-github-hosted-runners) are all configured to match what GitHub provides.
+- **Local Task Runner** - I love [make](<https://en.wikipedia.org/wiki/Make_(software)>). However, I also hate repeating myself. With `act`, you can use the GitHub Actions defined in your `.github/workflows/` to replace your `Makefile`!
 
-- ⚙️ Simulations: *I also like to understand how machines work*
-    * [Slider-Crank](https://github.com/JAlcocerT/Slider-Crank) - a DASH app that helps to visualize the physics of a Slider-Crank mechanism
-    * [Bike Simulator](https://github.com/JAlcocerT/Bike_dynamic_simulator) - Bike/Motorbike simulator (RT Computational Multi-Body System Dynamics)
+# How Does It Work?
 
-- **Fun fact**: I am combining my 🚵 passion with [my Trip Planner App](https://github.com/JAlcocerT/Py_Trip_Planner) for my Bike trips.
- 
-[**For Collaborations** →](https://jalcocertech.xyz/)
+When you run `act` it reads in your GitHub Actions from `.github/workflows/` and determines the set of actions that need to be run. It uses the Docker API to either pull or build the necessary images, as defined in your workflow files and finally determines the execution path based on the dependencies that were defined. Once it has the execution path, it then uses the Docker API to run containers for each action based on the images prepared earlier. The [environment variables](https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables#default-environment-variables) and [filesystem](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#file-systems) are all configured to match what GitHub provides.
 
-<h3 align="center">Connect with me: 📫</h3>
-<p align="center">
-<a href="https://linkedin.com/in/jalcocert" target="blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="my_linkedin" height="30" width="40" style="vertical-align: middle;" />
-</a>
-<a href="https://jalcocertech.xyz">
-    <img src="https://raw.githubusercontent.com/JAlcocerT/JAlcocerT/main/JAT.svg" alt="Description of the image" height="30" style="vertical-align: middle;" />
-</a>
+Let's see it in action with a [sample repo](https://github.com/cplee/github-actions-demo)!
 
+![Demo](https://raw.githubusercontent.com/wiki/nektos/act/quickstart/act-quickstart-2.gif)
 
+# Act User Guide
 
-<p align="right"> <img src="https://komarev.com/ghpvc/?username=jalcocert&label=Profile%20views&color=0e75b6&style=flat" alt="jalcocert" /> </p>
+Please look at the [act user guide](https://nektosact.com) for more documentation.
+
+# Support
+
+Need help? Ask on [Gitter](https://gitter.im/nektos/act)!
+
+# Contributing
+
+Want to contribute to act? Awesome! Check out the [contributing guidelines](CONTRIBUTING.md) to get involved.
+
+## Manually building from source
+
+- Install Go tools 1.20+ - (<https://golang.org/doc/install>)
+- Clone this repo `git clone git@github.com:nektos/act.git`
+- Run unit tests with `make test`
+- Build and install: `make install`

@@ -209,3 +209,28 @@ LLMs that have already appeared:
 
 * qdrant - https://fossengineer.com/selfhosting-vector-admin-docker/
 * ChromaDB -  https://fossengineer.com/selfhosting-chromadb-docker/
+
+## FAQ
+
+
+### More Github Actions CI/CD
+
+* https://github.com/nektos/act
+
+```sh
+#https://github.com/nektos/act/releases/tag/v0.2.70
+
+wget https://github.com/nektos/act/releases/download/v0.2.70/act_Linux_x86_64.tar.gz
+
+tar -xzf act_Linux_x86_64.tar.gz
+sudo mv act /usr/local/bin/
+sudo chmod +x /usr/local/bin/act
+
+act --version
+```
+
+Then go to the repo folder (where `./github/workflows` are)
+
+```sh
+act
+```
