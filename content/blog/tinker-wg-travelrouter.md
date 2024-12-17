@@ -329,3 +329,6 @@ We can also use [Wireguard and OpenVPN](#interesting-vpns-solutions) with the ML
 * ZeroTier
 * Wireguard - Requires Port Forwarding at home (with a VPS/Cloud Server you dont need it)
     * WGEasy
+
+* Wireguard Linux Clients
+    * https://github.com/TunSafe/TunSafe?tab=readme-ov-file#readme
