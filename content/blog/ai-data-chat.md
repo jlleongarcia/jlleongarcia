@@ -195,9 +195,13 @@ Other LLMs that I have not covered yet in posts
 
 LLMs that have already appeared:
 
+* https://console.anthropic.com/workbench/
+* https://console.groq.com/keys
+* https://platform.openai.com/api-keys
+
 * OpenAI API - 
-* ANthropic API - 
-* GROQ APO - 
+* Anthropic API - 
+* GROQ API - 
 
 ### Running LLMs Locally
 
@@ -207,13 +211,18 @@ LLMs that have already appeared:
 
 #### VectorDBs
 
-* qdrant - https://fossengineer.com/selfhosting-vector-admin-docker/
+* Qdrant - https://fossengineer.com/selfhosting-vector-admin-docker/
 * ChromaDB -  https://fossengineer.com/selfhosting-chromadb-docker/
+
+---
 
 ## FAQ
 
 
 ### More Github Actions CI/CD
+
+1. https://fossengineer.com/docker-github-actions-cicd/
+2. https://jalcocert.github.io/JAlcocerT/create-streamlit-chatgpt/#conclusion---and-what-i-learnt
 
 * https://github.com/nektos/act
 

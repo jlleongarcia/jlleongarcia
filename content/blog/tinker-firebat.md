@@ -210,6 +210,11 @@ graph LR
   * Router: `http://192.168.1.1/`
   * FireBat: `http://192.168.1.103/`
   * Lenovo i3: `http://192.168.1.105/`  
+
+```sh
+ssh casa@192.168.1.103
+```
+
 * Ports that will be used:
   * 9000 for portainer
   * 8080 for filebrowser - Lenovo i3 will have the filebrowser UI at `http://192.168.1.105:8080` 

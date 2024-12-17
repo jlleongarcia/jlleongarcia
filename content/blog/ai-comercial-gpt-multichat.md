@@ -248,6 +248,29 @@ networks:
 
 Now you are free to **prompt those different models!**
 
+* https://console.anthropic.com/workbench/
+* https://console.groq.com/keys
+* https://platform.openai.com/api-keys
+
+```sh
+docker pull ghcr.io/jalcocert/streamlit-multichat:latest #:v1.1  #:latest
+```
+
+Or you can do it with the built: `streamlit-multichat`
+
+```sh
+docker run -d \
+  --name streamlit_multichat \
+  -v ai_streamlit_multichat:/app \
+  -w /app \
+  -p 8501:8501 \
+  ghcr.io/jalcocert/streamlit-multichat:latest \
+  /bin/sh -c "mkdir -p /app/.streamlit && \
+              echo 'OPENAI_API_KEY = \"sk-proj-openaiAPIhere\"' > /app/.streamlit/secrets.toml && \
+              echo 'GROQ_API_KEY = \"gsk_groqAPIhere\"' >> /app/.streamlit/secrets.toml && \
+              streamlit run Z_multichat.py"
+```
+
 During the process, I also explored: [SliDev PPTs](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/slidev), [ScrapeGraph](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Z_Tests/ScrapeGraph/test_scrapegraph_stv2.py), [DaLLe](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/Z_Tests/Pict_for_SliDev-DaLLe), [Streamlit Auth](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/Z_Tests/Auth_sqlite) and [OpenAI as Custom Agents](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/Z_Tests/OpenAI).
 
 It was also a good chance to use **Github Actions CI/CD with buildx** - to get **[MultiArch container image](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/.github/workflows/Streamlit_GHA_MultiArch.yml)**.
@@ -257,50 +280,50 @@ And ofc, the **SliDev PPT** is also using **Github Actions with Pages** and it i
 
 {{< details title="Interesting Prompts 📌" closed="true" >}}
 
-# ChatGPT Productivity Techniques
+**ChatGPT Productivity Techniques**
 
-### 1. Use the 80/20 principle to learn faster:
+1. Use the 80/20 principle to learn faster:
 _"I want to learn about [insert topic]. Identify and share the most important 20% of learnings from this topic that will help me understand 80% of it."_
 ___
 
-### 2. Improve your writing by getting feedback:
+2. Improve your writing by getting feedback:
 _[Paste your writing]_
 
 _"Proofread my writing above. Fix grammar and spelling mistakes. And make suggestions that will improve the clarity of my writing."_
 ___
 
-### 3. Turn ChatGPT into your intern:
+3. Turn ChatGPT into your intern:
 _"I am creating a report about [insert topic]. Research and create an in-depth report with a step-by-step guide that will help me understand how to [insert outcome]."_
 ___
 
-### 4. Learn any new skill:
+4. Learn any new skill:
 _"I want to learn [insert desired skill]. Create a 30-day learning plan that will help a beginner like me learn and improve this skill."_
 ___
 
-### 5. Strengthen your learning by testing yourself:
+5. Strengthen your learning by testing yourself:
 _"I am currently learning about [insert topic]. Ask me a series of questions that will test my knowledge. Identify knowledge gaps in my answers and give me better answers to fill those gaps."_
 ___
 
-### 6. Train ChatGPT to generate prompts for you:
+6. Train ChatGPT to generate prompts for you:
 ___
 
-### 7. Get ChatGPT to write in your style:
+7. Get ChatGPT to write in your style:
 _"Analyze the writing style from the text below and write a 200-word piece guide on [insert topic]."_
 
 _[Insert your text]_
 ___
 
-### 8. Learn any complex topic in only a few minutes:
+8. Learn any complex topic in only a few minutes:
 _"Explain [insert topic] in simple and easy terms that any beginner can understand."_
 ___
 
-### 9. Summarize long documents and articles:
+9. Summarize long documents and articles:
 _"Summarize the text below and give me a list of bullet points with key insights and the most important facts."_
 
 _[Insert text]_
 ___
 
-### 10. Understand things faster by simplifying complex texts:
+10. Understand things faster by simplifying complex texts:
 _"Rewrite the text below and make it easy for a beginner to understand."_
 
 _[Insert text]_
@@ -600,6 +623,8 @@ python -m langflow run
 <!-- 
 you can embedd langflow in your websites with few lines of JS
 https://github.com/langflow-ai/langflow-embedded-chat -->
+
+---
 
 ### FAQ
 
