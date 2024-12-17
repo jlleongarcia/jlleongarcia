@@ -32,7 +32,7 @@ Python is a versatile programming language that can be used for a wide range of 
 
 
 
-Description: Python is not just a programming language for data science or web development, but it can also be used to create stunning animations. In this blog post, we will take a deep dive into the different libraries available for creating animations with Python, such as Matplotlib, Pygame, OpenCV, Blender, and Arcade. We will explore the different features of each library and learn how to use them to create different types of animations.
+Description: Python is not just a programming language for data science or web development, but it can also be used to create stunning animations. In this blog post, we will take a deep dive into the different libraries available for creating animations with Python, such as Matplotlib, Pygame, OpenCV, and Arcade. We will explore the different features of each library and learn how to use them to create different types of animations.
 
 
 

@@ -4,7 +4,7 @@ date: 2024-12-05T23:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
-description: 'Big Data Tools recap for the AI era.'
+description: 'Big Data Tools recap for the AI era. SQL, PySpark and more.'
 summary: 'A recap on SQL, PySpark and visualizations tools.'
 url: 'big-data-tools-for-data-analytics'
 ---
@@ -12,7 +12,7 @@ url: 'big-data-tools-for-data-analytics'
 
 Long ago, I was covering [the analytical stack](https://jalcocert.github.io/JAlcocerT/self-taught-career-guide-for-data-analytics/#the-analytical-stack) and the most popular [concepts for a data analytics journey](https://jalcocert.github.io/JAlcocerT/data-basics-for-data-analytics/).
 
-It is time to make a recap.
+It is time to make **a recap**.
 
 ## Tools
 
@@ -91,12 +91,12 @@ Denormalization combines normalized tables to improve **read performance**, ofte
 
 
 {{< callout type="info" >}}
-You can now have conversations with a DB via LLMs as described here with LangChain
+You can now have [conversations with a DB via LLMs as described **here**](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-a-db-with-langchain) with **LangChain**
 {{< /callout >}}
 
 
 
-{{< details title="CTAs Examples that Ive found 📌" closed="true" >}}
+{{< details title="Useful Tools to work with DBs 📌" closed="true" >}}
 
 * [ChartDB](https://github.com/chartdb/chartdb) - Database diagrams editor that allows you to visualize and design your DB with a single query.
 * [SQLiteViz](https://github.com/lana-k/sqliteviz)

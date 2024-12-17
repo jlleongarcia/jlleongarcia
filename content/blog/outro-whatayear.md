@@ -364,7 +364,7 @@ Need to see [DLT](https://github.com/dlt-hub/dlt) - data load tool (dlt) is an o
 
 {{< /callout >}}
 
-
+<!-- 
 ## Crypto
 
 * https://jalcocert.github.io/JAlcocerT/understading-crypto-with-ai/
@@ -391,6 +391,7 @@ flatpak install flathub org.featherwallet.Feather #Monero
 {{< callout type="warning" >}}
 Its probably time to go back and make [a better Web3](https://jalcocert.github.io/JAlcocerT/guide-web3/)
 {{< /callout >}}
+ -->
 
 ---
 

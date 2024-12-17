@@ -11,6 +11,8 @@ url: 'how-to-use-mermaid-diagrams'
 
 ## MermaidJS
 
+* <mermaid.live>
+
 **Example** A top down flow chart:
 
 ```
