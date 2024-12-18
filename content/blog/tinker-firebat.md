@@ -430,19 +430,21 @@ docker image prune -a
 {{< /details >}}
 
 {{< callout type="info" >}}
-  Remember the 3-2-1 backup rule
+Remember the **3-2-1 backup** rule
 {{< /callout >}}
 
 
 {{< details title="More about 3-2-1 Back-Ups 📌" closed="true" >}}
 
-The 3-2-1 backup rule is a widely recommended strategy for ensuring data safety and recovery in case of failure or disaster. The rule suggests that you should:
+The 3-2-1 backup rule is a widely recommended strategy for ensuring data safety and recovery in case of failure or disaster.
 
-* Keep 3 copies of your data: This includes the original data and two backups. Having multiple copies helps prevent total data loss.
+The rule suggests that you should:
 
-* Store the backups on 2 different media types: This could include external hard drives, cloud storage, or USB drives. Using different media types reduces the risk of failure, as different storage media are less likely to fail at the same time.
+* Keep **3 copies** of your data: This includes the original data and two backups. Having multiple copies helps prevent total data loss.
 
-* Keep 1 copy offsite: One of the backup copies should be stored offsite (e.g., cloud storage or a remote location) to protect against local disasters such as fires, floods, or theft.
+* Store the backups on **2 different media types**: This could include external hard drives, cloud storage, or USB drives. Using different media types reduces the risk of failure, as different storage media are less likely to fail at the same time.
+
+* Keep **1 copy offsite**: One of the backup copies should be stored offsite (e.g., cloud storage or a remote location) to protect against local disasters such as fires, floods, or theft.
 
 By following the 3-2-1 rule, you significantly **minimize the risk of losing important data**.
 
@@ -488,6 +490,18 @@ services:
 
 {{< /details >}}
 
+## FireBat Conclusions
+
+The Firebat is a very compact MiniPC, which brings enough power for a home server.
+
+It allows for decent quality Video reproduction
+
+Dont forget to keep your server updated frequently!
+
+```sh
+sudo apt update && sudo apt upgrade -y
+```
+
 ---
 
 ## FAQ
@@ -512,7 +526,19 @@ services:
 
 * Get Steam running
 
-And then...
+
+```sh
+sudo apt install libgl1-mesa-glx libpulse0
+sudo apt install steam
+
+# sudo apt install flatpak
+# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# flatpak install flathub com.valvesoftware.Steam
+```
+
+And then...go to `Steam Settings` -> `Compatibility` -> `Enable Steam Play`
+
+...You can also [Try emulators within Linux](https://jalcocert.github.io/Linux/docs/debian/gaming/#emulators-on-linux)
 
 {{< /details >}}
 
@@ -534,17 +560,19 @@ exit
 
 A list of applications and tools, organized into categories
 
-### Virtualization and Remote Access
+**Virtualization and Remote Access**
+
 - Tailscale
+- RustDesk
 - Oracle Virtual Box
 - VMware (Freemium)
 
-### VPN Services
+**VPN Services**
 - Proton VPN
 - NordVPN
 - Windscribe (Freemium)
 
-### Development and Programming Tools
+**Development and Programming Tools**
 - RStudio
 - Matlab
 - Octave
@@ -554,13 +582,13 @@ A list of applications and tools, organized into categories
 - MicroCap (Electronics)
 - CODESYS (Control Systems)
 
-### Password Managers and Security Tools
+**Password Managers and Security Tools**
 - Bitwarden (Password Manager)
 - Authy (2FA)
 - ESET Online Scanner
 - AdwCleaner
 
-### Cloud Storage and Synchronization
+**Cloud Storage and Synchronization**
 - Mega
 - Syncthing
 - OneDrive
@@ -568,17 +596,17 @@ A list of applications and tools, organized into categories
 - ODrive
 - Nextcloud
 
-### Media and Entertainment
+**Media and Entertainment**
 - Spotify
 - VLC
 - Daemons Tools
 
-### Browsers and Online Tools
+**Browsers and Online Tools**
 - Mozilla
 - Brave
 - Chrome
 
-### Office and Productivity Software
+**Office and Productivity Software**
 - WPS Office
 - Adobe Acrobat (PDF Reader)
 - Microsoft OneNote
@@ -587,10 +615,10 @@ A list of applications and tools, organized into categories
 - Nero
 - FrameFun (Photo Frames)
 
-### Android Emulation
+**Android Emulation**
 - Nox (Android Emulator)
 
-### System Monitoring and Optimization
+**System Monitoring and Optimization**
 - OpenHardwareMonitor (System Temperature)
 - HWMonitor (System Temperature)
 - CPU-Z (System Information)
@@ -598,24 +626,25 @@ A list of applications and tools, organized into categories
 - GPU-Z
 - Ryzen Master
 
-### Communication and Collaboration
+**Communication and Collaboration**
 - Discord
 - Raindrop
 
-### Graphic Design and 3D Modeling
+**Graphic Design and 3D Modeling**
 - FreeCAD
 - Ultimaker Cura
 - Inkscape
 - Photoshop
 
-### Miscellaneous
+**Miscellaneous**
 - Proton (Miscellaneous)
 - F.lux (Night Light Reduction)
 - qBittorrent
 - Dreamweaver (Web Pages)
 - HP Deskjet 1510 Series (Printer Software)
 
-This Markdown list organizes the applications into categories, making it easier to understand the purpose and usage context of each app or tool.
+
+---
 
 **FOR LINUX**
 
@@ -630,16 +659,16 @@ This Markdown list organizes the applications into categories, making it easier 
 - Octave
 - Python
 
-### Package Managers and Software Centers
+**Package Managers and Software Centers**
 - Synaptic Package Manager
 - Flatpak
 - [Snapcraft](https://snapcraft.io/)
 
-### Gaming Platforms
+**Gaming Platforms**
 - Steam
 - Epic Games
 
-### Linux Distributions and Desktop Enhancements
+**Linux Distributions and Desktop Enhancements**
 - Ubuntu - Gnome Extensions
   - AppFolders Management Extension
   - OpenWeather
@@ -651,12 +680,10 @@ This Markdown list organizes the applications into categories, making it easier 
   - Show Desktop
   - Gnome Tweaks
 
-### System Tools and Utilities
+**System Tools and Utilities**
 - Authy
 - Psensor
 - GtkStressTesting
-
-
 
 {{< /details >}}
 

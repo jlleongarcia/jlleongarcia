@@ -318,18 +318,31 @@ graph TD
 
 We can also use [Wireguard and OpenVPN](#interesting-vpns-solutions) with the ML3000.
 
+{{< callout type="info" >}}
+Thanks to people on reddit and the gl-inet community to provide guidance on the subnet routes!
+{{< /callout >}}
+
 ---
 
 ## FAQ
 
 ### Interesting VPNs Solutions
 
-* Tailscale
+* **Tailscale**
 * HeadScale
 * ZeroTier
 * Wireguard - Requires Port Forwarding at home (with a VPS/Cloud Server you dont need it)
-    * WGEasy
+    * WGEasy to [get a WG server](https://jalcocert.github.io/JAlcocerT/how-to-use-wg-easy-with-a-vps/) very quick!
 
 * Wireguard Linux Clients
     * https://github.com/TunSafe/TunSafe?tab=readme-ov-file#readme
     * https://github.com/UnnoTed/wireguird
+
+### VPS to Deploy a Wireguard Server
+
+I [tried some VPSs](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/), and Wireguard worked perfectly with:
+
+1. [Hetzner](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner)
+1. [Digital Ocean](https://jalcocert.github.io/JAlcocerT/how-to-use-wg-easy-with-a-vps/)
+
+> DO added recently GPU Droplets which can be interesting to try out!
