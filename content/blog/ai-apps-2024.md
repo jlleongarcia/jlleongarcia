@@ -89,6 +89,8 @@ volumes:
   ai_chat_multiple_pdf:
 ```
 
+> I have combined those into the AIssistant as different agents/tabs 
+
 ## How to Setup Caddy
 
 * https://github.com/serfriz/caddy-custom-builds

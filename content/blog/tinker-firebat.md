@@ -524,8 +524,14 @@ sudo apt update && sudo apt upgrade -y
 
 {{< details title="Gaming on the Firebat with Linux 📌" closed="true" >}}
 
-* Get Steam running
+* Firebat has this GPU:
 
+```sh
+lspci | grep -i vga   #GPU info
+#00:02.0 VGA compatible controller: Intel Corporation Device 46d1
+```
+
+* Get Steam running
 
 ```sh
 sudo apt install libgl1-mesa-glx libpulse0
