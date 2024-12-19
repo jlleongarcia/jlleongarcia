@@ -168,15 +168,49 @@ volumes:
 This is
 {{< /callout >}}
 
+### SelfHosting AI Apps with HTTPs
+
 
 ---
 
 ## Conclusion
 
 
+| Feature | Traefik | Nginx | Caddy |
+|---|---|---|---|
+| **Ease of Use** | High | Medium | High |
+| **Performance** | Medium | High | Medium |
+| **Flexibility** | High | High | Medium |
+| **Dynamic Configuration** | Excellent | Requires more manual configuration | Supports some dynamic configuration |
+| **HTTPS Support** | Good | Requires manual configuration | Excellent |
+| **Learning Curve** | Medium | High | Low |
+
+* **Choose Traefik if:** You prioritize automatic service discovery and a wide range of plugins.
+* **Choose Nginx if:** You need maximum performance and flexibility, even if it means a steeper learning curve.
+* **Choose Caddy if:** You value simplicity and ease of use, especially for HTTPS setup.
+
+
 [![Star History Chart](https://api.star-history.com/svg?repos=lucaslorentz/caddy-docker-proxy,NginxProxyManager/nginx-proxy-manager,traefik/traefik&,type=Date)](https://star-history.com/#lucaslorentz/caddy-docker-proxy&NginxProxyManager/nginx-proxy-manager&traefik/traefik&Date)
 
-### SelfHosting AI Apps with HTTPs
+
+* **Caddy Strengths:**
+    * **Simplicity:** Known for its user-friendly configuration syntax, making it easier to learn and use compared to Nginx.
+    * **Automatic HTTPS:** Supports automatic HTTPS certificate acquisition and management, simplifying security setup.
+    * **Plugins:** Offers a growing ecosystem of plugins for various functionalities.
+* **Weaknesses:**
+    * **Performance:** While generally performant, it may not match Nginx's raw performance in very high-traffic scenarios.
+    * **Maturity:** While gaining popularity, it's not as mature or widely used as Nginx.
+
+I have tried Caddy with a OVH VPS Server with 2GB RAM.
+
+Similar to the one in which I tried to deploy Wireguard (~300/1.88GB)
+
+```sh
+ssh ubuntu@57.128.public.ip
+```
+
+
+
 
 
 ---
@@ -188,9 +222,202 @@ This is
 * https://github.com/NginxProxyManager/nginx-proxy-manager
 * https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/
 
+
+* **Strengths:**
+    * **High Performance:** Known for its exceptional performance and scalability, making it suitable for high-traffic environments.
+    * **Flexibility:** Highly configurable and customizable, allowing for fine-grained control over traffic routing and other aspects.
+    * **Mature and Widely Used:** A well-established and widely used reverse proxy with extensive community support and documentation.
+* **Weaknesses:**
+    * **Steeper Learning Curve:** Configuration can be more complex and require more technical expertise compared to Traefik or Caddy.
+    * **Less Automatic:** Requires more manual configuration compared to Traefik's dynamic discovery.
+
+
 ### How to Install Traefik
+
+Not enough with Caddy or Caddy?
+
+Have a look to **Traefik**
+
+We can also get SSL certificates thanks to LetsEncrypt.
+
+And it also provides a UI dashboard.
 
 * https://github.com/traefik/traefik
 * https://doc.traefik.io/traefik/user-guides/docker-compose/basic-example/
+
+
+* **Strengths:**
+    * **Dynamic Configuration:** Traefik excels at automatically discovering and configuring services based on service discovery mechanisms like Docker, Kubernetes, and Consul.
+    * **Extensive Plugin Ecosystem:** Offers a wide range of plugins for various use cases, including authentication, rate limiting, and middleware.
+    * **Ease of Use:** Relatively easy to set up and configure, especially with dynamic configurations.
+* **Weaknesses:**
+    * **Configuration Complexity:** While dynamic configuration is a strength, it can also lead to complex configurations for more advanced setups.
+    * **Performance:** May not be as performant as Nginx for very high-traffic scenarios.
+
+
+> Container first proxy, configurable via code
+
+<!-- https://www.youtube.com/watch?v=XH9XgiVM_z4 -->
+{{< youtube "XH9XgiVM_z4" >}}
+
+1. Docker
+2. NGINX to serve a website
+3. Traefik providing SSL with your Domain
+
+
+
+{{< callout type="info" >}}
+To validate that we own the domain, we can do **DNS or TLS Challenge** (this one requires Port FWD)
+{{< /callout >}}
+
+For the **DNS Challenge**, we just need the API access.
+
+With that, LetsEncrypt will login to the Domain registrar and creates a temporary record.
+
+Then, it will know that you are the one that really own the domain and therefore you can get certificates for that domain.
+
+**How to get API Token from Cloudflare**
+
+Go to My Profile on the top right -> `API Tokens` -> `Create Token` -> Select the Edit Zone DNS Template
+
+Keep Permissions Zone:DNS And as Zone Resources you can specify the particular domain (optional).
+
+You will get a way to verify it works:
+
+```sh
+curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+     -H "Authorization: Bearer some-cf-token" \
+     -H "Content-Type:application/json"
+```
+
+You can use that API into the **Traefik docker-compose below** at `CF_DNS_API_TOKEN`
+
+See that we also have a `traefik.yml` linked in the volumes of this compose.
+
+And the docker network:
+
+```sh
+sudo docker network create proxy
+```
+
+Acme files can be blank, we will fill `traefik.yml`
+
+```sh
+mkdir -p ./docker/traefik && \
+touch ./docker/traefik/acme.json && \
+touch ./docker/traefik/acme.yml && \
+touch ./docker/traefik/traefik.yml
+```
+
+```sh
+chmod 600 ./docker/traefik/acme.json && \
+chmod 600 ./docker/traefik/traefik.yml #or it will be a security risk for other users to see the privatekey
+```
+
+With such info:
+
+```yml
+#https://github.com/JamesTurland/JimsGarage/blob/main/Traefik/traefik-config/traefik.yml
+
+api:
+  dashboard: true
+  debug: true
+entryPoints:
+  http:
+    address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: https
+          scheme: https
+  https:
+    address: ":443"
+serversTransport:
+  insecureSkipVerify: true
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false
+  file:
+    filename: /config.yml
+certificatesResolvers:
+  cloudflare:
+    acme:
+      email: your@email.com #add your email
+      storage: acme.json
+      dnsChallenge:
+        provider: cloudflare
+        #disablePropagationCheck: true # uncomment this if you have issues pulling certificates through cloudflare, By setting this flag to true disables the need to wait for the propagation of the TXT record to all authoritative name servers.
+        resolvers:
+          - "1.1.1.1:53"
+          - "1.0.0.1:53"
+```
+
+And last but not least:
+
+```sh
+sudo apt install apache2-utils
+
+#generating a hashed password for the user "admin" using the htpasswd utility
+echo $(htpasswd -nb "admin" "admin") | sed -e s/\\$/\\$\\$/g #place the full result into the dockercompose for the dash creds
+```
+
+Right on this label `traefik.http.middlewares.traefik-auth.basicauth.users`
+
+
+```yml
+#https://github.com/JamesTurland/JimsGarage/blob/main/Traefik/docker-compose.yml
+
+version: '3.5'
+
+services:
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+       proxy:
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      - CF_API_EMAIL=your@email.com
+      - CF_DNS_API_TOKEN=your-api-key
+      # - CF_API_KEY=YOU_API_KEY
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /home/ubuntu/docker/traefik/traefik.yml:/traefik.yml:ro
+      - /home/ubuntu/docker/traefik/acme.json:/acme.json
+      - /home/ubuntu/docker/traefik/config.yml:/config.yml:ro
+      - /home/ubuntu/docker/traefik/logs:/var/log/traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.entrypoints=http"
+      - "traefik.http.routers.traefik.rule=Host(`traefik-dashboard.yourdomain.co.uk`)" # if you want a internal domain, get the wildcard cert for it and then choos traefik-dashboard.home.yourdomain.co.uk or what you want
+      - "traefik.http.middlewares.traefik-auth.basicauth.users=YOUR_USERNAME_PASSWORD"
+      - "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"
+      - "traefik.http.routers.traefik.middlewares=traefik-https-redirect"
+      - "traefik.http.routers.traefik-secure.entrypoints=https"
+      - "traefik.http.routers.traefik-secure.rule=Host(`traefik-dashboard.yourdomain.co.uk`)" # if you want a internal domain, get the wildcard cert for it and then choos traefik-dashboard.home.yourdomain.co.uk or what you want
+      - "traefik.http.routers.traefik-secure.middlewares=traefik-auth"
+      - "traefik.http.routers.traefik-secure.tls=true"
+      - "traefik.http.routers.traefik-secure.tls.certresolver=cloudflare"
+      #- "traefik.http.routers.traefik-secure.tls.domains[0].main=home.yourdomain.co.uk" # If you want *.home.yourdomain.co.uk subdomain or something else, you have to get the certifcates at first.
+      #- "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.home.yourdomain.co.uk" # get a wildcard certificat for your .home.yourdomain.co.uk
+      - "traefik.http.routers.traefik-secure.tls.domains[0].main=yourdomain.co.uk" #if you use the .home.yourdomain.co.uk entry you have to change the [0] into [1]
+      - "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.yourdomain.co.uk" # same here, change 0 to 1
+      - "traefik.http.routers.traefik-secure.service=api@internal"
+
+
+networks:
+  proxy:
+    name: proxy
+    external: true
+```
+
 
 * https://www.jimgogarty.com/installing-traefik-on-docker-with-docker-compose/
