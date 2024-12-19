@@ -519,6 +519,8 @@ sudo apt update && sudo apt upgrade -y
 
 {{< details title="Customize Linux Visuals 📌" closed="true" >}}
 
+I love to start with the Garuda default wallpaper.
+
 
 {{< /details >}}
 
