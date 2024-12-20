@@ -14,6 +14,49 @@ Long ago, I was covering [the analytical stack](https://jalcocert.github.io/JAlc
 
 It is time to make **a recap**.
 
+## Concepts for Data Analytics
+
+
+
+{{< details title="DWH vs DataLake 📌" closed="true" >}}
+
+**What is Normalization?**  
+
+{{< /details >}}
+
+{{< details title="Data Processing Engines 📌" closed="true" >}}
+
+**What is Normalization?**  
+
+{{< /details >}}
+
+
+{{< details title="The Data Catalogue📌" closed="true" >}}
+
+{{< /details >}}
+
+
+{{< details title="Data Lineage 📌" closed="true" >}}
+
+**What is Normalization?**  
+
+{{< /details >}}
+
+
+
+{{< details title="Data Profiling 📌" closed="true" >}}
+
+**What is Normalization?**  
+
+{{< /details >}}
+
+
+{{< details title="Data Modelling 📌" closed="true" >}}
+
+**What is Normalization?**  
+
+{{< /details >}}
+
 ## Tools
 
 

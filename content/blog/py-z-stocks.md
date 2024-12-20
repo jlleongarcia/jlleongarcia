@@ -330,6 +330,8 @@ You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/a
 - https://tools.mhinvest.com/mhichart una web app que tiene una idea muy parecida a la que pensamos en su momento, pero no considera seguir metiendo gasolina, parte de una cantidad inicial y listo.
 
 * https://www.marketbeat.com/
+  * https://www.marketbeat.com/stocks/NYSE/CVX/dividend/
+  * 
 
 * https://www.cazadividendos.com/
 

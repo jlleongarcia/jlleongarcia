@@ -40,6 +40,19 @@ This is a [good Python Project Readme.](https://github.com/JAlcocerT/Streamlit-M
 
 There are several ways to install [Python Dependencies](https://fossengineer.com/python-dependencies-for-ai/).
 
+
+
+{{< details title="Python must have pip & venv ready 📌" closed="true" >}}
+
+```sh
+sudo apt install python3-pip
+sudo apt install python3.10-venv
+```
+
+{{< /details >}}
+
+
+
 {{< details title="Make the dependencies Work: Venv's in Python 📌" closed="true" >}}
 
 ```sh
@@ -63,6 +76,7 @@ pip list
 
 ```sh
 source .env
+
 #export OPENAI_API_KEY="your-api-key-here"
 #set OPENAI_API_KEY=your-api-key-here
 #$env:OPENAI_API_KEY="your-api-key-here"

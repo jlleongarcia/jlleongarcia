@@ -4,7 +4,7 @@ date: 2024-12-16T23:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
-description: 'How to get your custom MultiChat, Youtube Summarizer and more ready for SelfHosting with Caddy'
+description: 'How to get your custom MultiChat, Youtube Summarizer and more ready for SelfHosting with Caddy. Bonus Traefik and NGINX.'
 summary: 'A recap on Python AI Apps that I have been working on during 2024'
 url: 'selfhosting-python-ai-apps-caddy'
 ---
@@ -20,10 +20,12 @@ The goal of this post is:
 1. YT Summarizer
 * https://github.com/JAlcocerT/phidata
 * https://jalcocert.github.io/JAlcocerT/summarize-yt-videos/
+* Get your Groq API for the app <https://console.groq.com/keys>
 
 2. Streamlit MultiChat
 * https://github.com/JAlcocerT/Streamlit-MultiChat
 * https://jalcocert.github.io/JAlcocerT/create-streamlit-chatgpt
+* Get (at least) OpenAI API for this app - <https://platform.openai.com/api-keys>
 
 
 
