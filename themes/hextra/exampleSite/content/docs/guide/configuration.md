@@ -179,6 +179,7 @@ To customize the [favicon](https://en.wikipedia.org/wiki/Favicon) for your site,
 Include both `favicon.ico` and `favicon.svg` files in your project to ensure your site's favicons display correctly.
 
 While `favicon.ico` is generally for older browsers, `favicon.svg` is supported by modern ones. The optional `favicon-dark.svg` can be included for a tailored experience in dark mode.
+
 Feel free to use tools like [favicon.io](https://favicon.io/) or [favycon](https://github.com/ruisaraiva19/favycon) to generate these icons.
 
 ### Theme Configuration

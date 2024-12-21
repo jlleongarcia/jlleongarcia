@@ -36,8 +36,10 @@ And you will just need to:
 3. [Optional] Install Portainer
 
 ```mermaid
-
-
+graph LR
+    A[Get docker/podman installed]-->B{Get the APIs};
+    B-->C[Use the APIs];
+    B-->D[Optional: Install Portainer];
 ```
 
 This is the [configuration file](https://github.com/JAlcocerT/Docker/blob/main/AI_Gen/Project_AIs/docker-compose.yml):

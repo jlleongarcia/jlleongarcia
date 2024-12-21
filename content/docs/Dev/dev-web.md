@@ -321,7 +321,7 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
 * https://github.com/Lissy93/web-check
     * https://web-check.xyz/
 
-* You will need proper favicons
+* You will need **proper favicons**
     * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
     * https://github.com/seadfeng/favicon-downloader
 
@@ -360,3 +360,17 @@ Try with:
 ### Choosing Colors for a Web
 
 * https://github.com/eigenmiao/Rickrack
+
+### Favicon Creation
+
+* FavYcon - https://github.com/ruisaraiva19/favycon
+
+> Discovered thanks to the Hextra theme
+
+*  Real Fav Icon Generator 😍 and place in the the proper folder (where the default icons are on your Theme).
+
+* Cool FavIcon with: https://favicon.io/favicon-converter/ - You can upload an image, then you will get the `favicon.ico` and other artifacts to make the web icons look amazing in any device.
+
+1.  go to the theme folder
+2.  add a /static folder
+3.  add the files generated with the website
