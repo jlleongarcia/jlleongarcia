@@ -30,6 +30,11 @@ Log into porkbun -> `NS` -> Change Authoritative Name Server to the ones provide
 # salvador.ns.porkbun.com
 ```
 
+![CF Custom Domain](/blog_img/web/CF-customdomain-sync.png)
+
+
+> After it syncs, you will be able to go to Workers & Pages -> Custom Domains and have the website ready/
+
 
 ## Photo Galleries
 
@@ -44,7 +49,6 @@ As described here - https://jalcocert.github.io/JAlcocerT/creating-photo-centric
 
 Later on, my first business website followed.
 
-![Uptime Ira](/blog_img/web/success10-punto/entreagujaypunto.png)
 
 
 
@@ -96,6 +100,8 @@ hugo server --bind="0.0.0.0" --baseURL="http://192.168.0.171" --port=1319
 ```
 
 > The baseURL if you are doing dev in a server 
+
+For production, always check for HUGO the `hugo.toml` file and tweak the **baseURL** parameter
 
 {{< /details >}}
 
