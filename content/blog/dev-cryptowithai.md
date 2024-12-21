@@ -248,3 +248,35 @@ Open Source, Permissionless & privacy conscious DeFi portfolio tracker
 For example, the aave token is ERC20:
 
 * https://eth.blockscout.com/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9
+
+
+---
+
+## FAQ
+
+### Chain Comparison
+
+Bitcoin, Ethereum, Solana, and Polkadot: A Comparative Overview
+
+| Feature | Bitcoin | Ethereum | Solana | Polkadot |
+|---|---|---|---|---|
+| **Primary Function** | Digital currency | Smart contract platform | High-throughput blockchain | Interoperable blockchain network |
+| **Consensus Mechanism** | Proof-of-Work (PoW) | Proof-of-Stake (PoS) | Proof-of-History (PoH) + Proof-of-Stake (PoS) | Nominated Proof-of-Stake (NPoS) |
+| **Transaction Speed** | ~7 transactions per second (TPS) | ~30 TPS (pre-Merge) | Up to 65,000 TPS | Up to 1,000 TPS |
+| **Transaction Fees** | Relatively high | Can vary significantly | Low | Low |
+| **Smart Contracts** | Limited | Supports complex smart contracts | Supports smart contracts | Supports parachains for custom blockchains |
+| **Scalability** | Limited | Improving with layer-2 solutions | High | High |
+| **Interoperability** | Limited | Improving with bridges | Limited | High |
+
+**Programming**
+
+* **Solidity** is primarily used for developing smart contracts on the **Ethereum** blockchain.
+* Other blockchains, like Solana, have their own programming languages (e.g., **Rust** for Solana).
+* Polkadot, being a network of interconnected blockchains (parachains), allows for diverse programming languages depending on the specific parachain.
+
+**Open-Source Wallets**
+
+* **Bitcoin:** Electrum, Bitcoin Core, Mycelium
+* **Ethereum:** MetaMask, MyEtherWallet, Trust Wallet
+* **Solana:** Phantom, Sollet, Solflare
+* **Polkadot:** Polkadot.js, Talisman

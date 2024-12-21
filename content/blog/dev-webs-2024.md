@@ -30,7 +30,12 @@ Log into porkbun -> `NS` -> Change Authoritative Name Server to the ones provide
 # salvador.ns.porkbun.com
 ```
 
-![CF Custom Domain](/blog_img/web/CF-customdomain-sync.png)
+
+![CF Custom Domain 1](/blog_img/web/CF-CustomDomain-DNSTransfer.png)
+
+![CF Custom Domain2 ](/blog_img/Cloudflare/CF-CustomDomain-DNSRecordsScan.png)
+
+![CF Custom Domain 3](/blog_img/web/CF-customdomain-sync.png)
 
 
 > After it syncs, you will be able to go to Workers & Pages -> Custom Domains and have the website ready/

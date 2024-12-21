@@ -18,6 +18,7 @@ url: 'docplanner-web-migration'
 
 Currently paying **80 USD a MONTH** for that website (and...marketplace)
 
+![DocPlanner Costs](/blog_img/web/docplanner-costs.png)
 
 {{< callout type="info" >}}
 Time to use [**FireCrawl** as scrap tool](https://github.com/JAlcocerT/Scrap_Tools), to get the content

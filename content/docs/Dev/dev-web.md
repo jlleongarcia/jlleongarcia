@@ -221,6 +221,9 @@ http-server -p 8000
   * Per month, and at least at the time of writing. This might (or not) change.
 
 ```sh
+#npm install -g firebase-tools
+#firebase login
+
 firebase init #configure files for firebase hosting / public directory is normall public for HUGO and dist for Astro/nodes
 firebase deploy #you will get something like -> https://jalcocertech.web.app/
 ```
