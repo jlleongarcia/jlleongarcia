@@ -16,8 +16,20 @@ It all started few years ago with my **own travel blog**.
 {{< /cards >}}
 
 {{< callout type="info" >}}
-And there is a new and very special website! <http://entreagujaypunto.com/>
+And there is a **new and very special website**! <http://entreagujaypunto.com/> Built with GH  + Cloudflare Pages <https://github.com/JAlcocerT/EntreAgujayPunto> 💻
 {{< /callout >}}
+
+I got the domain at PorkBun and changed the **NameServer** to Cloudflare ones.
+
+Log into porkbun -> `NS` -> Change Authoritative Name Server to the ones provided by CF:
+
+```sh
+# curitiba.ns.porkbun.com
+# fortaleza.ns.porkbun.com
+# maceio.ns.porkbun.com
+# salvador.ns.porkbun.com
+```
+
 
 ## Photo Galleries
 
@@ -32,10 +44,13 @@ As described here - https://jalcocert.github.io/JAlcocerT/creating-photo-centric
 
 Later on, my first business website followed.
 
+![Uptime Ira](/blog_img/web/success10-punto/entreagujaypunto.png)
+
+
 
 {{< cards >}}
   {{< card link="https://cyclingthere.com" title="My Travel Adventures" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="I can write and also create interesting photo galleries about my travel experiences" >}}
-  {{< card link="https://iotechcrafts.com/" title="Business Website" image="/blog_img/web/WebsSnapshots/Web_IoTechCrafts.png" subtitle="A Website for Agency - AI & IoT Consulting Services" >}}
+  {{< card link="http://entreagujaypunto.com/" title="Punto Photo Gallery" image="/blog_img/web/success10-punto/entreagujaypunto.png" subtitle="A Photo centered Web for Punto" >}}
 {{< /cards >}}
 
 And then I saw **people close to me, who needed help**.

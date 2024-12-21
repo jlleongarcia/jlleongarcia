@@ -197,7 +197,7 @@ Make sure that the preview works
 ```sh
 #option1
 cd public
-python3 -m http.server 8099
+python3 -m http.server 8099 #8000
 
 #option2
 npm install -g http-server
