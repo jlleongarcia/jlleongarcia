@@ -15,17 +15,22 @@ She's a traveler, **Photo Adict**, content creator and Artist.
 * https://nicokaiser.github.io/hugo-theme-gallery/animals/cats/
 * https://blog.cavelab.dev/2021/04/photo-gallery-posts/
 
-{{< details title="Themes I love for Galleries 📌" closed="true" >}}
+{{< details title="Other Themes I love for Galleries 📌" closed="true" >}}
 
 | **Description**                        | **Link**                                   |
 |----------------------------------------|--------------------------------------------|
 | PHP          | [NovaGallery](https://github.com/novafacile/novagallery)    |
 | Ghost                | [Compose Overview](https://docs.docker.com/compose/) |
 
-Ghost Themes: Handlebars, HTML, CSS, JavaScript, JSON.
-WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, and hooks.
+* Ghost Themes: Handlebars, HTML, CSS, JavaScript, JSON.
+* WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, and hooks.
 
 {{< /details >}}
+
+
+{{< callout type="info" >}}
+Using the [forked Hugo Theme Gallery](https://github.com/IoTechCrafts/hugo-theme-gallery-ssg), to create [this **Artist Portfolio**](https://github.com/JAlcocerT/agutek-portfolioweb) and [this other](https://gitlab.com/fossengineer1/whilecyclingthere) 💻
+{{< /callout >}}
 
 
 ## HUGO Photo Gallery
@@ -33,7 +38,6 @@ WordPress Themes: PHP, HTML, CSS, JavaScript, WordPress-specific template tags, 
 We are going to use **HUGO as SSG**, together with the great **[Hugo-Theme-Gallery](https://github.com/nicokaiser/hugo-theme-gallery)**
 
 
-###
 
 ### Testing the Theme
 
@@ -435,21 +439,25 @@ curl -s https://fossengineer.com/robots.txt #it has robots, but without sitemap,
 #curl -s https://while.cyclingthere.com/sitemap.xml -o /dev/null -w "%{http_code}\n"
 ```
 
-Plus, a Theme that it is not only cool, but **eco friendly**:
+And now use CLoudflare Pages (with the private Github repo) to deploy the Hugo Theme:
 
 ![HUGO Theme Gallery Carbon](/blog_img/web/success5-aga/cloudflareWnP-Github-Hugo.png)
 
-{{< callout type="info" >}}
-Using the [forked Hugo Theme Gallery](https://github.com/IoTechCrafts/hugo-theme-gallery-ssg), to create [this **Artist Portfolio**](https://github.com/JAlcocerT/agutek-portfolioweb) and [this other](https://gitlab.com/fossengineer1/whilecyclingthere)
-{{< /callout >}}
 
 ## Results
+
+The result?
+
+A Theme that it is not only cool, but **eco friendly**:
+
 
 {{< callout type="info" >}}
 As always, check the [performance of the site](https://jalcocert.github.io/JAlcocerT/create-your-website/#is-my-website-performing-well)
 {{< /callout >}}
 
 ![HUGO Theme Gallery Carbon](/blog_img/web/success5-aga/photogallery-hugo-whilecyclingthere-carbon.png)
+
+
 
 But...they are using an **incompatible HUGO 0.118**, so...I went with the [**manual** Cloudflare CLI Pages](https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/#faq) way.
 

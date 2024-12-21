@@ -48,21 +48,20 @@ You will need to have:
 See the modified working code [here](https://github.com/JAlcocerT/langchain-ask-csv) 💻
 {{< /callout >}}
 
-These are the libraries you will need:
+In a nutshell, these are the **python libraries** you will need:
 
 ```sh
-pip install langchain python-dotenv streamlit openai
+#pip install langchain python-dotenv streamlit openai 
+#but lets install them relialy with the requirements.txt file
 ```
 
 {{< callout type="warning" >}}
-But that way will install the latest version of each.
+But that way of installing dependencies will get you the latest version of each. Which may cause issues between future latest versions. 
 {{< /callout >}}
 
-
-
-Which may cause incompatibilities in the future.
-
 Thats why the original Alejandro AO Project has the `requirements.txt` file specifying the version.
+
+Its a great practice to **install [python dependencies](https://jalcocert.github.io/JAlcocerT/guide-python/#how-to-install-python-dependencies)** with:
 
 ```sh
 pip install -r requirements.txt

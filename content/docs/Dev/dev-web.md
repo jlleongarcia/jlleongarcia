@@ -183,22 +183,37 @@ But **not with higher versions like v0.124**.
 
 ### Select a SSG
 
-This is the first step.
-
+Choose the SSG (Hugo, Astro,...)
+And find/create a theme you like
 
 ### Tweak the Theme and Build
 
-This is the second step.
+Tweak the theme so that it looks even better!
+
+Make sure that the preview works
+
+### Local build and last check
+
+```sh
+#option1
+cd public
+python3 -m http.server 8099
+
+#option2
+npm install -g http-server
+http-server -p 8000
+```
 
 ### Select the Deployment Method
 
 * [Firebase](https://fossengineer.com/hosting-with-firebase/)
 * [Github Pages](https://jalcocert.github.io/JAlcocerT/how-to-use-github-pages/) or Gitlab Pages
-* [Cloudflare](https://fossengineer.com/hosting-with-cloudflare-pages/)
+* Cloudflare: [CLI](https://fossengineer.com/hosting-with-cloudflare-pages/) or [CF connected to a GH Repo](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#cloudflare-pages-vs-other-free-deployment-methods)
 * AWS S3 Buckets - https://blog.cavelab.dev/2021/08/deploying-hugo-blog-to-s3/
-* Others - Netlify, Server with NGINX... 
+* Others - Netlify, Server with NGINX...
+* SelfHosting Static Websites! 
 
-> See a [benchmark of Static Hosting](https://simplyexplained.com/blog/benchmarking-static-website-hosting-providers/)
+> See a [benchmark of **Static Hosting**](https://simplyexplained.com/blog/benchmarking-static-website-hosting-providers/)
 
 {{< details title="Free SSG Deployment 📌" closed="true" >}}
 

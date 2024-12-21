@@ -104,12 +104,16 @@ You can see what has been going on with your **deployments in the Cloudflare UI*
 For Github, you would go to the [actions tab of the repo](https://github.com/JAlcocerT/JAlcocerT/actions)
 
 {{< callout type="warning" >}}
-  Github Pages will allow for 25mb+ individual files, but not Cloudflare.
+Github Pages will allow for 25mb+ individual files, but not Cloudflare.
 {{< /callout >}}
 
 
 ### Cloudflare Pages vs other Free Deployment Methods
 
+
+{{< callout type="warning" >}}
+See how to setup [Other SSG deployments methods here](https://jalcocert.github.io/JAlcocerT/create-your-website/#select-the-deployment-method)
+{{< /callout >}}
 
 **Cloudflare wins** in the ping time:
 

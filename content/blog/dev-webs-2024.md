@@ -21,6 +21,8 @@ And there is a new and very special website! <http://entreagujaypunto.com/>
 
 ## Photo Galleries
 
+As described here - https://jalcocert.github.io/JAlcocerT/creating-photo-centric-blog-with-hugo/
+
 {{< cards cols="1" >}}
   {{< card link="https://while.cyclingthere.com/" title="Cycling There Photo Gallery" >}}
   {{< card link="https://enjoylittlethings.org/" title="Travel Addict Photo Blog" >}}
