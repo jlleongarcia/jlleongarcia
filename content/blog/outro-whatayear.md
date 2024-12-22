@@ -8,10 +8,14 @@ summary: 'Looking back to the learnings of this year'
 url: 'this-year-was-crazy'
 ---
 
-One of the most **interesting concepts** Ive learn this year:
+The most **interesting concepts** Ive learn this year:
 
 1) **Bike-Shedding** 
-2) **Show your Work** - Together with the [First 5 Clients Framework](https://www.acquisition.com/training/leads4)
+
+2) **Show your Work** - Together with the [First 5 Clients Framework](https://www.acquisition.com/training/leads4) and finding  a balance between what I do and what I show.
+
+Probably 80 do / 20 show is the way to go?
+
 3) **Finish what you Start**
 
 A very **impactful video** I saw:

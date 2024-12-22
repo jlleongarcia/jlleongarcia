@@ -1,6 +1,6 @@
 ---
 title: "Crypto. Now with AI"
-date: 2024-12-09
+date: 2024-12-21
 draft: false
 tags: ["Dev"]
 summary: 'Two buzz words in one. Understand crypto once and for all. This time thanks to AI'

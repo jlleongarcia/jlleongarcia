@@ -347,6 +347,19 @@ flatpak install flathub com.cuperino.qprompt
 flatpak run com.cuperino.qprompt
 ```
 
+* Or a specific Qprompt-teleprompter version:
+   * https://github.com/Cuperino/QPrompt-Teleprompter/releases/tag/v1.0.0-beta-005
+      * https://github.com/Cuperino/QPrompt-Teleprompter/blob/main/build.md#android-build-instructions
+   * https://github.com/Cuperino/QPrompt-Teleprompter/releases/tag/v1.1.6
+
+```sh
+wget https://github.com/Cuperino/QPrompt-Teleprompter/releases/download/v1.1.6/qprompt-v1.1.6-51788eb-linux-gcc-x86_64.AppImage
+
+chmod +x qprompt-v1.1.6-51788eb-linux-gcc-x86_64.AppImage
+./qprompt-v1.1.6-51788eb-linux-gcc-x86_64.AppImage
+```
+
+
 
 ### Social Media Automation
 

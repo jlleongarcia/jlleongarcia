@@ -57,6 +57,19 @@ It is time to make **a recap**.
 
 {{< /details >}}
 
+{{< details title="Big Data Storage - s3 and more 📌" closed="true" >}}
+
+**What is s3?**  
+
+MinIO - These are open s3 compatible buckets.
+
+* https://github.com/jmlcas/minio
+
+
+{{< /details >}}
+
+
+
 ## Tools
 
 
