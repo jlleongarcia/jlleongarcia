@@ -322,3 +322,85 @@ graph TD
   C2 --> B2
   C5 --> C1
 ```
+
+
+
+## FAQ
+
+
+## BI Tools Data Analytic Projects
+
+Specially if you like SelfHosting: Superset, metabase and redash
+
+#### SuperSet
+
+> Superset works perfectly with Trino SQL!
+
+#### MetaBase
+
+#### Redash
+
+
+For the IoT Fans out there: Grafana, Kibana and Chronogaph
+
+#### Grafana
+
+#### Kibana
+
+#### Chronograph
+
+Works together with InfluxDB!
+
+Chronograf allows you to quickly see the data that you have stored in InfluxDB so you can build robust queries and alerts. 
+
+It is simple to use and includes templates and libraries to allow you to rapidly build dashboards with real-time visualizations of your data.
+
+
+#### Node-Red
+
+### Custom BI Tools
+
+**For the Devs out there**
+
+#### Python DASH
+
+#### Python STREAMLIT
+    
+* https://ploomber.io/blog/streamlit_exe/
+
+
+##### Streamlit + AI
+
+{{< youtube id="MgLlEMteQqg" autoplay="false" >}}
+
+* https://github.com/dataprofessor/builder
+
+##### Dynamic Maps with Streamlit
+
+* Streamlit **+ LeafMap**:
+
+https://github.com/opengeos/streamlit-map-template
+https://github.com/opengeos/streamlit-geospatial -->> https://huggingface.co/spaces/giswqs/Streamlit
+
+* What it is based on? https://github.com/opengeos/leafmap
+    * https://pypi.org/project/leafmap/
+
+> A Python package for interactive mapping and geospatial analysis with minimal coding in a Jupyter environment
+
+{{< youtube id="hn2WqRX75DI" autoplay="false" >}}
+
+With a Very Interesting Marker cluster Page and a Page to upload your Vector Data (.geojson) and be able to visualize it.
+
+* Streamlit **+ Folium**
+
+{{< youtube id="OsGq4LJHOUI" autoplay="false" >}}
+
+* Streamlit **Reacting to clicks on a Leaflet Map** - Also with Folium
+
+https://github.com/clint-kristopher-morris/Tutorials/tree/main/streamlit-part-1
+
+{{< youtube id="gWV1gbeB-IM" autoplay="false" >}}
+
+#### Python Shiny
+
+#### FlexDashboards with R

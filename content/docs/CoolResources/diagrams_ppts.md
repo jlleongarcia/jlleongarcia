@@ -1,5 +1,5 @@
 ---
-title: Diagrams
+title: Diagrams & PPTs
 type: docs
 prev: /docs/android/
 next: docs/
@@ -27,3 +27,11 @@ And you can use it for free at: <mermaid.live>
 
 
 ### Python Plotly Graphs
+
+## PPTs as Code
+
+### SliDev
+
+### MARP
+
+### RemarkJS
