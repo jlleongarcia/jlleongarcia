@@ -1,6 +1,6 @@
 ---
 title: "Stocks with Python"
-date: 2024-10-23
+date: 2024-12-23
 draft: false
 tags: ["Python"]
 description: "A Cooler R/Stocks - This time with Python. And with proper auth"
