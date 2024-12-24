@@ -69,7 +69,6 @@ MinIO - These are open s3 compatible buckets.
 {{< /details >}}
 
 
-
 ## Tools
 
 
@@ -247,11 +246,36 @@ If you are preparing a Data Engineering Interview, make sure to check [this](htt
   {{< card link="https://fossengineer.com/airflow-docker/" title="SelfHost Airflow ↗" icon="user" >}}
 {{< /cards >}}
 
+
+
+{{< details title="Airflow and GC Composer 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+
 #### DBT
 
 {{< cards >}}
   {{< card link="https://wetrustindata.com/how_to_test_data_solutions/" title="Test Data Pipelines with SQL & DBT" icon="book-open" >}}
 {{< /cards >}}
+
+{{< details title="DBT 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+
+<!-- 
+Airflow?? -->
+
+<!-- 
+Elastic Search and kibana -->
+
+<!-- 
+Apache Kafka 
+https://openfaas.com/
+-->
 
 #### ADF
 

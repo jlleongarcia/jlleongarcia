@@ -340,6 +340,8 @@ Before going to YT, I like to have **Brave Browser**:
 sudo snap install brave
 ```
 
+> You will also be [one step closer of Web3](https://jalcocert.github.io/JAlcocerT/guide-web3/)
+
 * Videos are ready! Let's share videos!
     * To youtube
     * [To MediaCMS](https://hub.docker.com/r/mediacms/mediacms/tags)

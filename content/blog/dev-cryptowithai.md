@@ -208,13 +208,32 @@ If you want to read one and only one book aboyt Crypto - [WhyCryptoCurrencies](h
 
 ### Interesting Crypto Stuff I found lately
 
+
+{{< callout type="warning" >}}
+**Remember** that these are my notes as I learn and not any recommendation to buy/sell anything, neither to follow any link.
+{{< /callout >}}
+
+#### Lending Protocols
+
+I mean **Lending&Borrowing** Protocols:
+
+https://de.fi/explore/borrow-lending/cat/stablecoin
+
+> As of now, some popular ones are [Compound](https://compound.finance/), AAve v3 or [Spark](https://app.spark.fi/)
+
 * https://www.reddit.com/r/CryptoCurrency/comments/mnzv1c/defi_explained_lending_borrowing/
 * https://www.reddit.com/r/CryptoCurrency/comments/nletmi/defi_explained_the_full_guide/#:~:text=Decentralized%20Finance%20(DeFi)%20is%20a,protocols%20that%20work%20without%20intermediaries.
+
+#### Staking Protocols
+
+I was always confused by staking vs lending.
+
+#### More Web3 Stuff
 
 > I was writing [about web3 here](https://jalcocert.github.io/JAlcocerT/guide-web3). 
 
 {{< callout type="info" >}}
-If you have a website, I show you [how to also have a Web3 Compatible website](/guide-web3/)
+If you have a website, I show you [how to also have a **Web3 Compatible website**](/guide-web3/)
 {{< /callout >}}
 
 
@@ -238,6 +257,8 @@ Open Source, Permissionless & privacy conscious DeFi portfolio tracker
 
 
 #### Stable Coins
+
+Example stable coins are: USDT, USDC, DAI, USDS...
 
 * https://defillama.com/stablecoins
 * https://defillama.com/stablecoin/dai

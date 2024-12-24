@@ -8,9 +8,6 @@ summary: 'Everyone talks about Web3. I was wondering if I could use some knowled
 url: 'guide-web3'
 ---
 
-<!-- ## Why Web3? 
-https://mirror.xyz/
--->
 
 **The Web3 Revolution!** > wait, what?
 
@@ -32,22 +29,26 @@ We will do it in a simple three-step approach 📢
   - Acquire a Web3 domain and securely link it to your decentralized website using technologies like the Ethereum Name Service (ENS) or InterPlanetary File System (IPFS).
 
 
-Lets explore some potential of the next generation of the internet!
+Lets explore some potential of the **next generation of the internet, the web3**!
 
 
 ## Exploring Web3 Concepts
 
 ### Unstoppable Domains (UDs) 🚀
 
-**Unstoppable Domains** are Non-Fungible Tokens (NFTs), decentralized, and revolutionize the concept of domain ownership. Unlike traditional domain names (e.g., .com), UDs are stored in the owner's wallet like cryptocurrency, providing full control and autonomy. Once acquired, there's no need to worry about yearly renewal fees. Plus, no third party can alter or seize them, ensuring unparalleled digital ownership.
+**Unstoppable Domains** are Non-Fungible Tokens (NFTs), decentralized, and revolutionize the concept of domain ownership. Unlike traditional domain names (e.g., .com), UDs are stored in the owner's wallet like cryptocurrency, providing full control and autonomy. Once acquired, there's no need to worry about yearly renewal fees.
+
+Plus, no third party can alter or seize them, ensuring unparalleled digital ownership.
 
 ### IPFS: InterPlanetary File System 🛰️
 
-https://mariushosting.com/synology-install-ipfs-with-portainer/
+Thanks to https://mariushosting.com/synology-install-ipfs-with-portainer/
 
 **IPFS**, short for InterPlanetary File System, is a peer-to-peer hypermedia protocol with a visionary goal: to preserve and expand humanity's knowledge.
 
-By decentralizing content storage and distribution, IPFS aims to make the web more resilient, upgradable, and open. It operates on a distributed network, where files are addressed by their content, not their location, facilitating faster and more efficient data retrieval.
+By decentralizing content storage and distribution, IPFS aims to make the web more resilient, upgradable, and open.
+
+It operates on a distributed network, where files are addressed by their content, not their location, facilitating faster and more efficient data retrieval.
 
 Join the Web3 revolution today and explore the limitless possibilities these innovative technologies offer!
 
@@ -127,14 +128,19 @@ I Adquired recently one ENS to try on my own.
 
 The ENS ([ERC-721 Token](https://fossengineer.com/crypto-101-concepts-for-data-analytics/)) can be seen in the Polygon Blockchain with:
 
-<https://polygonscan.com/address/0x7dcd1f086b6f630e1e2310d31371a8078028f5a7#tokentxnsErc721> -->
+ -->
 
+This is how it looks an [**U**nestopable **D**omain at a wallet in polygonscan](https://polygonscan.com/address/0x7dcd1f086b6f630e1e2310d31371a8078028f5a7#tokentxnsErc721).
+
+Thats right, it is the `jalcocert.blockchain` UD.
+
+And I dont have to renew it ever again.
 
 ## Conclusion
 
-I have [this repository](https://jalcocert.github.io/web3/) where I try to collect Web3 related stuff :)
+I have [this repository](https://jalcocert.github.io/web3/) where I try to collect **Web3 related stuff** :)
 
-* You might want to have a look to https://whycryptocurrencies.com/
+* You might want to have a look to <https://whycryptocurrencies.com/>
 
 ---
 
