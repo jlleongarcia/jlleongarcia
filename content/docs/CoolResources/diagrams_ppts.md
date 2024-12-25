@@ -28,10 +28,33 @@ And you can use it for free at: <mermaid.live>
 
 ### Python Plotly Graphs
 
+---
+
 ## PPTs as Code
+
+[Presentations as a Code](https://fossengineer.com/create-ppt-with-code/)
 
 ### SliDev
 
-### MARP
+[Setup a SliDev Project](https://fossengineer.com/how-to-use-slidev/#the-slidev-project), like any other SSG:
 
-### RemarkJS
+1. Get Node and NPM
+2. Initialize the SliDev project
+
+```sh
+npm init slidev #yarn create slidev
+#npm run dev #if you want to restart where you left it
+```
+
+```sh
+npm install -g @slidev/cli #npm install --save-dev @slidev/cli
+npm i -D playwright-chromium
+```
+
+3. Modify the `slides.md` - Make changes to your ppt via markdown  
+
+> It can create a [PPT assistant](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#slides-creation-agent) as seen on [this post](https://jalcocert.github.io/JAlcocerT/creating-presentations-with-ai/)
+
+### MARP and RemarkJS
+
+[Two other options](https://fossengineer.com/create-ppt-with-code/#marp) to create PPTs as a Code.

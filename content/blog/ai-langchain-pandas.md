@@ -37,7 +37,7 @@ As [commented earlier this year](https://jalcocert.github.io/JAlcocerT/how-to-ch
 
 
 {{< callout type="info" >}}
-I am creating a public repo with all sort if interesting RAG libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)** 💻 
+I am creating a public repo with all sort if **interesting RAG** libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)** 💻 
 {{< /callout >}}
 
 ### Pre Requisites
@@ -61,7 +61,7 @@ See the modified working code [here](https://github.com/JAlcocerT/langchain-ask-
 ## FAQ
 
 
-You can also try, these below (Which I already covered)
+You can also try, these below (Which I already covered):
 
 * [PandasAI](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/)
 * LlamaIndex

@@ -206,6 +206,8 @@ http-server -p 8000
 
 ### Select the Deployment Method
 
+There are few [alternatives to host a static website](https://fossengineer.com/alternatives-for-hosting-static-websites/):
+
 * [Firebase](https://fossengineer.com/hosting-with-firebase/)
 * [Github Pages](https://jalcocert.github.io/JAlcocerT/how-to-use-github-pages/) or Gitlab Pages
 * Cloudflare: [CLI](https://fossengineer.com/hosting-with-cloudflare-pages/) or [CF connected to a GH Repo](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#cloudflare-pages-vs-other-free-deployment-methods)
@@ -239,7 +241,7 @@ firebase deploy #you will get something like -> https://jalcocertech.web.app/
 
 
 {{< callout type="info" >}}
-Some CSS will do the Trick. As well as JS libraries like: PhotoSwipe,...
+Some [**CSS**](https://jalcocert.github.io/JAlcocerT/blog/dev-css/) will do the Trick. As well as **JS** libraries like: PhotoSwipe,...
 {{< /callout >}}
 
 {{% /steps %}}
