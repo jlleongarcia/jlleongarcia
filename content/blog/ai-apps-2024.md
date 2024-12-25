@@ -27,6 +27,7 @@ The goal of **this post** is:
 * https://jalcocert.github.io/JAlcocerT/create-streamlit-chatgpt
 * Get (at least) OpenAI API for this app - <https://platform.openai.com/api-keys>
 
+![Streamlit MultiChat](https://github.com/JAlcocerT/Streamlit-MultiChat/raw/main/streamlit-multichat.png)
 
 {{< callout type="info" >}}
 People out there is doing way cooler projects, like [LibreChat](https://fossengineer.com/free-open-source-llm-tools/)

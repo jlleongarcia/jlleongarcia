@@ -230,7 +230,7 @@ firebase init #configure files for firebase hosting / public directory is normal
 firebase deploy #you will get something like -> https://jalcocertech.web.app/
 ```
 
-* You can also try with [Cloudflare](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#faq) or Github Pages.
+* You can also try with [Cloudflare](https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/#faq) or [Github Pages](https://jalcocert.github.io/JAlcocerT/how-to-use-github-pages/).
 
 {{< /details >}}
 

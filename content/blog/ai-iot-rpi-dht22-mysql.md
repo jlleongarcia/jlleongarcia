@@ -25,6 +25,40 @@ And be able to **chat with a DB where the DHT22 sensor data (temp and humidity) 
 
 **Pre-Requisites**
 
+1. Get the DB Ready - We will do it with a [MariaDB SQL Container](https://github.com/JAlcocerT/Docker/blob/main/Dev/DBs/MariaDB_docker-compose.yml), but you can use a [MYSQL container](https://github.com/JAlcocerT/Docker/blob/main/Dev/DBs/MySQL_docker-compose.yml) or with [MYSQL baremetal as in the initial example post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-a-db-with-langchain)
+
+```yml
+version: '3'
+
+services:
+  mariadb:
+    image: mariadb:10.5
+    container_name: mariadb-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_DATABASE=chinook
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=mypassword
+    volumes:
+      - ./mariadb-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+```
+
+```sh
+#docker-compose up -d
+
+#docker exec -it mariadb-db bash
+#mysql -u root -p
+
+# CREATE DATABASE chinook;
+# USE chinook;
+# SOURCE /path/to/chinook.sql; -- Update this path to your SQL file
+# SOURCE /path/to/Chinook_MySql.sql; -- Update this path to your SQL file if needed
+
+#SHOW TABLES;
+```
+
 ### Hardware Setup
 
 ### Software Setup

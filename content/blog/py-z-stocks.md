@@ -8,7 +8,7 @@ summary: 'A Cooler R/Stocks - This time with Python. And with proper auth'
 url: 'python-stocks-webapp'
 ---
 
-
+**TradFi** - Traditional Finances as I saw recently on redit.
 
 
 {{< callout type="info" >}}

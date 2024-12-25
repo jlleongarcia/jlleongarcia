@@ -8,9 +8,17 @@ summary: 'Setup GH Actions'
 url: 'github-actions-use-cases'
 ---
 
+If you are familiar with container technology, you might wonder if there is a way for containers to get built by themselves.
+
+Thats were CI/CD comes into play, and in particular **Github Actions**.
+
+To setup GHA is as simple as adding the proper `.github/workflows/ci_cd_config.yml` file with the use case for you.
+
+It can be helpful for [Python](#actions-cicd-for-python-projects) or [Web projects](#github-actions-for-web-projects) (and much much more).
+
 ## Actions CI/CD for Python Projects
 
-I was using GH Actions to **create x86 container** images and push them to ghcr like so
+I was using GH Actions to **create x86 container** images and push them to **ghcr** like so:
 
 ```yml
 name: CI/CD Pipeline x86 Container Image
@@ -95,6 +103,36 @@ jobs:
 {{< callout type="info" >}}
 [Sample repo - multichat](https://github.com/JAlcocerT/Streamlit-MultiChat) 
 {{< /callout >}}
+
+You can also push **containers to Dockerhub from GHA**:
+
+```yml
+#https://github.com/JAlcocerT/Py_Trip_Planner/blob/main/.github/workflows/ci-cd-dockerhub.yml
+name: CI/CD Pipeline Build and Push to DockerHub
+
+on:
+  workflow_dispatch: #trigger button
+  # push:
+  #   branches:
+  #     - main
+
+jobs:
+  build-and-push-x86:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository #get the source code
+      uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx #install docker
+      uses: docker/setup-buildx-action@v1
+        
+    - uses: actions/checkout@v1
+    - name: Build & Push Image to DockerHub
+      run: |
+        echo "${{ secrets.CICD_DASH_TOKEN_DOCKERHUB }}" | docker login -u "your_dockerhub_user" --password-stdin
+        docker image build -t your_dockerhub_user/trip_planner:amd64 .
+        docker push your_dockerhub_user/trip_planner:2-amd64
+```
 
 ## Github Actions for Web Projects
 

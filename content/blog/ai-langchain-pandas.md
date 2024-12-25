@@ -19,6 +19,8 @@ The weather information?
 
 Thats covered on the Python **[Trip Planner](https://github.com/JAlcocerT/Py_Trip_Planner/) Project**.
 
+With MeteoStat and OpenMeteo APIs.
+
 ## Intro to LangChain with PandasDF
 
 As [commented earlier this year](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-pdfs/), I was inspired by **Alejandro AO** and its **Python AI projects**.
