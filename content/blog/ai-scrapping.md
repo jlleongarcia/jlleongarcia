@@ -1,5 +1,5 @@
 ---
-title: "Testing ai Scrapping projects: GPT-Crawler"
+title: "Testing AI Scrapping projects: GPT-Crawler"
 date: 2025-12-31
 draft: true
 tags: ["Dev","Python"]
@@ -53,7 +53,7 @@ export const defaultConfig: Config = {
 
 `https://chat.openai.com/gpts`
 
-Upload the output.json
+Upload the `output.json`
 
 Create the GPT with: Reads through my website data
 
@@ -91,7 +91,7 @@ Because of its simplicity and permissiveness, the ISC license is favored for pro
 
 ### Playing with Vector DBs
 
-# Vector Admin
+#### Vector Admin
 
 GUI for vector DB's like: **Qdrant, ChromaDB** or Pinecone
 
@@ -113,6 +113,7 @@ cd vector-admin
 cd docker
 cp .env.example .env. #and adjust
 ```
+
 #5432 will be ok as it is in the same stack
 
 JWT_SECRET="some-random-string"

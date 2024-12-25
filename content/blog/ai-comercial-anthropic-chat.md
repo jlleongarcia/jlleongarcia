@@ -71,7 +71,7 @@ in their web: https://docs.anthropic.com/en/docs/about-claude/models
 
 ## Conclusions
 
-I am building a multi LLM provider chat right here: <https://github.com/JAlcocerT/Streamlit-MultiChat>
+I am building a **multi LLM provider** chat right here: <https://github.com/JAlcocerT/Streamlit-MultiChat>
 
 Thanks to the learnings on how to use Claude with Python.
 
@@ -91,4 +91,5 @@ Its a good complement to the GROQ API for LLMs.
 Thanks to Fireship and the video:
 
 <!-- {{< youtube id="v=m_xoN8KlP3w" autoplay="false" >}} -->
+
 {{< youtube "m_xoN8KlP3w" >}}

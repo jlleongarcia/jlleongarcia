@@ -30,7 +30,6 @@ And be able to **chat with a DB where the DHT22 sensor data (temp and humidity) 
 ### Software Setup
 
 
-
 ---
 
 ## FAQ

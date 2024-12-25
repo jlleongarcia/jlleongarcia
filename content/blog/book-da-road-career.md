@@ -16,9 +16,13 @@ Poner la imagen the trust the proccess -->
 
 {{< /dropdown >}} -->
 
-Data analysts are now considered invaluable assets in virtually every industry, from tech to healthcare, retail to finance, and everything in between. They possess the unique ability to mine data, interpret it, and present it in a way that businesses can use to make **informed decisions**.
+Data analysts are now considered invaluable assets in virtually every industry, from tech to healthcare, retail to finance, and everything in between.
 
-Starting a career in data analytics is a journey of **personal growth and continuous learning**. You'll need to build a strong foundation in various areas such as statistical analysis, programming languages like Python or R, data visualization, and machine learning, among others. 
+They possess the unique ability to mine data, interpret it, and present it in a way that businesses can use to make **informed decisions**.
+
+Starting a career in data analytics is a journey of **personal growth and continuous learning**.
+
+You'll need to build a strong foundation in various areas such as statistical analysis, programming languages like Python or R, data visualization, and machine learning, among others. 
 
 But don't let these requirements intimidate you. With the right mindset and approach, **anyone can master the fundamentals** and pave their way towards a successful career in data analytics.
 
@@ -26,20 +30,23 @@ But don't let these requirements intimidate you. With the right mindset and appr
     * If you are a *techie* already, make sure to have a look to how to get better in [business skills](#business-skills).
     * If you are a *master in business* skills already, having tried some of [these technologies](#tech-skills) will make you propose better solutions and [better manage your team](/team-management-data-analytics/).
 
-
 ![3 Parts of Data Analytics Career](/img/Data_Analytics_Career.png)    
 
 ---
 
 ## Tech Skills
 
-To become a successful Data Analyst, you need to have a wide range of technical skills. These include knowledge of Structured Query Language (SQL), Microsoft Excel, critical thinking, R or Python-Statistical Programming, Hadoop Platform, SQL Database/Coding, [Apache Spark](/guide-python-PySpark/), Machine Learning, and AI.
+To become a successful Data Analyst, you need to have a wide range of technical skills.
+
+These include knowledge of Structured Query Language (SQL), Microsoft Excel, critical thinking, R or Python-Statistical Programming, Hadoop Platform, SQL Database/Coding, [Apache Spark](/guide-python-PySpark/), Machine Learning, and AI.
 
 Additionally, data analysts should have a strong understanding of computer science and be proficient at coding in Python. Finally, data analysts should also be comfortable with large data sets and have the ability to process them efficiently.
 
 ### Programming Skills
 
-Think of programming skills as a cognitive enhancer that sharpens problem-solving skills and encourages a structured approach to challenges. It's like a mental gym that builds analytical thinking, attention to detail, and the ability to break down complex problems into manageable parts.
+Think of programming skills as a cognitive enhancer that sharpens problem-solving skills and encourages a structured approach to challenges.
+
+It's like a mental gym that builds analytical thinking, attention to detail, and the ability to break down complex problems into manageable parts.
 
 * [Learn Python](/guide-python/): is very a versatile, widely-used and offers extensive libraries and tools for data manipulation, analysis, and visualization, making it invaluable in data analytics.
     * You can leverage your [Python](https://github.com/JAlcocerT/Python_is_awesome "Python {rel='nofollow'}")) knowledge with the new language - **Mojo, a superset of Python** that is designed for AI tools and is way more faster.
@@ -63,7 +70,6 @@ Some well known sites where you can store your code:
 * Gitea - Free Open Source and **[Self-hosted](https://fossengineer.com/selfhosting-Gitea-docker/)**
 
 {{< /dropdown >}}
-
 
 
 ### Learn Web Basics - Show your Work!
@@ -97,7 +103,7 @@ Personally, I find **HUGO** a fantastic option (I migrated this blog to HUGO fro
 
 #### Github Pages
 
-The natural next step would be to create a personal Github Page.
+The natural next step would be to create a **personal Github Page, like this one**.
 
 * You can consider this as an oportunity to have a resume, [portfolio page](https://jalcocert.github.io/Portfolio/) or even your Completely Free blog
     * Thats right, you won't have to pay for domain nor hosting.

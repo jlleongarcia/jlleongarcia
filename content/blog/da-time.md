@@ -18,11 +18,11 @@ Be aware of the **Optimism Bias** when commiting with others (and with yourself)
 
 Finding your prodictivity rhythm.
 
-## Establish Boundaries
+### Establish Boundaries
 
 More can be less in terms of productivity if you dont have the actual time to complete to the end the tasks or assigments.
 
-## Scheduled To-Do
+### Scheduled To-Do
 
 Replacing the to-do list for a *scheduled To-Do*.
 
@@ -48,9 +48,11 @@ These are the things that use time because they are out of day or under-performi
 
 ## Overcome the *Analysis Paralysis*
 
-When presented with too many options, you might be consfused and not sure how to move forward.
+When presented with **too many options**, you might be consfused and not sure how to move forward.
 
-Stop for a moment and break the concepts in steps. Look for the first minute activity that would make you be one step closer to completion.
+Stop for a moment and break the concepts in steps.
+
+Look for the first minute activity that would make you be one step closer to completion.
 
 ## Prioritize Work
 

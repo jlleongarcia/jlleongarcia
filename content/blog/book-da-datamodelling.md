@@ -263,11 +263,14 @@ A data warehouse is a large, centralized repository of data that is used to supp
 #### Star Schema
 
 A star schema is a type of dimensional model where a central fact table is connected to one or more dimension tables via foreign key relationships. It is **typycal in DWH**. 
+
 * This schema is easy to understand, query, and maintain, but may result in data redundancy. Useful concepts:
     * Surrogate key - Is unique in the DB
     * Alternate key - the primary key
 
-A star schema is a simple and intuitive design that consists of a fact table surrounded by dimension tables. The fact table contains the measures or metrics, such as sales or revenue, and the dimension tables provide context for the measures, such as product, customer, or date. 
+A star schema is a simple and intuitive design that consists of a fact table surrounded by dimension tables.
+
+The fact table contains the measures or metrics, such as sales or revenue, and the dimension tables provide context for the measures, such as product, customer, or date. 
 
 **The fact table and dimension tables are linked by keys**, which allows for easy querying and analysis of the data. The star schema is well-suited for simple and straightforward reporting and analysis.
 
@@ -275,7 +278,9 @@ The fact table is usually used to track events, transactions and related dimensi
 
 #### Snowflake Schema
 
-A snowflake schema is an extension of the star schema, where dimension tables are normalized to reduce data redundancy. This schema is more space-efficient but may increase query complexity and decrease performance.
+A snowflake schema is an extension of the star schema, where dimension tables are normalized to reduce data redundancy.
+
+This schema is more space-efficient but may increase query complexity and decrease performance.
 
 A snowflake schema is a more complex design that extends the star schema by **breaking out the dimension tables into smaller tables that can be further normalized**. This can help to reduce redundancy and improve data consistency, but can also make the schema more complex and difficult to manage. 
 

@@ -60,7 +60,7 @@ flowchart TD
     classDef response fill:#85E3FF,stroke:#333,stroke-width:1px;
 ```
 
-And as you can imagine, there as few frameworks already out there.
+And as you can imagine, there as few **frameworks already out there**.
 
 {{< callout type="info" >}}
 Normally, you will see that [RAG frameworks relate](#interesting-rag-resoures) with: [VectorDBs](#vectordbs), Embedding Models and [LLMs](#interesting-api-keys-for-llms)
@@ -76,11 +76,13 @@ And for a real estate agent bot, LlamaIndex + **Mem0** does the trick.
 
 How Exactly?
 
-See [this repo folder](https://github.com/JAlcocerT/Data-Chat/tree/main/LLamaIndex/With_Mem0). You will need [OpenAI & Anthropic APIs](#interesting-api-keys-for-llms)
+See [this repo folder](https://github.com/JAlcocerT/Data-Chat/tree/main/LLamaIndex/With_Mem0).
+
+You will need [OpenAI & Anthropic APIs](#interesting-api-keys-for-llms)
 
 
 {{< callout type="info" >}}
-For the [Real Estate Web Project](https://github.com/JAlcocerT/ScrewFastMoiRealEstate) commented in [this post](https://jalcocert.github.io/JAlcocerT/astro-web-setup/) I was asked to provide a QnA Bot
+For the [Real Estate Web Project](https://github.com/JAlcocerT/ScrewFastMoiRealEstate) commented in [this post](https://jalcocert.github.io/JAlcocerT/astro-web-setup/) I was asked to provide a **QnA Bot**
 {{< /callout >}}
 
 ### Exploring LangChain
@@ -144,8 +146,6 @@ You might Know Llama-Index because of its RAG capabilities.
 * https://docs.llamaindex.ai/en/stable/
 
 > LlamaIndex is a framework for building context-augmented generative AI applications with LLMs including agents and workflows.
-
-
 
 
 ### PydanticAI

@@ -1,15 +1,43 @@
 ---
-title: "Testing AI projects"
-date: 2025-12-31
-draft: true
+title: "Testing AI projects with Python"
+date: 2024-12-25
+draft: false
 tags: ["Dev","Python"]
-description: 'How to use the latest AI Project. With Code and Systematically.'
-summary: 'How I Test AI Projects'
-url: 'ai-projects'
+description: 'How to use the latest AI Project. With Code and Systematically. Example with PrivateGPT and ChatDev'
+summary: 'How I Test AI Projects with Python'
+url: 'ai-projects-python-dependencies'
 ---
 
+Ive been updating [this Python Docs](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/) on useful Python stuff I found out along the way.
 
-{{< details title="Setup proper dev environment for Python 📌" closed="true" >}}
+Time to make some upgrades:
+
+## Dependencies with Python
+
+1. **Conda**
+
+```sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+
+# Miniconda3 will now be installed into this location:
+# /home/jalcocert/miniconda3
+
+source ~/.bashrc
+conda --version
+```
+
+```sh
+#conda config --set auto_activate_base false
+
+conda create --name myenv python=3.8
+conda activate myenv
+conda deactivate
+```
+
+2. The one I usually use: **Venvs**
+
+{{< details title="Setup proper dev environment for Python | Venv 📌" closed="true" >}}
 
 
 ```sh
@@ -31,14 +59,48 @@ prepare `.gitignore`
 
 {{< /details >}}
 
-# ChatDev
+3. **Poetry** is a Python dependency management and packaging tool.
+
+It provides a way to manage Python project dependencies, create virtual environments, and package your Python projects for distribution.
+
+Poetry aims to simplify and streamline the process of managing Python projects by providing a unified and consistent toolset.
 
 
-* <https://www.youtube.com/watch?v=yoAWsIfEzCw>
-* <https://github.com/OpenBMB/ChatDev>
+
+### With Containers
 
 
-{{< details title="Edit 📌" closed="true" >}}
+{{< callout type="info" >}}
+Example of **Artifacts to containerize a Python Project** with the [MultiChat](https://github.com/JAlcocerT/Streamlit-MultiChat)
+{{< /callout >}}
+
+
+{{< details title="Dockerfile 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
+
+{{< details title="Docker-Compose 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
+## Setup 2 AI Projects
+
+### ChatDev
+
+* {{< newtab url="https://github.com/OpenBMB/ChatDev" text="The ChatDev Repository" >}}
+    * License: {{< newtab url="https://github.com/OpenBMB/ChatDev?tab=Apache-2.0-1-ov-file#readme" text="Apache v2" >}} ❤️
+
+
+> **Create Customized Software** using Natural Language Idea (through LLM-powered **Multi-Agent Collaboration**) 
+
+
+
+{{< details title="ChatDev Setup 📌" closed="true" >}}
 
 
 ```yml
@@ -67,17 +129,20 @@ export OPENAI_API_KEY="your_OpenAI_API_key"
 
 python3 run.py --task "[description_of_your_idea]" --name "[project_name]"
 
-
 cd WareHouse/project_name_DefaultOrganization_timestamp
 python3 main.py
 ```
 
 {{< /details >}}
 
+{{< youtube "yoAWsIfEzCw" >}}
 
-# PrivateGPT
+<!-- * <https://www.youtube.com/watch?v=yoAWsIfEzCw> -->
 
-{{< details title="Edit 📌" closed="true" >}}
+
+### PrivateGPT
+
+{{< details title="About and Setup PrivateGPT 📌" closed="true" >}}
 
 * 👉 <https://www.youtube.com/watch?v=XFiof0V3nhA>
     * <https://gist.github.com/mberman84/9b3c281ae5e3e92b7e946f6a09787cde>
@@ -125,7 +190,11 @@ PGPT_PROFILES=local make run
 #GPT_PROFILES=local make run
 ```
 
-When the server is started it will print a log Application startup complete. Navigate to http://localhost:8001 to use the Gradio UI or to http://localhost:8001/docs (API section) to try the API using Swagger UI.
+When the server is started it will print a log Application startup complete.
+
+Navigate to `http://localhost:8001` to use the **PrivateGPT Gradio UI**
+
+Or to `http://localhost:8001/docs` (API section) to try the API using Swagger UI.
 
 ```dockerfile
 # Use the specified Python base image
@@ -169,6 +238,8 @@ RUN poetry install --with ui,local
 #docker push docker.io/fossengineer/privategpt:v1
 ```
 
+Once built, you can use this **docker-compose to deploy PrivateGPT**:
+
 ```yml
 version: '3'
 
@@ -191,9 +262,10 @@ volumes:
   ai-privategpt:
 ```
 
+You can use the **PrivateGPT API via python** like so:
+
 ```py
 #pip install gradio_client
-
 
 from gradio_client import Client
 
@@ -207,8 +279,8 @@ result = client.predict(
 print(result)
 ```
 
-## Poetry
-
-Poetry is a Python dependency management and packaging tool. It provides a way to manage Python project dependencies, create virtual environments, and package your Python projects for distribution. Poetry aims to simplify and streamline the process of managing Python projects by providing a unified and consistent toolset.
-
 {{< /details >}}
+
+{{< youtube "Ib3nQu5bB_k" >}}
+
+<!-- https://www.youtube.com/watch?v=Ib3nQu5bB_k&t=47s -->

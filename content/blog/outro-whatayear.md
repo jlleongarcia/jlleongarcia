@@ -18,6 +18,10 @@ Probably 80 do / 20 show is the way to go?
 
 3) **Finish what you Start**
 
+4) It does not matter how fast your are going if you are going in the wrong direction
+
+5) When you think you are on the top, you stop getting better
+
 A very **impactful video** I saw:
 
 <!-- 
@@ -343,21 +347,8 @@ streamlit run Z_ST_AIssistant_v1.py
 
 
 {{< callout type="warning" >}}
-I know, have to give it a try to these APIs: [Mistral](https://docs.mistral.ai/api/), Grok, Gemini...maybe [Sambanova](https://www.reddit.com/r/LocalLLaMA/comments/1d3hw9r/sambanova_system_reaches_1000_tokens_per_second/) [cloud](https://cloud.sambanova.ai/)?
+I know, have to give it a try to **these APIs**: [Mistral](https://docs.mistral.ai/api/), Grok, Gemini...maybe [Sambanova](https://www.reddit.com/r/LocalLLaMA/comments/1d3hw9r/sambanova_system_reaches_1000_tokens_per_second/) [cloud](https://cloud.sambanova.ai/)?
 {{< /callout >}}
-
-{{< details title="MTG Notes Template 📌" closed="true" >}}
-
-Initially, I had this one for Telecom
-
-
-{{< /details >}}
-
-
-{{< details title="Weekly Work Template... 📌" closed="true" >}}
-
-
-{{< /details >}}
 
 ![Cat product Meme](/blog_img/memes/features-vs-needs.png)
 *The final user always has the last word on rating what you've built*

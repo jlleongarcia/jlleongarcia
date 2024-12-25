@@ -16,10 +16,11 @@ This year I saw a very cool video about **design patterns**.
 
 
 <!-- https://www.youtube.com/watch?v=8UAsN9wvePE -->
+
 {{< youtube "8UAsN9wvePE" >}}
 
 {{< callout type="info" >}}
-By using the Phi Data YT Summarizer... 💻
+By using the [Phi Data YT Summarizer](https://jalcocert.github.io/JAlcocerT/summarize-yt-videos/)... 💻
 {{< /callout >}}
 
 
@@ -117,3 +118,38 @@ https://opendata.blender.org/
 {{< callout type="info" >}}
 With Python **MoviePy**, as covered on [this post](https://jalcocert.github.io/JAlcocerT/my-youtube-ai-workflow/#quick-vlogs-as-a-code)
 {{< /callout >}}
+
+
+<!-- ## Animations
+
+
+Python is a versatile programming language that can be used for a wide range of tasks, including creating animations. In this blog post, we will explore the different libraries available for creating animations with Python and learn how to use them to create impressive animations.
+
+
+
+Description: Python is not just a programming language for data science or web development, but it can also be used to create stunning animations. In this blog post, we will take a deep dive into the different libraries available for creating animations with Python, such as Matplotlib, Pygame, OpenCV, and Arcade. We will explore the different features of each library and learn how to use them to create different types of animations.
+
+
+
+
+### ipyvizzu
+https://github.com/vizzuhq/ipyvizzu-story
+https://ipyvizzu-story.vizzuhq.com/latest/
+https://ipyvizzu.vizzuhq.com/latest/installation/
+
+https://pypi.org/project/ipyvizzu-story/ -->
+
+
+
+<!-- 
+## BAADOOOO
+
+How to use the library
+
+<https://jckantor.github.io/CBE30338/A.03-Animation-in-Jupyter-Notebooks.html>
+
+<https://jakevdp.github.io/blog/2012/09/05/quantum-python/>
+<https://jakevdp.github.io/blog/2012/08/18/matplotlib-animation-tutorial/>
+<https://jakevdp.github.io/blog/2013/02/16/animating-the-lorentz-system-in-3d/>
+
+<https://jakevdp.github.io/blog/2012/08/18/matplotlib-animation-tutorial/> -->

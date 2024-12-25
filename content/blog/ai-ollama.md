@@ -1,11 +1,11 @@
 ---
-title: "Testing AI Ollama"
+title: "Cool AI things with Ollama"
 date: 2025-12-31
 draft: true
 tags: ["Dev","Python"]
-description: 'How to use '
+description: 'How to use Ollama'
 summary: 'How I Test AI Projects'
-url: 'ai-ollama'
+url: 'ai-stuff-with-ollama'
 ---
 
 

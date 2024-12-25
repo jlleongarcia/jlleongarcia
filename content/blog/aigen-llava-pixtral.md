@@ -12,7 +12,7 @@ draft: true
 tags: ["Gen-AI"]
 description: 'From Computer Vision to AI with Vision'
 summary: ''
-url: 'multi-modal-models'
+url: 'ai-computer-vision'
 ---
 
 

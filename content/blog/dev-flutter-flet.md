@@ -146,7 +146,9 @@ We have built on top of FastAPI, which itself is based on the ASGI framework Sta
 
 #### Python for Web Assembly
 
-WebAssembly (often abbreviated as Wasm) is a binary instruction format for a stack-based virtual machine. It's designed as a portable compilation target for high-level languages like C, C++, Rust, and now, even Python, enabling deployment on the web for client and server applications. In simpler terms, 
+WebAssembly (often abbreviated as Wasm) is a binary instruction format for a stack-based virtual machine.
+
+It's designed as a portable compilation target for high-level languages like C, C++, Rust, and now, even Python, enabling deployment on the web for client and server applications. In simpler terms, 
 
 > WebAssembly allows you to run code written in languages other than JavaScript on the web at near-native speed.
 

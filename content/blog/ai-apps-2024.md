@@ -10,7 +10,7 @@ url: 'selfhosting-python-ai-apps-caddy'
 ---
 
 
-The goal of this post is:
+The goal of **this post** is:
 
 1. To review some of the [AI projects](#ai-apps) that are helpful on my workflow
 2. To learn how to use [Caddy](#how-to-setup-caddy) as [NGINX](#how-to-install-nginx)/[Traefik](#how-to-install-traefik) alternative to get HTTPs certificates

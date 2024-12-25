@@ -54,10 +54,16 @@ With **LangChain as RAG** we can [chat with CSV & DBs](https://jalcocert.github.
 
 * https://docs.llamaindex.ai/en/stable/
 
-LlamaIndex, as described, is designed to work with various tools, data sources, and workflows. It helps to augment LLMs with context from different data sources such as APIs, SQL databases, PDFs, etc., without being tied to a specific framework. The ability to integrate multiple agents, tools, and data sources makes it adaptable to various development environments and workflows.
+LlamaIndex, as described, is designed to work with various tools, data sources, and workflows. 
+
+It helps to augment LLMs with context from different data sources such as APIs, SQL databases, PDFs, etc., without being tied to a specific framework.
+
+The ability to integrate multiple agents, tools, and data sources makes it adaptable to various development environments and workflows.
 
 Context augmentation involves providing an LLM with specific data (private or external) to help solve a problem, enhancing the LLM's ability to generate relevant answers by accessing relevant data.
+
 Agents are knowledge assistants powered by LLMs that perform tasks using various tools, including Retrieval-Augmented Generation (RAG) as one tool in a larger workflow.
+
 Workflows combine multiple agents, tools, and data connectors to create complex, event-driven processes that can automate tasks, reflecting advanced LLM applications.
 
 ### Agents with PydanticAI
@@ -69,15 +75,11 @@ Workflows combine multiple agents, tools, and data connectors to create complex,
 
 ### Chat-DEV
 
-* {{< newtab url="https://.kuma.pet/" text="The   Site" >}}
-* {{< newtab url="https://github.com/louislam/-" text="The   Source Code at Github" >}}
-    * License: {{< newtab url="https://github.com/louislam/-?tab=MIT-1-ov-file#readme" text="MIT" >}} ❤️
+* {{< newtab url="https://github.com/OpenBMB/ChatDev" text="The ChatDev Repository" >}}
+    * License: {{< newtab url="https://github.com/OpenBMB/ChatDev?tab=Apache-2.0-1-ov-file#readme" text="Apache v2" >}} ❤️
 
 
-https://github.com/OpenBMB/ChatDev
-https://github.com/OpenBMB/ChatDev?tab=Apache-2.0-1-ov-file#readme
-
->  **Create Customized Software** using Natural Language Idea (through LLM-powered **Multi-Agent Collaboration**) 
+> **Create Customized Software** using Natural Language Idea (through LLM-powered **Multi-Agent Collaboration**) 
 
 ### Langroid
 

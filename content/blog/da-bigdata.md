@@ -48,12 +48,23 @@ It is time to make **a recap**.
 
 **What is Normalization?**  
 
+
+
+<!-- 
+ https://greatexpectations.io/expectations/
+ https://greatexpectations.io/blog/what-is-data-profiling
+  -->
+
+
+
 {{< /details >}}
 
 
 {{< details title="Data Modelling 📌" closed="true" >}}
 
 **What is Normalization?**  
+
+https://jalcocert.github.io/JAlcocerT/data-basics-for-data-analytics/#data-modelling-techniques
 
 {{< /details >}}
 
@@ -319,7 +330,12 @@ Tools are great.
 
 But we need to keep improving the way we use them as well.
 
+
+{{< callout type="info" >}}
+
 [Time Management](https://jalcocert.github.io/JAlcocerT/time-management-data-analytics/) is definitely one of the skills i find most valuable.
+
+{{< /callout >}}
 
 Together with [effective meetings](https://jalcocert.github.io/JAlcocerT/effective-meetings-data-analytics/), RACI Matrix & [Project Charter](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Project/Charter.md)
 
@@ -363,6 +379,20 @@ graph TD
 
 
 ## FAQ
+
+
+{{< details title="MTG Notes Template 📌" closed="true" >}}
+
+Initially, I had this one for Telecom
+
+
+{{< /details >}}
+
+
+{{< details title="Weekly Work Template... 📌" closed="true" >}}
+
+
+{{< /details >}}
 
 
 ## BI Tools Data Analytic Projects

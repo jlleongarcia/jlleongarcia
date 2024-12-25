@@ -56,15 +56,17 @@ In a nutshell, these are the **python libraries** you will need:
 ```
 
 {{< callout type="warning" >}}
-But that way of installing dependencies will get you the latest version of each. Which may cause issues between future latest versions. 
+But that way of installing **dependencies** will get you the latest version of each. Which may cause issues between future latest versions. 
 {{< /callout >}}
 
-Thats why the original Alejandro AO Project has the `requirements.txt` file specifying the version.
+Thats why the original Alejandro AO Project has the `requirements.txt` file **specifying the versions**.
 
 Its a great practice to **install [python dependencies](https://jalcocert.github.io/JAlcocerT/guide-python/#how-to-install-python-dependencies)** with:
 
 ```sh
 pip install -r requirements.txt
+
+#which it is equivalent to this way below
 #pip install langchain==0.0.208 python-dotenv==1.0.0 streamlit==1.25.0 openai==0.27.0 transformers==4.28.1 sentence_transformers==2.2.2 torch==2.0.1 tensorflow==2.12.0
 ```
 
@@ -72,15 +74,17 @@ I just removed most of them as the original file seemed to have many more than r
 
 Remember to place your OpenAI API key in the `.env` file.
 
-And run the Streamlit App:
+And run the **Streamlit App:**
 
 ```sh
 streamlit run main.py
 ```
 
+A browser will open with: `localhost:8501`
+
 ### Understanding CSV with LangChain App
 
-This is the general workflow of the Python app:
+This is the **general workflow** of the Python app:
 
 
 ```mermaid
