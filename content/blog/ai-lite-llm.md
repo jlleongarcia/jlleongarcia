@@ -233,6 +233,7 @@ https://docs.mistral.ai/api/#tag/chat/operation/chat_completion_v1_chat_completi
 
 1. Go to https://console.mistral.ai/
 2. Register (they require phone number too)
+3. Get Mistral APi key
 
 ```py
 
@@ -274,6 +275,12 @@ Requires **HF Pro**
 {{< /callout >}}
 
 ### Google Gemini API
+
+https://www.youtube.com/watch?v=iw6xozGZH3g
+
+### Open Router API
+
+https://docs.litellm.ai/docs/providers/openrouter
 
 ## Conclusions
 

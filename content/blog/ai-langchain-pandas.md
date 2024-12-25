@@ -17,7 +17,7 @@ By using Langchain, together with pandas DF, we will extract relevant informatio
 
 The weather information?
 
-Thats covered on the Python Trip Planner Project.
+Thats covered on the Python **[Trip Planner](https://github.com/JAlcocerT/Py_Trip_Planner/) Project**.
 
 ## Intro to LangChain with PandasDF
 

@@ -28,6 +28,9 @@ The goal of **this post** is:
 * Get (at least) OpenAI API for this app - <https://platform.openai.com/api-keys>
 
 
+{{< callout type="info" >}}
+People out there is doing way cooler projects, like [LibreChat](https://fossengineer.com/free-open-source-llm-tools/)
+{{< /callout >}}
 
 And you will just need to:
 
