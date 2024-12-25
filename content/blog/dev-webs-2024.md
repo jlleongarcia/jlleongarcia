@@ -12,7 +12,7 @@ It all started few years ago with my **own travel blog**.
 
 {{< cards >}}
   {{< card link="https://cyclingthere.com" title="My Travel Adventures" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="I can write and also create interesting photo galleries about my travel experiences" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/create-your-website/" title="Websites 101" subtitle="HUGO/Astro and More" >}}
+  {{< card link="https://while.cyclingthere.com" image="/blog_img/webwhilecycling.png" title="Photo Gallery Blog" subtitle="HUGO/Astro and More" >}}
 {{< /cards >}}
 
 {{< callout type="info" >}}
@@ -59,7 +59,7 @@ Later on, my first business website followed.
 
 {{< cards >}}
   {{< card link="https://cyclingthere.com" title="My Travel Adventures" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="I can write and also create interesting photo galleries about my travel experiences" >}}
-  {{< card link="http://entreagujaypunto.com/" title="Punto Photo Gallery" image="/blog_img/web/success10-punto/entreagujaypunto.png" subtitle="A Photo centered Web for Punto" >}}
+  {{< card link="http://entreagujaypunto.com/" title="Punto Photo Gallery" image="/blog_img/web/web-entreagujaypunto.png" subtitle="A Photo centered Web for Punto" >}}
 {{< /cards >}}
 
 And then I saw **people close to me, who needed help**.

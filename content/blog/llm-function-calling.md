@@ -112,6 +112,8 @@ print(content)
 
 ## Groq
 
+Groq function calling via LiteLLM - https://docs.litellm.ai/docs/providers/groq#supported-models---all-groq-models-supported
+
 ## Ollama
 
 * https://mer.vin/2024/07/ollama-tool-call-example/
