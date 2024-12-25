@@ -159,6 +159,8 @@ docker build -t privategpt .
 docker-compose up -d
 ```
 
+step by step would be:
+
 ```sh
 git clone https://github.com/imartinez/privateGPT
 

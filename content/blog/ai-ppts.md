@@ -77,7 +77,7 @@ completed_message = chat_completion.choices[0].message.content
 print(completed_message)
 ```
 
-But thats too hard to maintain, how about this?
+But thats too hard to maintain, **how about this?**
 
 ```py
 #python3 pyopen.py > output.mdx
@@ -145,6 +145,8 @@ chat_completion = client.chat.completions.create(
 completed_message = chat_completion.choices[0].message.content
 print(completed_message)
 ```
+
+> With this approach you can have the prompts saved at `./Z_AIgents/Prompts/prompts_mdsummarizer.md`
 
 ## Conclusions
 
