@@ -68,7 +68,17 @@ Normally, you will see that [RAG frameworks relate](#interesting-rag-resoures) w
 
 ## RAG Frameworks
 
-### ChatBot for Real Estate - LlamaIndex
+
+### Llama-Index
+
+You might Know Llama-Index because of its **RAG capabilities**.
+
+* https://github.com/run-llama/llama_index
+* https://docs.llamaindex.ai/en/stable/
+
+> LlamaIndex is a framework for building **context-augmented generative AI** applications with LLMs including agents and workflows.
+
+#### ChatBot for Real Estate - LlamaIndex
 
 **[LLamaIndex](https://github.com/run-llama/llama_index)** is awsome.
 
@@ -80,10 +90,17 @@ See [this repo folder](https://github.com/JAlcocerT/Data-Chat/tree/main/LLamaInd
 
 You will need [OpenAI & Anthropic APIs](#interesting-api-keys-for-llms)
 
-
 {{< callout type="info" >}}
-For the [Real Estate Web Project](https://github.com/JAlcocerT/ScrewFastMoiRealEstate) commented in [this post](https://jalcocert.github.io/JAlcocerT/astro-web-setup/) I was asked to provide a **QnA Bot**
+For the [**Real Estate Web** Project](https://github.com/JAlcocerT/ScrewFastMoiRealEstate) commented in [this post](https://jalcocert.github.io/JAlcocerT/astro-web-setup/) I was asked to provide a **QnA Bot**
 {{< /callout >}}
+
+#### LLamaIndex Use Cases
+
+But LLamaIndex can do much more than that.
+
+For some reason it is the RAG framework used at [the PrivateGPT project](https://fossengineer.com/selfhosting-privateGPT/).
+
+For example, we can use LlamaIndex Pandas Query Engine to chat with Pandas DF's as well
 
 ### Exploring LangChain
 
@@ -94,9 +111,9 @@ The [**LangChain**](https://github.com/langchain-ai/langchain) framework is amaz
 
 It can helpful to:
 
-1. Chat with PDFs
-2. Even with CSV's...
-3. ...or a Database!
+1. Chat with **PDFs**
+2. Even with **CSV's**...
+3. ...or a **Database**!
 
 {{< cards cols="2" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/" title="Blog on LangChain (CSV & DB)" >}}
@@ -107,7 +124,16 @@ It can helpful to:
 You might be interested to see also [LangGraph](https://github.com/langchain-ai/langgraph)
 {{< /callout >}}
 
+4. There is another one! - [Langchain with Pandas DF](#langchain-pandasdf-chat)
+
 #### LangChain PandasDF Chat
+
+With LangChain, we can create an agent to **chat with a Pandas DF**.
+
+It will actually create internal prompts, so that the agent will create the python pandas queries so that you get the data you wanted feed to the LLM reply.
+
+I have explored LangChain + Pandas DF at [this post](https://jalcocert.github.io/JAlcocerT/using-langchain-with-pandas-df/) and in this [DataChat repo folder](https://github.com/JAlcocerT/Data-Chat/tree/main/LangChain/ChatWithPandas)
+
 
 {{< callout type="info" >}}
 Kind of [PandasAI](#exploring-pandasai), but with LangChain
@@ -127,7 +153,7 @@ I was using the [**PandasAI**](https://github.com/Sinaptik-AI/pandas-ai) project
 
 ### HayStack as RAG Framework
 
-The [**Haystack**](https://github.com/deepset-ai/haystack) framework is completely now to me.
+The [**Haystack**](https://github.com/deepset-ai/haystack) framework is completely new to me.
 
 ```sh
 pip install haystack-ai
@@ -136,35 +162,29 @@ pip install haystack-ai
 
 ### EmbedChain - Mem0
 
-It seems that the [embedchain project](https://fossengineer.com/embedchain-ai/) got absorbed into a bigger one. Im talking about the **mem0 framework**.
+It seems that the [embedchain project](https://fossengineer.com/embedchain-ai/) got absorbed into a bigger one.
 
-### Llama-Index
-
-You might Know Llama-Index because of its RAG capabilities.
-
-* https://github.com/run-llama/llama_index
-* https://docs.llamaindex.ai/en/stable/
-
-> LlamaIndex is a framework for building context-augmented generative AI applications with LLMs including agents and workflows.
+Im talking about the **mem0 framework**.
 
 
 ### PydanticAI
 
-I was using Pydantic this year.
+I was using **Pydantic** this year.
+
+We can say it is a data validation framework, that now it has an **AI version**
 
 * https://github.com/pydantic/pydantic-ai
-* https://ai.pydantic.dev/
-* https://pypi.org/project/pydantic-ai/
+  * https://ai.pydantic.dev/
+  * https://pypi.org/project/pydantic-ai/
 
 > Agent Framework / shim to use Pydantic with LLMs. **MIT Licensed!**
-
 
 
 {{< details title="What it is Pydantic? 📌" closed="true" >}}
 
 Pydantic is a data validation and settings management library in Python. 
 
-It’s widely used for validating data and ensuring that inputs conform to the expected types and formats.
+It’s widely used for validating data and ensuring that inputs conform to the **expected types and formats**.
 
 {{< /details >}}
 
@@ -181,7 +201,6 @@ Whats next from here?
 
 Why not building something cool?
 
-
 [![Star History Chart](https://api.star-history.com/svg?repos=langchain-ai/langchain,deepset-ai/haystack,Sinaptik-AI/pandas-ai&,type=Date)](https://star-history.com/langchain-ai/langchain&deepset-ai/haystack&Sinaptik-AI/pandas-ai&Date)
 
 ### Interesting API keys for LLMs
@@ -191,37 +210,22 @@ Other LLMs that I have not covered yet in posts
 * Mistral AI
 * https://openrouter.ai/modelsOpenRouter
 
-> You can always use Ollama!
+> You can always use [Ollama](https://fossengineer.com/ollama-web-ui/)!
 
 LLMs that have already appeared:
 
-* https://console.anthropic.com/workbench/
-* https://console.groq.com/keys
-* https://platform.openai.com/api-keys
+* Anthropic API - https://console.anthropic.com/workbench/
+* GROQ API -  https://console.groq.com/keys
+* OpenAI API -  https://platform.openai.com/api-keys - This one has been **handy to try those RAG projects**
 
-* OpenAI API - 
-* Anthropic API - 
-* GROQ API - 
-
-### Running LLMs Locally
-
-* [GPT4ALL Guide](https://fossengineer.com/genai-with-python-gpt4all/) - https://github.com/nomic-ai/gpt4all
-
-### Interesting RAG Resoures
-
-#### VectorDBs
-
-* Qdrant - https://fossengineer.com/selfhosting-vector-admin-docker/
-* ChromaDB -  https://fossengineer.com/selfhosting-chromadb-docker/
 
 ---
 
 ## FAQ
 
-
 ### More Github Actions CI/CD
 
-1. https://fossengineer.com/docker-github-actions-cicd/
+1. Setup [GHA CI/CD](https://fossengineer.com/docker-github-actions-cicd/) as per **[this guide and see use cases](https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/)**
 2. https://jalcocert.github.io/JAlcocerT/create-streamlit-chatgpt/#conclusion---and-what-i-learnt
 
 * https://github.com/nektos/act
@@ -243,3 +247,14 @@ Then go to the repo folder (where `./github/workflows` are)
 ```sh
 act
 ```
+
+### Running LLMs Locally
+
+* [GPT4ALL Guide](https://fossengineer.com/genai-with-python-gpt4all/)
+  * https://github.com/nomic-ai/gpt4all
+
+### Interesting RAG Resoures
+
+#### VectorDBs
+
+[Vector Admin](https://fossengineer.com/selfhosting-vector-admin-docker/) to manage them with UI. Qdrant or [ChromaDB](https://fossengineer.com/selfhosting-chromadb-docker/) can be deployed with Containers.
