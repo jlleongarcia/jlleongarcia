@@ -230,7 +230,7 @@ Check its UI at:
 
 http://localhost:6333/dashboard#
 
-## CHroma
+## Chroma
 
 
 * <https://docs.trychroma.com/>

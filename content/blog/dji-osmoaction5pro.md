@@ -123,6 +123,7 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
     * From 10% to 80% - ~30 min
     * From 10% to 100% - ~40 min
     * If you leave the battery connected, it will loose ~2% charge during a night
+    * Here is an estimate of [space vs quality](#space-vs-quality)
 
 {{< details title="Battery Drain Tests 📌" closed="true" >}}
 
@@ -150,7 +151,7 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
         * 4K@25/rs/uw
         * And I got to **work in the SD** 4K@48/ / at ~7.5 mb/s
         * 4k@100/RS+/UW - ~ 10min ~ 10% battery drained
-    * When transfering files to my laptop I saw up to 90MB/s speed (reading from SD, writing to SSD)
+    * When transfering files to my laptop I saw up to **90MB/s** speed (reading from SD, writing to SSD) via usb-c (when transfering to the [FireBat](https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/) via USB3.0 it drops to 25-30mb/s)
 
 * Transfering files:
     * Via the Mimo App
@@ -164,10 +165,10 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
     * **2688**x1522 resolution, aka 2.7K
 
 {{< callout type="warning" >}}
-  Stabilization is great during the day, but **not during the night.**
+Stabilization is great during the day, but **not during the night.**
 {{< /callout >}}
 
-As you can see in this video, where Im just walking:
+As you can see in this video, where Im just walking in the evening:
 
 {{< youtube id="TrhDGUzuxxc" autoplay="false" >}}
 
@@ -538,66 +539,66 @@ In [Youtube Studio](https://studio.youtube.com/channel/UCPPMA8ZEusAe5dVH6PbjZFA/
 
 You can find open-source, royalty-free, or Creative Commons-licensed music from **several platforms** that offer chill music for video projects
 
-### 1. **Free Music Archive (FMA)**
+1. **Free Music Archive (FMA)**
    - **Website**: [https://freemusicarchive.org](https://freemusicarchive.org)
    - FMA offers a vast collection of free music under Creative Commons licenses, which means you can use music for your videos based on the licensing terms (some require attribution).
    - **Genres**: Many genres, including chill, ambient, and downtempo music.
    
-### 2. **YouTube Audio Library**
+2. **YouTube Audio Library**
    - **Website**: [https://www.youtube.com/audiolibrary/music](https://www.youtube.com/audiolibrary/music)
    - YouTube provides a large collection of free music and sound effects that you can use for personal and commercial projects, even outside of YouTube.
    - **Genres**: Chill, ambient, and various others.
    - **Note**: Some tracks require attribution, so always check the licensing information.
 
-### 3. **ccMixter**
+3. **ccMixter**
    - **Website**: [https://ccmixter.org](https://ccmixter.org)
    - A community music remixing site featuring tracks licensed under Creative Commons. Many artists share their music for use in videos, often for free, as long as you provide credit.
    - **Genres**: Lots of ambient, electronic, chill, and experimental tracks.
    - **Licensing**: Pay attention to the specific Creative Commons license for each track (e.g., some require attribution or are non-commercial).
 
-### 4. **Incompetech**
+4. **Incompetech**
    - **Website**: [https://incompetech.com](https://incompetech.com)
    - Kevin MacLeod’s music collection, with a wide range of genres, is available under Creative Commons. You can find many chill and ambient tracks here.
    - **Genres**: Chill, ambient, background music, etc.
    - **Licensing**: Free to use with attribution. A paid option allows use without attribution.
 
-### 5. **Bensound**
+5. **Bensound**
    - **Website**: [https://www.bensound.com](https://www.bensound.com)
    - Bensound offers a collection of royalty-free music, including a lot of chill, relaxing, and ambient tracks.
    - **Genres**: Chill, ambient, cinematic, electronic.
    - **Licensing**: Free to use with attribution for non-commercial use. Paid licenses available for commercial use.
 
-### 6. **Jamendo Music**
+6. **Jamendo Music**
    - **Website**: [https://www.jamendo.com](https://www.jamendo.com/start](https://www.jamendo.com/start)
    - Jamendo provides a large collection of royalty-free tracks for use in personal and commercial projects. They offer free music for non-commercial projects and paid licenses for commercial use.
    - **Genres**: Chill, ambient, electronic, acoustic.
    - **Licensing**: Free for personal use, and commercial licenses are available for purchase.
 
-### 7. **Audionautix**
+7. **Audionautix**
    - **Website**: [https://audionautix.com](https://audionautix.com)
    - Audionautix offers free music tracks composed by Jason Shaw, licensed under Creative Commons. You can filter by mood and genre to find chill or relaxing tracks.
    - **Genres**: Chill, acoustic, ambient, and more.
    - **Licensing**: Free with attribution under Creative Commons 4.0.
 
-### 8. **SoundCloud (Creative Commons Music)**
+8. **SoundCloud (Creative Commons Music)**
    - **Website**: [https://soundcloud.com](https://soundcloud.com)
    - Many independent artists on SoundCloud publish their music under Creative Commons licenses. You can search for music tagged with CC licenses by using the "Creative Commons" filter.
    - **Genres**: Diverse, with a good selection of chill, electronic, ambient, and more.
    - **Licensing**: Check the license of each track individually.
 
-### 9. **Musopen**
+9. **Musopen**
    - **Website**: [https://musopen.org](https://musopen.org)
    - Musopen offers free classical music, which can add a relaxing, ambient, or chill vibe to videos. All music is public domain or Creative Commons licensed.
    - **Genres**: Classical, instrumental.
    - **Licensing**: Most tracks are public domain or licensed for free use.
 
-### 10. **Pixabay Music**
+10. **Pixabay Music**
    - **Website**: [https://pixabay.com/music/](https://pixabay.com/music/)
    - Pixabay has a growing collection of royalty-free music available for use in videos, completely free for commercial and non-commercial projects.
    - **Genres**: Chill, electronic, ambient, acoustic.
    - **Licensing**: Free to use without attribution (though attribution is appreciated).
 
-### Key Points:
+Key Points:
 - Always check the specific license of each track, especially if you’re using it for commercial purposes.
 - If the track requires attribution, make sure to include proper credits as specified by the artist.
 
@@ -626,3 +627,16 @@ wanderer is a self-hosted trail database. You can upload your recorded tracks or
 * Alternative Software for Action cams - https://github.com/KonradIT/CamControl
 
 Open source app to connect with popular action cameras, replacing your vendor's closed source app system.
+
+### Space vs Quality
+
+
+|**image_quality** |meaning|resolution|space|battery|
+|:---|:---|:---|:---|:---|
+|1080p@30fps|not specified|1080p|4mb/s|not specified|
+|FHD - 1080@60fps/RS+/UW|not specified|FHD - 1080|5mb/s|not specified|
+|2.7k@30fps/RS/UltraWide|not specified|2.7k|5.6mb/s|not specified|
+|2.7k@30/RS+/UW|not specified|2.7k|not specified|not specified|
+|4K@25/rs/uw|not specified|4K|not specified|not specified|
+|4K@48|not specified|4K|7.5mb/s|not specified|
+|4k@100/RS+/UW|not specified|4k|not specified|10% for 10min|

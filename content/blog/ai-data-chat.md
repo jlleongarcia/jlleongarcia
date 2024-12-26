@@ -257,4 +257,10 @@ act
 
 #### VectorDBs
 
-[Vector Admin](https://fossengineer.com/selfhosting-vector-admin-docker/) to manage them with UI. Qdrant or [ChromaDB](https://fossengineer.com/selfhosting-chromadb-docker/) can be deployed with Containers.
+[Vector Admin](https://fossengineer.com/selfhosting-vector-admin-docker/) to manage them with UI.
+
+Qdrant or [ChromaDB](https://fossengineer.com/selfhosting-chromadb-docker/) can be deployed with Containers.
+
+<!-- https://www.youtube.com/shorts/zNLSwy_DJ_U -->
+
+{{< youtube "zNLSwy_DJ_U" >}}

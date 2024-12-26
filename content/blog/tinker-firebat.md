@@ -38,6 +38,10 @@ A very interesting **Small Factor PC** with
 
 > Value for money, Great accesibility to add an additional 2.5" drive!
 
+{{< callout type="info" >}}
+Unlike the [Orange Pi 5](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#single-board-computers), it does not bring us USB-c connectivity
+{{< /callout >}}
+
 * As you can see, the **RAM is not soldered**:
 
 ![Firebat MiniPc RAM](/blog_img/mini_pc/firebat-ram.jpg)
