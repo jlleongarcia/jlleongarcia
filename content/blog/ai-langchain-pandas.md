@@ -1,5 +1,5 @@
 ---
-title: "Using LangchAIn with pandas - Enhancing Trip Planner"
+title: "Using LangchAIn with Pandas - Enhancing Trip Planner"
 date: 2024-11-19
 draft: false
 # cover:
@@ -7,7 +7,7 @@ draft: false
 #     alt: "ChatPDF" # alt text
 #     caption: "SelfHosting A RAG App to chat with PDFs." # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
-description: 'How to use LangChain to chat with a Pandas DF.'
+description: 'How to use LangChain to chat with a Pandas DF. Compared with LlamaIndex Pandas Query Engine'
 url: 'using-langchain-with-pandas-df'
 ---
 
@@ -56,6 +56,30 @@ See the modified working code [here](https://github.com/JAlcocerT/langchain-ask-
 <!-- https://www.youtube.com/watch?v=rFQ5Kmkd4jc -->
 
 {{< youtube "rFQ5Kmkd4jc" >}}
+
+## LlamaIndex and Pandas DataFrames
+
+* https://docs.llamaindex.ai/en/stable/examples/query_engine/pandas_query_engine/
+
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LLamaIndex/LLamaPandasDF/llamaindex_pandasDF.ipynb)
+
+
+{{< callout type="info" >}}
+Ive documented LlamaIndex at **[Chat over Data](https://github.com/JAlcocerT/Data-Chat/LLamaIndex)** 💻 
+{{< /callout >}}
+
+
+## Improvements
+
+The current Trip Planner Apps does not have any AI feature. Yet.
+
+Why not adding it Chat capabilities over the weather data that we are fetching already?
+
+Its ready on Pandas DF.
+
+So lets make some tweaks and get trip planner V3 ready, this time with **AI Chat over pulled weather**
+
+> Im keeping the app framework as **DASH**
 
 
 ---

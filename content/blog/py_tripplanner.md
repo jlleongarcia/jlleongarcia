@@ -84,7 +84,9 @@ Remember that not all latitude and longitudes will have the same historical avai
 
 ### DASH
 
-Dash is a Python library for building analytical web applications without requiring extensive knowledge of front-end web development technologies like HTML, CSS, or JavaScript. It allow us create interactive, data-driven web applications by only using Python code, making it an accessible and powerful tool for data scientists and analysts looking to share their insights through web-based visualizations and dashboards.
+Dash is a Python library for building analytical **web applications** without requiring extensive knowledge of front-end web development technologies like HTML, CSS, or JavaScript.
+
+It allow us create interactive, data-driven web applications by only using Python code, making it an accessible and powerful tool for data scientists and analysts looking to share their insights through web-based **visualizations and dashboards**.
 
 * <https://github.com/plotly/dash>
 
