@@ -41,9 +41,12 @@ But how good is this?
 
 {{% details title="Connectivity Review 📌" closed="true" %}}
 
+```sh
+ping -c 4 google.com #4 pings to google
+```
 
 ```sh
-ip addr show
+ip addr show #see network interfaces
 hostname -I
 
 #sudo apt-get install net-tools
@@ -59,8 +62,15 @@ ping 9.9.9.9 #ping quad9 dns server
 
 ```sh
 sudo apt-get install dnsutils -y #dns resolution
-nslookup github.com 
+nslookup github.com #see which one is being used
+
 dig google.com
+```
+
+```sh
+sudo resolvectl dns <INTERFACE_NAME> 9.9.9.9 149.112.112.112 #change ethernet network interface to QUAD9 DNS
+#example with firebat
+#sudo resolvectl dns enp2s0f0 9.9.9.9 149.112.112.112
 ```
 
 ```sh
@@ -106,7 +116,15 @@ nslookup google.com #see that now you are using quad9 DNS
 ```
 {{< /details >}}
 
-* https://jalcocert.github.io/RPi/posts/self-internet-monit/
+
+{{< cards cols="1" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/self-internet-monit/" title="Internet Monitoring Post at RPi Blog" >}}
+{{< /cards >}}
+
+{{< callout type="info" >}}
+More [Docker config files](https://github.com/JAlcocerT/Docker/tree/main/IoT/InternetQuality) 💻 
+{{< /callout >}}
+
 
 #### Open Speed Test
 
@@ -154,7 +172,7 @@ services: #https://docs.speedtest-tracker.dev/getting-started/installation/using
             - /path/to-custom-ssl-keys:/config/keys
         depends_on:
             - db
-    db:
+    db: #you can also use the SQLITE one as per the docs
         image: mariadb:11
         restart: always
         environment:
@@ -173,6 +191,10 @@ volumes:
   speedtest-db:
 ```
 
+
+{{< callout type="info" >}}
+Using these docker container connected via Ethernet to the Firebat MiniPC 
+{{< /callout >}}
 
 > Go to the UI at: `http://192.168.1.101:8089/` with [default creds](https://docs.speedtest-tracker.dev/security/authentication) `admin@example.com` and `password`
 
