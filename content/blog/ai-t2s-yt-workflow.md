@@ -3,7 +3,7 @@ title: "My [AI] Youtube Workflow"
 date: 2024-11-07
 draft: false
 tags: ["Tinkering"]
-description: 'How to use AI to share more (and hopefully better content) with others'
+description: 'How to use AI to share more (and hopefully better video content) with others'
 summary: 'How Im slowly getting better at publishing to Youtube and creating content.'
 url: 'my-youtube-ai-workflow'
 ---
