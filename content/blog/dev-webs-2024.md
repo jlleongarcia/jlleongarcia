@@ -52,10 +52,7 @@ As described here - https://jalcocert.github.io/JAlcocerT/creating-photo-centric
 
 {{< /cards >}}
 
-Later on, my first business website followed.
-
-
-
+See some sample blogs:
 
 {{< cards >}}
   {{< card link="https://cyclingthere.com" title="My Travel Adventures" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="I can write and also create interesting photo galleries about my travel experiences" >}}

@@ -15,6 +15,31 @@ url: 'dji-oa5pro-firmware-updates'
 Currently im using the [Mimo app v2.1.8](https://www.dji.com/pl/downloads/djiapp/dji-mimo)
 {{< /callout >}}
 
+## Updating OA5Pro Firmware
+
+### Bitrates Improvements
+
+**Bit rate** refers to the amount of data processed or transmitted over a period of time, usually measured in bits per second (bps) or its larger units like kilobits per second (kbps) or megabits per second (Mbps). 
+
+For example, in video or audio, the **bit rate** determines the **quality** and **file size**:
+- A **higher bit rate** generally means **better quality** (because more data is used to represent the video/audio) but also a **larger file size**.
+- A **lower bit rate** typically results in **poorer quality** but a **smaller file size**.
+
+> It controls how much detail is retained in the video or audio, and it directly affects how large the file will be and how smooth it will play.
+
+### About OA5Pro Videos
+
+|**Image Quality**|**Space (per second)**|**Space (30min)**|**Bit Rate**|**Battery**|
+|:---|:---|:---|:---|:---|
+|1080p@30fps|4MB/s|7200MB|To be filled|—|
+|FHD - 1080@60fps/RS+/UW|5MB/s|9000MB|To be filled|—|
+|2.7k@30fps/RS/UltraWide|5.6MB/s|10080MB|To be filled|—|
+|2.7k@30/RS+/UW|—|—|To be filled|—|
+|4K@25/RS/UW|—|—|To be filled|—|
+|4K@48|7.5MB/s|13500MB|To be filled|—|
+|4k@100/RS+/UW|—|—|To be filled|10% for 10min|
+
+
 ---
 
 ## Video Workflow
@@ -55,6 +80,12 @@ CTRL+Enter to **render the video**.
 
 
 ### ShotCut
+
+```sh
+#https://flathub.org/apps/org.inkscape.Inkscape
+flatpak install flathub org.inkscape.Inkscape
+
+```
 
 ---
 

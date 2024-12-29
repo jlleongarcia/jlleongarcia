@@ -30,6 +30,9 @@ And if for some reason you are no table to do **port forwarding** with your home
 
 > This is why I got a GL-MT3000 Router, to combine it with [Tailscale VPN](#tailscale-and-gl-mt3000)
 
+![DockerHub Multi-Arch Image](/blog_img/hardware/travel-router.jpg)
+
+
 ## GL-MT3000 Travel Router
 
 
@@ -102,8 +105,10 @@ Just connect the GL-MT3000 to a hotel internet and then all the devices at your 
 And even get home address internet. Thanks to Tailscale.
 
 {{< callout type="info" >}}
-Thanks to the router Forum that helpled me with the subnet routes.
+Thanks to the router Forum that helpled me with the **subnet routes**.
 {{< /callout >}}
+
+![DockerHub Multi-Arch Image](/blog_img/hardware/tailscale-subnet-routes.jpg)
 
 {{< details title="How to Setup a Tailscale exit node 📌" closed="true" >}}
 

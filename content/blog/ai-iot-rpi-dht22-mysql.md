@@ -1,6 +1,6 @@
 ---
 title: "[AIoT] How to use LangChain to Chat with Sensor Data"
-date: 2024-12-22T21:20:21+01:00
+date: 2024-01-03T21:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
@@ -8,8 +8,6 @@ description: 'Using LangChain with OpenAI API to get information about Temperatu
 summary: 'Using LangChain with OpenAI API to get information about Temperature and Humidity of a DHT22 sensor'
 url: 'langchain-chat-with-sensor-data'
 ---
-
-
 
 It all started with the RPi projects I published here about a [Pi working together with a **DHT22 sensor**.](https://jalcocert.github.io/RPi/posts/rpi-iot-dht11-influxdb/).
 

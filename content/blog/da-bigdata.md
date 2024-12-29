@@ -1,6 +1,6 @@
 ---
 title: "Big Data Tools"
-date: 2024-12-22T23:20:21+01:00
+date: 2025-02-10T23:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
@@ -32,6 +32,10 @@ It is time to make **a recap**.
 
 
 {{< details title="The Data Catalogue📌" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="Apache Iceberg, Nessie and Time Travel" closed="true" >}}
 
 {{< /details >}}
 

@@ -1,6 +1,6 @@
 ---
 title: "[AI] Using LiteLLM to unify LLMs calls"
-date: 2024-12-25
+date: 2024-02-25
 draft: false
 # cover:
 #     image: "https://socialify.git.ci/alejandro-ao/ask-multiple-pdfs/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
@@ -21,13 +21,19 @@ Its time to discover **LiteLLM**
 
 
 {{< callout type="warning" >}}
-Make sure to understand each **API costs**. This can help - https://models.litellm.ai/ 
+Been testing LiteLLM at [AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests) 
 {{< /callout >}}
 
 
 ### LiteLLM Setup
 
 Proper [dev env please](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/#python-apps-reliability).
+
+
+{{< callout type="warning" >}}
+Then, Make sure to understand each **API costs**. This can help - https://models.litellm.ai/ 
+{{< /callout >}}
+
 
 ```sh
 python3 -m venv litellm_venv #create the venv

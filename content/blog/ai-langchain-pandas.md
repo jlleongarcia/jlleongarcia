@@ -1,5 +1,5 @@
 ---
-title: "Using LangchAIn with Pandas - Enhancing Trip Planner"
+title: "Using LangchAIn/LLamaIndex with Pandas - Enhancing Trip Planner"
 date: 2024-11-19
 draft: false
 # cover:

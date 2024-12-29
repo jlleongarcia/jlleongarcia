@@ -1,6 +1,6 @@
 ---
 title: "How to create awsome Presentations with AI" 
-date: 2024-12-25
+date: 2025-01-01
 draft: false
 tags: ["AI"]
 description: 'Creating AI Driven Presentations'
@@ -10,7 +10,7 @@ url: 'creating-presentations-with-ai'
 
 It all started with the [AIssistant post](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#slides-creation-agent).
 
-But the AI powered PPT creation deserves a separate post.
+But the **AI powered PPT creator** deserves a separate post.
 
 
 ## Understanding PPT as a Code Frameworks

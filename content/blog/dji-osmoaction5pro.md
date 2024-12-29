@@ -34,11 +34,11 @@ Definitely a huge upgrade in quality to the [RPi Camera I tested](https://jalcoc
 
 ### DJi OA5Pro Video Quality
 
-Very simple: From 1080p, to 4K videos.
+Very simple: From **1080p, to 4K** videos.
 
-Ratios 4:3 or 16:9, which is the one you one to use for Youtube, for example.
+Ratios 4:3 or **16:9**, which is the one you one to use for Youtube, for example.
 
-This is a 2.7K Video example, meaning 2688x1512 at 50FPS, during the day:
+This is a 2.7K Video example, meaning **2688x1512 at 50FPS**, during the day:
 
 {{< youtube "cqs4MkJ_4M4" >}}
 

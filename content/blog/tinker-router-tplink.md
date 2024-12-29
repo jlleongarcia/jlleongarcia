@@ -1,5 +1,5 @@
 ---
-title: "[Review]ing a TPlink 4G Router -"
+title: "[Review]ing a TPlink 4G Router Archer MR200"
 date: 2024-12-07
 draft: false
 # cover:
@@ -14,7 +14,7 @@ url: 'tplink-archer-mr200-router-review'
 
 ## Intro
 
-There is no fiber for you.
+There is **no fiber available for you**.
 
 - But my neighbour has it, why not here?
 
@@ -24,7 +24,7 @@ There is no fiber for you.
 
 - Do you have any other question?
 
-If this sounds familiar for you, you probably have a 4G router already
+If this sounds familiar for you, you probably have a **4G router** already
 
 ## TP-Link Archer MR200
 
@@ -85,6 +85,7 @@ fast
 * Regular browser speed test:
     * https://www.speedtest.pl/
     * https://speed.cloudflare.com
+    * https://www.movistar.es/test-de-velocidad/
 
 ```sh
 curl -sS https://ipinfo.io/json #the command to use
