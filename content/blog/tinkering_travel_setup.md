@@ -40,14 +40,38 @@ Proper **[DNS](https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/#dn
 
 
 {{< cards cols="2" >}}
-  {{< card link="https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/#tailscale
-  " title="TailScale Setup" >}}
+  {{< card link="https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/#tailscale" title="TailScale Setup" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/raspberry-pi-networking/" title="Wifi2Eth with Wireguard" >}}
 {{< /cards >}}
 
 
 {{< details title="Quick Tailscale Server Setup for Travelling 📌" closed="true" >}}
 
+```sh
+curl -fsSL https://tailscale.com/install.sh | sh
+# sudo apt-get install apt-transport-https &&
+# curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add - &&
+# curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.list | sudo tee /etc/apt/sources.list.d/tailscale.list &&
+# sudo apt-get update &&
+# sudo apt-get install tailscale &&
+sudo tailscale up
+tailscale ip -4 #get the ip 
+
+#sudo tailscale logout
+#sudo tailscale down
+```
+
+Make this device available as exit node
+```sh
+echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf &&
+echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.conf &&
+sudo sysctl -p /etc/sysctl.conf &&
+sudo tailscale down
+
+sudo tailscale up --advertise-exit-node
+```
+
+This required a final action on tailscale web UI.
 
 {{< /details >}}
 

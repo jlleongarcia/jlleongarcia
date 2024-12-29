@@ -17,3 +17,7 @@ In HuggingFace you will find really cool and Open AI Projects to try out:
 
 
 * <https://www.futuretools.io/?pricing-model=open-source>
+
+
+---
+

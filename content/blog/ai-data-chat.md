@@ -182,7 +182,7 @@ We can say it is a data validation framework, that now it has an **AI version**
 
 {{< details title="What it is Pydantic? 📌" closed="true" >}}
 
-Pydantic is a data validation and settings management library in Python. 
+Pydantic is a **data validation** and settings management library in Python. 
 
 It’s widely used for validating data and ensuring that inputs conform to the **expected types and formats**.
 
