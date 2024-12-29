@@ -98,9 +98,9 @@ For the [**Real Estate Web** Project](https://github.com/JAlcocerT/ScrewFastMoiR
 
 But LLamaIndex can do much more than that.
 
-For some reason it is the RAG framework used at [the PrivateGPT project](https://fossengineer.com/selfhosting-privateGPT/).
+For some reason it is the **RAG framework** used at [the PrivateGPT project](https://fossengineer.com/selfhosting-privateGPT/).
 
-For example, we can use LlamaIndex Pandas Query Engine to chat with Pandas DF's as well
+For example, we can use [LlamaIndex Pandas Query Engine](https://jalcocert.github.io/JAlcocerT/using-langchain-with-pandas-df/#llamaindex-and-pandas-dataframes) to chat with Pandas DF's as well
 
 ### Exploring LangChain
 

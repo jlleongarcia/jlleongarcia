@@ -71,7 +71,7 @@ sudo tailscale down
 sudo tailscale up --advertise-exit-node
 ```
 
-This required a final action on tailscale web UI.
+This required a **final action on tailscale web UI**.
 
 {{< /details >}}
 
@@ -94,6 +94,7 @@ Which you can combine with [Mullvad](https://jalcocert.github.io/Linux/docs/debi
 {{< details title="Quick Trip Planner Deployment 📌" closed="true" >}}
 
 
+
 {{< /details >}}
 
 ### Maps
@@ -106,9 +107,11 @@ flatpak install flathub app.organicmaps.desktop #https://flathub.org/apps/app.or
 
 ### BackUps with Nextcloud
 
-If you will be recording at 4K, you will need back up space.
+If you will be recording at 4K, you will need **back up space**.
 
 Here it comes Nextcloud as a backup solution, as it has clients for desktop/android/ios.
+
+> I also like Syncthing but it does not have ios app
 
 Get one of these connected to your SBCs at home and you are ready:
 
@@ -179,7 +182,7 @@ Setup [Nextcloud as Docker container](https://github.com/JAlcocerT/Docker/tree/m
 
 Remember that a [VPS Setup](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#other-clouds) or [some SBCs](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/) at home would be good companions.
 
-![DockerHub Multi-Arch Image](/blog_img/hardware/sbcs-x13.jpg)
+![Single Board Computers vs Thinkpad x13](/blog_img/hardware/sbcs-x13.jpg)
 
 To bring with you, a [compact laptop](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/) can also be interesting.
 
@@ -214,10 +217,14 @@ You can also get one of these portable 4G usb router (and bring a **sim adapter*
 
 #### Travel Router
 
-https://jalcocert.github.io/JAlcocerT/travel-router-gl-mt3000-review/
 
+{{< cards cols="1" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/travel-router-gl-mt3000-review/" title="TailScale Setup" >}}
+{{< /cards >}}
+
+<!-- 
 ![4g router](/blog_img/hardware/travel-router.jpg)
-
+ -->
 
 ---
 
@@ -233,4 +240,4 @@ And you can see how simple is to get [up and running with **docker and Portainer
 
 <!-- https://www.youtube.com/shorts/ox3IsWH-o7g -->
 
-No wonder why this is one of my favourite technologies to use app reliably!
+No wonder why Container is one of my favourite technologies to use for app reliability!

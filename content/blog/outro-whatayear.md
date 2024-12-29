@@ -1,12 +1,18 @@
 ---
 title: "What a Year..."
-date: 2024-12-17
+date: 2024-12-30
 draft: false
 tags: ["Dev"]
-description: 'Looking back to the learnings of this year'
-summary: 'Looking back to the learnings of this year'
+description: 'Looking back to the learnings of the year 2024.'
+summary: 'Looking back to the learnings of 2024'
 url: 'this-year-was-crazy'
 ---
+
+This year was crazy.
+
+But...on the tech side, it was quite interesting. And diverse.
+
+Let me recap a little bit.
 
 The most **interesting concepts** Ive learn this year:
 
@@ -132,6 +138,8 @@ A new Windows setup is easy [with **Chocolatey**](https://jalcocert.github.io/JA
   {{< card link="https://jalcocert.github.io/RPi/posts/pi-vs-orange/#the-raspberry-pi-4" title="A Raspberry Pi? A SBC?" >}}
 {{< /cards >}}
 
+![SBCs vs Laptop](/blog_img/hardware/sbcs-x13.jpg)
+
 {{% steps %}}
 
 ### Better SelfHosting
@@ -157,15 +165,18 @@ I got an additional **Pi4** (this time 4GB Ram, 64 bits) and was helpful to:
 * Put together few **AI Projects** to work on the RPi [here](https://jalcocert.github.io/RPi/posts/raspberry-ai-projects/)
 
 {{< callout type="warning" >}}
-Definitely want to go back to the IoT Projects and do sth with Small Solar Panels
+Definitely want to go back to the **IoT Projects** and do sth with Small Solar Panels
 {{< /callout >}}
 
 **Sources of inspiration**: [randomgarage](https://www.randomgarage.com/2018/12/raspberry-pi-automated-irrigation-system.html)
 
 ### Built a new PC!
 
-The [x300](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/) is here!
-
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/" title="Asrock x300 Review" image="/blog_img/hardware/x300.jpg" subtitle="
+The x300 is here!
+" >}}
+{{< /cards >}}
 
 * Learnt more about **benchmarks** and compared it with: [Firebat](https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/), [BMAX-B4](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#asrock-x300-and-the-bmax-b4) and...even the [ThinkPad](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/)
 * Also got amazed one more time with ARM CPUs efficiency, thanks to both [Opi5 and the RPi's](https://jalcocert.github.io/RPi/posts/pi-vs-orange/)
@@ -177,6 +188,8 @@ It was the year to go [beyond Google Compute Engine](https://jalcocert.github.io
 * I tried [Hetzner Cloud](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#analysis-paralysis---choosing-small-factor-computer)
 
 > Also gave it a try to Podman Containers, [Termux Virtualization](https://jalcocert.github.io/Linux/docs/privacy/android/#how-to-use-linux-on-android-with-termux). Oh and with [QEMU i can create **MultiArch containers** images with Github Actions](https://jalcocert.github.io/JAlcocerT/create-streamlit-chatgpt/#conclusion---and-what-i-learnt)!
+
+* And as you might now already, [container creation can be automatized with GH Actions CI/CD](https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/)
 
 {{% /steps %}}
 
@@ -256,9 +269,11 @@ I learnt a few things **about Servers** with the [X300](https://jalcocert.github
 
 {{< details title="Not more, but better SelfHosting 📌" closed="true" >}}
 
+Thanks to this sites:
+
 * <https://Selfhosted.show>
 * <https://selfh.st/>
-* [This post](https://fossengineer.com/selfhosting-favourite-aug-2024/)
+* [This blog post](https://fossengineer.com/selfhosting-favourite-aug-2024/)
 
 {{< /details >}}
 
@@ -279,7 +294,7 @@ A huge consolidation of knowledge in this area.
 * Share knowledge with a Presentation as a Code: [**SliDev**](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#slides-creation-agent) or [Marp, RemarkJS](https://fossengineer.com/create-ppt-with-code/)
     * [**SliDev example** with GHPages + Github Actions](https://github.com/JAlcocerT/Streamlit-MultiChat/tree/main/slidev)
 
-> Domain Knowledge is always key - https://jalcocert.github.io/JAlcocerT/telecom-concepts-101/
+> **Domain Knowledge** is always key - https://jalcocert.github.io/JAlcocerT/telecom-concepts-101/
 
 ### Big Data & Cloud
 
@@ -586,6 +601,10 @@ And there are many Vector DBs that you can use with Linux
 {{< /tabs >}}
 
 All of this tech will work in Linux and **with just CPU**, if you dont have a GPU handy.
+
+{{< youtube "zNLSwy_DJ_U" >}}
+
+<!-- https://www.youtube.com/shorts/zNLSwy_DJ_U -->
 
 ---
 
