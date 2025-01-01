@@ -1,6 +1,6 @@
 ---
 title: "Big Data Tools"
-date: 2025-02-10T23:20:21+01:00
+date: 2025-01-01T03:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
@@ -9,6 +9,11 @@ summary: 'A recap on SQL, PySpark and visualizations tools.'
 url: 'big-data-tools-for-data-analytics'
 ---
 
+
+{{< callout type="warning" >}}
+This Post is **WIP**
+
+{{< callout type="warning" >}}
 
 Long ago, I was covering [the analytical stack](https://jalcocert.github.io/JAlcocerT/self-taught-career-guide-for-data-analytics/#the-analytical-stack) and the most popular [concepts for a data analytics journey](https://jalcocert.github.io/JAlcocerT/data-basics-for-data-analytics/).
 

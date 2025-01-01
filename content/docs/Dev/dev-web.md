@@ -115,7 +115,21 @@ The [HUGO **Setup**](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website
 
 {{< /details >}}
 
-If you are using HUGO, embedd your images with [this shortcode](https://raw.githubusercontent.com/gohugoio/hugo/master/tpl/tplimpl/embedded/templates/shortcodes/figure.html)
+If you are using HUGO, embedd your images with [this **shortcode**](https://raw.githubusercontent.com/gohugoio/hugo/master/tpl/tplimpl/embedded/templates/shortcodes/figure.html)
+
+You can also embed [GISTS with this shortcode](https://raw.githubusercontent.com/gohugoio/hugo/refs/heads/master/tpl/tplimpl/embedded/templates/shortcodes/gist.html)
+
+Remember that shortcodes are `.html` files to be placed at ``
+
+Just use it like so in your markdown (example with the gist):
+
+`{{< gist "username" "gistID" "filename.js" >}}`
+`{{< gist jalcocert 879fecd6ae9bccaa0175d1c180a032cd "RStocks - PayoutRatioEvolution.JPG">}}`
+
+* First parameter (jalcocert): This is the GitHub username or organization that owns the Gist.
+* Second parameter (879fecd6ae9bccaa0175d1c180a032cd): This is the unique Gist ID.
+* Third parameter ("RStocks - PayoutRatioEvolution.JPG"): This is the specific file within the Gist that you want to load.
+
 
 {{< details title="How to Include Search 📌" closed="true" >}}
 

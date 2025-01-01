@@ -198,6 +198,12 @@ To bring with you, a [compact laptop](https://jalcocert.github.io/JAlcocerT/lapt
   {{< card link="https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/#video-editing-101/" title="Video Workflow" image="/blog_img/hardware/x300.jpg" subtitle="With the Asrock x300" >}}
 {{< /cards >}}
 
+Some people bring their drons.
+
+But my Tello dron is more a cool tool to get started with flying and do some Python test on it.
+
+I saw some people mounting **action cameras on their drons** with some adjustments.
+
 #### SmartPhone
 
 I am very happy with the [Android Pixel 8 Pro](https://jalcocert.github.io/JAlcocerT/pixel-8-pro-tricks/)

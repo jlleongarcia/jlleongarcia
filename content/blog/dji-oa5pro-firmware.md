@@ -27,7 +27,11 @@ For example, in video or audio, the **bit rate** determines the **quality** and 
 
 > It controls how much detail is retained in the video or audio, and it directly affects how large the file will be and how smooth it will play.
 
+{{< youtube "4qLgpJc2Ghs" >}}
+
 ### About OA5Pro Videos
+
+Before Firmwaure update
 
 |**Image Quality**|**Space (per second)**|**Space (30min)**|**Bit Rate**|**Battery**|
 |:---|:---|:---|:---|:---|
@@ -39,13 +43,16 @@ For example, in video or audio, the **bit rate** determines the **quality** and 
 |4K@48|7.5MB/s|13500MB|To be filled|—|
 |4k@100/RS+/UW|—|—|To be filled|10% for 10min|
 
+After the firmware update:
+
+* 4k UW RS - 100% to 67% battery with a 
 
 ---
 
 ## Video Workflow
 
 {{< callout type="info" >}}
-CLI code base video workflow
+CLI code base video workflow - 
 {{< /callout >}}
 
 
@@ -60,22 +67,22 @@ Cutting a Video
 
 {{< youtube "IH25sxOTKuc" >}}
 
-* S to select
-* X to activate the slicer to cut 
+* `S` to select
+* `X` to activate the slicer to cut video when selected the timeframe
 
 <!-- https://www.youtube.com/watch?v=oaqin5Nqe3A -->
 
 {{< youtube "oaqin5Nqe3A" >}}
 
 
-* CTRL + Shift + G - to ungroup and being able to remove audio only from a video
+* `CTRL + Shift + G` - to ungroup and being able to remove audio only from a video
     * Audio fade out is a good choice to finish the audios
 
 Once muted, you can use [Youtube free licensed music](https://www.youtube.com/audiolibrary?feature=blog) for your videos.
 
 
 {{< callout type="info" >}}
-CTRL+Enter to **render the video**.
+`CTRL+Enter` to **render the video**.
 {{< /callout >}}
 
 
@@ -87,6 +94,22 @@ flatpak install flathub org.inkscape.Inkscape
 
 ```
 
+### Youtube Tricks
+
+{{< gist jalcocert 879fecd6ae9bccaa0175d1c180a032cd "RStocks - IndexPriceEvolution.JPG">}}
+
+
 ---
 
 ## FAQ
+
+### Transfer Speeds
+
+The USB-c on my [x13 laptop](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark) can transfer ~250mb/s to an external ssd 2280 nvme drive.
+
+And when pulling video data from the OA5Pro:
+
+* via USB ~25mb/s
+* via USB-c ~28mb/s
+
+The limitant is the internal memory / the SD card im using with the osmo camera.

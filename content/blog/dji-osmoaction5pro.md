@@ -157,7 +157,7 @@ https://app.addy.io/docs/#account-details-GETapi-v1-account-details
     * Via the Mimo App
     * Via usb-c (**turn ON the camera first** and then connect the cable)
         * You will see one drive for the internal card and another for your SD card if any
-        * Transfer speed is ~25mb/s from the internal SD card. To the [ThinkPad](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/) I saw ~28
+        * Transfer speed is ~25mb/s from the internal SD card. To the [ThinkPad](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/) I saw ~28mb/s
 
 * File size:
     * Super night mode FHD (**Full HD**) 1920x**1080@30fps** has a 29.5mb/s video bitrate, making a 4.4gb for 20min duration. 

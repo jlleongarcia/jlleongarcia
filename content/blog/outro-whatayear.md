@@ -181,6 +181,9 @@ The x300 is here!
 * Learnt more about **benchmarks** and compared it with: [Firebat](https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/), [BMAX-B4](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#asrock-x300-and-the-bmax-b4) and...even the [ThinkPad](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/)
 * Also got amazed one more time with ARM CPUs efficiency, thanks to both [Opi5 and the RPi's](https://jalcocert.github.io/RPi/posts/pi-vs-orange/)
 
+{{< youtube "4qLgpJc2Ghs" >}}
+<!-- https://youtu.be/4qLgpJc2Ghs -->
+
 ### Third Party Servers
 
 It was the year to go [beyond Google Compute Engine](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#gcp-free-tier-deploy---cli) and the (as per my experience) arbitrary Oracle Free Tier.
@@ -369,7 +372,8 @@ I know, have to give it a try to **these APIs**: [Mistral](https://docs.mistral.
 *The final user always has the last word on rating what you've built*
 
 {{< callout type="warning" >}}
-Need to see [DLT](https://github.com/dlt-hub/dlt) - data load tool (dlt) is an open source Python library that makes data loading easy 🛠️
+
+Need to see how to use [DLT](https://github.com/dlt-hub/dlt) - data load tool (dlt) is an open source Python library that makes data loading easy 🛠️
 
 
 {{< /callout >}}
@@ -462,6 +466,8 @@ For Photos I am using [this kind of Hugo Gallery](https://jalcocert.github.io/JA
 
 ### Closing Thoughts for 2024
 
+
+
 ---
 
 ### Next Year 
@@ -494,7 +500,7 @@ Summary of Transitioning to Go for Node.js Developers:
 
 For Node.js developers, learning Go can open doors to better performance and scalability, especially when working with cloud-native technologies like **Kubernetes**.
 
-### Personal Takeaways for Node.js Developers:
+Personal Takeaways for Node.js Developers:
 
 - Embrace Go's **strict type system** and **error handling** methods to write robust code.
 - Take time to understand **Go's concurrency model** to fully utilize its potential.
@@ -537,6 +543,25 @@ SysLinuxOS provides a solid foundation for system administrators, but users shou
 
 
 {{< /details >}}
+
+
+#### Things to Continue Doing
+
+1. Focusing on the Process
+
+* Keep documenting my learning process as blog post
+* Share more videos about it (for this I need to find a workflow)
+
+
+{{< details title="Certainly next year...[Video Stuff] 📌" closed="true" >}}
+
+* Create and Publish 15 YT Videos of content I already have blog documentation
+* Explore further python animations
+* Start exploring RemotionJS framework
+
+
+{{< /details >}}
+
 
 #### Stop Coding as in 2023
 
