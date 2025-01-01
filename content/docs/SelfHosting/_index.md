@@ -12,6 +12,34 @@ sidebar:
 
 How to expose Apps safely, through your domain, with https and **without exposing your home public IP**.
 
+```sh
+sudo docker network tunnel
+```
+
+
+```yml
+version: '3.8'
+
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared
+    command: tunnel --no-autoupdate run --token yourfantastictoken
+    networks:
+      - tunnel #Cloudflare Network
+    restart: always
+
+networks:
+  tunnel: #Cloudflare Network
+```
+
+{{< callout type="info" >}}
+Remember to use the `tunnel` network on the containers you want to expose!
+{{< /callout >}}
+
+```sh
+docker network connect tunnel portainer #your_docker_container_to_expose  #network (tunnel) - service
+```
 
 ---
 

@@ -134,6 +134,14 @@ As an alternative to KDenLive
 
 https://github.com/obsproject/obs-studio
 
+```sh
+flatpak install flathub com.obsproject.Studio
+```
+
+Im recording on a Dell 25` (2560x1440 16:9)
+
+OBS Settings -> Output MPEG4 `.mp4` and codex x264
+
 ### Youtube Tricks
 
 #### Descriptions
