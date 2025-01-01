@@ -119,7 +119,7 @@ If you are using HUGO, embedd your images with [this **shortcode**](https://raw.
 
 You can also embed [GISTS with this shortcode](https://raw.githubusercontent.com/gohugoio/hugo/refs/heads/master/tpl/tplimpl/embedded/templates/shortcodes/gist.html)
 
-Remember that shortcodes are `.html` files to be placed at ``
+Remember that shortcodes are `.html` files to be placed at `/themes/theme_name/layouts/shortcodes/gist_file.html`
 
 Just use it like so in your markdown (example with the gist):
 

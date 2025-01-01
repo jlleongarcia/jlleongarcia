@@ -175,15 +175,13 @@ Definitely want to go back to the **IoT Projects** and do sth with Small Solar P
 ### Built a new PC!
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/" title="Asrock x300 Review" image="/blog_img/hardware/x300.jpg" subtitle="
-The x300 is here!
-" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/" title="Asrockx300Review" image="/blog_img/hardware/x300.jpg" subtitle="The x300 is here!" >}}
 {{< /cards >}}
 
 * Learnt more about **benchmarks** and compared it with: [Firebat](https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/), [BMAX-B4](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#asrock-x300-and-the-bmax-b4) and...even the [ThinkPad](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/)
 * Also got amazed one more time with ARM CPUs efficiency, thanks to both [Opi5 and the RPi's](https://jalcocert.github.io/RPi/posts/pi-vs-orange/)
 
-{{< youtube "4qLgpJc2Ghs" >}}
+<!-- {{< youtube "4qLgpJc2Ghs" >}} -->
 <!-- https://youtu.be/4qLgpJc2Ghs -->
 
 ### Third Party Servers
