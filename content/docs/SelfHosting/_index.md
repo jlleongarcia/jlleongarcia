@@ -43,6 +43,36 @@ docker network connect tunnel portainer #your_docker_container_to_expose  #netwo
 
 ---
 
+## FAQ
+
+
+{{% details title="Hot to mount external drives consistently" closed="true" %}}
+
+```sh
+lsblk #list them again
+lsblk -f /dev/sda1 /dev/sdb2 #see the format and the UUID of a couple of blocks
+df -h /dev/sda1 #you will see if its mounted
+```
+
+```sh
+sudo apt install ntfs-3g
+
+sudo nano /etc/fstab #forever
+UUID=some-uuid /mnt/data_ntfs_500 ntfs-3g defaults,uid=1000,gid=1000,umask=0022 0 1
+UUID=some-uuid-of-your-drive /mnt/ext4_mount_point_folder ext4 defaults 0 1
+```
+
+For one time:
+
+```sh
+sudo mkdir -p /mnt/data_ntfs_500
+sudo mount -t ntfs /dev/sda1 /mnt/data_ntfs_500/ #example with ntfs
+
+sudo mkdir -p /mnt/data_ext_2tb
+sudo mount -t ext4 /dev/sdb2 /mnt/data_ext_2tb/ #example with ntfs
+```
+
+{{% /details %}}
 
 {{% details title="Screen Rotation? 🚀" closed="true" %}}
 

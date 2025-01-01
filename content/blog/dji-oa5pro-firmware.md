@@ -129,6 +129,21 @@ Once muted, you can use [Youtube free licensed music](https://www.youtube.com/au
 As an alternative to KDenLive
 
 
+```yml
+---
+version: "2.1"
+services:
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser
+    ports:
+      - 8080:80
+    volumes:
+      - /home/Docker/FileBrowser/config:/config
+      #- /home/Docker/FileBrowser/data:/srv
+      - ~/user/Sync-Folder-Data:/srv #same as Syncthing!
+    restart: unless-stopped    
+```
 
 ### OBS
 

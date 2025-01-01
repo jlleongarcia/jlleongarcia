@@ -21,6 +21,11 @@ https://jalcocert.github.io/JAlcocerT/ai-with-iGPU
 {{< youtube "xsvTEzTirlQ" >}}
 
 
+### SBCs
+
+Pi4 4GB arm64 - `192.168.0.155`
+x13 `192.168.0.124`
+
 ## Conclusions
 
 PCs are great, but even better with proper internet connectivity
