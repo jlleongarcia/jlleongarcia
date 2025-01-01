@@ -30,15 +30,15 @@ Today, Im showing you **how to run AI faster**, thanks to iGPUs, aka AMD APUs.
 {{< youtube "xsvTEzTirlQ" >}}
 
 
-<https://www.reddit.com/r/StableDiffusion/comments/15t6uct/run_stable_diffusion_without_discrete_gpu_i/>
+* <https://www.reddit.com/r/StableDiffusion/comments/15t6uct/run_stable_diffusion_without_discrete_gpu_i/>
 
-https://www.youtube.com/watch?v=H9oaNZNJdrw
+* https://www.youtube.com/watch?v=H9oaNZNJdrw
 
 {{< youtube id="H9oaNZNJdrw" autoplay="false" >}}
 
-<https://agieverywhere.com/apuguide/AMDAPU/APU>
-<https://agieverywhere.com/apuguide/AMDAPU/APU_Linux#amdlin>
-<https://www.youtube.com/watch?v=HPO7fu7Vyw4>
+* <https://agieverywhere.com/apuguide/AMDAPU/APU>
+* <https://agieverywhere.com/apuguide/AMDAPU/APU_Linux#amdlin>
+* <https://www.youtube.com/watch?v=HPO7fu7Vyw4>
 
 ---
 
@@ -63,10 +63,12 @@ Generally, it depends on your Motherboard.
 
 You have to find **UMA Frame Buffer Side** option an enable it.
 
-https://www.youtube.com/shorts/xsvTEzTirlQ
+* https://www.youtube.com/shorts/xsvTEzTirlQ
 
-Popular GPUs: <https://store.steampowered.com/hwsurvey/videocard/>
-CPUs: <https://store.steampowered.com/hwsurvey/cpus/>
+
+According to Steam records:
+* Popular GPUs: <https://store.steampowered.com/hwsurvey/videocard/>
+* CPUs: <https://store.steampowered.com/hwsurvey/cpus/>
 
 ### LLMs
 

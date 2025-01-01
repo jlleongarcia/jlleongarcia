@@ -99,6 +99,17 @@ flatpak install flathub org.inkscape.Inkscape
 {{< gist jalcocert 879fecd6ae9bccaa0175d1c180a032cd "RStocks - IndexPriceEvolution.JPG">}}
 
 
+## Conclusions
+
+### Thanks to
+
+For explaining the firmware update process:
+
+<!-- https://www.youtube.com/watch?v=1GTZzLX86u4 -->
+
+{{< youtube "1GTZzLX86u4" >}}
+
+
 ---
 
 ## FAQ

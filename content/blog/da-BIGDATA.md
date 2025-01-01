@@ -12,8 +12,7 @@ url: 'big-data-tools-for-data-analytics'
 
 {{< callout type="warning" >}}
 This Post is **WIP**
-
-{{< callout type="warning" >}}
+{{< /callout >}}
 
 Long ago, I was covering [the analytical stack](https://jalcocert.github.io/JAlcocerT/self-taught-career-guide-for-data-analytics/#the-analytical-stack) and the most popular [concepts for a data analytics journey](https://jalcocert.github.io/JAlcocerT/data-basics-for-data-analytics/).
 

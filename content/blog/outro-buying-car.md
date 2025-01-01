@@ -28,6 +28,17 @@ pie title Car Expenses Breakdown
 
 ---
 
-## How to buy a Car in Germany
+## How to buy a Car...
+
+I mean an used car.
+
+### What to Look
+
+1. No water in the space where there should be oil (and biceversa)
+2. Tires Equally used across the contact patch
+
+### In Germany
 
 Steps...
+
+### In Netherlands

@@ -8,11 +8,13 @@ summary: 'Looking back to the learnings of 2024'
 url: 'this-year-was-crazy'
 ---
 
-This year was crazy.
+This year was **crazy**.
 
-But...on the tech side, it was quite interesting. And diverse.
+But...on the tech side, it was quite interesting.
 
-Let me recap a little bit.
+And diverse.
+
+**Let me recap** a little bit.
 
 The most **interesting concepts** Ive learn this year:
 
