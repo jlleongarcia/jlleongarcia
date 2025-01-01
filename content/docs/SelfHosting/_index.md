@@ -24,3 +24,18 @@ xrandr --output HDMI-A-0 --rotate right
 ```
 
 {{% /details %}}
+
+
+{{% details title="Whats my Local IP? 🚀" closed="true" %}}
+
+```sh
+ifconfig
+
+#ifconfig eth0 | grep -A 10 "<global>" #check mac, and transfered packages
+
+ifconfig eth0 | grep "inet " | awk '{ print $2 }' #if ETH Connected - SEE THE LOCAL IP
+
+#ifconfig tailscale0 | grep "inet " | awk '{ print $2 }' #for Tailscale
+```
+
+{{% /details %}}

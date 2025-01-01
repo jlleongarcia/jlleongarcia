@@ -30,13 +30,22 @@ sudo apt install wget
 # go version
 
 #install hugo: example v0.108 and tar.gz
-wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_extended_0.108.0_linux-amd64.tar.gz \
-&& tar -xvzf hugo_0.108.0_linux-arm.tar.gz \
-&& sudo mv hugo /usr/local/bin/ \
-&& rm hugo_0.108.0_linux-amd64.tar.gz \
-&& hugo version
+# wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_extended_0.108.0_linux-amd64.tar.gz \
+# && tar -xvzf hugo_0.108.0_linux-arm.tar.gz \
+# && sudo mv hugo /usr/local/bin/ \
+# && rm hugo_0.108.0_linux-amd64.tar.gz \
+# && hugo version
 
 #https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_0.108.0_linux-amd64.deb
+go version && \
+wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_0.108.0_linux-amd64.deb -O hugo_specific_version.deb && \
+sudo dpkg -i hugo_specific_version.deb && \
+rm hugo_specific_version.deb
+
+# wget https://github.com/gohugoio/hugo/releases/download/v0.117.0/hugo_0.117.0_linux-amd64.deb -O hugo_specific_version.deb && \
+# sudo dpkg -i hugo_specific_version.deb && \
+# rm hugo_specific_version.deb && \
+# source ~/.bashrc
 ```
 {{< /details >}}
 
@@ -47,6 +56,7 @@ But...you can also use **ARM SBCs with HUGO**
 
 {{< details title="Setup GO & HUGO - ARM64 📌" closed="true" >}}
 
+* Example with: https://github.com/gohugoio/hugo/releases/tag/v0.117.0
 
 ```sh
 ssh jalcocert@192.168.0.155
