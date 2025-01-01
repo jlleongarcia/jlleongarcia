@@ -4,7 +4,7 @@ date: 2021-10-15T23:20:21+01:00
 draft: false
 tags: ["Dev"]
 url: 'github-gists'
-summary: 'How to use gist as free image hosting'
+summary: 'How to use Github gist as free image hosting'
 ---
 
 In VSCode, the **source control graph** can guide you on whats going on.
@@ -105,11 +105,13 @@ git push origin other_branch_name #tests
 
 ### How to add an image to a Gist
 
-How to add an image to a gist
+How to add an image to a gist and then re-use it with HUGO posts.
 
-Create a gist if you haven't already. And then...
+Create a gist if you haven't already at <https://gist.github.com/>
 
-Clone your gist:
+And then...
+
+Clone your gist: `https://gist.github.com/JAlcocerT`
 
 ```sh
 # make sure to replace `<hash>` with your gist's hash
@@ -127,6 +129,10 @@ git commit -m "Add image"
 git push origin master
 ```
 
+Thanks to:
+
+{{< gist mroderick 1afdd71aa69f6b29601d335751a1a9be>}}
+<!-- https://gist.github.com/mroderick/1afdd71aa69f6b29601d335751a1a9be -->
 ---
 
 ## FAQ

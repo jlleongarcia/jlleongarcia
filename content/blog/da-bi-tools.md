@@ -11,7 +11,7 @@ url: 'setup-bi-tools-docker'
 
 ### Metabase
 
-https://github.com/JAlcocerT/Docker/tree/main/IoT/Metabase
+* https://github.com/JAlcocerT/Docker/tree/main/IoT/Metabase
 
 
 {{< callout type="info" >}}
@@ -67,3 +67,13 @@ https://github.com/JAlcocerT/Docker/tree/main/IoT/Redash
 ```yml
 
 ```
+
+
+---
+
+
+
+<!-- https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0 -->
+
+{{< gist JAlcocerT 953cab1052af58f4241f28dbc0a314a0>}}
+<!-- {{< gist jalcocert 879fecd6ae9bccaa0175d1c180a032cd "RStocks - PayoutRatioEvolution.JPG" >}} -->

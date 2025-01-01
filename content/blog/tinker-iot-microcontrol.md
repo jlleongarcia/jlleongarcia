@@ -1,6 +1,6 @@
 ---
 title: "[IoT] Setup RPi Pico W and ESP32 MicroControllers"
-date: 2024-09-02
+date: 2025-09-02
 draft: false
 tags: ["Tinkering"]
 summary: What Ive learnt while using a ESP32 and a Raspberry Pi Pico W [Microcontrollers]

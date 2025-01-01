@@ -1,14 +1,17 @@
 ---
 title: "DJI OA5 pro Firmware Updates"
-date: 2025-01-05T00:20:21+01:00
+date: 2025-01-01T00:20:21+01:00
 draft: false
 tags: ["Tinkering"]
 summary: Learning how to edit videos with the OA5Pro
-description: Updating OA5 Pro Firmware and commenting on my video edition learnings
+description: Updating OA5 Pro Firmware and commenting on my video edition workflow learnings for youtube
 url: 'dji-oa5pro-firmware-updates'
 ---
 
 
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/" title="Osmo 5 Pro" image="/blog_img/hardware/dji_oa5pro.jpg" subtitle="Oa5Pro Review" >}}
+{{< /cards >}}
 
 
 {{< callout type="info" >}}
@@ -55,11 +58,11 @@ After the firmware update:
 CLI code base video workflow - 
 {{< /callout >}}
 
-
 But there is live beyond the CLI.
 
 ### KDEnLive
 
+> https://github.com/KDE/kdenlive
 
 Cutting a Video
 
@@ -94,9 +97,17 @@ flatpak install flathub org.inkscape.Inkscape
 
 ```
 
+### OBS
+
+https://github.com/obsproject/obs-studio
+
 ### Youtube Tricks
 
-{{< gist jalcocert 879fecd6ae9bccaa0175d1c180a032cd "RStocks - IndexPriceEvolution.JPG">}}
+Youtube descriptions allow to use some kind of simplified markdown, like this:
+
+<!-- {{< gist jalcocert 1b799eb643647096b80ba0f63eccf334 "RStocks - IndexPriceEvolution.JPG">}}
+https://gist.github.com/JAlcocerT/1b799eb643647096b80ba0f63eccf334 -->
+{{< gist jalcocert 1b799eb643647096b80ba0f63eccf334>}}
 
 
 ## Conclusions
