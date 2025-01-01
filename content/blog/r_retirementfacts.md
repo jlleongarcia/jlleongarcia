@@ -13,7 +13,9 @@ url: 'r-dashboard-shinyapps'
 ---
 
 
-Inflation levels is a topic that is currently more and more listened. This will be the topic.
+Inflation levels is a topic that is currently more and more listened.
+
+It is also this post's topic.
 
 In the end of 2021 I made a simple Shiny app that I deployed into ShinyApps, that was actually showing interactively the effects of inflation.
 

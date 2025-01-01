@@ -24,6 +24,9 @@ And given a project you can get the latest Github release as per:
 
 https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/
 
+Post - Github Actions MultiArch Images.
+
+
 ### Gitlab
 
 https://jalcocert.github.io/JAlcocerT/how-to-use-gitlab/

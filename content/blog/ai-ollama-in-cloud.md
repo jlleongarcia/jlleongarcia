@@ -5,7 +5,7 @@ draft: true
 tags: ["Dev","Python"]
 description: 'How to use Ollama'
 summary: 'How I Test AI Projects'
-url: 'ai-stuff-with-ollama'
+url: 'ollama-cloud-deployment'
 ---
 
 

@@ -77,3 +77,20 @@ https://github.com/JAlcocerT/Docker/tree/main/IoT/Redash
 
 {{< gist JAlcocerT 953cab1052af58f4241f28dbc0a314a0>}}
 <!-- {{< gist jalcocert 879fecd6ae9bccaa0175d1c180a032cd "RStocks - PayoutRatioEvolution.JPG" >}} -->
+
+
+### Analytics Tools
+- [KNIME](https://www.knime.com/)
+- [Superset](https://www.opensourcealternative.to/project/Superset)
+- [Metabase](https://www.metabase.com/)
+- [Redash](https://github.com/getredash/redash)
+- [Chartbrew](https://github.com/chartbrew/chartbrew)
+- [Lightdash](https://github.com/lightdash/lightdash)
+- [MongoDB tutorial: Building Metabase Dashboards](https://www.youtube.com/watch?v=utMxX014na4)
+
+### Additional Databases and Tools
+- **MongoDB**
+- **Elasticsearch (ES)**
+- **InfluxDB**
+- **Graphite**
+- **OPENFoam**

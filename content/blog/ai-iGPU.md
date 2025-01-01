@@ -1,10 +1,10 @@
 ---
 title: "How to use iGPU's for local AI" 
-date: 2024-01-06
-draft: true
+date: 2024-04-06
+draft: false
 tags: ["Gen-AI"]
-description: ''
-summary: ''
+description: 'Activating APU Bios Setup to improve local AI'
+summary: 'Activating APU Bios Setup to improve local AI'
 url: 'ai-with-iGPU'
 ---
 

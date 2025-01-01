@@ -1,9 +1,9 @@
 ---
 title: "Streamlit Updates"
-date: 2023-12-27T23:20:21+01:00
+date: 2025-12-27T23:20:21+01:00
 draft: true
 tags: ["Dev"]
-summary: 'How to use Gitlab'
+summary: 'More cool Streamlit Stuff'
 url: 'streamlit-apps'
 ---
 

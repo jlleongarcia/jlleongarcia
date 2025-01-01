@@ -35,15 +35,14 @@ style="width: 100%; height: 450px;"></iframe>
 {{< /rawhtml >}}
 
 
-<!-- 
 ### Try me with Google Colaboratory
 
-If you have a Google account, you can run this code by uploading the .GPX file of the route that you want to visualize and avoid any installation in your computer.
+If you have a Google account, you can run this code by uploading the `.GPX` file of the route that you want to visualize and avoid any installation in your computer.
 
- [![Example image](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Py_RoutePolar.ipynb)
+[![Python Notebook - RoutePolar](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Py_RoutePolar.ipynb)
 
 
- gpx studio
+* GPX studio
 
  https://www.roadrunner.travel/articles/how-to-create-and-edit-gpx-files-with-gpx-studio/
- https://github.com/mpetazzoni/leaflet-gpx -->
+ https://github.com/mpetazzoni/leaflet-gpx

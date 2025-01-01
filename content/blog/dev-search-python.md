@@ -9,7 +9,7 @@ summary: 'How to use search the web programatically'
 
 ## Web Search with Python
 
-### google
+### Google
 
 https://pypi.org/project/googlesearch-python/
 

@@ -8,29 +8,11 @@ summary: 'I have just deployed on Github Pages content regarding Raspberry Pi'
 url: 'tbd-topics'
 ---
 
-Post - Github Actions MultiArch Images.
 
 ## General Web Resources
 - [Open Source Alternative - Add Project](https://www.opensourcealternative.to/add-project)
 - [Privacy Tools](https://www.privacytools.io/)
 
-
-
-## Analytics Tools
-- [KNIME](https://www.knime.com/)
-- [Superset](https://www.opensourcealternative.to/project/Superset)
-- [Metabase](https://www.metabase.com/)
-- [Redash](https://github.com/getredash/redash)
-- [Chartbrew](https://github.com/chartbrew/chartbrew)
-- [Lightdash](https://github.com/lightdash/lightdash)
-- [MongoDB tutorial: Building Metabase Dashboards](https://www.youtube.com/watch?v=utMxX014na4)
-
-### Additional Databases and Tools
-- **MongoDB**
-- **Elasticsearch (ES)**
-- **InfluxDB**
-- **Graphite**
-- **OPENFoam**
 
 ## Privacy Tools
 - [AdguardHome](https://github.com/AdguardTeam/AdGuardHome#getting-started)

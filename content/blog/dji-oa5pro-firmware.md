@@ -30,9 +30,14 @@ For example, in video or audio, the **bit rate** determines the **quality** and 
 
 > It controls how much detail is retained in the video or audio, and it directly affects how large the file will be and how smooth it will play.
 
-{{< youtube "4qLgpJc2Ghs" >}}
+<!-- {{< youtube "4qLgpJc2Ghs" >}} -->
 
 ### About OA5Pro Videos
+
+After the firmware update:
+
+* 4k UW RS - 100% to 67% battery with a 
+
 
 Before Firmwaure update
 
@@ -46,16 +51,13 @@ Before Firmwaure update
 |4K@48|7.5MB/s|13500MB|To be filled|—|
 |4k@100/RS+/UW|—|—|To be filled|10% for 10min|
 
-After the firmware update:
-
-* 4k UW RS - 100% to 67% battery with a 
 
 ---
 
 ## Video Workflow
 
 {{< callout type="info" >}}
-CLI code base video workflow - 
+CLI code base video workflow - https://github.com/JAlcocerT/YT-Video-Edition
 {{< /callout >}}
 
 But there is live beyond the CLI.
@@ -84,6 +86,39 @@ Cutting a Video
 Once muted, you can use [Youtube free licensed music](https://www.youtube.com/audiolibrary?feature=blog) for your videos.
 
 
+{{< details title="Rotate & Zoom in KDenLive 📌" closed="true" >}}
+
+**1. Using the "Rotate" Effect:**
+
+* **Import your video:** Drag and drop your video clip onto the Kdenlive timeline.
+* **Apply the "Rotate" effect:**
+    * Right-click on the video clip in the timeline.
+    * Select "Apply an Effect" > `Transform`. 
+    * The "Properties" window will open. Select the "Rotate" tab.
+* **Adjust the rotation:** 
+    * Use the slider or enter "900" in the "Rotate X / Y / Z" field. (Note: Kdenlive uses units of 1/10th of a degree).
+* **Preview and adjust:** 
+    * Play the video to preview the rotation. 
+    * Adjust other parameters like scaling or cropping as needed.
+* **Render your video:** 
+    * Once you're satisfied, render the project to export the rotated video.
+
+
+{{< /details >}}
+
+{{< details title="Speed Up video in KDenLive 📌" closed="true" >}}
+
+**Using the "Speed" Effect:**
+
+* **Right-click** on the video clip in the timeline.
+* Select "**Apply an Effect**" > "**Motion**" > "**Speed**."
+* **Adjust the speed:** 
+    * Use the slider or enter a value in the "Speed" field. 
+
+
+
+{{< /details >}}
+
 {{< callout type="info" >}}
 `CTRL+Enter` to **render the video**.
 {{< /callout >}}
@@ -91,11 +126,9 @@ Once muted, you can use [Youtube free licensed music](https://www.youtube.com/au
 
 ### ShotCut
 
-```sh
-#https://flathub.org/apps/org.inkscape.Inkscape
-flatpak install flathub org.inkscape.Inkscape
+As an alternative to KDenLive
 
-```
+
 
 ### OBS
 
@@ -103,12 +136,32 @@ https://github.com/obsproject/obs-studio
 
 ### Youtube Tricks
 
+#### Descriptions
+
 Youtube descriptions allow to use some kind of simplified markdown, like this:
 
 <!-- {{< gist jalcocert 1b799eb643647096b80ba0f63eccf334 "RStocks - IndexPriceEvolution.JPG">}}
 https://gist.github.com/JAlcocerT/1b799eb643647096b80ba0f63eccf334 -->
 {{< gist jalcocert 1b799eb643647096b80ba0f63eccf334>}}
 
+#### Fixed Comment
+
+
+#### Image Caption
+
+You can use **inkscape, gimp** to create a catchy image:
+
+```sh
+#https://flathub.org/apps/org.inkscape.Inkscape
+flatpak install flathub org.inkscape.Inkscape
+```
+
+or, if you have an image already but it is bigger than 2.5mb, you can use CLI to reduce it:
+
+```sh
+sudo apt install imagemagick
+convert too_big_image.jpg -quality 50% output_image.jpg #ok to upload to YT
+```
 
 ## Conclusions
 

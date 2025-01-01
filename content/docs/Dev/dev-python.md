@@ -105,3 +105,12 @@ DOCKER_BUILDKIT=1 docker build --no-cache --progress=plain -t trip_planner .
 You can use tools like: Jenkins, or Github Actions CI/CD Workflows
 
 {{< /details >}}
+
+
+## Python Notebooks
+
+Executing Python code step by step is great for exploratory purposes.
+
+We can do it with the `.ipynb`, Python notebooks:
+
+[![Python Notebook - RoutePolar](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Py_RoutePolar.ipynb)

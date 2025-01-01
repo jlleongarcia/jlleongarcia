@@ -24,7 +24,11 @@ Developed by RStudio, they leverage the infrastructure of R Markdown to allow us
 
 Flexdashboards support a variety of visual outputs, including tables, data frames, plots, and even more advanced interactive visualizations using packages such as plotly and leaflet.
 
-The strength of Flexdashboards lies in their **simplicity and ease of deployment**. They use a simple markdown syntax, which makes it easy to layout and design the dashboard. They can be rendered as standalone HTML documents, which can be easily hosted on a variety of platforms, including GitHub Pages. This makes Flexdashboards an excellent choice for static reporting and when sharing insights with an audience that does not require real-time interaction with the underlying data.
+The strength of Flexdashboards lies in their **simplicity and ease of deployment**.
+
+They use a **simple markdown syntax**, which makes it easy to layout and design the dashboard. They can be rendered as standalone HTML documents, which can be easily hosted on a variety of platforms, including GitHub Pages.
+
+This makes Flexdashboards an excellent choice for static reporting and when sharing insights with an audience that does not require real-time interaction with the underlying data.
 
 Flexdashboards are **static dashboards** - this means that they can be hosted like a **static web page** on Github pages, Gitlab pages...
 
@@ -44,7 +48,7 @@ install.packages("flexdashboard")
 To author a flexdashboard you create an **R Markdown document with the flexdashboard::flex_dashboard output** format. You can do this from within RStudio using the New R Markdown dialog:
 
 
-Let's create one Markdown file (I like to call it *index.Rmd*), that will be the one containing the logic of our flexdashboard:
+Let's create one Markdown file (I like to call it `index.Rmd`), that will be the one containing the logic of our flexdashboard:
 
 ```r
 ---
@@ -90,7 +94,9 @@ There are great sources for ideas, I would start with:
 
 ## Flexdashboard Example - Open Data Analysis
 
-Let's explore one example that I created. I created separated tabs to showcase different uses:
+Let's explore one example that I created.
+
+They have separated tabs to showcase different use-cases:
 
 * Map
 * Interactive line chart
@@ -103,23 +109,22 @@ Let's explore one example that I created. I created separated tabs to showcase d
 
 ## FAQ
 
-<!-- Flexdashboards: bootstrap, css, framekow (a,b,c),mcustomize from R with {bslib} 
-RSHiny + bslib
-
-DASH - flask, plotly.js, react.js, dash_bootstrap_components
-
-heroku
-netlify? -->
 
 ### Other Ways to Present Data with R
 
 #### How about Shiny?
 
-Shiny is another product from RStudio that offers a framework for building interactive web applications entirely in R. Shiny is more flexible than Flexdashboards and can create more complex and interactive applications. 
+Shiny is another product from RStudio that offers a framework for building interactive web applications entirely in R.
 
-Shiny allows for real-time interaction, meaning that the user's inputs can directly affect the output, and the output is updated immediately. This is ideal for creating dashboards where users may want to filter, slice, or manipulate the data to answer different questions.
+**Shiny is more flexible** than Flexdashboards and can create more complex and interactive applications. 
 
-However, **Shiny requires a running R session in the background**, which makes hosting a bit more complex compared to Flexdashboards. Shiny apps can be hosted using Shiny Server or RStudio's hosting service, ShinyApps.io.
+Shiny allows for real-time interaction, meaning that the user's inputs can directly affect the output, and the output is updated immediately.
+
+This is ideal for creating dashboards where users may want to filter, slice, or manipulate the data to answer different questions.
+
+However, **Shiny requires a running R session in the background**, which makes hosting a bit more complex compared to Flexdashboards.
+
+Shiny apps can be hosted using Shiny Server or RStudio's hosting service, `ShinyApps.io`.
 
 <!-- geojson -->
 
