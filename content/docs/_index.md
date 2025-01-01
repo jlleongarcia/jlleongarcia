@@ -3,8 +3,12 @@ title: Documentation
 next: about
 ---
 
-Welcome to the Docs! here you have an overview of what you can learn at **Linux Made Easy**.
+Welcome to the Docs!
 
+Here you have an overview of what you can learn 
+
+<!-- at **Linux Made Easy**.
+ -->
 <!-- This is a demo of the theme's documentation layout.
 
 ## Hello, World!

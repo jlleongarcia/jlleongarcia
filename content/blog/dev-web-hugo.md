@@ -16,6 +16,8 @@ To use HUGO, you just need **2 things**: GO language and HUGO.
 
 {{< details title="Setup GO & HUGO - x86 📌" closed="true" >}}
 
+Example with: https://github.com/gohugoio/hugo/releases/tag/v0.108.0
+
 ```sh
 sudo apt update -y
 sudo apt install wget
@@ -27,12 +29,14 @@ sudo apt install wget
 # source ~/.bashrc
 # go version
 
-#install hugo: example v0.108
-wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_0.108.0_linux-arm.tar.gz \
+#install hugo: example v0.108 and tar.gz
+wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_extended_0.108.0_linux-amd64.tar.gz \
 && tar -xvzf hugo_0.108.0_linux-arm.tar.gz \
 && sudo mv hugo /usr/local/bin/ \
-&& rm hugo_0.108.0_linux-arm.tar.gz \
+&& rm hugo_0.108.0_linux-amd64.tar.gz \
 && hugo version
+
+#https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_0.108.0_linux-amd64.deb
 ```
 {{< /details >}}
 

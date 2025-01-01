@@ -26,6 +26,9 @@ https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/
 
 Post - Github Actions MultiArch Images.
 
+#### Github Pages
+
+https://jalcocert.github.io/JAlcocerT/how-to-use-github-pages/
 
 ### Gitlab
 

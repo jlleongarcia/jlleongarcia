@@ -8,4 +8,4 @@ sidebar:
 ---
 
 
-For Web or for Data Analytics
+For Web or for Data Analytics.
