@@ -16,15 +16,16 @@ url: how-to-review-home-servers
 {{< /cards >}}
 
 
-https://jalcocert.github.io/JAlcocerT/ai-with-iGPU
+* https://jalcocert.github.io/JAlcocerT/ai-with-iGPU
 
 {{< youtube "xsvTEzTirlQ" >}}
 
 
 ### SBCs
 
-Pi4 4GB arm64 - `192.168.0.155`
-x13 `192.168.0.124`
+* Pi4 4GB arm64 - `192.168.0.155`
+* Pi4 2GB arm43 - `192.168.0.232`
+* x13 `192.168.0.124`
 
 ## Conclusions
 

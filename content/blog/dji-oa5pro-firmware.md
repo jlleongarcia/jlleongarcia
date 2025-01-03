@@ -115,9 +115,33 @@ Once muted, you can use [Youtube free licensed music](https://www.youtube.com/au
 * **Adjust the speed:** 
     * Use the slider or enter a value in the "Speed" field. 
 
+{{< /details >}}
 
+You can also record an audio voice cover on KDEnlive:
+
+https://www.youtube.com/watch?v=_6zOPgtSjds
+{{< youtube "_6zOPgtSjds" >}}
+
+
+{{< details title="Get the mp3, make it text and then AI audio with OpenAI 📌" closed="true" >}}
+
+* https://github.com/JAlcocerT/YT-Video-Edition
+
+If you have rendered it as `.mp4`:
+
+```sh
+sudo apt install ffmpeg
+ffmpeg -i video.mp4 audio.mp3
+```
+
+Then, pass that `.mp3` to Whisper:
+
+```sh
+
+```
 
 {{< /details >}}
+
 
 {{< callout type="info" >}}
 `CTRL+Enter` to **render the video**.
@@ -128,22 +152,6 @@ Once muted, you can use [Youtube free licensed music](https://www.youtube.com/au
 
 As an alternative to KDenLive
 
-
-```yml
----
-version: "2.1"
-services:
-  filebrowser:
-    image: filebrowser/filebrowser
-    container_name: filebrowser
-    ports:
-      - 8080:80
-    volumes:
-      - /home/Docker/FileBrowser/config:/config
-      #- /home/Docker/FileBrowser/data:/srv
-      - ~/user/Sync-Folder-Data:/srv #same as Syncthing!
-    restart: unless-stopped    
-```
 
 ### OBS
 
