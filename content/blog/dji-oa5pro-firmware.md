@@ -4,7 +4,7 @@ date: 2025-01-01T00:20:21+01:00
 draft: false
 tags: ["Tinkering"]
 summary: Learning how to edit videos with the OA5Pro
-description: Updating OA5 Pro Firmware and commenting on my video edition workflow learnings for youtube
+description: Updating OA5 Pro Firmware. Compared with a go pro hero 9 andCommenting on my new video edition learnings for youtube.
 url: 'dji-oa5pro-firmware-updates'
 ---
 
@@ -86,7 +86,7 @@ Cutting a Video
 * `CTRL + Shift + G` - to ungroup and being able to remove audio only from a video
     * Audio fade out is a good choice to finish the audios
 
-Once muted, you can use [Youtube free licensed music](https://www.youtube.com/audiolibrary?feature=blog) for your videos.
+> Once muted, you can use [Youtube free licensed music](https://www.youtube.com/audiolibrary?feature=blog) for your videos - https://www.youtube.com/audiolibrary
 
 
 {{< details title="Rotate & Zoom in KDenLive 📌" closed="true" >}}
@@ -231,7 +231,7 @@ The limitant is the internal memory / the SD card im using with the osmo camera.
 
 #### Extracting Telemtry Data from GPH9
 
-> It all started with [PhyPhox](https://jalcocert.github.io/JAlcocerT/blog/tinker-phyphox/)
+> It all started with [PhyPhox](https://jalcocert.github.io/JAlcocerT/blog/tinker-phyphox/) and [PyRouteTracker](https://jalcocert.github.io/JAlcocerT/polar-data-python-analysis/)
 
 ```sh
 sudo apt-get install libimage-exiftool-perl

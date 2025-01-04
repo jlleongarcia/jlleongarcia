@@ -16,9 +16,43 @@ url: how-to-review-home-servers
 {{< /cards >}}
 
 
-* https://jalcocert.github.io/JAlcocerT/ai-with-iGPU
 
-{{< youtube "xsvTEzTirlQ" >}}
+
+### Compact PCs
+
+https://www.youtube.com/watch?v=4qLgpJc2Ghs
+{{< youtube "4qLgpJc2Ghs" >}}
+
+https://www.youtube.com/watch?v=LgljPzqAARA
+{{< youtube "LgljPzqAARA" >}}
+
+
+{{< tabs items="Ollama,PrivateGPT,TextGeneration Web UI" >}}
+
+  {{< tab >}}
+  Probably the **Ollama is the quickest way** to [get LLMs working locally](https://fossengineer.com/selfhosting-llms-ollama), specially if you already have Docker installed.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4qLgpJc2Ghs" frameborder="0" allowfullscreen></iframe>
+  {{< /tab >}}
+  {{< tab >}}
+  Say Hi to your documents, locally, when you interact with them with [PrivateGPT Freely](https://fossengineer.com/selfhosting-local-llms-with-privateGPT)
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LgljPzqAARA" frameborder="0" allowfullscreen></iframe>
+  
+  {{< /tab >}}
+  {{< tab >}}
+
+  Yet another way to [get LLMs running locally, and with UI](https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/).
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-zNWDTqKF1E" frameborder="0" allowfullscreen></iframe>
+
+
+  {{< /tab >}}
+
+{{< /tabs >}}
 
 
 ### SBCs
@@ -38,3 +72,8 @@ PCs are great, but even better with proper internet connectivity
 
 ---
 
+## Powering Local AI
+
+* https://jalcocert.github.io/JAlcocerT/ai-with-iGPU
+
+{{< youtube "xsvTEzTirlQ" >}}

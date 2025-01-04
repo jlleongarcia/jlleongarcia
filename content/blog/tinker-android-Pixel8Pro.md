@@ -54,6 +54,8 @@ For videos, its up to **3840x2160 (4k UHD) at 60 fps** and 63.6 Mbit/s bitrate.
 * CPU: Tensor G3 (4x Cortex A510 + 4xCortex A715 + 1x Cortex X3) - ARMv8a 64bits
 * GPU: Mali-G715
 
+> Making [Android better](https://jalcocert.github.io/Linux/docs/privacy/android/#better-android-os)
+
 ### Android Apps I love!
 
 * [Obtanium](https://github.com/ImranR98/Obtainium) - Android Apps from its Source, [in FDroid](https://f-droid.org/es/packages/dev.imranr.obtainium.fdroid/)

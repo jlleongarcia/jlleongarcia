@@ -10,12 +10,15 @@ Blog Post about **DJi Tello [here](https://jalcocert.github.io/JAlcocerT/dji-tel
 
 ## Packages
 
+
+```sh
 djitellopy == 1.5
 opencv-python == 4.4.0.46
 pygame == 2.0.1
 
 math
 numpy
+```
 
 # PyCharm
 
