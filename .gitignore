@@ -1,6 +1,8 @@
 hugo.exe
 *venv/
 
+output.txt
+
 get-docker.sh
 
 *.tar.gz

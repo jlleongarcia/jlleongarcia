@@ -224,3 +224,23 @@ And when pulling video data from the OA5Pro:
 * via USB-c ~28mb/s
 
 The limitant is the internal memory / the SD card im using with the osmo camera.
+
+
+### OA5Pro vs GoProHero9
+
+
+#### Extracting Telemtry Data from GPH9
+
+> It all started with [PhyPhox](https://jalcocert.github.io/JAlcocerT/blog/tinker-phyphox/)
+
+```sh
+sudo apt-get install libimage-exiftool-perl
+exiftool -ee ./GX030390.MP4
+#exiftool -ee ./GX030390.MP4 > output.txt
+```
+
+If you do similarly with a OA5Pro video, the output is much more limited
+
+```sh
+exiftool -ee ./DJI_20241008163958_0031_D.MP4 #no GPS - no party
+```
