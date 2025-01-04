@@ -23,8 +23,10 @@ IoT Project with [Metabase+MongoDB+DHT Sensor](https://jalcocert.github.io/RPi/p
 https://www.metabase.com/data_sources/mariadb
 https://www.metabase.com/docs/latest/databases/connections/mariadb
 
+* https://hub.docker.com/r/metabase/metabase/
+* https://github.com/metabase/metabase
+
 ```yml
-version: '3'
 services:
   metabase:
     image: metabase/metabase
@@ -34,6 +36,14 @@ services:
     volumes:
       - metabase_data:/metabase-data
     restart: always
+    depends_on:
+      - mariadb
+    environment:
+      MB_DB_TYPE: mysql
+      MB_DB_DBNAME: chinook
+      MB_DB_USER: myuser
+      MB_DB_PASS: mypassword
+      MB_DB_HOST: mariadb-db
 
   mariadb:
     image: mariadb:10.5
@@ -44,12 +54,13 @@ services:
       - MYSQL_USER=myuser
       - MYSQL_PASSWORD=mypassword
     volumes:
-      - ./mariadb-data:/var/lib/mysql
+      - mariadb_data:/var/lib/mysql
     ports:
-      - "3306:3306"
-
+      - "3399:3306"
+      
 volumes:
   metabase_data:
+  mariadb_data:
 ```
 
 ### Superset

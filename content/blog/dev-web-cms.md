@@ -18,7 +18,19 @@ But I was looking for a way to integrate CMS with HUGO/Astro.
 
 ## Static CMS
 
+https://github.com/MatthiesenXYZ/astro-ghostcms
 
 ---
 
 ## FAQ
+
+
+## Icons
+
+https://github.com/akveo/eva-icons
+
+## DOmains
+
+https://developer.godaddy.com/getstarted
+Hostingger
+https://porkbun.com/api/json/v3/documentation#Domain%20Pricing

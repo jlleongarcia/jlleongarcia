@@ -924,7 +924,10 @@ Current Status:
 - Existing users can still use the codebase and license as-is, though no new updates are being released.
 
 Conclusion:
-Latitude simplifies the integration of embedded analytics for developers, allowing for easy creation and deployment of dashboards, visualizations, and queries. Its simplicity and integration with modern frontend frameworks make it a valuable tool for building analytics-rich applications.
+
+Latitude simplifies the integration of embedded analytics for developers, allowing for easy creation and deployment of dashboards, visualizations, and queries.
+
+Its simplicity and integration with modern frontend frameworks make it a valuable tool for building analytics-rich applications.
 
 Similar projects to Latitude include:
 - **Superset**: An open-source data visualization tool that allows users to create and share dashboards.

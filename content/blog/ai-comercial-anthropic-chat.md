@@ -53,7 +53,7 @@ streamlit run claude.py
 ### Getting Access to Anthropic API
 
 
-The Power of Claude 3 API: Building a Generative AI App with Anthropic Claude AI
+The Power of **Claude 3 API**: Building a Generative AI App with Anthropic Claude AI
 
 <!-- https://www.youtube.com/watch?v=ximj9QWle-g -->
 

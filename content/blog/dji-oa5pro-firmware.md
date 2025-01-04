@@ -20,6 +20,9 @@ Currently im using the [Mimo app v2.1.8](https://www.dji.com/pl/downloads/djiapp
 
 ## Updating OA5Pro Firmware
 
+<!-- https://www.youtube.com/watch?v=cfwlf_SDkQU&t -->
+{{< youtube "cfwlf_SDkQU" >}}
+
 ### Bitrates Improvements
 
 **Bit rate** refers to the amount of data processed or transmitted over a period of time, usually measured in bits per second (bps) or its larger units like kilobits per second (kbps) or megabits per second (Mbps). 
@@ -121,6 +124,8 @@ You can also record an audio voice cover on KDEnlive:
 
 https://www.youtube.com/watch?v=_6zOPgtSjds
 {{< youtube "_6zOPgtSjds" >}}
+
+
 
 
 {{< details title="Get the mp3, make it text and then AI audio with OpenAI 📌" closed="true" >}}

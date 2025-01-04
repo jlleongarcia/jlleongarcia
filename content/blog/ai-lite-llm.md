@@ -1,6 +1,6 @@
 ---
 title: "[AI] Using LiteLLM to unify LLMs calls"
-date: 2024-02-25
+date: 2025-01-04
 draft: false
 # cover:
 #     image: "https://socialify.git.ci/alejandro-ao/ask-multiple-pdfs/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
