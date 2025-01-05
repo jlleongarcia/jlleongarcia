@@ -3,7 +3,7 @@ title: "Reasons why I love Containers. Cloudflared and AI Apps"
 date: 2025-01-04
 draft: false
 tags: ["Dev"]
-description: 'Reasons to use containers: selfhosting, app bunddle, dev environment, CI/CD...'
+description: 'Reasons to use containers: selfhosting with Cloudflare tunnels, App bunddle, dev environments, CI/CD...'
 summary: 'A Container Tool recap'
 url: 'why-i-love-containers'
 ---
