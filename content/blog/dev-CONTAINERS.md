@@ -307,3 +307,8 @@ https://github.com/rapiz1/rathole
 > A lightweight and high-performance reverse proxy for NAT traversal, written in Rust. An alternative to frp and ngrok.
 
 https://noted.lol/cgnat-and-rathole/
+
+### SelfHosting Best Practices
+
+* https://www.reddit.com/r/selfhosted/comments/1beoi4l/best_practices_for_selfhosted_services/
+* https://www.reddit.com/r/homelab/wiki/index/

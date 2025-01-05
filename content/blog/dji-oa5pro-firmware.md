@@ -209,6 +209,7 @@ For explaining the firmware update process:
 
 {{< youtube "1GTZzLX86u4" >}}
 
+* https://dronexl.co/2024/10/21/dji-osmo-action-5-pro-firmware-update-bitrate/
 
 ---
 

@@ -163,6 +163,7 @@ https://dev.to/dotnetdreamer/using-android-phone-as-a-development-machine-3f39
 
 * Android alternatives: <https://www.privacytools.io/android-alternatives>
   * Ubuntu Touch
+  * [Lineage OS](https://lineageos.org/Changelog-29/)
   
 {{% details title="Private Android with LineageOS" closed="true" %}}
 

@@ -78,6 +78,7 @@ According to Steam records:
 <!-- ### What can I use to run BIG AI Models?
 
 * RunPOD
+( simplepod.ai)
 * MassedCompute -->
 
 ### Virtual Machines

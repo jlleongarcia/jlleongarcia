@@ -114,7 +114,9 @@ Example - https://github.com/tonykipkemboi/trip_planner_agent
 
 {{< youtube "TbTqA09-cwQ" >}}
 
+#### CrewAI Pandas DF Agent
 
+* https://medium.com/pythoneers/building-a-multi-agent-system-using-crewai-a7305450253e
 
 ### MetaGPT
  

@@ -390,3 +390,7 @@ Try with:
 1.  go to the theme folder
 2.  add a /static folder
 3.  add the files generated with the website
+
+### The Small Web
+
+* https://erikjohannes.no/posts/20231122-places-to-discover-the-small-web/

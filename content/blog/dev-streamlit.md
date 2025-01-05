@@ -1,11 +1,13 @@
 ---
-title: "Streamlit Updates"
+title: "Streamlit Updates. Improving Data Apps"
 date: 2025-12-27T23:20:21+01:00
 draft: true
 tags: ["Dev"]
 summary: 'More cool Streamlit Stuff'
 url: 'streamlit-apps'
 ---
+
+Streamlit is part of [Snowflake](https://www.snowflake.com/en/blog/snowflake-to-acquire-streamlit/). 
 
 https://github.com/kajarenc/stauthlib
 https://github.com/streamlit/streamlit/issues/8653
@@ -18,6 +20,9 @@ https://www.youtube.com/watch?v=4sPnOqeUDmk
 
 https://www.youtube.com/watch?v=CJ9E0Sm_hy4
 
+## Audio with Streamlit
+
+st.audio_input
 
 ---
 
@@ -40,4 +45,3 @@ https://www.youtube.com/watch?v=6AoSBpZqsRo
 #### Powerful Translator
 
 * https://www.deepl.com/en/translator
-

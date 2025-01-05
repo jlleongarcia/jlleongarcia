@@ -16,6 +16,8 @@ image:
   alt: IoT Project with Python, MongoDB, DHT11/22 sensors and Metabase.
 render_with_liquid: false -->
 
+* https://www.xda-developers.com/kubernetes-cluster-raspberry-pi-guide/
+
 Kubernetes - A tool to manage and automate automated workflows in the cloud. It orchestrates the infrastructure to accomodate the changes in workload.
 
 The developer just need to define a yml with the desired state of your K8s cluster.
