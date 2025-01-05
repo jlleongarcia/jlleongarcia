@@ -10,3 +10,6 @@ url: 'geming-setup'
 People told me to have a look to Chiaki.
 
 And to thrones of liberty.
+
+
+Also to Battle City, the NES game.

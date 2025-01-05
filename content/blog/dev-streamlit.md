@@ -12,6 +12,12 @@ Streamlit is part of [Snowflake](https://www.snowflake.com/en/blog/snowflake-to-
 https://github.com/kajarenc/stauthlib
 https://github.com/streamlit/streamlit/issues/8653
 
+To learn streamlit with youtube: https://www.youtube.com/@andfanilo
+
+
+* https://github.com/pmbaumgartner/streamlitopedia
+
+
 ### Chat Elements
 
 https://www.youtube.com/watch?v=4sPnOqeUDmk

@@ -6,13 +6,14 @@ next: docs/
 draft: false
 ---
 
-An overview of a workflow is worth...a lot.
+An **overview of a workflow** is worth...a lot.
 
 ## Diagrams for All
 
+You can make AI make these diagrams for you.
 
 {{< callout type="info" >}}
-You can make AI make these diagrams for you. Checkout [AIssistant](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#diagrams-with-ai) and its [source code](https://github.com/JAlcocerT/Streamlit-AIssistant) 💻
+Checkout [AIssistant](https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/#diagrams-with-ai) and its [source code](https://github.com/JAlcocerT/Streamlit-AIssistant) 💻
 {{< /callout >}}
 
 ### Mermaid Live
@@ -58,3 +59,13 @@ npm i -D playwright-chromium
 ### MARP and RemarkJS
 
 [Two other options](https://fossengineer.com/create-ppt-with-code/#marp) to create PPTs as a Code.
+
+### Animotion
+
+* https://github.com/animotionjs/animotion
+
+> MIT |  🪄 Create beautiful **presentations with Svelte** 
+
+{{< youtube "dBfZjv-lt2k" >}}
+
+<!-- https://www.youtube.com/watch?v=dBfZjv-lt2k&pp=ygUVam95IG9mIGNvZGUgYW5pbW90aW9u -->

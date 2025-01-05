@@ -3,7 +3,7 @@ title: "Cool AI things with Ollama"
 date: 2025-12-31
 draft: true
 tags: ["Dev","Python"]
-description: 'How to use Ollama'
+description: 'How to use Ollama - Ollama WebUI Setup'
 summary: 'How I Test AI Projects'
 url: 'ollama-cloud-deployment'
 ---
@@ -98,6 +98,10 @@ ollama run codellama
 
 ollama list
 ```
+
+## OpenWebUI
+
+https://github.com/open-webui/open-webui
 
 
 ## REST API
@@ -197,3 +201,13 @@ from llama_index.llms import Ollama
 llm = Ollama(model="orca-mini:3b") 
 print(llm.complete("What is a vector database?"))
 ```
+
+---
+
+## Ollama Alternatives
+
+### JAN
+
+https://github.com/janhq/jan
+
+> AGPLv3 |  Jan is an open source alternative to ChatGPT that runs 100% offline on your computer 

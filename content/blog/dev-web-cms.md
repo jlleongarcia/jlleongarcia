@@ -96,3 +96,10 @@ Hostingger
 https://porkbun.com/api/json/v3/documentation#Domain%20Pricing
 
 ### What are nginx Static Routes?
+
+
+### Making Webs with AI
+
+* https://github.com/rapidpages/rapidpages
+
+> MIT |  Generate React and Tailwind components using AI 
