@@ -260,6 +260,9 @@ Some [**CSS**](https://jalcocert.github.io/JAlcocerT/blog/dev-css/) will do the 
 
 {{% /steps %}}
 
+{{< youtube OaQO5gSpE4g >}}
+<!-- https://www.youtube.com/watch?v=OaQO5gSpE4g&pp=ygUXZnJlZWNvZGVjYW1wIGNzcyBjb3Vyc2U%3D -->
+
 
 ## Setup a Static CMS
 

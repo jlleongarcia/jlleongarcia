@@ -142,7 +142,7 @@ Prusa 3D printers primarily require files in G-code format for printing. G-code 
 
 {{< /details >}}
 
-
+* https://www.hackster.io/news/tom-stanton-3d-prints-an-ebike-conversion-kit-without-any-electronics-b081d2c8b598
 
 
 ## My 3D Printing Plans

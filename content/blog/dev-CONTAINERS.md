@@ -289,24 +289,13 @@ You can create Containers Automatically thanks to [CI/CD Tools, like Github Acti
 
 ## FAQ
 
-<!-- 
-### How to avoid Port Forwarding to expose Local services to the internet?
- -->
-
-
-<!-- ### How to check my device public ip?
-
-```
-
-``` -->
-
-Cloudflare alternatives?
+**Cloudflare alternatives?**
 
 https://github.com/rapiz1/rathole
 
 > A lightweight and high-performance reverse proxy for NAT traversal, written in Rust. An alternative to frp and ngrok.
 
-https://noted.lol/cgnat-and-rathole/
+* https://noted.lol/cgnat-and-rathole/
 
 ### SelfHosting Best Practices
 
