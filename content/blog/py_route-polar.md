@@ -47,7 +47,6 @@ If you have a Google account, you can run this code by uploading the `.GPX` file
 [![Python Notebook - RoutePolar](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Py_RoutePolar.ipynb)
 
 
-* GPX studio
-
- https://www.roadrunner.travel/articles/how-to-create-and-edit-gpx-files-with-gpx-studio/
- https://github.com/mpetazzoni/leaflet-gpx
+* GPX studio:
+    * https://www.roadrunner.travel/articles/how-to-create-and-edit-gpx-files-with-gpx-studio/
+    * https://github.com/mpetazzoni/leaflet-gpx

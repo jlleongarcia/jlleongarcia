@@ -20,10 +20,10 @@ url: how-to-review-home-servers
 
 ### Compact PCs
 
-https://www.youtube.com/watch?v=4qLgpJc2Ghs
+<!-- https://www.youtube.com/watch?v=4qLgpJc2Ghs -->
 {{< youtube "4qLgpJc2Ghs" >}}
 
-https://www.youtube.com/watch?v=LgljPzqAARA
+<!-- https://www.youtube.com/watch?v=LgljPzqAARA -->
 {{< youtube "LgljPzqAARA" >}}
 
 
@@ -77,3 +77,9 @@ PCs are great, but even better with proper internet connectivity
 * https://jalcocert.github.io/JAlcocerT/ai-with-iGPU
 
 {{< youtube "xsvTEzTirlQ" >}}
+
+---
+
+## FAQ
+<!-- 
+### Undervolting -->

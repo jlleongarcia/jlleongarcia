@@ -1,20 +1,18 @@
 ---
 title: "Reasons why I love Containers. Cloudflared and AI Apps"
 date: 2025-01-04
-draft: true
+draft: false
 tags: ["Dev"]
 description: 'Reasons to use containers: selfhosting, app bunddle, dev environment, CI/CD...'
-summary: 'Looking back to the learnings of 2024'
+summary: 'A Container Tool recap'
 url: 'why-i-love-containers'
 ---
 
-https://jalcocert.github.io/JAlcocerT/ai-projects-python-dependencies/#with-containers
+<!-- https://fossengineer.com/understanding-containers-for-selfhosting/ -->
 
-
-https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/
-
-https://fossengineer.com/understanding-containers-for-selfhosting/
-https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/
+{{< callout type="info" >}}
+We will be combining [Docker](#container-tech-is-cool)+[Cloudflare Tunnels](#exposing-apps-safely-with-cloudflare-tunnels)+[Streamlit as AI App](#ai-apps-with-containers-and-cloudflare-tunnels). Using [Containers to pack all Python dependencies](https://jalcocert.github.io/JAlcocerT/ai-projects-python-dependencies/#with-containers)
+{{< /callout >}}
 
 ## Container Tech is Cool
 
@@ -36,6 +34,10 @@ Unlike virtual machines, containers share the host system’s OS kernel, making 
 **Prerequisites for Containers**
 
 Before you can use containers, you need to set up the required tools. Below are the steps for setting up **Docker** and **Podman**, two of the most popular containerization tools.
+
+{{< callout type="info" >}}
+You can use the SelfHosting script I prepared [here](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
+{{< /callout >}}
 
 ### Docker Setup
 
@@ -157,13 +159,17 @@ While Docker and Podman are command-line tools, there are several **UI tools** t
 {{< /details >}}
 
 
+<!-- https://youtube.com/shorts/ox3IsWH-o7g -->
+{{< youtube "ox3IsWH-o7g" >}}
+
+
 These tools simplify the process of managing containers, especially if you prefer not to work exclusively with the command line.
 
 Setting up Docker or Podman is straightforward, and with UI tools like Portainer, Dockge, and others, managing your containers has never been easier.
 
 ## Easy SelfHosting with Containers
 
-### Exposing Apps Safelu with Cloudflare Tunnels
+### Exposing Apps Safely with Cloudflare Tunnels
 
 <!-- https://www.youtube.com/watch?v=k75PviBQeA0 -->
 <!-- https://youtu.be/k75PviBQeA0 -->
@@ -262,6 +268,22 @@ Cloudflare's Zero Trust Tunnel with Docker is a powerful solution to enhance bot
 {{< callout type="info" >}}
 If you are using a Cloud/VPS, you dont need to PortForward and can get [HTTPs with NGINX](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/#deploying-a-flask-app-like-a-pro)
 {{< /callout >}}
+
+### Creating Containers
+
+{{< callout type="info" >}}
+You can create Containers Automatically thanks to [CI/CD Tools, like Github Actions](https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/)
+{{< /callout >}}
+
+
+
+## AI Apps with Containers and Cloudflare Tunnels
+
+
+
+
+
+
 
 ---
 
