@@ -1,6 +1,8 @@
-Better YT Workflow on:
-* 
+Better **YT Workflow** on:
+ 
+* https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/#youtube-tricks
 * [this post](https://jalcocert.github.io/JAlcocerT/my-youtube-ai-workflow/)
+
 * https://github.com/JAlcocerT/YT-Video-Edition
 
 ---

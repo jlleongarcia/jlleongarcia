@@ -106,6 +106,92 @@ Cutting a Video
 * **Render your video:** 
     * Once you're satisfied, render the project to export the rotated video.
 
+{{< /details >}}
+
+
+{{< details title="Overlay a Video in KDenLive 📌" closed="true" >}}
+
+
+**1. Place Videos on the Timeline**
+
+* **Main Video:** Drag and drop your main video clip onto the bottom video track.
+* **Overlay Video:** Drag and drop the overlay video clip onto the top video track.
+
+**2. Adjust Overlay Position and Size**
+
+* **Select Overlay Clip:** Click on the overlay video clip in the timeline.
+* **Transform Effect:** Right-click on the overlay clip and select "Add Effect > Video Filters > Transform."
+* **Adjust Parameters:** In the "Transform" effect settings, you can:
+    * **Resize:** Adjust the width and height of the overlay video.
+    * **Position:** Move the overlay video within the frame using the X and Y coordinates.
+    * **Rotation:** Rotate the overlay video if needed.
+
+**3. Control Overlay Appearance (Optional)**
+
+* **Opacity:** Adjust the opacity of the overlay video in the "Transform" effect settings to make it more or less transparent.
+* **Blending Modes:** Experiment with different blending modes (e.g., "Screen," "Overlay," "Multiply") in the "Transform" effect settings to achieve various visual effects.
+
+
+**Key Considerations:**
+
+* **Video Formats:** Ensure that both videos have compatible formats and frame rates for smooth playback.
+* **Timeline Order:** The video on the top track will appear on top of the video on the bottom track.
+* **Keyframing:** Use keyframes within the "Transform" effect to animate the position, size, or opacity of the overlay video over time.
+
+
+{{< /details >}}
+
+
+
+{{< details title="Adding Text in KDenLive 📌" closed="true" >}}
+
+**1. Create a Title Clip**
+
+* **Right-click** in the "Project Bin" and select **"Add Title Clip."** 
+* This will open a new window for you to design your text.
+
+**2. Add Your Text**
+
+* **Click anywhere** within the canvas area of the title window.
+* **Type your text.**
+
+**3. Customize the Text**
+
+* **Font:** Choose from a variety of fonts installed on your system.
+* **Size:** Adjust the font size to suit your needs.
+* **Color:** Select a color for your text.
+* **Alignment:** Align the text (left, center, right).
+* **Effects:** 
+    * **Bold/Italic:** Apply bold or italic styles.
+    * **Outline:** Add an outline around the text for better visibility.
+    * **Shadow:** Create a shadow effect behind the text.
+
+**4. Adjust the Title Clip**
+
+* **Duration:** Control how long the text appears on the screen by adjusting the duration of the title clip in the timeline.
+* **Position:** Move the title clip within the timeline to determine when it appears in your video.
+* **Effects (Optional):**
+    * **Transitions:** Apply transitions (like fade in/out) to the appearance of the text.
+    * **Animations:** Use keyframes to animate the position, size, or opacity of the text over time.
+
+**5. Place the Title Clip in the Timeline**
+
+* **Drag and drop** the title clip from the "Project Bin" onto the timeline. 
+* Make sure it's on a track above your video clips.
+
+**6. Preview and Render**
+
+* **Preview** your video with the added text to see how it looks. 
+* **Render** your project to export it as a finished video file.
+
+**Tips:**
+
+* **Keep it Simple:** Avoid overly complex text overlays that can distract viewers.
+* **Readability:** Choose font sizes and colors that are easy to read on your video background.
+* **Less is More:** Use text sparingly and only when it adds value to your video.
+
+By following these steps, you can effectively add text overlays to your videos in Kdenlive to convey information, enhance storytelling, or add visual interest.
+
 
 {{< /details >}}
 
@@ -120,13 +206,52 @@ Cutting a Video
 
 {{< /details >}}
 
-You can also record an audio voice cover on KDEnlive:
+You can also **record an audio voice cover** on KDEnlive:
 
 https://www.youtube.com/watch?v=_6zOPgtSjds
 {{< youtube "_6zOPgtSjds" >}}
 
 
 
+
+{{< callout type="info" >}}
+`CTRL+Enter` to **render the video**.
+{{< /callout >}}
+
+Rendering 3 files 4k60fps@60,2Mbit/s (3840x2160) 9.1GB video from the GoPro took **~3h** with the X300. 
+
+![Streamlit with Cloudflare Tunnels Port](/blog_img/outro/kdenlive-render.png)
+
+
+It was rendering at ~6fps, so be patience, depending on your CPU.
+
+
+### ShotCut
+
+As an alternative to KDenLive.
+
+```sh
+flatpak install flathub org.shotcut.Shotcut
+```
+
+
+### OBS
+
+* https://github.com/obsproject/obs-studio
+
+```sh
+flatpak install flathub com.obsproject.Studio
+```
+
+Im recording on a Dell 25` (2560x1440 16:9).
+
+> **OBS Settings** -> Output MPEG4 `.mp4` and codex x264.
+
+
+
+### Youtube Tricks
+
+Text2Speech, Speech2Text...
 
 {{< details title="Get the mp3, make it text and then AI audio with OpenAI 📌" closed="true" >}}
 
@@ -139,7 +264,13 @@ sudo apt install ffmpeg
 ffmpeg -i video.mp4 audio.mp3
 ```
 
-Then, pass that `.mp3` to Whisper:
+Then, pass that `.mp3` to OpenAI, to get the speech:
+
+```sh
+
+```
+
+Finally, do Text2Speech, also with OpenAI:
 
 ```sh
 
@@ -147,37 +278,13 @@ Then, pass that `.mp3` to Whisper:
 
 {{< /details >}}
 
-
-{{< callout type="info" >}}
-`CTRL+Enter` to **render the video**.
-{{< /callout >}}
-
-
-### ShotCut
-
-As an alternative to KDenLive
-
-
-### OBS
-
-https://github.com/obsproject/obs-studio
-
-```sh
-flatpak install flathub com.obsproject.Studio
-```
-
-Im recording on a Dell 25` (2560x1440 16:9)
-
-OBS Settings -> Output MPEG4 `.mp4` and codex x264
-
-### Youtube Tricks
-
 #### Descriptions
 
 Youtube descriptions allow to use some kind of simplified markdown, like this:
 
 <!-- {{< gist jalcocert 1b799eb643647096b80ba0f63eccf334 "RStocks - IndexPriceEvolution.JPG">}}
 https://gist.github.com/JAlcocerT/1b799eb643647096b80ba0f63eccf334 -->
+
 {{< gist jalcocert 1b799eb643647096b80ba0f63eccf334>}}
 
 #### Fixed Comment
@@ -217,9 +324,9 @@ For explaining the firmware update process:
 
 ### Transfer Speeds
 
-The USB-c on my [x13 laptop](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark) can transfer ~250mb/s to an external ssd 2280 nvme drive.
+The USB-c on my [x13 laptop](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark) can transfer **~250mb/s to an external ssd 2280 nvme** drive.
 
-And when pulling video data from the OA5Pro:
+But, when pulling video data from the OA5Pro:
 
 * via USB ~25mb/s
 * via USB-c ~28mb/s
@@ -229,6 +336,16 @@ The limitant is the internal memory / the SD card im using with the osmo camera.
 
 ### OA5Pro vs GoProHero9
 
+1. GoPro cuts the files at ~3.7GB.
+
+Files has an interesting naming with the GoPro: `GX010389`, then it would go the `GX020389`...
+
+
+2. The bit rate when recording at 4K60 is ~60.2Mbit/s with a GPH9.
+
+The OA5Pro now was ~100Mbit/s when bit rate is selected as high.
+
+3. The **GoPro has GPS** - Which allow us to do [cool analysis with python](https://github.com/JAlcocerT/Py_RouteTracker/tree/main/Z_GoPro)
 
 #### Extracting Telemtry Data from GPH9
 
