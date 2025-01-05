@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Flask"
+title: "Getting started with Flask. Deploying Flask with NGINX."
 date: 2024-10-02T05:20:21+01:00
 draft: false
 tags: ["Dev","Python"]

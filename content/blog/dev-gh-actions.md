@@ -54,6 +54,8 @@ jobs:
         tags: ghcr.io/jalcocert/streamlit-multichat:v1.0
 ```
 
+### MultiArch Containers - QEMU 
+
 But there is a better way - Create **MultiArch images thanks to QEMU** andpush them to ghcr:
 
 ```yml
