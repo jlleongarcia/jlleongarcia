@@ -208,10 +208,14 @@ By following these steps, you can effectively add text overlays to your videos i
 
 You can also **record an audio voice cover** on KDEnlive:
 
-https://www.youtube.com/watch?v=_6zOPgtSjds
+<!-- https://www.youtube.com/watch?v=_6zOPgtSjds -->
 {{< youtube "_6zOPgtSjds" >}}
 
 
+And blur some area thanks to the **Obscure effect**
+
+<!-- https://www.youtube.com/watch?v=QehEtfw8Yas -->
+{{< youtube "QehEtfw8Yas" >}}
 
 
 {{< callout type="info" >}}

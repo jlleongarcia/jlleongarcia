@@ -325,7 +325,11 @@ DB4S is a valuable tool for users needing an intuitive interface for SQLite data
 * https://github.com/seanmorley15/AdventureLog
 
 
-{{< details title="Spliit 📌" closed="true" >}}
+* https://github.com/rohitkumbhar/surmai
+
+> MIT | Surmai is a personal/family **travel organizer**
+
+{{< details title="Spliit | Travel expenses 📌" closed="true" >}}
 
 * https://github.com/spliit-app/spliit
 
@@ -333,49 +337,30 @@ Spliit is a free and open-source alternative to Splitwise, aimed at simplifying 
 
 It addresses the need for a user-friendly platform to manage shared expenses without the hassle of ads or fees.
 
-Key Features:
+**Key Features**:
 
 - Create and share groups for expense tracking.
-
 - Add detailed expenses with descriptions.
-
 - Display balances within groups.
-
 - Create reimbursement expenses.
-
 - Progressive Web App (PWA) functionality.
-
 - Option to split expenses unevenly.
-
 - Ability to upload images and scan receipts for expenses.
-
 - Future features may include recurring expenses and import from Splitwise.
 
 Technology Stack:
 
 1. **Next.js** for web application framework.
-
 2. **TailwindCSS** for styling.
-
 3. **Prisma** for database access.
-
 4. **Vercel** for hosting.
-
-Contribution:
-
-- Open to community contributions.
-
-- Options for financial support available.
 
 Local Development:
 
 - Clone the repository and set up a local PostgreSQL server.
-
 - Follow setup instructions to run the application locally or in a Docker container.
 
 Spliit offers a robust solution for managing shared expenses and simplifies the process for users. 
-
-Similar projects include **Tricount** and **Splitwise** itself.
 
 {{< /details >}}
 
