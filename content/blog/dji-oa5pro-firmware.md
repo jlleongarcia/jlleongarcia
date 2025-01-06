@@ -357,7 +357,7 @@ exiftool -ee ./GX030390.MP4
 #exiftool -ee ./GX030390.MP4 > output.txt
 ```
 
-If you do similarly with a OA5Pro video, the output is much more limited
+If you do similarly with a OA5Pro video, the output is **much more reduced**
 
 ```sh
 exiftool -ee ./DJI_20241008163958_0031_D.MP4 #no GPS - no party

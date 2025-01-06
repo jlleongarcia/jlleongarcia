@@ -13,6 +13,10 @@ url: 'geospatial-data'
 Geospatial learnings are collected at [RouteTracker Repo](https://github.com/JAlcocerT/Py_RouteTracker) 💻
 {{< /callout >}}
 
+## GeoSpatial Data Formats
+
+### GeoJSON
+
 ### GPX
 
 Phone apps like Komoot or even [PhyPhox can save the GPS records as GPX files](https://www.leafwindow.com/en/get-gps-log-with-phyphox-and-plot-it-with-wp-gpx-maps-en/)
@@ -71,11 +75,21 @@ There is a possibility to use paid Programs to create these kind of videos:
 
 > Very interesting how those 390cc and 15cv (77) differ from the 390cc 18 cv (80) and 460cc 22cv (88km/h topspeed)
 
-### Extracting Location Data from GoPro MP4
+### Exif and Python with GoPro
+
+```sh
+sudo apt-get install libimage-exiftool-perl #install exif
+#exiftool -ee ./GX030390.MP4 #you will see it on CLI
+exiftool -ee ./GX030390.MP4 > output-GX030390.txt #saves it
+```
+
+#### Extracting Location Data from GoPro MP4
+
+
 
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Z_GoPro/gopro_explore.ipynb)
 
-### Extracting Speed Data from GoPro MP4
+#### Extracting Speed Data from GoPro MP4
 
 ---
 

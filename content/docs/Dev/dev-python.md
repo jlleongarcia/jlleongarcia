@@ -55,21 +55,25 @@ sudo apt install python3.10-venv
 
 {{< details title="Make the dependencies Work: Venv's in Python 📌" closed="true" >}}
 
-```sh
-python -m venv solvingerror_venv #create the venv
+> As per [Docs](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/)
 
-solvingerror_venv\Scripts\activate #activate venv (windows)
+```sh
+#python -m venv solvingerror_venv #create the venv
+python3 -m venv solvingerror_venv #create the venv
+
+
+3solvingerror_venv\Scripts\activate #activate venv (windows)
 source solvingerror_venv/bin/activate #(linux)
 ```
 
-Install them with:
+**Install dependencies** with:
 
 ```sh
-pip install beautifulsoup4 openpyxl pandas numpy==2.0.0
+#pip install beautifulsoup4 openpyxl pandas numpy==2.0.0
 pip install -r requirements.txt #all at once
 #pip freeze | grep langchain
 
-pip show beautifulsoup4
+#pip show beautifulsoup4
 pip list
 #pip freeze > requirements.txt #generate a txt with the ones you have!
 ```
