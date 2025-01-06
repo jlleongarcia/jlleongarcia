@@ -1,7 +1,7 @@
 ---
 title: "Geospatial Data Tricks and a GoPro"
 date: 2025-01-05T23:20:21+01:00
-draft: true
+draft: flase
 tags: ["Dev"]
 description: 'What Ive learnt so far about GeoSpatial Data Analysis. Applied to GoPro MetaData Extraction.'
 summary: '.'
@@ -17,7 +17,7 @@ Geospatial learnings are collected at [RouteTracker Repo](https://github.com/JAl
 
 Phone apps like Komoot or even [PhyPhox can save the GPS records as GPX files](https://www.leafwindow.com/en/get-gps-log-with-phyphox-and-plot-it-with-wp-gpx-maps-en/)
 
-[![Python Notebook - RoutePolar](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Py_RoutePolar.ipynb)
+
 
 > With R i learnt about many other formats.
 
@@ -41,14 +41,24 @@ Related Projects Files are at [RouteTracker](https://github.com/JAlcocerT/Py_Rou
 
 > GPLv3 | ExifTool meta information reader/writer
 
+Hey, but why would you want to...
 
+![Phyphox Android Karting](/blog_img/iot/phyphox-android.jpg)
 
-People do this kind of cool stuff:
+People do this kind of **cool stuff**:
 
 <!-- https://www.youtube.com/watch?v=2eDWxUTfZHY -->
 
 {{< youtube "2eDWxUTfZHY" >}}
 
+
+### Garmin VIRB Edit
+
+[Garmin VIRB Edit](https://www8.garmin.com/support/download_details.jsp?id=6591) for Windows
+
+<!-- https://www.youtube.com/watch?v=s5v9ZCwcung -->
+
+{{< youtube "s5v9ZCwcung" >}}
 
 ### Telemetry Overlay
 
@@ -60,10 +70,31 @@ There is a possibility to use paid Programs to create these kind of videos:
 {{< youtube "3Y-lh6hbp14" >}}
 
 > Very interesting how those 390cc and 15cv (77) differ from the 390cc 18 cv (80) and 460cc 22cv (88km/h topspeed)
+
 ### Extracting Location Data from GoPro MP4
 
-[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/test_langchainChatDB.ipynb)
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Z_GoPro/gopro_explore.ipynb)
 
 ### Extracting Speed Data from GoPro MP4
 
+---
+
 ## PhyPhox Data Extraction
+
+
+---
+
+## Polar Data Extraction
+
+<!-- [![Python Notebook - RoutePolar](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Py_RoutePolar.ipynb) -->
+
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Py_RoutePolar.ipynb)
+
+![PhyPhox Karting](/blog_img/iot/phyphox-android.jpg)
+
+![PhyPhox Karting](/blog_img/iot/Zonas-Cardiacas.png)
+
+
+---
+
+## FAQ

@@ -326,12 +326,12 @@ For explaining the firmware update process:
 
 The USB-c on my [x13 laptop](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark) can transfer **~250mb/s to an external ssd 2280 nvme** drive.
 
-But, when pulling video data from the OA5Pro:
+But, when **pulling video from the OA5Pro**:
 
 * via USB ~25mb/s
 * via USB-c ~28mb/s
 
-The limitant is the internal memory / the SD card im using with the osmo camera.
+The **limitant is the internal memory** / the SD card im using with the osmo camera.
 
 
 ### OA5Pro vs GoProHero9
@@ -361,4 +361,11 @@ If you do similarly with a OA5Pro video, the output is much more limited
 
 ```sh
 exiftool -ee ./DJI_20241008163958_0031_D.MP4 #no GPS - no party
+```
+
+
+### Out of Space?
+
+```sh
+df -h | awk '$5 > "5G" {print $0}' #list the partitions greater than 5GB
 ```

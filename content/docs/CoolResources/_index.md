@@ -30,6 +30,8 @@ Probably you will not find them on the firsts google results, yet they were help
 * https://theitguycj.com/self-host-and-share-your-videos-audio-and-pictures-with-mediacms/
 * https://blog.patshead.com/
 
+* https://www.producthunt.com/
+
 ### Interesting Docs
 
 * https://www.opensourcealternative.to/

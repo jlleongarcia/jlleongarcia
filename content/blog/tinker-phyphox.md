@@ -14,7 +14,7 @@ Related **Project Source Code** is here: <https://github.com/JAlcocerT/Py_RouteT
 {{< /callout >}}
 
 
-![PhyPhox Karting](/blog_img/IMG_20240302_132540.jpg)
+![PhyPhox Karting](/blog_img/iot/phyphox-android.jpg)
 
 {{< youtube "Ku3y3NJJURw" >}}
 

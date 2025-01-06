@@ -91,11 +91,12 @@ https://github.com/akveo/eva-icons
 
 ## Domains
 
-https://developer.godaddy.com/getstarted
-Hostingger
-https://porkbun.com/api/json/v3/documentation#Domain%20Pricing
+* https://developer.godaddy.com/getstarted
+* Hostingger
+* https://porkbun.com/api/json/v3/documentation#Domain%20Pricing
+* Cloudflare domains...
 
-### What are nginx Static Routes?
+### What are NginX Static Routes?
 
 
 ### Making Webs with AI
