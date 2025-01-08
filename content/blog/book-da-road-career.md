@@ -258,7 +258,7 @@ If you are in a rush, here is a list of bullet points:
             * Buffer for Unexpected Challenges: Account for potential unforeseen challenges or dependencies that may arise during the data analysis process. **Add a buffer in the estimation to accommodate these uncertainties** and mitigate risks.
                 * **Bottom-Up** Approach + Buffering or Analogous Estimations can serve a starting point
             * Validate and Review: Regularly review and validate the estimation against the progress of the analysis task. Adjust the estimation if necessary based on real-time feedback and evolving project requirements.
-            * > Estimations are the compass that guides a project through the uncharted territory of time and resources. Just as a traveler relies on a map to navigate, accurate estimations provide a roadmap for planning, allocation, and decision-making. They set realistic expectations, helping stakeholders understand project timelines, costs, and potential risks.
+            * > **Estimations** are the compass that guides a project through the uncharted territory of time and resources. Just as a traveler relies on a map to navigate, accurate estimations provide a roadmap for planning, allocation, and decision-making. They set **realistic expectations**, helping stakeholders understand project timelines, costs, and potential risks.
 
 
 * While collecting **requirements**, be sure that the follow [these principles](/requirements-data-analytics/#requirements---must-have):

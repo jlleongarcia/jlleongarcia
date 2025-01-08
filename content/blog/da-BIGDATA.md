@@ -58,12 +58,6 @@ It is time to make **a recap**.
 
 
 
-<!-- 
- https://greatexpectations.io/expectations/
- https://greatexpectations.io/blog/what-is-data-profiling
-  -->
-
-
 
 {{< /details >}}
 
@@ -189,6 +183,12 @@ You can now have [conversations with a DB via LLMs as described **here**](https:
 
 #### Snowflake
 
+It is a daa warehouse.
+
+You can design it to have a bronze/silver/gold architecture (aka **MEDALLION** architecture).
+
+
+
 {{< cards >}}
   {{< card link="https://wetrustindata.com/data_vault_with_snowflake/" title="Data Vault w Snowflake ↗" icon="book-open" >}}
 {{< /cards >}}
@@ -275,6 +275,23 @@ If you are preparing a Data Engineering Interview, make sure to check [this](htt
 
 #### DBT
 
+DBT can help us to make automatization the model/table creation in SQL.
+
+Its very handy to have the tag section, so that you can create the logic of the table involving different CTEs (each of them defined in a different file).
+
+DBT can also help us make tests (schema, rows, aggregations test) thanks to the [package **dbt_expectatitions**](https://hub.getdbt.com/calogica/dbt_expectations/latest/).
+
+The test are configured with a `.yml` file
+
+> Does it remind to **python [great expectations](https://docs.greatexpectations.io/docs/core/introduction/try_gx/)**? data profiling/validation, anybody? :)
+
+<!-- 
+ https://greatexpectations.io/expectations/
+ https://greatexpectations.io/blog/what-is-data-profiling
+  -->
+
+<!-- pydantic -->
+
 {{< cards >}}
   {{< card link="https://wetrustindata.com/how_to_test_data_solutions/" title="Test Data Pipelines with SQL & DBT" icon="book-open" >}}
 {{< /cards >}}
@@ -298,9 +315,17 @@ https://openfaas.com/
 
 #### ADF
 
- **Azure Data Factory (ADF)** is a **data engineering tool** within the Azure ecosystem, designed for **orchestrating workflows** and **managing ETL/ELT processes**.
+
+Talend is like Azure data factory.
+
+I mean, a data integration tool.not a big data tool
+
+You can plug input sources from places like APIs or SAP and direct it towards your DWH, like snowflake
+
+
+**Azure Data Factory (ADF)** is a **data engineering tool** within the Azure ecosystem, designed for **orchestrating workflows** and **managing ETL/ELT processes**.
  
- It shares similarities with **Airflow** for workflow orchestration and **dbt** for transformations, but with key differences:  
+It shares similarities with **Airflow** for workflow orchestration and **dbt** for transformations, but with key differences:  
 
 - **Compared to Airflow**:  ADF is a fully managed service that focuses on data pipelines, whereas Airflow is a general-purpose workflow orchestrator with more flexibility and customization but requires setup and maintenance.  
 
