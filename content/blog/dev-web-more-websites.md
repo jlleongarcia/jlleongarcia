@@ -177,6 +177,9 @@ You can print to pdf, add your logo, taxes, CSS...
   * https://subscribepage.io/listy#
 
 <!-- * Proposed: bogusiabachata.pro -->
+<!-- 
+ecommerce
+https://polkabikes.pl/ -->
 
 <!-- More ppl to help - future CLIENTS
 

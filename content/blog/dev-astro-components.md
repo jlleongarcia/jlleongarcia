@@ -8,7 +8,7 @@ summary: 'How to get better with ASTRO as SSG (for non web-devs). My favourite c
 url: 'understanding-astro-ssg-components'
 ---
 
-There is one thing that you need to understand to be on the top percentile of webs.
+There is one thing that you need to understand to be on the **top percentile of webs**.
 
 ![Just use Astro - IQ Percentiles](/blog_img/IQ_default.jpg)
 
@@ -31,6 +31,16 @@ CSS Link ---> -->
 3. [OG and SEO](#astro-opengraph-and-seo-metadata)
 4. RSS
 5. SiteMap
+
+If you dont know yet, this is **Astro, the HTML first framework**.
+
+<!-- https://www.youtube.com/watch?v=rRxuVOutmFQ -->
+{{< youtube "rRxuVOutmFQ" >}}
+
+{{< youtube "XRe560_vVF0" >}}
+<!-- https://www.youtube.com/watch?v=XRe560_vVF0 -->
+
+> Thanks to both, code to the moon and Awsome YT channels
 
 ## Adding SiteMap for Astro Pages
 
@@ -221,6 +231,8 @@ export default defineConfig({
 > Also works with HUGO!
 
 ### PageFind
+
+Static web search with low bandwitdh
 
 * PageFind - https://github.com/cloudcannon/pagefind
   * https://github.com/cloudcannon/pagefind?tab=MIT-1-ov-file#readme

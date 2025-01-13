@@ -7,7 +7,7 @@ summary: 'Interesting stuff Ive learn along the way when trying to make better W
 url: 'create-your-website'
 ---
 
-You can create cool static websites with these frameworks, and also with [Remix](https://github.com/jacob-ebey/remix-ssg).
+You can create **cool static websites** with these frameworks, and also with [Remix](https://github.com/jacob-ebey/remix-ssg).
 
 I mean, with HUGO, Astro, NodeJS, jekyll...
 
@@ -18,10 +18,17 @@ And if you are new to Websites, do it (The Web [Deployment](#select-the-deployme
 
 Look always for the `<head>` - It will guide you to a `Base.astro`, `BaseLayout.astro`, `head.html`...
 
-In there you can do interesting things, like adding web analytics.
+In there you can do interesting things, like adding **web analytics**.
 
 {{< /details >}}
 
+**Features** that most likely you will want to add to a Website:
+
+0. **Pre-Requisites**: Fast and Secure (SSL, https)
+1. Search: Pagefind, FuseJS,...
+2. Scheduled Posts: 
+3. Internationalization?
+4. A CDN?
 
 {{< details title="About favicons 📌" closed="true" >}}
 
