@@ -88,7 +88,7 @@ Now, we just need to run the script, so that the `html` gets renderd (**knitted*
 Rscript -e "rmarkdown::render('my_dashboard.Rmd')"
 ```
 
-Now you can quickly see the result by opening the html file, or by:
+Now you can quickly see the result by **opening the html file**, or by:
 
 ```sh
 python3 -m http.server 8000 #or 8001 if thats taken...
@@ -146,6 +146,24 @@ rmarkdown::render_site("index.Rmd")
 I Like to have those in a specific file **Flexdashboards.Rmd** to make easier the workflow.
 
 After completion, you will see a new /docs folder containing the dashboard that will get **displayed at Github**.
+
+Remember that you will need to install R dependnecies:
+
+
+```sh
+sudo apt-get install libgdal-dev libproj-dev libgeos-dev
+
+R
+#install.packages("leaflet")
+install.packages("sf")      # Simple Features package for spatial data
+#install.packages("leaflet", dependencies = TRUE)
+
+install.packages("remotes")
+remotes::install_github("rstudio/leaflet")
+remotes::install_github("ropensci/plotly")
+
+q()
+```
 
 ### FlexDashboard with Github Pages
 
