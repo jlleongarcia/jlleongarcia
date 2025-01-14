@@ -15,6 +15,8 @@ url: 'using-astro-templates'
 
 Github is a good starting point.
 
+You can take components ideas, like: `::github{repo="saicaca/fuwari"}`
+
 ### Clone it
 
 Make sure you are free to use the theme as per its License and then **clone it**:

@@ -9,9 +9,19 @@ url: 'create-your-website'
 
 You can create **cool static websites** with these frameworks, and also with [Remix](https://github.com/jacob-ebey/remix-ssg).
 
+Which frameworks? 
+
 I mean, with HUGO, Astro, NodeJS, jekyll...
 
 And if you are new to Websites, do it (The Web [Deployment](#select-the-deployment-method)) with [Github Pages](https://jalcocert.github.io/JAlcocerT/how-to-use-github-pages/) to get a free subdomain with it.
+
+If you come from a Data Analytics domain and this sounds too far out of reach. You are wrong.
+
+I discovered static sites thanks to using first [Flexdashboards in R language](https://jalcocert.github.io/JAlcocerT/guide-r-flexdashboards-in-github-pages/).
+
+These dashboards are consolidated into **"just" html information**, like static sites.
+
+And you bet they are cool and functional.
 
 {{< details title="Important Files for all Webs 📌" closed="true" >}}
 
@@ -257,13 +267,22 @@ firebase deploy #you will get something like -> https://jalcocertech.web.app/
 
 ### Get Better at Webs
 
-* https://stateofjs.com/en-US
-* Web Analytics: with Umami or Tianji
+1. https://stateofjs.com/en-US
+*
+
+
+2. **Web Analytics**: you have several options, with Umami or Tianji as alternatives to Google Analytics.
 
 
 {{< callout type="info" >}}
-Some [**CSS**](https://jalcocert.github.io/JAlcocerT/blog/dev-css/) will do the Trick. As well as **JS** libraries like: PhotoSwipe,...
+Some [**CSS**](https://jalcocert.github.io/JAlcocerT/blog/dev-css/) will do the Trick. As well as [**JS** libraries](https://jalcocert.github.io/JAlcocerT/javascript-for-static-websites) like: PhotoSwipe,...
 {{< /callout >}}
+
+{{< details title="Examples of People Doing Cool Stuff 📌" closed="true" >}}
+
+* https://blog.cavelab.dev/2021/11/wifi-relays-for-ventilation/
+
+{{< /details >}}
 
 {{% /steps %}}
 
@@ -273,7 +292,7 @@ Some [**CSS**](https://jalcocert.github.io/JAlcocerT/blog/dev-css/) will do the 
 
 ## Setup a Static CMS
 
-There are many alternatives!
+There are many alternatives! /blog/cms-for-static-websites
 
 1. https://github.com/payloadcms/payload
 

@@ -19,8 +19,6 @@ Flexdashboards are a powerful tool for creating **dynamic, interactive dashboard
 
 Developed by RStudio, they leverage the infrastructure of R Markdown to allow users to build **robust visual displays of information**.
 
-![Dashboard Map Example](/blog_img/data-experiments/unemployment-evolution.gif)
-
 Flexdashboards support a variety of visual outputs, including tables, data frames, plots, and even more advanced interactive visualizations using packages such as plotly and leaflet.
 
 The strength of Flexdashboards lies in their **simplicity and ease of deployment**.
@@ -165,8 +163,26 @@ remotes::install_github("ropensci/plotly")
 q()
 ```
 
+You will see a `.Rhistory` file with the steps you made:
+
+```sh
+install.packages("terra")
+install.packages("leaflet", dependencies = TRUE)
+ install.packages("sf")      # Simple Features package for spatial data
+install.packages("remotes")
+remotes::install_github("rstudio/leaflet")
+q()
+remotes::install_github("ropensci/plotly")
+q()
+```
+
 ### FlexDashboard with Github Pages
 
+{{< details title="GH Actions workflow for FlexDashboards to Github Pages 📌" closed="true" >}}
+
+
+
+{{< /details >}}
 
 
 ## How to Customize a Flexdashboard
@@ -231,6 +247,9 @@ Shiny apps can be hosted using Shiny Server or RStudio's hosting service, `Shiny
 ### How to create animations in R
 
 ![Karting Adventure](/blog_img/dev/503.gif)
+
+![Dashboard Map Example](/blog_img/data-experiments/unemployment-evolution.gif)
+
 
 ### Other F/OSS Static Data Driven Stuff
 

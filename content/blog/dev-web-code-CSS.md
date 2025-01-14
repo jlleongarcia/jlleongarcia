@@ -6,14 +6,21 @@ tags: ["Dev"]
 summary: "CSS Frameworks I find amazing to make nice UI/X for Websites"
 ---
 
-In case you dont know yet, CSS is oart of the [front-end of websites](https://roadmap.sh/frontend).
+In case you dont know yet, **CSS** is part of the [front-end of websites](https://roadmap.sh/frontend).
 
-And you can make cool things, easily.
+And you can make cool web stuff, easily.
 
+You just need some time to get CSS right.
 
 ## Tailwind
 
-* https://tailwindui.com/components
+You can observed that many themes are proud to announce that they use Tailwind (CSS).
+
+And after a while tinkering with websites I can now understand why.
+
+Its an awsome library with components, that it is also used to build more libraries on top of it.
+
+* *https://tailwindui.com/components*
 
 ### Libraries Built on Top of Tailwind CSS
 
@@ -25,17 +32,17 @@ And you can make cool things, easily.
 
 ### DaisyUI
 
-Component based CSS built on top of TailwindCSS utilities.
+**Component based CSS** built on top of TailwindCSS utilities.
 
 * https://daisyui.com/components/diff/
 
-When you add Daisy UI to your project...
+When you **add Daisy UI** to your npm based project like so...
 
 ```sh
 npm install daisyui
 ```
 
-In the `tailwind.config.cjs` file, add DaisyUI to the plugins section:
+For Astro, dpnt forget to add DaisyUI to the **plugins section** in the `tailwind.config.cjs` file:
 
 ```md
 module.exports = {
@@ -49,7 +56,7 @@ module.exports = {
 };
 ```
 
-Automatically you can use:
+Automatically you can use DaisyUI CSS components by including this simple snippets into your `.mdx`:
 
 * https://daisyui.com/components/toggle/
 
@@ -57,7 +64,55 @@ Automatically you can use:
 <input type="checkbox" class="toggle toggle-success" checked="checked" />
 ```
 
+Daisy UI makes a great abstraction, simplifying a lot of underlying CSS stuff.
+
+These are some of **my favourite DaisyUI components**:
+
+1. **Timeline** - https://daisyui.com/components/timeline/
+
+> See the docs for each of them, because there are slight variations on how to call the components that change their functionality.
+
+Example: class `class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical` is different than `class="timeline timeline-vertical`
+
+2. Photo **Carousel** with DaisyUI - https://daisyui.com/components/carousel/
+* I like the class `carousel carousel-end rounded-box`
+* `carousel w-full` also does the trick for me
+
+3. **Modals** - To open content when something is clicked - https://daisyui.com/components/modal/
+  * Other components can be places inside that model, like a subscription one
+
+4. Collapse and Accordion
+* https://daisyui.com/components/collapse/
+* https://daisyui.com/components/accordion/
+
+
+
+> https://htmlcolorcodes.com
+
+
+
+
 ### Flowbite
+
+
+To install flowbite in your project:
+
+```sh
+npm install flowbite
+```
+
+And add it to the plugin section like below, at the `tailwind.config.cjs` file:
+
+```js
+//.....
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('daisyui'),
+		require('flowbite/plugin'), //this one has to be added
+	],
+```
+
+These are some interesting resources and components for flowbite I found interesting:
 
 * https://flowbite.com/docs/getting-started/introduction/
 * https://flowbite.com/#components
@@ -70,18 +125,6 @@ Automatically you can use:
   * Show the code and **copy the html** and the `tailwind.config.js`
   * Thanks to [Coding for Entrepreneur YT video](https://www.youtube.com/watch?v=J5n1qZNNxfo) and [code](https://github.com/codingforentrepreneurs/kwesforms-landing)
 
-```sh
-npm install flowbite
-```
-
-```js
-//.....
-	plugins: [
-		require('@tailwindcss/typography'),
-		require('daisyui'),
-		require('flowbite/plugin'), //this one has to be added
-	],
-```
 
 ```html
 <section class="bg-gray-50 dark:bg-gray-900">
@@ -138,13 +181,19 @@ npm install flowbite
 
 These libraries and competitors offer different strengths depending on the type of project you are working on, with Tailwind CSS being more flexible and customizable due to its utility-first nature.
 
+---
+
 ## More CSS Resources
 
 * https://ui.shadxn.com/docs/registries/shadxn
 
 {{< details title="Infinite Scroll for Astro with CSS 📌" closed="true" >}}
 
-Just with CSS! and thanks to [logto blog post](https://blog.logto.io/css-only-infinite-scroll)
+Infinite scroll, Just with CSS! 
+
+https://blog.logto.io/css-only-infinite-scroll
+
+and thanks to [logto blog post](https://blog.logto.io/css-only-infinite-scroll)
 
 ```astro
 ---
@@ -228,7 +277,9 @@ Just with CSS! and thanks to [logto blog post](https://blog.logto.io/css-only-in
 
 ### Material UI - MUI
 
-A Comprehensive **React component library** that implements Google's Material Design. Free forever.
+A Comprehensive **React component library** that implements Google's Material Design.
+
+They claim that it is **Free forever**.
 
 * https://mui.com/material-ui/
 * https://mui.com/material-ui/react-image-list/
@@ -237,27 +288,26 @@ A Comprehensive **React component library** that implements Google's Material De
 
 **Material UI** (now called **MUI**) is different from **Tailwind CSS** in many ways, though both are popular in modern web development. Here's a comparison:
 
-### 1. **Philosophy**:
+1. **Philosophy**:
 - **Tailwind CSS**: A **utility-first** CSS framework. It provides low-level utility classes (like `flex`, `mt-4`, or `text-center`) that allow developers to build custom designs directly in their HTML without writing CSS. It's highly flexible and doesn't enforce a design system.
 - **MUI**: A **component-based** library built for **React** applications, following **Material Design** guidelines by Google. It provides pre-styled, higher-level components like buttons, cards, and modals with consistent styling. It aims to give developers a consistent design system right out of the box.
 
-### 2. **Customization**:
+2. **Customization**:
 - **Tailwind CSS**: Highly customizable via utility classes, making it easy to tailor every element's appearance. There's no predefined design system, allowing complete control over the look and feel of an app.
 - **MUI**: Customizable through theming and style overrides, but its design is inherently tied to Google's Material Design system. Customization is possible, but you're working within the bounds of Material Design unless you make significant changes.
 
-### 3. **Usage**:
+3. **Usage**:
 - **Tailwind CSS**: Suitable for any front-end framework or plain HTML/CSS projects, making it very flexible. It doesn't assume any specific design style, so it requires more work upfront to define the UI.
 - **MUI**: Primarily built for **React** applications, with pre-built React components that can speed up development, especially for those who like Material Design.
 
-### 4. **Component Library**:
+4. **Component Library**:
 - **Tailwind CSS**: Does not come with pre-built components. However, libraries like **Flowbite** or **DaisyUI** can be added to provide components based on Tailwind's utilities.
 - **MUI**: Provides a rich set of pre-built, fully accessible components that adhere to Material Design guidelines, making it a good choice if you want a coherent UI out of the box.
 
-### 5. **Design System**:
+5. **Design System**:
 - **Tailwind CSS**: No enforced design system. You create your own design language.
 - **MUI**: Based on **Material Design**, which is a widely recognized design system from Google. This ensures consistency, but also limits creativity unless heavily customized.
 
-### Conclusion:
 - **MUI** is better suited if you want a pre-defined, consistent UI system (Material Design) and are working with React.
 - **Tailwind CSS** is ideal if you prefer flexibility and control over your design and don't mind building components from scratch or using third-party libraries.
 
