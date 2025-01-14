@@ -227,7 +227,15 @@ To make a button call the JS that makes FormBricks pop out.
 
 ### GoodSheet
 
+
 {{< details title="Using GoodSheet.io 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+This can be combined with a Daisy UI CSS component, to get interesting functionality:
+
+{{< details title="GoodSheet with Daisy UI 📌" closed="true" >}}
 
 
 {{< /details >}}

@@ -15,6 +15,37 @@ Ive learnt all of this **about JS** thanks to tinkering with the [Astro](https:/
 
 ## PhotoSwipe
 
+## Interesting Functionalities with JS
+
+alpineJS
+
+```sh
+npm list alpinejs
+```
+
+### World Map
+
+### Search
+
+1. FuseJS
+2. pageFind - as astro starlight
+
+* google
+* whoogle
+* fusejs (hugo papermod)
+
+### Image Galleries
+
+
+
+* Photoswipe - https://github.com/dimsemenov/PhotoSwipe
+  * https://www.launchfa.st/blog/photoswipe-astro
+  * https://photoswipe.com/getting-started
+
+```sh
+npm install photoswipe react react-dom
+```
+
 ---
 
 ## FAQ

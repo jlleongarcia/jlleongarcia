@@ -22,6 +22,14 @@ Its an awsome library with components, that it is also used to build more librar
 
 * *https://tailwindui.com/components*
 
+
+I really like the **TW Image gallery**
+* TW-Elements - https://tw-elements.com/docs/standard/components/gallery/
+
+
+* TailWind CSS! ->> `/css/style.css`
+
+
 ### Libraries Built on Top of Tailwind CSS
 
 1. **[Flowbite](https://github.com/themesberg/flowbite)**: Offers interactive components such as modals, dropdowns, and tooltips that can be customized using Tailwind CSS classes.
@@ -44,7 +52,7 @@ npm install daisyui
 
 For Astro, dpnt forget to add DaisyUI to the **plugins section** in the `tailwind.config.cjs` file:
 
-```md
+```cjs
 module.exports = {
   content: [
     './src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}',
@@ -85,6 +93,9 @@ Example: class `class="timeline timeline-snap-icon max-md:timeline-compact timel
 * https://daisyui.com/components/collapse/
 * https://daisyui.com/components/accordion/
 
+5. stats shadow and card body are also great
+* https://daisyui.com/components/card/
+* https://daisyui.com/components/stat/
 
 
 > https://htmlcolorcodes.com
@@ -112,7 +123,7 @@ And add it to the plugin section like below, at the `tailwind.config.cjs` file:
 	],
 ```
 
-These are some interesting resources and components for flowbite I found interesting:
+These are some interesting resources and **components for flowbite** I found interesting:
 
 * https://flowbite.com/docs/getting-started/introduction/
 * https://flowbite.com/#components
@@ -123,7 +134,7 @@ These are some interesting resources and components for flowbite I found interes
 
 * https://flowbite.com/blocks/marketing/login/
   * Show the code and **copy the html** and the `tailwind.config.js`
-  * Thanks to [Coding for Entrepreneur YT video](https://www.youtube.com/watch?v=J5n1qZNNxfo) and [code](https://github.com/codingforentrepreneurs/kwesforms-landing)
+  * Thanks to [**Coding for Entrepreneurs** YT video](https://www.youtube.com/watch?v=J5n1qZNNxfo) and [code](https://github.com/codingforentrepreneurs/kwesforms-landing)
 
 
 ```html

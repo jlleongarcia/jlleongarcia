@@ -36,9 +36,10 @@ In there you can do interesting things, like adding **web analytics**.
 
 0. **Pre-Requisites**: Fast and Secure (SSL, https)
 1. Search: Pagefind, FuseJS,...
-2. Scheduled Posts: 
+2. Scheduled Posts:
 3. Internationalization?
 4. A CDN?
+5. APIs: [Forms, Newsletters](https://jalcocert.github.io/JAlcocerT/blog/dev-forms/), email marketing
 
 {{< details title="About favicons 📌" closed="true" >}}
 
