@@ -1,13 +1,32 @@
 ---
 title: "BI Tools for the AI era"
-date: 2024-12-26T00:20:21+01:00
+date: 2025-01-07T00:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
-description: 'Setting up Data Analytics Visualization tools.'
+description: 'Setting up Data Analytics Visualization (BI) tools with docker'
 summary: 'Setting up Data Analytics Visualization tools.'
 url: 'setup-bi-tools-docker'
 ---
+
+
+
+## Business Intelligence and IoT (BIA & IoT)
+- [Superset](https://superset.apache.org/)
+  - [Superset UI](https://apache-superset.github.io/superset-ui/?path=/story/legacy-chart-plugins-legacy-plugin-chart-map-box--basic)
+  - [Superset GitHub](https://github.com/apache/superset)
+- [Metabase](https://www.metabase.com/)
+  - [Metabase Docker Hub](https://hub.docker.com/r/metabase/metabase)
+  - [Static Embedding in Metabase](https://www.metabase.com/embedding-demo)
+- [Redash](https://redash.io/)
+
+How about real time data analytics?
+
+Real-Time Analytics with ClickHouse
+- [ClickHouse Use Cases](https://clickhouse.com/use-cases/real-time-analytics)
+- **Superset**: An open-source data exploration and visualization platform that supports ClickHouse as a data source.
+- **Metabase**: An open-source business intelligence tool with ClickHouse integration.
+- **Tableau, Looker, Power BI**: Commercial BI tools that may have connectors or integrations with ClickHouse.
 
 ### Metabase
 

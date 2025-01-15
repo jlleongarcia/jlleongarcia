@@ -12,8 +12,9 @@ url: 'get-started-with-flask'
 
 ## Flask
 
+## Shiny
 
-## Ai Building Web Apps
+## AI Building Web Apps
 
 * https://github.com/stackblitz-labs/bolt.diy
 

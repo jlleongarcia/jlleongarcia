@@ -9,11 +9,29 @@ url: 'javascript-for-static-websites'
 
 Ive learnt all of this **about JS** thanks to tinkering with the [Astro](https://jalcocert.github.io/JAlcocerT/create-your-website/#what-ive-learnt-about-astro) and [NextJS](https://fossengineer.com/nextjs-ssg/) web frameworks.
 
+
+### JS Dependency Management
+
+1. NPM
+2. BUM
+
+{{% details title="Put simply 🌍" closed="true" %}}
+
+{{% /details %}}
+
 ## VueJS
 
 * https://dev.to/truex/top-10-vue-js-libraries-3gj0
 
+{{< details title="What it is Pydantic? 📌" closed="true" >}}
+
+{{< /details >}}
+
 ## PhotoSwipe
+
+{{< details title="What it is Pydantic? 📌" closed="true" >}}
+
+{{< /details >}}
 
 ## Interesting Functionalities with JS
 
@@ -51,6 +69,7 @@ npm install photoswipe react react-dom
 ## FAQ
 
 ### More JS Related Ideas
+
 
 #### Skulpt
 

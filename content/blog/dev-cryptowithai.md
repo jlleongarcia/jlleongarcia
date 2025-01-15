@@ -1,6 +1,6 @@
 ---
 title: "Crypto. Now with AI"
-date: 2025-03-21
+date: 2025-05-21
 draft: false
 tags: ["Dev"]
 summary: 'Two buzz words in one. Understand crypto once and for all. This time thanks to AI'
@@ -18,6 +18,10 @@ This post is just describing the process to apply data analytics with crypto. **
 And some time ago I was having a look to this **amazing BlockChain/Solidity FreeCodeCamp course:**
 
 {{< youtube "gyMwXuJrbJQ" >}}
+
+Practical Blockchain:
+- Parties that do not know each other can exchange value without a central authority.
+
 
 
 <!-- 

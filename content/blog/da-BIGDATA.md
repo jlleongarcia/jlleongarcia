@@ -1,6 +1,6 @@
 ---
 title: "Big Data Tools"
-date: 2025-01-01T03:20:21+01:00
+date: 2025-01-14T03:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
@@ -207,6 +207,7 @@ This is great for IoT Stuff, like we might have in [Telecom](https://jalcocert.g
 PySpark is considered "lazy" because it does not execute any code until it absolutely has to.  
 - When you call a transformation on a PySpark DataFrame or RDD, it does not compute the result until you call an action.  
 - This allows Spark to **optimize the execution plan** by analyzing all transformations and determining the most efficient way to execute them.  
+
 > It also delays execution until the result is actually needed, rather than executing each transformation as soon as it's specified.  
 
 ---
@@ -242,6 +243,33 @@ Partitions in Spark are **logical divisions of data** stored on a cluster node.
 **What does GroupBy before partitioning do?**  
 Grouping data before partitioning organizes it for more efficient processing.  
 - Example: Summing values in a column can be optimized by grouping by that column first, ensuring each group’s sum is calculated only once.
+
+---
+
+- **Comprehending the 5V's of Big Data**
+- Grasping various Big Data use cases (e.g., IoT, social media analysis, machine learning models, log analytics, etc.)
+- Understanding the concept of a Data Lake
+- Recognizing the key architectural layers and their roles:
+  - Sources
+  - Ingestion
+  - Storage
+  - Processing
+  - Presentation
+  - Security
+  - Governance
+
+- Understanding the CAP Theorem and Distributed Database Management Systems
+- Grasping the concept of NoSQL Databases (e.g., Cassandra, HBase, MongoDB)
+- Understanding the Ingestion and Processing layers:
+  - Concepts: batch vs streaming, ETL vs ELT
+  - Core tools: Hive, Spark, Kafka, Sqoop, MapReduce
+- Understanding Storage layer concepts:
+  - Bronze/Silver/Gold
+  - Columnar vs row file formats
+  - Partitioning and bucketing
+  - Object storage and distributed file systems
+  - Core tools: HDFS, S3, Azure Blob
+
 
 {{< /details >}}
 

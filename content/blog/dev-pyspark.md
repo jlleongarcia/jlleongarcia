@@ -19,16 +19,6 @@ When talking about PySpark, we are talking about **Big Data** and [Python](/JAlc
     * {{< newtab url="https://github.com/spark-examples/pyspark-examples" text="PySpark Examples" >}}
 
 
-<!-- Understanding Big Data 5V’s.
-Understanding Big Data use cases (e.g. IoT, S0cial media analysis, ML models, log analytics, etc.).
-Understanding Data Lake concept.
-Understanding major architecture layers and their functions (Sources, Ingestion, Storage, Processing, Presentation, Security, Governance).
-
-Understanding CAP Theorem and Distributed Database Management Systems.
-Understanding NoSQL Databases (e.g. Cassandra, HBase, MongoDB).
-Understanding Ingestion and Processing layers concepts (batch vs streaming, ETL vs ELT) and core tools (Hive, Spark, Kafka, Scoop, MapReduce).
-Understanding Storage layer concepts (Bronze/Silver/Gold, columnar vs row file formats, partitioning and bucketing, object storages and distributed file systems) and core tools (HDFS, S3, Azure Blob). -->
-
 ## WHY PySpark?
 
 🐍 **PySpark Overview**:
@@ -150,15 +140,15 @@ To achieve time-traveling, every state of data must be stored at a given time us
 
 Now that we have a brief idea about time-traveling, let’s check how to use it with a popular data lake formats: Apache Iceberg.
 
-🌊 Apache Iceberg: A Universal Table Format
+🌊 Apache **Iceberg**: A Universal Table Format
 
-* Iceberg is a data lake format that is not tied to any specific execution engine
+* Iceberg is a **data lake format** that is not tied to any specific execution engine
 * It can be used with various streaming services
 * Originated at Netflix
 
 📚 Key Terms in Iceberg - Apache Iceberg uses several key terms to structure data in its format:
 
-* Snapshot: Represents the state of a table at a specific time. It lists all data files that constitute the table's contents at the snapshot's time.
+* Snapshot: Represents the **state of a table at a specific time**. It lists all data files that constitute the table's contents at the snapshot's time.
 * Manifest List: A metadata file that lists the manifests forming a table snapshot. It stores information about each manifest file's contents to optimize metadata operations.
 * Manifest File: A metadata file that lists a subset of data files in a snapshot. It includes partition tuple, column-level stats, and summary information for efficient scan planning.
 
@@ -237,7 +227,7 @@ For small datasets, Pandas is usually the better option as it provides a more in
 
 Spark also offers a range of features, such as **distributed processing, in-memory computing, streaming, and machine learning algorithms**, that are not available with Pandas.
 
-> The main difference between the two is that Pandas is designed to work with tabular data, while Spark is designed to work with both structured and unstructured data.
+> The main difference between the two is that Pandas is designed to work with tabular data, while Spark is designed to work with both structured and unstructured data in a distributed processing env.
 
 
 {{< /details >}}

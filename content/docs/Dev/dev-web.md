@@ -45,6 +45,11 @@ In there you can do interesting things, like adding **web analytics**.
 
 as in the [withastro/starlight Theme](https://github.com/IoTechCrafts/starlight-SSG) or Pacamara
 
+Images for Web
+- [Unsplash](https://unsplash.com/)
+- [Heroicons](https://heroicons.dev/)
+- [Feathericons](https://feathericons.dev/?iconset=payments)
+
 {{< /details >}}
 
 

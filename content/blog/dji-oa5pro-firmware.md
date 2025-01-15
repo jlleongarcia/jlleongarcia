@@ -4,7 +4,7 @@ date: 2025-01-01T00:20:21+01:00
 draft: false
 tags: ["Tinkering"]
 summary: Learning how to edit videos with the OA5Pro
-description: Updating OA5 Pro Firmware. Compared with a go pro hero 9 andCommenting on my new video edition learnings for youtube.
+description: Updating OA5 Pro Firmware. Compared with a go pro hero 9 and Commenting on my new video edition learnings for youtube.
 url: 'dji-oa5pro-firmware-updates'
 ---
 

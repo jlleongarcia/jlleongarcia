@@ -1,6 +1,6 @@
 ---
 title: "Topics to be covered - [Maybe]"
-date: 2021-08-25T23:20:21+01:00
+date: 2025-12-25T23:20:21+01:00
 draft: true
 tags: ["Self-Hosting","Web"]
 description: 'A quick guide to Raspberry Pi 4'
@@ -52,23 +52,11 @@ url: 'tbd-topics'
 - [StreamingLLM Framework](https://www.reddit.com/r/LocalLLaMA/comments/16xzxwv/streamingllm_a_simple_and_efficient_framework/)
 - [Best 13B LLM Models Discussion](https://www.reddit.com/r/LocalLLaMA/comments/16s701v/this_is_one_of_the_best_13b_models_ive_tested_for/)
 
-## Images for Web
-- [Unsplash](https://unsplash.com/)
-- [Heroicons](https://heroicons.dev/)
-- [Feathericons](https://feathericons.dev/?iconset=payments)
+
 
 ## FOSS (Free and Open-Source Software)
 - [FOSS Gist](https://gist.github.com/rxaviers/7360908)
 
-## Content Management Systems (CMS)
-- [Tina](https://tina.io/)
-- [GHOST + GATSBY](https://ghost.org/docs/jamstack/)
-- [Strapi](https://jamstack.org/headless-cms/strapi/)
-  - Supports **GraphQL** or **RESTful** API.
-- [Decap CMS (formerly Netlify CMS)](https://decapcms.org/)
-  - [Add to Your Site](https://decapcms.org/docs/add-to-your-site/)
-- [Directus](https://jamstack.org/headless-cms/directus/)
-  - Directus turns SQL databases into REST and GraphQL APIs with an intuitive no-code app.
 
 ## Data Visualization with Kibana and Grafana
 
@@ -82,11 +70,11 @@ url: 'tbd-topics'
 | Syntax      | Simple text-based | More complex and verbose |
 | Use Cases   | Filtering data in Kibana dashboards, visualizations, and Discover | Querying Elasticsearch for data analysis and machine learning |
 
-## Practical Blockchain
-- Parties that do not know each other can exchange value without a central authority.
 
 ## Edge Computing
 - **Edge Computing**: Info collecting and processing closer to the source (IoT).
+
+---
 
 # Raspberry Pi (Rpi) and Web
 
@@ -95,23 +83,12 @@ url: 'tbd-topics'
 - **GCP IoT Core** vs [ThingsBoard](https://thingsboard.io/)
   - [ThingsBoard on Open Source Alternative](https://www.opensourcealternative.to/project/ThingsBoard)
 
-## Real-Time Analytics with ClickHouse
-- [ClickHouse Use Cases](https://clickhouse.com/use-cases/real-time-analytics)
-- **Superset**: An open-source data exploration and visualization platform that supports ClickHouse as a data source.
-- **Metabase**: An open-source business intelligence tool with ClickHouse integration.
-- **Tableau, Looker, Power BI**: Commercial BI tools that may have connectors or integrations with ClickHouse.
+
 
 ## Home Assistant Core
 - [Open Source Alternative for Home Assistant Core](https://www.opensourcealternative.to/project/Core)
 
-## Business Intelligence and IoT (BIA & IoT)
-- [Superset](https://superset.apache.org/)
-  - [Superset UI](https://apache-superset.github.io/superset-ui/?path=/story/legacy-chart-plugins-legacy-plugin-chart-map-box--basic)
-  - [Superset GitHub](https://github.com/apache/superset)
-- [Metabase](https://www.metabase.com/)
-  - [Metabase Docker Hub](https://hub.docker.com/r/metabase/metabase)
-  - [Static Embedding in Metabase](https://www.metabase.com/embedding-demo)
-- [Redash](https://redash.io/)
+
 
 ## GitHub Runners on Raspberry Pi
 - Self-hosted GitHub runner setup:
@@ -141,7 +118,7 @@ url: 'tbd-topics'
   - Use credentials stored in variables:
     ```bash
     user="reisikei"
-    pass="84xNt.bWWHG&j7g"
+    pass="somepass"
     sudo docker run -v /home/reisipi:/folder mplatform/manifest-tool push from-spec /folder/someimage.yaml --username ${user} --password ${pass}
     ```
   - Query Docker image architecture: 

@@ -3,7 +3,7 @@ title: "How I Setup Windows [Quickly] with Chocolatey"
 date: 2023-12-27T23:20:21+01:00
 draft: false
 tags: ["Tinkering"]
-summary: 'How to install and use Chocolatey with Windows.'
+summary: 'How to install and use Chocolatey with Windows to make format C simpler.'
 url: 'how-to-use-chocolatey-windows'
 ---
 

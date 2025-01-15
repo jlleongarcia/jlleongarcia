@@ -2,7 +2,7 @@
 title: "Tinkering with PhyPhox"
 date: 2024-02-27
 draft: false
-summary: Analyzing phone Sensors with PhyPhox and Python
+summary: Analyzing phone Sensors Data with PhyPhox and Python.
 ---
 
 With **PhyPhox**, you convert your smartphone into a very cool instrument to measure different physical parameters.
@@ -10,7 +10,7 @@ With **PhyPhox**, you convert your smartphone into a very cool instrument to mea
 I have tinkered a little bit with: accelerometer and the gps
 
 {{< callout type="info" >}}
-Related **Project Source Code** is here: <https://github.com/JAlcocerT/Py_RouteTracker>
+Related **Project Source Code** is here: <https://github.com/JAlcocerT/Py_RouteTracker>  💻 
 {{< /callout >}}
 
 

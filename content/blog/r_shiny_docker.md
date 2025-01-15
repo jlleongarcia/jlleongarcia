@@ -1,6 +1,6 @@
 ---
 title: "R Shiny Apps in a Docker Container"
-date: 2022-11-27T23:19:21+01:00
+date: 2022-11-26T23:19:21+01:00
 draft: false
 tags: ["R","Dashboards","Docker","R-Stocks"]
 cover:

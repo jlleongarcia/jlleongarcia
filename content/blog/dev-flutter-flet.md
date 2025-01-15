@@ -134,11 +134,6 @@ Some alternatives to FLET:
 
     MicroServices - https://www.youtube.com/watch?v=lL_j7ilk7rc
 
-    MQTT (Message Queuing Telemetry Transport):
-        MQTT is a lightweight, publish-subscribe messaging protocol designed for constrained devices and low-bandwidth, high-latency or unreliable networks.
-        It provides a flexible and efficient mechanism for asynchronous, real-time communication between clients and servers.
-        MQTT is commonly used in IoT (Internet of Things) applications, telemetry systems, and messaging applications where real-time data streams need to be transmitted reliably and efficiently.
-        While MQTT can be used for real-time communication in various scenarios, it may not be as widely supported or as easy to integrate as REST APIs or WebSockets in certain contexts.    
 
 We have built on top of FastAPI, which itself is based on the ASGI framework Starlette and the ASGI webserver Uvicorn because of their great performance and ease of use.
 * JustPY

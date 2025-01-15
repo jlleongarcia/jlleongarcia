@@ -12,9 +12,9 @@ To use **ASTRO**, you just need **2 things**: NPM and NodeJS.
 * https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 * https://nodejs.org/en/download/package-manager
 
-> Why ASTRO? It builds sites cool Websites, taking components from here & there
+> Why ASTRO? It builds sites **cool Websites**, taking **components** from here & there
 
-{{< details title="Setup GO & HUGO - x86/ARM64/ARM32 📌" closed="true" >}}
+{{< details title="Setup Node and NPM - x86/ARM64/ARM32 📌" closed="true" >}}
 
 ```sh
 sudo apt update && sudo apt upgrade

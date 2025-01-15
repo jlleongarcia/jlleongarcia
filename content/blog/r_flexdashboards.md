@@ -168,21 +168,14 @@ You will see a `.Rhistory` file with the steps you made:
 ```sh
 install.packages("terra")
 install.packages("leaflet", dependencies = TRUE)
- install.packages("sf")      # Simple Features package for spatial data
+
+install.packages("sf")      # Simple Features package for spatial data
 install.packages("remotes")
 remotes::install_github("rstudio/leaflet")
 q()
 remotes::install_github("ropensci/plotly")
 q()
 ```
-
-### FlexDashboard with Github Pages
-
-{{< details title="GH Actions workflow for FlexDashboards to Github Pages 📌" closed="true" >}}
-
-
-
-{{< /details >}}
 
 
 ## How to Customize a Flexdashboard
@@ -214,7 +207,7 @@ They have separated tabs to showcase different **use-cases examples**:
 
 ### Other Ways to Present Data with R
 
-#### How about Shiny?
+**How about Shiny?**
 
 **Shiny** is another product from RStudio that offers a framework for building interactive web applications entirely in R.
 
@@ -227,21 +220,6 @@ This is ideal for creating dashboards where users may want to filter, slice, or 
 However, **Shiny requires a running R session in the background**, which makes hosting a bit more complex compared to Flexdashboards.
 
 Shiny apps can be hosted using Shiny Server or RStudio's hosting service, `ShinyApps.io`.
-
-<!-- geojson -->
-
-<!-- 
-<https://r-graph-gallery.com/> -->
-
-
-<!-- ### How to create Maps in R
-
-
-<https://www.kaggle.com/code/miguelfzzz/cool-dashboard-in-r-with-youtube-tutorial/report?scriptVersionId=74682468>
-<https://rfun.library.duke.edu/portfolio/mapping_workshop/>
-<https://rfun.library.duke.edu/portfolio/dashboard_workshop/>
-<https://rfun.library.duke.edu/portfolio/shiny_workshop/>
- -->
 
 
 ### How to create animations in R

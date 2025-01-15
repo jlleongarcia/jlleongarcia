@@ -534,7 +534,7 @@ Create LLM derived knowledge Graph which serve as the LLM memory representation.
 * [Chatwoot](/selfhosting-chatwoot/) 
 
 
-{{< details title="Edit 📌" closed="true" >}}
+{{< details title="Setup Chatwoot with Docker 📌" closed="true" >}}
 
 * https://www.chatwoot.com/docs/self-hosted/deployment/docker
 * https://github.com/chatwoot/chatwoot

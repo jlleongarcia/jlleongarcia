@@ -15,7 +15,7 @@ url: 'using-astro-templates'
 
 Github is a good starting point.
 
-You can take components ideas, like: `::github{repo="saicaca/fuwari"}`
+You can **take components ideas**, like: `::github{repo="saicaca/fuwari"}`
 
 ### Clone it
 
@@ -70,7 +70,11 @@ node_modules
 
 * [Web3 and Cloudflare Web3 Gateways Walkthrough](https://www.youtube.com/watch?v=Ws3KBleauMI)
 
-Web3 architecture represents a revolutionary shift in how we interact with the internet. It offers a decentralized, peer-to-peer alternative to the current centralized web. At the foundation of Web3 architecture is **blockchain technology**, providing a secure, transparent, and tamper-proof way of recording transactions and data. This layer is critical to Web3’s ability to enable **trustless** and **permissionless** user interactions. Web3 is not just a technological change—it’s a revolution, and it needs your help to build it.
+Web3 architecture represents a revolutionary shift in how we interact with the internet. It offers a decentralized, peer-to-peer alternative to the current centralized web.
+
+At the foundation of Web3 architecture is **blockchain technology**, providing a secure, transparent, and tamper-proof way of recording transactions and data. 
+
+This layer is critical to Web3’s ability to enable **trustless** and **permissionless** user interactions. Web3 is not just a technological change—it’s a revolution, and it needs your help to build it.
 
 However, Web3 is more than just the blockchain layer. It includes a **protocol layer** that enables decentralized storage, messaging, and other key functions required for a fully decentralized web. On top of these foundational layers, developers create **decentralized applications (dApps)** that leverage Web3 architecture to run without relying on centralized systems. 
 
@@ -86,7 +90,7 @@ If you're not sure how to build dApps, don’t worry! Join us to learn more and 
 {{< /details >}}
 
 
-You will have a similar project structure to:
+You will have a similar **project structure** to:
 
 {{< filetree/container >}}
   {{< filetree/folder name="content" >}}

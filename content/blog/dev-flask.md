@@ -799,6 +799,7 @@ WebSocket connections are useful for games or web sites that need to display liv
 {{< cards cols="1" >}}
   {{< card link="https://jalcocert.github.io/RPi/posts/rpi-mqtt/" title="I was learning MQTT with a RPI here" icon="user" >}}
 {{< /cards >}}
+
 {{< cards cols="2" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/microcontrollers-setup-101/" title="MQTT with ESP32 and a Pico W" >}}
   {{< card link="https://github.com/JAlcocerT/RPi/tree/main/Z_MQTT" title="MQTT Source Files" >}}
@@ -808,7 +809,7 @@ WebSocket connections are useful for games or web sites that need to display liv
 * MQTT excels in low-bandwidth environments and is optimized for IoT applications.
 * RabbitMQ is suitable for scenarios requiring reliable message delivery and complex routing logic.
 
-There is also Web RTC (Real Time Communication)
+There is also Web RTC (Real Time Communication).
 
 ### Interesting stuff I learnt recently
 
