@@ -449,3 +449,12 @@ jobs:
 ```
 
 As implemented in the RPI Project - https://github.com/JAlcocerT/RPi/
+
+---
+
+## GHA for R Projects
+
+### Actions CI/CD for Shiny
+
+### Github CI/CD for Flexdashboards
+

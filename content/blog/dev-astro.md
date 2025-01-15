@@ -9,6 +9,10 @@ url: 'using-astro-templates'
 
 ## Astro Websites 101
 
+Astro as an awsome SSG that you can use to create interesting looking websites.
+
+How exactly?
+
 {{% steps %}}
 
 ### Find the Theme Source Code
@@ -17,7 +21,7 @@ Github is a good starting point.
 
 You can **take components ideas**, like: `::github{repo="saicaca/fuwari"}`
 
-### Clone it
+### Clone The Theme
 
 Make sure you are free to use the theme as per its License and then **clone it**:
 
@@ -34,19 +38,19 @@ npm run build
 npm run dev
 ```
 
-> Explore the results at: `localhost:4321`
+> Explore the results, most likely at: `http://localhost:4321`
 
 {{% /steps %}}
 
 {{< details title="Good Practices for Web Repositories📌" closed="true" >}}
 
-* Add a gitignore and include the `node_modules` folder
+* Add a `.gitignore` and include the `node_modules` folder
 
 ```
 node_modules
 ```
 
-* Add a docker ignore if you plan to build images:
+* Add a **docker ignore** if you plan to build images:
 
 ```
 #add .env files if any
@@ -54,16 +58,8 @@ node_modules
 
 {{< /details >}}
 
-<!-- {{< cards cols="1" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/create-your-website/" title="Resources to Create Cool Websites" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/understanding-astro-ssg-components/" title="Astro Components 101" >}}
-{{< /cards >}}
 
-{{< cards cols="2" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/wordpress-migration-to-ssg/" title="Wordpress to SSG" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/guide-web3/" title="Web 3 with Astro" >}}
-{{< /cards >}} -->
-
+## What can I do with Astro SSG?
 
 
 {{< details title="More about Web3 with Cloudflare Web3 Gateways📌" closed="true" >}}
@@ -76,7 +72,9 @@ At the foundation of Web3 architecture is **blockchain technology**, providing a
 
 This layer is critical to Web3’s ability to enable **trustless** and **permissionless** user interactions. Web3 is not just a technological change—it’s a revolution, and it needs your help to build it.
 
-However, Web3 is more than just the blockchain layer. It includes a **protocol layer** that enables decentralized storage, messaging, and other key functions required for a fully decentralized web. On top of these foundational layers, developers create **decentralized applications (dApps)** that leverage Web3 architecture to run without relying on centralized systems. 
+However, Web3 is more than just the blockchain layer. It includes a **protocol layer** that enables decentralized storage, messaging, and other key functions required for a fully decentralized web.
+
+On top of these foundational layers, developers create **decentralized applications (dApps)** that leverage Web3 architecture to run without relying on centralized systems. 
 
 If you're not sure how to build dApps, don’t worry! Join us to learn more and become part of this emerging movement.
 
@@ -85,12 +83,10 @@ If you're not sure how to build dApps, don’t worry! Join us to learn more and 
 - How to build **decentralized applications (dApps)** that run on Web3 architecture.
 
 
-
-
 {{< /details >}}
 
 
-You will have a similar **project structure** to:
+With **Astro**, you will have a similar **project structure** to:
 
 {{< filetree/container >}}
   {{< filetree/folder name="content" >}}
@@ -103,6 +99,3 @@ You will have a similar **project structure** to:
   {{< /filetree/folder >}}
   {{< filetree/file name="hugo.toml" >}}
 {{< /filetree/container >}}
-
-
----

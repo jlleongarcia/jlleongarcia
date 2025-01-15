@@ -29,6 +29,16 @@ I really like the **TW Image gallery**
 
 * TailWind CSS! ->> `/css/style.css`
 
+### TW-Elements
+
+* https://github.com/mdbootstrap/TW-Elements/ - MIT Licensed
+  * https://tw-elements.com/docs/standard/components/gallery/
+  * https://tw-elements.com/docs/standard/components/carousel/
+  * https://tw-elements.com/docs/standard/components/testimonials/
+  * https://tw-elements.com/docs/standard/components/carousel/#docsTabsOverview
+
+
+> 𝙃𝙪𝙜𝙚 collection of Tailwind MIT licensed (free) components, sections and templates 😎
 
 ### Libraries Built on Top of Tailwind CSS
 

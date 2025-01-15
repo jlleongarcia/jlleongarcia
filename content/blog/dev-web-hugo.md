@@ -12,7 +12,7 @@ To use HUGO, you just need **2 things**: GO language and HUGO.
 * https://github.com/gohugoio/hugo/releases
 * https://go.dev/dl/
 
-> Why HUGO? It builds sites veeeery fast
+> Why HUGO? It builds sites **veeeery fast**
 
 {{< details title="Setup GO & HUGO - x86 📌" closed="true" >}}
 

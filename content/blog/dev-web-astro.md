@@ -56,6 +56,8 @@ npm run dev
 
 ---
 
+
+
 ```sh
 ifconfig
 #ifconfig eth0 | grep -A 10 "<global>" #check mac, and transfered packages

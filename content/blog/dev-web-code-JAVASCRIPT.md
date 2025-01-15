@@ -19,15 +19,85 @@ Ive learnt all of this **about JS** thanks to tinkering with the [Astro](https:/
 
 {{% /details %}}
 
+### Managing Packages for SSGs
+
+For SSGs that are using Node (like Astro), you can get to know the Docs of any **npm package** that uses typescript: <https://tsdocs.dev/>
+
+> NPM Packages? Yes, and you can manage them with
+
+{{< dropdown title="NPM ⏬" closed="true" >}}
+
+
+{{< /dropdown >}}
+
+
+{{< dropdown title="PNPM ⏬" closed="true" >}}
+
+Some themes will work only with this package manager...
+https://github.com/exylons/astrozinc
+
+```sh
+git clone https://github.com/exylons/astrozinc
+cd .astrozinc
+
+npm install -g pnpm
+
+# Install dependencies
+pnpm install
+
+# Start the dev server
+pnpm dev
+
+pnpm build 
+```
+
+{{< /dropdown >}}
+
+{{< dropdown title="Yarn - another package manager ⏬" closed="true" >}}
+
+
+{{< /dropdown >}}
+
+
+{{< dropdown title="Bun with an Example ⏬" closed="true" >}}
+
+* Example - https://github.com/HugoRCD/canvas
+	* Contact Forms with: https://resend.com/signup - Email for developers (https://resend.com/pricing)
+
+> Really cool Portfolio template made with Nuxt 3, Nuxt Content and TailwindCSS
+
+```sh
+bun install
+bun dev #dev server
+bun generate #static proy
+bun start #prod server
+```
+
+{{< /dropdown >}}
+
+## React
+
+Im not talking about AI and LLMs now.
+
 ## VueJS
 
 * https://dev.to/truex/top-10-vue-js-libraries-3gj0
 
-{{< details title="What it is Pydantic? 📌" closed="true" >}}
+{{< details title="What it is Vue? 📌" closed="true" >}}
 
 {{< /details >}}
 
 ## PhotoSwipe
+
+
+* https://github.com/dimsemenov/PhotoSwipe
+  * https://photoswipe.com/
+
+JavaScript **image gallery** and lightbox
+
+
+> JavaScript image gallery for mobile and desktop, modular, **framework independent**
+
 
 {{< details title="What it is Pydantic? 📌" closed="true" >}}
 
