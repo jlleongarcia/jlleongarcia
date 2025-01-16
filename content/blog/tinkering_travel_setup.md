@@ -1,11 +1,11 @@
 ---
 title: "Technology Setup for a Trip"
-date: 2024-12-29
+date: 2025-01-16
 draft: false
 tags: ["AI"]
 description: "Software and Hardware setup before trips or vacations."
 summary: 'Software and Hardware setup before trips or vacations'
-url: 'technology-for-a-trip'
+url: 'tech-for-a-trip'
 ---
 
 
@@ -14,6 +14,8 @@ url: 'technology-for-a-trip'
 {{< callout type="info" >}}
 For easier setup (specially for servers), you can benefit of being familiar with [containers](#what-about-containers) 
 {{< /callout >}}
+
+> For content creation, you can have a look to **[ubuntu studio](https://ubuntustudio.org/)** with tools like gimp or digikam
 
 #### Communication
 
@@ -105,11 +107,14 @@ You can install **Organic Maps** as Android app, but also in Linux:
 flatpak install flathub app.organicmaps.desktop #https://flathub.org/apps/app.organicmaps.desktop
 ```
 
-### BackUps with Nextcloud
+
+### BackUps
+
+#### with Nextcloud
 
 If you will be recording at 4K, you will need **back up space**.
 
-Here it comes Nextcloud as a backup solution, as it has clients for desktop/android/ios.
+Here it comes **Nextcloud as a backup solution**, as it has clients for desktop/web/android/ios.
 
 > I also like Syncthing but it does not have ios app
 
@@ -174,6 +179,18 @@ services:
 Setup [Nextcloud as Docker container](https://github.com/JAlcocerT/Docker/tree/main/Backups/NextCloud) 
 {{< /callout >}}
 
+#### Other Image Center Backups
+
+1. Lychee
+2. Piwigo
+3. [Photoview](https://fossengineer.com/selfhosting-Photoview-docker/)
+4. Ente, PhotoPrism, Immich...
+
+
+You can give it a try to [PhotoQT](https://photoqt.org/) or [digiKam](https://www.digikam.org/about/)
+```sh
+sudo apt install photoqt
+```
 
 ### Hardware Setup
 
@@ -185,6 +202,8 @@ Remember that a [VPS Setup](https://jalcocert.github.io/Linux/docs/linux__cloud/
 ![Single Board Computers vs Thinkpad x13](/blog_img/hardware/sbcs-x13.jpg)
 
 To bring with you, a [compact laptop](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/) can also be interesting.
+
+> This one is ~1.2
 
 
 #### Action Cam
@@ -212,7 +231,7 @@ I am very happy with the [Android Pixel 8 Pro](https://jalcocert.github.io/JAlco
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/tplink-archer-mr200-router-review/" title="TPLink MR200" image="/blog_img/hardware/dji_oa5pro.jpg" subtitle="Router review" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/travel-router-gl-mt3000-review//" title="Travel Router Setup" image="/blog_img/hardware/travel-router.jpg" subtitle="MT3000 review and VPN Setup" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/travel-router-gl-mt3000-review/" title="Travel Router Setup" image="/blog_img/hardware/travel-router.jpg" subtitle="GL-MT3000 review and VPN Setup" >}}
 {{< /cards >}}
 
 
@@ -228,9 +247,20 @@ You can also get one of these portable 4G usb router (and bring a **sim adapter*
   {{< card link="https://jalcocert.github.io/JAlcocerT/travel-router-gl-mt3000-review/" title="TailScale Setup" >}}
 {{< /cards >}}
 
-<!-- 
-![4g router](/blog_img/hardware/travel-router.jpg)
- -->
+
+If you need to login to a hotel network, where a login is required, this will prompt:
+
+
+{{< callout type="warning" >}}
+Can’t access the internet via the repeated hotspot. Try to enter **Login Mode for Public Hotspots** to fix the issue. Note this mode **will pause VPNs and custom DNS** until it leave, which may cause data leaks to the provider of the hotspot (e.g., hotel/mall). 
+{{< /callout >}}
+
+![4g router](/blog_img/hardware/travel-router-loginwifi.png)
+
+<!--  
+![4g router](/blog_img/hardware/travel-router.jpg) 
+-->
+
 
 ---
 

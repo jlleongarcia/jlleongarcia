@@ -319,10 +319,31 @@ DB4S is a valuable tool for users needing an intuitive interface for SQLite data
 
 ### Interesting software for Vacations
 
+Interesting maps for offline mode:
+
 * https://organicmaps.app/news/
+* Maps.me
+  * 
+  * 
+
+```sh
+flatpak install flathub app.organicmaps.desktop
+```
+
 * https://github.com/joaovitoriasilva/endurain
 * https://github.com/johanohly/AirTrail
 * https://github.com/seanmorley15/AdventureLog
+
+
+Share media with your friends (airdrop for all devices):
+* https://github.com/seemoo-lab/opendrop
+* https://github.com/SnapDrop/snapdrop - Game changer!
+
+> GPL 3.0 | A Progressive Web App for local file sharing
+
+* VPN
+  * Wireguird with `.conf` file you have vpn setup on ubuntu
+  * and maybe a [travel router](https://jalcocert.github.io/JAlcocerT/travel-router-gl-mt3000-review)
 
 
 * https://github.com/rohitkumbhar/surmai
@@ -333,7 +354,7 @@ DB4S is a valuable tool for users needing an intuitive interface for SQLite data
 
 * https://github.com/spliit-app/spliit
 
-Spliit is a free and open-source alternative to Splitwise, aimed at simplifying expense sharing among friends and family.
+Spliit is a free and **open-source alternative to Splitwise**, aimed at simplifying expense sharing among friends and family.
 
 It addresses the need for a user-friendly platform to manage shared expenses without the hassle of ads or fees.
 

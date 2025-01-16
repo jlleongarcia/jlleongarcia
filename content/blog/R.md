@@ -124,6 +124,11 @@ The cool thing?
 
 We can have leaflet maps, HTML widgets, even animations inside of them.
 
+They can be enhanced with:
+
+1. https://www.htmlwidgets.org/
+
+
 * https://pkgs.rstudio.com/flexdashboard/
 * https://cloud.r-project.org/web/packages/flexdashboard/index.html
 * https://github.com/rstudio/flexdashboard
@@ -148,6 +153,8 @@ python3 -m http.server 8001 #or 8001 if thats taken...
 {{< callout type="info" >}}
 See a sample flexdashboard at [**RStocks** project](https://github.com/JAlcocerT/R_Stocks)  💻
 {{< /callout >}}
+
+
 
 #### FlexDashboard with Github Pages and Github Actions
 
