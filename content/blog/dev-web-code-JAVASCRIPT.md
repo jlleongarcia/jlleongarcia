@@ -113,6 +113,8 @@ npm list alpinejs
 
 ### World Map
 
+I saw this one for the first time at this Astro Theme.
+
 ### Search
 
 1. FuseJS

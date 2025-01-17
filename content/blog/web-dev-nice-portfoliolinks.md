@@ -1,9 +1,9 @@
 ---
-title: "All your web links for Social Media."
+title: "All your web links for Social Media combined"
 date: 2024-09-29T10:20:21+01:00
 draft: false
 tags: ["dev"]
-summary: 'Consolidating Social Media Links with a cool website.'
+summary: 'Consolidating Social Media Links with a cool website. Show your work with Hugo and Lynx.'
 url: 'portfolio-website-for-social-media'
 ---
 
@@ -29,14 +29,14 @@ https://www.udemy.com/instructor/marketplace-insights/?q=Generative%20AI&lang=es
 
 https://www.udemy.com/courses/search/?src=ukw&q=local+llm -->
 
-## Demo Results
+### Web Demo Results
 
 
 {{< details title="Proposing a Quick HUGO Theme 📌" closed="true" >}}
 
 [JPanther Contributions](https://github.com/jpanther) are amazing.
 
-And the Lynx Theme is not an exception.
+And the **Lynx Theme** is not an exception.
 
 ```sh
 git clone https://github.com/jpanther/lynx #MIT Licensed, Thanks again, James!
@@ -90,7 +90,7 @@ In **less than ~1min**, your site will be refreshed at **Github Pages**.
 
 > Thanks to Github Pages + Github Actions CI/CD!
 
-Other Interesting HUGO Themes: BlowFish, BeautifulHugo, ...
+Other Interesting **HUGO Themes**: BlowFish, BeautifulHugo, ...
 
 {{< details title="It all started testing this Astro Theme with TinaCMS📌" closed="true" >}}
 
@@ -147,7 +147,9 @@ You can use **Tina together with a Github Repository**
 
 ### Web Analytics - A Comparison
 
-Microsoft Dynamics 365 enhances marketing efforts by offering the capability to send emails directly from within the context of the records you are working on. This feature integrates seamlessly with its robust marketing automation capabilities.
+Microsoft Dynamics 365 enhances marketing efforts by offering the capability to send emails directly from within the context of the records you are working on. 
+
+This feature integrates seamlessly with its robust marketing automation capabilities.
 
 - **Adobe Campaign**: This tool specializes in marketing automation, focusing on campaign management, email marketing, personalization, and orchestrating customer journeys across various channels. It assists in designing, executing, and measuring targeted marketing campaigns effectively.
 

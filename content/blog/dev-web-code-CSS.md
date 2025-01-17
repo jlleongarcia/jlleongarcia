@@ -10,7 +10,12 @@ In case you dont know yet, **CSS** is part of the [front-end of websites](https:
 
 And you can make cool web stuff, easily.
 
-You just need some time to get CSS right.
+You just need some time to get CSS right:
+
+1. Tailwind
+- [DaisyUI](#daisyui)
+- [Flowbite](#flowbite)
+2. Bootstrap
 
 ## Tailwind
 
@@ -116,7 +121,7 @@ Example: class `class="timeline timeline-snap-icon max-md:timeline-compact timel
 ### Flowbite
 
 
-To install flowbite in your project:
+To **install flowbite** in your project:
 
 ```sh
 npm install flowbite

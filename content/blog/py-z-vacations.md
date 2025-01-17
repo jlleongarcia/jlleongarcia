@@ -1,6 +1,6 @@
 ---
 title: "[AI] Vacation Planning - Recommendations, Costs, Weather"
-date: 2025-02-23
+date: 2025-03-23
 draft: false
 tags: ["Dev","AI"]  
 description: "Python App to explore vacation destination. LLMs ❤️ Data. While exploring Agents."
@@ -332,6 +332,11 @@ flatpak install flathub app.organicmaps.desktop
 
 * https://github.com/joaovitoriasilva/endurain
 * https://github.com/johanohly/AirTrail
+
+> GPL3.0 | A modern, open-source personal flight tracking system
+
+See also Jetlog
+
 * https://github.com/seanmorley15/AdventureLog
 
 

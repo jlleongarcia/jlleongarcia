@@ -186,11 +186,8 @@ Setup [Nextcloud as Docker container](https://github.com/JAlcocerT/Docker/tree/m
 3. [Photoview](https://fossengineer.com/selfhosting-Photoview-docker/)
 4. Ente, PhotoPrism, Immich...
 
+...you can see them covered at [this post](https://github.com/JAlcocerT/photo-management-tools)
 
-You can give it a try to [PhotoQT](https://photoqt.org/) or [digiKam](https://www.digikam.org/about/)
-```sh
-sudo apt install photoqt
-```
 
 ### Hardware Setup
 
