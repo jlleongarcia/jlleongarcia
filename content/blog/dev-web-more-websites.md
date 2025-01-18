@@ -112,8 +112,6 @@ But there are very well known services that provide interesting service without 
 Like we did at the **Social Media Project!**
 {{< /callout >}}
 
-* Weddings...
-* bodas.net
 
 * **Automatic Invoices**
   * With Stripe as payment gateway, they create the invoices for your product/services automatically

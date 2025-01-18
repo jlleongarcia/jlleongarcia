@@ -3,7 +3,7 @@ title: "One link for Social Bios"
 date: 2025-01-15
 draft: false
 tags: ["OSS"]
-summary: 'Link Hosting Services, for all'
+summary: 'Link Hosting Services, for all. With a website, of course.'
 url: 'linktree-web-alternative'
 ---
 
