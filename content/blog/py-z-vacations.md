@@ -12,6 +12,13 @@ isPinned: false
 
 Some time ago, I made a [Trip Planner Web App](https://github.com/JAlcocerT/Py_Trip_Planner), based purely on weather patterns as [described here](https://jalcocert.github.io/JAlcocerT/trip-planner-with-weather/).
 
+If you are tired of this:
+
+
+![Karting Adventure](/blog_img/memes/oldnewjob.jpg)
+
+Why not taking a break in between?
+
 {{< details title="[How to] Spin the Python Trip Planner! 📌" closed="true" >}}
 
 * Follow the [repo instructions](https://github.com/JAlcocerT/Py_Trip_Planner/tree/main/Deploy)

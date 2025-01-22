@@ -69,7 +69,7 @@ The typical **read and write speeds*8 for different interfaces are as follows:
 | NVMe PCIe 3.0 x4 | 3500 | 3000 |
 | NVMe PCIe 4.0 x4 | 7000 | 6000 |
 
-I have been exploring also NAS as a reliable options for home backups.
+I have been exploring also **NAS** as a reliable options for home backups.
 
 Synlogy seems to be a good alternative, but...in my opinion its just a PC with couple of 3.5 bays.
 
