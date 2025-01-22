@@ -42,6 +42,8 @@ Im still impress that with ffmpeg I dont need to re-render videos, which makes j
 Everything is captured here - https://github.com/JAlcocerT/YT-Video-Edition
 {{< /callout >}}
 
+PS: You can also do it with Google photos (at least at this moment)
+
 ---
 
 ## FAQ
@@ -51,6 +53,30 @@ Everything is captured here - https://github.com/JAlcocerT/YT-Video-Edition
 1. Home SSD
 2. Home HDD
 3. Cloud
+
+The typical **read and write speeds*8 for different interfaces are as follows:
+
+| Interface | Read Speed (MB/s) | Write Speed (MB/s) |
+|---|---|---|
+| USB 3.0 | 60 | 30 |
+| USB 3.1 Gen 1 | 5 | 5 |
+| USB 3.1 Gen 2 | 10 | 10 |
+| USB 3.2 Gen 1x1 | 20 | 20 |
+| USB 3.2 Gen 2x2 | 40 | 40 |
+| USB 4 | 40 | 40 |
+| Thunderbolt 4 | 40 | 40 |
+| SATA III | 600 | 600 |
+| NVMe PCIe 3.0 x4 | 3500 | 3000 |
+| NVMe PCIe 4.0 x4 | 7000 | 6000 |
+
+I have been exploring also NAS as a reliable options for home backups.
+
+Synlogy seems to be a good alternative, but...in my opinion its just a PC with couple of 3.5 bays.
+
+Im exploring other options at this point.
+
+I just need the space and Linux with containers!
+
 
 #### Cold Storage
 
