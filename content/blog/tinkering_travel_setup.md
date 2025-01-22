@@ -236,6 +236,10 @@ You can also get one of these portable 4G usb router (and bring a **sim adapter*
 
 ![4g router](/blog_img/hardware/portable-4g-router-usb.jpg)
 
+{{< callout type="warning" >}}
+If you plan to use an esim on your phone as Hotspot, it did not work for me 
+{{< /callout >}}
+
 
 #### Travel Router
 
@@ -245,7 +249,7 @@ You can also get one of these portable 4G usb router (and bring a **sim adapter*
 {{< /cards >}}
 
 
-If you need to login to a hotel network, where a login is required, this will prompt:
+If you need to **login to a hotel network**, where credentials (**user/pass**) are required, this will prompt:
 
 
 {{< callout type="warning" >}}

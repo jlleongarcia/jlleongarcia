@@ -272,8 +272,24 @@ If you are using a Cloud/VPS, you dont need to PortForward and can get [HTTPs wi
 ### Creating Containers
 
 {{< callout type="info" >}}
-You can create Containers Automatically thanks to [CI/CD Tools, like Github Actions](https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/)
+You can **create Containers Automatically** thanks to [CI/CD Tools, like Github Actions](https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/)
 {{< /callout >}}
+
+Just **recently**, we can use not only x86 VM with github to build our containers, but **also native ARM** (we can skip emulating it with QEMU).
+
+if you want to create containers on your own hardware (but automatically), you can use:
+
+1. Github/Gitlab Runners
+2. Gitea Act Runner
+3. Jenkins CI/CD
+
+### Using Containers
+
+
+{{< callout type="info" >}}
+Make sure to understand [docker volumes vs bind mounts](https://dev.to/aijeyomah/docker-volumes-vs-bind-mounts-choosing-the-right-storage-for-your-containers-3pb8)!
+{{< /callout >}}
+
 
 
 
@@ -301,3 +317,7 @@ https://github.com/rapiz1/rathole
 
 * https://www.reddit.com/r/selfhosted/comments/1beoi4l/best_practices_for_selfhosted_services/
 * https://www.reddit.com/r/homelab/wiki/index/
+
+### What about NIX?
+
+Recently I heard about Flox and NIX...

@@ -3,12 +3,14 @@ title: "Weddings are expensive. Bee smart with the software."
 date: 2025-01-18
 draft: false
 tags: ["OSS"]
-summary: 'Interesting software for Weddings'
+summary: 'Interesting software for Weddings. Including how to deploy it with Dokploy'
 url: 'software-for-weddings'
 ---
 
+<!-- 
 * Weddings...
 * bodas.net
+http://divephiphiisland.com/ -->
 
 
 ## Website for Weddings
@@ -16,15 +18,16 @@ url: 'software-for-weddings'
 
 ## Selfhostable Software for Weddings
 
-1. https://noted.lol/event-photos-and-self-hosting/
+1. Few [Selfhostable Alternatives](https://noted.lol/event-photos-and-self-hosting/) for events
 2. https://github.com/Cirx08/WeddingShare
 
 > GPL3.0 | A place for guests to view and drop pictures of the big day
 
-https://docs.wedding-share.org/
-https://docs.wedding-share.org/docs/Setup/docker
-https://hub.docker.com/r/cirx08/wedding_share
-https://www.redditmedia.com/r/selfhosted/comments/1gugnku/weddingshare_a_basic_selfhosted_drop_box_and/
+* https://docs.wedding-share.org/
+  * https://docs.wedding-share.org/docs/Setup/docker
+  * https://hub.docker.com/r/cirx08/wedding_share
+  * https://www.redditmedia.com/r/selfhosted/comments/1gugnku/weddingshare_a_basic_selfhosted_drop_box_and/
+
 
 ```yml
 services:
@@ -56,3 +59,7 @@ volumes:
   data-volume-uploads:
     name: WeddingShare-Uploads
 ```
+
+## Making Deployments Easy
+
+### DokPloy

@@ -335,7 +335,7 @@ flatpak install flathub app.organicmaps.desktop
 
 > GPL3.0 | A modern, open-source personal flight tracking system
 
-See also Jetlog
+See also the Jetlog project:
 
 * https://github.com/seanmorley15/AdventureLog
 

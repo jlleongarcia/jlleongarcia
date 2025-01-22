@@ -1,9 +1,9 @@
 ---
 title: "Stocks with Python"
-date: 2025-03-23
+date: 2025-02-15
 draft: false
 tags: ["Python"]
-description: "A Cooler R/Stocks - This time with Python. And with proper auth"
+description: "A Cooler R/Stocks - This time with Python. And with proper Auth/UIM."
 summary: 'A Cooler R/Stocks - This time with Python. And with proper auth'
 url: 'python-stocks-webapp'
 ---
@@ -321,17 +321,31 @@ You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/a
 
 * https://www.multpl.com/
   * it has Sp500 PE Ratios, 10y treausry rates...
+
 * https://www.wallstreetmojo.com/trailing-pe-vs-forward-pe/
 
+* https://uk.finance.yahoo.com/quote/RIO.L/
+  * https://finance.yahoo.com/sectors/basic-materials/
+  * https://es.finance.yahoo.com/quote/0P00012PP6.F
+
+* https://www.digrin.com/stocks/detail/IDUS.L/
 
 - https://stockanalysis.com/ esta es buena para stocks, etfs no
+  - https://stockanalysis.com/stocks/rio/dividend/
+
 - https://www.justetf.com/uk/ esta es un screener de ETFs muy bueno, además están todas las variantes monetarias de cada ETF
+
+- https://www.digrin.com/stocks/detail/IDUS.L/
+
 - https://divvydiary.com/en/?via=elisa&gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOIN8XXGkoEZZbfhufMr55Y2kSIuAGXDP4Lb1LYgLlRMnezpTUl2tkAaAp2kEALw_wcB esta la encontré el otro día, ofrece datos históricos de stocks y algún ETF (FUSD te lo da pero IDUS no), pero mola que me da el ISIN rápido, entonces veo rápidamente en qué país cotiza
 - https://tools.mhinvest.com/mhichart una web app que tiene una idea muy parecida a la que pensamos en su momento, pero no considera seguir metiendo gasolina, parte de una cantidad inicial y listo.
 
 * https://www.marketbeat.com/
   * https://www.marketbeat.com/stocks/NYSE/CVX/dividend/
-  * 
+
+* https://www.nasdaq.com/market-activity/stocks/mcd/price-earnings-peg-ratios
+
+* 
 
 * https://www.cazadividendos.com/
 
@@ -339,6 +353,8 @@ You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/a
 * https://www.morningstar.com/stocks/xnys/pg/quote
 
 * https://ycharts.com/companies/
+  * https://ycharts.com/companies/INTC/profit_margin
+  
 * https://www.investopedia.com/terms/p/pegyratio.asp
 
 #### Financial Data Apps
