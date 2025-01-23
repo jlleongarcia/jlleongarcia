@@ -14,7 +14,6 @@ Some time ago, I made a [Trip Planner Web App](https://github.com/JAlcocerT/Py_T
 
 If you are tired of this:
 
-
 ![Karting Adventure](/blog_img/memes/oldnewjob.jpg)
 
 Why not taking a break in between?

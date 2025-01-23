@@ -105,6 +105,50 @@ And definitely much more than the older FlexDashboards in R.
 * Stocks overperforming SP500 in xyz period / last xyz months
 * YoC when I stopped investing at a certain point of time (Dave van Knapp made a all in approach, but it can serve to see what happens after a DCA strategy)
 
+In the meantime, I got to udnerstand how French amortization works (typical for mortage payments)
+
+{{< details title="More about French Amortization 📌" closed="true" >}}
+
+**Understanding French Amortization**
+
+French amortization is a loan repayment method where you make equal periodic payments (usually monthly) over a fixed term. Each payment consists of two parts:
+
+1. **Interest payment:** Calculated on the outstanding loan balance.
+2. **Principal repayment:** The portion of the payment that reduces the outstanding loan balance.
+
+**Key Characteristics:**
+
+* **Equal periodic payments:** The total amount you pay each period remains constant.
+* **Declining interest:** As the loan balance decreases, the interest portion of your payment also decreases.
+* **Increasing principal repayment:** Since the total payment is fixed, the portion allocated to principal repayment increases over time.
+
+**Excel Parameters for French Amortization:**
+
+To create an amortization schedule in Excel, you'll need the following parameters:
+
+1. **Loan amount (principal):** The initial amount borrowed.
+2. **Interest rate:** The annual interest rate on the loan.
+3. **Loan term:** The total number of periods (usually months or years) over which the loan will be repaid.
+
+> See [these functions](https://support.google.com/docs/answer/3093185?hl=en)
+
+* **PMT(rate, nper, pv):** Calculates the periodic payment amount.
+  * `rate`: The periodic interest rate (annual rate divided by the number of periods per year).
+  * `nper`: The total number of payment periods.
+  * `pv`: The present value of the loan (the amount borrowed).
+  * It does not care about the period, as the key about this amortization is that all are the same!
+
+* **IPMT(rate, per, nper, pv, [fv], [type]):** Calculates the interest portion of a specific payment.
+  * `rate`, `nper`, `pv`: Same as in the PMT function.
+  * `per`: The period for which you want to calculate the interest.
+  * `fv`: The future value of the loan (usually 0).
+  * `type`: Specifies when payments are due (0 for end of period, 1 for beginning of period).
+
+* **PPMT(rate, per, nper, pv, [fv], [type]):** Calculates the principal portion of a specific payment.
+  * Parameters are the same as for IPMT.
+
+
+{{< /details >}}
 
 ### Interesting Pkgs I got to learn
 
