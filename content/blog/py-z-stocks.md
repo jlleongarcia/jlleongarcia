@@ -105,9 +105,26 @@ And definitely much more than the older FlexDashboards in R.
 * Stocks overperforming SP500 in xyz period / last xyz months
 * YoC when I stopped investing at a certain point of time (Dave van Knapp made a all in approach, but it can serve to see what happens after a DCA strategy)
 
-In the meantime, I got to udnerstand how French amortization works (typical for mortage payments)
+In the meantime, I got to udnerstand how **French amortization** works (typical for mortage payments)
 
 {{< details title="More about French Amortization 📌" closed="true" >}}
+
+To calculate the French amortization schedule in Python, you need to use a formula that generates a fixed monthly payment throughout the loan term, and then gradually allocates it to both interest and principal.
+
+The formula for calculating the fixed monthly payment is:
+
+\[
+M = P \times \frac{r(1 + r)^n}{(1 + r)^n - 1}
+\]
+
+Where:
+- \(M\) is the monthly payment
+- \(P\) is the principal amount
+- \(r\) is the monthly interest rate (annual interest rate divided by 12)
+- \(n\) is the number of payments (loan term in years multiplied by 12)
+
+Each month, the interest portion of the payment decreases, and the principal portion increases.
+
 
 **Understanding French Amortization**
 
@@ -147,8 +164,13 @@ To create an amortization schedule in Excel, you'll need the following parameter
 * **PPMT(rate, per, nper, pv, [fv], [type]):** Calculates the principal portion of a specific payment.
   * Parameters are the same as for IPMT.
 
-
 {{< /details >}}
+
+I also got time to compare different SP500 ETFS:
+
+* LON:SPY5 ([SPY5.L](https://finance.yahoo.com/quote/SPY5.L/)) dist usd 0.09% IE00B6YX5C33 [Link to JustETF profile](https://www.justetf.com/es/etf-profile.html?isin=IE00B6YX5C33#dividendos)
+* LON:VUAA, acc usd 0.07% IE00BFMXXD54 [Link to JustETF profile](https://www.justetf.com/es/etf-profile.html?isin=IE00BFMXXD54#bolsa-de-valores)
+
 
 ### Interesting Pkgs I got to learn
 
