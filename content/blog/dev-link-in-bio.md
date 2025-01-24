@@ -121,15 +121,39 @@ It uses [fontawsome icons](https://fontawesome.com/search)
 
 ## How to Deploy SSGs Link in bio
 
+0. With Firebase or **Cloudflare CLI**
 
+```sh
+npm run build
 
-### Github + Cloudflare Workers and Pages
+```
+
+```sh
+npx wrangler pages project create #this will install the wrangler CLI package
+#npx wrangler pages project list
+#npx wrangler pages deployment list
+
+#npm run build
+
+#https://developers.cloudflare.com/pages/configuration/build-configuration/#framework-presets
+npx wrangler pages deploy dist # normally will be dist, but whatever <BUILD_OUTPUT_DIRECTORY>
+```
+
+We will upload the `./dist` folder, as its the place where the static files are built.
+
+{{< callout type="warning" >}}
+This approach does not use CI/CD for improved workflow as the following ones!
+{{< /callout >}}
+
+**You can use these 2 other methods as an alternative, it also works with private repositories**
+
+1. Github + Cloudflare Workers and Pages
 
 {{< cards cols="2" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages" title="Example of Github + CF Pages" >}}
 {{< /cards >}}
 
-### Gitlab + Cloudflare WnP
+2. **Gitlab + Cloudflare WnP**
 
 <!-- https://gitlab.com/fossengineer1/financeinmotion -->
 
@@ -137,5 +161,28 @@ It uses [fontawsome icons](https://fontawesome.com/search)
 1. Get a domain name for Cloudflare
 2. 
 
+
+{{% steps %}}
+
+### Astro Site to Github Repository
+
+Push your code to a [Github Repository](https://jalcocert.github.io/JAlcocerT/github-gists).
+
+### Setup Cloudflare to with with Github
+
+Go to [Cloudflare UI](https://dash.cloudflare.com/).
+
+Compute (workers) -> **Worker & Pages** -> Overview.
+
+Create -> Pages -> Connect Git.
+
+You will Need a Github Account Authentication
+
+### Setup Cloudflare Workers and Pages
+
+
+{{% /steps %}}
+
+Go to the [Cloudflare UI](https://dash.cloudflare.com), and...
 
 
