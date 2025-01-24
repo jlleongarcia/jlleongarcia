@@ -158,7 +158,14 @@ This approach does not use CI/CD for improved workflow as the following ones!
 <!-- https://gitlab.com/fossengineer1/financeinmotion -->
 
 
-1. Get a domain name for Cloudflare
+1. Get a domain name with Cloudflare as **Authoritative Name Server**
+
+![CF Custom Domain2 ](/blog_img/Cloudflare/CF-CustomDomain-DNSManagement.png)
+
+![CF Custom Domain2 ](/blog_img/Cloudflare/CF-NameServers.png)
+
+![CF Custom Domain2 ](/blog_img/Cloudflare/CF-Porkbun-NS.png)
+
 2. 
 
 
