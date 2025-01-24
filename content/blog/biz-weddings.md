@@ -1,5 +1,5 @@
 ---
-title: "Weddings are expensive. Bee smart with the software."
+title: "Weddings are expensive. Be smart with the right software."
 date: 2025-01-18
 draft: false
 tags: ["OSS"]
@@ -15,6 +15,10 @@ http://divephiphiisland.com/ -->
 
 ## Website for Weddings
 
+With astro, you can build pretty cool weddings ssgs:
+
+1. https://github.com/Boston343/horizon
+* Ive forked it to https://github.com/JAlcocerT/horizon
 
 ## Selfhostable Software for Weddings
 
@@ -63,3 +67,12 @@ volumes:
 ## Making Deployments Easy
 
 ### DokPloy
+
+An alternative to vercel and netlify!
+
+https://github.com/Dokploy/dokploy
+
+https://dokploy.com/
+
+> Open Source Alternative to Vercel, Netlify and Heroku.
+

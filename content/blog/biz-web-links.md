@@ -1,6 +1,6 @@
 ---
 title: "One link for Social Bios"
-date: 2025-01-15
+date: 2025-01-24
 draft: false
 tags: ["OSS"]
 summary: 'Link Hosting Services, for all. With a website, of course.'

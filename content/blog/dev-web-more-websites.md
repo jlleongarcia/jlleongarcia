@@ -72,7 +72,7 @@ Making a better [LinkTree](https://linktr.ee/s/pricing/) or [linkbio](https://ww
 
 At the moment of writing, they are charging 5$/m for the first paid tier.
 
-It goes to 9$/m to have newsletter and web analytics...or customize the UI.
+It goes to `9$/m` to have newsletter and web analytics...or customize the UI.
 
 <!-- {{< callout type="info" >}}
 A cool UI is mostly [a matter of CSS](https://jalcocert.github.io/JAlcocerT/blog/dev-css/)

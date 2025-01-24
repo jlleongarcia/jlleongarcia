@@ -1,6 +1,6 @@
 ---
 title: "Trying a Nuxt Theme and a SSG Recap"
-date: 2025-01-13
+date: 2025-01-21
 draft: false
 tags: ["dev"]
 summary: ''

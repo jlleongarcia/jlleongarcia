@@ -500,7 +500,7 @@ These days I have improved my **Web creation/edition Workflow**.
 
 Im now using **Github+Cloudflare** and Gitlab+Cloudflare for deployments.
 
-Time to say bye to my old friend Firebase.
+Time to say bye to my old friend **Firebase**!
 
 At least for now.
 

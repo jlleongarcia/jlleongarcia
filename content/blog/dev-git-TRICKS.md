@@ -7,12 +7,9 @@ url: 'git-recap'
 summary: 'Git and useful extensions while developing.'
 ---
 
-Name: Dev Containers
-Id: ms-vscode-remote.remote-containers
-Description: Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set.
-Version: 0.394.0
-Publisher: Microsoft
-VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+* Name: **Dev Containers**
+    * Id: ms-vscode-remote.remote-containers
+    * [VS Marketplace Link](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ### Github
 
@@ -20,7 +17,8 @@ https://jalcocert.github.io/JAlcocerT/github-gists/
 
 #### Creating Releases
 
-And given a project you can get the latest Github release as per:
+
+And given a project, you can **get the latest Github release** as per:
 
 <!-- https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8 -->
 {{< gist steinwaywhw a4cd19cda655b8249d908261a62687f8>}}

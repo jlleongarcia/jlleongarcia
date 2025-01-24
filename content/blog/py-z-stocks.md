@@ -166,6 +166,12 @@ To create an amortization schedule in Excel, you'll need the following parameter
 
 {{< /details >}}
 
+
+{{< callout type="info" >}}
+Ive also covered it as part of the EDA of pystocks - 
+{{< /callout >}}
+
+
 I also got time to compare different SP500 ETFS:
 
 * LON:SPY5 ([SPY5.L](https://finance.yahoo.com/quote/SPY5.L/)) dist usd 0.09% IE00B6YX5C33 [Link to JustETF profile](https://www.justetf.com/es/etf-profile.html?isin=IE00B6YX5C33#dividendos)
