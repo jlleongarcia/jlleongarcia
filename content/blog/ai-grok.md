@@ -1,6 +1,6 @@
 ---
 title: "How to use Grok (X) API"
-date: 2025-02-15
+date: 2025-02-07
 draft: false
 tags: ["AI"]
 summary: 'A Recap on AI APIs calls and learning how to use Grok API'
@@ -14,6 +14,8 @@ url: 'how-to-use-grok-api'
     * https://docs.x.ai/docs/overview
 
 ## Using Grok API
+
+You will need some **credits ($) first**, and just try that Grok API works:
 
 ```sh
 curl https://api.x.ai/v1/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer xai-somecoolapikey" -d '{
@@ -41,7 +43,7 @@ curl https://api.x.ai/v1/chat/completions -H "Content-Type: application/json" -H
 
 #### Grok via LiteLLM
 
-how-to-use-lite-llm
+https://jalcocert.github.io/JAlcocerT/how-to-use-lite-llm/
 
 ---
 

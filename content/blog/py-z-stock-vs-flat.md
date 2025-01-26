@@ -24,6 +24,12 @@ Apparently, finance people call that the **ROIC** (without leverage on a loan, R
 
 But its all about few mathematical ways to represent very logical financial concepts.
 
+
+{{< callout type="warning" >}}
+**No information exposed on this post can be taken as financial recommendations** 
+These are just my notes on how Python can be used to create a calculator app.
+{{< /callout >}}
+
 ## Understanding Loans
 
 When we get a mortage, our **net total assets today are reduced**, as we have some interests to pay (liabilities):
@@ -140,7 +146,7 @@ In the example, as per [NASDAQ O Data](https://www.nasdaq.com/market-activity/st
 the first div of 2020 was 0.2325$, thats a x1.135, but in 5 years, so...can we have some kind of constant growth rate?
 
 $$
-CAGR = \left( \frac{0.264}0.2325} \right)^{\frac{1}{5}} - 1 = 2,57
+CAGR = \left( \frac{0,264}0,2325} \right)^{\frac{1}{5}} - 1 = 2,57
 $$
 
 So its an equivalent of **2,57% of dividend growth**, each year, during the last 5 years.
@@ -253,8 +259,6 @@ What's better?
 
 As always, it depends, faster growing divs, also tend to imply higher stock value growth rate.
 
-
-
 **Parameters to Track**
 1. DCA or all in approach?
 2. Value of the stock and yield on cost
@@ -274,6 +278,38 @@ So the costs from your pocket of this one are: Initial payment + Mortage Payment
 2. Value of the property and % the bank loaned
 3. **Estimations of**: property value growth and rental growth (it could also be decrease!)
 
+
+### Rent Price vs Property Price
+
+There are some interesting dynamics between these 2.
+
+<!-- 
+https://www.youtube.com/watch?v=6whiAFXk3IU 
+-->
+
+{{< youtube "6whiAFXk3IU" >}}
+
+People trying to leverage loans, tend to look for low property price to rent price ratios.
+
+Also using low interest rates and long horizons to pay back the debt, so that very quickly the rental prices exceed the mortage amount, which provides them with Free Cash Flow (using loaned money).
+
+This of course has several risks involved:
+
+1. How consistent is the rental? Any damages? Occupancy ratio? Whats the rental growth if any?
+2. What will be the interest rate evolution during the loan period? 
+
+If interest rise enough, you can go from FCF to be unable to pay to the bank, hence potentially loosing the house.
+
+Those situations where people lost it all, happened not so long ago, in ~2008.
+
+People buying it very high prices, then interest went up, making the property value go down (which was
+their biggest asset) and when you cant pay and all you have lost 50% of its value...you stay with nothing.
+
+To avoid such situations to happen again (in theory), there are rules that wont let you take too much credit in comparison with what you earn. For example:
+
+Max credit monthly payment < 0.35*(Net Salary + Other Net Income)
+
+> Imo, even with such formulas there are risk, but...what do I know about finances!
 
 ---
 
