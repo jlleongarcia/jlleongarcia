@@ -8,7 +8,7 @@ url: 'python-real-estate-mortage-calculator'
 math: true
 ---
 
-A friend asked me about some add-on for his real estate project.
+A friend asked me about some **add-on for his real estate project**.
 
 He wanted to know how profitable can be real estate, compared with a dividend investing strategy.
 
@@ -22,15 +22,14 @@ This arise the question: *what it is the **return** on the money that ive given 
 
 Apparently, finance people call that the **ROIC** (without leverage on a loan, ROI=ROIC)
 
+But its all about few mathematical ways to represent very logical financial concepts.
+
 ## Understanding Loans
 
 When we get a mortage, our **net total assets today are reduced**, as we have some interests to pay (liabilities):
 
 
 ### French Amortization 101
-
-
-This is the **French amortization** formula: $A = P \times \frac{r(1 + r)^n}{(1 + r)^n - 1}$.
 
 
 <!-- This $\sigma(z) = \frac{1}{1 + e^{-z}}$ is inline.
@@ -144,9 +143,19 @@ $$
 CAGR = \left( \frac{0.264}0.2325} \right)^{\frac{1}{5}} - 1 = 2,57
 $$
 
-So its an equivalent of 2,57% of dividend growth, each year, during the last 5 years.
+So its an equivalent of **2,57% of dividend growth**, each year, during the last 5 years.
 
 This is a 'virtual' number, some years was more, some less, buts **thats the compound rate**
+
+And it ofc depends in your stock investment, same as your potential property investment.
+
+Other example with [MCD](https://www.nasdaq.com/market-activity/stocks/mcd/dividend-history):
+
+$$
+CAGR = \left( \frac{1.77}1.25} \right)^{\frac{1}{5}} - 1 = 7,2
+$$
+
+And now, the logical question appears: when will (if ever) catch up?
 
 #### How many years to...
 
@@ -221,7 +230,49 @@ For example:
 The **exact formula** to find the time to **double** is $t = \frac{\ln(2)}{\ln(1 + r)}$.
 
 
-3. The formula to find the time to grow by a factor of XYZ is $t = \frac{\ln(XYZ)}{\ln(1 + r)}$.
+3. The formula to find the **time to grow by a general factor** of XYZ is $t = \frac{\ln(XYZ)}{\ln(1 + r)}$.
+
+With this one, we can see when MCD will potentially, catch up with O (while O also grows, but to a slower rate)
+
+$$
+t = \frac{\ln(5.8/2.5)}{\ln(1 + (7.2-2.7))}=17.8
+$$
+
+And with those rates, the yield of that stock you are buying today, catch up in ~17.8 years!
+
+## Div Growth
+
+The important fact here is, that we dont get a loan for dividend investing (do we?)
+
+In these examples, for dividends:
+
+1. Higher initial yield ~5,8% and lower Div Growth ~2,7%
+2. Lower initial yield ~2,5% and Higher Div Growth ~7,2%
+
+What's better?
+
+As always, it depends, faster growing divs, also tend to imply higher stock value growth rate.
+
+
+
+**Parameters to Track**
+1. DCA or all in approach?
+2. Value of the stock and yield on cost
+3. **Estimations of**: value growth and dividend (it could also be decrease!)
+
+
+## Rent Growth
+
+In this case, we are receiving rental income (dividend income) also from the borrowed amount!
+
+This can (or not) help to pay mortage interests.
+
+So the costs from your pocket of this one are: Initial payment + Mortage Payment - Net Rent 
+
+**Parameters to Track**
+1. Interest Rate & Years
+2. Value of the property and % the bank loaned
+3. **Estimations of**: property value growth and rental growth (it could also be decrease!)
 
 
 ---

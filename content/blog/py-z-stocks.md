@@ -109,8 +109,9 @@ And definitely much more than [FlexDashboards](https://jalcocert.github.io/JAlco
 * Stocks overperforming SP500 in xyz period / last xyz months
 * YoC when I stopped investing at a certain point of time (Dave van Knapp made a all in approach, but it can serve to see what happens after a DCA strategy)
 
-In the meantime, I got to understand [how **French amortization** works](https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/) (typical for mortage payments).
+In the meantime, I got to understand [how **French amortization** works](https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/#french-amortization-101) (typical for mortage payments).
 
+See, the **French amortization** formula: $A = P \times \frac{r(1 + r)^n}{(1 + r)^n - 1}$.
 
 I also got time to compare **different SP500 ETFS performance**:
 
