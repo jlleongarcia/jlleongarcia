@@ -1,18 +1,19 @@
 ---
 title: "Stocks with Python"
-date: 2025-02-15
+date: 2025-01-26
 draft: false
 tags: ["Python"]
 description: "A Cooler R/Stocks - This time with Python. And with proper Auth/UIM."
 summary: 'A Cooler R/Stocks - This time with Python. And with proper auth'
 url: 'python-stocks-webapp'
+math: true
 ---
 
 **TradFi** - Traditional Finances as I saw recently on redit.
 
 
 {{< callout type="info" >}}
-After [Weather Planning](https://jalcocert.github.io/JAlcocerT/trip-planner-with-weather/), there is also the financial aspects of travelling
+After [Weather Planning](https://jalcocert.github.io/JAlcocerT/trip-planner-with-weather/), there is also the **financial aspects of travelling**
 {{< /callout >}}
 
 
@@ -20,10 +21,12 @@ After [Weather Planning](https://jalcocert.github.io/JAlcocerT/trip-planner-with
 The project [**source code**](https://gitlab.com/fossengineer1/py_stocks) - PyStocks 💻 
 {{< /callout >}}
 
-If all of this sounds familiar. It is because it is actually familiar.
+If all of this sounds familiar.
+
+It is because it is actually familiar.
 
 {{< callout type="info" >}}
-Sometime ago I was doing similar Project in **R Shiny** - [R/Stocks](https://jalcocert.github.io/JAlcocerT/R-Stocks/)
+Sometime ago I was doing similar Project in **R Shiny** - [R/Stocks](https://jalcocert.github.io/JAlcocerT/R-Stocks/) 💻 and documenting it [here](https://jalcocert.github.io/JAlcocerT/R-Stocks/) 
 {{< /callout >}}
 
 {{< details title="API's I was using with R/Stocks 📌" closed="true" >}}
@@ -38,6 +41,7 @@ Sometime ago I was doing similar Project in **R Shiny** - [R/Stocks](https://jal
 ## PyStocks
 
 For user authentication: clear/supabase/logto...
+
 * https://clerk.com/docs
 * https://github.com/clerk/clerk-sdk-python/blob/main/README.md
 * https://www.reddit.com/r/Supabase/comments/1dvabn6/what_is_the_best_solution_to_use_supabase_auth/
@@ -96,16 +100,20 @@ Chat with a DB applied for finance - <https://github.com/JAlcocerT/Data-Chat/tre
 
 ## Conclusions
 
-This goes one step further than the previous project RStocks.
+This goes one step further than the previous [project RStocks](https://jalcocert.github.io/JAlcocerT/R-Stocks/).
 
-And definitely much more than the older FlexDashboards in R.
+And definitely much more than [FlexDashboards](https://jalcocert.github.io/JAlcocerT/guide-r-flexdashboards-in-github-pages/) in R.
 
 ### Stock Questions - Answered
 
 * Stocks overperforming SP500 in xyz period / last xyz months
 * YoC when I stopped investing at a certain point of time (Dave van Knapp made a all in approach, but it can serve to see what happens after a DCA strategy)
 
-In the meantime, I got to udnerstand how **French amortization** works (typical for mortage payments)
+In the meantime, I got to udnerstand how **French amortization** works (typical for mortage payments).
+
+This $\sigma(z) = \frac{1}{1 + e^{-z}}$ is inline.
+
+$$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-j\omega t} \, dt$$
 
 {{< details title="More about French Amortization 📌" closed="true" >}}
 
@@ -437,14 +445,28 @@ You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/a
 
 ### GSheets Tricks
 
-You can have a simple, yet useful Google Sheets with Stocks info:
+You can have a simple, yet useful **Google Sheets with Stocks** info:
 
 ```sh
-=GoogleFinance(S35;"eps")
+=GoogleFinance(S35;"eps") #S35 can reference some ticket, like NYSE:KO
 =GoogleFinance(S35;"pe")
+=GoogleFinance("INDEXSP:.INX") #sp500
+
+=INDICE(GoogleFinance("INDEXSP:.INX"; "price"; HOY()-365);2;2) #get the price 365 ago
+
+=SPARKLINE(GoogleFinance("CURRENCY:EURCHF"; "price"; HOY()-J$1; HOY()))
+=SPARKLINE(GoogleFinance("CURRENCY:"&"USD" & DERECHA(A6;3); "price"; HOY()-J$1; HOY()))
 ```
 
 And if you need, you can also **import info from other website** sources:
+
+{{< callout type="warning" >}}
+You will need to go to inspect -> find the proper div with the info -> copy **full xpath**
+These xpath might change if there is a redesign in the website!
+{{< /callout >}}
+
+
+1. Import from ycharts:
 
 ```sh
 =VALOR(IZQUIERDA(importxml(CONCATENAR("https://ycharts.com/companies/";REGEXEXTRACT(S33;"[^:]*$");"/profit_margin");$AJ$28);3))/100
@@ -454,8 +476,30 @@ And if you need, you can also **import info from other website** sources:
 
 > with xpath being `/html/body/div[3]/div[2]/section[1]/div/div/div[1]/div[2]/ul/li[1]/span[2]`
 
+2. Import from numbeo:
 
+```sh
+=IZQUIERDA(importxml(C36;C37);6)/IZQUIERDA(importxml(C36;C38);6)
+```
+
+With:
+
+* C36 `https://www.numbeo.com/cost-of-living/compare_cities.jsp?country1=Poland&country2=spain&city1=Warsaw&city2=barcelona&tracking=getDispatchComparison`
+* C37 `/html/body/div[2]/aside[1]/div[2]/div/span[1]/text()`
+* C38 `/html/body/div[2]/aside[1]/div[2]/div/span[3]`
+
+3. Even from Etherscan for crypto related info!
+
+```sh
+=importxml("https://etherscan.io/address/some_address";"/html/body/main/section[3]/div[2]/div[1]/div/div/div[2]/div/div")
+```
 
 {{< callout type="info" >}}
 You can learn more about **Scrapping** as covered on this [blog post](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/) and the [Scrapping-Tools repo](https://github.com/JAlcocerT/Scrap_Tools) 💻
 {{< /callout >}}
+
+---
+
+## Thanks to
+
+* Hugo Hextra [Latex Syntax](https://imfing.github.io/hextra/docs/guide/latex/)
