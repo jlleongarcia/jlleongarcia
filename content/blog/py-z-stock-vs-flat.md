@@ -149,6 +149,10 @@ $$
 CAGR = \left( \frac{0,264}0,2325} \right)^{\frac{1}{5}} - 1 = 2,57
 $$
 
+$$
+CAGR = \left( \frac{0.264}{0.2325} \right)^{\frac{1}{5}} - 1 \approx 0.03
+$$
+
 So its an equivalent of **2,57% of dividend growth**, each year, during the last 5 years.
 
 This is a 'virtual' number, some years was more, some less, buts **thats the compound rate**
@@ -310,6 +314,27 @@ To avoid such situations to happen again (in theory), there are rules that wont 
 Max credit monthly payment < 0.35*(Net Salary + Other Net Income)
 
 > Imo, even with such formulas there are risk, but...what do I know about finances!
+
+
+### Real Estate Data
+
+First thing I thought was **airbnb data**.
+
+
+* https://insideairbnb.com/get-the-data/
+  * https://insideairbnb.com/valencia/
+
+But I also heard about idealista:
+
+* https://www.idealista.com/data/
+* https://www.idealista.com/labs/blog/?p=4207
+  * https://www.idealista.com/labs/blog/?p=4207
+  * https://paezha.github.io/idealista18/
+
+> They even create a [R Package `paezha/idealista18`](https://github.com/paezha/idealista18) for this, with 2018 data!
+
+
+Credits to both platforms for sharing such interesting data!
 
 ---
 
