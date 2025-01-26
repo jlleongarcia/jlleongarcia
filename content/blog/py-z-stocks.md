@@ -109,81 +109,14 @@ And definitely much more than [FlexDashboards](https://jalcocert.github.io/JAlco
 * Stocks overperforming SP500 in xyz period / last xyz months
 * YoC when I stopped investing at a certain point of time (Dave van Knapp made a all in approach, but it can serve to see what happens after a DCA strategy)
 
-In the meantime, I got to udnerstand how **French amortization** works (typical for mortage payments).
-
-This $\sigma(z) = \frac{1}{1 + e^{-z}}$ is inline.
-
-$$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-j\omega t} \, dt$$
-
-{{< details title="More about French Amortization 📌" closed="true" >}}
-
-To calculate the French amortization schedule in Python, you need to use a formula that generates a fixed monthly payment throughout the loan term, and then gradually allocates it to both interest and principal.
-
-The formula for calculating the fixed monthly payment is:
-
-\[
-M = P \times \frac{r(1 + r)^n}{(1 + r)^n - 1}
-\]
-
-Where:
-- \(M\) is the monthly payment
-- \(P\) is the principal amount
-- \(r\) is the monthly interest rate (annual interest rate divided by 12)
-- \(n\) is the number of payments (loan term in years multiplied by 12)
-
-Each month, the interest portion of the payment decreases, and the principal portion increases.
+In the meantime, I got to understand [how **French amortization** works](https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/) (typical for mortage payments).
 
 
-**Understanding French Amortization**
+I also got time to compare **different SP500 ETFS performance**:
 
-French amortization is a loan repayment method where you make equal periodic payments (usually monthly) over a fixed term. Each payment consists of two parts:
-
-1. **Interest payment:** Calculated on the outstanding loan balance.
-2. **Principal repayment:** The portion of the payment that reduces the outstanding loan balance.
-
-**Key Characteristics:**
-
-* **Equal periodic payments:** The total amount you pay each period remains constant.
-* **Declining interest:** As the loan balance decreases, the interest portion of your payment also decreases.
-* **Increasing principal repayment:** Since the total payment is fixed, the portion allocated to principal repayment increases over time.
-
-**Excel Parameters for French Amortization:**
-
-To create an amortization schedule in Excel, you'll need the following parameters:
-
-1. **Loan amount (principal):** The initial amount borrowed.
-2. **Interest rate:** The annual interest rate on the loan.
-3. **Loan term:** The total number of periods (usually months or years) over which the loan will be repaid.
-
-> See [these functions](https://support.google.com/docs/answer/3093185?hl=en)
-
-* **PMT(rate, nper, pv):** Calculates the periodic payment amount.
-  * `rate`: The periodic interest rate (annual rate divided by the number of periods per year).
-  * `nper`: The total number of payment periods.
-  * `pv`: The present value of the loan (the amount borrowed).
-  * It does not care about the period, as the key about this amortization is that all are the same!
-
-* **IPMT(rate, per, nper, pv, [fv], [type]):** Calculates the interest portion of a specific payment.
-  * `rate`, `nper`, `pv`: Same as in the PMT function.
-  * `per`: The period for which you want to calculate the interest.
-  * `fv`: The future value of the loan (usually 0).
-  * `type`: Specifies when payments are due (0 for end of period, 1 for beginning of period).
-
-* **PPMT(rate, per, nper, pv, [fv], [type]):** Calculates the principal portion of a specific payment.
-  * Parameters are the same as for IPMT.
-
-{{< /details >}}
-
-
-{{< callout type="info" >}}
-Ive also covered it as part of the EDA of pystocks - 
-{{< /callout >}}
-
-
-I also got time to compare different SP500 ETFS:
-
-* LON:SPY5 ([SPY5.L](https://finance.yahoo.com/quote/SPY5.L/)) dist usd 0.09% IE00B6YX5C33 [Link to JustETF profile](https://www.justetf.com/es/etf-profile.html?isin=IE00B6YX5C33#dividendos)
-* LON:VUAA, acc usd 0.07% IE00BFMXXD54 [Link to JustETF profile](https://www.justetf.com/es/etf-profile.html?isin=IE00BFMXXD54#bolsa-de-valores)
+* `LON:SPY5` ([SPY5.L](https://finance.yahoo.com/quote/SPY5.L/)) dist usd 0.09% IE00B6YX5C33 [Link to JustETF profile](https://www.justetf.com/es/etf-profile.html?isin=IE00B6YX5C33#dividendos)
+* `LON:VUAA`, acc usd 0.07% IE00BFMXXD54 [Link to JustETF profile](https://www.justetf.com/es/etf-profile.html?isin=IE00BFMXXD54#bolsa-de-valores)
+* In GSheets, you have the SP500 index under the name `INDEXSP:.INX`
 
 
 ### Interesting Pkgs I got to learn
@@ -502,4 +435,4 @@ You can learn more about **Scrapping** as covered on this [blog post](https://ja
 
 ## Thanks to
 
-* Hugo Hextra [Latex Syntax](https://imfing.github.io/hextra/docs/guide/latex/)
+* Hugo Hextra [Latex/Katex Syntax](https://imfing.github.io/hextra/docs/guide/latex/)

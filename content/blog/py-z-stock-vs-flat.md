@@ -1,5 +1,5 @@
 ---
-title: "Real Estate Calcultor with Python"
+title: "Real Estate Calculator with Python"
 date: 2025-01-25
 draft: false
 tags: ["Python"]
@@ -7,6 +7,226 @@ description: "Making my own mortage calculator in Python."
 url: 'python-real-estate-mortage-calculator'
 math: true
 ---
+
+A friend asked me about some add-on for his real estate project.
+
+He wanted to know how profitable can be real estate, compared with a dividend investing strategy.
+
+After thinking about it for a while, we can see the following pattern:
+
+1. Stock value can be seen as property value
+2. Stock dividend yield as the renting price of the property
+3. Most *8significant difference**: we dont take loans for dividend investing, but people normally do for real estate
+
+This arise the question: *what it is the **return** on the money that ive given **from my pocket**?*
+
+Apparently, finance people call that the **ROIC** (without leverage on a loan, ROI=ROIC)
+
+## Understanding Loans
+
+When we get a mortage, our **net total assets today are reduced**, as we have some interests to pay (liabilities):
+
+
+### French Amortization 101
+
+
+This is the **French amortization** formula: $A = P \times \frac{r(1 + r)^n}{(1 + r)^n - 1}$.
+
+
+<!-- This $\sigma(z) = \frac{1}{1 + e^{-z}}$ is inline.
+
+$$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-j\omega t} \, dt$$ -->
+
+
+This is the French amortization formula: $M = P \times \frac{r(1 + r)^n}{(1 + r)^n - 1}$.
+
+
+
+{{< details title="More about French Amortization 📌" closed="true" >}}
+
+To calculate the French amortization schedule in Python, you need to use a formula that generates a fixed monthly payment throughout the loan term, and then gradually allocates it to both interest and principal.
+
+The formula for calculating the **fixed monthly payment** is:
+
+\[
+M = P \times \frac{r(1 + r)^n}{(1 + r)^n - 1}
+\]
+
+Where:
+- \(M\) is the monthly payment
+- \(P\) is the **principal** amount
+- \(r\) is the monthly **interest rate** (annual interest rate divided by 12)
+- \(n\) is the number of payments (loan term in years multiplied by 12)
+
+Each month, the interest portion of the payment decreases, and the principal portion increases.
+
+
+**Understanding French Amortization**
+
+French amortization is a loan repayment method where you make equal periodic payments (usually monthly) over a fixed term. Each payment consists of two parts:
+
+1. **Interest payment:** Calculated on the outstanding loan balance.
+2. **Principal repayment:** The portion of the payment that reduces the outstanding loan balance.
+
+**Key Characteristics:**
+
+* **Equal periodic payments:** The total amount you pay each period remains constant.
+* **Declining interest:** As the loan balance decreases, the interest portion of your payment also decreases.
+* **Increasing principal repayment:** Since the total payment is fixed, the portion allocated to principal repayment increases over time.
+
+**Excel Parameters for French Amortization:**
+
+To create an amortization schedule in Excel, you'll need the following parameters:
+
+1. **Loan amount (principal):** The initial amount borrowed.
+2. **Interest rate:** The annual interest rate on the loan.
+3. **Loan term:** The total number of periods (usually months or years) over which the loan will be repaid.
+
+> See [these functions](https://support.google.com/docs/answer/3093185?hl=en)
+
+* **PMT(rate, nper, pv):** Calculates the periodic payment amount.
+  * `rate`: The periodic interest rate (annual rate divided by the number of periods per year).
+  * `nper`: The total number of payment periods.
+  * `pv`: The present value of the loan (the amount borrowed).
+  * It does not care about the period, as the key about this amortization is that all are the same!
+
+* **IPMT(rate, per, nper, pv, [fv], [type]):** Calculates the interest portion of a specific payment.
+  * `rate`, `nper`, `pv`: Same as in the PMT function.
+  * `per`: The period for which you want to calculate the interest.
+  * `fv`: The future value of the loan (usually 0).
+  * `type`: Specifies when payments are due (0 for end of period, 1 for beginning of period).
+
+* **PPMT(rate, per, nper, pv, [fv], [type]):** Calculates the principal portion of a specific payment.
+  * Parameters are the same as for IPMT.
+
+{{< /details >}}
+
+
+{{< callout type="info" >}}
+Ive also covered **mortage with python** as part of the [EDA of pystocks](https://gitlab.com/fossengineer1/py_stocks/-/tree/main/EDA_Mortage?ref_type=heads)
+{{< /callout >}}
+
+
+## Dividend Growth vs Rent Growth
+
+```sh
+#https://www.nasdaq.com/market-activity/stocks/o/dividend-history
+=(importxml("https://www.nasdaq.com/market-activity/stocks/o/dividend-history";$AJ$28))
+```
+
+First div of 2025 has been 0.264$ and first of 2024 was 0.2565$, or a 2.92% growth.
+
+But some years are better than others, right?
+
+Lets see the **CAGR for dividend growth**
+
+### Useful Concepts
+
+#### CAGR
+
+The CAGR formula is $CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{t}} - 1$.
+
+Sure! The Compound Annual Growth Rate (CAGR) formula is typically written as:
+
+\[
+CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{t}} - 1
+\]
+
+Where:
+- \( V_f \) is the final value
+- \( V_i \) is the initial value
+- \( t \) is the time period (usually in years)
+
+In the example, as per [NASDAQ O Data](https://www.nasdaq.com/market-activity/stocks/o/dividend-history),
+the first div of 2020 was 0.2325$, thats a x1.135, but in 5 years, so...can we have some kind of constant growth rate?
+
+$$
+CAGR = \left( \frac{0.264}0.2325} \right)^{\frac{1}{5}} - 1 = 2,57
+$$
+
+So its an equivalent of 2,57% of dividend growth, each year, during the last 5 years.
+
+This is a 'virtual' number, some years was more, some less, buts **thats the compound rate**
+
+#### How many years to...
+
+1. The ''72 rule'': The "Rule of 72" is a simple way to estimate the number of **years it takes for an investment to double**, based on a fixed annual rate of return (interest or growth rate).
+
+{{< details title="More about this 72 magic rule 📌" closed="true" >}}
+
+It’s called the "Rule of 72" because you divide 72 by the annual rate of return to get a rough estimate of how many years it will take for your investment to double in value.
+
+The reason it works is because of logarithmic math, specifically from the compound interest formula. 
+
+If you start with the compound interest formula for growth:
+
+\[
+A = P(1 + r)^t
+\]
+
+Where:
+- \( A \) is the final amount
+- \( P \) is the initial principal
+- \( r \) is the annual growth rate (expressed as a decimal)
+- \( t \) is the time in years
+
+For doubling, we set \( A = 2P \) (because we want the value to double), so the equation becomes:
+
+\[
+2P = P(1 + r)^t
+\]
+
+Simplifying:
+
+\[
+2 = (1 + r)^t
+\]
+
+Taking the natural logarithm of both sides:
+
+\[
+\ln(2) = t \ln(1 + r)
+\]
+
+Solving for \( t \):
+
+\[
+t = \frac{\ln(2)}{\ln(1 + r)}
+\]
+
+Now, \(\ln(2) \approx 0.693\). For small rates of return (say, 5% or 10%), the natural logarithm of \( (1 + r) \) is roughly equal to \( r \). So for small \( r \), we can approximate:
+
+\[
+t \approx \frac{0.693}{r}
+\]
+
+And since \( \frac{0.693}{0.01} \approx 69.3 \), the approximation uses 72 for simplicity, as it’s close enough for most practical purposes.
+
+**Why 72?**
+72 is used because it’s a simple, convenient number that works well with typical interest rates.
+
+{{< /details >}}
+
+It's an easy-to-remember approximation that gives results that are accurate enough for most financial calculations (especially with rates between 6% and 10%).
+
+If you divide 72 by the interest rate in percentage terms, you get a good estimate for the doubling time.
+
+For example:
+- At a 6% return: \( 72 \div 6 = 12 \) years to double.
+- At a 9% return: \( 72 \div 9 = 8 \) years to double.
+
+
+2. With proper math:
+
+The **exact formula** to find the time to **double** is $t = \frac{\ln(2)}{\ln(1 + r)}$.
+
+
+3. The formula to find the time to grow by a factor of XYZ is $t = \frac{\ln(XYZ)}{\ln(1 + r)}$.
+
+
+---
+
+Thanks to [HUGO Hextra Theme and katex](https://imfing.github.io/hextra/docs/guide/latex/)!
 
 $$
 \begin{aligned}
