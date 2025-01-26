@@ -131,26 +131,24 @@ Lets see the **CAGR for dividend growth**
 
 The CAGR formula is $CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{t}} - 1$.
 
-Sure! The Compound Annual Growth Rate (CAGR) formula is typically written as:
-
-\[
-CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{t}} - 1
-\]
-
 Where:
 - \( V_f \) is the final value
 - \( V_i \) is the initial value
 - \( t \) is the time period (usually in years)
 
 In the example, as per [NASDAQ O Data](https://www.nasdaq.com/market-activity/stocks/o/dividend-history),
-the first div of 2020 was 0.2325$, thats a x1.135, but in 5 years, so...can we have some kind of constant growth rate?
+the first div of 2020 was 0.2325$, thats a x1.135, but in 5 years.
 
+So...can we have some kind of constant growth rate over that period?
+
+<!--
 $$
 CAGR = \left( \frac{0,264}0,2325} \right)^{\frac{1}{5}} - 1 = 2,57
 $$
+ -->
 
 $$
-CAGR = \left( \frac{0.264}{0.2325} \right)^{\frac{1}{5}} - 1 \approx 0.03
+CAGR = \left( \frac{0.264}{0.2325} \right)^{\frac{1}{5}} - 1 \approx 0.0257
 $$
 
 So its an equivalent of **2,57% of dividend growth**, each year, during the last 5 years.
@@ -160,16 +158,21 @@ This is a 'virtual' number, some years was more, some less, buts **thats the com
 And it ofc depends in your stock investment, same as your potential property investment.
 
 Other example with [MCD](https://www.nasdaq.com/market-activity/stocks/mcd/dividend-history):
-
+<!-- 
 $$
 CAGR = \left( \frac{1.77}1.25} \right)^{\frac{1}{5}} - 1 = 7,2
 $$
+ -->
 
-And now, the logical question appears: when will (if ever) catch up?
+$$
+CAGR = \left( \frac{1.77}{1.25} \right)^{\frac{1}{5}} - 1 \approx 0.072
+$$
+
+And now, the logical question appears: *when will (if ever) catch up?*
 
 #### How many years to...
 
-1. The ''72 rule'': The "Rule of 72" is a simple way to estimate the number of **years it takes for an investment to double**, based on a fixed annual rate of return (interest or growth rate).
+1. The `72 rule`: The "Rule of 72" is a simple way to estimate the number of **years it takes for an investment to double**, based on a fixed annual rate of return (interest or growth rate).
 
 {{< details title="More about this 72 magic rule 📌" closed="true" >}}
 
