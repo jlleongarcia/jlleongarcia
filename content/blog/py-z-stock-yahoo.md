@@ -58,16 +58,22 @@ STOCK('KO')
 
 ## DGI vs Yield
 
-When you put together few stocks with growing dividends, you might expect something like this:
+When you put together **few stocks with growing dividends**, you might expect something like this:
 
  
 ![Portfolio DGI Example](/blog_img/data-experiments/dgi_example.png) 
 
+Some years might have a decrease due to:
 
-{{< rawhtml >}} 
+* Global financial circunstances
+* Or maybe just one of the stocks gave you a special dividend last year
+
+What this tries to illustrate its just the general upwards trend.
+
+<!-- {{< rawhtml >}} 
 <iframe src="/static/blog_img/data-experiments/dgi_example.html"
 style="width: 100%; height: 450px;"></iframe>
-{{< /rawhtml >}}
+{{< /rawhtml >}} -->
 
 But **what's better, high yield or high dividend growth?**
 
@@ -134,7 +140,7 @@ These xpath might change if there is a redesign in the website!
 {{< /callout >}}
 
 
-1. Import from ycharts:
+1. Import from **ycharts**:
 
 ```sh
 =VALOR(IZQUIERDA(importxml(CONCATENAR("https://ycharts.com/companies/";REGEXEXTRACT(S33;"[^:]*$");"/profit_margin");$AJ$28);3))/100
@@ -144,7 +150,7 @@ These xpath might change if there is a redesign in the website!
 
 > with xpath being `/html/body/div[3]/div[2]/section[1]/div/div/div[1]/div[2]/ul/li[1]/span[2]`
 
-2. Import from numbeo:
+2. Import from **numbeo**:
 
 ```sh
 =IZQUIERDA(importxml(C36;C37);6)/IZQUIERDA(importxml(C36;C38);6)
@@ -156,7 +162,7 @@ With:
 * C37 `/html/body/div[2]/aside[1]/div[2]/div/span[1]/text()`
 * C38 `/html/body/div[2]/aside[1]/div[2]/div/span[3]`
 
-3. Even from Etherscan for crypto related info!
+3. Even from **Etherscan** for crypto related info!
 
 ```sh
 =importxml("https://etherscan.io/address/some_address";"/html/body/main/section[3]/div[2]/div[1]/div/div/div[2]/div/div")

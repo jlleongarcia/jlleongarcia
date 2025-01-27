@@ -106,6 +106,12 @@ To create an amortization schedule in Excel, you'll need the following parameter
 
 {{< /details >}}
 
+How does it looks like in practice?
+
+As mentioned, you will have constant payments (given constant interest rate) and you star by paying mostly interests:
+
+![French Amortiz Example](/blog_img/data-experiments/french_amortiz.png) 
+
 
 {{< callout type="info" >}}
 Ive also covered **mortage with python** as part of the [EDA of pystocks](https://gitlab.com/fossengineer1/py_stocks/-/tree/main/EDA_Mortage?ref_type=heads)
@@ -285,6 +291,17 @@ So the costs from your pocket of this one are: Initial payment + Mortage Payment
 2. Value of the property and % the bank loaned
 3. **Estimations of**: property value growth and rental growth (it could also be decrease!)
 
+![Cash Flow when Buy and Rent with Loan](/blog_img/data-experiments/buy_mortage_and_rent_CF.png) 
+
+As you can imagine, if the real life goes like this, you have earned a lot by using debt.
+
+You were using the rental price to pay the mortage (and you got a surplus later on)
+
+And also the property most likely increased the value on a 25years horizon since you bought it.
+
+Those 2 factors, while you 'just' put from your pocket the orange part of the graph.
+
+This is an **example on how ROIC >> ROI**
 
 ### Rent Price vs Property Price
 
@@ -319,10 +336,9 @@ Max credit monthly payment < 0.35*(Net Salary + Other Net Income)
 > Imo, even with such formulas there are risk, but...what do I know about finances!
 
 
-### Real Estate Data
+## Real Estate Data
 
 First thing I thought was **airbnb data**.
-
 
 * https://insideairbnb.com/get-the-data/
   * https://insideairbnb.com/valencia/
@@ -338,6 +354,31 @@ But I also heard about idealista:
 
 
 Credits to both platforms for sharing such interesting data!
+
+### Modelling Bull and Bear Markets
+
+If you have a look at the data, its clear that the trend (at least the nominal value), tends to be upwards.
+
+But there are moments where the price and rental price dont grow, or even decrease.
+
+It also happens with interest rates!
+
+There are 2 very simple ways to model this:
+
+1. Constant growth, whatever you decide, ignoring the big ups and downs, which should be more or less precise on the long run (if you get right the rates, ofc)
+2. To make something cooler, how about:
+* The general trend is upwards, but there will be sin functions applied as well
+* The initial/final values will be the same
+* Just in between, thanks to the periodic functions we will have ups and downs
+
+{{< callout type="warning" >}}
+How much up and down? As this is just a python data exercise, I will say
+* +-20% every 7 years for buying price and +-10% for the rental one
+* interest rates will be +-50%, but will peak 1 year before the peak on buy/rental
+{{< /callout >}}
+
+How does it looks like?
+
 
 ---
 
