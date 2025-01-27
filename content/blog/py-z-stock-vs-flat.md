@@ -288,7 +288,7 @@ So the costs from your pocket of this one are: Initial payment + Mortage Payment
 
 ### Rent Price vs Property Price
 
-There are some interesting dynamics between these 2.
+There are some **interesting dynamics** between these 2, the [price2rent ratio](https://tradingeconomics.com/country-list/price-to-rent-ratio).
 
 <!-- 
 https://www.youtube.com/watch?v=6whiAFXk3IU 
@@ -340,6 +340,15 @@ But I also heard about idealista:
 Credits to both platforms for sharing such interesting data!
 
 ---
+
+## Conclusions
+
+See some crazy rates and you will be soon rich?
+
+Calm down :)
+
+Those are nominal growth values, dont forget to take into consideration [inflation](https://tradingeconomics.com/poland/inflation-cpi),
+which is part of those figures.
 
 Thanks to [HUGO Hextra Theme and katex](https://imfing.github.io/hextra/docs/guide/latex/)!
 

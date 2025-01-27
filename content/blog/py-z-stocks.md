@@ -1,6 +1,6 @@
 ---
 title: "Stocks with Python"
-date: 2025-01-26
+date: 2025-01-27
 draft: false
 tags: ["Python"]
 description: "A Cooler R/Stocks - This time with Python. And with proper Auth/UIM."
@@ -350,6 +350,7 @@ You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/a
 - https://www.justetf.com/uk/ esta es un screener de ETFs muy bueno, además están todas las variantes monetarias de cada ETF
 
 - https://www.digrin.com/stocks/detail/IDUS.L/
+  - Interesting payout ratio, dgr,...
 
 - https://divvydiary.com/en/?via=elisa&gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOIN8XXGkoEZZbfhufMr55Y2kSIuAGXDP4Lb1LYgLlRMnezpTUl2tkAaAp2kEALw_wcB esta la encontré el otro día, ofrece datos históricos de stocks y algún ETF (FUSD te lo da pero IDUS no), pero mola que me da el ISIN rápido, entonces veo rápidamente en qué país cotiza
 - https://tools.mhinvest.com/mhichart una web app que tiene una idea muy parecida a la que pensamos en su momento, pero no considera seguir metiendo gasolina, parte de una cantidad inicial y listo.
@@ -377,60 +378,6 @@ You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/a
 * https://stockle.app/
 
 
-### GSheets Tricks
-
-You can have a simple, yet useful **Google Sheets with Stocks** info:
-
-```sh
-=GoogleFinance(S35;"eps") #S35 can reference some ticket, like NYSE:KO
-=GoogleFinance(S35;"pe")
-=GoogleFinance("INDEXSP:.INX") #sp500
-
-=INDICE(GoogleFinance("INDEXSP:.INX"; "price"; HOY()-365);2;2) #get the price 365 ago
-
-=SPARKLINE(GoogleFinance("CURRENCY:EURCHF"; "price"; HOY()-J$1; HOY()))
-=SPARKLINE(GoogleFinance("CURRENCY:"&"USD" & DERECHA(A6;3); "price"; HOY()-J$1; HOY()))
-```
-
-And if you need, you can also **import info from other website** sources:
-
-{{< callout type="warning" >}}
-You will need to go to inspect -> find the proper div with the info -> copy **full xpath**
-These xpath might change if there is a redesign in the website!
-{{< /callout >}}
-
-
-1. Import from ycharts:
-
-```sh
-=VALOR(IZQUIERDA(importxml(CONCATENAR("https://ycharts.com/companies/";REGEXEXTRACT(S33;"[^:]*$");"/profit_margin");$AJ$28);3))/100
-#S33 is a ticker, NASDAQ:PEP, for example and AJ28 the XPATH
-# =importxml("https://ycharts.com/companies/"& REGEXEXTRACT("NASDAQ:PEP";"\:(.*)") & "/profit_margin";$AI$28)
-```
-
-> with xpath being `/html/body/div[3]/div[2]/section[1]/div/div/div[1]/div[2]/ul/li[1]/span[2]`
-
-2. Import from numbeo:
-
-```sh
-=IZQUIERDA(importxml(C36;C37);6)/IZQUIERDA(importxml(C36;C38);6)
-```
-
-With:
-
-* C36 `https://www.numbeo.com/cost-of-living/compare_cities.jsp?country1=Poland&country2=spain&city1=Warsaw&city2=barcelona&tracking=getDispatchComparison`
-* C37 `/html/body/div[2]/aside[1]/div[2]/div/span[1]/text()`
-* C38 `/html/body/div[2]/aside[1]/div[2]/div/span[3]`
-
-3. Even from Etherscan for crypto related info!
-
-```sh
-=importxml("https://etherscan.io/address/some_address";"/html/body/main/section[3]/div[2]/div[1]/div/div/div[2]/div/div")
-```
-
-{{< callout type="info" >}}
-You can learn more about **Scrapping** as covered on this [blog post](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/) and the [Scrapping-Tools repo](https://github.com/JAlcocerT/Scrap_Tools) 💻
-{{< /callout >}}
 
 ---
 
