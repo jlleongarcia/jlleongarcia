@@ -125,7 +125,7 @@ Ive also covered **mortage with python** as part of the [EDA of pystocks](https:
 =(importxml("https://www.nasdaq.com/market-activity/stocks/o/dividend-history";$AJ$28))
 ```
 
-First div of 2025 has been 0.264$ and first of 2024 was 0.2565$, or a 2.92% growth.
+First div of 2025 has been 0.264 and first of 2024 was 0.2565, or a 2.92% growth.
 
 But some years are better than others, right?
 
@@ -135,7 +135,7 @@ Lets see the **CAGR for dividend growth**
 
 #### CAGR
 
-The CAGR formula is $CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{t}} - 1$.
+The **CAGR formula** is just: $CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{t}} - 1$.
 
 Where:
 - \( V_f \) is the final value
@@ -174,7 +174,9 @@ $$
 CAGR = \left( \frac{1.77}{1.25} \right)^{\frac{1}{5}} - 1 \approx 0.072
 $$
 
-And now, the logical question appears: *when will (if ever) catch up?*
+Or 'just' a ~7,2%
+
+And now, the logical question appears: *when will (if ever) catch up with the higher initial yield one?*
 
 #### How many years to...
 

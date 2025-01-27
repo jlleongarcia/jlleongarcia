@@ -85,7 +85,20 @@ What does the data and math tell us about it?
 
 ### No Dividend Reinvestment
 
+In this case, you **just buy one time in the beginning, no debt**, sit and wait to see how each of those 2 evolve:
+
+![Div No Re-Investment](/blog_img/data-experiments/div_no_reinvestment.png) 
+
+> You can see how long it takes for 2.5% yield growing at 12% to catch up with 5.5% which grows at 2.57%
+
+
 ### With Dividend Reinvestment
+
+How about keep buying by re-investing the dividends?
+
+Assuming that the price of the stock and the initial yield is the same, we would get:
+
+![Div Re-Investment](/blog_img/data-experiments/div_reinvestment.png) 
 
 
 ## Conclusions
