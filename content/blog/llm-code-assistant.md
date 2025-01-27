@@ -1,6 +1,6 @@
 ---
 title: "Github Copilot, Gitlab Duo and more Code assistants"
-date: 2025-01-21
+date: 2025-02-21
 draft: false
 tags: ["Dev"] 
 summary: "Using AI to write better code."
@@ -23,7 +23,9 @@ We can use Anthropic or OpenAI models, with free extensions:
 
 We can use open models, with 3rd party APIs (like Groq).
 
+## OSS Extension & Model & Local Run
 
+[Deepseek v3](https://huggingface.co/deepseek-ai)
 
 
 

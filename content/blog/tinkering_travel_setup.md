@@ -107,6 +107,30 @@ You can install **Organic Maps** as Android app, but also in Linux:
 flatpak install flathub app.organicmaps.desktop #https://flathub.org/apps/app.organicmaps.desktop
 ```
 
+To record your **routes as GPX**
+
+1. https://github.com/OpenTracksApp/OpenTracks
+
+> OpenTracks is a sport tracking application that completely respects your privacy.
+
+2. https://github.com/jonasoreland/runnerup
+
+> A open source run tracker
+
+
+3. https://codeberg.org/jannis/FitoTrack
+
+> FitoTrack - A privacy oriented fitness tracker for Android
+
+
+And they can be combined with **FitTrackee**
+
+* https://github.com/SamR1/FitTrackee
+
+> AGPL 3.0 | Self-hosted **outdoor activity tracker** 🚴
+
+
+
 
 ### BackUps
 
@@ -278,3 +302,15 @@ And you can see how simple is to get [up and running with **docker and Portainer
 <!-- https://www.youtube.com/shorts/ox3IsWH-o7g -->
 
 No wonder why Container is one of my favourite technologies to use for app reliability!
+
+### More Cool Software
+
+Thanks to this sites, I get to know more cool apps:
+
+1. https://openalternative.co/self-hosted
+* https://github.com/piotrkulpinski/openalternative
+
+> Which can be seen also as an **awsome Astro project!**
+
+2. https://alternateoss.com/
+3. https://youmightnotneed.co/

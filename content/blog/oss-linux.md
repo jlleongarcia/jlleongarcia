@@ -32,8 +32,20 @@ Then, just...
 
 ### Maintainance in Linux
 
+1. https://github.com/oguzhaninan/Stacer
+
+> GPL 3.0 |  Linux System Optimizer and Monitoring - https://oguzhaninan.github.io/Stacer-Web 
+
+
 ---
+
+## Other 
+
+You can check from time to time https://haveibeenpwned.com/.
+
+They also provide an [API](https://haveibeenpwned.com/API/Key), which you would have to pay for.
 
 ### Cool Blogs Ive found recently
 
 1. https://selfhosted.show/
+

@@ -66,6 +66,16 @@ volumes:
 
 ## Making Deployments Easy
 
+
+{{< callout type="info" >}}
+Cloudflare tunnels is one of my go to options, yet you also have: [ngrok](https://www.reddit.com/r/selfhosted/comments/10n1h0p/cloudflare_tunnel_alternative/), [nginx](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/),...
+{{< /callout >}}
+
+{{< cards cols="2" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/" title="Astro Github + Cloudflare Pages" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/cool-link-in-bios/" title="Gitlab + Cloudflare Pages" >}}
+{{< /cards >}}
+
 ### DokPloy
 
 An alternative to vercel and netlify!
@@ -74,5 +84,13 @@ https://github.com/Dokploy/dokploy
 
 https://dokploy.com/
 
-> Open Source Alternative to Vercel, Netlify and Heroku.
+> Open Source **Alternative to Vercel, Netlify and Heroku**.
 
+## FAQ
+
+### Getting a Domain Name
+
+With an API...
+
+0. Porkbun
+1. NameCheap

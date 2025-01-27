@@ -46,11 +46,65 @@ The first time, [you will need a **venv**](https://jalcocert.github.io/JAlcocerT
 pip install yfinance==0.2.52
 ```
 
+```py
+import yfinance as yf
+import pandas as pd
+
+def STOCK(ticker):
+    return yf.Ticker(ticker).history(period="max")
+
+STOCK('KO')
+```
+
 ## DGI vs Yield
+
+When you put together few stocks with growing dividends, you might expect something like this:
+<!-- 
+![Portfolio DGI Example](/blog_img/data-experiments/dgi_example.png) 
+-->
+
+{{< rawhtml >}} 
+<iframe src="/blog_img/data-experiments/dgi_example.html"
+style="width: 100%; height: 450px;"></iframe>
+{{< /rawhtml >}}
+
+But **what's better, high yield or high dividend growth?**
+
+Ideally something that give us both, but, there is always a trade off.
+
+And some people call high yield investments as **divs traps**.
+
+What does the data and math tell us about it?
 
 ### No Dividend Reinvestment
 
 ### With Dividend Reinvestment
+
+
+## Conclusions
+
+Is it possible to life from dividends?
+
+**How much** do I need to live from dividends?
+
+Those are typical questions i frequently see over the internet.
+
+In theory, you just need to know 2 things:
+
+1. How much you spend (the net + taxes and so on)
+2. What it is the avg return on your assets
+
+And the math goes... $Needs = P \times \frac{Yearly_Gross_Expenses}{(Yearly_returns)}$.
+
+People mention about different strategies to estimate the returns:
+
+* The 4% rule, which apparently is an estimate of what you can take from a portfolio without killing your principal every year
+* Others just go with a dividend investing approach, so they dont need to sell shares
+* And some people have a balance between stocks funds and bonds, so that if stock market goes down they can live with those bonds, without selling really cheap the stocks
+
+{{< callout type="warning" >}}
+To keep it simple, lets go with the 4%, but as you can imagine, life is much more complex and unpredictable than a fixed rate. Definitely, **this is not any financial advice of any type**.
+{{< /callout >}}
 
 ---
 
