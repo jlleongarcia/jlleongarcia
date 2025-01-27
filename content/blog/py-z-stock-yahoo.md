@@ -1,16 +1,18 @@
 ---
-title: "Financial Data for Python - YahooFinancial and YFinance packages"
+title: "Financial Data for Python - Trying YahooFinancial and YFinance packages"
 date: 2025-01-26
 draft: false
 tags: ["Python"]
-description: "Math Recap: initial yield vs growth. How to analyze stock and dividend data with Python"
+description: "Initial yield vs growth, the math. How to analyze stock and dividend data with Python"
 summary: 'Data for Python Financial Apps'
 url: 'python-financial-data-with-yfinance'
 math: true
 ---
 
-How to pull data from: https://finance.yahoo.com/
 
+## Financial Data with Python
+
+How to pull data from: https://finance.yahoo.com/
 
 ### Yahoo Financials
 
@@ -56,7 +58,7 @@ def STOCK(ticker):
 STOCK('KO')
 ```
 
-## DGI vs Yield
+## Dividend Data - DGI vs Yield
 
 When you put together **few stocks with growing dividends**, you might expect something like this:
 
@@ -98,7 +100,17 @@ How about keep buying by re-investing the dividends?
 
 Assuming that the price of the stock and the initial yield is the same, we would get:
 
-![Div Re-Investment](/blog_img/data-experiments/div_reinvestment.png) 
+<!-- 
+![Div Re-Investment](/blog_img/data-experiments/div_reinvestment.png)  
+-->
+
+## Stock Value Data
+
+So that's how dividends can behave over time.
+
+How about the stock value?
+
+---
 
 
 ## Conclusions

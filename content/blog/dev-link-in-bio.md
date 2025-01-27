@@ -1,17 +1,17 @@
 ---
-title: "Cool link in bios (with ssg)"
+title: "Cool Link in Bios (with ssg)"
 date: 2025-01-23
 draft: false
 tags: ["Web"]
-description: "Have a cool linkinbio website with HUGO and Astro. Alternative to linktree with Gitlab and CF WnP Setup."
+description: "Have a cool LinkInBio website with HUGO and Astro. Alternative to linktree with Gitlab and Cloudflare WnP Setup."
 summary: 'HUGO and Astro as linkinbio websites'
 url: 'cool-link-in-bios'
 ---
 
 
-Having a cool website for you linkinbio can be a good experience to get started with SSGs.
+Having a cool **website for you linkinbio** can be a good experience to get started with SSGs.
 
-And they will provide a similar experience to linktree, linkbio,...
+And they will provide a **similar experience** to linktree, linkbio,...
 
 {{< callout type="info" >}}
 https://jalcocert.github.io/JAlcocerT/create-your-website/
@@ -63,7 +63,7 @@ Thanks to Boston343, I got to know about **keystack CMS**
 * https://example.treelink.app/
 * https://docs.treelink.app/guides/quick-start/
 
-> MIT | Free, open source Linktree alternative built with Astro & Tailwind CSS
+> **MIT** | Free, open source Linktree alternative built with Astro & Tailwind CSS
 
 ```sh
 git clone https://github.com/trevortylerlee/treelink
@@ -71,11 +71,19 @@ git clone https://github.com/trevortylerlee/treelink
 npm install
 npm run dev
 
+#rm -rf .git
+npm run build
 ```
 
-It worked and i Forked it! https://github.com/JAlcocerT/treelink
+It worked and **I Forked it**! https://github.com/JAlcocerT/treelink
 
 * https://pagespeed.web.dev/analysis/https-example-treelink-app/l6prjspv4k?form_factor=mobile
+
+What I lived about this one?
+
+It allow you to have a exposed static built site and also provides the capability to edit also online and export the `/src/siteConfig.json`
+
+
 
 5. https://github.com/SofiDevO/allmylinks
 
@@ -102,15 +110,13 @@ npm run dev #
 
 #rm -rf .git
 npm run build
-
 ```
 
 LayoutSwitcher can be commented from `layout.astro` and in `config.js` you have everything you need to tweak the theme!
 
 {{< callout type="info" >}}
-It uses [fontawsome icons](https://fontawesome.com/search)
+It uses [fontawsome icons](https://fontawesome.com/search), great reference for icons!
 {{< /callout >}}
-
 
 
 8. https://github.com/flamrdevs/astrolinkt
@@ -118,6 +124,22 @@ It uses [fontawsome icons](https://fontawesome.com/search)
 > MIT | Link in Bio Template using Astro, React & TailwindCSS
 
 9. https://github.com/apvarun/linkverse
+
+
+This is how they can look:
+
+{{< cards >}}
+  {{< card link="https://whoisyarnness.cozyknittingclub.com" title="Link in Bio for Knitting" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="Astro treelink Customization" >}}
+  {{< card link="https://cozyknittingclub.com/" title="Content Creator Blog" image="/blog_img/web/WebsSnapshots/Web_CKC.png" subtitle="For an instagramer who loves knitting" >}}
+{{< /cards >}}
+
+And like this:
+
+{{< cards >}}
+  {{< card link="https://financeinmotion.fyi/" title="LinkinBio" image="/blog_img/web/WebsSnapshots/Web_IoTechCrafts.png" subtitle="Links with astro-link-in-bio-theme>}}
+  {{< card link="https://jalcocert.github.io/Portfolio/" title="Links with HUGO LYNX" image="/blog_img/web/WebsSnapshots/Web_PortfolioLinks.png" subtitle="Collection of important Links" >}}             
+{{< /cards >}}
+
 
 ## How to Deploy SSGs Link in bio
 
@@ -160,11 +182,11 @@ This approach does not use CI/CD for improved workflow as the following ones!
 
 1. Get a domain name with Cloudflare as **Authoritative Name Server**
 
-![CF Custom Domain2 ](/blog_img/Cloudflare/CF-CustomDomain-DNSManagement.png)
+![CF Custom Domain2 ](/blog_img/web/Cloudflare/CF-CustomDomain-DNSManagement.png)
 
-![CF Custom Domain2 ](/blog_img/Cloudflare/CF-NameServers.png)
+![CF Custom Domain2 ](/blog_img/web/Cloudflare/CF-NameServers.png)
 
-![CF Custom Domain2 ](/blog_img/Cloudflare/CF-Porkbun-NS.png)
+![CF Custom Domain2 ](/blog_img/web/Cloudflare/CF-Porkbun-NS.png)
 
 2. 
 
