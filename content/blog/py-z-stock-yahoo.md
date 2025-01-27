@@ -59,12 +59,13 @@ STOCK('KO')
 ## DGI vs Yield
 
 When you put together few stocks with growing dividends, you might expect something like this:
-<!-- 
+
+ 
 ![Portfolio DGI Example](/blog_img/data-experiments/dgi_example.png) 
--->
+
 
 {{< rawhtml >}} 
-<iframe src="/blog_img/data-experiments/dgi_example.html"
+<iframe src="/static/blog_img/data-experiments/dgi_example.html"
 style="width: 100%; height: 450px;"></iframe>
 {{< /rawhtml >}}
 
