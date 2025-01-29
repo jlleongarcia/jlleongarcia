@@ -1,5 +1,5 @@
 ---
-title: "Using Linux in Android - Termux"
+title: "Using Linux in Android - Termux vs Ubuntu Touch"
 date: 2025-12-31
 draft: true
 tags: ["Dev"]
@@ -7,6 +7,14 @@ summary: I always wanted to run Docker on Android - Here is how to do it
 url: setup-termux-android
 ---
 
+
+## Ubuntu Touch
+
+* https://devices.ubuntu-touch.io/
+
+## Termux on Android
+
+## More
 
 {{< callout type="info" >}}
 How to run [these tests](#faq)
@@ -27,3 +35,11 @@ How to run [these tests](#faq)
 * You can boot RPi5 from NVMe [like so](https://jalcocert.github.io/RPi/posts/pi-vs-orange/#using-nvme-with-the-orange-pi-5)
   * The SD card will still have the boot priority (if it's there)
 {{< /callout >}}
+
+---
+
+## FAQ
+
+### How to use Android on PC
+
+* 

@@ -129,12 +129,14 @@ And they can be combined with **FitTrackee**
 
 > AGPL 3.0 | Self-hosted **outdoor activity tracker** 🚴
 
+4. https://github.com/IoTechCrafts/AdventureLog
 
+>  Self-hostable travel tracker and trip planner. 
 
 
 ### BackUps
 
-#### with Nextcloud
+#### Nextcloud
 
 If you will be recording at 4K, you will need **back up space**.
 

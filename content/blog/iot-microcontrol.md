@@ -213,6 +213,7 @@ To install libraries, i have observed that recently **upip has been depricated i
     * Tools -> Board -> Boards Manager -> Install Arduino MBed OS RP2040 Boards - <https://www.youtube.com/watch?v=5YOEauk9bLo>
 * Pico with Thony
 {{% /details %}}
+* Arduino launched a micropython package manager!
 
 ### Testing the Raspberry Pi Pico W
 

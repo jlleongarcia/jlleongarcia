@@ -1,10 +1,10 @@
 ---
-title: "Reasons why I love Containers. Cloudflared and AI Apps"
+title: "Reasons why I love Containers. With Cloudflared and AI Apps."
 date: 2025-01-04
 draft: false
 tags: ["Dev"]
 description: 'Reasons to use containers: selfhosting with Cloudflare tunnels, App bunddle, dev environments, CI/CD...'
-summary: 'A Container Tool recap'
+summary: 'A Container and related tools recap'
 url: 'why-i-love-containers'
 ---
 
@@ -49,7 +49,7 @@ sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
-   - For more installation details, check Docker's [official guide](https://docs.docker.com/get-docker/).
+- For more installation details, check Docker's [official guide](https://docs.docker.com/get-docker/).
 
 2. **Verify Installation**:
    - Check Docker version:
@@ -282,6 +282,42 @@ if you want to create containers on your own hardware (but automatically), you c
 1. Github/Gitlab Runners
 2. Gitea Act Runner
 3. Jenkins CI/CD
+4. Argo CI/CD
+
+{{< details title="Is my home IP safe with Cloudflare? 📌" closed="true" >}}
+
+**Argo CD** is a declarative, **GitOps continuous delivery tool** specifically designed for **Kubernetes**.
+
+It operates based on the principle that your Git repository serves as the single source of truth for your desired application state. 
+
+How Argo CD works?
+
+1. **Define Desired State:** You define your desired application state (e.g., deployments, services, configurations) in your Git repository using Kubernetes manifests.
+2. **Argo CD Monitors:** Argo CD continuously monitors your Git repository for changes.
+3. **Automatic Synchronization:** When changes are detected, Argo CD automatically synchronizes your Kubernetes cluster to match the desired state defined in Git.
+4. **Continuous Reconciliation:** Argo CD constantly compares the actual state of your cluster with the desired state in Git. If discrepancies are found, it takes corrective actions to bring the cluster back in sync.
+
+**Comparison with Jenkins and GitHub Actions:**
+
+| Feature | Argo CD | Jenkins | GitHub Actions |
+|---|---|---|---|
+| **Focus** | Kubernetes-native GitOps CD | General-purpose CI/CD | CI/CD specifically for GitHub |
+| **Deployment Model** | Pull-based (Git as source of truth) | Push-based (CI/CD system triggers deployments) | Push-based |
+| **Strengths** | Excellent for Kubernetes deployments, strong GitOps implementation, declarative approach | Highly flexible and customizable, vast plugin ecosystem | Tight integration with GitHub, user-friendly interface |
+| **Weaknesses** | Primarily focused on Kubernetes, might have a steeper learning curve for non-Kubernetes users | Can become complex for intricate pipelines, potential for configuration drift | Limited to GitHub repositories |
+
+**In essence:**
+
+* **Argo CD** excels in Kubernetes environments, emphasizing GitOps principles for streamlined and reliable deployments.The bestThe best choice depends on your specific requirements, team expertise, and the complexity of your CI/CD pipelines.
+ choice depends on your specific requirements, team expertise, and the complexity of your CI/CD pipelines.
+
+* **Jenkins** is a versatile platform suitable for various CI/CD needs, offering extensive customization options.
+* **GitHub Actions** provides a user-friendly, integrated solution for CI/CD workflows within the GitHub ecosystem.
+
+
+
+{{< /details >}}
+
 
 ### Using Containers
 

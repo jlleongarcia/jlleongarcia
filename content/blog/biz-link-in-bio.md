@@ -125,6 +125,21 @@ It uses [fontawsome icons](https://fontawesome.com/search), great reference for 
 
 9. https://github.com/apvarun/linkverse
 
+10. https://github.com/saminnet/astro-simple-portfolio
+
+It has a very cool moving background
+
+> MIT | Very simple portfolio built using Astro
+
+11. https://github.com/vito8916/simple-portfolio
+
+Really cool ig like portfolio, [had to fork this one](https://github.com/JAlcocerT/simple-portfolio)!
+
+It looks amazing in phones
+
+> MIT | A simple but beautiful portfolio created with Astro
+
+
 
 This is how they can look:
 

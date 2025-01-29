@@ -405,6 +405,7 @@ Those are **nominal growth** values, dont forget to take into consideration [inf
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/r-dashboard-shinyapps/" title="Retirement Facts" image="/blog_img/data-experiments/Inflation_Mild.JPG" subtitle="Life savings and inflation in a R Shiny App." >}}
+  {{< card link="https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps" title="Retirement Facts" image="https://socialify.git.ci/jalcocert/jalcocert?description=1&name=1&theme=Auto" subtitle="Life savings and inflation in a R Shiny App." >}}
 {{< /cards >}}
 
 {{< callout type="info" >}}
