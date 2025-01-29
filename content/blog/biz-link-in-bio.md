@@ -1,6 +1,6 @@
 ---
-title: "Cool Link in Bios (with ssg)"
-date: 2025-01-23
+title: "Cool Link in Bios (with SSGs)"
+date: 2025-01-22
 draft: false
 tags: ["Web"]
 description: "Have a cool LinkInBio website with HUGO and Astro. Alternative to linktree with Gitlab and Cloudflare WnP Setup."
@@ -136,7 +136,7 @@ This is how they can look:
 And like this:
 
 {{< cards >}}
-  {{< card link="https://financeinmotion.fyi/" title="LinkinBio" image="/blog_img/web/WebsSnapshots/Web_IoTechCrafts.png" subtitle="Links with astro-link-in-bio-theme>}}
+  {{< card link="https://financeinmotion.fyi/" title="LinkinBio" image="/blog_img/web/WebsSnapshots/Web_IoTechCrafts.png" subtitle="Links with astro-link-in-bio-theme" >}}
   {{< card link="https://jalcocert.github.io/Portfolio/" title="Links with HUGO LYNX" image="/blog_img/web/WebsSnapshots/Web_PortfolioLinks.png" subtitle="Collection of important Links" >}}             
 {{< /cards >}}
 
@@ -213,5 +213,3 @@ You will Need a Github Account Authentication
 {{% /steps %}}
 
 Go to the [Cloudflare UI](https://dash.cloudflare.com), and...
-
-

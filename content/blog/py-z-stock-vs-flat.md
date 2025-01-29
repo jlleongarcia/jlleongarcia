@@ -106,15 +106,23 @@ To create an amortization schedule in Excel, you'll need the following parameter
 
 {{< /details >}}
 
-How does it looks like in practice?
+How does **french amortization** looks like **in practice**?
 
-As mentioned, you will have constant payments (given constant interest rate) and you star by paying mostly interests:
+As mentioned, you will have constant payments (given constant interest rate) and **you start by paying mostly interests**.
 
 ![French Amortiz Example](/blog_img/data-experiments/french_amortiz.png) 
 
+There you have a **sample split evolution** of how much you are paying on interest and on principal return to the bank.
+
+The shape of the **curve depends on the parameters** you set:
+
+* Interest Rate
+* Years of Return
+
+As you can imagine, the higher those 2 are, the higher interest you pay in value and also in relation with the principal you got the loan for.
 
 {{< callout type="info" >}}
-Ive also covered **mortage with python** as part of the [EDA of pystocks](https://gitlab.com/fossengineer1/py_stocks/-/tree/main/EDA_Mortage?ref_type=heads)
+Ive also covered **mortage with python** as part of the [EDA of pystocks](https://gitlab.com/fossengineer1/py_stocks/-/tree/main/EDA_Mortage?ref_type=heads) and ofc created a streamlit app.
 {{< /callout >}}
 
 
@@ -390,10 +398,55 @@ See some crazy rates and you will be soon rich?
 
 Calm down :)
 
-Those are nominal growth values, dont forget to take into consideration [inflation](https://tradingeconomics.com/poland/inflation-cpi),
-which is part of those figures.
+Those are **nominal growth** values, dont forget to take into consideration [inflation](https://tradingeconomics.com/poland/inflation-cpi), which is part of those figures.
 
-Thanks to [HUGO Hextra Theme and katex](https://imfing.github.io/hextra/docs/guide/latex/)!
+[More **about inflation**](https://jalcocert.github.io/JAlcocerT/r-dashboard-shinyapps/) and how it can hurt (or benefit?)
+
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/r-dashboard-shinyapps/" title="Retirement Facts" image="/blog_img/data-experiments/Inflation_Mild.JPG" subtitle="Life savings and inflation in a R Shiny App." >}}
+{{< /cards >}}
+
+{{< callout type="info" >}}
+Retirements facts, the inflation shiny app [repo](https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps)
+{{< /callout >}}
+
+Taking inflation into consideration is very important.
+
+I was talking with a friend recently, who bought a flat in 2020 and she told me now it's wort more than 50% what she paid for.
+
+Remember to have a broader look to this kind of conversation.
+
+Providing that return is true, that's the **nominal one**.
+
+And as you understand what it is [CAGR](#cagr), you know that x1.5 in 5 years is a ~8% compund yearly return.
+
+Is it much? is it low?
+
+> Here is where most people disconnect, **please continue reasoning**
+
+Well, on the same period, the inflation level has been ~8% a year.
+
+So now you now that in real value, flats are as expensive or as cheap as they were in 2020 compared with the rest of prices.
+
+Was it a good decision? a bad one?
+
+As always, **depends how you look at it**.
+
+My friend is not renting the apartment (hence doing the automatic reinvestment of the property yield).
+
+But, she is not paying an increasingly high rent (which actually in this period grew more than the flat price).
+
+
+https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps
+
+
+---
+
+## Thanks
+
+* Thanks to airbnb and idealista for the historical data
+* Thanks to [HUGO Hextra Theme and katex](https://imfing.github.io/hextra/docs/guide/latex/)!
 
 $$
 \begin{aligned}
