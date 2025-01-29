@@ -205,6 +205,8 @@ It seems it got corrupted due to improper reboots.
 
 Enter the **boot menu** of the Lenovo Thinkpad x13 g2 by **pressing F12**
 
+And use the **keyboard lights** by pressing **Fn+Space**
+
 * https://github.com/boschkundendienst/guacamole-docker-compose
 * https://www.proxmox.com/en/proxmox-virtual-environment/overview
 * https://github.com/FreeRDP/Remmina

@@ -114,6 +114,17 @@ As mentioned, you will have constant payments (given constant interest rate) and
 
 There you have a **sample split evolution** of how much you are paying on interest and on principal return to the bank.
 
+That's right, it can be 50%, but **the interest you pay back does not have to be a 50/50 split** with the pincipal.
+
+I mean in total.
+
+Because if you understood previous graph, you already now that the split varies month per month.
+
+This below, is just the full picture end to end of the operation with the lender:
+
+![Interest to Principal Ratio](/blog_img/data-experiments/interest2principal.png)
+
+If you have high interest and high period onf years to return, you end into the red zone (more interest returned than principal) 
 The shape of the **curve depends on the parameters** you set:
 
 * Interest Rate
