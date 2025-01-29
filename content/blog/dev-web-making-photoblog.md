@@ -492,6 +492,11 @@ See the **Demo at: <https://agutek.pages.dev>** or <https://enjoylittlethings.or
 https://github.com/JAlcocerT/agutek-portfolioweb 
 https://gitlab.com/fossengineer1/whilecyclingthere -->
 
+### Whats next for this customer?
+
+My customer is also really into **interior design**.
+
+And there are very cool Astro Themes waiting for her: 
 ---
 
 ## New Web Workflow

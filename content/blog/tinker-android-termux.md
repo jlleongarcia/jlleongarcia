@@ -14,6 +14,8 @@ url: setup-termux-android
 
 ## Termux on Android
 
+
+
 ## More
 
 {{< callout type="info" >}}
@@ -42,4 +44,4 @@ How to run [these tests](#faq)
 
 ### How to use Android on PC
 
-* 
+* https://developer.android.com/studio/run/emulator

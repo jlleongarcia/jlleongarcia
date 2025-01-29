@@ -139,7 +139,7 @@ It looks amazing in phones
 
 > MIT | A simple but beautiful portfolio created with Astro
 
-
+12. https://github.com/alamguardin/Astrolink
 
 This is how they can look:
 
@@ -154,6 +154,15 @@ And like this:
   {{< card link="https://financeinmotion.fyi/" title="LinkinBio" image="/blog_img/web/WebsSnapshots/Web_IoTechCrafts.png" subtitle="Links with astro-link-in-bio-theme" >}}
   {{< card link="https://jalcocert.github.io/Portfolio/" title="Links with HUGO LYNX" image="/blog_img/web/WebsSnapshots/Web_PortfolioLinks.png" subtitle="Collection of important Links" >}}             
 {{< /cards >}}
+
+### LinkInBio as Personal CV
+
+While I was investigating those astro linkinbio theme, I found out also about some themes that can be actually be our personal CV, in a website, with links as well!
+
+1. https://github.com/mmouzo/astro-cv-esquelete
+
+> MIT | A free, easy-to-use CV template with a clean design. Just fill in your details and you're ready to go!
+
 
 
 ## How to Deploy SSGs Link in bio

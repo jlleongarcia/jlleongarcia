@@ -17,6 +17,7 @@ url: 'tech-for-podcast'
 
 Superlative job from ManuelErnestog, which I forked [here](https://github.com/JAlcocerT/astropod)
 
+
 ## Conclusions
 
 ### GitPodcast
@@ -24,3 +25,9 @@ Superlative job from ManuelErnestog, which I forked [here](https://github.com/JA
 * https://github.com/BandarLabs/gitpodcast
 
 > MIT | Convert any git repository into an engaging podcast
+
+**How does this works?**
+
+Its crazy how it summarizes the streamlit repo...
+
+https://www.gitpodcast.com/streamlit/streamlit

@@ -405,8 +405,11 @@ Those are **nominal growth** values, dont forget to take into consideration [inf
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/r-dashboard-shinyapps/" title="Retirement Facts" image="/blog_img/data-experiments/Inflation_Mild.JPG" subtitle="Life savings and inflation in a R Shiny App." >}}
-  {{< card link="https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps" title="Retirement Facts" image="https://socialify.git.ci/jalcocert/jalcocert?description=1&name=1&theme=Auto" subtitle="Life savings and inflation in a R Shiny App." >}}
+  {{< card link="https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps" title="Retirement Facts" image="blog_img/apps/gh-jalcocert.svg" subtitle="Life savings and inflation in a R Shiny App." >}}
 {{< /cards >}}
+
+<!-- https://socialify.git.ci/jalcocert/jalcocert/image?description=1&name=1&theme=Auto
+<img src="https://socialify.git.ci/jalcocert/jalcocert/image?name=1&theme=Auto" alt="jalcocert" width="640" height="320" /> -->
 
 {{< callout type="info" >}}
 Retirements facts, the inflation shiny app [repo](https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps)
@@ -444,10 +447,19 @@ https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps
 
 ---
 
-## Thanks
+## Thanks To
 
 * Thanks to airbnb and idealista for the historical data
+
+* Interesting Financial realted **Posts**:
+  * https://estudinero.substack.com/
+  * https://estudinero.substack.com/p/la-inflacion-el-impuesto-invisible
+* https://wtfhappenedin1971.com/
+
+
 * Thanks to [HUGO Hextra Theme and katex](https://imfing.github.io/hextra/docs/guide/latex/)!
+
+
 
 $$
 \begin{aligned}
