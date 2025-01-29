@@ -450,6 +450,11 @@ How much up and down? As this is just a python data exercise, I will say
 How does it looks like?
 
 
+Which could be summarized as: 
+
+> 'Change is the only constant'
+>> And in the meantime, nominal prices tend to go up)
+
 ---
 
 ## Conclusions
