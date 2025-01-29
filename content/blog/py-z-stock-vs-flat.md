@@ -337,6 +337,41 @@ People trying to leverage loans, tend to look for **low property price to rent p
 
 Also using low interest rates and long horizons to pay back the debt, so that very quickly the rental prices exceed the mortage amount, which provides them with Free Cash Flow very early (using loaned money and exposed to other risks).
 
+What? here you have a [diagram](https://mermaid.live/edit#pako:eNptj0FLxEAMhf_KkHMLKggyR5W9iaLgQXKJbbYt2yZlmmEpy_53MxUXEW_ve-8l8E7QaMsQoa5rlEZlP3QRJYSF5MDrJh16Pb7TmHmJwVJmlK2O8t2qP9moIMLzUcKTCq8IFcJL0pmTFbi5KvG99__P77b8l4HwymI0urzesgsWaTlJMA3loVu3fwq7h11xoYKJ00RD6wtPZQuC9TwxQnTZUvJjlLP3KJu-rdJALAMrSJq7HuKexsUpzy0ZPw7UJZou7kzyofrD5y_5vG7k)
+
+
+```mermaid
+---
+config:
+  sankey:
+    showValues: true
+---
+
+sankey-beta
+
+"Own Money","Property",20
+"Bank Money","Property",80
+"Property","Rental",10
+"Rental","Return to Bank",5
+"Rental","FCF",5
+```
+
+```mermaid
+flowchart LR
+    A[Apply for Loan] --> B{Loan Approved?}
+    B -- Yes --> C[Receive Loan]
+    C --> D[Purchase Property]
+    D --> E[Rent Property]
+    E --> F{Rent Paid?}
+    F -- Yes --> G[Receive Rent]
+    G --> H[Repay Loan]
+    H --> I{Loan Repaid?}
+    I -- Yes --> J[Profit/Ownership]
+    I -- No --> K[Continue Repayment]
+    K --> H
+    B -- No --> L[Loan Denied]
+```
+
 <!--
 https://www.youtube.com/watch?v=x2629yXfwQw&pp=ygUYcGFzY3VhbCBhcmnDsW8gZGUgMCBhIDE1
  -->
@@ -355,11 +390,11 @@ Those situations where people lost it all, happened not so long ago, in ~2008.
 People buying it very high prices, then interest went up, making the property value go down (which was
 their biggest asset) and when you cant pay and all you have lost 50% of its value...you stay with nothing.
 
-To avoid such situations to happen again (in theory), there are rules that wont let you take too much credit in comparison with what you earn. For example:
+To avoid such situations to happen again (in theory), there are rules that wont let you take too much credit in comparison with what you earn.
 
-Max credit monthly payment < 0.35*(Net Salary + Other Net Income)
+**For example**: Max credit monthly payment < 0.35*(Net Salary + Other Net Income)
 
-> Imo, even with such formulas there are risk, but...what do I know about finances!
+> Imo, even with such formulas to see **how solvent you are**, there are risk, but...what do I know about finances!
 
 **What if** you get it right?
 
@@ -394,11 +429,11 @@ Credits to both platforms for sharing such interesting data!
 
 If you have a look at the data, its clear that the trend (at least the nominal value), tends to be upwards.
 
-But there are moments where the price and rental price dont grow, or even decrease.
+But there are moments where the price and rental price dont grow, or **even decrease**.
 
 It also happens with interest rates!
 
-There are 2 very simple ways to model this:
+I thought about **2 very simple ways** to model this:
 
 1. Constant growth, whatever you decide, ignoring the big ups and downs, which should be more or less precise on the long run (if you get right the rates, ofc)
 2. To make something cooler, how about:

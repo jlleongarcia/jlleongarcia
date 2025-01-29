@@ -167,31 +167,34 @@ While I was investigating those astro linkinbio theme, I found out also about so
 
 ## How to Deploy SSGs Link in bio
 
-0. With Firebase or **Cloudflare CLI**
+0. With Firebase or **Cloudflare CLI** or any other static file hosting:
 
 ```sh
 npm run build
-
 ```
+
+You just need to follow [these commands](https://developers.cloudflare.com/workers/wrangler/commands/):
 
 ```sh
 npx wrangler pages project create #this will install the wrangler CLI package
-#npx wrangler pages project list
-#npx wrangler pages deployment list
+#npx wrangler pages project list # See the projects you already have
+#npx wrangler pages deployment list 
 
-#npm run build
+#npm run build #build the file manually
 
 #https://developers.cloudflare.com/pages/configuration/build-configuration/#framework-presets
 npx wrangler pages deploy dist # normally will be dist, but whatever <BUILD_OUTPUT_DIRECTORY>
+
+##npx wrangler pages project delete your_project_name
 ```
 
 We will upload the `./dist` folder, as its the place where the static files are built.
 
 {{< callout type="warning" >}}
-This approach does not use CI/CD for improved workflow as the following ones!
+This approach **does not use CI/CD** for improved workflow as the following ones!
 {{< /callout >}}
 
-**You can use these 2 other methods** as an alternative, it also works with private repositories.
+**You can use these 2 other methods** as an alternative (leveraging automation), it also works with private repositories.
 
 1. Github + Cloudflare Workers and Pages
 
@@ -236,7 +239,7 @@ You will Need a Gitlab Accaunt OAth (Authentication)
 
 Make sure you set the **proper settings**.
 
-This will grant that whenever you push, the workers are doing the right steps to generate the static files
+This will grant that whenever you push, the workers are doing the **right steps to generate the static files**:
 
 ![CF WnP Settings with Astro ](/blog_img/web/Cloudflare/CF-Settings-Astro.png)
 
