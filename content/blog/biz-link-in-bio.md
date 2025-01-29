@@ -234,6 +234,12 @@ You will Need a Gitlab Accaunt OAth (Authentication)
 
 ### Setup Cloudflare Workers and Pages
 
+Make sure you set the **proper settings**.
+
+This will grant that whenever you push, the workers are doing the right steps to generate the static files
+
+![CF WnP Settings with Astro ](/blog_img/web/Cloudflare/CF-Settings-Astro.png)
+
 
 {{% /steps %}}
 

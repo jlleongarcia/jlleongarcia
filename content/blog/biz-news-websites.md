@@ -21,3 +21,11 @@ https://github.com/lukenguyen-me/astro-template-directory-website
 https://github.com/NewDesignFile/template-directory
 
 For something more personal, id have a look to: https://github.com/saicaca/fuwari
+
+---
+
+**What if your news/blog are working?**
+
+Maybe writing and selling a book?
+
+This theme could be interesting - https://github.com/candidosales/landing-page-book-astro-svelte-tailwind

@@ -496,7 +496,7 @@ https://gitlab.com/fossengineer1/whilecyclingthere -->
 
 My customer is also really into **interior design**.
 
-And there are very cool Astro Themes waiting for her: 
+And there are very cool Astro Themes waiting for her: https://github.com/PriscaTonia/interior-design-website
 ---
 
 ## New Web Workflow

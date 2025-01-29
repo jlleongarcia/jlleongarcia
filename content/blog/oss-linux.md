@@ -14,7 +14,7 @@ Ive been pretty much confortable with these OS:
 3. Garuda Linux (with this one you unlock the superpower of saying: I use Arch, btw)
 
 
-Time to try something new, getting ready for a network attached storage:
+Time to try something new, getting ready for a **network attached storage**:
 
 * OpenMediaVault (OMV)
 * Synology

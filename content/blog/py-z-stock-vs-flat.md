@@ -340,8 +340,8 @@ Also using low interest rates and long horizons to pay back the debt, so that ve
 <!--
 https://www.youtube.com/watch?v=x2629yXfwQw&pp=ygUYcGFzY3VhbCBhcmnDsW8gZGUgMCBhIDE1
  -->
-
-{{< youtube "x2629yXfwQw&pp" >}}
+<!-- https://youtu.be/x2629yXfwQw -->
+{{< youtube "x2629yXfwQw" >}}
 
 This of course has **several risks** involved:
 
@@ -467,7 +467,7 @@ My friend is not renting the apartment (hence doing the automatic reinvestment o
 But, she is not paying an increasingly high rent (which actually in this period grew more than the flat price).
 
 
-https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps
+<!-- https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps -->
 
 
 ---
