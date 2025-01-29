@@ -60,6 +60,8 @@ There is the possibility to use **Bento Themes with Astro**:
   {{< card link="https://jalcocert.github.io/Web3/" title="Example of bento Portfolio - Web3 blog with Astro and Github Pages Setup" >}}
 {{< /cards >}}
 
+
+
 You can also have a look to:
 
 1. https://github.com/tim-hub/techtim-astro-bento-portfolio

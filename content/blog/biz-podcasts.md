@@ -1,10 +1,10 @@
 ---
-title: "Cool Link in Bios (with SSGs)"
-date: 2025-01-22
+title: "Tech for Creating a Podcast"
+date: 2025-02-21
 draft: false
 tags: ["Web"]
-description: "How to create podcasts and a website for them. Also a look to GitPodcast.."
-summary: 'HUGO and Astro as linkinbio websites'
+description: "How to create podcasts and a related astro website for them. Also a look to GitPodcast.."
+summary: 'Astro and podcast'
 url: 'tech-for-podcast'
 ---
 

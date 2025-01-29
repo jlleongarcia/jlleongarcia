@@ -269,7 +269,7 @@ $$
 
 And with those rates, the yield of that stock you are buying today, catch up in ~17.8 years!
 
-## Div Growth
+## Dividend Growth
 
 The important fact here is, that we dont get a loan for dividend investing (do we?)
 
@@ -303,11 +303,21 @@ So the costs from your pocket of this one are: Initial payment + Mortage Payment
 
 ![Cash Flow when Buy and Rent with Loan](/blog_img/data-experiments/buy_mortage_and_rent_CF.png) 
 
-As you can imagine, if the real life goes like this, you have earned a lot by using debt.
+
+{{< callout type="warning" >}}
+Im assuming that the property gets `dividends aka rental` reinvested since its bought.
+{{< /callout >}}
+
+What's going on here?
+
+1. You are earning `dividends` on the full property
+2. But you *only* invested initially a part of the full property value
+
+As you can imagine, **if real life** goes like this, you have earned a lot by using debt.
 
 You were using the rental price to pay the mortage (and you got a surplus later on)
 
-And also the property most likely increased the value on a 25years horizon since you bought it.
+And also the property most likely increased the value on a 25 years horizon since you bought it.
 
 Those 2 factors, while you 'just' put from your pocket the orange part of the graph.
 
@@ -323,16 +333,22 @@ https://www.youtube.com/watch?v=6whiAFXk3IU
 
 {{< youtube "6whiAFXk3IU" >}}
 
-People trying to leverage loans, tend to look for low property price to rent price ratios.
+People trying to leverage loans, tend to look for **low property price to rent price ratios**.
 
-Also using low interest rates and long horizons to pay back the debt, so that very quickly the rental prices exceed the mortage amount, which provides them with Free Cash Flow (using loaned money).
+Also using low interest rates and long horizons to pay back the debt, so that very quickly the rental prices exceed the mortage amount, which provides them with Free Cash Flow very early (using loaned money and exposed to other risks).
 
-This of course has several risks involved:
+<!--
+https://www.youtube.com/watch?v=x2629yXfwQw&pp=ygUYcGFzY3VhbCBhcmnDsW8gZGUgMCBhIDE1
+ -->
+
+{{< youtube "x2629yXfwQw&pp" >}}
+
+This of course has **several risks** involved:
 
 1. How consistent is the rental? Any damages? Occupancy ratio? Whats the rental growth if any?
 2. What will be the interest rate evolution during the loan period? 
 
-If interest rise enough, you can go from FCF to be unable to pay to the bank, hence potentially loosing the house.
+If interest rise enough, you can go from FCF to be unable to pay to the bank, hence potentially loosing the house (and more).
 
 Those situations where people lost it all, happened not so long ago, in ~2008.
 
@@ -345,6 +361,15 @@ Max credit monthly payment < 0.35*(Net Salary + Other Net Income)
 
 > Imo, even with such formulas there are risk, but...what do I know about finances!
 
+**What if** you get it right?
+
+Depending in the economical cycle, where you look... these ratios will be different.
+
+But this ratio can be seen as the **PER** on stocks.
+
+> If you got an initial yield of 10% (PER 10) on the total property value (more on your invested capital), it will be very hard to a stock to a [dividend stock to catch up](#how-many-years-to)!
+
+But those values are just a snapshot and in real life all those values are floating: interest, rental price (yield), property value,...
 
 ## Real Estate Data
 
@@ -405,7 +430,7 @@ Those are **nominal growth** values, dont forget to take into consideration [inf
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/r-dashboard-shinyapps/" title="Retirement Facts" image="/blog_img/data-experiments/Inflation_Mild.JPG" subtitle="Life savings and inflation in a R Shiny App." >}}
-  {{< card link="https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps" title="Retirement Facts" image="blog_img/apps/gh-jalcocert.svg" subtitle="Life savings and inflation in a R Shiny App." >}}
+  {{< card link="https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps" title="Retirement Facts" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Life savings and inflation in a R Shiny App." >}}
 {{< /cards >}}
 
 <!-- https://socialify.git.ci/jalcocert/jalcocert/image?description=1&name=1&theme=Auto

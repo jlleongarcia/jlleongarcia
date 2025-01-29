@@ -89,7 +89,7 @@ It allow you to have a exposed static built site and also provides the capabilit
 
 6. https://github.com/MarcosKlender/AstroLinkHub
 
-> MIT | Open source links page, customizable via JSON. Made with Astro 4.
+> MIT | Open source links page, **customizable via JSON**. Made with Astro 4.
 
 7. https://github.com/ctrimm/astro-link-in-bio-theme
 
@@ -191,7 +191,7 @@ We will upload the `./dist` folder, as its the place where the static files are 
 This approach does not use CI/CD for improved workflow as the following ones!
 {{< /callout >}}
 
-**You can use these 2 other methods as an alternative, it also works with private repositories**
+**You can use these 2 other methods** as an alternative, it also works with private repositories.
 
 1. Github + Cloudflare Workers and Pages
 
@@ -199,37 +199,38 @@ This approach does not use CI/CD for improved workflow as the following ones!
   {{< card link="https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages" title="Example of Github + CF Pages" >}}
 {{< /cards >}}
 
-2. **Gitlab + Cloudflare WnP**
+2. **Gitlab + Cloudflare WnP** - Lets do this one step by step.
+
 
 <!-- https://gitlab.com/fossengineer1/financeinmotion -->
 
 
-1. Get a domain name with Cloudflare as **Authoritative Name Server**
+{{% steps %}}
 
-![CF Custom Domain2 ](/blog_img/web/Cloudflare/CF-CustomDomain-DNSManagement.png)
+### Cloudflare as **Authoritative Name Server**
+
+Get a domain name and setup **Cloudflare as its Name Server**, this will proove that you own it:
+
+![CF Custom Domain1 ](/blog_img/web/Cloudflare/CF-CustomDomain-DNSManagement.png)
 
 ![CF Custom Domain2 ](/blog_img/web/Cloudflare/CF-NameServers.png)
 
-![CF Custom Domain2 ](/blog_img/web/Cloudflare/CF-Porkbun-NS.png)
-
-2. 
+![CF Custom Domain3 ](/blog_img/web/Cloudflare/CF-Porkbun-NS.png)
 
 
-{{% steps %}}
+### Astro Site to Gitlab Repository
 
-### Astro Site to Github Repository
+Push your code to a [Gitlab](https://jalcocert.github.io/JAlcocerT/how-to-use-gitlab/).
 
-Push your code to a [Github Repository](https://jalcocert.github.io/JAlcocerT/github-gists).
-
-### Setup Cloudflare to with with Github
+### Setup Cloudflare to with Gitlab
 
 Go to [Cloudflare UI](https://dash.cloudflare.com/).
 
 Compute (workers) -> **Worker & Pages** -> Overview.
 
-Create -> Pages -> Connect Git.
+Create -> Pages -> **Connect Git**.
 
-You will Need a Github Account Authentication
+You will Need a Gitlab Accaunt OAth (Authentication)
 
 ### Setup Cloudflare Workers and Pages
 

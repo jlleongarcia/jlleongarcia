@@ -14,7 +14,7 @@ url: setup-termux-android
 
 ## Termux on Android
 
-
+I was tinkering some time ago with [Termux](https://jalcocert.github.io/Linux/docs/privacy/android/#how-to-use-linux-on-android-with-termux)
 
 ## More
 

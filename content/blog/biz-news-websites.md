@@ -1,12 +1,13 @@
 ---
 title: "Features for a Professional News Website"
-date: 2025-01-22
+date: 2025-02-22
 draft: false
 tags: ["Web"]
 description: "Creating a News focused Website with app directory (with Astro SSG)."
 summary: 'Astro news website creation'
 url: 'creating-news-website'
 ---
+
 
 
 
@@ -17,3 +18,6 @@ url: 'creating-news-website'
 
 https://github.com/Mrahmani71/astro-news
 https://github.com/lukenguyen-me/astro-template-directory-website
+https://github.com/NewDesignFile/template-directory
+
+For something more personal, id have a look to: https://github.com/saicaca/fuwari

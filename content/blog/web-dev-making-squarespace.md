@@ -33,7 +33,11 @@ Once updated, we can connect the real domains with the build:
 
 ### Proposed Themes
 
-Astro Stablo
+* Astro Stablo
+
+* https://github.com/ouranoshong/astro-melody-starter
+
+Which its similar to Visvrs ([AstroVerse](https://github.com/penboxlab/astroverse))
 
 * [Astro Foxi](https://github.com/alexadark/foxi-astro)
     * https://github.com/oxygenna-themes/foxi-astro-theme
