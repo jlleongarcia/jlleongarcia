@@ -16,7 +16,7 @@ After thinking about it for a while, we can see the following pattern:
 
 1. Stock value can be seen as property value
 2. Stock dividend yield as the renting price of the property
-3. Most *8significant difference**: we dont take loans for dividend investing, but people normally do for real estate
+3. Most **significant difference**: we dont take loans for dividend investing, but people normally do for real estate
 
 This arise the question: *what it is the **return** on the money that ive given **from my pocket**?*
 
@@ -411,13 +411,19 @@ sankey-beta
 
 You might need to put some more money in the initial stages of the process, despite having later on FCF available.
 
-What exactly? We need to make some zoom in on the previous cash flow graph:
+What exactly? We need to make some **zoom in** on the previous **cash flow graph**:
 
 ![French Amortiz Example](/blog_img/data-experiments/buy_mortage_and_rent_CF_focused.png) 
 
-The break even point is much later on, but see how initially you might have some parameters that will make you place additional money from your pocket (in addition to the one you give initially).
+The break even point is much later on, but see how initially you might have some configuration of parameters that will make you place **additional money from your pocket** (in addition to the one you give initially, together with the bank to get the property).
 
 That will assist the initially lower rental price to pay back all the liabilities.
+
+{{< callout type="warning" >}}
+Depending on the situation, it could also be that:
+* You have FCF from the very first month (higher rental than renturns of the loan)
+* To never have FCF, in fact, if interest rises so much there **could be** a extreme situation that rent+your salary could not pay the monthly mortage payment. A lot of troubles on such horizon.
+{{< /callout >}}
 
 <!--
 https://www.youtube.com/watch?v=x2629yXfwQw&pp=ygUYcGFzY3VhbCBhcmnDsW8gZGUgMCBhIDE1

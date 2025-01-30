@@ -72,6 +72,14 @@ Some years might have a decrease due to:
 
 What this tries to illustrate its just the general upwards trend.
 
+Specially, if you build a so called *dividend aristocrats* portfolio.
+
+These are companies with a track record of increasing dividends for many years, even during recessions like in 2008.
+
+To compare it with real estate, rental prices decreased about 20% (dividend) and rental 40% from its peak.
+
+The price of the companies was also reduced at those times, which caused anomaly *high* initial yield when buying those stocks
+
 <!-- {{< rawhtml >}} 
 <iframe src="/static/blog_img/data-experiments/dgi_example.html"
 style="width: 100%; height: 450px;"></iframe>
@@ -83,7 +91,20 @@ Ideally something that give us both, but, there is always a trade off.
 
 And some people call high yield investments as **divs traps**.
 
-What does the data and math tell us about it?
+{{< callout type="info" >}}
+[Investing in Real Estate](https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/) can be seen as a **leveraged high initial yield**
+{{< /callout >}}
+
+What does the **data and math** tell us about it?
+
+
+![Div Yield vs Growth](/blog_img/data-experiments/div-growth-vs-yield-3d.png) 
+
+
+As seen on the real estate post, the catch up its all about: $t = \frac{\ln(A/B)}{\ln(1 + (r))}$
+
+* Where A and B are the initial yield of each stock
+* And r the difference in growth between them
 
 ### No Dividend Reinvestment
 
@@ -91,12 +112,16 @@ In this case, you **just buy one time in the beginning, no debt**, sit and wait 
 
 ![Div No Re-Investment](/blog_img/data-experiments/div_no_reinvestment.png) 
 
-> You can see how long it takes for 2.5% yield growing at 12% to catch up with 5.5% which grows at 2.57%
+> See how long it takes for 2.5% yield growing at 12% to **catch up** with 5.5% which grows at 2.57%
+
+{{< callout type="info" >}}
+Without [re-investing](#with-dividend-reinvestment), is harder to see the snowball effect 
+{{< /callout >}}
 
 
 ### With Dividend Reinvestment
 
-How about keep buying by re-investing the dividends?
+How about keep buying by **re-investing** the dividends?
 
 Assuming that the price of the stock and the initial yield is the same, we would get:
 
