@@ -496,11 +496,16 @@ How much up and down? As this is just a python data exercise, I will say
 
 How does it looks like?
 
+![French Amortiz Example](/blog_img/data-experiments/rental-price-variations.png) 
 
 Which could be summarized as: 
 
-> 'Change is the only constant'
->> And in the meantime, nominal prices tend to go up)
+> '**Change is the only constant**'
+>> And in the meantime, nominal prices tend to go up
+
+You can also expect for interest rates to fluctuate (if you did not chose a fixed interest loan).
+
+Which could also be modelled similarly to these.
 
 ---
 
