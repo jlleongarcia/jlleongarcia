@@ -91,6 +91,7 @@ url: 'tbd-topics'
 
 
 ## GitHub Runners on Raspberry Pi
+  Hosted runners arm64 available since jan 2025
 - Self-hosted GitHub runner setup:
   - **Repo Settings** > **Actions** > **Runners** > **New Self-hosted Runner**
   - Choose runner architecture: `x86/arm/arm86`

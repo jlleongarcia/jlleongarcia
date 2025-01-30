@@ -141,7 +141,7 @@ It looks amazing in phones
 
 12. https://github.com/alamguardin/Astrolink
 
-This is how they can look:
+This is **how they can look**:
 
 {{< cards >}}
   {{< card link="https://whoisyarnness.cozyknittingclub.com" title="Link in Bio for Knitting" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="Astro treelink Customization" >}}
@@ -154,6 +154,8 @@ And like this:
   {{< card link="https://financeinmotion.fyi/" title="LinkinBio" image="/blog_img/web/WebsSnapshots/Web_IoTechCrafts.png" subtitle="Links with astro-link-in-bio-theme" >}}
   {{< card link="https://jalcocert.github.io/Portfolio/" title="Links with HUGO LYNX" image="/blog_img/web/WebsSnapshots/Web_PortfolioLinks.png" subtitle="Collection of important Links" >}}             
 {{< /cards >}}
+
+While [performing](https://jalcocert.github.io/JAlcocerT/create-your-website/#is-my-website-performing-well) like [this](https://web-check.xyz/check/https%3A%2F%2Ffinanceinmotion.fyi%2F)
 
 ### LinkInBio as Personal CV
 
@@ -233,7 +235,7 @@ Compute (workers) -> **Worker & Pages** -> Overview.
 
 Create -> Pages -> **Connect Git**.
 
-You will Need a Gitlab Accaunt OAth (Authentication)
+You will Need a Gitlab Account OAth (Authentication)
 
 ### Setup Cloudflare Workers and Pages
 

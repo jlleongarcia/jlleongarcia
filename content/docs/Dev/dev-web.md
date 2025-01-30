@@ -362,15 +362,17 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
 
 ### Is my website performing well?
 
-* https://pagespeed.web.dev/
+1. https://pagespeed.web.dev/
 * https://search.google.com/search-console/
 
-* https://trends.google.es/trends/
+2. https://trends.google.es/trends/
 
-* https://www.websitecarbon.com/
+3. https://www.websitecarbon.com/
 
-* https://github.com/Lissy93/web-check
+4. https://github.com/Lissy93/web-check
     * https://web-check.xyz/
+
+> MIT | 🕵️‍♂️ All-in-one OSINT tool for analysing any website
 
 * You will need **proper favicons**
     * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
@@ -378,7 +380,7 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
 
 ### CDN and Videos for your Website
 
-* https://github.com/orthdron/subatic - Extremely simple video hosting Site that scales with you
+1. https://github.com/orthdron/subatic - Extremely simple video hosting Site that scales with you
 
 
 
@@ -396,7 +398,7 @@ It's worth to try few of them - not all the content is indexed in the same way a
 
 ### Enhancing a Site
 
-* https://blog.cavelab.dev/2022/01/comments-again/
+1. Comments -  https://blog.cavelab.dev/2022/01/comments-again/
 
 ### Other Software to Create a Page
 

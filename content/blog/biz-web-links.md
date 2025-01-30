@@ -62,15 +62,35 @@ There is the possibility to use **Bento Themes with Astro**:
   {{< card link="https://jalcocert.github.io/Web3/" title="Example of bento Portfolio - Web3 blog with Astro and Github Pages Setup" >}}
 {{< /cards >}}
 
+You can also have a look to:
+
 2. https://github.com/tim-hub/techtim-astro-bento-portfolio
 
 
-
-You can also have a look to:
-
-1. https://github.com/tim-hub/techtim-astro-bento-portfolio
-
 > I have forked this one here - https://github.com/JAlcocerT/techtim-astro-bento-portfolio
+
+And you can use it by:
+
+```sh
+npm install
+
+npm run dev
+#npm run build
+
+#rm -rf .git
+```
+
+Remember to tweak:
+
+1. All content from `/public` and `/src/content` as per the original theme License
+2. The `index.astro` file calls the individual components, like `../components/sections/AboutMe.astro`
+
+
+<!-- 
+libreportfolio.fyi
+https://gitlab.com/fossengineer1/libreportfolio 
+-->
+
 
 --- 
 
