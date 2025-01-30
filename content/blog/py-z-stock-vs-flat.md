@@ -388,6 +388,8 @@ flowchart LR
     B -- No --> L[Loan Denied]
 ```
 
+And during the full period of the operation, it **could be** as follows:
+
 ```mermaid
 ---
 config:
@@ -399,13 +401,23 @@ sankey-beta
 
 "Own Money","Property",20
 "Bank Money (Principal)","Property",80
-"Property","Rental",10
-"Rental","Return to Bank",5
-"Rental","FCF",5
-"Bank","Return to Bank",30
+"Bank","Bank Money (Interest)",30
+"Property","Rental",80
+"Rental","Return to Bank",100
+"Rental","FCF",50
 "Bank","Bank Money (Principal)",80
 "Own Money","Return to Bank",10
 ```
+
+You might need to put some more money in the initial stages of the process, despite having later on FCF available.
+
+What exactly? We need to make some zoom in on the previous cash flow graph:
+
+![French Amortiz Example](/blog_img/data-experiments/buy_mortage_and_rent_CF_focused.png) 
+
+The break even point is much later on, but see how initially you might have some parameters that will make you place additional money from your pocket (in addition to the one you give initially).
+
+That will assist the initially lower rental price to pay back all the liabilities.
 
 <!--
 https://www.youtube.com/watch?v=x2629yXfwQw&pp=ygUYcGFzY3VhbCBhcmnDsW8gZGUgMCBhIDE1
