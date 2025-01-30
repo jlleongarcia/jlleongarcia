@@ -589,3 +589,49 @@ $$
 
 
 $$\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}$$
+
+
+
+{{< details title="Cool chemistry 📌" closed="true" >}}
+
+## Reacción del nitrato de potasio con azúcar y del ácido nítrico con aluminio
+
+### Nitrato de potasio y azúcar
+
+La mezcla de nitrato de potasio (KNO3) y azúcar (sacarosa, C12H22O11) produce humo al calentarse debido a una reacción de combustión. El nitrato de potasio actúa como un oxidante, proporcionando el oxígeno necesario para que el azúcar se queme. La reacción general es compleja y produce varios productos, incluyendo dióxido de carbono (CO2), vapor de agua (H2O), nitrógeno (N2) y óxido de potasio (K2O).
+
+La ecuación química simplificada de la reacción sería:
+
+```
+KNO3 + C12H22O11 → CO2 + H2O + N2 + K2O
+```
+
+$$\ce{KNO3 + C12H22O11 -> CO2 + H2O + N2 + K2O}$$
+
+
+Esta reacción es exotérmica, lo que significa que libera calor, lo que a su vez mantiene la reacción en marcha y produce el humo característico. El humo está compuesto por partículas sólidas (principalmente óxido de potasio) y gases (dióxido de carbono, vapor de agua y nitrógeno).
+
+### Ácido nítrico y aluminio
+
+La reacción del ácido nítrico (HNO3) concentrado con aluminio (Al) es una reacción redox compleja que produce nitrato de aluminio (Al(NO3)3), óxidos de nitrógeno (NOx) y agua (H2O). La reacción es altamente exotérmica y puede ser peligrosa si no se realiza con precaución.
+
+La ecuación química simplificada de la reacción sería:
+
+```
+Al + HNO3 → Al(NO3)3 + NOx + H2O
+```
+
+
+$$\ce{Al + HNO3 -> Al(NO3)3 + NOx + H2O}$$
+
+
+El aluminio se oxida, perdiendo electrones, mientras que el ácido nítrico se reduce, ganando electrones. Los óxidos de nitrógeno (NOx) son los que producen el humo marrón característico de esta reacción.
+
+Es importante tener en cuenta que esta reacción puede ser muy violenta y generar gases tóxicos, por lo que se debe realizar únicamente en un laboratorio con las medidas de seguridad adecuadas.
+
+### Precauciones
+
+Tanto la mezcla de nitrato de potasio y azúcar como la reacción de ácido nítrico con aluminio pueden ser peligrosas si no se manejan correctamente. Se recomienda no intentar estos experimentos en casa y buscar la guía de un profesional en caso de ser necesario.
+
+
+{{< /details >}}
