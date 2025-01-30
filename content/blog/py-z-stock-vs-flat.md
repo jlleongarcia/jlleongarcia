@@ -114,23 +114,26 @@ As mentioned, you will have constant payments (given constant interest rate) and
 
 There you have a **sample split evolution** of how much you are paying on interest and on principal return to the bank.
 
-That's right, it can be 50%, but **the interest you pay back does not have to be a 50/50 split** with the pincipal.
 
-I mean in total.
-
-Because if you understood previous graph, you already now that the split varies month per month.
-
-This below, is just the full picture end to end of the operation with the lender:
-
-![Interest to Principal Ratio](/blog_img/data-experiments/interest2principal.png)
-
-If you have high interest and high period onf years to return, you end into the red zone (more interest returned than principal) 
 The shape of the **curve depends on the parameters** you set:
 
 * Interest Rate
 * Years of Return
 
 As you can imagine, the higher those 2 are, the higher interest you pay in value and also in relation with the principal you got the loan for.
+
+
+That's right, it **can be 50%, but** the interest you pay back **does not have to be a 50/50 split** with the pincipal.
+
+I mean in total.
+
+Because if you understood previous graph, you already now that **the split varies month per month**.
+
+This below, is just **the full picture** (end to end) of the operation with the lender:
+
+![Interest to Principal Ratio](/blog_img/data-experiments/interest2principal.png)
+
+If you have high interest and high period onf years to return, you end into the red zone (more interest returned than principal) 
 
 {{< callout type="info" >}}
 Ive also covered **mortage with python** as part of the [EDA of pystocks](https://gitlab.com/fossengineer1/py_stocks/-/tree/main/EDA_Mortage?ref_type=heads) and ofc created a streamlit app.
@@ -348,7 +351,7 @@ People trying to leverage loans, tend to look for **low property price to rent p
 
 Also using low interest rates and long horizons to pay back the debt, so that very quickly the rental prices exceed the mortage amount, which provides them with Free Cash Flow very early (using loaned money and exposed to other risks).
 
-What? here you have a [diagram](https://mermaid.live/edit#pako:eNptj0FLxEAMhf_KkHMLKggyR5W9iaLgQXKJbbYt2yZlmmEpy_53MxUXEW_ve-8l8E7QaMsQoa5rlEZlP3QRJYSF5MDrJh16Pb7TmHmJwVJmlK2O8t2qP9moIMLzUcKTCq8IFcJL0pmTFbi5KvG99__P77b8l4HwymI0urzesgsWaTlJMA3loVu3fwq7h11xoYKJ00RD6wtPZQuC9TwxQnTZUvJjlLP3KJu-rdJALAMrSJq7HuKexsUpzy0ZPw7UJZou7kzyofrD5y_5vG7k)
+What? here you have a **Sankey** [diagram](https://mermaid.live/edit#pako:eNptj0FLxEAMhf_KkHMLKggyR5W9iaLgQXKJbbYt2yZlmmEpy_53MxUXEW_ve-8l8E7QaMsQoa5rlEZlP3QRJYSF5MDrJh16Pb7TmHmJwVJmlK2O8t2qP9moIMLzUcKTCq8IFcJL0pmTFbi5KvG99__P77b8l4HwymI0urzesgsWaTlJMA3loVu3fwq7h11xoYKJ00RD6wtPZQuC9TwxQnTZUvJjlLP3KJu-rdJALAMrSJq7HuKexsUpzy0ZPw7UJZou7kzyofrD5y_5vG7k)
 
 
 ```mermaid
@@ -367,6 +370,8 @@ sankey-beta
 "Rental","FCF",5
 ```
 
+And the workflow would be something like:
+
 ```mermaid
 flowchart LR
     A[Apply for Loan] --> B{Loan Approved?}
@@ -381,6 +386,25 @@ flowchart LR
     I -- No --> K[Continue Repayment]
     K --> H
     B -- No --> L[Loan Denied]
+```
+
+```mermaid
+---
+config:
+  sankey:
+    showValues: true
+---
+
+sankey-beta
+
+"Own Money","Property",20
+"Bank Money (Principal)","Property",80
+"Property","Rental",10
+"Rental","Return to Bank",5
+"Rental","FCF",5
+"Bank","Return to Bank",30
+"Bank","Bank Money (Principal)",80
+"Own Money","Return to Bank",10
 ```
 
 <!--

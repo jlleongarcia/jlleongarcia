@@ -169,9 +169,9 @@ Once you provide the user and pass, you will be able to see all the NC Files.
 
 {{< /details >}}
 
-### Using the ThinkPad w a Server
+### Using the ThinkPad as a Server
 
-I am using my OrangePi5 as server now.
+I am using my **OrangePi5 as server** now.
 
 ```mermaid
 graph TD
@@ -197,6 +197,15 @@ It seems it got corrupted due to improper reboots.
 
 
 {{< /details >}}
+
+It will be handy to **install a firewall**:
+
+```sh
+sudo add-apt-repository universe
+
+sudo apt update
+sudo apt install gufw
+```
 
 
 ---

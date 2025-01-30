@@ -27,6 +27,8 @@ With astro, you can build pretty cool weddings ssgs:
 
 > GPL3.0 | A place for guests to view and drop pictures of the big day
 
+### WeddingShare Setup
+
 * https://docs.wedding-share.org/
   * https://docs.wedding-share.org/docs/Setup/docker
   * https://hub.docker.com/r/cirx08/wedding_share
@@ -64,11 +66,18 @@ volumes:
     name: WeddingShare-Uploads
 ```
 
+Default credentials to `localhost:8080/Admin` are...`admin/admin`
+
+
+
+![Interest to Principal Ratio](/blog_img/apps/weddingshare.png)
+
+
 ## Making Deployments Easy
 
 
 {{< callout type="info" >}}
-Cloudflare tunnels is one of my go to options, yet you also have: [ngrok](https://www.reddit.com/r/selfhosted/comments/10n1h0p/cloudflare_tunnel_alternative/), [nginx](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/),...
+**Cloudflare tunnels** is one of my go to options, yet you also have: [ngrok](https://www.reddit.com/r/selfhosted/comments/10n1h0p/cloudflare_tunnel_alternative/), [nginx](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/),...
 {{< /callout >}}
 
 {{< cards cols="2" >}}
