@@ -183,9 +183,9 @@ You can now have [conversations with a DB via LLMs as described **here**](https:
 
 #### Snowflake
 
-It is a daa warehouse.
+It is a data warehouse.
 
-You can design it to have a bronze/silver/gold architecture (aka **MEDALLION** architecture).
+You can (or not) design it to have a **bronze/silver/gold** architecture (aka **MEDALLION** architecture).
 
 
 
@@ -276,9 +276,151 @@ Grouping data before partitioning organizes it for more efficient processing.
 
 #### DataBricks
 
+[Databricks](https://jalcocert.github.io/JAlcocerT/data-basics-for-data-analytics/#databricks) is a **cloud-based unified analytics platform** for data engineering, data science, and machine learning, built around **Apache Spark**.  
+
+It offers a managed Spark environment along with a collaborative workspace and various integrated tools.
+
+Think of databricks essentially like a very cool jupyter notebooks `.ipynb` which can use pyspark, sql, R...
+
+{{< details title="Databricks over a local PySpark cluster with Jupyter notebooks? 📌" closed="true" >}}
+
+
+
+**Advantages of Databricks:**
+
+* **Managed Spark Environment:** Databricks handles the complexities of setting up, configuring, and managing a Spark cluster.  You don't have to worry about installing Spark, configuring memory, or dealing with cluster failures.  This significantly reduces the operational overhead.
+* **Scalability and Elasticity:**  Scaling your Spark cluster up or down is incredibly easy in Databricks. You can quickly provision more resources when needed for large jobs and then scale back down to save costs when the job is finished.  This elasticity is much harder to achieve with a local cluster.
+* **Collaboration:** Databricks provides a collaborative workspace where multiple users can work on the same notebooks, share data, and collaborate on projects.  This is a major advantage for teams working on data science or machine learning projects.
+* **Integrated Tools and Services:** Databricks integrates with various cloud storage services (AWS S3, Azure Blob Storage, Google Cloud Storage), data lakes, and other data sources.  It also provides built-in tools for data visualization, machine learning (MLflow), and job scheduling.  This streamlined integration simplifies the data workflow.
+* **Performance Optimization:** Databricks optimizes the performance of Spark jobs through various techniques, such as caching, query optimization, and intelligent task scheduling.  This can lead to faster execution times compared to a locally managed cluster.
+* **Serverless Options:** Databricks offers serverless compute options (like Photon) that further simplify cluster management and optimize cost by automatically scaling resources based on workload demands.
+* **Security:** Databricks provides robust security features, including access control, data encryption, and compliance certifications.  Managing security on a local cluster can be more challenging.
+* **Auto-termination:** You can configure clusters to automatically terminate after a period of inactivity, saving you money on compute costs.
+* **Support:** Databricks provides support for its platform, which can be invaluable when you encounter issues.
+
+**Advantages of a Local PySpark Cluster:**
+
+* **Cost Control (Initially):**  Setting up a local cluster might seem cheaper initially, as you're not directly paying for a cloud service.  However, you need to factor in the costs of hardware, maintenance, electricity, and your own time for setup and administration.
+* **Data Locality (Potentially):** If your data is already stored locally, accessing it from a local cluster can be faster than transferring it to the cloud. However, cloud storage solutions are becoming increasingly fast, and Databricks offers optimized ways to access data.
+* **Control:** You have complete control over your local cluster environment. You can customize it exactly to your needs.  However, this also means you're responsible for everything.
+
+**When to Choose Which:**
+
+* **Choose Databricks if:**
+    * You need to scale your Spark workloads easily.
+    * You need a collaborative environment for your team.
+    * You want to reduce the operational overhead of managing a Spark cluster.
+    * You need access to integrated tools and services for data science and machine learning.
+    * You prioritize performance and security.
+    * You don't want to manage infrastructure.
+* **Choose a Local PySpark Cluster if:**
+    * You have very limited budget and your workloads are small and infrequent.
+    * You need very specific customization options that aren't available in Databricks.
+    * Your data is extremely sensitive and cannot be moved to the cloud (though Databricks offers various security measures).
+    * You have the expertise to manage and maintain a Spark cluster.
+
+{{< /details >}}
+
+For most data science and data engineering teams working with Spark, Databricks offers a more efficient, scalable, and collaborative environment compared to managing a local cluster.
+
+While a local cluster might seem cheaper initially, the long-term costs and complexities of management often make Databricks a more cost-effective and productive solution.
+
+
+
+
 {{< callout type="info" >}}
-I made a project with a **Raspberry Pi with Mongo&DataBricks** - [here](https://jalcocert.github.io/RPi/posts/rpi-iot-mongodatabricks/)
+I made a project with a **Raspberry Pi with [Mongo & DataBricks CE](https://jalcocert.github.io/RPi/posts/rpi-iot-mongodatabricks/)**. [Data Modelling](https://jalcocert.github.io/JAlcocerT/data-basics-for-data-analytics/#databricks) is always an important part!
 {{< /callout >}}
+
+
+{{< details title="Databricks vs Google Big Query and Other Clouds 📌" closed="true" >}}
+
+You're right to think of Google BigQuery as a competitor to Databricks, but it's important to understand that they approach the data problem from slightly different angles. Here's a breakdown:
+
+**BigQuery:**
+
+* **Focus:** A fully-managed, serverless data warehouse designed for analytical queries and business intelligence.
+* **Strengths:**
+    * **Serverless:** You don't manage any infrastructure. Google handles everything.
+    * **Scalability:** Handles massive datasets with ease.
+    * **Speed:** Optimized for fast SQL queries using Dremel technology.
+    * **Ease of use:** Relatively easy to learn and use, especially if you're familiar with SQL.
+    * **Integration:** Tightly integrated with the Google Cloud ecosystem.
+* **Use Cases:**
+    * Business intelligence and reporting
+    * Data warehousing
+    * Ad-hoc analysis
+    * Building dashboards
+    * Some machine learning with BigQuery ML
+
+**Databricks:**
+
+* **Focus:** A unified analytics platform built around Apache Spark, designed for data engineering, data science, and machine learning.
+* **Strengths:**
+    * **Flexibility:** Supports a wide range of data processing tasks, including ETL, streaming, and machine learning.
+    * **Scalability:** Scales horizontally using Spark's distributed computing model.
+    * **Collaboration:** Provides a collaborative workspace for teams.
+    * **Openness:** Works with various cloud providers (AWS, Azure, GCP) and integrates with many data sources.
+    * **Advanced ML:** Offers advanced machine learning capabilities with MLflow and integrations with popular ML frameworks.
+* **Use Cases:**
+    * Large-scale data engineering
+    * Complex data transformations
+    * Machine learning model training and deployment
+    * Real-time analytics
+    * Data science exploration
+
+**Key Differences:**
+
+* **Architecture:** BigQuery is a data warehouse with a columnar storage format and a query engine (Dremel). Databricks is a platform for data and AI, built on Spark, which is a distributed computing framework.
+* **Ease of Use:** BigQuery is generally considered easier to use, especially for those familiar with SQL. Databricks has a steeper learning curve, particularly for data engineering tasks.
+* **Infrastructure:** BigQuery is completely serverless. You don't manage any infrastructure. Databricks offers managed Spark clusters, but you still have some level of cluster configuration and management.
+* **Machine Learning:** Both platforms support machine learning, but Databricks is generally preferred for more complex and advanced ML workloads.
+* **Data Engineering:** Databricks excels in data engineering tasks due to its Spark foundation. BigQuery is less suited for complex data transformations.
+
+**In Summary:**
+
+* If your primary need is to perform fast analytical queries on large datasets for business intelligence and reporting, BigQuery is a great choice.
+* If you need a more flexible and powerful platform for data engineering, data science, and machine learning, especially if you're working with Spark, Databricks is a better fit.
+
+There's also some overlap in functionality. For example, you can perform some machine learning tasks in BigQuery using BigQuery ML.
+
+And Databricks offers Databricks SQL, which provides a SQL interface for querying data in your data lake.
+
+
+You're hitting on a key point about Databricks' architecture! Here's why it needs integration with other cloud providers:
+
+**1. Storage:**
+
+* **Data Lakehouse:** Databricks promotes the concept of a "data lakehouse," which combines the best of data lakes (raw, unstructured data) and data warehouses (structured, processed data). Cloud storage services like AWS S3, Azure Blob Storage, and Google Cloud Storage are the foundation of these data lakehouses. Databricks doesn't typically store the data itself; it leverages these cloud storage services.
+* **Cost-effectiveness:** Cloud storage is generally more cost-effective for storing large volumes of data compared to storing it within Databricks itself.
+* **Scalability and Durability:** Cloud storage providers offer highly scalable and durable storage solutions, ensuring your data is safe and accessible.
+
+**2. Compute Resources:**
+
+* **Spark Clusters:** Databricks runs on Apache Spark, which requires compute resources to process data. These resources are provided by the cloud provider in the form of virtual machines (VMs). Databricks provisions and manages these VMs to create your Spark clusters.
+* **Variety of Instance Types:** Cloud providers offer a wide variety of VM instance types optimized for different workloads (e.g., compute-intensive, memory-intensive). Databricks allows you to choose the appropriate instance types for your Spark clusters.
+
+**3. Ecosystem Integration:**
+
+* **Cloud Services:** Cloud providers offer a rich ecosystem of services, including data ingestion tools, data transformation services, databases, machine learning platforms, and more. Databricks integrates with these services to provide a comprehensive data and AI platform.
+* **Managed Services:** Databricks often integrates with managed services offered by cloud providers. For example, it might integrate with a managed Kafka service for real-time data streaming or a managed database service for accessing structured data.
+
+**4. Deployment and Management:**
+
+* **Infrastructure Management:** Databricks relies on the cloud provider's infrastructure for deploying and managing its platform. This includes networking, security, and access control.
+* **Simplified Operations:** By integrating with cloud providers, Databricks can simplify the operations of its platform. For example, it can leverage the cloud provider's identity and access management (IAM) services for user authentication and authorization.
+
+* **Databricks integrates with cloud providers primarily for storage, compute resources, ecosystem integration, and simplified deployment and management.**
+* **Databricks generally does not store the data itself.** It analyzes the data that resides in cloud storage. However, there are some exceptions:
+    * **Delta Lake:** Databricks is the creator of Delta Lake, an open-source storage layer that brings reliability to data lakes. Delta Lake files are typically stored in cloud storage, but Databricks plays a key role in managing and optimizing these files.
+    * **Temporary Storage:** Databricks might use temporary storage for caching data during processing, but this is not meant for persistent data storage.
+
+{{< /details >}}
+
+In essence, Databricks leverages the infrastructure and services of cloud providers to deliver its platform.
+
+This allows Databricks to focus on its core strengths: providing a **unified analytics platform** for data engineering, data science, and machine learning, built around the power of Apache Spark.
+
 
 ### Data Engineering Tools
 

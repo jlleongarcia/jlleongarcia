@@ -3,7 +3,7 @@ title: "101 Concepts for a Data Analytics Journey"
 date: 2020-11-05T23:20:21+01:00
 draft: false
 tags: ["Career"]
-description: 'Must know data concepts and techniques for your career in Analytics.'
+description: 'Must know data modelling concepts and techniques for your career in Analytics.'
 summary: 'The essential concepts of data modeling and key terms in this introductory course for effective data analytics and informed decision-making. Learn how to structure and represent data efficiently to unlock valuable insights and optimize your analytical capabilities.'
 url: 'data-basics-for-data-analytics'
 ---
@@ -11,7 +11,7 @@ url: 'data-basics-for-data-analytics'
 <!-- 'data-techniques-data-analytics' -->
 
 
-By understanding the principles of data modeling and the terminology associated with it, you will gain the necessary knowledge to design and work with data models, empowering you to make informed decisions and extract meaningful insights from complex datasets.
+By understanding the principles of **data modelling** and the terminology associated with it, you will gain the necessary knowledge to design and work with data models, empowering you to make informed decisions and **extract meaningful insights** from complex datasets.
 
 <!-- So, before you continue learning about:
 
@@ -414,14 +414,17 @@ By combining the flexibility and scalability of data lakes with the structure an
 
 ## Databricks
 
-Databricks is a leading unified data analytics platform built on Apache Spark, offering a collaborative and scalable environment for data scientists, data engineers, and analysts.
+Databricks is a leading **unified data analytics platform built on Apache Spark**, offering a collaborative and scalable environment for data scientists, data engineers, and analysts.
 
-It simplifies big data processing and analytics by providing a managed version of Apache Spark, supporting multiple programming languages such as [Python](https://fossengineer.com/guide-python/), Scala, R, and [SQL](https://fossengineer.com/sql-data-analytics/).
+It simplifies **big data processing and analytics** by providing a managed version of Apache Spark, supporting multiple programming languages such as [Python](https://fossengineer.com/guide-python/), Scala, R, and [SQL](https://fossengineer.com/sql-data-analytics/).
 
-Databricks enables interactive data exploration, visualization, and machine learning, empowering organizations to derive valuable insights from diverse and large-scale data sets. With its focus on simplicity, automation, and collaborative workflows, Databricks has become a popular choice for accelerating data-driven initiatives across industries.
+Databricks enables interactive data exploration, visualization, and machine learning, empowering organizations to derive valuable insights from diverse and large-scale data sets. 
+
+With its focus on simplicity, automation, and collaborative workflows, Databricks has become a popular choice for accelerating data-driven initiatives across industries.
 
 * While Databricks can be a valuable component within a data lakehouse architecture, it does not encompass the entire architecture:
-    * It can be integrated with data lake and data warehouse solutions, such as *Amazon S3, Azure Data Lake Storage, or Snowflake*, to create a comprehensive data lakehouse architecture. By leveraging Databricks alongside other storage and analytics services, organizations can achieve a unified and optimized environment for data processing, analytics, and governance.
+    * It can be integrated with data lake and data warehouse solutions, such as *Amazon S3, Azure Data Lake Storage, or Snowflake*, to create a comprehensive data lakehouse architecture.
+    * By leveraging Databricks alongside other storage and analytics services, organizations can achieve a unified and optimized environment for data processing, analytics, and governance.
 
 ## Data Profiling and Quality
 
