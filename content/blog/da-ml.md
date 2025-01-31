@@ -17,31 +17,45 @@ https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&r
 
 Imagine you're tuning a musical instrument, like a guitar.
 
-Bias is like having the strings too tight or too loose—your instrument produces the wrong note consistently, no matter what you play. This is similar to bias in machine learning, where your model consistently predicts something wrong because it's stuck in a certain perspective.
+**Bias** is like having the strings too tight or too loose—your instrument produces the wrong note consistently, no matter what you play. 
 
-Now, variance is like having the strings of your guitar at different tensions. Each string produces a slightly different sound, and the overall result is chaotic and inconsistent. This relates to variance in machine learning, where your model is too sensitive to small changes in the data and gives unpredictable results.
+This is similar to bias in machine learning, where your model consistently predicts something wrong because **it's stuck in a certain perspective**.
+
+Now, **variance** is like having the strings of your guitar at different tensions.
+
+Each string produces a slightly different sound, and the overall result is chaotic and inconsistent. 
+
+This relates to variance in machine learning, where your model is too sensitive to small changes in the data and gives unpredictable results.
 
 {{< dropdown title="Balancing bias and variance is like tuning your guitar perfectly 🎸👇" closed="true" >}}
-You adjust the strings just right so that each note is accurate and consistent across different parts of the instrument. Similarly, in machine learning, you aim to find the sweet spot where your model neither underfits (bias) nor overfits (variance), resulting in reliable and accurate predictions. Just as a well-tuned guitar produces beautiful music, a well-balanced model produces meaningful insights.
+
+You adjust the strings just right so that each note is accurate and consistent across different parts of the instrument. Similarly, in machine learning, you aim to find the sweet spot where your model neither underfits (bias) nor overfits (variance), resulting in reliable and accurate predictions. 
+
+Just as a well-tuned guitar produces beautiful music, a well-balanced model produces meaningful insights.
 {{< /dropdown >}}
 
 
 You can think about very complex models as the ones that will experience a lot of variance in their outputs/solutions.
 
-> An idiot admires complexity, a genius admires simplicity." -Terry A. Davis
+> An idiot admires complexity, **a genius admires simplicity**." -Terry A. Davis
 
 But very simple models, tend to be biased, that means to provide very simplistic 'replies' that might not capture all the insights of the domain that its trying to make predictions about.
 
 ## Supervised Learning
 
-A computer is educated to carry out a task by being provided samples of desired input and output in the supervised learning method of machine learning. The examples are then used by the computer to deduce how to carry out the work by itself. 
+A computer is educated to carry out a task by being provided samples of desired input and output in the supervised learning method of machine learning.
+
+The examples are then used by the computer to deduce how to carry out the work by itself. 
 
 For this, you should get familiar with these concepts:
 
 * Features - Your independent variable, the X, your model input.
 * Labels - Your model's prediction, the dependent variable (on the model), the Y.
 
-Predictive models that can make precise forecasts based on new data (not seen before by the algorithm) are created using supervised learning techniques. This is particularly helpful in programs like:
+Predictive models that can make precise forecasts based on new data (not seen before by the algorithm) are created using supervised learning techniques.
+
+This is particularly helpful in programs like:
+
 * Regression:
 * Classification:
     * Image recognition, where the computer can recognize items in pictures
@@ -183,6 +197,93 @@ Repeating steps 3 and 4 until the cluster allocations stabilize or the specified
 * Knime
 * Alteryx
 * AMZ (AWS) Sagemaker - Propietary
+
+### Python for DSc
+
+Let's break down these Python libraries and what they're used for:
+
+
+{{< details title="What you need to know about ULM's 📌" closed="true" >}}
+
+
+**1. Native (Python's Standard Library):**
+
+*   This isn't a single library you install. It's the collection of modules that are included with Python itself.  Think of it as Python's built-in toolkit.
+*   **Purpose:** Provides fundamental tools for working with data types (lists, dictionaries, strings, numbers), file I/O, basic networking, operating system interaction, and much more.  It's the foundation upon which other libraries are built.
+*   **Examples:** The `os` module (for interacting with the operating system), the `math` module (for mathematical functions), the `random` module (for generating random numbers), and the `csv` module (for working with CSV files) are all part of the standard library.  You use these constantly without even thinking about it.
+
+**2. Pandas:**
+
+*   **Purpose:**  Provides high-performance, easy-to-use data structures and data analysis tools.  It's *the* go-to library for working with tabular data (like spreadsheets or databases).
+*   **Key Features:**
+    *   **DataFrames:**  The core data structure, a labeled two-dimensional table (rows and columns).  Think of it like a supercharged spreadsheet.
+    *   **Series:**  A single column of a DataFrame.
+    *   **Data manipulation:**  Powerful tools for cleaning, transforming, filtering, sorting, grouping, and merging data.
+    *   **Reading and writing data:**  Easily import and export data from various file formats (CSV, Excel, SQL databases, etc.).
+*   **Use Cases:** Data analysis, data cleaning, data preprocessing for machine learning, statistical analysis, time series analysis.
+
+**3. Scikit-learn (sklearn):**
+
+*   **Purpose:**  A comprehensive library for machine learning in Python.  It provides implementations of a wide range of machine learning algorithms.
+*   **Key Features:**
+    *   **Algorithms:**  Includes classification (e.g., logistic regression, support vector machines, random forests), regression (e.g., linear regression, decision trees), clustering (e.g., k-means), dimensionality reduction (e.g., PCA), and more.
+    *   **Model selection:** Tools for evaluating and comparing different models (e.g., cross-validation, grid search).
+    *   **Preprocessing:** Functions for data scaling, normalization, and other preprocessing steps.
+*   **Use Cases:**  Building and training machine learning models for various tasks (classification, regression, clustering, etc.).
+
+**4. TensorFlow and PyTorch:**
+
+*   **Purpose:**  These are *deep learning* libraries.  They provide the tools for building and training neural networks.  They are more focused on complex models than Scikit-learn (which can also do some neural networks, but usually simpler ones).
+*   **Key Features:**
+    *   **Automatic differentiation:**  Crucial for training neural networks efficiently.  They calculate gradients automatically.
+    *   **GPU acceleration:**  Leverage GPUs for faster training of complex models.
+    *   **Model building:** Tools for defining the architecture of neural networks (layers, connections, activation functions).
+*   **TensorFlow:** Developed by Google.  Known for its production readiness and scalability.
+*   **PyTorch:** Developed by Facebook.  Often favored for its ease of use and research-friendly nature.
+*   **Use Cases:**  Image recognition, natural language processing, speech recognition, time series analysis, and other complex machine learning tasks.
+
+**5. Statsmodels (PyStats):**
+
+*   **Purpose:**  Focuses on statistical modeling and inference.  It provides tools for building and analyzing statistical models.
+*   **Key Features:**
+    *   **Statistical models:**  Includes linear models, generalized linear models, time series models, and more.
+    *   **Hypothesis testing:**  Tools for performing statistical tests.
+    *   **Model diagnostics:**  Functions for evaluating the goodness of fit and assumptions of statistical models.
+*   **Use Cases:** Statistical analysis, hypothesis testing, building econometric models, time series analysis, and other statistical modeling tasks.  It is more statistically focused than Scikit-learn, which is more machine learning focused.
+
+{{< /details >}}
+
+**In Summary:**
+
+*   **Native:** Python's built-in tools.
+*   **Pandas:** Data manipulation and analysis.
+*   **Scikit-learn:** General machine learning (including some neural networks).
+*   **TensorFlow/PyTorch:** Deep learning (complex neural networks).
+*   **Statsmodels:** Statistical modeling and inference.
+
+
+{{< details title="TF vs PyTorch 📌" closed="true" >}}
+
+
+**1. Ease of Use and Abstraction:**
+
+*   In this sense, **PyTorch is often considered more high-level**. It has a more Pythonic feel, meaning it integrates very smoothly with the Python language and its syntax. This makes it generally easier to learn and use, especially for those coming from a Python background.
+*   TensorFlow, while very powerful, can have a steeper learning curve due to its more complex structure and sometimes less intuitive syntax. However, TensorFlow has been improving in this area, especially with the integration of Keras as a high-level API.
+
+**2. Control and Flexibility:**
+
+*   Here, it could be argued that **TensorFlow offers a higher level of control**. Its static graph approach, while more complex, allows for optimizations and deployment capabilities that PyTorch, with its dynamic graph, might not match as easily. This is particularly important for production-level applications where performance and scalability are critical.
+
+{{< /details >}}
+
+**So, which is "higher-level"?**
+
+It depends on what you prioritize:
+
+*   **For ease of use and rapid prototyping:** PyTorch often wins.
+*   **For production readiness, scalability, and fine-grained control:** TensorFlow might be the better choice.
+
+
 
 ### Other Resources for ML
 

@@ -3,14 +3,16 @@ title: A Camera for the Raspberry Pi
 date: 2024-07-19T23:20:21+01:00
 draft: false
 tags: ["Tinkering"]
-summary: SimpleCV and OpenCV + Scrypted & HA...but first, lets make the camera work
+summary: SimpleCV and OpenCV + Scrypted & HA. CV with a PI making the Pi camera work.
 url: 'raspberry-pi-camera-setup'
 ---
 
 
 ## Raspberry Pi + Camera
 
-It is time to have a companion for my Raspberry Pi 4.
+It is time to have **a companion for my Raspberry Pi 4**.
+
+Yes, a camera!
 
 {{< cards cols="2" >}}
   {{< card link="https://jalcocert.github.io/RPi/posts/getting-started/" title="Get Started with a RPi" >}}
@@ -137,6 +139,12 @@ And we will have the interface ready at the specified port: `localhost:9999` and
 ---
 
 ## More Software - Camera and CV
+
+The Pi with its camera, its an excellent opportunity to learn more about **computer vision**.
+
+{{< callout type="info" >}}
+Im experimenting with CV - [**C**omputer **V**ision stuff](https://gitlab.com/fossengineer1/cv) 💻
+{{< /callout >}}
 
 ### Pi NVR
 

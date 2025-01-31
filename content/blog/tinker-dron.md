@@ -24,7 +24,6 @@ I have [forked](https://github.com/damiafuentes/DJITelloPy) and created a Docker
 
 {{< callout type="info" >}}
 [Dron Code test in Gitlab](https://gitlab.com/fossengineer1/dron) and in GH: https://github.com/JAlcocerT/DJITelloPy 💻
-* And here, im experimenting with CV - [**C**omputer **V**ision stuff](https://gitlab.com/fossengineer1/cv)
 {{< /callout >}}
 
 
@@ -49,11 +48,15 @@ Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=12
 
 ### Computer Vision without a Dron
 
-* With a [Rpi and a small camera!](https://jalcocert.github.io/JAlcocerT/raspberry-pi-camera-setup/)
+Curious about CV, but dont have this kind of dron yet?
 
-![CV with a RPI4](/blog_img/hardware/RPi4_2gb_cam.jpg)
+A Pi camera its about ~5$, much more affordable way to enter that world!
 
-> I got a small camera for the Pi this year - Try `OpenCV` and `yolov8`
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/raspberry-pi-camera-setup/" title="Pi Camera" image="/blog_img/hardware/RPi4_2gb_cam.jpg" subtitle="Try `OpenCV` and `yolov8` with the Pi!" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/getting-started/" title="Raspberry 101" image="/blog_img/hardware/wifi_eth.jpg" subtitle="Get started with a RPi" >}}
+{{< /cards >}}
+
 
 ---
 
@@ -65,6 +68,10 @@ Credits to [Murtaza's YT Video](https://www.youtube.com/watch?v=LmEcyQnfpDA&t=12
     * [iOS App](https://apps.apple.com/us/app/tello/id1330559633)
     * Android - The **official app seems outdated** and non compatible with my Android
       *  A Free Demo alternative is [this one](https://play.google.com/store/apps/details?id=com.volatello.tellofpv.demo)
+
+### How to Control DJI Tello with Python
+
+#### DJI Tello with Streamlit
 
 ### About Dron Regulations
 
