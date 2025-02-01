@@ -583,6 +583,14 @@ graph TD
 
 ## FAQ
 
+<!-- ### How to make better EDA?
+
+If you are using PySpark, you are probably interested in making better **Exploratory Data Analysis**
+
+#noise
+#predictably irrational
+#black swans -->
+
 
 {{< details title="MTG Notes Template 📌" closed="true" >}}
 

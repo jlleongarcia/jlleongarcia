@@ -129,8 +129,6 @@ result.show()
 ## Cool Stuff to do with PySpark
 
 ### Time Travel with Spark and Apache Iceberg
-<!-- 
-https://billennium.com/time-traveling-in-data-lakes/ -->
 
 **Time-traveling** allows accessing data from a specific point in the past.
 
@@ -138,7 +136,9 @@ While the approach varies across formats, the core principle remains the same. *
 
 To achieve time-traveling, every state of data must be stored at a given time using snapshots. Parallel computing engines are then utilized to retrieve the desired snapshots from logs. Different technologies may use varying terminology for this mechanism.
 
-Now that we have a brief idea about time-traveling, let’s check how to use it with a popular data lake formats: Apache Iceberg.
+Now that we have a brief idea about **time-traveling**.
+
+**How to use it with a popular data lake formats: Apache Iceberg?**
 
 🌊 Apache **Iceberg**: A Universal Table Format
 
@@ -151,6 +151,9 @@ Now that we have a brief idea about time-traveling, let’s check how to use it 
 * Snapshot: Represents the **state of a table at a specific time**. It lists all data files that constitute the table's contents at the snapshot's time.
 * Manifest List: A metadata file that lists the manifests forming a table snapshot. It stores information about each manifest file's contents to optimize metadata operations.
 * Manifest File: A metadata file that lists a subset of data files in a snapshot. It includes partition tuple, column-level stats, and summary information for efficient scan planning.
+
+
+> This [blog post](https://billennium.com/time-traveling-in-data-lakes/) was very informative to get started!
 
 #### How to Apply Time Travel
 
@@ -183,29 +186,25 @@ If you have a Google account, you can check these code snippets, as well as few 
 
 * JSON Formatter - https://jsonformatter.org/
 
-* Involved in **Big Data Projects**? never forget to **have a [Project Charter](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Project/Charter.md)**
+* Involved in **Big Data Projects**? 
+
+Never forget to **have a [Project Charter](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Project/Charter.md)**
 
 ### Where to Learn more about Data Engineering?
 
 * This github repo is a Must Go to learn about DE: <https://github.com/DataEngineer-io/data-engineer-handbook>
 
-* If you are familiar with SelfHosting - You can try these objects storage: [minio](https://github.com/minio/minio) which API is compatible with AWS s3 or [Ceph](https://github.com/ceph/ceph)
+* If you are familiar with SelfHosting - You can try these objects storage:
+    - [minio](https://github.com/minio/minio) which API is compatible with AWS s3
+    - Or [Ceph](https://github.com/ceph/ceph)
 
-You can browse s3 with a GUI thanks to: <https://github.com/mickael-kerjean/filestash>
+You can **browse s3 with a GUI** thanks to: <https://github.com/mickael-kerjean/filestash>
 
-<!-- ### How to make better EDA?
-
-If you are using PySpark, you are probably interested in making better **Exploratory Data Analysis**
-
-#noise
-#predictably irrational
-#black swans -->
 
 
 ### PySpark FAQ
 
 {{< details title="Why PySpark is called lazy? 📌" closed="true" >}}
-
 
 PySpark is considered "lazy" because it does not execute any code until it absolutely has to.
 
@@ -219,15 +218,15 @@ This allows Spark to **optimize the execution plan** by looking at all of the tr
 
 {{< details title="What to use, Spark or Pandas? What's the difference? 📌" closed="true" >}}
 
+The choice between using Spark or Pandas **depends on the type and size** of data you are dealing with.
 
+For small datasets, Pandas is usually the better option as it provides a more intuitive and user-friendly interface.
 
-The choice between using Spark or Pandas depends on the type and size of data you are dealing with.
-
-For small datasets, Pandas is usually the better option as it provides a more intuitive and user-friendly interface. However, for larger datasets, **Spark provides much better performance and scalability**.
+However, for larger datasets, **Spark provides much better performance and scalability**.
 
 Spark also offers a range of features, such as **distributed processing, in-memory computing, streaming, and machine learning algorithms**, that are not available with Pandas.
 
-> The main difference between the two is that Pandas is designed to work with tabular data, while Spark is designed to work with both structured and unstructured data in a distributed processing env.
+> The main difference between the two is that Pandas is designed to work with tabular data, while **Spark** is designed to work with both **structured and unstructured data in a distributed processing env**.
 
 
 {{< /details >}}

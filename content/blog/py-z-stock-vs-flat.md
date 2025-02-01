@@ -139,6 +139,33 @@ If you have high interest and high period onf years to return, you end into the 
 Ive also covered **mortage with python** as part of the [EDA of pystocks](https://gitlab.com/fossengineer1/py_stocks/-/tree/main/EDA_Mortage?ref_type=heads) and ofc created a streamlit app.
 {{< /callout >}}
 
+### Net assets
+
+So in the beginning of 'the game', these are your cards:
+
+* The lender owns the principal, but you can use it, at least until you keep paying as per payment schedule
+* You have extra liabilities to pay now, the interests
+
+Basically, your net assets at the moment of the operation are going from something, to less of that something.
+
+And you net assets at the initial moment **could be** less than zero:
+
+
+![Interest to Principal Ratio](/blog_img/data-experiments/interest2principal.png)
+
+How much into the deep?
+
+Well, that depends ofc of:
+
+1. Interest rates
+2. Years to Pay
+3. LTV
+
+Makes sense right?
+
+But why would someone make its net assets negative?
+
+Lets see.
 
 ## Dividend Growth vs Rent Growth
 
@@ -473,10 +500,14 @@ But I also heard about idealista:
   * https://www.idealista.com/labs/blog/?p=4207
   * https://paezha.github.io/idealista18/
 
+
+* https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/
+* https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/venta/
+
+
 > They even create a [R Package `paezha/idealista18`](https://github.com/paezha/idealista18) for this, with 2018 data!
 
-
-Credits to both platforms for sharing such interesting data!
+**Credits to both platforms** for sharing such interesting data!
 
 ### Modelling Bull and Bear Markets
 

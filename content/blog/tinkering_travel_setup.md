@@ -3,7 +3,7 @@ title: "Technology Setup for a Trip"
 date: 2025-01-16
 draft: false
 tags: ["AI"]
-description: "Software and Hardware setup before trips or vacations."
+description: "Software and Hardware setup before trips or vacations. Tech Travel Setup."
 summary: 'Software and Hardware setup before trips or vacations'
 url: 'tech-for-a-trip'
 ---
@@ -292,6 +292,62 @@ Can’t access the internet via the repeated hotspot. Try to enter **Login Mode 
 ---
 
 ## FAQ
+
+### Sharing Expenses with Spliit
+
+If you are not aware of **Spliit** for sharing expenses with others:
+
+* https://github.com/spliit-app/spliit
+
+> MIT | Spliit is a free and **open-source alternative to Splitwise**, aimed at simplifying expense sharing among friends and family.
+
+
+{{< details title="Spliit | Travel expenses 📌" closed="true" >}}
+
+It addresses the need for a user-friendly platform to manage shared expenses without the hassle of ads or fees.
+
+**Key Features**:
+
+- Create and share groups for expense tracking.
+- Add detailed expenses with descriptions.
+- Display balances within groups.
+- Create reimbursement expenses.
+- Progressive Web App (PWA) functionality.
+- Option to split expenses unevenly.
+- Ability to upload images and scan receipts for expenses.
+- Future features may include recurring expenses and import from Splitwise.
+
+Technology Stack:
+
+1. **Next.js** for web application framework.
+2. **TailwindCSS** for styling.
+3. **Prisma** for database access.
+4. **Vercel** for hosting.
+
+Local Development:
+
+- Clone the repository and set up a local PostgreSQL server.
+- Follow setup instructions to run the application locally or in a Docker container.
+
+{{< /details >}}
+
+
+Spliit offers a robust solution for managing shared expenses and simplifies the process for users. 
+
+Its an fantastic project to have a look to.
+
+In my opinion its just missing the possibility to add different currencies.
+
+The good thing? You can get a [`.json` report to analyze](https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/#faq) later what has been going during the trip.
+
+
+{{< details title="Spliit json analyzer 📌" closed="true" >}}
+
+{{< /details >}}
+
+{{< callout type="info" >}}
+A sample `ipynb` nb is waiting for you here 
+{{< /callout >}}
 
 ### What about containers?
 
