@@ -41,9 +41,9 @@ The complete, working code is available in my [data-chat repository](https://git
 
 ## Setting Up Your Database (MySQL Example)
 
-This example uses MySQL, but the original approach also supports SQLite.
+This example uses **MySQL**, you can also try SQLite.
 
-{{< details title="MySQL Installation" closed="true" >}}
+{{< details title="MySQL Installation CLI" closed="true" >}}
 
 ```bash
 sudo apt update
@@ -56,6 +56,22 @@ sudo mysql -u root -p
 ```
 
 ```bash
+# mysql --version  # Output: mysql Ver 8.0.40-0ubuntu0.24.04.1 for Linux on x86_64 ((Ubuntu))
+```
+
+{{< /details >}}
+
+I would recommend to go with the **container way of installing the DB**:
+
+{{< details title="MySQL with Docker | Recommended" closed="true" >}}
+
+Once, Docker/Podman are installed, just:
+
+```sh
+
+```
+
+```sh
 # mysql --version  # Output: mysql Ver 8.0.40-0ubuntu0.24.04.1 for Linux on x86_64 ((Ubuntu))
 ```
 

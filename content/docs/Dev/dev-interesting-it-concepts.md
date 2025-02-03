@@ -5,7 +5,7 @@ draft: false
 tags: ["Dev"]
 description: 'IT Concepts for Projects: CI/CD, webhooks, API calls...'
 summary: 'Github Actions'
-url: ''
+url: 'IT-concepts'
 ---
 
 1. CI/CD and Github Actions
