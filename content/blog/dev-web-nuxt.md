@@ -1,6 +1,6 @@
 ---
 title: "Trying a Nuxt Theme and a SSG Recap"
-date: 2025-01-21
+date: 2025-02-23
 draft: false
 tags: ["dev"]
 summary: ''
@@ -8,7 +8,7 @@ description: 'Testing NUXT Themes. Looking back to the learnings with other SSGs
 url: 'trying-nuxt-themes'
 ---
 
-New year, time to try out some new SSG.
+New year, time to **try out some new SSG**.
 
 This time it is the turn of **Nuxt**
 

@@ -3,8 +3,8 @@ title: "Weddings are expensive. Be smart with the right software."
 date: 2025-01-18
 draft: false
 tags: ["OSS"]
-summary: 'Interesting software for Weddings. Including how to deploy it with Dokploy (to Pi's, VPS)'
-url: 'software-for-weddings'
+summary: "Interesting software for Weddings. Including how to deploy it with Dokploy (to Pi / VPS)"
+url: "software-for-weddings"
 ---
 
 <!-- 
