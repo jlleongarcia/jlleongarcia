@@ -62,3 +62,48 @@ for model in models:
 {{< /cards >}}
 
 ## DeepSeek via Ollama
+
+
+## Conclusions
+
+Companions for this multichat.
+
+### AIssistant
+
+{{< cards cols="2" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/" title="AIssistant blog post" >}}
+  {{< card link="https://github.com/JAlcocerT/Streamlit-AIssistant" title="Aissistant 💻 code" >}}  
+{{< /cards >}}
+
+### YT Summarizer
+
+{{< cards cols="2" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/summarize-yt-videos" title="Groq Youtube Summarizer" >}}
+  {{< card link="https://github.com/JAlcocerT/phidata/" title="My YT Summarizer 💻 - PhiData Fork with container created" >}}  
+{{< /cards >}}
+
+* https://console.groq.com/keys
+
+```yml
+version: '3.8'
+
+services:
+  phidata_service:
+    image: ghcr.io/jalcocert/phidata:yt-groq #phidata_yt_groq #ghcr.io/jalcocert/phidata:yt-groq
+    container_name: phidata_yt_groq
+    ports:
+      - "8501:8501"    
+    environment:
+      - GROQ_API_KEY=gsk_your_api_key_here #your_api_key_here 😝 
+    command: streamlit run cookbook/llms/groq/video_summary/app.py 
+    #command: tail -f /dev/null # Keep the container running
+#     networks:
+#       - cloudflare_tunnel
+#       - nginx_default
+            
+# networks:
+#   cloudflare_tunnel:
+#     external: true
+#   nginx_default:
+#     external: true
+```

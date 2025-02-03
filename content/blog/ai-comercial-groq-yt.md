@@ -55,7 +55,7 @@ Everything is covered at my [Forked Repository **phiData**](https://github.com/J
 
 This is what we will get:
 
-![Groq Youtube Summaries](/img/GenAI/yt-summaries/yt-summaries-groq.png)
+![Groq Youtube Summaries](/blog_img/GenAI/yt-summaries/yt-summaries-groq.png)
 
 > And there are many more interesting projects in their repository!
 

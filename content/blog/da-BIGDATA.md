@@ -633,6 +633,47 @@ There are many Grafana stacks, like LGTM: **L**oki, **G**rafana, **T**empo and P
 
 {{< details title="What can I do with LGTM? 📌" closed="true" >}}
 
+Ever wondered how programmers build software? If builders built houses the way programmers build software, the first woodpecker to come along would destroy civilization.
+
+In this video, Fireship, a popular YouTube creator, takes us on a journey to instrument, collect, and visualize telemetry data from our server using open telemetry and the **LGTM stack**.
+
+
+The **LGTM stack** consists of five technologies: 
+- **Open Telemetry**: An industry-standard framework that collects telemetry data from software.
+- **Grafana**: The frontend UI for visualizing data.
+- **Prometheus**: A time-series database for storing metrics.
+- **Tempo**: A database for storing traces.
+- **Loki**: A database for storing logs.
+
+Setting Up the LGTM Stack
+
+To get started:
+1. **Server Setup**: Fireship recommends using Hostinger, which offers a variety of hosting services, including a Linux virtual private server (VPS) suitable for this project.
+2. **Deploying LGTM Backend**: The LGTM backend can be deployed using a Docker image provided by Graphon.
+3. **Server Access**: After setting up your server on Hostinger, you can access the management dashboard and connect via SSH.
+
+Running Grafana
+
+1. **Verify Docker**: Use a Docker command to confirm the Docker daemon is running.
+2. **Run Docker Image**: Pull the Docker image for OTel LGTM from the cloud, which may take a minute.
+3. **Access Grafana**: Open the browser and navigate to the IP address on port 3000 to log into Grafana as admin.
+
+Connecting to a Data Source
+
+Grafana alone is not useful unless connected to a data source. Fireship demonstrates how to connect **Loki**, **Prometheus**, and **Tempo**, and then populate them with data using a sample application built with **Dino**, a framework with built-in telemetry support.
+
+Analyzing Data with Grafana
+
+With the LGTM stack up and running:
+- Use Grafana to explore logs, metrics, and traces.
+- Use **Prometheus' query language** to analyze and dive deeper into your data to identify errors and anomalies.
+
+Takeaways
+
+- The **LGTM stack** provides a holistic approach to software observability, enabling you to instrument, collect, and visualize telemetry data from your server.
+- With the right tools, you can identify errors and anomalies in your application, allowing for data-driven decisions to improve your software.
+- **Security** is crucial when deploying a telemetry backend. Services like Hostinger offer built-in protections against harmful traffic and threats.
+
 
 {{< /details >}}
 
