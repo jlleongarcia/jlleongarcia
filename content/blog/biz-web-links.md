@@ -92,6 +92,18 @@ https://gitlab.com/fossengineer1/libreportfolio
 -->
 
 
+{{< callout type="warning" >}}
+Gitlab wont let you upload **>100mb individual files**
+{{< /callout >}}
+
+```sh
+git ls-tree -r HEAD | grep f35b79d689c8cbc89c0fd03f04dd35d1aa198b6a
+
+du -sh src/assets/memes/cable-rojo.gif
+
+gifsicle --resize 480x480 --colors 64 --optimize=3 src/assets/memes/cable-rojo.gif -o src/assets/memes/cable-rojo-optimized.gif
+```
+
 --- 
 
 ## Interesting Posts

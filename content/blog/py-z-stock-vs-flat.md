@@ -378,6 +378,9 @@ But I also heard about idealista:
 * https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/
 * https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/venta/
 
+* https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/andalucia/sevilla-provincia/dos-hermanas/
+* https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/venta/andalucia/sevilla-provincia/dos-hermanas/
+
 
 > They even create a [R Package `paezha/idealista18`](https://github.com/paezha/idealista18) for this, with 2018 data!
 

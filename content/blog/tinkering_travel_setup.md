@@ -336,7 +336,7 @@ Spliit offers a robust solution for managing shared expenses and simplifies the 
 
 Its an fantastic project to have a look to.
 
-In my opinion its just missing the possibility to add different currencies.
+In my opinion its *just missing* the possibility to add different currencies.
 
 The good thing? You can get a [`.json` report to analyze](https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/#faq) later what has been going during the trip.
 

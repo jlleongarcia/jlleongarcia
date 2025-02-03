@@ -88,6 +88,8 @@ ssh someuser@192.168.0.155 #pi 4gb
 # hetzner vps server
 ```
 
+1. Go to Hetzner
+
 
 
 {{< callout type="info" >}}
