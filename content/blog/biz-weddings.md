@@ -1,6 +1,6 @@
 ---
 title: "Weddings are expensive. Be smart with the right software."
-date: 2025-01-18
+date: 2025-02-03
 draft: false
 tags: ["OSS"]
 summary: "Interesting software for Weddings (WeddingShare). Including how to deploy it with Dokploy (to Pi / VPS)"
@@ -143,15 +143,20 @@ Go to `ip:9000` and setup Portainer:
 
 See that it works at `ip:8080`
 
-http://ip:8080/Admin/Login
+* `http://ip:8080/Admin/Login`
+
+> https://elenayjosesecasan.top/
+
+8. **Choose a Reverse Proxy Manager:**
+
+> as seen https://jalcocert.github.io/JAlcocerT/selfhosting-python-ai-apps-caddy/
 
 {{< callout type="info" >}}
 **Cloudflare tunnels** is one of my go to options, yet you also have: [ngrok](https://www.reddit.com/r/selfhosted/comments/10n1h0p/cloudflare_tunnel_alternative/), [nginx](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/),...
 {{< /callout >}}
 
-> https://elenayjosesecasan.top/
 
-8. [Setup NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
+[Setup NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
 
 ```yml
 version: "3"
@@ -174,32 +179,40 @@ networks:  # Only ONE networks section
   nginx_network:  # Define the network with the desired name
 ```
 
-9. Connect the wedding share container with nginx network
+9. Connect the wedding share container with **nginx network**
 
 ```sh
 sudo docker network ls
 docker network connect nginx_nginx_network WeddingShare
+
+#docker network connect nginx_nginx_default WeddingShare
+
 #docker network inspect nginx_nginx_network #now its connected
 ```
 
 10. Setup Https with NGINX
 
-Email: admin@example.com
-Password: changeme
+
+* Email: `admin@example.com`
+* Password: `changeme`
 
 ![Hetzner VPS](/blog_img/selfh/portainer.png)
 
+For the DNS Challenge, you need input from your domain registrar, like: Cloudflare, duckDNS, Porkbun,...
 
-![FireBat NGINX Example](/blog_img/selfh/nginx-challenges.png)
+![DNS Challenges](/blog_img/selfh/nginx-challenges.png)
 
 Portainer + NGINX + Wedding share ~500mb:
 
 ![FireBat NGINX Example](/blog_img/selfh/weddingshare-hetzner.png)
 
 
+
+
+{{< details title="Dont forget the DNS challenge | Cloudflare + NGINX 📌" closed="true" >}}
+
 > As seen at https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/
 
-{{< details title="Dont forget the DNS challenge | Cloudflare 📌" closed="true" >}}
 
 * Point your DNS to your server:
 
@@ -220,12 +233,28 @@ Portainer + NGINX + Wedding share ~500mb:
 
 
 
+{{< details title="DNS challenge | PorkBun + NGINX 📌" closed="true" >}}
+
+* https://porkbun.com/account/api
+
+* https://kb.porkbun.com/article/190-getting-started-with-the-porkbun-api
+
+* https://porkbun.com/account/domainsSpeedy
+
+{{< /details >}}
+
+
+
 {{< cards cols="2" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/astro-web-cloudflare-pages/" title="Astro Github + Cloudflare Pages" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/cool-link-in-bios/" title="Gitlab + Cloudflare Pages" >}}
 {{< /cards >}}
 
 ### DokPloy
+
+Dokploy Cloud is a platform that enables users to **deploy containerized applications** and databases with ease. 
+
+The platform provides all the necessary tools for building, deploying, and managing applications, making it an attractive option for developers.
 
 * https://github.com/Dokploy/dokploy
 * https://dokploy.com/

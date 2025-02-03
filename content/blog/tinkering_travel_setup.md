@@ -226,7 +226,7 @@ Remember that a [VPS Setup](https://jalcocert.github.io/Linux/docs/linux__cloud/
 
 To bring with you, a [compact laptop](https://jalcocert.github.io/JAlcocerT/laptop-lenovo-thinkpad-x13-benchmark/) can also be interesting.
 
-> This one is ~1.2
+> This one is **~1.2kg**, a tablet can be ~500g
 
 
 #### Action Cam
@@ -263,7 +263,7 @@ You can also get one of these **portable 4G usb router** (and bring a **sim adap
 ![4g router](/blog_img/hardware/portable-4g-router-usb.jpg)
 
 {{< callout type="warning" >}}
-Not all esim on your phone allow you to use them as Hotspot 
+Not all esims on your phone allow you to use them as Hotspot 
 {{< /callout >}}
 
 

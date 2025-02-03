@@ -1,10 +1,10 @@
 ---
-title: "SelfHosting Python AI Apps - My 2024 Favs with Caddy"
+title: "SelfHosting Python AI Apps - My 2024 Favs"
 date: 2024-12-16T23:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
-description: 'How to get your custom MultiChat, Youtube Summarizer and more ready for SelfHosting with Caddy. Bonus Traefik and NGINX.'
+description: 'How to get your custom MultiChat, Youtube Summarizer and more ready for SelfHosting with Caddy. Bonus Traefik and NGINX Proxies.'
 summary: 'A recap on Python AI Apps that I have been working on during 2024'
 url: 'selfhosting-python-ai-apps-caddy'
 ---
@@ -22,12 +22,41 @@ https://plugins.traefik.io/plugins
 
 {{< youtube "vVKMey6SfSw" >}}
 
+{{< details title="Traefik 📌" closed="true" >}}
+
+
+What is Traefik?
+
+Traefik is an open-source reverse proxy and load balancer that's designed to be easy to use, flexible, and scalable. It's written in Go, which makes it lightweight and efficient. Traefik is ideal for modern web applications, microservices, and containerized environments.
+
+Benefits of Traefik
+
+In this video, you'll discover the benefits of using Traefik, including its ease of use, high performance, and flexibility. You'll learn how Traefik can help you simplify your infrastructure, improve your application's scalability, and reduce errors.
+
+Traefik offers a range of features that make it an attractive choice for developers. Some of its key features include:
+
+Automatic service discovery
+Load balancing and routing
+SSL termination and encryption
+Support for multiple protocols (HTTP, WebSocket, TCP)
+Integration with popular technologies like Docker, Kubernetes, and Mesos
+Conclusion
+Traefik is a powerful and flexible reverse proxy that's worth considering for your next project. With its ease of use, high performance, and scalability, Traefik can help you improve your application's reliability and performance.
+
+{{< /details >}}
+
+
 
 
 <!-- https://www.youtube.com/watch?v=XH9XgiVM_z4 -->
 {{< youtube "XH9XgiVM_z4" >}}
 
+{{< details title="DNS challenge | PorkBun 📌" closed="true" >}}
 
+
+
+
+{{< /details >}}
 
 ## AI Apps
 
@@ -241,6 +270,11 @@ ssh ubuntu@57.128.public.ip
 
 ### How to Install NGINX
 
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/" title="NGINX Setup" image="/blog_img/mini_pc/firebat.jpg" subtitle="On a Firebat MiniPC" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-use-wg-easy-with-a-vps/" title="Flask and NGINX" image="/blog_img/mini_pc/firebat.jpg" subtitle="Using NGINX with a VPS to deploy FLASK" >}}
+{{< /cards >}}
+
 * https://github.com/NginxProxyManager/nginx-proxy-manager
 * https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/
 
@@ -281,6 +315,32 @@ And it also provides a UI dashboard.
 
 <!-- https://www.youtube.com/watch?v=XH9XgiVM_z4 -->
 {{< youtube "XH9XgiVM_z4" >}}
+
+{{< details title="More about Caddy Reverse Proxy 📌" closed="true" >}}
+
+This report summarizes a YouTube video by Blue Hippo that demonstrates how to set up a reverse proxy and automatically enable SSL using Caddy and Docker Compose. 
+
+**Key Steps:**
+
+* **Environment Setup:**
+    * Create a directory and a Caddyfile for configuration.
+    * Use Docker Compose to manage containers, networks, and configurations.
+    * Define a Docker network for containers.
+* **Caddy Configuration:**
+    * Configure the Caddyfile with email, domain, and reverse proxy settings.
+    * Enable SSL certificates using Let's Encrypt.
+* **Network and DNS:**
+    * Open necessary ports (80 and 443) on the network.
+    * Configure DNS with a wildcard host or specify each subdomain.
+
+**Benefits:**
+
+* Efficiently manage multiple containers/applications on a single domain.
+* Automatically enable SSL certificates for secure connections.
+* Flexible DNS configuration options (wildcard or specific subdomains).
+
+
+{{< /details >}}
 
 1. Docker
 2. NGINX to serve a website
