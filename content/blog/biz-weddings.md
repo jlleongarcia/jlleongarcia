@@ -3,7 +3,7 @@ title: "Weddings are expensive. Be smart with the right software."
 date: 2025-01-18
 draft: false
 tags: ["OSS"]
-summary: 'Interesting software for Weddings. Including how to deploy it with Dokploy'
+summary: 'Interesting software for Weddings. Including how to deploy it with Dokploy (to Pi's, VPS)'
 url: 'software-for-weddings'
 ---
 
@@ -69,11 +69,24 @@ volumes:
 Default credentials to `localhost:8080/Admin` are...`admin/admin`
 
 
-
 ![Interest to Principal Ratio](/blog_img/apps/weddingshare.png)
 
 
 ## Making Deployments Easy
+
+
+{{< cards cols="2" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/" title="With a Raspberry/SBC/MiniPC" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-use-wg-easy-with-a-vps/" title="Or with a Server" >}}
+{{< /cards >}}
+
+Once you are **connected** to the device/server:
+
+```sh
+192.168.0.232 #pi 2gb
+192.168.0.155 #pi 4gb
+```
+
 
 
 {{< callout type="info" >}}
@@ -89,17 +102,21 @@ Default credentials to `localhost:8080/Admin` are...`admin/admin`
 
 An alternative to vercel and netlify!
 
-https://github.com/Dokploy/dokploy
-
-https://dokploy.com/
+* https://github.com/Dokploy/dokploy
+* https://dokploy.com/
 
 > Open Source **Alternative to Vercel, Netlify and Heroku**.
+
+---
 
 ## FAQ
 
 ### Getting a Domain Name
 
+* https://sered.net/dominios
+
 With an API...
 
 0. Porkbun
 1. NameCheap
+2. Cloudflare Domains
