@@ -221,3 +221,89 @@ With:
 {{< callout type="info" >}}
 You can learn more about **Scrapping** as covered on this [blog post](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/) and the [Scrapping-Tools repo](https://github.com/JAlcocerT/Scrap_Tools) 💻
 {{< /callout >}}
+
+
+### Animating Stock Data
+
+{{< details title="Data Animations with Python 📌" closed="true" >}}
+
+It's absolutely possible to create animations with Plotly, and you can export them as GIFs or MP4s.  
+
+Plotly itself doesn't directly create MP4s, but you can achieve this using other tools in conjunction with Plotly.
+
+Here's a breakdown of how to create animations and export them in different formats:
+
+**1. Creating the Animation with Plotly:**
+
+Plotly's `frames` argument is key to creating animations. You essentially create a series of plots (frames), each representing a step in your animation, and then Plotly smoothly transitions between them.
+
+```python
+import plotly.graph_objects as go
+
+# Sample Data (replace with your own)
+x_data = [1, 2, 3, 4, 5]
+y_data_list = [[2, 1, 4, 3, 5], [1, 3, 2, 5, 4], [3, 2, 5, 1, 4]]
+
+# Create Frames
+frames = []
+for i, y_data in enumerate(y_data_list):
+    frame = go.Frame(data=[go.Scatter(x=x_data, y=y_data)], name=f"frame{i}") # Name is important for GIF export
+    frames.append(frame)
+
+# Create Figure with initial data
+fig = go.Figure(
+    data=[go.Scatter(x=x_data, y=y_data_list[0])], # Initial data
+    layout=go.Layout(title="Animated Plot", updatemenus=[dict(type="buttons", buttons=[dict(label="Play", method="animate", args=None)])]),
+    frames=frames
+)
+
+fig.show() # Display the interactive animation
+```
+
+**2. Exporting to GIF:**
+
+*   **Using `kaleido` (Recommended):**  Kaleido is a static image export utility for Plotly.  It's the easiest way to export to GIF.
+
+    ```python
+    import imageio # For GIF creation
+
+    images = []
+    for frame in fig.frames:
+        fig.update_layout(scene=frame.layout) # Important for 3D plots
+        img_bytes = fig.to_image(format="png")  # or "jpg"
+        img = imageio.v2.imread(img_bytes)
+        images.append(img)
+
+    imageio.mimsave("animation.gif", images, fps=2) # fps controls the animation speed
+    ```
+
+    You'll need to install `kaleido` and `imageio`: `pip install kaleido imageio`
+
+*   **Alternative (if `kaleido` has issues):**  You could save each frame as a PNG and then use a separate tool (like ImageMagick) to combine them into a GIF.  This is more complex.
+
+**3. Exporting to MP4:**
+
+Plotly doesn't directly export to MP4. You'll need to use a video encoding library like `moviepy`.
+
+```python
+from moviepy.editor import ImageSequenceClip
+
+# ... (code from GIF export to create 'images' list) ...
+
+clip = ImageSequenceClip(images, fps=2)
+clip.write_videofile("animation.mp4", codec='libx264', audio=False) # libx264 is a common codec
+```
+
+You'll need to install `moviepy`: `pip install moviepy`
+
+**Key Considerations:**
+
+*   **`fps` (frames per second):**  Controls the animation speed. Adjust this in `imageio.mimsave` or `ImageSequenceClip`.
+*   **`codec` (for MP4):**  `libx264` is a widely supported codec.  You might need to install it separately on some systems (it's often included with `ffmpeg`, which `moviepy` may require).
+*   **File Size:** GIFs can get very large.  MP4s are usually more efficient for longer animations.
+*   **3D Animations:** For 3D animations, make sure to update the `scene` layout in each frame before exporting to an image.  The example code shows how to do this.
+*   **Interactivity:** The interactive Plotly display (using `fig.show()`) is different from the exported GIF or MP4. The exported files are static animations.
+
+This comprehensive explanation should help you create and export Plotly animations in your desired format.  Remember to install the necessary libraries. Let me know if you have any other questions.
+
+{{< /details >}}

@@ -83,8 +83,9 @@ Default credentials to `localhost:8080/Admin` are...`admin/admin`
 Once you are **connected** to the device/server:
 
 ```sh
-192.168.0.232 #pi 2gb
-192.168.0.155 #pi 4gb
+ssh someuser@192.168.0.232 #pi 2gb
+ssh someuser@192.168.0.155 #pi 4gb
+# hetzner vps server
 ```
 
 

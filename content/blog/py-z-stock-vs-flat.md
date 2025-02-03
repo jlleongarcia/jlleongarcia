@@ -250,7 +250,7 @@ https://www.youtube.com/watch?v=6whiAFXk3IU
 
 People trying to leverage loans, tend to look for **low property price to rent price ratios**.
 
-Also using low interest rates and long horizons to pay back the debt, so that very quickly the rental prices exceed the mortage amount, which provides them with Free Cash Flow very early (using loaned money and exposed to other risks, ofc).
+Also using low interest rates and long horizons to pay back the debt, so that very quickly the rental prices exceed the mortage amount, which provides them with **Free Cash Flow very early** (using loaned money and exposed to other risks, ofc).
 
 What? here you have a **Sankey** [diagram](https://mermaid.live/edit#pako:eNptj0FLxEAMhf_KkHMLKggyR5W9iaLgQXKJbbYt2yZlmmEpy_53MxUXEW_ve-8l8E7QaMsQoa5rlEZlP3QRJYSF5MDrJh16Pb7TmHmJwVJmlK2O8t2qP9moIMLzUcKTCq8IFcJL0pmTFbi5KvG99__P77b8l4HwymI0urzesgsWaTlJMA3loVu3fwq7h11xoYKJ00RD6wtPZQuC9TwxQnTZUvJjlLP3KJu-rdJALAMrSJq7HuKexsUpzy0ZPw7UJZou7kzyofrD5y_5vG7k)
 
@@ -424,7 +424,7 @@ Which could also be modelled similarly to these.
 
 See some crazy rates and you will be soon rich?
 
-Calm down :)
+**Calm down :)**
 
 Those are **nominal growth** values, dont forget to take into consideration [inflation](https://tradingeconomics.com/poland/inflation-cpi), which is part of those figures.
 
@@ -445,9 +445,9 @@ Retirements facts, the inflation shiny app [repo](https://github.com/JAlcocerT/R
 
 Taking inflation into consideration is very important.
 
-I was talking with a friend recently, who bought a flat in 2020 and she told me now it's wort more than 50% what she paid for.
+I was talking with a friend recently, who bought a flat in 2020 and she told me 'now it's wort more than 50% what she paid for'.
 
-Remember to have a broader look to this kind of conversation.
+Remember to have a broader look to these kind of conversations.
 
 Providing that return is true, that's the **nominal one**.
 
@@ -468,6 +468,58 @@ As always, **depends how you look at it**.
 My friend is not renting the apartment (hence doing the automatic reinvestment of the property yield).
 
 But, she is not paying an increasingly high rent (which actually in this period grew more than the flat price).
+
+In the end it all comes down to your personal situation.
+
+Make sure to analyzer yourself the figures and check with a professional, as there are several ways to get your ideas funded, and they will provide different conditions, as examples:
+
+
+* https://www.caixabank.es/particular/hipotecas.html
+* https://www.openbank.es/hipoteca-fija
+* https://www.bancosantander.es/particulares/hipotecas/no-residentes
+* https://www.ing.pl/indywidualni/kredyty-i-pozyczki/kredyt-hipoteczny/kalkulator-kredytowy
+
+
+{{< details title="TIN vs TAE 📌" closed="true" >}}
+
+**TIN (Tipo de Interés Nominal)**
+
+*   Es el precio que pagas por el dinero que te prestan, expresado como un porcentaje.
+*   No incluye ningún otro gasto adicional, como comisiones o seguros.
+*   Es un indicador del interés básico del préstamo, pero no refleja el coste total real.
+
+**TAE (Tasa Anual Equivalente)**
+
+*   Es el coste total del préstamo, expresado como un porcentaje anual.
+*   Incluye el TIN más todos los demás gastos asociados al préstamo, como comisiones, seguros y otros cargos.
+*   Es un indicador más preciso del coste real del préstamo, ya que refleja todos los pagos que tendrás que hacer.
+
+**En resumen:**
+
+*   El TIN es solo el interés básico del préstamo.
+*   La TAE es el interés básico **más todos los demás gastos**.
+
+**Ejemplo:**
+
+Imagina un préstamo de 1000€ con un TIN del 5% y una comisión de apertura del 1%.
+
+*   El TIN sería del 5%.
+*   La TAE sería superior al 5%, ya que incluiría la comisión de apertura.
+
+**¿Por qué es importante conocer la TAE?**
+
+La TAE te permite comparar diferentes préstamos de manera más precisa, ya que refleja el **coste total real** de cada uno. Al comparar préstamos, es fundamental fijarse en la TAE y no solo en el TIN, para elegir la opción más económica.
+
+**Recursos adicionales:**
+
+*   **Banco de España:** Dispone de un simulador para calcular la TAE de un préstamo: [https://app.bde.es/asb_www/es/tae.html](https://app.bde.es/asb_www/es/tae.html)
+*   **Santander:** Explica la diferencia entre TIN y TAE: [https://www.bbva.com/es/salud-financiera/tin-que-es-diferencias-tae/](https://www.bbva.com/es/salud-financiera/tin-que-es-diferencias-tae/)
+*   **BBVA:** Define qué es el TIN y sus diferencias con la TAE: [https://www.bbva.com/es/salud-financiera/tin-que-es-diferencias-tae/](https://www.bbva.com/es/salud-financiera/tin-que-es-diferencias-tae/)
+*   **MicroBank:** Ofrece una visión más profunda del coste total de un producto financiero: [https://www.bbva.com/es/salud-financiera/tin-que-es-diferencias-tae/](https://www.bbva.com/es/salud-financiera/tin-que-es-diferencias-tae/).
+
+
+
+{{< /details >}}
 
 
 ### Useful Concepts
@@ -618,63 +670,3 @@ And with those rates, the yield of that stock you are buying today, catch up in 
 
 
 * Thanks to [HUGO Hextra Theme and katex](https://imfing.github.io/hextra/docs/guide/latex/)!
-
-
-
-$$
-\begin{aligned}
-  \nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \\
-  \nabla \cdot \mathbf{B} &= 0 \\
-  \nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \\
-  \nabla \times \mathbf{B} &= \mu_0 \left( \mathbf{J} + \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t} \right)
-\end{aligned}
-$$
-
-
-$$\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}$$
-
-
-
-{{< details title="Cool chemistry 📌" closed="true" >}}
-
-## Reacción del nitrato de potasio con azúcar y del ácido nítrico con aluminio
-
-### Nitrato de potasio y azúcar
-
-La mezcla de nitrato de potasio (KNO3) y azúcar (sacarosa, C12H22O11) produce humo al calentarse debido a una reacción de combustión. El nitrato de potasio actúa como un oxidante, proporcionando el oxígeno necesario para que el azúcar se queme. La reacción general es compleja y produce varios productos, incluyendo dióxido de carbono (CO2), vapor de agua (H2O), nitrógeno (N2) y óxido de potasio (K2O).
-
-La ecuación química simplificada de la reacción sería:
-
-```
-KNO3 + C12H22O11 → CO2 + H2O + N2 + K2O
-```
-
-$$\ce{KNO3 + C12H22O11 -> CO2 + H2O + N2 + K2O}$$
-
-
-Esta reacción es exotérmica, lo que significa que libera calor, lo que a su vez mantiene la reacción en marcha y produce el humo característico. El humo está compuesto por partículas sólidas (principalmente óxido de potasio) y gases (dióxido de carbono, vapor de agua y nitrógeno).
-
-### Ácido nítrico y aluminio
-
-La reacción del ácido nítrico (HNO3) concentrado con aluminio (Al) es una reacción redox compleja que produce nitrato de aluminio (Al(NO3)3), óxidos de nitrógeno (NOx) y agua (H2O). La reacción es altamente exotérmica y puede ser peligrosa si no se realiza con precaución.
-
-La ecuación química simplificada de la reacción sería:
-
-```
-Al + HNO3 → Al(NO3)3 + NOx + H2O
-```
-
-
-$$\ce{Al + HNO3 -> Al(NO3)3 + NOx + H2O}$$
-
-
-El aluminio se oxida, perdiendo electrones, mientras que el ácido nítrico se reduce, ganando electrones. Los óxidos de nitrógeno (NOx) son los que producen el humo marrón característico de esta reacción.
-
-Es importante tener en cuenta que esta reacción puede ser muy violenta y generar gases tóxicos, por lo que se debe realizar únicamente en un laboratorio con las medidas de seguridad adecuadas.
-
-### Precauciones
-
-Tanto la mezcla de nitrato de potasio y azúcar como la reacción de ácido nítrico con aluminio pueden ser peligrosas si no se manejan correctamente. Se recomienda no intentar estos experimentos en casa y buscar la guía de un profesional en caso de ser necesario.
-
-
-{{< /details >}}

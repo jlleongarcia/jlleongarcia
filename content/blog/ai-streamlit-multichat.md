@@ -56,7 +56,6 @@ for model in models:
 
 ## Grok
 
-
 {{< cards cols="1" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-use-grok-api" title="Grok API Blog Post" >}}
 {{< /cards >}}
@@ -68,12 +67,25 @@ for model in models:
 
 Companions for this multichat.
 
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/R-Stocks//" title="Youtube Summarizer" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="With Groq API" >}}
+  {{< card link="https://github.com/JAlcocerT/RStocks" title="AIssistant" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Leveraging LLMs for several tasks." >}}
+{{< /cards >}}
+
+![Groq Youtube Summaries](/blog_img/GenAI/yt-summaries/yt-summaries-groq.png)
+
+
 ### AIssistant
 
 {{< cards cols="2" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/" title="AIssistant blog post" >}}
   {{< card link="https://github.com/JAlcocerT/Streamlit-AIssistant" title="Aissistant 💻 code" >}}  
 {{< /cards >}}
+
+#### Read the Web!
+
+https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/
+
 
 ### YT Summarizer
 

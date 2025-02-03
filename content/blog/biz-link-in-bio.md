@@ -46,8 +46,6 @@ HUGO with one of my fav themes - [Lynx](https://jalcocert.github.io/JAlcocerT/po
 
 > GPL 3.0 A free and open source template to host your links and socials. Built with Astro, Tailwind CSS, and Keystatic CMS by Cosmic Themes.
 
-
-
 Thanks to Boston343, I got to know about **keystack CMS**
 
 
@@ -79,11 +77,9 @@ It worked and **I Forked it**! https://github.com/JAlcocerT/treelink
 
 * https://pagespeed.web.dev/analysis/https-example-treelink-app/l6prjspv4k?form_factor=mobile
 
-What I lived about this one?
+What I liked about this one?
 
-It allow you to have a exposed static built site and also provides the capability to edit also online and export the `/src/siteConfig.json`
-
-
+It allows you to have a exposed static built site and also provides the capability to edit also online and export the `/src/siteConfig.json`
 
 5. https://github.com/SofiDevO/allmylinks
 
@@ -148,7 +144,7 @@ This is **how they can look**:
   {{< card link="https://cozyknittingclub.com/" title="Content Creator Blog" image="/blog_img/web/WebsSnapshots/Web_CKC.png" subtitle="For an instagramer who loves knitting" >}}
 {{< /cards >}}
 
-And like this:
+And **like this**:
 
 {{< cards >}}
   {{< card link="https://financeinmotion.fyi/" title="LinkinBio" image="/blog_img/web/WebsSnapshots/Web_IoTechCrafts.png" subtitle="Links with astro-link-in-bio-theme" >}}
