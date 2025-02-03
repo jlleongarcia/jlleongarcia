@@ -218,7 +218,7 @@ Setup [Nextcloud as Docker container](https://github.com/JAlcocerT/Docker/tree/m
 ### Hardware Setup
 
 
-![DockerHub Multi-Arch Image](/blog_img/hardware/travel-pakc.jpg)
+![Travel pack](/blog_img/hardware/travel-pakc.jpg)
 
 Remember that a [VPS Setup](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#other-clouds) or [some SBCs](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/) at home would be good companions.
 

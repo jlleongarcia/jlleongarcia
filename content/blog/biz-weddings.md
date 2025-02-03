@@ -90,13 +90,13 @@ ssh someuser@192.168.0.155 #pi 4gb
 
 1. Go to [Hetzner](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner) - https://www.hetzner.com/cloud/
 
-![Hetzner VPS](/blog_img/self/hetzner.png)
+![Hetzner VPS](/blog_img/selfh/hetzner.png)
 
 
 2. See your projects and select OS + Hardware- https://console.hetzner.cloud/projects
 
 
-![Hetzner VPS](/blog_img/self/hetzner-sharedcpu.png)
+![Hetzner VPS](/blog_img/selfh/hetzner-sharedcpu.png)
 
 3. Create SSH keys and give the public key to Hetzner
 
@@ -192,6 +192,11 @@ Password: changeme
 
 ![FireBat NGINX Example](/blog_img/selfh/nginx-challenges.png)
 
+Portainer + NGINX + Wedding share ~500mb:
+
+![FireBat NGINX Example](/blog_img/selfh/weddingshare-hetzner.png)
+
+
 > As seen at https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/
 
 {{< details title="Dont forget the DNS challenge | Cloudflare 📌" closed="true" >}}
@@ -230,7 +235,7 @@ Password: changeme
 ## Conclusions
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/tech-for-a-trip/" title="Tech for a Trip" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="Software for Vacations" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/tech-for-a-trip/" title="Tech for a Trip" image="/blog_img/hardware/travel-pakc.jpg" subtitle="Software for Vacations" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-use-wg-easy-with-a-vps/" title="Wireguard with Hetzner as VPS" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Vacations after a wedding? VPN Setup" >}}
 {{< /cards >}}
 
@@ -246,4 +251,4 @@ With an API...
 
 0. Porkbun
 1. NameCheap
-2. Cloudflare Domains
+2. Cloudflare Domains (but does not allow to buy via API)
