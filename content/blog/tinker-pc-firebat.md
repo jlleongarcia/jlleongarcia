@@ -727,7 +727,7 @@ A list of applications and tools, organized into categories
 
 
 
-{{< details title="Tips to Setup HTTPs across your services with Cloudflare & NGINX 📌" closed="true" >}}
+{{< details title="Tips to Setup HTTPs across your services with Cloudflare & NGINX | DNS Challenge 📌" closed="true" >}}
 
 * Point your DNS to your server:
 

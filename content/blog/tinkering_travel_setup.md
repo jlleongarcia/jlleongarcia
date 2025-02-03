@@ -242,7 +242,7 @@ To bring with you, a [compact laptop](https://jalcocert.github.io/JAlcocerT/lapt
 
 Some people bring their drons.
 
-But my Tello dron is more a cool tool to get started with flying and do some Python test on it.
+But [my DJI Tello dron](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/) is more a cool tool to get started with flying and do some Python test on it.
 
 I saw some people mounting **action cameras on their drons** with some adjustments.
 
@@ -258,12 +258,12 @@ I am very happy with the [Android Pixel 8 Pro](https://jalcocert.github.io/JAlco
 {{< /cards >}}
 
 
-You can also get one of these portable 4G usb router (and bring a **sim adapter**):
+You can also get one of these **portable 4G usb router** (and bring a **sim adapter**):
 
 ![4g router](/blog_img/hardware/portable-4g-router-usb.jpg)
 
 {{< callout type="warning" >}}
-If you plan to use an esim on your phone as Hotspot, it did not work for me 
+Not all esim on your phone allow you to use them as Hotspot 
 {{< /callout >}}
 
 
