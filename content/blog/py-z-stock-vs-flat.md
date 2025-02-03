@@ -114,6 +114,11 @@ As mentioned, you will have constant payments (given constant interest rate) and
 
 There you have a **sample split evolution** of how much you are paying on interest and on principal return to the bank.
 
+**In this case** it starts with ~85% of what you pay, being interests.
+
+As per the french amortization behaviour, it goes down to 0% in the last payment.
+
+And overall, it would be ~54,4%. Again, all with this sample figures.
 
 The shape of the **curve depends on the parameters** you set:
 
@@ -121,7 +126,6 @@ The shape of the **curve depends on the parameters** you set:
 * Years of Return
 
 As you can imagine, the higher those 2 are, the higher interest you pay in value and also in relation with the principal you got the loan for.
-
 
 That's right, it **can be 50%, but** the interest you pay back **does not have to be a 50/50 split** with the pincipal.
 
@@ -179,136 +183,6 @@ First div of 2025 has been 0.264 and first of 2024 was 0.2565, or a 2.92% growth
 But some years are better than others, right?
 
 Lets see the **CAGR for dividend growth**
-
-### Useful Concepts
-
-#### CAGR
-
-The **CAGR formula** is just: $CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{t}} - 1$.
-
-Where:
-- \( V_f \) is the final value
-- \( V_i \) is the initial value
-- \( t \) is the time period (usually in years)
-
-In the example, as per [NASDAQ O Data](https://www.nasdaq.com/market-activity/stocks/o/dividend-history),
-the first div of 2020 was 0.2325$, thats a x1.135, but in 5 years.
-
-So...can we have some kind of constant growth rate over that period?
-
-<!--
-$$
-CAGR = \left( \frac{0,264}0,2325} \right)^{\frac{1}{5}} - 1 = 2,57
-$$
- -->
-
-$$
-CAGR = \left( \frac{0.264}{0.2325} \right)^{\frac{1}{5}} - 1 \approx 0.0257
-$$
-
-So its an equivalent of **2,57% of dividend growth**, each year, during the last 5 years.
-
-This is a 'virtual' number, some years was more, some less, buts **thats the compound rate**
-
-And it ofc depends in your stock investment, same as your potential property investment.
-
-Other example with [MCD](https://www.nasdaq.com/market-activity/stocks/mcd/dividend-history):
-<!-- 
-$$
-CAGR = \left( \frac{1.77}1.25} \right)^{\frac{1}{5}} - 1 = 7,2
-$$
- -->
-
-$$
-CAGR = \left( \frac{1.77}{1.25} \right)^{\frac{1}{5}} - 1 \approx 0.072
-$$
-
-Or 'just' a ~7,2%
-
-And now, the logical question appears: *when will (if ever) catch up with the higher initial yield one?*
-
-#### How many years to...
-
-1. The `72 rule`: The "Rule of 72" is a simple way to estimate the number of **years it takes for an investment to double**, based on a fixed annual rate of return (interest or growth rate).
-
-{{< details title="More about this 72 magic rule 📌" closed="true" >}}
-
-It’s called the "Rule of 72" because you divide 72 by the annual rate of return to get a rough estimate of how many years it will take for your investment to double in value.
-
-The reason it works is because of logarithmic math, specifically from the compound interest formula. 
-
-If you start with the compound interest formula for growth:
-
-\[
-A = P(1 + r)^t
-\]
-
-Where:
-- \( A \) is the final amount
-- \( P \) is the initial principal
-- \( r \) is the annual growth rate (expressed as a decimal)
-- \( t \) is the time in years
-
-For doubling, we set \( A = 2P \) (because we want the value to double), so the equation becomes:
-
-\[
-2P = P(1 + r)^t
-\]
-
-Simplifying:
-
-\[
-2 = (1 + r)^t
-\]
-
-Taking the natural logarithm of both sides:
-
-\[
-\ln(2) = t \ln(1 + r)
-\]
-
-Solving for \( t \):
-
-\[
-t = \frac{\ln(2)}{\ln(1 + r)}
-\]
-
-Now, \(\ln(2) \approx 0.693\). For small rates of return (say, 5% or 10%), the natural logarithm of \( (1 + r) \) is roughly equal to \( r \). So for small \( r \), we can approximate:
-
-\[
-t \approx \frac{0.693}{r}
-\]
-
-And since \( \frac{0.693}{0.01} \approx 69.3 \), the approximation uses 72 for simplicity, as it’s close enough for most practical purposes.
-
-**Why 72?**
-72 is used because it’s a simple, convenient number that works well with typical interest rates.
-
-{{< /details >}}
-
-It's an easy-to-remember approximation that gives results that are accurate enough for most financial calculations (especially with rates between 6% and 10%).
-
-If you divide 72 by the interest rate in percentage terms, you get a good estimate for the doubling time.
-
-For example:
-- At a 6% return: \( 72 \div 6 = 12 \) years to double.
-- At a 9% return: \( 72 \div 9 = 8 \) years to double.
-
-
-2. With proper math:
-
-The **exact formula** to find the time to **double** is $t = \frac{\ln(2)}{\ln(1 + r)}$.
-
-
-3. The formula to find the **time to grow by a general factor** of XYZ is $t = \frac{\ln(XYZ)}{\ln(1 + r)}$.
-
-With this one, we can see when MCD will potentially, catch up with O (while O also grows, but to a slower rate)
-
-$$
-t = \frac{\ln(5.8/2.5)}{\ln(1 + (7.2-2.7))}=17.8
-$$
-
-And with those rates, the yield of that stock you are buying today, catch up in ~17.8 years!
 
 ## Dividend Growth
 
@@ -376,7 +250,7 @@ https://www.youtube.com/watch?v=6whiAFXk3IU
 
 People trying to leverage loans, tend to look for **low property price to rent price ratios**.
 
-Also using low interest rates and long horizons to pay back the debt, so that very quickly the rental prices exceed the mortage amount, which provides them with Free Cash Flow very early (using loaned money and exposed to other risks).
+Also using low interest rates and long horizons to pay back the debt, so that very quickly the rental prices exceed the mortage amount, which provides them with Free Cash Flow very early (using loaned money and exposed to other risks, ofc).
 
 What? here you have a **Sankey** [diagram](https://mermaid.live/edit#pako:eNptj0FLxEAMhf_KkHMLKggyR5W9iaLgQXKJbbYt2yZlmmEpy_53MxUXEW_ve-8l8E7QaMsQoa5rlEZlP3QRJYSF5MDrJh16Pb7TmHmJwVJmlK2O8t2qP9moIMLzUcKTCq8IFcJL0pmTFbi5KvG99__P77b8l4HwymI0urzesgsWaTlJMA3loVu3fwq7h11xoYKJ00RD6wtPZQuC9TwxQnTZUvJjlLP3KJu-rdJALAMrSJq7HuKexsUpzy0ZPw7UJZou7kzyofrD5y_5vG7k)
 
@@ -594,6 +468,138 @@ As always, **depends how you look at it**.
 My friend is not renting the apartment (hence doing the automatic reinvestment of the property yield).
 
 But, she is not paying an increasingly high rent (which actually in this period grew more than the flat price).
+
+
+### Useful Concepts
+
+#### CAGR
+
+The **CAGR formula** is just: $CAGR = \left( \frac{V_f}{V_i} \right)^{\frac{1}{t}} - 1$.
+
+Where:
+- \( V_f \) is the final value
+- \( V_i \) is the initial value
+- \( t \) is the time period (usually in years)
+
+In the example, as per [NASDAQ O Data](https://www.nasdaq.com/market-activity/stocks/o/dividend-history),
+the first div of 2020 was 0.2325$, thats a x1.135, but in 5 years.
+
+So...can we have some kind of constant growth rate over that period?
+
+<!--
+$$
+CAGR = \left( \frac{0,264}0,2325} \right)^{\frac{1}{5}} - 1 = 2,57
+$$
+ -->
+
+$$
+CAGR = \left( \frac{0.264}{0.2325} \right)^{\frac{1}{5}} - 1 \approx 0.0257
+$$
+
+So its an equivalent of **2,57% of dividend growth**, each year, during the last 5 years.
+
+This is a 'virtual' number, some years was more, some less, buts **thats the compound rate**
+
+And it ofc depends in your stock investment, same as your potential property investment.
+
+Other example with [MCD](https://www.nasdaq.com/market-activity/stocks/mcd/dividend-history):
+<!-- 
+$$
+CAGR = \left( \frac{1.77}1.25} \right)^{\frac{1}{5}} - 1 = 7,2
+$$
+ -->
+
+$$
+CAGR = \left( \frac{1.77}{1.25} \right)^{\frac{1}{5}} - 1 \approx 0.072
+$$
+
+Or 'just' a ~7,2%
+
+And now, the logical question appears: *when will (if ever) catch up with the higher initial yield one?*
+
+#### How many years to...
+
+1. The `72 rule`: The "Rule of 72" is a simple way to estimate the number of **years it takes for an investment to double**, based on a fixed annual rate of return (interest or growth rate).
+
+{{< details title="More about this 72 magic rule 📌" closed="true" >}}
+
+It’s called the "Rule of 72" because you divide 72 by the annual rate of return to get a rough estimate of how many years it will take for your investment to double in value.
+
+The reason it works is because of logarithmic math, specifically from the compound interest formula. 
+
+If you start with the compound interest formula for growth:
+
+\[
+A = P(1 + r)^t
+\]
+
+Where:
+- \( A \) is the final amount
+- \( P \) is the initial principal
+- \( r \) is the annual growth rate (expressed as a decimal)
+- \( t \) is the time in years
+
+For doubling, we set \( A = 2P \) (because we want the value to double), so the equation becomes:
+
+\[
+2P = P(1 + r)^t
+\]
+
+Simplifying:
+
+\[
+2 = (1 + r)^t
+\]
+
+Taking the natural logarithm of both sides:
+
+\[
+\ln(2) = t \ln(1 + r)
+\]
+
+Solving for \( t \):
+
+\[
+t = \frac{\ln(2)}{\ln(1 + r)}
+\]
+
+Now, \(\ln(2) \approx 0.693\). For small rates of return (say, 5% or 10%), the natural logarithm of \( (1 + r) \) is roughly equal to \( r \). So for small \( r \), we can approximate:
+
+\[
+t \approx \frac{0.693}{r}
+\]
+
+And since \( \frac{0.693}{0.01} \approx 69.3 \), the approximation uses 72 for simplicity, as it’s close enough for most practical purposes.
+
+**Why 72?**
+72 is used because it’s a simple, convenient number that works well with typical interest rates.
+
+{{< /details >}}
+
+It's an easy-to-remember approximation that gives results that are accurate enough for most financial calculations (especially with rates between 6% and 10%).
+
+If you divide 72 by the interest rate in percentage terms, you get a good estimate for the doubling time.
+
+For example:
+- At a 6% return: \( 72 \div 6 = 12 \) years to double.
+- At a 9% return: \( 72 \div 9 = 8 \) years to double.
+
+
+2. With proper math:
+
+The **exact formula** to find the time to **double** is $t = \frac{\ln(2)}{\ln(1 + r)}$.
+
+
+3. The formula to find the **time to grow by a general factor** of XYZ is $t = \frac{\ln(XYZ)}{\ln(1 + r)}$.
+
+With this one, we can see when MCD will potentially, catch up with O (while O also grows, but to a slower rate)
+
+$$
+t = \frac{\ln(5.8/2.5)}{\ln(1 + (7.2-2.7))}=17.8
+$$
+
+And with those rates, the yield of that stock you are buying today, catch up in ~17.8 years!
+
 
 
 <!-- https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps -->

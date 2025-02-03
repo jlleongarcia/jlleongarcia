@@ -21,7 +21,18 @@ Containers are an essential tool for simplifying self-hosting software. They giv
 - **Portability**: Containers ensure that your software runs consistently across different environments (development, testing, production).
 - **Scalability**: Easily replicated and orchestrated, containers allow for dynamic scaling, particularly in cloud environments.
 - **Isolation**: Containers isolate applications, preventing conflicts between dependencies.
-- **Efficiency**: Containers share the host OS kernel, making them more resource-efficient and faster than virtual machines.
+- **Efficiency**: Containers share the host OS kernel, making them more resource-efficient and faster than virtual machines. 
+
+More? **Coderized** have a couple of very interesting and well edited videos [about containers](https://www.youtube.com/watch?v=J0NuOlA2xDc&t=7s).
+{{< youtube "ilkZ27TwYVg" >}}
+<!-- https://www.youtube.com/watch?v=ilkZ27TwYVg -->
+
+
+{{< details title="Why Docker got easier? 📌" closed="true" >}}
+
+
+{{< /details >}}
+
 
 **What Are Containers?**
 
@@ -168,6 +179,16 @@ These tools simplify the process of managing containers, especially if you prefe
 Setting up Docker or Podman is straightforward, and with UI tools like Portainer, Dockge, and others, managing your containers has never been easier.
 
 ## Easy SelfHosting with Containers
+<!-- 
+https://www.youtube.com/watch?v=fuZoxuBiL9o&t=717s
+ -->
+{{< youtube "fuZoxuBiL9o" >}}
+
+{{< details title="Why Docker is great to deploy to a VPS? 📌" closed="true" >}}
+
+
+{{< /details >}}
+
 
 ### Exposing Apps Safely with Cloudflare Tunnels
 

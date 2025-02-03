@@ -25,9 +25,13 @@ If all of this sounds familiar.
 
 It is because it is actually familiar.
 
-{{< callout type="info" >}}
-Sometime ago I was doing similar Project in **R Shiny** - [R/Stocks](https://jalcocert.github.io/JAlcocerT/R-Stocks/) 💻 and documenting it [here](https://jalcocert.github.io/JAlcocerT/R-Stocks/) 
-{{< /callout >}}
+Sometime ago I was doing similar Project in **R Shiny** 💻
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/R-Stocks//" title="About RStocks" image="/blog_img/data-experiments/Inflation_Mild.JPG" subtitle="R Stock Shiny App Post" >}}
+  {{< card link="https://github.com/JAlcocerT/RStocks" title="Retirement Facts" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Life savings and inflation in a R Shiny App." >}}
+{{< /cards >}}
+
 
 {{< details title="API's I was using with R/Stocks 📌" closed="true" >}}
 
