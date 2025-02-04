@@ -341,12 +341,14 @@ networks:
 Not like this:
 
 
-![FireBat NGINX Example](/blog_img/selfh/duckdns-hetzner-nginx.png)
+![FireBat NGINX Example](/blog_img/selfh/cloudflare-hetzner-nginx.png)
 
-But like this, also with the CNAME record for CF:
+But like this, **also with the CNAME record for CF** if using CF:
 
+![FireBat NGINX Example](/blog_img/selfh/cloudflare-hetzner-nginx2.png)
 
 ![FireBat NGINX Example](/blog_img/selfh/duckdns-hetzner-nginx2.png)
+
 
 And this is how they get to work, **with the container port**:
 
