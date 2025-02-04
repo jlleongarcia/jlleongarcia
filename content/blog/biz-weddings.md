@@ -128,16 +128,16 @@ sudo ./Selfhosting_101.sh
 See the script I prepared [here](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
 {{< /callout >}}
 
-6. Check Docker and Portainer
+6. Check that **Docker and Portainer** are ready:
 
 ```sh
 docker --version
 Docker version 27.5.1, build 9f9e405
 ```
 
-Go to `ip:9000` and setup Portainer:
+Go to `ip:9000` and setup Portainer properly:
 
-![Hetzner VPS](/blog_img/selfh/portainer.png)
+![Portainer setup](/blog_img/selfh/portainer.png)
 
 7. Use the docker-compose stack for weddings share
 
@@ -145,15 +145,34 @@ See that it works at `ip:8080`
 
 * `http://ip:8080/Admin/Login`
 
-> https://elenayjosesecasan.top/
+> Example: https://elenayjosesecasan.top/
 
 8. **Choose a Reverse Proxy Manager:**
 
-> as seen https://jalcocert.github.io/JAlcocerT/selfhosting-python-ai-apps-caddy/
+As seen on [this post](https://jalcocert.github.io/JAlcocerT/selfhosting-python-ai-apps-caddy/), there are few alternatives:
+
+* [NGINX](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/)
+* Caddy
+* Traefik
 
 {{< callout type="info" >}}
-**Cloudflare tunnels** is one of my go to options, yet you also have: [ngrok](https://www.reddit.com/r/selfhosted/comments/10n1h0p/cloudflare_tunnel_alternative/), [nginx](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/),...
+**Cloudflare tunnels** is other of my go to options, yet you also have: [ngrok](https://www.reddit.com/r/selfhosted/comments/10n1h0p/cloudflare_tunnel_alternative/), ...
 {{< /callout >}}
+
+
+{{< callout type="warning" >}}
+Make sure you setup the `BASE_URL` env variable [as per readme](https://github.com/Cirx08/WeddingShare?tab=readme-ov-file#basic)
+{{< /callout >}}
+
+
+
+
+
+{{< details title="NGINX Setup Details 📌" closed="true" >}}
+
+Dont forget to add this A record to the VPS, so that it will be able to create sub domains from it with https:
+
+![CF DNS Records to hetzner VPS](/blog_img/selfh/cloudflare-hetzner-nginx.png)
 
 
 [Setup NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
@@ -190,7 +209,7 @@ docker network connect nginx_nginx_network WeddingShare
 #docker network inspect nginx_nginx_network #now its connected
 ```
 
-10. Setup Https with NGINX
+10. Setup **Https with NGINX**
 
 
 * Email: `admin@example.com`
@@ -202,6 +221,15 @@ For the DNS Challenge, you need input from your domain registrar, like: Cloudfla
 
 ![DNS Challenges](/blog_img/selfh/nginx-challenges.png)
 
+
+{{< /details >}}
+
+
+<!--
+https://www.youtube.com/watch?v=qlcVx-k-02E
+-->
+
+{{< youtube "qlcVx-k-02E" >}}
 Portainer + NGINX + Wedding share ~500mb:
 
 ![FireBat NGINX Example](/blog_img/selfh/weddingshare-hetzner.png)
@@ -281,3 +309,19 @@ With an API...
 0. Porkbun
 1. NameCheap
 2. Cloudflare Domains (but does not allow to buy via API)
+
+
+### Alternatives to Weddingshare
+
+The good thing about Weddingshare, is that it creates a QR to point to the url.
+
+But, it does not support HEIC files.
+
+And having the https was a headache.
+
+
+
+### What I learnt
+
+1. Another HUGO cool theme! https://tmuguet.gitlab.io/hugo-split-gallery/
+2. To generate **QR's with logo** thanks to Python (it can be done as well with Inkscape)

@@ -220,12 +220,12 @@ So the costs from your pocket of this one are: Initial payment + Mortage Payment
 
 
 {{< callout type="warning" >}}
-Im assuming that the property gets `dividends aka rental` reinvested since its bought.
+Im **assuming** that the property gets its dividends (rental) **reinvested** since its bought
 {{< /callout >}}
 
 What's going on here?
 
-1. You are earning `dividends` on the full property
+1. You are earning 'dividends' on the full property
 2. But you *only* invested initially a part of the full property value
 
 As you can imagine, **if real life** goes like this, you have earned a lot by using debt.
@@ -482,6 +482,7 @@ Make sure to analyzer yourself the figures and check with a professional, as the
 * https://www.bancosantander.es/particulares/hipotecas/no-residentes
 * https://www.ing.pl/indywidualni/kredyty-i-pozyczki/kredyt-hipoteczny/kalkulator-kredytowy
 
+Its interesting to see options, like freezing your shares while you are returning the loan with a reduced interest rate.
 
 {{< details title="TIN vs TAE 📌" closed="true" >}}
 
