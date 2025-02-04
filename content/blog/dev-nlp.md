@@ -3,25 +3,28 @@ title: "Interesting NLP Tools: PII, Sentiment Analysis..."
 date: 2024-08-03T23:20:21+01:00
 draft: false
 tags: ["Dev"]
-description: 'How to use SpaCy with python as NER'
+description: 'How to use SpaCy with Python as NER. Compared with LLMs and Detoxify.'
 summary: 'Spacy Python Ner'
 url: 'nlp-tools'
 ---
 
-The first time I got the change to use a NLP was with [**detoxify**](https://pypi.org/project/detoxify/), which classifies comments with PyTorch and Transformers.
+The first time I got the chance to **use a NLP model** was with [**detoxify**](https://pypi.org/project/detoxify/), which classifies comments with PyTorch and Transformers.
 
-Kind of sentiment analysis tool.
+Kind of **sentiment analysis tool**.
 
 But there are other **interesting tools**.
 
 Btw, this is how they fit in the AI Landscape: 
 
-* https://jalcocert.github.io/JAlcocerT/machine-learning-data-analytics
-
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/machine-learning-data-analytics/" title="ML 101" icon="book-open" >}}
+{{< /cards >}}
 
 ## Name Entity Recognition
 
 ### SpaCy
+
+Soacy can be used to detect **PII information**!
 
 * https://pypi.org/project/spacy/
 
