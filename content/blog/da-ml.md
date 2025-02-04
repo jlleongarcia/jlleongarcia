@@ -43,7 +43,7 @@ But very simple models, tend to be biased, that means to provide very simplistic
 
 ## Supervised Learning
 
-A computer is educated to carry out a task by being provided samples of desired input and output in the supervised learning method of machine learning.
+A computer is educated to carry out a task **by being provided samples** of desired input and output in the **supervised learning** method of machine learning.
 
 The examples are then used by the computer to deduce how to carry out the work by itself. 
 
@@ -52,7 +52,7 @@ For this, you should get familiar with these concepts:
 * Features - Your independent variable, the X, your model input.
 * Labels - Your model's prediction, the dependent variable (on the model), the Y.
 
-Predictive models that can make precise forecasts based on new data (not seen before by the algorithm) are created using supervised learning techniques.
+**Predictive models** that can make precise forecasts based on new data (not seen before by the algorithm) are created using supervised learning techniques.
 
 This is particularly helpful in programs like:
 
@@ -71,7 +71,7 @@ This is particularly helpful in programs like:
 
 Regression in machine learning is a technique used to investigate the relationship between independent variables (or features) and a dependent variable (or outcome). 
 
-It can be used to predict a continuous outcome (such as salary or weight) based on the input data.
+It can be used to **predict a continuous outcome** (such as salary or weight) based on the input data.
 
 <!-- * **Try me with Google Colaboratory:** If you have a Google account, you can check how a regression algorithm works with this notebook that I published on my Github account. [![OpenInColab](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Python_is_awesome/blob/main/ML%20-%20EDA/Linear_Regression.ipynb) -->
 
@@ -82,13 +82,20 @@ It can be used to predict a continuous outcome (such as salary or weight) based 
 
 ### Classification
 
-Classification is a supervised machine learning method where the model attempts to predict the correct label of a given input data. It involves categorizing a given set of input data into classes based on one or more variables. Classification algorithms use a set of *labeled data points to learn* how to assign labels to unseen data points. Common classification algorithms include: Support Vector Machines (SVM), Logistic Regression, Decision Trees, Random Forests, and Naive Bayes.
+Classification is a supervised machine learning method where the model attempts to **predict the correct label** of a given input data.
+
+It involves categorizing a given set of input data into classes based on one or more variables. Classification algorithms use a set of *labeled data points to learn* how to assign labels to unseen data points.
+
+Common classification algorithms include: Support Vector Machines (SVM), Logistic Regression, Decision Trees, Random Forests, and Naive Bayes.
 
 #### Evaluating Classification Models
 
-**The confusion matrix** is a tool used to assess the quality of a classification model's predictions. It compares predicted labels against actual labels.
+**The confusion matrix** is a tool used to assess the quality of a classification model's predictions. 
+
+It compares predicted labels against actual labels.
 
 {{< dropdown title="The Matrix with: Binary vs MultiClass Models 👇" closed="true" >}}
+
 * In a *binary classification* model where you're predicting one of two possible values, the confusion matrix is a 2x2 grid showing the predicted and actual value counts for classes 1 and 0. It categorizes the model's results into four types of outcomes. 
 
 * For a *multi-class classification* model (where there are more than two possible classes), the same approach is used to tabulate each possible combination of actual and predicted value counts - so a model with three possible classes would result in a 3x3 matrix with a diagonal line of cells where the predicted and actual labels match.
@@ -97,6 +104,7 @@ Classification is a supervised machine learning method where the model attempts 
 There are several metrics for measuring the performance of a classification model
 
 {{< dropdown title="Check Them Out 👇" closed="true" >}}
+
 * **Accuracy**: The number of correct predictions (true positives + true negatives) divided by the total number of predictions. 
 	
 * **Precision**: The number of the cases classified as positive that are actually positive: the number of true positives divided by (the number of true positives plus false positives).
@@ -127,7 +135,7 @@ Unsupervised learning is a type of machine learning algorithm that looks for pat
 
 The goal is to identify relationships between data points and group them into clusters or assign them to categories. 
 
-Unlike supervised learning, which uses labeled data to train a model, unsupervised learning does not require any labels or outcomes to be known beforehand. Rather, the algorithm itself must discover the patterns in the data, without any guidance. 
+Unlike supervised learning, which uses labeled data to train a model, **unsupervised learning does not require any labels or outcomes to be known beforehand**. Rather, the algorithm itself must discover the patterns in the data, without any guidance. 
 
 It can be used for a variety of tasks, such as:
 * Clustering data points - to group similar entities based on their features
@@ -147,6 +155,7 @@ Popular clustering algorithms include k-means clustering, hierarchical clusterin
 The K-Means Clustering algorithm groups items into the number of clusters, or centroids, you specify - a value referred to as K.
 
 {{< dropdown title="This is how KMeans works 👇" closed="true" >}}
+
 * Initializing K coordinates as randomly selected points called centroids in n-dimensional space (where n is the number of dimensions in the feature vectors).
 * Plotting the feature vectors as points in the same space, and assigning each point to its closest centroid.
 * Moving the centroids to the middle of the points allocated to it (based on the mean distance).
@@ -156,9 +165,6 @@ Repeating steps 3 and 4 until the cluster allocations stabilize or the specified
 
 <!-- 
 * **Try me with Google Colaboratory:** If you have a Google account, you can check how a regression algorithm works with this notebook that I published on my Github account. [![OpenInColab](/img/OpenInColab.svg)](https://colab.research.google.com/github/JAlcocerT/Python_is_awesome/blob/main/ML%20-%20EDA/Linear_Regression.ipynb) -->
-
-<!-- 
-## Reinforced Learning -->
 
 ---
 

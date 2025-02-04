@@ -4,7 +4,7 @@ date: 2025-02-23
 draft: false
 tags: ["dev"]
 summary: ''
-description: 'Testing NUXT Themes. Looking back to the learnings with other SSGs like HUGO and Astro'
+description: 'Testing NUXT Themes. Looking back to the learnings with other SSGs like HUGO and Astro. Creating a website for a moto blogger.'
 url: 'trying-nuxt-themes'
 ---
 

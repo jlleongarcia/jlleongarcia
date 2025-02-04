@@ -30,7 +30,7 @@ Today, Im showing you **how to run AI faster**, thanks to iGPUs, aka AMD APUs.
 {{< youtube "xsvTEzTirlQ" >}}
 
 
-* <https://www.reddit.com/r/StableDiffusion/comments/15t6uct/run_stable_diffusion_without_discrete_gpu_i/>
+* https://www.reddit.com/r/StableDiffusion/comments/15t6uct/run_stable_diffusion_without_discrete_gpu_i/
 
 * https://www.youtube.com/watch?v=H9oaNZNJdrw
 

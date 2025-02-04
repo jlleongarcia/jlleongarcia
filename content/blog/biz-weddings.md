@@ -374,3 +374,5 @@ Kudos to [awsome-docker-compose](https://awesome-docker-compose.com/apps/photo-s
 
 1. Another HUGO cool theme! https://tmuguet.gitlab.io/hugo-split-gallery/
 2. To generate [**QR's with logo** thanks to Python](https://github.com/JAlcocerT/JAlcocerT/blob/main/Z_TestingLanguages/Z_Python/QR_generation.ipynb) (it can be done as well with Inkscape)
+
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/JAlcocerT/blob/main/Z_TestingLanguages/Z_Python/QR_generation.ipynb)

@@ -163,7 +163,14 @@ By default, it will be ready at `localhost:9000`, but you can also change it fro
 It runs on CPU out of the box - ~1min per image with SD1.5 and AMD Ryzen APU
 
 
+https://www.youtube.com/watch?v=gHI6PjTkBF4
+
 ## How to use StableDifussion with GIMP/Blender?
+
+https://www.youtube.com/watch?v=pA_tZCscOFg
+{{< youtube "pA_tZCscOFg" >}}
+
+https://www.youtube.com/watch?v=x60zHw_z4NM
 
 ---
 

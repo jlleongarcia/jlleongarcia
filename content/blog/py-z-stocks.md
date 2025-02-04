@@ -364,9 +364,10 @@ You can create an [ebook like this](https://www.amazon.es/stores/Marco-Garrido/a
 
 * https://www.nasdaq.com/market-activity/stocks/mcd/price-earnings-peg-ratios
 
-* 
 
 * https://www.cazadividendos.com/
+
+* https://www.suredividend.com/dividend-kings/
 
 * https://www.gurufocus.com/
 * https://www.morningstar.com/stocks/xnys/pg/quote

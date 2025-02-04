@@ -64,6 +64,11 @@ Reactive power is crucial for efficient electricity transmission and distributio
   {{< card link="https://github.com/JAlcocerT/Slider-Crank" title="Slider Crank" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Slider Crank Mechanism in Python" >}}
 {{< /cards >}}
 
+<!-- https://www.youtube.com/watch?v=DT-1REn31eQ -->
+{{< youtube "DT-1REn31eQ" >}}
+
+
+
 
 $$
 \begin{aligned}

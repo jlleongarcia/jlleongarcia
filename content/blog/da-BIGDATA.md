@@ -527,6 +527,89 @@ With AI/ML you can do very cool stuff, from **AB Testing** to test new strategie
 
 
 
+
+{{< details title="Some examples of tasks and skills in machine learning/data science, along with how you could demonstrate them using Python and popular libraries 📌" closed="true" >}}
+
+
+**1. Machine Learning/Data Science Tasks**
+
+* **ML Algorithm Selection:**
+    * **Example:** You're tasked with building a model to predict customer churn. You'd need to evaluate and compare different algorithms like Logistic Regression, Random Forest, Gradient Boosting, and potentially a simple Neural Network to determine which model performs best on your data.
+    * **Python Implementation:**
+        * Use Scikit-learn to implement and train different models.
+        * Utilize functions like `train_test_split` for data splitting and `cross_val_score` for model evaluation.
+        * Compare performance metrics like accuracy, precision, recall, F1-score, AUC-ROC.
+
+* **Feature Engineering:**
+    * **Example:** You have a dataset with raw categorical features like "country" and "city". You need to engineer new features to improve model performance. 
+    * **Python Implementation:**
+        * Use Pandas for data manipulation:
+            * One-hot encoding for categorical variables (`pd.get_dummies()`)
+            * Creating interaction features (e.g., combining "country" and "city" into a single feature)
+            * Handling missing values (imputation techniques)
+            * Scaling numerical features (e.g., standardization, normalization)
+
+* **Model Training:**
+    * **Example:** Train a deep learning model for image classification using TensorFlow or PyTorch.
+    * **Python Implementation:**
+        * Define the model architecture (layers, activation functions).
+        * Implement the training loop (forward pass, backward pass, optimization).
+        * Use tools like TensorBoard for visualizing training progress.
+
+* **Hyperparameter Tuning:**
+    * **Example:** Find the optimal hyperparameters for a Support Vector Machine (SVM) model.
+    * **Python Implementation:**
+        * Use GridSearchCV or RandomizedSearchCV from Scikit-learn to systematically explore different hyperparameter combinations.
+        * Evaluate the performance of each combination using cross-validation.
+
+* **Distributed Model Training:**
+    * **Example:** Train a large-scale deep learning model on multiple GPUs or across a cluster of machines.
+    * **Python Implementation:**
+        * Utilize frameworks like TensorFlow or PyTorch with distributed training capabilities (e.g., using `tf.distribute` in TensorFlow).
+
+* **Supervised and Unsupervised Learning:**
+    * **Examples:**
+        * Supervised: Build a spam classifier (classification), predict house prices (regression).
+        * Unsupervised: Perform customer segmentation (clustering), reduce the dimensionality of your data (PCA).
+    * **Python Implementation:**
+        * Use Scikit-learn for a wide range of supervised and unsupervised learning algorithms.
+
+* **Building Model Pipelines:**
+    * **Example:** Create a pipeline for preprocessing data, training a model, and evaluating its performance.
+    * **Python Implementation:**
+        * Use the `Pipeline` class in Scikit-learn to chain together different steps in your workflow.
+
+**2. Advanced Python Skills**
+
+* **Native Python:**
+    * **Data Structures:** Working with lists, dictionaries, sets, and tuples.
+    * **Control Flow:** Using loops (for, while), conditional statements (if, elif, else), and functions.
+    * **Object-Oriented Programming (OOP):** Understanding classes, objects, inheritance, and polymorphism.
+
+* **Pandas:**
+    * **Data Manipulation:** Filtering, sorting, grouping, merging, and joining DataFrames.
+    * **Data Cleaning:** Handling missing values, removing duplicates, and transforming data types.
+    * **Data Analysis:** Descriptive statistics, aggregations, and data visualization.
+
+* **Scikit-learn:**
+    * **Model Selection:** Using various classification, regression, clustering, and dimensionality reduction algorithms.
+    * **Model Evaluation:** Calculating and interpreting performance metrics.
+    * **Model Tuning:** Implementing techniques like cross-validation and hyperparameter tuning.
+
+* **TensorFlow/PyTorch:**
+    * **Building Neural Networks:** Defining and training deep learning models.
+    * **Tensor Manipulation:** Working with tensors, gradients, and computational graphs.
+    * **Deployment:** Preparing models for deployment in production environments.
+
+* **PyStats:**
+    * **Statistical Analysis:** Performing statistical tests, hypothesis testing, and statistical inference.
+    * **Data Visualization:** Creating informative and visually appealing plots.
+
+
+{{< /details >}}
+
+
+
 {{< details title="Preparing a DSc Interview 📌" closed="true" >}}
 
 **1. Solidify Your Technical Skills**
@@ -589,6 +672,7 @@ With AI/ML you can do very cool stuff, from **AB Testing** to test new strategie
 * **Practice clear and concise communication:** Explain your technical concepts in a way that is easy for non-technical people to understand.
 * **Prepare a data science portfolio or presentation:** This will help you showcase your projects and skills effectively.
 * **Mock interviews:** Practice your interview skills with a friend or mentor to get feedback and build confidence.
+
 
 
 
