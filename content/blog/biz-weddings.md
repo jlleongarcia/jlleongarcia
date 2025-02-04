@@ -319,9 +319,40 @@ But, it does not support HEIC files.
 
 And having the https was a headache.
 
+So I went with [**FileBrowser**](https://fossengineer.com/selfhosting-filebrowser-docker/)
 
+```yml
+services:
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser
+    ports:
+      - 8080:80
+    volumes:
+      - /home/Docker/FileBrowser/config:/config
+      - /home/Docker/FileBrowser/data:/srv #same as Syncthing!
+    restart: unless-stopped    
+
+networks:
+  nginx_nginx_default:
+    external: true
+```
+
+Not like this:
+
+
+![FireBat NGINX Example](/blog_img/selfh/duckdns-hetzner-nginx.png)
+
+But like this, also with the CNAME record for CF:
+
+
+![FireBat NGINX Example](/blog_img/selfh/duckdns-hetzner-nginx2.png)
+
+And this is how they get to work, **with the container port**:
+
+![FireBat NGINX Example](/blog_img/selfh/nginx-duckdns-cf.png)
 
 ### What I learnt
 
 1. Another HUGO cool theme! https://tmuguet.gitlab.io/hugo-split-gallery/
-2. To generate **QR's with logo** thanks to Python (it can be done as well with Inkscape)
+2. To generate [**QR's with logo** thanks to Python](https://github.com/JAlcocerT/JAlcocerT/blob/main/Z_TestingLanguages/Z_Python/QR_generation.ipynb) (it can be done as well with Inkscape)
