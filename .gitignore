@@ -3,6 +3,8 @@ hugo.exe
 
 output.txt
 Spliit Export - 2025-02-01.json
+expense_details.txt
+*.csv
 
 get-docker.sh
 
