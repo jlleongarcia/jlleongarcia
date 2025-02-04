@@ -319,7 +319,7 @@ But, it does not support HEIC files.
 
 And having the https was a headache.
 
-So I went with [**FileBrowser**](https://fossengineer.com/selfhosting-filebrowser-docker/)
+So I went with [**FileBrowser**](https://fossengineer.com/selfhosting-filebrowser-docker/)  [![shields.io Stars](https://img.shields.io/github/stars/filebrowser/filebrowser)](https://github.com/filebrowser/filebrowser/stargazers)
 
 ```yml
 services:
@@ -340,7 +340,6 @@ networks:
 
 Not like this:
 
-
 ![FireBat NGINX Example](/blog_img/selfh/cloudflare-hetzner-nginx.png)
 
 But like this, **also with the CNAME record for CF** if using CF:
@@ -353,6 +352,23 @@ But like this, **also with the CNAME record for CF** if using CF:
 And this is how they get to work, **with the container port**:
 
 ![FireBat NGINX Example](/blog_img/selfh/nginx-duckdns-cf.png)
+
+#### More
+
+{{< callout type="info" >}}
+Kudos to [awsome-docker-compose](https://awesome-docker-compose.com/apps/photo-server)
+{{< /callout >}}
+
+{{< cards cols="1" >}}
+  {{< card link="https://fossengineer.com/selfhosting-Photoview-docker/" title="Photoview" >}}
+  {{< card link="https://github.com/JAlcocerT/Docker/blob/main/Backups/Photos/Piwigo_Docker-compose.yml" title="Piwigo" >}}
+  {{< card link="" title="PiGallery" >}}
+{{< /cards >}}
+
+{{< cards cols="2" >}}
+  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="NGINX" >}}
+  {{< card link="https://github.com/JAlcocerT/Docker/tree/main/Backups/Photos" title="Docker Repo" >}}
+{{< /cards >}}
 
 ### What I learnt
 

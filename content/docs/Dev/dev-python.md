@@ -11,6 +11,11 @@ If you have [Python Installed](https://jalcocert.github.io/JAlcocerT/guide-pytho
 
 You can do very cool things with it.
 
+{{< callout type="info" >}}
+https://github.com/vinta/awesome-python
+{{< /callout >}}
+
+
 {{< details title="Why I love Streamlit for Quick UI's 📌" closed="true" >}}
 
 Streamlit uses a combination of front-end technologies to create its user interface, primarily leveraging React.js, a popular JavaScript library for building user interfaces.

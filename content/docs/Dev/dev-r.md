@@ -7,7 +7,9 @@ summary: 'Interesting stuff Ive learn along the way when using R'
 url: 'useful-r-stuff'
 ---
 
-
+{{< callout type="info" >}}
+https://github.com/qinwf/awesome-R
+{{< /callout >}}
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/" title="Asrockx300Review" image="/blog_img/hardware/x300.jpg" subtitle="The x300 is here!" >}}
