@@ -2,10 +2,10 @@
 title: "[AI] Exploring RAGs. Creating a Chat over custom Data"
 date: 2024-11-30
 draft: false
-# cover:
-#     image: "https://socialify.git.ci/alejandro-ao/ask-multiple-pdfs/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
-#     alt: "ChatPDF" # alt text
-#     caption: "SelfHosting A RAG App to chat with PDFs." # display caption under cover
+cover:
+    image: "https://socialify.git.ci/JAlcocerT/Data-Chat/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
+    alt: "Data-Chat" # alt text
+    caption: "Creating a custom data chat with Python." # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
 description: 'Exploring RAGs and creating a Data Chat using LLMs via APIs. LangChain, LLamaIndex, PandasAI and HayStack compared.'
 summary: 'How to create a Python Apps to chat with your data.'
@@ -28,7 +28,7 @@ Previously this year, I got lucky enough to find these open source projects:
 
 They both use [**LangChain** as RAG framework](#exploring-langchain)
 
-We can build very interesting QnA over knowledge apps: https://github.com/langchain-ai/chat-langchain
+We can build very interesting **QnA** over knowledge apps: https://github.com/langchain-ai/chat-langchain
 
 ### General RAG Architecture
 

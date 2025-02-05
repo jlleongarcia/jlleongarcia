@@ -77,7 +77,7 @@ Because of its simplicity and permissiveness, the ISC license is favored for pro
 
 ## LangChain Web Scrapping
 
-## browserless
+## Browserless
 
 https://github.com/browserless/browserless
 

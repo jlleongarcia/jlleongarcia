@@ -22,16 +22,13 @@ https://plugins.traefik.io/plugins
 
 {{< youtube "vVKMey6SfSw" >}}
 
-{{< details title="Traefik 📌" closed="true" >}}
+{{< details title="What is Traefik? 📌" closed="true" >}}
 
+**Traefik is an open-source reverse proxy** and load balancer that's designed to be easy to use, flexible, and scalable. It's written in Go, which makes it lightweight and efficient. Traefik is ideal for modern web applications, microservices, and containerized environments.
 
-What is Traefik?
+**Benefits of Traefik**
 
-Traefik is an open-source reverse proxy and load balancer that's designed to be easy to use, flexible, and scalable. It's written in Go, which makes it lightweight and efficient. Traefik is ideal for modern web applications, microservices, and containerized environments.
-
-Benefits of Traefik
-
-In this video, you'll discover the benefits of using Traefik, including its ease of use, high performance, and flexibility. You'll learn how Traefik can help you simplify your infrastructure, improve your application's scalability, and reduce errors.
+Ease of use, high performance, and flexibility. You'll learn how Traefik can help you simplify your infrastructure, improve your application's scalability, and reduce errors.
 
 Traefik offers a range of features that make it an attractive choice for developers. Some of its key features include:
 
@@ -53,8 +50,7 @@ Traefik is a powerful and flexible reverse proxy that's worth considering for yo
 
 {{< details title="DNS challenge | PorkBun 📌" closed="true" >}}
 
-
-
+As seen during the [Flask Setup post on a VPS](https://jalcocert.github.io/JAlcocerT/get-started-with-flask/).
 
 {{< /details >}}
 

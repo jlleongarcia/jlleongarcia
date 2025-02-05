@@ -1,6 +1,6 @@
 ---
 title: "Chat with a Database via LLMs"
-date: 2025-02-03
+date: 2025-02-06
 draft: false
 cover:
   image: "https://socialify.git.ci/jalcocert/streamlit-multichat/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
@@ -15,13 +15,10 @@ url: 'langchain-chat-with-database'
 In the end of the last year I discoverd: 
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data" title="Youtube Summarizer" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="With Groq API" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data" title="Chat with Data" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="With Groq API" >}}
   {{< card link="https://github.com/JAlcocerT/Data-Chat" title="Data Chat" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source Code for DB Chat with Langchain" >}}
 {{< /cards >}}
 
-{{< callout type="info" >}}
-I am creating a public repo with all sort if interesting RAG libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)** 💻 
-{{< /callout >}}
 
 ## Chat with Your Database Using LangChain
 
@@ -30,6 +27,10 @@ Learning SQL can be challenging.
 But what if you could use AI to simplify your data analysis tasks?
 
 That's where **LangChain comes in**, bridging the gap between natural language and your database.
+
+{{< callout type="info" >}}
+**Source Code** - RAG libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)** 💻 
+{{< /callout >}}
 
 This post explores how to use LangChain with Python to chat with your database.
 
@@ -65,7 +66,7 @@ I would recommend to go with the **container way of installing the DB**:
 
 {{< details title="MySQL with Docker | Recommended" closed="true" >}}
 
-Once, Docker/Podman are installed, just:
+Once, **Docker/Podman** are installed, just:
 
 ```sh
 
@@ -296,7 +297,22 @@ For containerization, you'll need to have [Docker installed](https://jalcocert.g
 
 ## FAQ
 
+See other popular RAG frameworks, alternatives to Langchain:
+
+[![Star History Chart](https://api.star-history.com/svg?repos=langchain-ai/langchain,run-llama/llama_index,deepset-ai/haystack,Sinaptik-AI/pandas-ai&type=Date)](https://star-history.com/#langchain-ai/langchain&run-llama/llama_index&deepset-ai/haystack&Sinaptik-AI/pandas-ai&type=Date)
+
 ### Preparing a Tech Talk with AI
 
 1. Diagrams as a Code
 2. PPT with LLMs
+
+
+https://github.com/JAlcocerT/Data-Chat
+https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat
+
+#### PPT as a Code
+
+{{< cards cols="2" >}}
+  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="NGINX" >}}
+  {{< card link="https://github.com/JAlcocerT/Docker/tree/main/Backups/Photos" title="Docker Repo" >}}
+{{< /cards >}}
