@@ -41,6 +41,14 @@ npm -v    # Should show npm version - 10.8.2
 Now you can spin a server and make **ASTRO [Remote Development](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker)** in it.
 
 
+## Moto Blogger Setup
+
+The theme - https://github.com/JAlcocerT/horizon
+
+Which original (and fantastic) job was done by https://github.com/Boston343/horizon and released under GPL3.0
+
+
+
 ---
 
 ## A SSG Recap

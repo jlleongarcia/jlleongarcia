@@ -341,10 +341,6 @@ In my opinion its *just missing* the possibility to add different currencies.
 The good thing? You can get a [`.json` report to analyze](https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/#faq) later what has been going during the trip.
 
 
-{{< details title="Spliit json analyzer 📌" closed="true" >}}
-
-{{< /details >}}
-
 {{< callout type="info" >}}
 A sample `ipynb` nb is waiting for you [here](https://github.com/JAlcocerT/JAlcocerT/blob/main/Z_TestingLanguages/Z_Python/spliit_analyzer.ipynb) 
 {{< /callout >}}
