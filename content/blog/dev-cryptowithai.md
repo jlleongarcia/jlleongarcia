@@ -1,6 +1,6 @@
 ---
 title: "Crypto. Now with AI"
-date: 2025-05-21
+date: 2025-04-21
 draft: false
 tags: ["Dev"]
 summary: 'Two buzz words in one. Understand crypto once and for all. This time thanks to AI'
@@ -95,6 +95,20 @@ Understanding SC's with LLMs: these are are some [interesting protocols](https:/
 ## Crypto Analytics
 
 There are of course some platforms already for this.
+
+But as this is all public, how about...exploring a BTC wallet?
+
+Like the one offered for donations at duckdns:
+
+* https://btcscan.org/address/16gHnv3NTjpF5ZavMi9QYBFxUkNchdicUS
+
+{{< cards cols="1" >}}
+  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="DuckDNS+NGINX is a very cool setup, btw" >}}
+{{< /cards >}}
+
+And that exploration of a wallet can be [done with Python](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_Tests/Crypto/btc_explore.ipynb)!
+
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Streamlit-AIssistant/blob/main/Z_Tests/Crypto/btc_explore.ipynb)
 
 {{< details title="Crypto - SelfServing Dashboards & Analytics Platforms: Dune and more 📌" closed="true" >}}
 

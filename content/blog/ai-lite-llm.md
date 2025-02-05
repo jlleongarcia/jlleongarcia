@@ -1,6 +1,6 @@
 ---
 title: "[AI] Using LiteLLM to unify LLMs calls"
-date: 2025-02-05
+date: 2025-05-28
 draft: false
 # cover:
 #     image: "https://socialify.git.ci/alejandro-ao/ask-multiple-pdfs/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
@@ -19,10 +19,18 @@ Its time to discover **LiteLLM**
 
 > Python SDK, Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format - [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, Replicate, Groq]
 
+[![Star History Chart](https://api.star-history.com/svg?repos=BerriAI/litellm,type=Date)](https://star-history.com/BerriAI/litellm&Date)
 
-{{< callout type="warning" >}}
-Been testing LiteLLM at [AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests) 
+
+{{< callout type="info" >}}
+Been testing LiteLLM at [AIssistant](https://github.com/JAlcocerT/Streamlit-AIssistant/tree/main/Z_Tests), with this [script](https://github.com/JAlcocerT/Streamlit-AIssistant/blob/main/Z_Tests/LiteLLM/litellm_sample.py)
 {{< /callout >}}
+
+
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/" title="AIssistant" image="/blog_img/GenAI/AIssistant.png" subtitle="AI all in one assistant" >}}
+{{< /cards >}}
 
 
 ### LiteLLM Setup
@@ -44,9 +52,9 @@ source litellm_venv/bin/activate #(linux)
 
 ```sh
 pip install litellm==1.55.9 #https://pypi.org/project/litellm/#history
-
 ```
-As of today, it automatically installs OpenAI version `1.58.1`
+
+As of today, it **automatically installs OpenAI** (version `1.58.1`).
 
 
 ## About LLMs APIs
@@ -249,13 +257,13 @@ https://docs.mistral.ai/api/#tag/chat/operation/chat_completion_v1_chat_completi
 
 {{< /callout >}}
 
-### HF
+### Hugging Face Models
 
 * https://huggingface.co/
 
 Go to the [HF Profile](https://huggingface.co/settings/profile) -> `Access Tokens`
 
-https://huggingface.co/docs/api-inference/en/index
+* https://huggingface.co/docs/api-inference/en/index
 
 ```py
 import os
@@ -287,6 +295,8 @@ https://www.youtube.com/watch?v=iw6xozGZH3g
 ### Open Router API
 
 https://docs.litellm.ai/docs/providers/openrouter
+
+---
 
 ## Conclusions
 

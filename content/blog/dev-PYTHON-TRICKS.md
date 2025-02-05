@@ -20,6 +20,11 @@ https://www.geeksforgeeks.org/python-pillow-creating-a-watermark/
 
 * https://handhikayp.medium.com/real-time-data-visualizations-using-python-library-plotly-12e0e5b48240
 
+### QR Generation
+
+To generate [**QR's with logo** thanks to Python](https://github.com/JAlcocerT/JAlcocerT/blob/main/Z_TestingLanguages/Z_Python/QR_generation.ipynb) (it can be done as well with Inkscape)
+
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/JAlcocerT/blob/main/Z_TestingLanguages/Z_Python/QR_generation.ipynb)
 
 ### Infographics
 

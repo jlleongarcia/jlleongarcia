@@ -30,6 +30,10 @@ But its all about few mathematical ways to represent very logical financial conc
 These are just my notes on how Python can be used to create a calculator app.
 {{< /callout >}}
 
+There are out there cool calculators - https://tecalculo.com/en/mortgage-calculator
+
+and this one for salaries - https://tecalculo.com/en/spanish-net-salary-calculator
+
 ## Understanding Loans
 
 When we get a mortage, our **net total assets today are reduced**, as we have some interests to pay (liabilities):

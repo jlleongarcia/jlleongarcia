@@ -1,9 +1,10 @@
 ---
 title: "How to use HF"
-date: 2025-12-31
-draft: true
+date: 2025-05-25
+draft: false
 tags: ["Dev"]
 summary: "Developing like a PRO (via SSH or into a container)"
+url: 'how-to-use-hugging-face'
 ---
 
 

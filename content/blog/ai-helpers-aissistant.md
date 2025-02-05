@@ -29,6 +29,9 @@ Looking at [Streamlit Roadmap](https://roadmap.streamlit.app/), more ideas will 
 This is how [CV-Check // **CVCreAItor**](https://gitlab.com/fossengineer1/cv-check) and [**AIssistant**](https://github.com/JAlcocerT/Streamlit-AIssistant) were born 🔥💻
 {{< /callout >}}
 
+
+![Beszel](/blog_img/GenAI/Aissistant.png)
+
 {{< cards cols="2" >}}
   {{< card link="https://gitlab.com/fossengineer1/cv-check" title="CV Project" >}}
   {{< card link="https://github.com/JAlcocerT/Streamlit-AIssistant" title="AIssistant Project" >}}
