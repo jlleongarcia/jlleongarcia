@@ -41,3 +41,8 @@ And working on the symbolic one: https://github.com/JAlcocerT/MultiBodySystemDyn
 https://www.youtube.com/watch?v=PFDu9oVAE-g
 
 * https://www.goodreads.com/book/show/13237758-in-pursuit-of-the-unknown
+
+### 3D Design
+
+<!-- https://www.youtube.com/watch?v=MwIBTbumd1Q -->
+{{< youtube "MwIBTbumd1Q" >}}

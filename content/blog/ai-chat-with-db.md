@@ -316,3 +316,21 @@ https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat
   {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="NGINX" >}}
   {{< card link="https://github.com/JAlcocerT/Docker/tree/main/Backups/Photos" title="Docker Repo" >}}
 {{< /cards >}}
+
+### Other Cool LangChain Features
+
+<!-- https://www.youtube.com/watch?v=KerHlb8nuVc -->
+{{< youtube "KerHlb8nuVc" >}}
+
+{{< details title="LangChain + DuckDuckGo 📌" closed="true" >}}
+
+
+
+{{< /details >}}
+
+<!-- https://www.youtube.com/watch?v=Xi9Ui-9qcPw -->
+{{< youtube "Xi9Ui-9qcPw" >}}
+
+{{< details title="LangChain Agents 📌" closed="true" >}}
+
+{{< /details >}}

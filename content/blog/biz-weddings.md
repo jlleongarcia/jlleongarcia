@@ -156,7 +156,7 @@ As seen on [this post](https://jalcocert.github.io/JAlcocerT/selfhosting-python-
 * Traefik
 
 {{< callout type="info" >}}
-**Cloudflare tunnels** is other of my go to options, yet you also have: [ngrok](https://www.reddit.com/r/selfhosted/comments/10n1h0p/cloudflare_tunnel_alternative/), ...
+**Cloudflare tunnels** is other of my go to options, yet you also have: [ngrok](https://www.reddit.com/r/selfhosted/comments/10n1h0p/cloudflare_tunnel_alternative/), [Pangolin](https://www.youtube.com/watch?v=a-a-Xk1hXBQ),...
 {{< /callout >}}
 
 
@@ -285,9 +285,29 @@ Dokploy Cloud is a platform that enables users to **deploy containerized applica
 The platform provides all the necessary tools for building, deploying, and managing applications, making it an attractive option for developers.
 
 * https://github.com/Dokploy/dokploy
-* https://dokploy.com/
+  * https://dokploy.com/
+  * https://docs.dokploy.com/docs/core
+  * https://docs.dokploy.com/docs/core/docker-compose/example
 
 > Apache v2 | Open Source **Alternative to Vercel, Netlify and Heroku**.
+
+```sh
+curl -sSL https://dokploy.com/install.sh | sh
+```
+
+There are other **PaaS alternatives** like:
+
+1. [CapRover](https://github.com/caprover/caprover)
+
+> Apache v2 | Scalable PaaS (automated Docker+nginx) - aka Heroku on Steroids
+
+2. Coolify
+3. QuickStack
+4. [Dokku](https://github.com/dokku/dokku)
+
+> MIT | A docker-powered PaaS that helps you build and manage the lifecycle of applications
+
+Which I will cover on a future post.
 
 ## Conclusions
 

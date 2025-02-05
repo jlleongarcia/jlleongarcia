@@ -106,17 +106,17 @@ services:
       - "8501:8501"
     restart: always
     environment:
-      MODEL_API_KEY: sk-proj-openaiAPIhere
+      MODEL_API_KEY: sk-proj-openaiAPIhere #https://platform.openai.com/api-keys
       MODEL: gpt-4o-mini      #gpt-4
       TEMPERATURE: 0 #don't be creative :)
       
   phidata_yt_groq:
-    image: ghcr.io/jalcocert/phidata:yt-groq
+    image: ghcr.io/jalcocert/phidata:yt-groq 
     container_name: phidata_yt_groq
     ports:
       - "8502:8501"
     environment:
-      - GROQ_API_KEY=your_api_key_here
+      - GROQ_API_KEY=your_api_key_here #https://console.groq.com/keys
     command: tail -f /dev/null
     restart: unless-stopped
 
