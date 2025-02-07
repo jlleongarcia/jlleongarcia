@@ -24,6 +24,10 @@ I got to know about Keystatic CMS thanks to:
 
 > MIT | First class **CMS experience**, TypeScript API, Markdown & YAML/JSON based, no DB
 
+<!-- https://www.youtube.com/watch?v=N3pywDv-0Tg -->
+
+{{< youtube "N3pywDv-0Tg" >}}
+
 
 I love such kind of theme, to get a one pager of all our [important links/ linkinbios](https://jalcocert.github.io/JAlcocerT/cool-link-in-bios/).
 
@@ -67,6 +71,8 @@ export default config({
 
 But for Github mode:
 
+http://127.0.0.1:4321/keystatic/setup
+
 ```sh
 
 ```
@@ -81,6 +87,28 @@ Then, I went back to `localhost:4321/admin` and could see
 ![KeyStatic CMS with LandingPad Theme](/blog_img/web/staticcms/keystaticCMS-github.png)
 
 > keystatic101 was the name i gave to the app
+
+Then I went to github general settings, developer settings:
+
+* https://github.com/settings/apps/keystatic101
+
+![KeyStatic CMS with LandingPad Theme](/blog_img/web/staticcms/install-keystatic-app-github.png)
+
+Now, you wont see any error like: **
+
+And whatever you edit with the theme via `localhost:4321/admin` will be automatically pushed to main.
+
+{{< callout type="warning" >}}
+When GH Mode is active, the changes wont be happening in the local files, you will need to do `git pull`
+{{< /callout >}}
+
+### Github Mode with Github Pages
+
+Im a big fan if github pages.
+
+And this was resonating so much with this setup.
+
+https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/#astro
 
 <!-- https://youtu.be/BAnfePGzkbg -->
 
