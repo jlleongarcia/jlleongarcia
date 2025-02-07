@@ -184,10 +184,15 @@ It is a data warehouse.
 
 You can (or not) design it to have a **bronze/silver/gold** architecture (aka **MEDALLION** architecture).
 
+{{< cards >}}
+  {{< card link="https://wetrustindata.com/data_vault_with_snowflake/" title="Data Vault w Snowflake ↗" icon="book-open" >}}
+{{< /cards >}}
+
+#### Big Query
 
 
 {{< cards >}}
-  {{< card link="https://wetrustindata.com/data_vault_with_snowflake/" title="Data Vault w Snowflake ↗" icon="book-open" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/sql-data-analytics/" title="SQL 101 ↗" icon="book-open" >}}
 {{< /cards >}}
 
 ### PySpark
@@ -274,6 +279,10 @@ Grouping data before partitioning organizes it for more efficient processing.
 #### DataBricks
 
 [Databricks](https://jalcocert.github.io/JAlcocerT/data-basics-for-data-analytics/#databricks) is a **cloud-based unified analytics platform** for data engineering, data science, and machine learning, built around **Apache Spark**.  
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/guide-python-PySpark/" title="PySpark 101 ↗" icon="book-open" >}}
+{{< /cards >}}
 
 It offers a managed Spark environment along with a collaborative workspace and various integrated tools.
 

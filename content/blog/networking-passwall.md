@@ -9,3 +9,6 @@ url: 'testing-tinyauth'
 
 I was having a look to https://selfh.st/newsletter/2025-02-07/ and found out about **TinuAuth**
 
+https://tinyauth.doesmycode.work/docs/guides/github-oauth.html
+
+https://github.com/steveiliop56/tinyauth?ref=selfh.st

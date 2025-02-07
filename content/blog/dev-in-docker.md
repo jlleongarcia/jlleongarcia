@@ -138,6 +138,7 @@ Node is a very popular one.
 
 But you may also need [GO](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#hugo), or [Ruby...](https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#jekyll)
 
+The idea is the same: bundle all the files and dependencies and ship your website.
 
 #### Node
 
@@ -218,10 +219,12 @@ sudo docker pull node:20.12.2
 docker build -t mynode_web:web3 .
 ```
 
-Depending where you run this, it will take more or less time.
+Depending where you run this, it will take more or less **time**:
 
 * With a [Opi5](https://jalcocert.github.io/RPi/posts/pi-vs-orange/) I had ~2min33s
 * With a Pi4 4GB ~2min18s
+
+Once built, just run the container:
 
 ```sh
 sudo docker run -d -p 4321:4321 --name astro-web3 mynode_web:web3 tail -f /dev/null

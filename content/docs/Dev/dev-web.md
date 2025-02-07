@@ -146,17 +146,17 @@ You can also embed [GISTS with this shortcode](https://raw.githubusercontent.com
 
 Remember that shortcodes are `.html` files to be placed at `/themes/theme_name/layouts/shortcodes/gist_file.html`
 
-Just use it like so in your markdown (example with the gist):
+Just use it like so in your markdown ,**example with the gist**:
 
-`{{< gist "username" "gistID" "filename.js" >}}`
-`{{< gist jalcocert 879fecd6ae9bccaa0175d1c180a032cd "RStocks - PayoutRatioEvolution.JPG">}}`
+` {{< gist "username" "gistID" "filename.js" >}} `
+` {{< gist jalcocert 879fecd6ae9bccaa0175d1c180a032cd "RStocks - PayoutRatioEvolution.JPG">}} `
 
 * First parameter (jalcocert): This is the GitHub username or organization that owns the Gist.
 * Second parameter (879fecd6ae9bccaa0175d1c180a032cd): This is the unique Gist ID.
 * Third parameter ("RStocks - PayoutRatioEvolution.JPG"): This is the specific file within the Gist that you want to load.
 
 
-{{< details title="How to Include Search 📌" closed="true" >}}
+{{< details title="How to Include Search to SSGs 📌" closed="true" >}}
 
 | **Description**                        | **Link**                                   |
 |----------------------------------------|--------------------------------------------|

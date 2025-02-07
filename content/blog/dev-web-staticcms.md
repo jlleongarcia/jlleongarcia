@@ -15,11 +15,13 @@ I got to know about Keystatic CMS thanks to:
 
 * https://github.com/Boston343/landingpad
 * https://landingpad.cosmicthemes.com/
+* https://cosmicthemes.com/themes/landing-pad/
 
 > Made by https://webreaper.dev/ | GPL3.0 | A free and open source template to host your links and socials. Built with Astro, Tailwind CSS, and Keystatic CMS by Cosmic Themes.
 
 
-- [KeyStack](https://keystatic.com/) CMS
+- [keystatic](https://keystatic.com/) CMS
+
 - https://github.com/Thinkmill/keystatic
 
 > MIT | First class **CMS experience**, TypeScript API, Markdown & YAML/JSON based, no DB
@@ -73,9 +75,25 @@ But for Github mode:
 
 http://127.0.0.1:4321/keystatic/setup
 
-```sh
+```tsx
+import { config } from "@keystatic/core";
+import { collection, fields, singleton } from "@keystatic/core";
 
+export default config({
+	// works in local mode in dev, then cloud mode in prod
+
+	//storage: import.meta.env.DEV === true ? { kind: "local" } : { kind: "cloud" },
+
+	storage: {
+				kind: "github",
+				pathPrefix: "prod",
+				repo: {
+					owner: "JAlcocerT",
+					name: "landingpad"
+				}
+	},
 ```
+
 I followed the steps of the video and got this:
 
 It looks like you just tried to create a GitHub App for Keystatic but there is already a GitHub App configured for Keystatic.
@@ -94,7 +112,7 @@ Then I went to github general settings, developer settings:
 
 ![KeyStatic CMS with LandingPad Theme](/blog_img/web/staticcms/install-keystatic-app-github.png)
 
-Now, you wont see any error like: **
+Now, you wont see any error like: *It looks like you just tried to create a GitHub App for Keystatic but there is already a GitHub App configured for Keystatic.You may be here because you started creating a GitHub App but then started the process again elsewhere and completed it there. You should likely go back to Keystatic and sign in with GitHub to continue.*
 
 And whatever you edit with the theme via `localhost:4321/admin` will be automatically pushed to main.
 
@@ -108,7 +126,71 @@ Im a big fan if github pages.
 
 And this was resonating so much with this setup.
 
-https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/#astro
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/#astro" title="Astro + Github Pages Setup ↗" icon="book-open" >}}
+{{< /cards >}}
+
+I had to sync locally the changes done previously:
+
+```sh
+#git config pull.rebase true
+git pull
+```
+
+Then, you just have to add the well known `/.github/workflows/pages.yml`
+
+![KeyStatic CMS with LandingPad Theme](/blog_img/web/staticcms/keystaticcms-githubpages.png)
+
+> And dont forget to activate GH Pages within the **github project UI**
+
+
+You will notice, that when you use npm run dev and what it gets generated to GH Pages is the original theme content, instead of whats being edited.
+
+Whats the trick?
+
+That we are editing the content of `./prod/src/...` with Keystatic.
+
+So lets adjust `keystatic.config.tsx` and `content.config/ts`:
+
+```tsx
+	singletons: {
+		/**
+		 * * Bio and Config singleton
+		 * This gets used by Astro Content Collections, so if you update this, you'll need to update the Astro Content Collections schema
+		 */
+		config: singleton({
+			label: "Bio and Config",
+			//path: `src/data/bio/`,
+			path: `prod/src/data/bio/`,
+```
+
+and also the astro content collection file accordingly:
+
+```ts
+const bioCollection = defineCollection({
+	//loader: glob({ pattern: "**/[^_]*{md,mdx}", base: "./src/data/bio" }),
+	loader: glob({ pattern: "**/[^_]*{md,mdx}", base: "./prod/src/data/bio" }),
+	schema: ({ image }) =>
+		z.object({
+			name: z.string(),
+			theme: z.enum(["dark", "light"]),
+			blur: z.enum(["no blur", "blur"]),
+			avatar: image(),
+			background: image(),
+		}),
+});
+```
+
+dont forget to add proper `astro.config.mjs`
+
+```js
+// https://astro.build/config
+export default defineConfig({
+	site: "https://jalcocert.github.io/landingpad/",
+	adapter: netlify({
+		imageCDN: false,
+	}),
+```
 
 <!-- https://youtu.be/BAnfePGzkbg -->
 
@@ -118,9 +200,12 @@ https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/#astro
 
 * https://keystatic.com/docs/installation-astro
 
-The text you've quoted indicates that the guide for adding Keystatic to an Astro project assumes you're using Server-Side Rendering (SSR) mode, specifically with the `output: 'hybrid'` or `output: 'server'` configuration options in your Astro project.  This implies that the guide *doesn't* directly address how to use Keystatic with Static Site Generation (SSG) mode.
+The text you've quoted indicates that the guide for adding Keystatic to an Astro project assumes you're using Server-Side Rendering (SSR) mode, specifically with the `output: 'hybrid'` or `output: 'server'` configuration options in your Astro project.  
 
-Here's a breakdown of why this distinction is important and what it likely means:
+This implies that the guide *doesn't* directly address how to use Keystatic with Static Site Generation (SSG) mode.
+
+{{< details title="SSR vs SSG? 📌" closed="true" >}}
+
 
 * **SSR (Server-Side Rendering):**  In SSR, your Astro components are rendered on the server when a user requests a page.  This means the server generates the HTML and sends it to the client (the user's browser).  Keystatic, as a content management system (CMS), likely needs a server-side component to interact with its data and serve it to your Astro components.  The server can dynamically fetch content from Keystatic and incorporate it into the page before sending it to the user.
 
@@ -146,9 +231,240 @@ It's *possible* to use Keystatic with SSG, but it usually requires a different a
 
 **In summary:** The guide you quoted likely focuses on SSR because it's the most common and easiest way to integrate Keystatic with Astro.  Using Keystatic with SSG is possible but generally requires more advanced techniques like build-time fetching or a hybrid approach.  You'll need to consult Keystatic's documentation or community forums for specific instructions on how to use it with SSG.
 
+{{< /details >}}
+
 
 ---
 
-## Other Static CMS
+## Conclusion
 
-### 
+https://jalcocert.github.io/landingpad/
+
+### KeyStatic + GH Pages + a Server
+
+Clone the repository to your VPS:
+
+```sh
+git clone https://github.com/JAlcocerT/landingpad
+cd landingpad
+```
+
+
+Get the [server ready for astro](https://jalcocert.github.io/JAlcocerT/using-astro-as-website/):
+
+```sh
+# Verify installation
+node -v   # Should show Node.js version - 20.18.1
+npm -v    # Should show npm version - 10.8.2
+
+npm install #dependencies
+```
+
+```sh
+npm run dev
+```
+
+You will need to add to `astro.config.mjs` the following so that you can see the dev version
+
+```js
+  server: {
+    host: '0.0.0.0', // Listen on all network interfaces (for local network access)
+    // OR
+    // host: true,      // Listen on all network interfaces (simpler alternative)
+    // OR
+    // host: 'your_server_ip_address', // Replace with your server's actual IP (less common)
+    port: 4321,      // Optional: Specify the port (if you want something other than the default 4321)
+  },
+```
+
+And now you will be able to access it via the server IP:
+
+
+![KeyStatic CMS with LandingPad Theme](/blog_img/web/staticcms/landingpad-vps.png)
+
+
+#### Container for Astro
+
+But server ip and http...
+
+lets make it better: with a container for astro and NGINX for https
+
+1. Container for Astro (Node) - https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#node
+2. NGINX Setup Guide
+
+
+{{< details title="Node Docker Files 📌" closed="true" >}}
+
+```sh
+sudo docker pull node:20.12.2
+#docker build -t mynode_webapp:cyclingthere .
+docker build -t astrokeystatic:landingpad .
+```
+
+
+> The built took ~2min 25s on a CX22 Hetzner VPS
+
+Now, you just have to get into the container and run it:
+
+```sh
+sudo docker run -d -p 4321:4321 --name astrokeystaticvps astrokeystatic:landingpad tail -f /dev/null
+
+
+docker exec -it astrokeystaticvps /bin/bash
+#git --version
+#npm -v
+#node -v #you will see the specified version in the image
+npm run dev
+
+#npm uninstall react-slick slick-carousel #to fix sth
+```
+
+And it is available at `serverip:4321`, as the container has the same port mapped on the VPS host!
+
+```Dockerfile
+# Use the official Node.js image.
+# https://hub.docker.com/_/node
+FROM node:20.12.2
+#https://hub.docker.com/layers/library/node/20.12.2/images/sha256-740804d1d9a2a05282a7a359446398ec5f233eea431824dd42f7ba452fa5ab98?context=explore
+
+# Create and change to the app directory.
+WORKDIR /usr/src/app
+
+# Install Astro globally
+#RUN npm install -g astro
+
+# Copy application dependency manifests to the container image.
+# A wildcard is used to ensure both package.json AND package-lock.json are copied.
+# Copying this separately prevents re-running npm install on every code change.
+COPY package*.json ./
+
+# Install production dependencies.
+RUN npm install
+
+# Copy local code to the container image.
+COPY . .
+
+#If you'd like to set npm run dev as the default command for the container
+# Add this line at the end of your Dockerfile
+#CMD ["npm", "run", "dev"]
+```
+
+```yml
+version: '3'
+services:
+  app:
+    image: mynode_webapp:cyclingthere #node:20.12.2
+    container_name: webcyclingthere
+    volumes:
+      - /home/reisipi/dirty_repositories/cyclingthere:/app
+      - .:/app
+    working_dir: /app
+    command: tail -f /dev/null
+    #command: bash -c "npm install && npm run dev"
+    ports:
+      - 4321:4321
+      - 3000:3000
+```
+
+```yml
+version: '3.8'
+
+services:
+  gatsby-dev:
+    image: gatsby-dev:latest
+    ports:
+      - "8001:8000"
+    volumes:
+      - app_data:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    # environment:
+    #   - NODE_ENV=development
+    command: tail -f /dev/null #keep it running      
+
+volumes:
+  node_modules:
+  app_data:
+```
+
+{{< /details >}}
+
+{{< details title="Node Dockerfile 📌" closed="true" >}}
+
+```sh
+sudo docker pull node:20.12.2
+#docker build -t mynode_webapp:cyclingthere .
+docker build -t mynode_web:web3 .
+```
+
+Depending where you run this, it will take more or less time.
+
+* With a [Opi5](https://jalcocert.github.io/RPi/posts/pi-vs-orange/) I had ~2min33s
+* With a Pi4 4GB ~2min18s
+
+```sh
+sudo docker run -d -p 4321:4321 --name astro-web3 mynode_web:web3 tail -f /dev/null
+#docker run -d -p 3000:3000 --name astro-web3 mynode_web:web3
+docker exec -it astro-web3 bash
+npm run dev --host
+
+#docker run -d -p 3001:3000 --name astro-web33 mynode_web:web3 npm run dev
+```
+
+
+```dockerfile
+# Use the official Node.js image.
+# https://hub.docker.com/_/node
+FROM node:20.12.2
+#https://hub.docker.com/layers/library/node/20.12.2/images/sha256-740804d1d9a2a05282a7a359446398ec5f233eea431824dd42f7ba452fa5ab98?context=explore
+
+# Create and change to the app directory.
+WORKDIR /usr/src/app
+
+# Install Astro globally
+#RUN npm install -g astro
+
+# Copy application dependency manifests to the container image.
+# A wildcard is used to ensure both package.json AND package-lock.json are copied.
+# Copying this separately prevents re-running npm install on every code change.
+COPY package*.json ./
+
+# Install production dependencies.
+RUN npm install
+
+# Copy local code to the container image.
+COPY . .
+
+#If you'd like to set npm run dev as the default command for the container
+# Add this line at the end of your Dockerfile
+#CMD ["npm", "run", "dev"]
+```
+
+{{< /details >}}
+
+
+#### More
+
+But, if you go to keystatic path...you need to authenticate?
+
+Not really, just copy the `.env` that you have locally and that it has not been synced to github for security reasons.
+
+#### Adding Auth
+
+So now, anyone can just go and edit the website?
+
+Recently I got to know about **TinyAuth**
+
+
+---
+
+## FAQ
+
+
+### Other Static CMS
+
+1. https://github.com/keystonejs/keystone
+https://keystonejs.com/docs
+
+### Building Webs with AI
+
+https://web.lmarena.ai/leaderboard
