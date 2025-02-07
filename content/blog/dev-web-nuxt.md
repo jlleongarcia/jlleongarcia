@@ -43,7 +43,7 @@ Now you can spin a server and make **ASTRO [Remote Development](https://jalcocer
 
 ## Moto Blogger Setup
 
-The theme - https://github.com/JAlcocerT/horizon
+The **theme** - https://github.com/JAlcocerT/horizon
 
 Which original (and fantastic) job was done by https://github.com/Boston343/horizon and released under GPL3.0
 

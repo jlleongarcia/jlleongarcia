@@ -9,9 +9,11 @@ url: asrock-x300-home-server
 
 It is about **time to put everything together**.
 
-This year I got this compact ~2L box as my new personal computer (probably server at some point).
+This year I got this **compact ~2L box** as my new personal computer (probably server at some point).
 
-Why a server? I went crazy and build it with 64GB RAM.
+Why a server?
+
+I went crazy and build it with **64GB RAM**.
 
 ![Asrock x300 boxes](/blog_img/hardware/x300.jpg)
 

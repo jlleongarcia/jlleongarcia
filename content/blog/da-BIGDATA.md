@@ -24,7 +24,6 @@ It is time to make **a recap**.
 
 {{< details title="DWH vs DataLake 📌" closed="true" >}}
 
-**What is Normalization?**  
 
 {{< /details >}}
 
@@ -53,8 +52,6 @@ It is time to make **a recap**.
 
 
 {{< details title="Data Profiling 📌" closed="true" >}}
-
-**What is Normalization?**  
 
 
 
@@ -159,7 +156,7 @@ Denormalization combines normalized tables to improve **read performance**, ofte
 
 
 {{< callout type="info" >}}
-You can now have [conversations with a DB via LLMs as described **here**](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-a-db-with-langchain) with **LangChain**
+Talk [with a DB via LLMs as described **here**](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-a-db-with-langchain) with **LangChain**
 {{< /callout >}}
 
 
@@ -772,6 +769,8 @@ Initially, I had this one for Telecom
 Specially if you like SelfHosting: Superset, metabase and redash
 
 #### SuperSet
+
+* https://jalcocert.github.io/RPi/posts/rpi-gps-superset/
 
 > Superset works perfectly with Trino SQL!
 

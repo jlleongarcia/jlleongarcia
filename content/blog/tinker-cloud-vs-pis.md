@@ -52,8 +52,11 @@ You can have a reference a very popular referece, a pen:
 ![BMax B4 vs Asrock X300 Size](/blog_img/hardware/bmax-b4.jpg)
 
 
-* RAM is not soldered in the BMAX, and also you can **add an additional 2,5 drive** (screws not included)
-* The SSD drive it comes with **is not 2280** (I got surprised with that)
+The **RAM is not soldered** in the BMAX B4, and also you can **add an additional 2,5 drive** (screws not included).
+
+{{< callout type="warning" >}}
+The SSD drive it comes with **is not 2280** (I got surprised with that)
+{{< /callout >}}
 
 ![Bmax B4](/blog_img/mini_pc/bmax.jpg)
 
@@ -84,22 +87,26 @@ How to run [these tests/benchmarks](#faq)
 
 | Device | Idle Power | Max (Power & Temp Seen) | Power Adapter | Yearly 🔌 Cost (USD) |
 | :-- | :-- | :-- | :-- | :-- |
-| Raspberry Pi 4 | ~2/3w | 6W | 5V 3A | ~$5 |
-| Orange Pi 5 | ~3/5~W | 8W, 80°C | 5V 4A | ~$8 |
-| BMAX B4 | 9W | 18W & 64°C, fan | - | ~$14 |
+| Raspberry Pi 4 | ~2/3w | 6W | 5V 3A | **~$5** |
+| Orange Pi 5 | ~3/5~W | 8W, 80°C | 5V 4A | **~$8** |
+| BMAX B4 | 9W | 18W & 64°C, fan | - | **~$14** |
+
+
+Disabling Wi-Fi improves power efficiency. On the BMAX B4 by ~10% (~1W).
 
 {{< callout type="info" >}}
-* Disabling Wi-Fi improves power efficiency. On the BMAX B4 by ~10% (~1W).
-* Calculation
+* Calculation of energy costs:
   * Annual kWh = Idle Power in Watts × 24 hours/day × 365 days/year ÷ 1000 (to convert W to kW)
   * Cost = Annual kWh × Cost per kWh (USD)
 {{< /callout >}}
 
 > At the time of writing, I pay **~0.2$/kWh**
 
+You can say that in terms of energy, having one SBC 24/7 is like a month of cloud or 2 months if you consider the BMax.
+
 ### GPIO
 
-No discussion here - The Raspberries are the absolute winners.
+No discussion here - The **Raspberries are the absolute winners.**
 
 Also in software support.
 

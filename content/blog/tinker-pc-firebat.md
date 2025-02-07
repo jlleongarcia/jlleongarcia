@@ -13,15 +13,16 @@ url: firebat-ak2-plus-minipc-review
 A very interesting **Small Factor PC** with
 
 * Intel N100 (4 cores) 8GB@2600mhz 256GB (M.2 2280 SSD)
-* Dimensions: 13x13x4,5cm = 0,76L
+* Dimensions: 13x13x4,5cm = **0,76L**
 * Cost: ~75$
 
 {{< callout type="info" >}}
-* It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/).
-  * Left Windows 11 as dual boot, with [chocolatey ready](https://jalcocert.github.io/JAlcocerT/how-to-use-chocolatey-windows/)
-
-* I went with [Zorin OS](https://zorin.com/os/), a [Linux focused on simplicity](#faq).
+It comes with W11 pre-installed, but I could not resist to [try Linux with it](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
 {{< /callout >}}
+
+I went with [Zorin OS](https://zorin.com/os/), a [Linux focused on simplicity](#faq).
+
+But just kept Windows 11 as dual boot, with [chocolatey ready](https://jalcocert.github.io/JAlcocerT/how-to-use-chocolatey-windows/)
 
 
 <!-- {{< figure src="blog_img/mini_pc/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}}
@@ -36,7 +37,7 @@ A very interesting **Small Factor PC** with
 <!-- {{< figure src="images/nginx_posteio.png" align="center" caption="FireBat NextCloud - Example Caption" width="600" alt="FireBat NextCloud" >}} -->
 
 
-> Value for money, Great accesibility to add an additional 2.5" drive!
+> Value for money, great accesibility to add an additional 2.5" drive!
 
 {{< callout type="info" >}}
 Unlike the [Orange Pi 5](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#single-board-computers), it does not bring us USB-c connectivity
@@ -46,13 +47,15 @@ Unlike the [Orange Pi 5](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-b
 
 ![Firebat MiniPc RAM](/blog_img/mini_pc/firebat-ram.jpg)
 
-* For convenience, you can mount the additional 2,5 drive outside and then mount it again with 3 screws:
+* For convenience, you can **mount the additional 2,5 drive** outside and then mount it again with just 3 screws:
 
 ![Firebat MiniPc Extra HD](/blog_img/mini_pc/firebat-mounted.jpg)
 
-> All screws are provided as well
+> All screws are provided as well!
 
-How does Firebat MiniPC compares to [other MiniPC's and SBC's?](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/) Lets find out:
+How does Firebat MiniPC compares to [other MiniPC's and SBC's?](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/)
+
+Lets find out:
 
 ### Firebat AK2 Benchmarks
 
@@ -65,7 +68,7 @@ Running some **synthetic tests on the Firebat MiniPC** and comparing it with SBC
 | Orange Pi 5        | ~38k events               | 2.7k/11.8k             |
 | Raspberry Pi 5 8GB | -                         | 2.7k/10k               |
 | AMD 2200g          | ~26.9k events             | ~4.2k/15.34k events    |
-| **FireBat AK2 Plus**  | ~35k events               | ~1.8k/6.4k events      |
+| **FireBat AK2 Plus**  | ~35k events               | ~1.8k/6.4k events   |
 
 
 ```sh
@@ -112,9 +115,11 @@ time cargo install --git https://github.com/astral-sh/rye rye
   {{< card link="https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers" title="Cloud vs SBC's Image" image="/blog_img/selfh/cloud-vs-sbc.png" subtitle="Raspberry and Orange Pi's SBCs vs Hetzner Cloud" >}}
 {{< /cards >}}
 
-> N95 was 5% faster when building [the Docker Image](https://github.com/JAlcocerT/Py_Trip_Planner/)
+> N95 (From BMax B4) was 5% faster when building [the Docker Image](https://github.com/JAlcocerT/Py_Trip_Planner/)
 
+{{< callout type="info" >}}
 Energy costs ~0.25Eur/Kwh
+{{< /callout >}}
 
 ### Firebat - Computing vs Volume
 | Device                     | CPU                                                | Volume | Docker Build (s*L) | CPU Benchmark (4 threads) (events/L) | Tot (4 threads) 7 zip (events/L) |

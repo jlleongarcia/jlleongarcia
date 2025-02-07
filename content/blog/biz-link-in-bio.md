@@ -48,8 +48,9 @@ HUGO with one of my fav themes - [Lynx](https://jalcocert.github.io/JAlcocerT/po
 
 Thanks to Boston343, I got to know about **keystack CMS**
 
+[KeyStack](https://keystatic.com/) CMS
 
-[KeyStack](https://keystatic.com/) CMS - https://github.com/Thinkmill/keystatic
+- https://github.com/Thinkmill/keystatic
 
 > MIT | First class CMS experience, TypeScript API, Markdown & YAML/JSON based, no DB
 

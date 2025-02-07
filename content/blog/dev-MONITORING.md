@@ -85,10 +85,16 @@ Its not just a web analytics tool!
   {{< card link="https://fossengineer.com/setup-tianji-with-docker/" title="Tianji Setup" >}}
 {{< /cards >}}
 
-You just need to setup the given script on your server that pops up when you try to add it.
+You just need to setup the given **script on your server** that pops up when you try to add it.
 
 ![Tianji Server Setup](/blog_img/Monitoring/tianji-server-script.png)
 
+To stop it:
+
+```sh
+systemctl --type=service --state=running
+# sudo systemctl stop tianji-reporter.service
+```
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Deploying with PaaS: Coolify, Dokku and more"
-date: 2025-02-10
+date: 2025-02-07
 draft: false
 tags: ["Dev"]
 description: 'Coolify, Dokku, Caprover, Openfaas'
@@ -10,7 +10,7 @@ url: 'deploying-software-with-paas-to-servers'
 
 ## PaaS
 
-Platform as a Service (PaaS) is a cloud computing model that provides a platform for customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.
+**Platform as a Service** (PaaS) is a cloud computing model that provides a platform for customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app.
 
 *   **Complete development and deployment environment:** PaaS provides a comprehensive suite of tools and services needed for the entire application lifecycle, from coding and testing to deployment and management.
 *   **Abstraction of infrastructure:** PaaS handles the underlying infrastructure, including servers, storage, and networking. This allows developers to focus solely on writing code and building their applications.
@@ -180,12 +180,13 @@ dokku apps:create ruby-getting-started
 
 
 ```sh
- curl -sfL https://get.quickstack.dev/setup.sh | sh -
+curl -sfL https://get.quickstack.dev/setup.sh | sh -
+#systemctl --type=service --state=running #see that its running
 ```
 
 ![PaaS QuickStack](/blog_img/selfh/pass-quickstack.png)
 
-GO to `localhost:30000`
+Go to `localhost:30000`
 
 * https://quickstack.dev/docs/getting-started/installation
     * https://quickstack.dev/docs/managing-apps/from-container-registry
