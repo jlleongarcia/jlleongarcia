@@ -29,7 +29,7 @@ In the end of the last year I discoverd:
 
 ## Chat with Your Database Using LangChain
 
-[Learning SQL](https://jalcocert.github.io/JAlcocerT/sql-data-analytics/) can be challenging. 
+[Learning **SQL**](https://jalcocert.github.io/JAlcocerT/sql-data-analytics/) can be challenging. 
 
 But what if you could use **AI to simplify data analysis tasks**?
 
@@ -41,7 +41,7 @@ Bridging the gap between natural language and your database.
 **Source Code** - RAG libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)** 💻 
 {{< /callout >}}
 
-This post explores how to use LangChain with Python to chat with your database.
+This post explores how to use **LangChain with Python** to chat with your database.
 
 {{< callout type="info" >}}
 The complete, working code is available in my [data-chat repository](https://github.com/JAlcocerT/Data-Chat/tree/main/LangChain/ChatWithDB).
@@ -49,9 +49,14 @@ The complete, working code is available in my [data-chat repository](https://git
 
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/test_langchainChatDB.ipynb)
 
-## Setting Up Your Database (MySQL Example)
+## Setting Up Your Database
 
-This example uses **MySQL**, you can also try SQLite.
+This example uses **MySQL**, you can also try similarly, with SQLite.
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/#astro" title="Astro + Github Pages Setup ↗" icon="book-open" >}}
+{{< /cards >}}
+
 
 {{< details title="MySQL Installation CLI" closed="true" >}}
 
@@ -250,10 +255,17 @@ source datachat_venv/bin/activate  # Activate the virtual environment (Linux)
 pip install -r requirements.txt
 ```
 
+
+
+{{< details title="Get Ready for Containers 🐋👇 📌" closed="true" >}}
+
+{{< /details >}}
+
+
 {{< details title="Loading Your OpenAI API Key" closed="true" >}}
 
 ```bash
-# source .env  # If you're using a .env file
+source .env  # If you're using a .env file
 
 # export OPENAI_API_KEY="your-api-key-here"  # Linux/macOS
 # set OPENAI_API_KEY=your-api-key-here  # Windows
@@ -343,3 +355,30 @@ https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat
 {{< details title="LangChain Agents 📌" closed="true" >}}
 
 {{< /details >}}
+
+### LangChain vs LLamaIndex
+
+* **LangChain:** A general-purpose framework for building LLM applications, with components for chains, agents, memory, prompts, and integrations.  It's more comprehensive than LlamaIndex.
+* **LlamaIndex:** A specialized framework for connecting LLMs to data, with tools for indexing, querying, and building data-driven LLM applications.
+
+Think of LangChain as the broader toolkit, and LlamaIndex as a specialized tool within that toolkit (specifically for data interaction).
+
+You can even use LlamaIndex *within* LangChain to build applications that combine the strengths of both frameworks.
+
+**How it's Similar to LlamaIndex (and Different):**
+
+* **Focus:** Both frameworks aim to make it easier to build LLM applications.  LlamaIndex focuses specifically on connecting LLMs to data. LangChain has a broader focus, including data, agents, chains, and memory.
+* **Components:** Both provide reusable components.  LlamaIndex has "LlamaPacks" for data integrations. LangChain has components for chains, agents, memory, and prompts.
+
+
+### Exploring DB Content
+
+To explore vector DBs we have Vector Admin, but for **regular DB's** we have **WhoDB**
+
+{{< cards >}}
+  {{< card link="https://github.com/clidey/whodb" title="WhoDB Github ↗" icon="github" >}}
+{{< /cards >}}
+
+> A lightweight next-gen **database explorer** - Postgres, MySQL, SQLite, MongoDB, Redis, MariaDB & Elastic Search
+
+Welcome to WhoDB – a powerful, lightweight (~20Mi), and user-friendly database management tool that combines the simplicity of Adminer with superior UX and performance. WhoDB is written in GoLang!
