@@ -213,7 +213,7 @@ Like having **speech recognition** and silencing the parts with human voices...
         * You can see their status at the [jobs tab](https://gitlab.com/fossengineer1/cv-check/-/jobs)
     * Better [sqlite logs to see](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Consolidate_logins.py?ref_type=heads) who actually uses it
 
-{{< details title="Exploring SQLite content 📌" closed="true" >}}
+{{< details title="Exploring SQLite saved content 📌" closed="true" >}}
 
 I made similar thing Check [whats in there](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/#old-school-scrapping)
 
@@ -559,10 +559,6 @@ Which will then provide VPN access to your desktop via the Ethernet cable.
 
 > Wifi2Eth [Post1](https://jalcocert.github.io/RPi/posts/rpi-wifi-ethernet-bridge/) and [Post2](https://jalcocert.github.io/JAlcocerT/raspberry-pi-networking/)
 
-{{< details title="Details 📌" closed="true" >}}
-
-
-{{< /details >}}
 
 {{% /steps %}}
 
@@ -595,9 +591,9 @@ RunPod, Linode, Paper Space, Lambda Cloud, vast.ai, Google Colab TPU…
 {{< /details >}}
 
 {{< cards cols="3" >}}
-  {{< card link="https://www.vultr.com/pricing/#cloud-gpu" title="Vultr Cloud GPUs" >}}
-  {{< card link="https://vast.ai/pricing" title="VastAI GPUs" >}}
-  {{< card link="https://lambdalabs.com/" title="Lambdalabs GPUs" >}}    
+  {{< card link="https://www.vultr.com/pricing/#cloud-gpu" title="Vultr Cloud GPUs ↗" >}}
+  {{< card link="https://vast.ai/pricing" title="VastAI GPUs ↗" >}}
+  {{< card link="https://lambdalabs.com/" title="Lambdalabs GPUs ↗" >}}    
 {{< /cards >}}
 
 {{< details title="**OS Inside Containers**: RPi emulator / Windows / macOS 📌" closed="true" >}}

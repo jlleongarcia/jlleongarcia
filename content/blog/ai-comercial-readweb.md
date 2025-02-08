@@ -181,14 +181,14 @@ I mean, [FireCrawl **needs an API**](https://www.firecrawl.dev/app/usage) to wor
 {{< /callout >}}
 
 {{< cards cols="1" >}}
-  {{< card link="www.firecrawl.dev" title="FireCrawl API" >}}
-  {{< card link="https://platform.openai.com/api-keys" title="OpenAI API" >}}
+  {{< card link="www.firecrawl.dev" title="FireCrawl API ↗ " >}}
+  {{< card link="https://platform.openai.com/api-keys" title="OpenAI API ↗" >}}
 {{< /cards >}}
 
 
 {{< cards cols="2" >}}
-  {{< card link="https://github.com/mendableai/firecrawl" title="FireCrawl Github" >}}
-  {{< card link="https://docs.firecrawl.dev/sdks/python" title="FireCrawl Python Docs" >}}
+  {{< card link="https://github.com/mendableai/firecrawl" title="FireCrawl Github ↗" >}}
+  {{< card link="https://docs.firecrawl.dev/sdks/python" title="FireCrawl Python Docs ↗" >}}
 {{< /cards >}}
 
 
@@ -202,7 +202,7 @@ I mean, [FireCrawl **needs an API**](https://www.firecrawl.dev/app/usage) to wor
 
 {{< details title="Get a page Info, scrap it, and more cool things with FireCrawl API 📌" closed="true" >}}
 
-It can be a companion for web-check.xyz and to know which links, pictures we have in a given page.
+It can be a companion for `web-check.xyz` and to know which links, pictures we have in a given page.
 
 Very useful for web migrations.
 
@@ -263,7 +263,9 @@ It offers a user-friendly interface and a range of features, including:
 
 FireCrawl is not giving me the juice of the offers, as [seen during Scrap-Tools Tests](https://github.com/JAlcocerT/Scrap_Tools/tree/main/FireCrawl/Z_Scrap_PracujOffer)
 
-But... it can be done with  [**1) OpenAI+Pure parsed HTML**](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
+But... it can be done with:
+
+[**1) OpenAI+Pure parsed HTML**](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
 
 Using [OpenAI API](https://github.com/openai/openai-python) seems to be a reliable way when the web structure is not changing too much.
 
@@ -272,14 +274,16 @@ https://github.com/openai/openai-python
 https://github.com/wention/BeautifulSoup4
 
 [![Star History Chart](https://api.star-history.com/svg?repos=openai/openai-python,unclecode/crawl4ai,wention/BeautifulSoup4&,type=Date)](https://star-history.com/#openai/openai-python&unclecode/crawl4ai&wention/BeautifulSoup4&Date)
- -->
+-->
 
 
-You could do similarly with other LLMs via their APIs
+You could do similarly with other LLMs via their APIs.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=openai/openai-python&type=Date)](https://star-history.com/#openai/openai-python&Date)
 
-And other library I saw, was **2) embedchain** (now included in the [mem0 repo](https://github.com/mem0ai/mem0))
+And other library I saw, was
+
+**2) embedchain** (now included in the [mem0 repo](https://github.com/mem0ai/mem0))
 
 With mem0/embedchain, we are going a little bit further than just scrapping.
 

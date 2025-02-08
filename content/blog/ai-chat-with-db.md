@@ -373,7 +373,9 @@ You can even use LlamaIndex *within* LangChain to build applications that combin
 
 ### Exploring DB Content
 
-To explore vector DBs we have Vector Admin, but for **regular DB's** we have **WhoDB**
+To explore vector DBs we have Vector Admin, but for **regular DB's** we have:
+
+1. **WhoDB**
 
 {{< cards >}}
   {{< card link="https://github.com/clidey/whodb" title="WhoDB Github ↗" icon="github" >}}
@@ -381,4 +383,35 @@ To explore vector DBs we have Vector Admin, but for **regular DB's** we have **W
 
 > A lightweight next-gen **database explorer** - Postgres, MySQL, SQLite, MongoDB, Redis, MariaDB & Elastic Search
 
-Welcome to WhoDB – a powerful, lightweight (~20Mi), and user-friendly database management tool that combines the simplicity of Adminer with superior UX and performance. WhoDB is written in GoLang!
+2. To explore SQlite, we have the CLI:
+
+
+And as seen [here](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#faq), we also have...
+
+{{< details title="More Useful Tools for DBs 📌" closed="true" >}}
+
+* **ChartDB:** [ChartDB](https://github.com/chartdb/chartdb) is a database diagram editor that stands out because it lets you visualize and design your database schema using SQL queries.
+
+Instead of dragging and dropping elements in a graphical interface, you describe your database structure in SQL, and ChartDB generates the diagram for you.  This approach can be very efficient, especially for complex databases.  It also makes it easier to version control and share your database designs.
+
+* **SQLiteViz:** [SQLiteViz](https://github.com/lana-k/sqliteviz) is a lightweight and cross-platform tool for visualizing and exploring SQLite databases. It provides a user-friendly interface for browsing tables, executing queries, and viewing data. It's a good choice for quickly inspecting and working with SQLite databases.
+
+* **SQLiteBrowser:** [SQLiteBrowser](https://github.com/sqlitebrowser/sqlitebrowser) (also known as DB Browser for SQLite) is another popular open-source tool for managing SQLite databases. It offers a more comprehensive set of features than SQLiteViz, including the ability to create and modify tables, indexes, and other database objects. It's a good all-around tool for SQLite database management.
+
+{{< /details >}}
+
+
+
+{{< details title="Exploring Other DBs 📌" closed="true" >}}
+
+
+* **DuckDB:** [DuckDB](https://github.com/duckdb/duckdb) is an embedded analytical database.  It's designed to be fast and efficient for Online Analytical Processing (OLAP) workloads.  DuckDB can be used directly from various programming languages (Python, R, etc.) and is often used for data analysis and exploration.  It's similar to SQLite in that it's file-based and embedded, but it's optimized for analytical queries.
+
+* **Huey (UI for DuckDB):** [Huey](https://github.com/rpbouman/huey) provides a user interface specifically for DuckDB.  It simplifies the process of interacting with DuckDB databases by providing a visual environment for writing queries, exploring data, and visualizing results.
+
+* **Hue (SQL Assistant):** [Hue](https://github.com/cloudera/hue) is a broader open-source SQL assistant for databases and data warehouses. While it *can* be used with DuckDB (as you noted with the Docker image), it's not DuckDB-specific.
+
+Hue supports a wide variety of database systems and provides a rich interface for working with SQL, including query editors, data browsers, and visualization tools.  It's a more comprehensive tool than Huey (the DuckDB UI) and can be used with many different database backends.
+
+
+{{< /details >}}

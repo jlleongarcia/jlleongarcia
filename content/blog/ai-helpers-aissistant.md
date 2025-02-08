@@ -897,11 +897,11 @@ In conclusion, Latitude simplifies the process of integrating AI into products w
 
 **Similar Projects**: TBC
 
-
-
 * https://github.com/latitude-dev/latitude
 
-**Latitude** is an open-source framework created to simplify **embedded analytics** by providing a powerful **analytics layer between databases and end-users**. It allows developers to integrate data analytics into applications efficiently without requiring deep expertise in database management or visualization.
+**Latitude** is an open-source framework created to simplify **embedded analytics** by providing a powerful **analytics layer between databases and end-users**. 
+
+It allows developers to integrate data analytics into applications efficiently without requiring deep expertise in database management or visualization.
 
 > Among other DBs, [latitude works with SQLite](https://docs-analytics.latitude.so/sources/sqlite)!
 
@@ -979,6 +979,7 @@ OpenSearch GPT aims to enhance productivity and streamline workflows, offering t
 ---
 
 Key Points
+
 - **Personalization:** Delivers tailored search results by learning from user behavior.
 - **Memory System:** Includes **Mem Zero** to retain past interactions and improve relevance.
 - **Technology Framework:** Built using **Versal AI ADK** and **Next.js** for a robust experience.
@@ -986,7 +987,8 @@ Key Points
 - **Open Source:** Provides transparency and customization options for users.
 
 ---
- Pros and Cons
+
+Pros and Cons
 
 **Pros:**
 - Highly personalized search experience.
@@ -1000,6 +1002,7 @@ Key Points
 ---
 
 Alternatives
+
 - **Perplexity AI**
 - **OpenAI's Search Engine Prototype**
 
@@ -1085,7 +1088,7 @@ See [available models via groq API](https://github.com/JAlcocerT/Streamlit-AIssi
 
 ### Streamlit CI/CD
 
-* With Github - using dockerx to get a multiarch (x86 & ARM64) Container Image
+* With Github - using `dockerx` to get a multiarch (x86 & ARM64) Container Image
 
 To use **Github Actions** to create automatic **container images** for your streamlit projects, you will need **such [configuration file](https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml)**.
 
@@ -1101,7 +1104,9 @@ Just follow [these steps](https://fossengineer.com/docker-github-actions-cicd/).
 
 You can use Streamlit Cloud Services.
 
-But you can also **host Streamlit with your own Domain**. And without paying extra.
+But you can also **host Streamlit with your own Domain**.
+
+And without paying extra.
 
 {{< callout type="info" >}}
 You can use [Cloudflare tunnels](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
@@ -1110,4 +1115,4 @@ You can use [Cloudflare tunnels](https://fossengineer.com/selfhosting-cloudflare
 
 ![Cloudflare Tunnels for Streamlit Deployment Example](/blog_img/apps/streamlit/CVCreAItor-CloudflareTunnel.png)
 
-Remember to use: `container_name:container_port`
+Remember to use: `container_name:container_port`, not the port on the host.

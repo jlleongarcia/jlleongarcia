@@ -290,8 +290,6 @@ erDiagram
     Employee ||--o{ Employee : "reports to"
 ```
 
-
-
 ### LangChain Setup to Chat with DB
 
 Make a venv, install the [requirements](https://github.com/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/requirements.txt) and load the API keys:
@@ -348,6 +346,7 @@ To use containers you will need [Docker installed](https://jalcocert.github.io/J
 {{< details title="More Useful Tools for DBs 📌" closed="true" >}}
 
 * [ChartDB](https://github.com/chartdb/chartdb) - Database diagrams editor that allows you to visualize and design your DB with a single query.
+
 * [SQLiteViz](https://github.com/lana-k/sqliteviz)
 * [SQliteBrowser](https://github.com/sqlitebrowser/sqlitebrowser)
 

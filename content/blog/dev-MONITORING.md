@@ -98,18 +98,22 @@ systemctl --type=service --state=running
 
 
 
-### Netdata
+### Netdata and Grafana
 
 
 {{< cards cols="1" >}}
-  {{< card link="https://fossengineer.com/selfhosting-netdata/" title="NetData Setup" >}}
+  {{< card link="https://fossengineer.com/selfhosting-netdata/" title="NetData Setup ↗" >}}
 {{< /cards >}}
 
+{{< cards cols="1" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/selfh-grafana-monit/" title="Grafana Setup with a Pi ↗" >}}
+{{< /cards >}}
 
-### Grafana
+And you can actually use Netdata + Grafana + Prometheus to make a cool monitoring setup.
+
 
 {{< cards cols="1" >}}
-  {{< card link="https://jalcocert.github.io/RPi/posts/selfh-grafana-monit/" title="Grafana Setup with a Pi" >}}
+  {{< card link="" title="See how to build such monitoring at noted.lol ↗" >}}
 {{< /cards >}}
 
 ### Internet Monitoring Tools
@@ -117,7 +121,7 @@ systemctl --type=service --state=running
 1. With a [Raspberry Pi](https://jalcocert.github.io/RPi/posts/self-internet-monit/)
 2. [Internet Speed Tracker](https://fossengineer.com/selfhosting-internet-speed-tracker-with-docker/)
 3. [WatchYourLan Setup](https://fossengineer.com/selfhosting-WatchYourLAN-docker/)
-
+4. Gatus - OSS website monitoring!
 
 <!-- https://www.youtube.com/watch?v=vlifG8dCqU8 -->
 {{< youtube "vlifG8dCqU8" >}}

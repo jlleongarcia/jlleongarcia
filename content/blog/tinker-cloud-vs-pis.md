@@ -208,7 +208,6 @@ The Hetzner x4 SkyLake and 8GB RAM provides similar performance to the BMAX (whe
 
 A comparison between the SBCs and Hetzner.
 
-
 {{< details title="Building Astral-SH 📌" closed="true" >}}
 
 | Platform | opi    | rpi4b 2gb | RPi 5 8GB | Hetzner  |
@@ -225,19 +224,20 @@ You have other options for **hosting services**, in the cloud:
 
 
 {{< cards cols="1" >}}
-  {{< card link="https://fly.io/" title="Dev Focus Public Cloud" >}}
+  {{< card link="https://fly.io/" title="Dev Focus Public Cloud ↗" >}}
 {{< /cards >}}
+
 {{< cards cols="2" >}}
-  {{< card link="https://www.pikapods.com/" title="PikaPods" >}}
-  {{< card link="https://elest.io/" title="Elestio" >}}
+  {{< card link="https://www.pikapods.com/" title="PikaPods ↗" >}}
+  {{< card link="https://elest.io/" title="Elestio ↗" >}}
 {{< /cards >}}
 
 For **AI workloads** you will be interested in some **cloud GPU**:
 
 {{< cards cols="3" >}}
-  {{< card link="https://www.vultr.com/pricing/#cloud-gpu" title="Vultr Cloud GPUs" >}}
-  {{< card link="https://vast.ai/pricing" title="VastAI GPUs" >}}
-  {{< card link="https://lambdalabs.com/" title="Lambdalabs GPUs" >}}    
+  {{< card link="https://www.vultr.com/pricing/#cloud-gpu" title="Vultr Cloud GPUs ↗" >}}
+  {{< card link="https://vast.ai/pricing" title="VastAI GPUs ↗" >}}
+  {{< card link="https://lambdalabs.com/" title="Lambdalabs GPUs ↗" >}}    
 {{< /cards >}}
 
 

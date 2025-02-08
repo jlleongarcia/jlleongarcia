@@ -12,7 +12,7 @@ It all started few years ago with my **own travel blog**.
 
 {{< cards >}}
   {{< card link="https://cyclingthere.com" title="My Travel Adventures" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="I can write and also create interesting photo galleries about my travel experiences" >}}
-  {{< card link="https://while.cyclingthere.com" image="/blog_img/webwhilecycling.png" title="Photo Gallery Blog" subtitle="HUGO/Astro and More" >}}
+  {{< card link="https://while.cyclingthere.com" image="/blog_img/web/webwhilecycling.png" title="Photo Gallery Blog" subtitle="HUGO/Astro and More" >}}
 {{< /cards >}}
 
 {{< callout type="info" >}}
@@ -31,14 +31,14 @@ Log into porkbun -> `NS` -> Change Authoritative Name Server to the ones provide
 ```
 
 
-![CF Custom Domain 1](/blog_img/web/CF-CustomDomain-DNSTransfer.png)
+![CF Custom Domain 1](/blog_img/web/Cloudflare/CF-CustomDomain-DNSTransfer.png)
 
-![CF Custom Domain2 ](/blog_img/Cloudflare/CF-CustomDomain-DNSRecordsScan.png)
+![CF Custom Domain2 ](/blog_img/web/Cloudflare/CF-CustomDomain-DNSRecordsScan.png)
 
-![CF Custom Domain 3](/blog_img/web/CF-customdomain-sync.png)
+![CF Custom Domain 3](/blog_img/web/Cloudflare/CF-customdomain-sync.png)
 
 
-> After it syncs, you will be able to go to Workers & Pages -> Custom Domains and have the website ready/
+> After it syncs, you will be able to go to `Workers & Pages` -> `Custom Domains` and have the website ready.
 
 
 ## Photo Galleries
@@ -49,7 +49,6 @@ As described here - https://jalcocert.github.io/JAlcocerT/creating-photo-centric
   {{< card link="https://while.cyclingthere.com/" title="Cycling There Photo Gallery" >}}
   {{< card link="https://enjoylittlethings.org/" title="Travel Addict Photo Blog" >}}
   {{< card link="http://entreagujaypunto.com/" title="Portfolio Aguja&Punto" >}}
-
 {{< /cards >}}
 
 See some sample blogs:

@@ -380,6 +380,8 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
     * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
     * https://github.com/seadfeng/favicon-downloader
 
+5. See how a linkshortener see your site: https://dub.co/
+
 ### CDN and Videos for your Website
 
 1. https://github.com/orthdron/subatic - Extremely simple video hosting Site that scales with you
