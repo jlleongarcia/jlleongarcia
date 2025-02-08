@@ -12,7 +12,7 @@ summary: 'Chat with DB Tech Talk'
 url: 'langchain-chat-with-database'
 ---
 
-In the end of the last year I discoverd: 
+By tinkering with AI, I discoverd that it is possible to: 
 
 [I commented the PDF one **here** →](/JAlcocerT/how-to-chat-with-pdfs)
 
@@ -28,6 +28,11 @@ flowchart LR
     D -->|No| E[Raise EnvironmentError]
     D -->|Yes| F[Iterate through URLs]
 ```
+
+
+{{< details title="Get Ready for Containers 🐋👇 📌" closed="true" >}}
+
+{{< /details >}}
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data" title="Chat with Data" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="With Groq API" >}}
@@ -55,18 +60,18 @@ This post explores how to use **LangChain with Python** to chat with your databa
 The complete, working code is available in my [data-chat repository](https://github.com/JAlcocerT/Data-Chat/tree/main/LangChain/ChatWithDB).
 {{< /callout >}}
 
-[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/test_langchainChatDB.ipynb)
+You can also open it with: [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/LangChain_MySQL_DB_Chat.ipynb)
 
 ## Setting Up Your Database
 
-This example uses **MySQL**, you can also try similarly, with SQLite.
+This example uses **MySQL**.
 
-{{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/github-actions-use-cases/#astro" title="Astro + Github Pages Setup ↗" icon="book-open" >}}
-{{< /cards >}}
+You can also try similarly, with SQLite.
 
 
-{{< details title="MySQL Installation CLI" closed="true" >}}
+{{< details title="MySQL Installation CLI 👇" closed="true" >}}
+
+If you want to install MySQL DB directly in your computer:
 
 ```bash
 sudo apt update
@@ -82,11 +87,17 @@ sudo mysql -u root -p
 # mysql --version  # Output: mysql Ver 8.0.40-0ubuntu0.24.04.1 for Linux on x86_64 ((Ubuntu))
 ```
 
+```sh
+systemctl list-units --type=service #you will see mysql there
+sudo systemctl stop mysql #if you stop it
+lsof -i :3306 #this will be cleared
+```
+
 {{< /details >}}
 
 I would recommend to go with the **container way of installing the DB**:
 
-{{< details title="MySQL with Docker | Recommended" closed="true" >}}
+{{< details title="MySQL with Docker | Recommended 👇" closed="true" >}}
 
 Once, **Docker/Podman** are installed, just:
 
@@ -95,21 +106,25 @@ Once, **Docker/Podman** are installed, just:
 ```
 
 ```sh
+sudo docker exec -it mysql-db /bin/bash
+```
+
+Now, you can see that MySQL is installed, just inside the container:
+
+```sh
 # mysql --version  # Output: mysql Ver 8.0.40-0ubuntu0.24.04.1 for Linux on x86_64 ((Ubuntu))
 ```
 
 {{< /details >}}
+
+
 
 ## Loading the Chinook Database
 
 We'll use the **Chinook database as a sample**.
 
 
-{{< callout type="info" >}}
-Be creative, you can apply it to other DB's! Like the one of [this project](https://jalcocert.github.io/RPi/posts/rpi-iot-dht1122-mongo/) 
-{{< /callout >}}
-
-{{< details title="Loading the Chinook Database" closed="true" >}}
+{{< details title="Loading the Chinook Database 👇" closed="true" >}}
 
 You can download the Chinook database from its [GitHub releases](https://github.com/lerocha/chinook-database/releases).
 
@@ -144,7 +159,7 @@ ORDER BY
     TABLE_NAME, ORDINAL_POSITION;
 ```
 
-Here's a MermaidJS Entity-Relationship (ER) diagram visualizing the **Chinook database schema**:
+Here's a MermaidJS Entity-Relationship **(ER) diagram** visualizing the **Chinook database schema**:
 
 ```mermaid
 erDiagram
@@ -249,17 +264,18 @@ erDiagram
     Employee ||--o{ Employee : "reports to"
 ```
 
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-use-mermaid-diagrams/" title="Create such Diagrams with Code ↗" icon="book-open" >}}
+{{< /cards >}}
+
+
 ## LangChain Setup
 
 Let's set up LangChain to interact with our database.
 
 1. Make sure you have [Python](https://jalcocert.github.io/JAlcocerT/guide-python/#installing-python-) and [Docker/Podman Containers](https://jalcocert.github.io/JAlcocerT/why-i-love-containers/#docker-setup) installed.
 
-{{< details title="Get Ready for Containers 🐋👇 📌" closed="true" >}}
-
-{{< /details >}}
-
-2. Then, create a Python virtual environment:
+2. Then, create a Python virtual environment
 
 ```bash
 python3 -m venv datachat_venv  # Create the virtual environment (Linux)
@@ -271,14 +287,16 @@ source datachat_venv/bin/activate  # Activate the virtual environment (Linux)
 pip install -r requirements.txt
 ```
 
-{{< details title="You need these python packages" closed="true" >}}
+{{< details title="You need these python packages 👇" closed="true" >}}
 
 
 {{< /details >}}
 
 3. Now, install the database engine
 
-I will show you how to do it with MySQL and Docker. You just need the [docker compose](https://github.com/JAlcocerT/Docker/blob/main/Dev/DBs/MySQL_docker-compose.yml)
+I will show you how to do it with MySQL and Docker.
+
+You just need the [docker compose](https://github.com/JAlcocerT/Docker/blob/main/Dev/DBs/MySQL_docker-compose.yml)
 
 * https://github.com/JAlcocerT/Docker/blob/main/Dev/DBs/MySQL_docker-compose.yml
 * https://github.com/JAlcocerT/Docker/blob/main/Dev/DBs/MariaDB_docker-compose.yml
@@ -286,6 +304,10 @@ I will show you how to do it with MySQL and Docker. You just need the [docker co
 > Use Portainer for easier MySQL container management
 
 ![MySQL Portainer](/blog_img/GenAI/mysql-portainer.png)
+
+4. Prepare your AI API Keys
+
+We will need OpenAI Keys to interact with the DB: https://platform.openai.com/api-keys
 
 
 {{< details title="Loading Your OpenAI API Key" closed="true" >}}
@@ -302,19 +324,22 @@ source .env  # If you're using a .env file
 
 {{< /details >}}
 
+
+![LangChain Jupyter NB](/blog_img/GenAI/langchain-jupyter.png)
+
+
 ## Integrating LangChain with the Database
 
 I've successfully replicated the code, using:
 
-*   Chinook database version 1.4.5
-*   Python 3.12.3 (x86) and virtual environments
-*   MySQL 8.0
+*  Chinook database version 1.4.5
+*  Python 3.12.3 (x86) and virtual environments
+*  MySQL 8.0
 
-For easier setup and deployment, you can use Docker.  Here's a sample `docker-compose.yml` file (available in the repository):
+For easier setup and deployment, you can use Docker.
 
-```yaml
-# ... (docker-compose.yml content)
-```
+ Here's a sample `docker-compose.yml` file (available in the repository):
+
 
 ```bash
 # Example commands for interacting with the MySQL container:
@@ -328,7 +353,18 @@ For containerization, you'll need to have [Docker installed](https://jalcocert.g
 
 ---
 
-## Frequently Asked Questions
+## Conclusions
+
+{{< callout type="info" >}}
+Be creative, you can apply it to other DB's!
+
+Like the one of [this project](https://jalcocert.github.io/RPi/posts/rpi-iot-dht1122-mongo/) 
+{{< /callout >}}
+
+
+---
+
+## FAQ
 
 {{< details title="More Useful Database Tools" closed="true" >}}
 
@@ -339,12 +375,7 @@ For containerization, you'll need to have [Docker installed](https://jalcocert.g
 {{< /details >}}
 
 
-
----
-
-## FAQ
-
-See other popular RAG frameworks, alternatives to Langchain:
+See **other popular RAG frameworks**, alternatives to Langchain:
 
 [![Star History Chart](https://api.star-history.com/svg?repos=langchain-ai/langchain,run-llama/llama_index,deepset-ai/haystack,Sinaptik-AI/pandas-ai&type=Date)](https://star-history.com/#langchain-ai/langchain&run-llama/llama_index&deepset-ai/haystack&Sinaptik-AI/pandas-ai&type=Date)
 
@@ -352,10 +383,6 @@ See other popular RAG frameworks, alternatives to Langchain:
 
 1. Diagrams as a Code
 2. PPT with LLMs
-
-
-https://github.com/JAlcocerT/Data-Chat
-https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat
 
 #### PPT as a Code
 
@@ -368,6 +395,7 @@ https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat
 
 <!-- https://www.youtube.com/watch?v=KerHlb8nuVc -->
 {{< youtube "KerHlb8nuVc" >}}
+
 
 {{< details title="LangChain + DuckDuckGo 📌" closed="true" >}}
 
