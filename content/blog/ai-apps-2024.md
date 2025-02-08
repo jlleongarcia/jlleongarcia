@@ -221,14 +221,11 @@ This is
 
 I have tried Caddy with a OVH VPS Server with 2GB RAM.
 
-Similar to the one in which I tried to deploy Wireguard (~300/1.88GB)
+> Similar to the one in which I tried to deploy Wireguard (~300/1.88GB) RAM
 
 ```sh
 ssh ubuntu@57.128.public.ip
 ```
-
-
-
 
 
 ---

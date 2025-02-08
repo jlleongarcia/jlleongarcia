@@ -119,14 +119,23 @@ Traefik is a powerful and flexible reverse proxy that's worth considering for yo
 
 Not enough with Nginx or Caddy?
 
+{{< cards cols="2" >}}
+  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="NGINX" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/selfhosting-python-ai-apps-caddy/" title="Caddy Setup for AI Apps" >}}
+{{< /cards >}}
+
 Have a look to **Traefik**
 
-We can also get SSL certificates thanks to LetsEncrypt.
+We can also get **SSL certificates thanks to LetsEncrypt**.
 
 And it also provides a UI dashboard.
 
 * https://github.com/traefik/traefik
-* https://doc.traefik.io/traefik/user-guides/docker-compose/basic-example/
+* https://hub.docker.com/_/traefik
+* https://doc.traefik.io/traefik/getting-started/install-traefik/
+    * https://doc.traefik.io/traefik/user-guides/docker-compose/basic-example/
+
+> MIT | The Cloud Native Application Proxy
 
 
 * **Strengths:**
@@ -147,27 +156,91 @@ And it also provides a UI dashboard.
 
 #### Traefik JimGarage
 
+* https://doc.traefik.io/traefik/user-guides/docker-compose/basic-example/
+* https://doc.traefik.io/traefik/user-guides/docker-compose/acme-dns/
 
+
+> Thanks to https://github.com/JamesTurland/JimsGarage/blob/main/Traefik/docker-compose.yml
+
+What we will need:
 
 1. Docker
 2. NGINX to serve a website
 3. Traefik providing SSL with your Domain
 
 {{< callout type="info" >}}
-To validate that we own the domain, we can do **DNS or TLS Challenge** (this one requires Port FWD)
+To validate that we own the domain, we can do **DNS or TLS Challenge** (the latter requires Port FWD)
 {{< /callout >}}
 
-For the **DNS Challenge**, we just need the **API access**.
+For the **DNS Challenge**, we just need the **API access**, for example to Cloudflare Domains.
 
+```yml
+services:
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+       proxy:
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      - CF_API_EMAIL=your@email.com
+      - CF_DNS_API_TOKEN=your-api-key
+      # - CF_API_KEY=YOU_API_KEY
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /home/ubuntu/docker/traefik/traefik.yml:/traefik.yml:ro
+      - /home/ubuntu/docker/traefik/acme.json:/acme.json
+      - /home/ubuntu/docker/traefik/config.yml:/config.yml:ro
+      - /home/ubuntu/docker/traefik/logs:/var/log/traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.entrypoints=http"
+      - "traefik.http.routers.traefik.rule=Host(`traefik-dashboard.yourdomain.co.uk`)" # if you want a internal domain, get the wildcard cert for it and then choos traefik-dashboard.home.yourdomain.co.uk or what you want
+      - "traefik.http.middlewares.traefik-auth.basicauth.users=YOUR_USERNAME_PASSWORD"
+      - "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"
+      - "traefik.http.routers.traefik.middlewares=traefik-https-redirect"
+      - "traefik.http.routers.traefik-secure.entrypoints=https"
+      - "traefik.http.routers.traefik-secure.rule=Host(`traefik-dashboard.yourdomain.co.uk`)" # if you want a internal domain, get the wildcard cert for it and then choos traefik-dashboard.home.yourdomain.co.uk or what you want
+      - "traefik.http.routers.traefik-secure.middlewares=traefik-auth"
+      - "traefik.http.routers.traefik-secure.tls=true"
+      - "traefik.http.routers.traefik-secure.tls.certresolver=cloudflare"
+      #- "traefik.http.routers.traefik-secure.tls.domains[0].main=home.yourdomain.co.uk" # If you want *.home.yourdomain.co.uk subdomain or something else, you have to get the certifcates at first.
+      #- "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.home.yourdomain.co.uk" # get a wildcard certificat for your .home.yourdomain.co.uk
+      - "traefik.http.routers.traefik-secure.tls.domains[0].main=yourdomain.co.uk" #if you use the .home.yourdomain.co.uk entry you have to change the [0] into [1]
+      - "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.yourdomain.co.uk" # same here, change 0 to 1
+      - "traefik.http.routers.traefik-secure.service=api@internal"
+
+
+networks:
+  proxy:
+    name: proxy
+    external: true
+```
+
+Important:
+
+* `/home/ubuntu/docker/traefik/acme.json` stores the private keys of the certificates
+* `/home/ubuntu/docker/traefik/traefik.yml` entry points for traefik
+* `/home/ubuntu/docker/traefik/config.yml`
 With that, LetsEncrypt will login to the Domain registrar and creates a temporary record.
 
 Then, it will know that you are the one that really own the domain and therefore you can get certificates for that domain.
 
-**How to get API Token from Cloudflare**
+**How to get API Token from Cloudflare** - DNS Challenge!
 
-Go to My Profile on the top right -> `API Tokens` -> `Create Token` -> Select the Edit Zone DNS Template
+Go to My Profile on the top right -> `API Tokens` -> `Create Token` -> Select the `Edit Zone DNS` Template
 
-Keep Permissions Zone:DNS And as Zone Resources you can specify the particular domain (optional).
+![Zone DNS CF](/blog_img/selfh/CF-APITokens-ZoneDNS.png)
+
+
+Keep Permissions Zone: DNS And as Zone Resources you can specify the particular domain (optional).
 
 You will get a way to verify it works:
 
@@ -189,10 +262,15 @@ sudo docker network create proxy
 
 Acme files can be blank, we will fill `traefik.yml`
 
+{{< tabs items="Files we need,traefik.yml,acme.yml" >}}
+
+  {{< tab >}}
+  
+
 ```sh
-mkdir -p ./docker/traefik && \
-touch ./docker/traefik/acme.json && \
-touch ./docker/traefik/acme.yml && \
+mkdir -p ./docker/traefik
+touch ./docker/traefik/acme.json #blank, just change the permissions to 600 later (private key)
+touch ./docker/traefik/acme.yml
 touch ./docker/traefik/traefik.yml
 ```
 
@@ -200,6 +278,13 @@ touch ./docker/traefik/traefik.yml
 chmod 600 ./docker/traefik/acme.json && \
 chmod 600 ./docker/traefik/traefik.yml #or it will be a security risk for other users to see the privatekey
 ```
+  
+  
+  {{< /tab >}}
+
+  {{< tab >}}
+  
+  
 
 With such info:
 
@@ -239,6 +324,16 @@ certificatesResolvers:
           - "1.1.1.1:53"
           - "1.0.0.1:53"
 ```
+  
+  {{< /tab >}}
+  
+  
+  {{< tab >}}**TOML**: TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics.
+  
+  {{< /tab >}}
+
+{{< /tabs >}}
+
 
 And last but not least:
 
