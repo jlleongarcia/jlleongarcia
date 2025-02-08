@@ -45,7 +45,7 @@ PandasAI SmartDataFrames are essentially regular **Pandas DataFrames** with an a
 
 ## Interesting Project with PandasAI
 
-Let's give it a try to Pandas AI:
+Let's give it **a try to Pandas AI**:
 
 {{< dropdown title="Option 1 - with a Python Venv 👇" closed="true" >}}
 
@@ -92,9 +92,6 @@ export OPENAI_API_KEY="sk-..." #linux
 [![OpenInColab](/img/OpenInColab.svg#center)](https://colab.research.google.com/github/TirendazAcademy/PandasAI-Tutorials/blob/main/Intro-to-PandasAI.ipynb)
 
 [![PandasAI](https://img.shields.io/badge/PandasAI-1.2.0-FF4B4B.svg?style=flat&logo=Streamlit&logoColor=white#center)](https://pandas-ai.com/)
-
-
-
 
 
 ### PandasAI with Ollama and Streamlit
@@ -245,7 +242,6 @@ In a RAG framework, when a user poses a question or provides a prompt, the **sys
 The retrieved information is then used to augment the input prompt, providing additional context and knowledge to the language generation model.
 
 The language generation model, often based on deep learning architectures like transformers, takes the augmented prompt and generates a response or continuation of the text.
-
 
 
 {{< /dropdown >}}

@@ -336,7 +336,7 @@ RAG is a technique for enhancing the capabilities of large language models (LLMs
   * {{< newtab url="https://github.com/langchain-ai/langchain?tab=MIT-1-ov-file#readme" text="License MIT" >}} ❤️
   * {{< newtab url="https://pypi.org/project/langchain/" text="LangChain in PyPi" >}}  
 
-> A Python Library to Build context-aware reasoning applications
+> A Python Library to Build **context-aware reasoning applications**
 
 {{< dropdown title="Why or Why not LangChain as RAG? ⏬ " closed="true" >}}
 

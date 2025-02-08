@@ -103,7 +103,7 @@ SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
 
 You can make it **run every night** by setting **CRON task with [a script](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Scrap_Pracuj/run_pracuj.sh?ref_type=heads)**.
 
-And after few days...this is how it looks like:
+And after few days...this is how the **job trend** looks like:
 
 <!-- {{< rawhtml >}} 
 <iframe src="/videos/combined_job_offers_plot_05-11-2024.html"
@@ -112,8 +112,9 @@ style="width: 100%; height: 450px;"></iframe>
 
 ![Job Offers Cron Result](/videos/job_offers.png)
 
+Is it a **good moment to change the job**?
 
-Is it a good moment? Up to you.
+Up to you!
 
 {{< details title="Setup CRON job to execute python -> Bs4 -> SQLiteDB📌" closed="true" >}}
 

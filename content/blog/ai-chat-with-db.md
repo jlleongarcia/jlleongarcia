@@ -1,9 +1,9 @@
 ---
 title: "Chat with a Database via LLMs"
-date: 2025-02-06
+date: 2025-02-08
 draft: false
 cover:
-  image: "https://socialify.git.ci/jalcocert/streamlit-multichat/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
+  image: "https://socialify.git.ci/jalcocert/data-chat/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
   alt: "Langchain chat with DB" # alt text
   caption: "Using LLMs to chat with databases" # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
@@ -14,6 +14,13 @@ url: 'langchain-chat-with-database'
 
 In the end of the last year I discoverd: 
 
+[I commented the PDF one **here** →](/JAlcocerT/how-to-chat-with-pdfs)
+
+[I commented the PDF one **here** →](/how-to-use-rags-with-python)
+
+/how-to-use-pandasAI
+
+
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data" title="Chat with Data" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="With Groq API" >}}
   {{< card link="https://github.com/JAlcocerT/Data-Chat" title="Data Chat" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source Code for DB Chat with Langchain" >}}
@@ -22,11 +29,13 @@ In the end of the last year I discoverd:
 
 ## Chat with Your Database Using LangChain
 
-Learning SQL can be challenging. 
+[Learning SQL](https://jalcocert.github.io/JAlcocerT/sql-data-analytics/) can be challenging. 
 
-But what if you could use AI to simplify your data analysis tasks?
+But what if you could use **AI to simplify data analysis tasks**?
 
-That's where **LangChain comes in**, bridging the gap between natural language and your database.
+That's where **LangChain comes in**.
+
+Bridging the gap between natural language and your database.
 
 {{< callout type="info" >}}
 **Source Code** - RAG libraries to **[Chat over Data](https://github.com/JAlcocerT/Data-Chat)** 💻 

@@ -309,14 +309,12 @@ Now, you just have to get into the container and run it:
 ```sh
 sudo docker run -d -p 4321:4321 --name astrokeystaticvps astrokeystatic:landingpad tail -f /dev/null
 
-
 docker exec -it astrokeystaticvps /bin/bash
 #git --version
 #npm -v
 #node -v #you will see the specified version in the image
-npm run dev
 
-#npm uninstall react-slick slick-carousel #to fix sth
+npm run dev
 ```
 
 And it is available at `serverip:4321`, as the container has the same port mapped on the VPS host!
@@ -388,6 +386,7 @@ volumes:
 
 {{< /details >}}
 
+
 {{< details title="Node Dockerfile 📌" closed="true" >}}
 
 ```sh
@@ -440,6 +439,51 @@ COPY . .
 ```
 
 {{< /details >}}
+
+Now, what about **https**?
+
+Recently, I made a post on how to setup **NGINX** on a VPS.
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/JAlcocerT/Docker/blob/main/Security/Proxy/nginx_docker_compose.yaml" title="NGINX Docker Compose" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/software-for-weddings/" title="NGINX on VPS Post" >}}
+{{< /cards >}}
+
+If you are done with it, you will have:
+
+```sh
+sudo docker network ls
+```
+
+A NGINX docker network available, like `nginx_nginx_default` in my case.
+
+We will apply it, to the running container with the astro (landingpad) + KeystaticCMS:
+
+```sh
+docker ps --filter "status=running"
+```
+
+For me, that will be `astrokeystaticvps`, as I defined it with:
+
+```sh
+#sudo docker run -d -p 4321:4321 --name astrokeystaticvps astrokeystatic:landingpad tail -f /dev/null
+
+#now, we will use the nginx network and make it npm run dev directly
+sudo docker run -d \
+  --network nginx_nginx_default \
+  -p 4321:4321 \
+  --name astrokeystaticvps \
+  astrokeystatic:landingpad \
+  npm run dev
+```
+
+Now, just get the key for the DNS challenge, and go to NGINX UI:
+
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/software-for-weddings/" title="NGINX on VPS" image="/blog_img/selfh/cloudflare-hetzner-nginx2.png" subtitle="With Cloudflare" >}}
+  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="NGINX Setup" image="/blog_img/web/staticcms/keystatic-nginx-duckdns.png" subtitle="With DuckDNS subdomain" >}}
+{{< /cards >}}
 
 
 #### More

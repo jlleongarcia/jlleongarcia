@@ -168,12 +168,18 @@ Make sure you setup the `BASE_URL` env variable [as per readme](https://github.c
 
 
 
-{{< details title="NGINX Setup Details 📌" closed="true" >}}
+{{< details title="NGINX Setup Details with Cloudflare 📌" closed="true" >}}
 
-Dont forget to add this A record to the VPS, so that it will be able to create sub domains from it with https:
+Dont forget to add **this A record**, pointing to the VPS, so that it will be able to create sub domains from it with https:
 
 ![CF DNS Records to hetzner VPS](/blog_img/selfh/cloudflare-hetzner-nginx.png)
 
+And also the CNAME, to be able to create certificates for subdomains with cloudflare:
+
+
+But like this, **also with the CNAME record for CF** if using CF:
+
+![Cloudflare Aname Cname for https](/blog_img/selfh/cloudflare-hetzner-nginx2.png)
 
 [Setup NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
 
@@ -229,8 +235,13 @@ For the DNS Challenge, you need input from your domain registrar, like: Cloudfla
 https://www.youtube.com/watch?v=qlcVx-k-02E
 -->
 
+> Thanks to this awsome video!
+
 {{< youtube "qlcVx-k-02E" >}}
-Portainer + NGINX + Wedding share ~500mb:
+
+Do you need a powerfull VPS?
+
+Not really, see how much im using a CX22: Portainer + NGINX + Wedding share **~500mb RAM**
 
 ![FireBat NGINX Example](/blog_img/selfh/weddingshare-hetzner.png)
 
