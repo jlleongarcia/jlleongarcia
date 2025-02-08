@@ -3,16 +3,16 @@ title: "Websites 2024 consolidation"
 date: 2024-12-17
 draft: false
 tags: ["dev"]
-summary: 'Websites and getting better at `Show your Work`'
+summary: 'Websites and getting better at `Show your Work`. HUGO Theme Gallery with Filebrowser.'
 url: 'websites-themes-2024'
 ---
 
 
-It all started few years ago with my **own travel blog**.
+It all started few years ago with my **own blogs**.
 
 {{< cards >}}
   {{< card link="https://cyclingthere.com" title="My Travel Adventures" image="/blog_img/web/WebsSnapshots/Web_CyclingThere.png" subtitle="I can write and also create interesting photo galleries about my travel experiences" >}}
-  {{< card link="https://while.cyclingthere.com" image="/blog_img/web/webwhilecycling.png" title="Photo Gallery Blog" subtitle="HUGO/Astro and More" >}}
+  {{< card link="https://while.cyclingthere.com" image="/blog_img/web/whilecycling.png" title="Photo Gallery Blog" subtitle="Made with HUGO" >}}
 {{< /cards >}}
 
 {{< callout type="info" >}}
@@ -304,3 +304,16 @@ To try Astro+Ghost headlessCMS as described
 https://jalcocert.github.io/JAlcocerT/blog/dev-in-docker/#gatsby
 
 -->
+
+---
+
+## FAQ
+
+### Creating an Interface For Hugo Theme Gallery
+
+https://github.com/JAlcocerT/EntreAgujayPunto
+
+1. HUGO + HUGO Theme Gallery
+2. FileBrowser
+3. NGINX
+4. A server

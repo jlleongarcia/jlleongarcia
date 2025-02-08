@@ -24,7 +24,12 @@ Containers are an essential tool for simplifying self-hosting software. They giv
 - **Efficiency**: Containers share the host OS kernel, making them more resource-efficient and faster than virtual machines. 
 
 More? **Coderized** have a couple of very interesting and well edited videos [about containers](https://www.youtube.com/watch?v=J0NuOlA2xDc&t=7s).
+<!-- 
 {{< youtube "ilkZ27TwYVg" >}}
+
+{{< youtube "ilkZ27TwYVg" >}} -->
+
+
 <!-- https://www.youtube.com/watch?v=ilkZ27TwYVg -->
 
 

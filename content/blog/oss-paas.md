@@ -1,6 +1,6 @@
 ---
 title: "Deploying with PaaS: Coolify, Dokku and more"
-date: 2025-02-07
+date: 2025-03-07
 draft: false
 tags: ["Dev"]
 description: 'Coolify, Dokku, Caprover, Openfaas'
@@ -134,6 +134,7 @@ For complex applications, you can use Docker Compose based deployments or the on
 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | sudo bash
 ```
 
+https://www.reddit.com/r/selfhosted/comments/1dbmv4d/alternatives_to_vercel_coolify_dokploy_or_caprover/
 
 
 ### Dokku
@@ -177,6 +178,8 @@ dokku apps:create ruby-getting-started
     * https://quickstack.dev/docs/intro
 
 > GPL v3 | Build, run and monitor your apps on any server from a single, easy-to-use UI.
+
+https://www.reddit.com/r/selfhosted/comments/1igktsv/alternative_to_caprover_and_coolify_quickstack/
 
 
 ```sh

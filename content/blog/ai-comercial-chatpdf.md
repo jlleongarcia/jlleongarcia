@@ -191,6 +191,10 @@ If you followed along, the PDF chat it is available at `localhost:8501` and look
 
 ![Streamlit Chat with PDF with OpenAI](/img/Dev/streamlit-pdf-chat.png)
 
+https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/streamlit-multichat.png
+
+
+![Streamlit MultiChat](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/streamlit-multichat.png)
 ---
 
 ## FAQ

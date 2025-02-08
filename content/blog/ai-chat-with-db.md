@@ -20,6 +20,14 @@ In the end of the last year I discoverd:
 
 /how-to-use-pandasAI
 
+```mermaid
+flowchart LR
+    A[Start] --> B[Load environment variables]
+    B --> C[Initialize OpenAI and Firecrawl API clients]
+    C --> D{API keys loaded?}
+    D -->|No| E[Raise EnvironmentError]
+    D -->|Yes| F[Iterate through URLs]
+```
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data" title="Chat with Data" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="With Groq API" >}}
@@ -245,6 +253,14 @@ erDiagram
 
 Let's set up LangChain to interact with our database.
 
+1. Make sure you have [Python](https://jalcocert.github.io/JAlcocerT/guide-python/#installing-python-) and [Docker/Podman Containers](https://jalcocert.github.io/JAlcocerT/why-i-love-containers/#docker-setup) installed.
+
+{{< details title="Get Ready for Containers 🐋👇 📌" closed="true" >}}
+
+{{< /details >}}
+
+2. Then, create a Python virtual environment:
+
 ```bash
 python3 -m venv datachat_venv  # Create the virtual environment (Linux)
 # python -m venv datachat_venv  # Create the virtual environment (Windows)
@@ -255,11 +271,21 @@ source datachat_venv/bin/activate  # Activate the virtual environment (Linux)
 pip install -r requirements.txt
 ```
 
+{{< details title="You need these python packages" closed="true" >}}
 
-
-{{< details title="Get Ready for Containers 🐋👇 📌" closed="true" >}}
 
 {{< /details >}}
+
+3. Now, install the database engine
+
+I will show you how to do it with MySQL and Docker. You just need the [docker compose](https://github.com/JAlcocerT/Docker/blob/main/Dev/DBs/MySQL_docker-compose.yml)
+
+* https://github.com/JAlcocerT/Docker/blob/main/Dev/DBs/MySQL_docker-compose.yml
+* https://github.com/JAlcocerT/Docker/blob/main/Dev/DBs/MariaDB_docker-compose.yml
+
+> Use Portainer for easier MySQL container management
+
+![MySQL Portainer](/blog_img/GenAI/mysql-portainer.png)
 
 
 {{< details title="Loading Your OpenAI API Key" closed="true" >}}
