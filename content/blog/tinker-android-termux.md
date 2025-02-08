@@ -39,6 +39,12 @@ https://www.youtube.com/shorts/V5DYPODOxo0
 
 ## FAQ
 
+https://github.com/sickcodes/dock-droid
+
+> Docker Android - Run QEMU Android in a Docker! X11 Forwarding! CI/CD for Android!
+
+
+
 ### How to use Android on PC
 
 * https://developer.android.com/studio/run/emulator

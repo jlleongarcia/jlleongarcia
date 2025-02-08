@@ -174,6 +174,10 @@ To validate that we own the domain, we can do **DNS or TLS Challenge** (the latt
 
 For the **DNS Challenge**, we just need the **API access**, for example to Cloudflare Domains.
 
+```sh
+nano docker-compose.yaml
+```
+
 ```yml
 services:
   traefik:
@@ -213,8 +217,8 @@ services:
       - "traefik.http.routers.traefik-secure.tls.certresolver=cloudflare"
       #- "traefik.http.routers.traefik-secure.tls.domains[0].main=home.yourdomain.co.uk" # If you want *.home.yourdomain.co.uk subdomain or something else, you have to get the certifcates at first.
       #- "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.home.yourdomain.co.uk" # get a wildcard certificat for your .home.yourdomain.co.uk
-      - "traefik.http.routers.traefik-secure.tls.domains[0].main=yourdomain.co.uk" #if you use the .home.yourdomain.co.uk entry you have to change the [0] into [1]
-      - "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.yourdomain.co.uk" # same here, change 0 to 1
+      - "traefik.http.routers.traefik-secure.tls.domains[0].main=jalcocertech.com" #if you use the .home.yourdomain.co.uk entry you have to change the [0] into [1]
+      - "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.jalcocertech.com" # same here, change 0 to 1
       - "traefik.http.routers.traefik-secure.service=api@internal"
 
 
@@ -268,22 +272,23 @@ Acme files can be blank, we will fill `traefik.yml`
   
 
 ```sh
-mkdir -p ./docker/traefik
-touch ./docker/traefik/acme.json #blank, just change the permissions to 600 later (private key)
-touch ./docker/traefik/acme.yml
-touch ./docker/traefik/traefik.yml
+mkdir -p /home/docker/traefik
+cd /home/docker/traefik
+
+touch /home/docker/traefik/acme.json #blank, just change the permissions to 600 later (private key)
+touch /home/docker/traefik/acme.yml
+touch /home/docker/traefik/traefik.yml
 ```
 
 ```sh
-chmod 600 ./docker/traefik/acme.json && \
-chmod 600 ./docker/traefik/traefik.yml #or it will be a security risk for other users to see the privatekey
+chmod 600 ./acme.json && \
+chmod 600 ./traefik.yml #or it will be a security risk for other users to see the privatekey
 ```
   
   
   {{< /tab >}}
 
   {{< tab >}}
-  
   
 
 With such info:
@@ -315,12 +320,12 @@ providers:
 certificatesResolvers:
   cloudflare:
     acme:
-      email: your@email.com #add your email
+      email: your@email.com #add your email!!!
       storage: acme.json
       dnsChallenge:
         provider: cloudflare
         #disablePropagationCheck: true # uncomment this if you have issues pulling certificates through cloudflare, By setting this flag to true disables the need to wait for the propagation of the TXT record to all authoritative name servers.
-        resolvers:
+        resolvers: #CF 1 and 2nd DNS Resolvers
           - "1.1.1.1:53"
           - "1.0.0.1:53"
 ```
@@ -335,7 +340,7 @@ certificatesResolvers:
 {{< /tabs >}}
 
 
-And last but not least:
+And last but not least, we need to **create a strong password**
 
 ```sh
 sudo apt install apache2-utils
@@ -344,8 +349,17 @@ sudo apt install apache2-utils
 echo $(htpasswd -nb "admin" "admin") | sed -e s/\\$/\\$\\$/g #place the full result into the dockercompose for the dash creds
 ```
 
-Right on this label `traefik.http.middlewares.traefik-auth.basicauth.users`
+Right on this label of the docker compose: `traefik.http.middlewares.traefik-auth.basicauth.users`
 
+And now, we just do:
+
+```sh
+sudo docker-compose up -d
+```
+
+And I got this kind of error:
+
+`2025-02-08T22:54:03Z ERR Error while building configuration (for the first time) error="error reading configuration file: /config.yml - read /config.yml: is a directory" providerName=file`
 
 ```yml
 #https://github.com/JamesTurland/JimsGarage/blob/main/Traefik/docker-compose.yml
@@ -403,3 +417,13 @@ networks:
 
 
 * https://www.jimgogarty.com/installing-traefik-on-docker-with-docker-compose/
+
+
+#### Traefik JimGarage v3.3
+
+* https://github.com/JamesTurland/JimsGarage/tree/main/Traefikv3
+
+
+
+<!-- https://www.youtube.com/watch?v=CmUzMi5QLzI -->
+{{< youtube "CmUzMi5QLzI" >}}
