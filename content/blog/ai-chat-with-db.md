@@ -35,7 +35,7 @@ flowchart LR
 {{< /details >}}
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data" title="Chat with Data" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="With Groq API" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data" title="Chat with Data" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="Other LangChain use cases" >}}
   {{< card link="https://github.com/JAlcocerT/Data-Chat" title="Data Chat" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source Code for DB Chat with Langchain" >}}
 {{< /cards >}}
 
@@ -67,6 +67,42 @@ You can also open it with: [![Open in Google Colab](https://colab.research.googl
 This example uses **MySQL**.
 
 You can also try similarly, with SQLite.
+
+We will download the `Chinook_MySQL.sql` file.
+
+* https://github.com/lerocha/chinook-database
+* https://github.com/lerocha/chinook-database/releases
+
+```sh
+curl -L -O https://github.com/lerocha/chinook-database/releases/download/v1.4.5/Chinook_MySql.sql
+```
+
+And place it in a local folder, that will be referenced by the docker compose file, like: `/home/jalcocert/Desktop/Data-Chat/LangChain/ChatWithDB`
+
+```yml
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=your_strong_root_password # Replace with a strong password
+      - MYSQL_DATABASE=chinook # Set the default database (optional, but recommended)
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=mypassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql        # Named volume for data persistence
+      - /home/jalcocert/Desktop/Data-Chat/LangChain/ChatWithDB:/docker-entrypoint-initdb.d # Mount the init scripts directory
+
+volumes:
+  mysql_data:
+```
+
+Now, verify that the Chinok DB is actually there:
+
+```sh
+mysql -u root -p
+```
 
 
 {{< details title="MySQL Installation CLI 👇" closed="true" >}}
@@ -117,9 +153,27 @@ Now, you can see that MySQL is installed, just inside the container:
 
 {{< /details >}}
 
+### Tweak MySQL
 
 
-## Loading the Chinook Database
+
+While being inside the container, access the DB root user:
+
+```sh
+sudo docker exec -it mysql-db /bin/bash
+rootpassword
+
+#sudo mysql -u root
+#USE mysql;
+#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';
+#FLUSH PRIVILEGES;
+#EXIT
+
+#mysql -u root -p
+```
+
+
+### Loading the Chinook Database
 
 We'll use the **Chinook database as a sample**.
 

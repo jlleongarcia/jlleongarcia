@@ -71,9 +71,7 @@ export default config({
 	},
 ```
 
-But for Github mode:
-
-http://127.0.0.1:4321/keystatic/setup
+But for Github mode: http://127.0.0.1:4321/keystatic/setup
 
 ```tsx
 import { config } from "@keystatic/core";

@@ -1,6 +1,6 @@
 ---
 title: "Which OS for a NAS?"
-date: 2025-01-17
+date: 2025-03-17
 draft: false
 tags: ["Gen-AI","Python","Dev"]
 summary: 'Testing Operative System for a NAS'
