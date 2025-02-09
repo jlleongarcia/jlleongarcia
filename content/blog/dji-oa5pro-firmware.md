@@ -37,12 +37,8 @@ For example, in video or audio, the **bit rate** determines the **quality** and 
 
 ### About OA5Pro Videos
 
-After the firmware update:
 
-* 4k UW RS - 100% to 67% battery with a 
-
-
-Before Firmwaure update
+Before firmware update (only one default bit rate):
 
 |**Image Quality**|**Space (per second)**|**Space (30min)**|**Bit Rate**|**Battery**|
 |:---|:---|:---|:---|:---|
@@ -69,7 +65,7 @@ But there is live beyond the CLI.
 
 > https://github.com/KDE/kdenlive
 
-Cutting a Video
+Cutting a Video:
 
 <!-- https://www.youtube.com/watch?v=IH25sxOTKuc -->
 
@@ -314,7 +310,7 @@ convert too_big_image.jpg -quality 50% output_image.jpg #ok to upload to YT
 
 ### Thanks to
 
-For explaining the firmware update process:
+For explaining the **firmware update** process:
 
 <!-- https://www.youtube.com/watch?v=1GTZzLX86u4 -->
 
@@ -344,10 +340,9 @@ The **limitant is the internal memory** / the SD card im using with the osmo cam
 
 Files has an interesting naming with the GoPro: `GX010389`, then it would go the `GX020389`...
 
-
 2. The bit rate when recording at 4K60 is ~60.2Mbit/s with a GPH9.
 
-The OA5Pro now was ~100Mbit/s when bit rate is selected as high.
+The OA5Pro now is **~100Mbit/s** when bit rate is selected **as high**.
 
 3. The **GoPro has GPS** - Which allow us to do [cool analysis with python](https://github.com/JAlcocerT/Py_RouteTracker/tree/main/Z_GoPro)
 

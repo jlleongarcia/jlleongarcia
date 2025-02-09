@@ -79,7 +79,7 @@ The initial scripts I used are at [YT_Audios](https://github.com/JAlcocerT/JAlco
 #### Updating My YT Video WF [AI Powered]
 
 * OBSStudio to record + I record myself commenting the video
-* Then, that .mp4 gets a transcript, which is passed to the OpenAI API to generate an AI voice
+* Then, that `.mp4` gets a transcript, which is passed to the OpenAI API to generate an AI voice
 
 ![Karting Adventure](/blog_img/memes/ezoeazin.JPG)
 
