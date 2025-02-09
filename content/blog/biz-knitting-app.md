@@ -55,4 +55,5 @@ I got the ig profile shared via email, and they are...making you go back to the 
 Unless... :)
 
 
-gaugeswatch.jpeg
+
+Im now using https://github.com/Litlyx/litlyx for the web analytics of this project

@@ -62,47 +62,14 @@ The complete, working code is available in my [data-chat repository](https://git
 
 You can also open it with: [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/LangChain_MySQL_DB_Chat.ipynb)
 
-## Setting Up Your Database
+## Setting Up The Database
 
 This example uses **MySQL**.
 
 You can also try similarly, with SQLite.
 
-We will download the `Chinook_MySQL.sql` file.
 
-* https://github.com/lerocha/chinook-database
-* https://github.com/lerocha/chinook-database/releases
-
-```sh
-curl -L -O https://github.com/lerocha/chinook-database/releases/download/v1.4.5/Chinook_MySql.sql
-```
-
-And place it in a local folder, that will be referenced by the docker compose file, like: `/home/jalcocert/Desktop/Data-Chat/LangChain/ChatWithDB`
-
-```yml
-services:
-  db:
-    image: mysql:8.0
-    environment:
-      - MYSQL_ROOT_PASSWORD=your_strong_root_password # Replace with a strong password
-      - MYSQL_DATABASE=chinook # Set the default database (optional, but recommended)
-      - MYSQL_USER=myuser
-      - MYSQL_PASSWORD=mypassword
-    ports:
-      - "3306:3306"
-    volumes:
-      - mysql_data:/var/lib/mysql        # Named volume for data persistence
-      - /home/jalcocert/Desktop/Data-Chat/LangChain/ChatWithDB:/docker-entrypoint-initdb.d # Mount the init scripts directory
-
-volumes:
-  mysql_data:
-```
-
-Now, verify that the Chinok DB is actually there:
-
-```sh
-mysql -u root -p
-```
+### MySQL Installation
 
 
 {{< details title="MySQL Installation CLI 👇" closed="true" >}}
@@ -153,11 +120,59 @@ Now, you can see that MySQL is installed, just inside the container:
 
 {{< /details >}}
 
+We will download the `Chinook_MySQL.sql` file.
+
+* https://github.com/lerocha/chinook-database
+* https://github.com/lerocha/chinook-database/releases
+
+```sh
+curl -L -O https://github.com/lerocha/chinook-database/releases/download/v1.4.5/Chinook_MySql.sql
+```
+
+And place it in a local folder, that will be referenced by the docker compose file, like: `/home/jalcocert/Desktop/Data-Chat/LangChain/ChatWithDB`
+
+```yml
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=your_strong_root_password # Replace with a strong password
+      - MYSQL_DATABASE=chinook # Set the default database (optional, but recommended)
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=mypassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql        # Named volume for data persistence
+      - /home/jalcocert/Desktop/Data-Chat/LangChain/ChatWithDB:/docker-entrypoint-initdb.d # Mount the init scripts directory
+
+volumes:
+  mysql_data:
+```
+
+Now, verify that the **Chinok DB is available**:
+
+```sh
+mysql -u root -p
+```
+
+### Exploring the Sample DB
+
+If you prefer to explore with a graphical interface, you can **setup Dbeaver**.
+
+* https://dbeaver.io/download/
+
+> Universal Database Manager and SQL Client
+
+
+```sh
+sudo snap install dbeaver-ce #https://flathub.org/apps/io.dbeaver.DBeaverCommunity
+```
+
+
 ### Tweak MySQL
 
-
-
-While being inside the container, access the DB root user:
+While being inside the container, access the **DB root user**:
 
 ```sh
 sudo docker exec -it mysql-db /bin/bash

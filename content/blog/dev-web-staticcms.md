@@ -236,7 +236,7 @@ It's *possible* to use Keystatic with SSG, but it usually requires a different a
 
 ## Conclusion
 
-https://jalcocert.github.io/landingpad/
+This is how it looks, hosted on github pages: https://jalcocert.github.io/landingpad/
 
 ### KeyStatic + GH Pages + a Server
 
