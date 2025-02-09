@@ -206,11 +206,7 @@ Remember that the **kinetic energy** of a body goes as: $KE = \frac{1}{2}mv^2$
 Let's break down the relationship between force, acceleration, power, and kinetic energy using KaTeX for the equations.
 
 
-Newton's second law of motion states:
-
-$$
-F = ma
-$$
+Newton's second law of motion states: $F = ma$
 
 where:
 
@@ -222,13 +218,11 @@ Power (P) is defined as the rate at which work is done, or the rate at which ene
 
 When a force is applied to an object and causes it to move, work is done.  
 
-Power can be expressed as:
-
-$$
-P = Fv
-$$
+**Power** can be expressed as: $P = Fv$
 
 where `v` is the *instantaneous* velocity of the object.
+
+> So more power, gives you a higher force to keep accelerating, at a given speed.
 
 The *work-energy theorem* states that the work done on an object is equal to the change in its kinetic energy.  
 
@@ -255,27 +249,28 @@ $$
 The change in kinetic energy (`dKE`) over a small time interval (`dt`) is equal to the force (`F`) times the velocity (`v`) times the time interval (`dt`).
 
 
-Notice that `Fv` is the power (P). So, we can write:
-
-```katex
-d(KE) = P \, dt
-```
+Notice that `Fv` is the power (P). So, we can write: $d(KE) = P \, dt$
 
 This equation tells us that the change in kinetic energy is equal to the power applied multiplied by the time interval over which the power is applied.
 
 Integrating both sides with respect to time gives the total change in kinetic energy:
 
-```katex
+$$
 \Delta KE = \int P \, dt
-```
+$$
 
 If the power is constant over a time interval `Δt`, then:
 
-```katex
+$$
 \Delta KE = P \Delta t
-```
+$$
 
 > The change in kinetic energy is equal to the work done, which is equal to the power applied multiplied by the time interval.
+
+
+{{< callout type="info" >}}
+Thanks to [Hextra and Katex](https://imfing.github.io/hextra/docs/guide/latex/)
+{{< /callout >}}
 
 
 **Calculations:**

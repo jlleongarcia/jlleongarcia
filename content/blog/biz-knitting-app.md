@@ -46,14 +46,12 @@ We just need to sum areas...of the designed completed.
 
 ## Learnt with This!
 
-Its also possible to do QR to link with Python and CV!
+Its also possible to do **QR to link** with Python and CV!
 
 Why i needed that?
 
 I got the ig profile shared via email, and they are...making you go back to the app, with a QR code.
 
 Unless... :)
-
-
 
 Im now using https://github.com/Litlyx/litlyx for the web analytics of this project
