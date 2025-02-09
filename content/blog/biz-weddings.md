@@ -318,6 +318,12 @@ There are other **PaaS alternatives** like:
 
 > MIT | A docker-powered PaaS that helps you build and manage the lifecycle of applications
 
+5. [Quantum](https://github.com/rodyherrera/Quantum)
+
+> MIT | 🚀 Hackable & Self-hosted Open-Source alternative to Vercel, Heroku, Netlify, etc. All your applications, just in one place. Develop and deploy with your favorite tools, and enjoy continuous deployment with GitHub.
+
+
+
 Which I will cover on a future post.
 
 ## Conclusions

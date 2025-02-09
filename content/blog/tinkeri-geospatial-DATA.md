@@ -115,9 +115,14 @@ exiftool -ee ./GX030390.MP4 > output-GX030390.txt #saves it
 
 You can also open it with: [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Py_RouteTracker/blob/main/Py_RoutePolar.ipynb)
 
-![PhyPhox Karting](/blog_img/iot/phyphox-android.jpg)
+<!-- ![PhyPhox Karting](/blog_img/iot/phyphox-android.jpg) -->
 
-![Heart zones](/blog_img/iot/Zonas-Cardiacas.png)
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/blog/tinker-phyphox/" title="Polar Data" image="/blog_img/iot/Zonas-Cardiacas.png" subtitle="With Python" >}}
+  {{< card link="https://github.com/JAlcocerT/Py_RouteTracker" title="Route Tracker" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Analyzing Routes Data with Python" >}}
+{{< /cards >}}
+
+<!-- ![Heart zones](/blog_img/iot/Zonas-Cardiacas.png) -->
 
 
 ---
@@ -140,10 +145,12 @@ With the [updated firmware](https://jalcocert.github.io/JAlcocerT/dji-oa5pro-fir
 
 * 38.9GB total files (every 17.2gb or 1h 12min there is a file reset)
 * Bitrate 31168 kbps, with an average size of **~3.75MB/s**
-* Using 80% of the total battery
+* Using 80% of the total battery for those ~2h 45min of video
+
+> This happened while recording at ~0C
 
 
-Im now using rsync to move the big files:
+Im now using **rsync** to move the big video files:
 
 ```sh
 #cp *.MP4 /home/jalcocert/Desktop/oa5pro/
@@ -194,7 +201,82 @@ Speed wont increase that quick.
 
 Remember that the **kinetic energy** of a body goes as: $KE = \frac{1}{2}mv^2$
 
-Remember that the relationship isn't linear, so these percentages describe the *change* but don't explain the *why* behind the change (as discussed in the previous response about non-linear relationships).
+**The relationship isn't linear**, so these percentages describe the *change* but don't explain the *why* behind the change (as discussed in the previous response about non-linear relationships).
+
+Let's break down the relationship between force, acceleration, power, and kinetic energy using KaTeX for the equations.
+
+
+Newton's second law of motion states:
+
+$$
+F = ma
+$$
+
+where:
+
+* `F` is the force applied to the object
+* `a` is the acceleration of the object (the rate of change of velocity)
+
+
+Power (P) is defined as the rate at which work is done, or the rate at which energy is transferred.  
+
+When a force is applied to an object and causes it to move, work is done.  
+
+Power can be expressed as:
+
+$$
+P = Fv
+$$
+
+where `v` is the *instantaneous* velocity of the object.
+
+The *work-energy theorem* states that the work done on an object is equal to the change in its kinetic energy.  
+
+When a force causes an object to accelerate, it does work on the object, and this work appears as an increase in the object's kinetic energy.
+
+Let's consider a small change in kinetic energy (`dKE`) due to a small change in velocity (`dv`).  We can differentiate the kinetic energy equation:
+
+$$
+d(KE) = d(\frac{1}{2}mv^2) = \frac{1}{2}m(2v \, dv) = mvdv
+$$
+
+Now, we know that acceleration `a` is the rate of change of velocity with respect to time:  `a = dv/dt`.  Therefore, `dv = a dt`. Substituting this into the equation above:
+
+$$
+d(KE) = mv(a \, dt) = (ma)v \, dt
+$$
+
+Since `F = ma`, we have:
+
+$$
+d(KE) = Fv \, dt
+$$
+
+The change in kinetic energy (`dKE`) over a small time interval (`dt`) is equal to the force (`F`) times the velocity (`v`) times the time interval (`dt`).
+
+
+Notice that `Fv` is the power (P). So, we can write:
+
+```katex
+d(KE) = P \, dt
+```
+
+This equation tells us that the change in kinetic energy is equal to the power applied multiplied by the time interval over which the power is applied.
+
+Integrating both sides with respect to time gives the total change in kinetic energy:
+
+```katex
+\Delta KE = \int P \, dt
+```
+
+If the power is constant over a time interval `Δt`, then:
+
+```katex
+\Delta KE = P \Delta t
+```
+
+> The change in kinetic energy is equal to the work done, which is equal to the power applied multiplied by the time interval.
+
 
 **Calculations:**
 

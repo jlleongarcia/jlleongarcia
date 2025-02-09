@@ -49,7 +49,10 @@ They also provide an [API](https://haveibeenpwned.com/API/Key), which you would 
 
 1. https://selfhosted.show/
 2. https://selfh.st/
-3. 
+3. https://theselfhostingblog.com/
+4. https://howitlooks.dev/
+5. https://www.reddit.com/r/selfhosted/?rdt=43112
+6. https://www.reddit.com/r/SelfHosting/
 
 
 ### Interesting Software for Servers
