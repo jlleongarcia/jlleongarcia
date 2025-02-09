@@ -162,12 +162,15 @@ To simulate the **motion of a double pendulum**, we just need...
 
 $$
 \begin{aligned}
-\ddot{\theta}_1 &= \frac{m_2 g \sin(\theta_2) \cos(\theta_1 - \theta_2) - m_2 \sin(\theta_1 - \theta_2) (L_1 \dot{\theta}_1^2 \cos(\theta_1 - \theta_2) + L_2 \dot{\theta}_2^2) - (m_1 + m_2) g \sin(\theta_1)}{L_1 (m_1 + m_2 \sin^2(\theta_1 - \theta_2))}\\
+\ddot{\theta}_1 &= \frac{m_2 g \sin(\theta_2) \cos(\theta_1 - \theta_2) - m_2 \sin(\theta_1 - \theta_2) (L_1 \dot{\theta}_1^2 \cos(\theta_1 - \theta_2) + L_2 \dot{\theta}_2^2) - (m_1 + m_2) g \sin(\theta_1)}{L_1 (m_1 + m_2 \sin^2(\theta_1 - \theta_2))}
+$$
+
+$$
 \ddot{\theta}_2 &= \frac{(m_1 + m_2)(L_1 \dot{\theta}_1^2 \sin(\theta_1 - \theta_2) - g \sin(\theta_2) + g \sin(\theta_1) \cos(\theta_1 - \theta_2)) + m_2 L_2 \dot{\theta}_2^2 \sin(\theta_1 - \theta_2) \cos(\theta_1 - \theta_2)}{L_2 (m_1 + m_2 \sin^2(\theta_1 - \theta_2))}
 \end{aligned}
 $$
 
-...its equation of motion.
+...its equations of motion.
 
 And now its all about writting them in Python:
 
