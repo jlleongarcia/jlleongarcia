@@ -68,7 +68,7 @@ lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT | awk 'NR==1 || $2 ~ /[GT]/'
 
 {{% details title="Asrock X300 Wifi Connectivity 📌" closed="true" %}}
 
-Using an TP-Link Archer T3U (AC1300), which I upgraded to the **AC1300 T4U Plus** version.
+Using an **TP-Link Archer T3U (AC1300)**, which I upgraded to the **AC1300 T4U Plus** version.
 
 
 ```sh
@@ -169,6 +169,8 @@ powerprofilesctl list
 
 
 {{< /details >}}
+
+The X300 supports 2.5-inch drives with a thickness of 7mm or 9.5mm.
 
 
 ### What am I using it for right now?

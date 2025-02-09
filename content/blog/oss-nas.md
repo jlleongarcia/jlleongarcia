@@ -48,4 +48,15 @@ They also provide an [API](https://haveibeenpwned.com/API/Key), which you would 
 ### Cool Blogs Ive found recently
 
 1. https://selfhosted.show/
+2. https://selfh.st/
+3. 
 
+
+### Interesting Software for Servers
+
+https://github.com/moghtech/komodo
+
+> 🦎 a tool to build and deploy software on many servers 🦎
+
+<!-- https://www.youtube.com/watch?v=acDVwwLklas -->
+{{< youtube "acDVwwLklas" >}}

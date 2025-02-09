@@ -456,8 +456,8 @@ See **other popular RAG frameworks**, alternatives to Langchain:
 #### PPT as a Code
 
 {{< cards cols="2" >}}
-  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="NGINX" >}}
-  {{< card link="https://github.com/JAlcocerT/Docker/tree/main/Backups/Photos" title="Docker Repo" >}}
+  {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="NGINX ↗" >}}
+  {{< card link="https://github.com/JAlcocerT/Docker/tree/main/Backups/Photos" title="Docker Repo ↗" >}}
 {{< /cards >}}
 
 ### Other Cool LangChain Features

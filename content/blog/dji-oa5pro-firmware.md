@@ -299,10 +299,10 @@ You can use **inkscape, gimp** to create a catchy image:
 flatpak install flathub org.inkscape.Inkscape
 ```
 
-or, if you have an image already but it is bigger than 2.5mb, you can use CLI to reduce it:
+or, if you have an image already but it is bigger than 2.5mb, you can use **CLI to reduce the image**:
 
 ```sh
-sudo apt install imagemagick
+#sudo apt install imagemagick
 convert too_big_image.jpg -quality 50% output_image.jpg #ok to upload to YT
 ```
 

@@ -5,14 +5,17 @@ draft: false
 tags: ["Dev"]
 description: 'What Ive learnt so far about GeoSpatial Data Analysis. Applied to GoPro MetaData Extraction. And karting.'
 url: 'geospatial-data'
+math: true
 ---
+
+
+
+## GeoSpatial Data Formats
 
 
 {{< callout type="info" >}}
 Geospatial learnings are collected at [RouteTracker Repo](https://github.com/JAlcocerT/Py_RouteTracker) 💻
 {{< /callout >}}
-
-## GeoSpatial Data Formats
 
 ### GeoJSON
 
@@ -46,7 +49,14 @@ Related Projects Files are at [RouteTracker](https://github.com/JAlcocerT/Py_Rou
 
 Hey, but why would you want to...
 
-![Phyphox Android Karting](/blog_img/iot/phyphox-android.jpg)
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/blog/tinker-phyphox/" title="PhyPhox" image="/blog_img/iot/phyphox-android.jpg" subtitle="Physical Experiments with an Android Phone" >}}
+  {{< card link="https://github.com/JAlcocerT/Py_RouteTracker" title="Route Tracker" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Analyzing Routes Data with Python" >}}
+{{< /cards >}}
+
+<!-- 
+![Phyphox Android Karting](/blog_img/iot/phyphox-android.jpg) 
+-->
 
 People do this kind of **cool stuff**:
 
@@ -126,10 +136,14 @@ https://studio.youtube.com/video/2ZSDeD3HzHg/edit
 
 {{< youtube "2ZSDeD3HzHg" >}}
 
-With the [updated firmware](https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/) and **high bit rate**, `1080p30 UW RS` I got With 80% battery:
+With the [updated firmware](https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/) and **high bit rate**, `1080p30 UW RS` I got:
 
 * 38.9GB total files (every 17.2gb or 1h 12min there is a file reset)
-* bitrate 31168 kbps, with an average size of **~3.75MB/s**
+* Bitrate 31168 kbps, with an average size of **~3.75MB/s**
+* Using 80% of the total battery
+
+
+Im now using rsync to move the big files:
 
 ```sh
 #cp *.MP4 /home/jalcocert/Desktop/oa5pro/
@@ -140,9 +154,43 @@ rsync -avP *.MP4 /home/jalcocert/Desktop/oa5pro/ #speeds of ~32mb/s from interna
 
 ## Learn with this one
 
-More power is good.
+### Video to Image to GIF
 
-But speed wont increase that quick.
+
+The choice between PNG and JPG depends on the trade-off between **image quality** and **file size**:  
+
+```bash
+#from second 90 of the video, give me 1fps
+ffmpeg -i DJI_20250116072852_0036_D.MP4 -vf "select='gte(t\,90)',fps=1" -vsync vfr frame_%03d.png
+ffmpeg -i DJI_20250116072852_0036_D.MP4 -vf "select='gte(t\,90)',fps=1" -vsync vfr frame_%03d.jpg
+```
+
+- **Use PNG** if you need high-quality, lossless images.
+- **Use JPG** if you want smaller file sizes and are okay with slight quality loss.
+
+{{< cards cols="2" >}}
+  {{< card link="https://github.com/JAlcocerT/YT-Video-Edition/tree/main/With_FFmpeg/Video2Images" title="Video2Images ↗" >}}
+  {{< card link="https://github.com/JAlcocerT/YT-Video-Edition/tree/main/With_FFmpeg/Images2Gif" title="Images2Gif ↗" >}}
+{{< /cards >}}
+
+And just between 90s and 105s:
+
+```sh
+ffmpeg -i DJI_20250116072528_0035_D.MP4 -vf "select='between(t,90,105)',fps=1" -vsync vfr frame_%03d.png
+```
+
+> This is an interesting way to generate Images for YT Videos!
+
+{{< callout type="info" >}}
+And if the image is too big, [you can reduce it](https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/#image-caption).
+{{< /callout >}}
+
+
+### More power is good BUT
+
+But!
+
+Speed wont increase that quick.
 
 Remember that the **kinetic energy** of a body goes as: $KE = \frac{1}{2}mv^2$
 
