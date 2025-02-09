@@ -12,3 +12,6 @@ url: 'telemetry-overlay'
 I tried to bypass this with: https://jalcocert.github.io/JAlcocerT/polar-data-python-analysis/
 
 and with https://jalcocert.github.io/JAlcocerT/blog/tinker-phyphox/
+
+Then the geospatial analysis came...https://jalcocert.github.io/JAlcocerT/geospatial-data/
+

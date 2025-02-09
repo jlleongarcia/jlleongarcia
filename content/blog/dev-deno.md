@@ -12,7 +12,7 @@ https://github.com/denoland/deno
 
 
 
-and now we can **run js on jupyter notebooks**!
+And now we can **run js on jupyter notebooks**!
 
 
 <!-- 

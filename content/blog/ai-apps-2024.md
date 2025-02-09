@@ -4,7 +4,7 @@ date: 2024-12-16T23:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
-description: 'How to get your custom MultiChat, Youtube Summarizer and more ready for SelfHosting with Caddy. Bonus Traefik and NGINX Proxies.'
+description: 'How to get your custom MultiChat, Youtube Summarizer and more ready for SelfHosting with Caddy. Bonus comparison with Traefik and NGINX Proxies.'
 summary: 'A recap on Python AI Apps that I have been working on during 2024'
 url: 'selfhosting-python-ai-apps-caddy'
 ---
@@ -113,6 +113,12 @@ volumes:
 
 * https://github.com/serfriz/caddy-custom-builds
 * https://github.com/lucaslorentz/caddy-docker-proxy
+
+* https://github.com/DeanWard/CaddyGen
+
+> Simplify Caddy configs with SSL, proxies, file servers, security headers, compression & more.
+
+
 
 ```sh
 mkdir -p containers/caddy && touch containers/caddy/Caddyfile
@@ -227,6 +233,10 @@ I have tried Caddy with a OVH VPS Server with 2GB RAM.
 ssh ubuntu@57.128.public.ip
 ```
 
+### Thanks To
+
+https://akashrajpurohit.com/blog/setup-caddy-with-automatic-ssl-certificates-with-cloudflare/
+https://akashrajpurohit.com/blog/setup-authelia-for-sso-authentication/
 
 ---
 

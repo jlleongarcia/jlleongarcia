@@ -3,7 +3,7 @@ title: "Financial Data for Python - Trying YahooFinancial and YFinance packages"
 date: 2025-01-26
 draft: false
 tags: ["Python"]
-description: "Initial yield vs growth, the math. How to analyze stock and dividend data with Python"
+description: "Initial yield vs growth, the math. How to analyze stock and dividend data with Python. Together with Data animations."
 summary: 'Data for Python Financial Apps'
 url: 'python-financial-data-with-yfinance'
 math: true

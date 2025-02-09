@@ -3,7 +3,6 @@ title: "Having a look to Static CMS"
 date: 2025-02-07
 draft: false
 tags: ["dev"]
-summary: ''
 description: 'KeyStatic. Creating a website for a moto blogger.'
 url: 'understanding-static-cms'
 ---
@@ -120,7 +119,7 @@ When GH Mode is active, the changes wont be happening in the local files, you wi
 
 ### Github Mode with Github Pages
 
-Im a big fan if github pages.
+Im a big fan of github pages.
 
 And this was resonating so much with this setup.
 

@@ -30,7 +30,7 @@ This is how [CV-Check // **CVCreAItor**](https://gitlab.com/fossengineer1/cv-che
 {{< /callout >}}
 
 
-![Beszel](/blog_img/GenAI/Aissistant.png)
+![AIssistant](/blog_img/GenAI/Aissistant.png)
 
 {{< cards cols="2" >}}
   {{< card link="https://gitlab.com/fossengineer1/cv-check" title="CV Project" >}}

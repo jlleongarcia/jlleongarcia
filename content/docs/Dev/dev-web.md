@@ -43,16 +43,6 @@ In there you can do interesting things, like adding **web analytics**.
 4. A CDN?
 5. APIs: [Forms, Newsletters](https://jalcocert.github.io/JAlcocerT/blog/dev-forms/), email marketing
 
-{{< details title="About favicons 📌" closed="true" >}}
-
-as in the [withastro/starlight Theme](https://github.com/IoTechCrafts/starlight-SSG) or Pacamara
-
-Images for Web
-- [Unsplash](https://unsplash.com/)
-- [Heroicons](https://heroicons.dev/)
-- [Feathericons](https://feathericons.dev/?iconset=payments)
-
-{{< /details >}}
 
 
 {{< details title="How to get OpenGraph - OGImage right 📌" closed="true" >}}
@@ -376,10 +366,6 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
 
 > MIT | 🕵️‍♂️ All-in-one OSINT tool for analysing any website
 
-* You will need **proper favicons**
-    * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
-    * https://github.com/seadfeng/favicon-downloader
-
 5. See how a linkshortener see your site: https://dub.co/
 
 ### CDN and Videos for your Website
@@ -390,11 +376,11 @@ docker run --rm -dp 3030:3030 cveinnt/letsMarkdown
 
 ### Interesting Search Engines
 
-* Ecosia.org / qwant.com / Brave / DuckDuckGo
+* Ecosia.org / qwant.com / Brave / DuckDuckGo / ...
 * [Whoogle/SearXNG](https://jalcocert.github.io/RPi/posts/selfh-internet-better/)
 * Bing 
 
-It's worth to try few of them - not all the content is indexed in the same way across engines
+It's worth to **try few of them** - not all the content is indexed in the same way across engines
 
 {{< callout type="info" >}}
 **Thanks to Ecosia** I could find how to add Web Analytics to the Jekyll Chirpy Theme!
@@ -408,10 +394,10 @@ It's worth to try few of them - not all the content is indexed in the same way a
 
 Does all of this sounds too complex for the first website?
 
-Try with:
+Then, Try with:
 
 * Instant land
-* Wordpress or Ghost
+* [Wordpress](https://fossengineer.com/selfhosting-wordpress-docker/) or [Ghost](https://fossengineer.com/selfhosting-ghost-docker/)
 * Writefreely
 
 ### Choosing Colors for a Web
@@ -419,6 +405,32 @@ Try with:
 * https://github.com/eigenmiao/Rickrack
 
 ### Favicon Creation
+
+
+For **regular icons**, [iconify](https://github.com/iconify/iconify) is a great place to start.
+
+> Universal icon framework. One syntax for FontAwesome, Material Design Icons, DashIcons, Feather Icons, EmojiOne, Noto Emoji and many other open source icon sets ([over 150 icon sets and 200k icons](https://github.com/iconify/icon-sets)). SVG framework, React, Vue and Svelte components!
+
+Or with https://github.com/pqoqubbw/icons
+
+> MIT | beautifully crafted animated icons
+
+
+* You will need **proper favicons**
+    * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
+    * https://github.com/seadfeng/favicon-downloader
+
+
+{{< details title="About favicons 📌" closed="true" >}}
+
+as in the [withastro/starlight Theme](https://github.com/IoTechCrafts/starlight-SSG) or Pacamara
+
+Images for Web
+- [Unsplash](https://unsplash.com/)
+- [Heroicons](https://heroicons.dev/)
+- [Feathericons](https://feathericons.dev/?iconset=payments)
+
+{{< /details >}}
 
 * FavYcon - https://github.com/ruisaraiva19/favycon
 

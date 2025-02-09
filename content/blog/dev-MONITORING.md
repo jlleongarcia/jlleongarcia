@@ -122,6 +122,7 @@ And you can actually use Netdata + Grafana + Prometheus to make a cool monitorin
 2. [Internet Speed Tracker](https://fossengineer.com/selfhosting-internet-speed-tracker-with-docker/)
 3. [WatchYourLan Setup](https://fossengineer.com/selfhosting-WatchYourLAN-docker/)
 4. Gatus - OSS website monitoring!
+5. https://akashrajpurohit.com/blog/monitor-internet-speed-with-speedtest-tracker/
 
 <!-- https://www.youtube.com/watch?v=vlifG8dCqU8 -->
 {{< youtube "vlifG8dCqU8" >}}

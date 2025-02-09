@@ -14,6 +14,7 @@ editPost:
 description: "Python Streamlit Double Pendulum"
 summary: 'Exploring Chaos Theory with Python, a Double Pendulum Simulator App. By using Streamlit and physics equations, the app showcases the unpredictable yet deterministic movement in a digital realm.'
 url: 'chaos-theory-and-the-double-pendulum-with-python'
+math: true
 ---
 
 <!-- N95 vs iphone
@@ -94,15 +95,19 @@ Just when you think you know how everything will unfold, interesting behaviours 
 <!-- 
 w2 40
 
-
-w2 40 and L2 1.01 -->
+w2 40 and L2 1.01 
+-->
 
 
 ## From Theory to App: The Double Pendulum in Action 
 
-Inspired by this dance of unpredictability, I embarked on a journey to create an app that simulates the double pendulum's movements. Let me remind you now that the system is **chaotic but deterministic** - Given the same initial conditions, you will always get the same trajectory.
+Inspired by this dance of unpredictability, I embarked on a journey to create an app that simulates the double pendulum's movements.
 
-It's not just an app; it's a digital playground where you can tweak initial conditions, set the pendulums in motion, and watch the magic of non-linearity unfold.
+Let me remind you now that the system is **chaotic, yet deterministic**.
+
+Given the same initial conditions, you will always get the same trajectory.
+
+It's not just an app; it's a digital playground where you can tweak initial conditions, set the pendulums in motion, and **watch the magic of non-linearity unfold**.
 
 Every app has its genesis, a series of steps and decisions that bring it from concept to reality. The double pendulum app was no different, and its creation was a blend of technology, physics, and a dash of ingenuity.
 
@@ -110,13 +115,17 @@ These are the technologies that helped me craft the Python Double Pendulum App:
 
 ###  Streamlit: The Digital Canvas
 
-The first challenge was to create an interactive and user-friendly interface. Enter Streamlit. 
+The first challenge was to create an interactive and user-friendly interface.
+
+**Enter Streamlit**. 
 
 <!--
 ![Py_double_Pendulum APP gif](/img/Projects/double_pendulum.gif)
 -->
 
-This powerful tool became the canvas upon which the double pendulum would dance. With its intuitive design capabilities, Streamlit allowed for the seamless integration of visuals and controls, making the app not just functional but also a delight to use.
+This powerful tool became the canvas upon which the double pendulum would dance.
+
+With its intuitive design capabilities, Streamlit allowed for the seamless integration of visuals and controls, making the app not just functional but also a delight to use.
 
 ### The Heartbeat: Physics and Equations of Movement
 
@@ -126,24 +135,41 @@ This ensured that the app wasn't just a visual treat but also a scientifically a
 
 ### Docker: Packaging the Magic
 
-With the front end designed and the physics in place, the next step was to package the app. Docker came to the rescue, encapsulating the app and its environment into a neat, portable container. 
+With the front end designed and the physics in place, the next step was to package the app.
+
+Docker came to the rescue, **encapsulating the app** and its environment into a neat, portable container. 
 
 This ensured that the app could run consistently across different platforms, making it both versatile, reliable as it contains no external dependencies and reproducible.
 
 ###  Home Deployment: Cloudflare's Protective Shield
 
-The final piece of the puzzle was deployment. While many options were available, the decision to deploy the app at home added a personal touch. But [how to make it accessible to the world? Cloudflare](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/) provided the solution. Acting as a protective shield, Cloudflare ensured that the app, hosted from home, was safely exposed to the world, allowing users everywhere to witness the mesmerizing movements of the double pendulum.
+The final piece of the puzzle was deployment. While many options were available, the decision to deploy the app at home added a personal touch.
+
+But [how to make it accessible to the world? Cloudflare](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/) provided the solution.
+
+Acting as a protective shield, Cloudflare ensured that the app, hosted from home, was safely exposed to the world, allowing users everywhere to witness the mesmerizing movements of the double pendulum.
+
+---
 
 ## FAQ
-
 
 ### Show Me The Code
 
 I was definitely inspired with [jakevdp's work with a triple pendulum](http://jakevdp.github.io/blog/2017/03/08/triple-pendulum-chaos/) which it is a great resource. But let's face it, not everyone will check a pyhon notebook, so I decided to create the Python Double Pendulum Simulator together with Streamlit so that any person with a web browser could *play* and sense chaos theory in a practical and hassle free manner. 
 
 
-To simulate the motion of a double pendulum, we just need:
+To simulate the **motion of a double pendulum**, we just need...
 
+$$
+\begin{aligned}
+\ddot{\theta}_1 &= \frac{m_2 g \sin(\theta_2) \cos(\theta_1 - \theta_2) - m_2 \sin(\theta_1 - \theta_2) (L_1 \dot{\theta}_1^2 \cos(\theta_1 - \theta_2) + L_2 \dot{\theta}_2^2) - (m_1 + m_2) g \sin(\theta_1)}{L_1 (m_1 + m_2 \sin^2(\theta_1 - \theta_2))}\\
+\ddot{\theta}_2 &= \frac{(m_1 + m_2)(L_1 \dot{\theta}_1^2 \sin(\theta_1 - \theta_2) - g \sin(\theta_2) + g \sin(\theta_1) \cos(\theta_1 - \theta_2)) + m_2 L_2 \dot{\theta}_2^2 \sin(\theta_1 - \theta_2) \cos(\theta_1 - \theta_2)}{L_2 (m_1 + m_2 \sin^2(\theta_1 - \theta_2))}
+\end{aligned}
+$$
+
+...its equation of motion.
+
+And now its all about writting them in Python:
 
 ```py
 import numpy as np
@@ -189,7 +215,7 @@ fig.update_layout(width=600, height=600)
 fig.write_image('double_pendulum.png')
 ```
 
-You can run it with: streamlit run app.py
+You can run it with: `streamlit run app.py`
 
 ### How Can I try the Python Double Pendulum App?
 

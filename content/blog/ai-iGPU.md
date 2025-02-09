@@ -90,6 +90,26 @@ According to Steam records:
 * https://ugeek.github.io/blog/post/2022-03-25-termux-una-distro-linux-en-android-con-la-que-crear-tus-aplicaciones.html
 
 
+```sh
+sudo apt-get update
+sudo apt-get install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager
+```
+
+qemu-img create -f qcow2 mydisk.img 10G
+qemu-system-x86_64 -boot d -cdrom path/to/your/minimal.iso -m 512 -hda mydisk.img
+
+
+Follow the prompts to install the OS. Since you are using a minimal ISO, the installation process will be CLI-based.
+
+Once the OS is installed, boot the VM from the virtual disk image:
+
+```sh
+qemu-system-x86_64 -boot c -m 512 -hda mydisk.img
+
+```
+
+
+
 ### AI on Servers
 
 * https://www.runpod.io/serverless-gpu

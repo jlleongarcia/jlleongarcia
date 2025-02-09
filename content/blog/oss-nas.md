@@ -19,6 +19,12 @@ Time to try something new, getting ready for a **network attached storage**:
 * OpenMediaVault (OMV)
 * Synology
 
+### Tailscale
+
+```sh
+tailscale status
+
+```
 
 ## Conclusions
 
@@ -53,7 +59,8 @@ They also provide an [API](https://haveibeenpwned.com/API/Key), which you would 
 4. https://howitlooks.dev/
 5. https://www.reddit.com/r/selfhosted/?rdt=43112
 6. https://www.reddit.com/r/SelfHosting/
-
+7. https://akashrajpurohit.com/blogs/?ref=nav
+8. https://alternateoss.com/
 
 ### Interesting Software for Servers
 

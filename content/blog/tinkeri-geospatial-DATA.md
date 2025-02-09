@@ -19,13 +19,14 @@ Geospatial learnings are collected at [RouteTracker Repo](https://github.com/JAl
 
 ### GeoJSON
 
+With R I learnt about many other formats.
+
+one of them was GeoJson
+
 ### GPX
 
 Phone apps like Komoot or even [PhyPhox can save the GPS records as GPX files](https://www.leafwindow.com/en/get-gps-log-with-phyphox-and-plot-it-with-wp-gpx-maps-en/)
 
-
-
-> With R i learnt about many other formats.
 
 https://github.com/exiftool/exiftool/blob/master/fmt_files/gpx.fmt
 
@@ -47,16 +48,6 @@ Related Projects Files are at [RouteTracker](https://github.com/JAlcocerT/Py_Rou
 
 > GPLv3 | ExifTool meta information reader/writer
 
-Hey, but why would you want to...
-
-{{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/blog/tinker-phyphox/" title="PhyPhox" image="/blog_img/iot/phyphox-android.jpg" subtitle="Physical Experiments with an Android Phone" >}}
-  {{< card link="https://github.com/JAlcocerT/Py_RouteTracker" title="Route Tracker" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Analyzing Routes Data with Python" >}}
-{{< /cards >}}
-
-<!-- 
-![Phyphox Android Karting](/blog_img/iot/phyphox-android.jpg) 
--->
 
 People do this kind of **cool stuff**:
 
@@ -104,6 +95,17 @@ exiftool -ee ./GX030390.MP4 > output-GX030390.txt #saves it
 
 ## PhyPhox Data Extraction
 
+
+Hey, but why would you want to...
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/blog/tinker-phyphox/" title="PhyPhox" image="/blog_img/iot/phyphox-android.jpg" subtitle="Physical Experiments with an Android Phone" >}}
+  {{< card link="https://github.com/JAlcocerT/Py_RouteTracker" title="Route Tracker" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Analyzing Routes Data with Python" >}}
+{{< /cards >}}
+
+<!-- 
+![Phyphox Android Karting](/blog_img/iot/phyphox-android.jpg) 
+-->
 
 ---
 
