@@ -55,7 +55,7 @@ Unlike the [Orange Pi 5](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-b
 
 How does Firebat MiniPC compares to [other MiniPC's and SBC's?](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/)
 
-Lets find out:
+Lets find out!
 
 ### Firebat AK2 Benchmarks
 
@@ -76,7 +76,7 @@ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run #4 cores
 7z b -mmt4
 ```
 
-> Firebat results go down to 22k events if power saving mode is enabled in Linux
+> Firebat results go down to 22k events **if power saving mode is enabled** in Linux
 
 And now the real benchmarks:
 
@@ -99,7 +99,7 @@ time cargo install --git https://github.com/astral-sh/rye rye
 
 
 
-| Device                     | Docker Build       | Build Astral       |
+| Device                     | Docker Build Trip Planner      | Build Astral       |
 |----------------------------|--------------------|--------------------|
 | Raspberry Pi 4 2GB          | ~3672s             | 10min 7s           |
 | Raspberry Pi 4 4GB          | ~3480s             | -                  |
@@ -253,11 +253,7 @@ sudo ufw allow ssh
 
 You can use Tailscale DNS to make it easier to remember who is who:
 
-{{< details title="How to Setup Tailscale DNS 📌" closed="true" >}}
 
-TBD
-
-{{< /details >}}
 
 {{< details title="Reset Portainer Password 📌" closed="true" >}}
 
@@ -478,26 +474,6 @@ Explore more apps:
 {{< /cards >}}
 
 
-### FireBat Trip Planner
-
-How about using this [Trip Planner Project?](https://github.com/JAlcocerT/Py_Trip_Planner/)
-
-{{< details title="Setup Trip Planner 📌" closed="true" >}}
-
-
-
-```yml
-version: "2"
-services:
-  tripplanner:
-    image: ghcr.io/jalcocert/py_trip_planner #https://github.com/JAlcocerT/Py_Trip_Planner/pkgs/container/py_trip_planner
-    container_name: tripplanner
-    ports:
-      - 8051:8050
-    restart: unless-stopped
-```
-
-{{< /details >}}
 
 ## FireBat Conclusions
 
@@ -528,14 +504,14 @@ sudo apt update && sudo apt upgrade -y
 
 {{< details title="Customize Linux Visuals 📌" closed="true" >}}
 
-I love to start with the Garuda default wallpaper.
+I love to start with the **Garuda default wallpaper**.
 
 
 {{< /details >}}
 
 {{< details title="Gaming on the Firebat with Linux 📌" closed="true" >}}
 
-* Firebat has this GPU:
+* Firebat has this **GPU**:
 
 ```sh
 lspci | grep -i vga   #GPU info
@@ -665,12 +641,12 @@ A list of applications and tools, organized into categories
 
 **FOR LINUX**
 
-### Virtualization Software
+Virtualization Software
 - Oracle VM Virtual Box
 - VMware
 - vboxlinuxadditions.run
 
-### Development Tools
+Development Tools
 - RStudio
 - Visual Studio Code
 - Octave
@@ -786,6 +762,28 @@ A list of applications and tools, organized into categories
   *  Intel N95 16+512G GK3 PLUS ~115$
 
 {{< /details >}}
+
+### FireBat Trip Planner Setup
+
+How about using this [Trip Planner Project?](https://github.com/JAlcocerT/Py_Trip_Planner/)
+
+{{< details title="Setup Trip Planner 📌" closed="true" >}}
+
+Setup with docker compose, container image is created with GH Actions CI/CD.
+
+```yml
+version: "2"
+services:
+  tripplanner:
+    image: ghcr.io/jalcocert/py_trip_planner #https://github.com/JAlcocerT/Py_Trip_Planner/pkgs/container/py_trip_planner
+    container_name: tripplanner
+    ports:
+      - 8051:8050
+    restart: unless-stopped
+```
+
+{{< /details >}}
+
 
 ### How to Benchmark the Firebat MiniPC
 

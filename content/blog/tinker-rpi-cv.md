@@ -3,7 +3,7 @@ title: A Camera for the Raspberry Pi
 date: 2024-07-19T23:20:21+01:00
 draft: false
 tags: ["Tinkering"]
-summary: SimpleCV and OpenCV + Scrypted & HA. CV with a PI making the Pi camera work.
+summary: SimpleCV and OpenCV + Scrypted & HA. Computer Vision with a PI making the Pi camera work.
 url: 'raspberry-pi-camera-setup'
 ---
 
@@ -156,7 +156,8 @@ An NVR stands for Network Video Recorder. It's a specialized computer system des
 
 ### TensorFlow Lite
 
-* A)
+1. TF Lite Object Detection
+
 <!-- Tensorflow Lite with Object Detection on Raspberry Pi!
 https://www.youtube.com/watch?v=kX6zWqMP9U4 -->
 
@@ -198,11 +199,20 @@ Once all dependencies are installed in the chose isolated environment:
 python3 detect.py --model efficientdet_lite0.tflite
 ```
 
-* B) Raspberry Pi Object Detection Tutorial
+2. Raspberry Pi Object Detection Tutorial
 
 <!--  https://www.youtube.com/watch?v=NPXBRX7N3ec -->
 
-### OpenCV
+{{< youtube "NPXBRX7N3ec" >}}
+
+
+### Python Libraries for CV
+
+> See https://github.com/vinta/awesome-python?tab=readme-ov-file#computer-vision
+
+1. OpenCV
+2. PyTorch
+3. **Yolo (ultralytics)**
 
 <!-- https://www.youtube.com/watch?v=iOTWZI4RHA8&list=PLPK2l9Knytg7O_okVr-prI1KbZ8GJeMKz
 
@@ -211,16 +221,14 @@ https://core-electronics.com.au/guides/object-identify-raspberry-pi/
 Object Identification & Animal Recognition With Raspberry Pi + OpenCV + Python
  -->
 
-### PyTorch
 
 
-### Yolo (ultralytics)
 
-With Yolo Models - https://github.com/ultralytics/yolov5
+It would work with `Yolo Models` - https://github.com/ultralytics/yolov5
 
-```py
+<!-- ```py
 
-```
+``` -->
 
 
 <!-- 

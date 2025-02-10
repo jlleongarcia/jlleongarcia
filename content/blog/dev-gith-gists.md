@@ -4,7 +4,7 @@ date: 2021-10-15T23:20:21+01:00
 draft: false
 tags: ["Dev"]
 url: 'github-gists'
-summary: 'How to use Github gist as free image hosting'
+summary: 'How to use Github and Github gist as free image hosting.'
 ---
 
 In VSCode, the **source control graph** can guide you on whats going on.

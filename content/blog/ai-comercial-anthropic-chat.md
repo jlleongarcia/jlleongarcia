@@ -1,14 +1,13 @@
 ---
 title: "How to use Anthropic claude-3.5-sonnet with Streamlit"
-date: 2024-06-21T11:20:21+01:00
+date: 2024-06-20T11:20:21+01:00
 draft: false
 cover:
     image: "https://socialify.git.ci/jw782cn/Claude-Streamlit/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
     alt: "Claude with Streamlit" # alt text
     caption: "Running Claude (3.5 SOnnet) Models with Streamlit." # display caption under cover
 tags: ["Docker","Gen-AI","Python","Dev","Self-Hosting"]
-description: 'How to use Python with Claude 3.5 Sonnet API'
-summary: 'Testing Anthropic LLMs with Python'
+description: 'How to use Python with Claude 3.5 Sonnet. Anthropic API LLMs 101 with Python.'
 url: 'how-to-use-anthropic-api'
 ---
 

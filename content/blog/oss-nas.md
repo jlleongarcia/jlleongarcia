@@ -25,6 +25,13 @@ Time to try something new, getting ready for a **network attached storage**:
 tailscale status
 
 ```
+{{< details title="How to Setup Tailscale DNS 📌" closed="true" >}}
+
+TBD
+
+{{< /details >}}
+
+---
 
 ## Conclusions
 
@@ -70,3 +77,17 @@ https://github.com/moghtech/komodo
 
 <!-- https://www.youtube.com/watch?v=acDVwwLklas -->
 {{< youtube "acDVwwLklas" >}}
+
+#### Testing the Memory
+
+```sh
+sudo apt install hwinfo
+hwinfo --memory
+
+sudo apt install sysbench
+sysbench memory run
+```
+
+The x13 got ~8164 MiB/sec and the Pi 4 4GB ~175MiB/sec.
+
+Your server *most likely* will be in between.

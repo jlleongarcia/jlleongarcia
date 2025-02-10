@@ -1,14 +1,13 @@
 ---
-title: "Chat with different models with Streamlit"
-date: 2024-06-20T23:20:21+01:00
+title: "Chat with different models with Streamlit [Multichat]"
+date: 2024-06-21T23:20:21+01:00
 draft: false
 cover:
   image: "https://socialify.git.ci/dataprofessor/openai-chatbot/image?description=1&font=Inter&language=1&name=1&stargazers=1&theme=Auto"
   alt: "ChatGPT Clone" # alt text
   caption: "Build a ChatGPT Clone with Streamlit." # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
-description: 'ChatGPT Clone with Streamlit, but supporting multiple LLMs. Streamlit-MultiChat'
-summary: 'Building a ChatGPT4 Clone with Streamlit. Use GPT4 and GPT-4o through their APIs and avoid the recurring monthly subscription bill for ChatGPT.'
+description: 'ChatGPT Clone with Streamlit, but supporting multiple LLMs. Streamlit-MultiChat Project'
 url: 'create-streamlit-chatgpt'
 ---
 
@@ -180,7 +179,7 @@ The project's magic is publically available on **[GitHub](https://github.com/JAl
 {{< /callout >}}
  
 
-### SelfHosting Streamlit MultiChat
+**SelfHosting Streamlit MultiChat**
 
 {{< callout type="info" >}}
 Build or use the [CICD Generated Container Image](https://fossengineer.com/docker-github-actions-cicd/)

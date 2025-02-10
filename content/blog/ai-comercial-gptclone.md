@@ -7,8 +7,7 @@ cover:
   alt: "ChatGPT Clone" # alt text
   caption: "Build a ChatGPT Clone with Streamlit." # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
-description: 'ChatGPT Clone with Streamlit'
-summary: 'Building a ChatGPT4 Clone with Streamlit. Use GPT4 and GPT-4o through their APIs and avoid the recurring monthly subscription bill for ChatGPT.'
+description: 'Building a ChatGPT Clone with Streamlit. Use GPT4 and GPT-4o through OpenAI APIs and avoid the recurring monthly subscription bill for ChatGPT.'
 url: 'create-chatgpt-clone-streamlit'
 ---
 

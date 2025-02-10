@@ -24,6 +24,10 @@ A **Flask App** configured on a server, publically, **ready for anyone to use**.
 
 ## Flask 101
 
+Wait wait...what is Flask doing?
+
+Flask is one of the [Python web frameworks](https://github.com/vinta/awesome-python?tab=readme-ov-file#web-frameworks).
+
 * The **main Flask file** is named `__init__.py`, this indicates that your Flask application is structured as a package.
     * You can run it with: `flask run`
 

@@ -172,7 +172,7 @@ $$
 
 ...its equations of motion.
 
-And now its all about writting them in Python:
+And now its all about writting them **in Python**:
 
 ```py
 import numpy as np

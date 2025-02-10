@@ -201,6 +201,8 @@ A wrapper in [Python](https://jalcocert.github.io/JAlcocerT/guide-python/) for S
 
 Or Python for the distributed computing/storage era.
 
+> https://github.com/vinta/awesome-python?tab=readme-ov-file#data-analysis
+
 This is great for IoT Stuff, like we might have in [Telecom](https://jalcocert.github.io/JAlcocerT/telecom-concepts-101/).
 
 {{< details title="Explore PySpark FAQ 📌" closed="true" >}}

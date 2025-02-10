@@ -1,9 +1,9 @@
 ---
 title: "Creating a Landing Page"
-date: 2024-09-25
+date: 2024-02-14
 draft: false
 tags: ["dev"]
-summary: 'Creating Landing Web pages with Astro'
+description: 'Creating Landing Web pages with Astro'
 url: 'creating-landing-pages-astro'
 ---
 

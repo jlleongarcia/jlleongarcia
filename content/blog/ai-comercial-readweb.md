@@ -29,11 +29,13 @@ Some time ago I was doing an interview and it was quite hard from them to see my
 
 But..if I always send pdf's, whats wrong?
 
-It seems that there are some HR parsing systems that can interprete data.
+Isnt it a PDF already inmutable?
+
+It seems that there are some **HR parsing systems** that can interprete data.
 
 Sometimes breaking totally the initial format.
 
-Lesson learnt.
+**Lesson learnt.**
 
 A CV must be cool for the human eye, and **understandable by machines**.
 
@@ -58,13 +60,15 @@ Within the [CV Check Project](https://gitlab.com/fossengineer1/cv-check) at the 
 
 We are just pushing the **data to a sqlite DB**.
 
-The data is extarcted with the known approach of beautiful soup. Where you need to **input the Web structure**.
+The data is extracted with the known approach of beautiful soup.
+
+Where you need to **input the Web structure**.
 
 
 {{< /details >}}
 
 {{< callout type="warning" >}}
-If the Web Structure Changes - Codes needs to be [re-worked, as it happened here](https://gitlab.com/fossengineer1/py_vacations/-/tree/main/Z_Scrap_bs4?ref_type=heads)
+**If** the Web Structure Changes - Codes needs to be [re-worked, as it happened here](https://gitlab.com/fossengineer1/py_vacations/-/tree/main/Z_Scrap_bs4?ref_type=heads)
 {{< /callout >}}
 
 {{< details title="How to explore the SQLiteDB 📌" closed="true" >}}
@@ -265,9 +269,9 @@ FireCrawl is not giving me the juice of the offers, as [seen during Scrap-Tools 
 
 But... it can be done with:
 
-[**1) OpenAI+Pure parsed HTML**](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
+1) [**OpenAI+Pure parsed HTML**](https://gitlab.com/fossengineer1/cv-check/-/tree/main/Scrap_Pracuj_Offer?ref_type=heads)
 
-Using [OpenAI API](https://github.com/openai/openai-python) seems to be a reliable way when the web structure is not changing too much.
+Using [OpenAI API](https://github.com/openai/openai-python) seems to be a reliable way **when the web structure is not changing too much.**
 
 <!-- 
 https://github.com/openai/openai-python
@@ -283,7 +287,7 @@ You could do similarly with other LLMs via their APIs.
 
 And other library I saw, was
 
-**2) embedchain** (now included in the [mem0 repo](https://github.com/mem0ai/mem0))
+2) **Embedchain** (now included in the [mem0 repo](https://github.com/mem0ai/mem0))
 
 With mem0/embedchain, we are going a little bit further than just scrapping.
 
@@ -353,9 +357,7 @@ You will **need mem0 API**, or to [plug one of your favourite LLMs, as per the d
 
 
 
-### Deploying WebScrap
-
-Cloudflare Tunnels + Cloudflare Access Control
+**Deploying WebScrap**: Cloudflare Tunnels + Cloudflare Access Control.
 
 ---
 
@@ -391,13 +393,19 @@ And...create [posts **scheletons** based on that info](https://github.com/JAlcoc
 
 Its not lying.
 
-Its having a base CV and some instructions for the AI to tweak few details so that it resonates more with an offer.
+Or it should not be.
+
+Its having a base **CV** and some instructions for the AI to tweak few details so that it **resonates more with an offer**.
+
+If you lie...you will just loose your time. And other people's time.
 
 > There are some AI Resume Builder out there - like `rezi.ai`
 
 #### Reading CV Info
 
-I tried with: Resume-Parser, Spacy (yes, the [NER](https://jalcocert.github.io/JAlcocerT/nlp-tools/#name-entity-recognition)!), ~~pyresparser~~ and pdfminer.
+I tried with:
+
+Resume-Parser, Spacy (yes, the [NER](https://jalcocert.github.io/JAlcocerT/nlp-tools/#name-entity-recognition)!), ~~pyresparser~~ and pdfminer.
 
 > [ResumeParser](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/testing_resumeparser.py?ref_type=heads) & [PDFminer](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Z_Tests/testing_pdfminer.py?ref_type=heads), gave me the best and **simplest results**
 
@@ -409,7 +417,7 @@ Sample [St Web App with PDFMiner](https://gitlab.com/fossengineer1/cv-check/-/bl
 
 I tried with FireCrawl, but the juice of the offer is not captured
 
-i can imagine is due to some robots.txt info that it is blocking it
+I can imagine is due to some `robots.txt` info that it is blocking it
 
 But how about feeding pure HTML to OpenAI?
 
@@ -417,7 +425,7 @@ And Using Other Scrappers like: Crawl4AI or ScrapeCraph?
 
 **Lets Find out**
 
-#### Creating Cv with Code
+#### Creating CV with Code
 
 There are few alternatives [to create a curriculum with code](https://fossengineer.com/open-source-curriculum/)
 
@@ -500,9 +508,6 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 https://github.com/naashonomics/pandas_templates/blob/master/login.py
 
-```py
-
-```
 
 > https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/Streamlit_Pages/Auth_functions.py
 
@@ -512,6 +517,5 @@ https://github.com/naashonomics/pandas_templates/blob/master/login.py
 {{< details title="How to customize Streamlit Meta Description📌" closed="true" >}}
 
 * https://discuss.streamlit.io/t/adding-a-meta-description-to-your-streamlit-app/17847/5
-
 
 {{< /details >}}

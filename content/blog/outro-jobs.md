@@ -1,15 +1,37 @@
 ---
 title: "About Jobs. And LLM Engineers."
-date: 2025-12-31
-draft: true
+date: 2025-02-10
+draft: false
 tags: ["Dev"]
 description: 'Is it a good moment to change jobs? And to become a LLM Engineer?'
 url: 'when-to-apply-for-a-job'
 ---
 
+## Data for Job Market
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/" title="Scrapping the Web" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="Post where I tinkered with scrapping tools." >}}
+  {{< card link="https://github.com/JAlcocerT/Scrap_Tools" title="Scrapping Tools" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source Code for using BS4, AI Scraps..." >}}
+{{< /cards >}}
+
+
+### Using BS4 and CRON
+
+```sh
+git clone https://gitlab.com/fossengineer1/cv-check
+
+
+```sh
+git clone https://github.com/JAlcocerT/Scrap_Tools
+
+
+```
 
 
 
+{{< callout type="info" >}}
+Its all about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)** 💻 and [Curriculum Check](https://gitlab.com/fossengineer1/cv-check)
+{{< /callout >}}
 <!-- 
 ## What it is a LLM Engineer?
 

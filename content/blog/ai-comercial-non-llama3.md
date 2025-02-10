@@ -7,12 +7,11 @@ cover:
     alt: "Streamlit Chat Ollama" # alt text
     caption: "SelfHosting a Streamlit Chat with Ollama." # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
-description: 'Streamlit Chat with Ollama'
-summary: 'Communicate with Llama3 with an user friendly UI. SelfHostable Streamlit App to Chat with Ollama'
+description: 'Streamlit Chat with Ollama. Communicate with Llama3 with an user friendly UI. SelfHostable Streamlit App to Chat with Ollama'
 url: 'streamlit-ollama-chat'
 ---
 
-Sometime ago I was really happy to discover {{< newtab url="https://fossengineer.com/ollama-web-ui/" text="the Ollama Project" >}}, that allows us to use open LLM's in our laptops.
+Sometime ago I was really happy to discover {{< newtab url="https://fossengineer.com/ollama-web-ui/" text="the Ollama Project" >}}, that allows us to use open LLM's, locally in our laptops.
 
 If you are looking for a quick and easy Ollama UI, you should have a look to the Open Web UI project (ex ollama web UI)
 

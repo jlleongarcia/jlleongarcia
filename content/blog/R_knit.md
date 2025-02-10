@@ -3,7 +3,7 @@ title: "Generating Webs with R - Knit Package"
 date: 2020-09-25T23:20:21+01:00
 draft: false
 tags: ["R","Web","Dev"]
-description: 'Using the Knit package in R to build websites.'
+description: 'Using the Knit package in R to build (static) websites.'
 summary: 'In this post I show you how to use the Knit package in R to build a simple website.'
 url: 'r-knitt-package-guide'
 ---
