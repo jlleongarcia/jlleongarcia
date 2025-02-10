@@ -18,6 +18,11 @@ Long ago, I was covering [the analytical stack](https://jalcocert.github.io/JAlc
 
 It is time to make **a recap**.
 
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/" title="AIssistant" image="/blog_img/apps/ai-assistant.png" subtitle="Post where I started the AI assistants." >}}
+  {{< card link="https://github.com/JAlcocerT/Streamlit-AIssistant" title="AIssistant" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Assistant for Tech Jobs..." >}}
+{{< /cards >}}
+
 ## Concepts for Data Analytics
 
 
