@@ -530,6 +530,14 @@ La TAE te permite comparar diferentes préstamos de manera más precisa, ya que 
 {{< /details >}}
 
 
+### Real Estate Tech
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/astro-web-setup/" title="Real Estate Web" image="/blog_img/GenAI/ai-real-estate.jpeg" subtitle="AI Ready Website" >}}
+  {{< card link="https://github.com/JAlcocerT/Data-Chat/tree/main/LLamaIndex/With_Mem0" title="Data Chat" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Real Estate Agent with LLamaIndex and Mem0" >}}
+{{< /cards >}}
+
+
 ### Useful Concepts
 
 #### CAGR
@@ -573,7 +581,7 @@ $$
 CAGR = \left( \frac{1.77}{1.25} \right)^{\frac{1}{5}} - 1 \approx 0.072
 $$
 
-Or 'just' a ~7,2%
+Or 'just' a ~7,2% every year.
 
 And now, the logical question appears: *when will (if ever) catch up with the higher initial yield one?*
 
@@ -636,9 +644,9 @@ And since \( \frac{0.693}{0.01} \approx 69.3 \), the approximation uses 72 for s
 
 {{< /details >}}
 
-It's an easy-to-remember approximation that gives results that are accurate enough for most financial calculations (especially with rates between 6% and 10%).
+It's an **easy-to-remember approximation** that gives results that are accurate enough for most financial calculations (especially with rates between 6% and 10%).
 
-If you divide 72 by the interest rate in percentage terms, you get a good estimate for the doubling time.
+If you divide 72 by the interest rate in percentage terms, you get a good **estimate for the doubling time**.
 
 For example:
 - At a 6% return: \( 72 \div 6 = 12 \) years to double.
@@ -652,7 +660,7 @@ The **exact formula** to find the time to **double** is $t = \frac{\ln(2)}{\ln(1
 
 3. The formula to find the **time to grow by a general factor** of XYZ is $t = \frac{\ln(XYZ)}{\ln(1 + r)}$.
 
-With this one, we can see when MCD will potentially, catch up with O (while O also grows, but to a slower rate)
+With this one, we can see when MCD will *potentially* catch up with NYSE:O (while O also grows, but to a slower rate):
 
 $$
 t = \frac{\ln(5.8/2.5)}{\ln(1 + (7.2-2.7))}=17.8
@@ -678,3 +686,59 @@ And with those rates, the yield of that stock you are buying today, catch up in 
 
 
 * Thanks to [HUGO Hextra Theme and katex](https://imfing.github.io/hextra/docs/guide/latex/)!
+
+### Getting Better at RE
+
+* https://notebooklm.google.com/notebook/
+
+
+{{< details title="Interesting Questions for R.E 📌" closed="true" >}}
+
+Sí, las preguntas que has enumerado son muy buenas y cubren una amplia gama de aspectos importantes a considerar al visitar un piso para comprar, especialmente si tu objetivo es la inversión.
+
+Aquí te doy algunas observaciones y sugerencias adicionales:
+
+**Sobre la finca y el entorno**
+
+*   **¿Qué tal es la finca? ¿Quién vive allí? ¿Cómo son los vecinos?** Esta pregunta es crucial para entender la calidad de vida en el edificio y si hay problemas de convivencia.
+*   **¿Qué ambiente hay de noche? ¿Cómo es la calle?** Esto te dará una idea de si la zona es segura y tranquila.
+*   **¿Cuánto se paga de comunidad?** Este es un gasto fijo importante que debes tener en cuenta.
+*   **¿Y cuánto de IBI?** Este impuesto anual también es un gasto importante.
+*   **¿Hay algún problema en el edificio (bajantes, cubierta, fachada)? ¿Alguna derrama o previsión?** Conocer el estado del edificio y si hay derramas previstas te evitará sorpresas desagradables.
+*   **¿Se puede poner ascensor en el edificio?** Si el edificio no tiene ascensor, esta pregunta es relevante si lo consideras importante para futuros inquilinos o para ti mismo.
+
+**Sobre el piso**
+
+*   **En este piso, ¿qué harías tú antes de alquilarlo (pintar, amueblar, reformar)?** Esta pregunta te dará una idea de la opinión del agente sobre el estado del piso y qué mejoras podrían ser necesarias.
+*   **¿Qué opinas de la distribución de esta vivienda?** La distribución es un factor importante a considerar.
+*   **¿Por cuánto está publicado el piso? (Importante recalcar: en cuánto está PUBLICADO).** Esta pregunta te dará una idea del precio de salida del piso.
+*   **¿Por cuánto crees tú que se vende hoy mismo? Es decir, ¿qué oferta mínima aceptaría el vendedor?** Esta pregunta te ayudará a saber cuánto margen de negociación hay.
+*   **En tu experiencia, ¿qué hace que un piso se alquile bien y otro mal?** Esta pregunta te dará información valiosa sobre el mercado de alquiler local.
+
+**Sobre el agente inmobiliario**
+
+*   **¿También te dedicas al alquiler de pisos?** Esta pregunta es importante si planeas alquilar el piso y quieres saber si el agente puede ayudarte con ello.
+*   **Si compro el piso y te lo dejo para que me lo alquiles, ¿por cuánto se alquila, sin problemas, es decir, siendo conservador (precio atractivo)?** Esta pregunta te dará una idea de la rentabilidad potencial del piso.
+*   **¿Llevas mucho tiempo en el mundo inmobiliario?** La experiencia del agente es un factor importante a considerar.
+*   **En el momento de mayor crisis, ¿por cuánto se alquilaba este piso?** Conocer el peor escenario te ayudará a evaluar el riesgo de la inversión.
+*   **¿Vienes mucho a este piso? ¿Lo visita mucha gente?** Esto te dará una idea del interés que genera el piso.
+*   **¿Qué perfil de inquilino entraría aquí?** Esta pregunta te ayudará a entender el tipo de inquilinos que podrías atraer.
+*   **¿Cuál es tu comisión?** Es importante conocer la comisión del agente para tenerla en cuenta en tus cálculos.
+
+**Sobre el propietario**
+
+*   **¿Quién es el propietario? ¿Por qué vende?** Conocer la motivación del vendedor puede darte información valiosa para la negociación.
+
+**Tus objetivos**
+
+*   **Yo busco pisos para invertir: compra y alquiler. Busco una rentabilidad del X%. ¿Tienes más pisos para enseñarme? En cualquier caso, guarda mi teléfono por si te sale alguno.** Es importante comunicar claramente tus objetivos al agente y establecer una relación para futuras oportunidades.
+
+**Sugerencias adicionales**
+
+*   **Pregunta sobre los servicios de la zona:** supermercados, transporte público, escuelas, etc.
+*   **Pregunta sobre el estado de las instalaciones:** fontanería, electricidad, calefacción, etc.
+*   **Pide ver los planos del piso:** Esto te ayudará a entender mejor la distribución y las posibilidades de reforma.
+*   **Visita el piso a diferentes horas del día:** Esto te permitirá evaluar el ruido y la luminosidad.
+*   **No te sientas presionado a tomar una decisión:** Tómate tu tiempo para evaluar todas las opciones.
+
+{{< /details >}}

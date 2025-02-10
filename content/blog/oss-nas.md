@@ -35,6 +35,9 @@ TBD
 
 ## Conclusions
 
+At the time of writing, my **energy costs** are ~0.28$/Kwh
+
+
 ### Better PKG management in Debian
 
 From time to time you will need to make some clean up to keep things perfect.

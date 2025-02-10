@@ -14,10 +14,9 @@ url: 'langchain-chat-with-database'
 
 By tinkering with AI, I discoverd that it is possible to: 
 
-
 {{< cards >}}
   {{< card link="/JAlcocerT/how-to-chat-with-pdfs" title="Chat with PDFs ↗" icon="book-open" >}}
-  {{< card link="/how-to-use-rags-with-python" title="Chat with CSVs ↗" icon="book-open" >}}  
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/" title="Chat with CSVs ↗" icon="book-open" >}}  
 {{< /cards >}}
 
 [You can also try **PandasAI as RAG** →](/how-to-use-pandasAI)
@@ -67,7 +66,7 @@ You can also open it with: [![Open in Google Colab](https://colab.research.googl
 
 This example uses **MySQL**.
 
-You can also try similarly, with SQLite.
+> You can also try, similarly, with SQLite.
 
 
 ### MySQL Installation

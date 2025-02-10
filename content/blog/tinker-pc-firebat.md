@@ -135,10 +135,10 @@ Energy costs ~0.25Eur/Kwh
 * For docker builds, it seems that the ARM architecture lags compared to x86 (lower is better)
 
 {{< callout type="warning" >}}
-During docker builds with ARM, I observed that **only 1 core is used**
+During docker builds with ARM, I observed that **only 1 core is used**, leading to longer time.
 {{< /callout >}}
 
-* The OrangePi5 is a great rival when having into consideration the performance and volume
+* The OrangePi5 is a great rival when having into consideration the performance and volume!
 
 ### FireBat - Computing vs Price
 
