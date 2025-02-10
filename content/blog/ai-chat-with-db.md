@@ -7,35 +7,36 @@ cover:
   alt: "Langchain chat with DB" # alt text
   caption: "Using LLMs to chat with databases" # display caption under cover
 tags: ["Gen-AI","Python","Dev"]
-description: 'How to use Langchain to chat with a DB. How I prepared for a tech talk with AI.'
+description: 'How to use Langchain to chat with a DB. How I prepared for a Tech Talk with AI.'
 summary: 'Chat with DB Tech Talk'
 url: 'langchain-chat-with-database'
 ---
 
 By tinkering with AI, I discoverd that it is possible to: 
 
-[I commented the PDF one **here** →](/JAlcocerT/how-to-chat-with-pdfs)
 
-[I commented the PDF one **here** →](/how-to-use-rags-with-python)
+{{< cards >}}
+  {{< card link="/JAlcocerT/how-to-chat-with-pdfs" title="Chat with PDFs ↗" icon="book-open" >}}
+  {{< card link="/how-to-use-rags-with-python" title="Chat with CSVs ↗" icon="book-open" >}}  
+{{< /cards >}}
 
-/how-to-use-pandasAI
+[You can also try **PandasAI as RAG** →](/how-to-use-pandasAI)
 
 ```mermaid
-flowchart LR
-    A[Start] --> B[Load environment variables]
-    B --> C[Initialize OpenAI and Firecrawl API clients]
-    C --> D{API keys loaded?}
-    D -->|No| E[Raise EnvironmentError]
-    D -->|Yes| F[Iterate through URLs]
+graph LR
+    A[Question] --> B{LangChain}
+    B --> C[Retrieve Relevant Data - SQL Query]
+    C --> D[MySQL Database]
+    D --> B
+    B --> E[LLM Prompt with Data]
+    E --> F[LLM OpenAI API]
+    F --> G[LLM Response]
+    G --> H[User]
 ```
 
 
-{{< details title="Get Ready for Containers 🐋👇 📌" closed="true" >}}
-
-{{< /details >}}
-
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data" title="Chat with Data" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="Other LangChain use cases" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data" title="Chat with Data" image="/blog_img/GenAI/langchain-AI.jpeg" subtitle="Other LangChain use cases" >}}
   {{< card link="https://github.com/JAlcocerT/Data-Chat" title="Data Chat" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source Code for DB Chat with Langchain" >}}
 {{< /cards >}}
 
@@ -71,10 +72,12 @@ You can also try similarly, with SQLite.
 
 ### MySQL Installation
 
+Install **MySQL RDBMS** in your computer.
+
 
 {{< details title="MySQL Installation CLI 👇" closed="true" >}}
 
-If you want to install MySQL DB directly in your computer:
+If you want to install MySQL DB directly in your computer (with ubuntu):
 
 ```bash
 sudo apt update
@@ -100,13 +103,24 @@ lsof -i :3306 #this will be cleared
 
 I would recommend to go with the **container way of installing the DB**:
 
-{{< details title="MySQL with Docker | Recommended 👇" closed="true" >}}
+{{< details title="Get Ready for Containers 🐋👇 📌" closed="true" >}}
 
-Once, **Docker/Podman** are installed, just:
+[Why containers?](https://jalcocert.github.io/JAlcocerT/why-i-love-containers/)
 
 ```sh
-
+sudo apt update
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
 ```
+
+> The [setup is very quick](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)!
+
+{{< /details >}}
+
+{{< details title="MySQL with Docker | Recommended 👇" closed="true" >}}
+
+Once, **Docker/Podman** are installed, just spin a mysql instance:
 
 ```sh
 sudo docker exec -it mysql-db /bin/bash
@@ -209,7 +223,7 @@ DESCRIBE Artist;
 
 {{< /details >}}
 
-Now that the database is loaded, let's explore its schema.
+Now that the database is loaded, let's **explore its schema**.
 
 ```sql
 SELECT 
@@ -228,7 +242,7 @@ ORDER BY
     TABLE_NAME, ORDINAL_POSITION;
 ```
 
-Here's a MermaidJS Entity-Relationship **(ER) diagram** visualizing the **Chinook database schema**:
+Here's a [MermaidJS Entity-Relationship](https://mermaid.live/edit#pako:eNrVVk1v2zAM_SuGgd7aP5BbkzRb0W7Iluwy5MLYSiJMlgyJKual-e-TbMkfspxmx_lkkY_P1CNF-ZxmIifpLCVySeEoodjxxDyPbK-L5Nws7EM5NsbnPFm_dPY3kNkJZLKlyEgAl0gVGvzK4S-Ou7aPyD06xv4VCjLgWGiFoiAyZPH2CZ4VlQo7sr7rFaY8C1GUwKux4zHPJVEqEkExAt8gYJRec5QR_FooBLYw9Yn4ToJHzCv4PTY-FUDZUKaNLksh8Tspx-V5KkomKkJCab19Qtpp_a6IHukak5PJTG1Fm5d9ciMd0oIkcyrxtBwI2fo-U0mWUY3_v0q5YnwiXI4qURtvPSnP_E3QbMThzAFLcISiFXCRcaHnlDHKj5N6O39cduecUN-HThXB-WO1yElGC2DJVhhXTJ1XyqcUsq6ISp1-q8CzlZD9CsVzCfzgFNfSxA1Dvmng2EriUvtCcgrbqhwl1jpubYE1g4pFRq63_ytPvcMbyfqKrIeDJkoTYuMJhTdSWIO-RKHPn57VS3zUC0VkwGY7S5FM8FwNPfMKifqwzGa_zcvdnRlvDJAKrk60VP279v394UGc_eU4S3bpnjDBjypBsUv7inlkHXYDsGskC9bKZByDNaPGQjJz_o5C0j8kT6AFD6vvgtrWquMER6D8ekSziMH9pHLA9oq3WKqUNtl0O-wfXBfg4y2-BImJOFxBd3mgfWuzaD_rcO11aKGglNmPSWRfeXzrj-Flc5nVeaf3qaE1Ez43v1t115tPn4hp6dRCc3IAzdDSXgwUNIpNxbN0hlKT-1QKfTylswMwZVa6tOPY_bF5iPlJ-SmEW17-AiJABTs) **(ER) diagram** visualizing the **Chinook database schema**:
 
 ```mermaid
 erDiagram
@@ -452,6 +466,7 @@ See **other popular RAG frameworks**, alternatives to Langchain:
 
 1. Diagrams as a Code
 2. PPT with LLMs
+3. **Gemini** was great to create catchy images! (2048x2048!)
 
 #### PPT as a Code
 
