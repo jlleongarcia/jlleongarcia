@@ -3,7 +3,7 @@ title: "About Jobs. And LLM Engineers."
 date: 2025-02-10
 draft: false
 tags: ["Dev"]
-description: 'Is it a good moment to change jobs? And to become a LLM Engineer?'
+description: 'Is it a good moment to change jobs? And to become a LLM Engineer?. Definitely time to recap with scrap and firecrawl API.'
 url: 'when-to-apply-for-a-job'
 ---
 
@@ -17,21 +17,197 @@ url: 'when-to-apply-for-a-job'
 
 ### Using BS4 and CRON
 
+It was all very simple, very clear...
 ```sh
 git clone https://gitlab.com/fossengineer1/cv-check
-
+cd Scrap_Pracuj
+```
 
 ```sh
-git clone https://github.com/JAlcocerT/Scrap_Tools
+#git clone https://github.com/JAlcocerT/Scrap_Tools
+```
 
+**Exploring SQLite**
+
+After you have been running the script for a few days...
+
+```sh
+python3 -m venv scrap_remote_offers_venv
+source scrap_remote_offers_venv/bin/activate
+
+#./run_pracuj.sh
+#/home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/run_pracuj.sh
+
+#just with python would do the same
+python3 pracuj_v3.py
+```
+
+You would see in the DB that...
+
+```sh
+sudo apt install sqlite3
+sqlite3 --version
+```
+
+{{< details title="See SQLiteDB Job History 📌" closed="true" >}}
+
+we will have records:
+
+```sh
+sqlite3 ./job_offers_v3.db
+#sqlite3 /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/job_offers_v3.db
+
+#SELECT * FROM your_table_name ORDER BY your_primary_key_column DESC LIMIT 5;
+
+#SELECT name FROM sqlite_master WHERE type='table';
+#.tables
+
+SELECT * FROM job_offers;
+SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
+
+#.quit
+
+```
+{{< /details >}}
+
+...now there are no offers?!
+
+
+![BS4 not working](/blog_img/apps/job-history/bs4-job-not-working.png)
+
+
+{{< callout type="warning" >}}
+It seems that there was a change on the web structure...
+{{< /callout >}}
+
+
+### Fixing BS4 Driven Data
+
+Going back to the url and inspecting it...
+
+I could see that the `<span class="...` where the information was passed, had changed.
+
+```py
+offers_element = soup.find('span', class_='listing_j1fjdh9e') #just tweaking this
+```
+
+But making it work again for the remote data, was not that easy.
+
+
+{{< details title="Only with bs4 up to v4 📌" closed="true" >}}
+
+
+It was all about using **the filtered link**:
+
+```py
 
 ```
 
+
+{{< /details >}}
+
+So I switched gears.
+
+### Improving Reliability
+
+Hello again, **FireCrawl**
+
+{{< cards cols="1" >}}
+  {{< card link="https://www.firecrawl.dev" title="FireCrawl API ↗ " >}}
+  {{< card link="https://docs.firecrawl.dev/features/scrape#extracting-without-schema-new" title="API Docs ↗" >}}
+{{< /cards >}}
+
+Im using the latest feature, extract: https://docs.firecrawl.dev/features/extract
+
+So now the v5 works with bs4 and firecrawl.
+
+```py
+# Load environment variables
+load_dotenv()
+
+# Initialize FirecrawlApp (do this *outside* the function)
+app = FirecrawlApp(api_key=os.getenv("FIRECRAWL_API_KEY"))
+
+class ExtractSchema(BaseModel):
+    praca_zdalna: int
+
+def get_zdalna_count(url):
+    """Extracts 'praca zdalna' count using Firecrawl."""
+    try:
+        data = app.extract([url], {
+            'prompt': 'Extract the number of praca zdalna offered on this website.',
+            'schema': ExtractSchema.model_json_schema(),
+        })
+
+        try:
+            praca_zdalna_count = data['data']['praca_zdalna']
+            #print(praca_zdalna_count)  # Output: 2602
+
+        except (KeyError, TypeError):  # Combine the exceptions for brevity
+            print("Error: 'data' or 'praca_zdalna' key not found, or data is not a dictionary.")
+            praca_zdalna_count = 0  # Or handle the error as you see fit.  Returning 0 is a common approach.
+        return praca_zdalna_count
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return 0  # Return 0 to indicate failure
+```
+
+
+
+**Cron Job** for the server:
+
+```sh
+nano run_pracuj.sh
+chmod +x /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/run_pracuj.sh
+./run_pracuj.sh
+```
+
+
+```sh
+crontab -e
+#0 0 * * * /path/to/your/run_pracuj.sh >> /path/to/your/logfile.log 2>&1
+0 23 * * * /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/run_pracuj.sh
+```
+
+```sh
+crontab -l
+#python3 pracuj_v3.py >> /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/script_output.log 2>&1
+```
+
+---
+
+Check [whats in there](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/#old-school-scrapping)
+
+```sh
+sqlite3 ./job_offers_v3.db
+
+SELECT * FROM job_offers;
+SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
+#.quit
+```
+
+**Have a plot.....and see hows the market**
+
+```sh
+cd Scrap_Pracuj
+source scrap_remote_offers_venv/bin/activate
+python3 query_pracuj_sqlite_v3c.py
+```
+
+```sh
+# Execute the Python script
+python3 pracuj_v3.py
+#python pracuj_v3.py
+python3 query_pracuj_sqlite_v3c.py
+```
 
 
 {{< callout type="info" >}}
 Its all about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)** 💻 and [Curriculum Check](https://gitlab.com/fossengineer1/cv-check)
 {{< /callout >}}
+
+
 <!-- 
 ## What it is a LLM Engineer?
 
@@ -54,7 +230,9 @@ good knowledge of natural language processing techniques: sentiment analysis, te
 
 ## What is an LLM Engineer?
 
-An LLM Engineer is a specialized software engineer who focuses on building, deploying, and maintaining applications powered by Large Language Models (LLMs).  They bridge the gap between cutting-edge AI research and practical, real-world applications.  Think of them as the architects and builders of the next generation of intelligent software.
+An LLM Engineer is a specialized software engineer who focuses on building, deploying, and maintaining applications powered by Large Language Models (LLMs).
+
+They bridge the gap between cutting-edge AI research and practical, real-world applications.  Think of them as the architects and builders of the next generation of intelligent software.
 
 Here's a breakdown of the key aspects of an LLM Engineer's role, based on your requirements:
 

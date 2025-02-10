@@ -181,11 +181,11 @@ This is what I made with [this script - **combining ScrapeGraph with OpenAI API 
 > "Ive got the Key for Success"
 
 {{< callout type="info" >}}
-I mean, [FireCrawl **needs an API**](https://www.firecrawl.dev/app/usage) to work (there is free Tier)
+I mean, [FireCrawl **needs an API**](https://www.firecrawl.dev/app/usage) to work (there is **free Tier**)
 {{< /callout >}}
 
 {{< cards cols="1" >}}
-  {{< card link="www.firecrawl.dev" title="FireCrawl API ↗ " >}}
+  {{< card link="https://www.firecrawl.dev" title="FireCrawl API ↗ " >}}
   {{< card link="https://platform.openai.com/api-keys" title="OpenAI API ↗" >}}
 {{< /cards >}}
 
