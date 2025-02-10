@@ -70,14 +70,14 @@ SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
 ```
 {{< /details >}}
 
-...now there are no offers?!
+...now there are... **no offers?!**
 
 
 ![BS4 not working](/blog_img/apps/job-history/bs4-job-not-working.png)
 
 
 {{< callout type="warning" >}}
-It seems that there was a change on the web structure...
+It seems that there was a **change on the web structure...**
 {{< /callout >}}
 
 

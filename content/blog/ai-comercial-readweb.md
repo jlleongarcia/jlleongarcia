@@ -93,14 +93,12 @@ sqlite3 ./job_offers_v3.db
 #sqlite3 /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/job_offers_v3.db
 
 #SELECT * FROM your_table_name ORDER BY your_primary_key_column DESC LIMIT 5;
-
 #SELECT name FROM sqlite_master WHERE type='table';
 #.tables
 
 SELECT * FROM job_offers;
 SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
-
-#.quit
+#.quit #when you are done!
 ```
 
 {{< /details >}}
@@ -135,6 +133,7 @@ crontab -l
 ```
 
 Look if you have space, still:
+
 ```sh
 df -h | awk '$2 ~ /G/ && $2+0 > 3' #if you set logs, careful with the disk space (see drives >3GB)
 ```

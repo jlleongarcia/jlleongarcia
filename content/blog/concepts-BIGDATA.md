@@ -4,27 +4,28 @@ date: 2025-01-14T03:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
-description: 'Big Data Tools recap for the AI era. SQL, PySpark and more. AIssistant for all.'
+description: 'Big Data Tools recap for the AI era. SQL, PySpark and more. AIssistant for Tech.'
 summary: 'A recap on SQL, PySpark and visualizations tools.'
 url: 'big-data-tools-for-data-analytics'
 ---
 
 
-{{< callout type="warning" >}}
-This Post is **WIP**
-{{< /callout >}}
+
 
 Long ago, I was covering [the analytical stack](https://jalcocert.github.io/JAlcocerT/self-taught-career-guide-for-data-analytics/#the-analytical-stack) and the most popular [concepts for a data analytics journey](https://jalcocert.github.io/JAlcocerT/data-basics-for-data-analytics/).
 
 It is time to make **a recap**.
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/ai-useful-yet-simple/" title="AIssistant" image="/blog_img/apps/ai-assistant.png" subtitle="Post where I started the AI assistants." >}}
+  {{< card link="#how-to-use-the-aissistant" title="AIssistant" image="/blog_img/apps/ai-assistant.png" subtitle="Post where I started the AI assistants." >}}
   {{< card link="https://github.com/JAlcocerT/Streamlit-AIssistant" title="AIssistant" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Assistant for Tech Jobs..." >}}
 {{< /cards >}}
 
-## Concepts for Data Analytics
+{{< callout type="warning" >}}
+This Post is **WIP**
+{{< /callout >}}
 
+## Concepts for Data Analytics
 
 
 {{< details title="DWH vs DataLake 📌" closed="true" >}}
@@ -50,15 +51,12 @@ It is time to make **a recap**.
 
 {{< details title="Data Lineage 📌" closed="true" >}}
 
-**What is Normalization?**  
 
 {{< /details >}}
 
 
 
 {{< details title="Data Profiling 📌" closed="true" >}}
-
-
 
 
 {{< /details >}}
@@ -923,6 +921,7 @@ https://github.com/clint-kristopher-morris/Tutorials/tree/main/streamlit-part-1
 
 SSH into your server and...
 
+...if you need, generate **ssh keys** to authenticate to your repo:
 
 ```sh
 ls -al ~/.ssh
@@ -942,13 +941,35 @@ ssh-add ~/.ssh/id_ed25519 # Add your private key (you'll be prompted for the pas
 git clone git@github.com:JAlcocerT/Streamlit-AIssistant.git
 ```
 
+
+{{< callout type="info" >}}
+Compatible with x86 and ARM64! Unfortunately, **not ARM32**
+{{< /callout >}}
+
+Now, do it with Python:
+
+```sh
+pip install --upgrade pip
+#sudo apt install python3.12-venv
+python3 -m venv Z_ST_AIssistant_venv
+
+#Unix
+source Z_ST_AIssistant_venv/bin/activate
+#.\Z_ST_AIssistant_venv\Scripts\activate #Windows
+
+pip install -r requirements.txt
+```
+
+Or with containers (you will need ~150mb of RAM):
+
 ```sh
 cd Streamlit-AIssistant
 
-docker build -t st_aissistant:v2 .
-#podman build -t aissistant_v1 .
+sudo docker pull python:3.11.2 
 
-#docker build -t st_aissistant .
+time docker build -t st_aissistant:v2 . # ~2min
+#time podman build -t st_aissistant:v2 . #~4min on a cx22 and ~4min 20s on a Pi4 4GB
+
 # docker buildx create --use
 # docker buildx build -t st_aissistant:v2a .
 
@@ -973,8 +994,6 @@ docker build -t st_aissistant:v2 .
 
 
 ```yml
-#version: '3.8'
-
 services:
   streamlit_aissistant:
     image: st_aissistant:v2  

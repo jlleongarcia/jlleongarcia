@@ -92,9 +92,9 @@ If a LLM can write markdown...why not using it to create posts assisted with AI?
 
 ### Youtube Stuff
 
-#### YT Summarizer and More
-
 There are great videos out there.
+
+#### YT Summarizer and More
 
 But there are hidden between...too much fluff.
 
@@ -108,7 +108,7 @@ My PhiData [YT Summarizer with Groq API Fork](https://github.com/JAlcocerT/phida
 
 I explained the process at [this blog post](https://jalcocert.github.io/JAlcocerT/summarize-yt-videos/)
 
-And now have been testing a little bit more the GroqAPI.
+And now have been testing a little bit more the `GroqAPI`.
 
 Of course there are new models: LLaMa3.1's and LLaMa 3.2's
 
