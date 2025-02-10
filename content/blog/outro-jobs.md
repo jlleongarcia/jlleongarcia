@@ -10,7 +10,7 @@ url: 'when-to-apply-for-a-job'
 ## Data for Job Market
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/" title="Scrapping the Web" image="/blog_img/GenAI/yt-summaries/yt-summaries-groq.png" subtitle="Post where I tinkered with scrapping tools." >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/" title="Scrapping the Web" image="/videos/job_offers.png" subtitle="Post where I tinkered with scrapping tools." >}}
   {{< card link="https://github.com/JAlcocerT/Scrap_Tools" title="Scrapping Tools" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source Code for using BS4, AI Scraps..." >}}
 {{< /cards >}}
 

@@ -1,10 +1,10 @@
 ---
-title: "Big Data Tools"
+title: "Big Data Tools [Recap]"
 date: 2025-01-14T03:20:21+01:00
 #Lastmod: 2022-11-17
 draft: false
 tags: ["Dev"]
-description: 'Big Data Tools recap for the AI era. SQL, PySpark and more.'
+description: 'Big Data Tools recap for the AI era. SQL, PySpark and more. AIssistant for all.'
 summary: 'A recap on SQL, PySpark and visualizations tools.'
 url: 'big-data-tools-for-data-analytics'
 ---
@@ -780,7 +780,7 @@ Initially, I had this one for Telecom
 {{< /details >}}
 
 
-## BI Tools Data Analytic Projects
+### BI Tools Data Analytic Projects
 
 Specially if you like SelfHosting: Superset, metabase and redash
 
@@ -914,3 +914,92 @@ https://github.com/clint-kristopher-morris/Tutorials/tree/main/streamlit-part-1
 #### Python Shiny
 
 #### FlexDashboards with R
+
+
+---
+
+
+### How to use the AIssistant?
+
+SSH into your server and...
+
+
+```sh
+ls -al ~/.ssh
+
+ssh-keygen -t ed25519 -C "your_email@example.com"  # Recommended
+cat ~/.ssh/id_ed25519.pub  # Or id_rsa.pub if you generated an RSA key, paste it on github (Select "Settings."
+# In the left sidebar, click "SSH and GPG keys."
+# Click "New SSH key" (or "Add SSH key").)
+
+ssh -T git@github.com #test it worked!
+
+eval "$(ssh-agent -s)" # Start the agent
+ssh-add ~/.ssh/id_ed25519 # Add your private key (you'll be prompted for the passphrase)
+```
+
+```sh
+git clone git@github.com:JAlcocerT/Streamlit-AIssistant.git
+```
+
+```sh
+cd Streamlit-AIssistant
+
+docker build -t st_aissistant:v2 .
+#podman build -t aissistant_v1 .
+
+#docker build -t st_aissistant .
+# docker buildx create --use
+# docker buildx build -t st_aissistant:v2a .
+
+#docker buildx build --platform linux/amd64 --load --tag yourimage .
+##docker buildx build --platform linux/amd64 --load --tag st_aissistant:v2b .
+
+#cd Z_DeployMe
+#docker-compose up -d
+# sudo docker-compose --env-file ../.env up -d
+
+# docker run -d \
+#   --name AIstreamlitaissistant \
+#   -v ai_streamlitaissistant:/app \
+#   -w /app \
+#   -p 8501:8501 \
+#   ST_AIssistant \
+#   /bin/sh -c "streamlit run Z_multichat.py"
+  #tail -f /dev/null
+
+# podman run -d --name=AIstreamlitaissistant -p 8502:8501 ....
+```
+
+
+```yml
+#version: '3.8'
+
+services:
+  streamlit_aissistant:
+    image: st_aissistant:v2  
+    container_name: st_aissistant #docker exec -it st_aissistant /bin/bash
+    ports:
+      - "8505:8501"    
+    # env_file:
+    #   - .env  # Ensure this line is present
+    environment:
+      - DEV_MODE=False  # Set to "1" for development mode, "0" for production mode
+      - OPENAI_API_KEY=sk-proj-open-ai-api
+      - AUTH_MODE=Stripe  # Must be set for production
+      # - BASE_URL_MAILERLITE=${BASE_URL_MAILERLITE}  # Must be set for production
+      # - SHEET_URL_FORMBRICKS=${SHEET_URL_FORMBRICKS}  # Must be set for production
+      # - LIST_OF_PRODUCTS=${LIST_OF_PRODUCTS}  # Must be set for production
+      - MENU_OPTIONS=Custom Agent,Email Summarizer,Diagram Creation
+      - MENU_ICONS=bar-chart-line,envelope,pencil
+      - SYSTEM_PROMPT="You are a helpful data analytics assistant, specialized in Python and SQL. You will help to migrate pyspark code into big query sql code and leave the comments in the code where appropiate."
+    command: streamlit run Z_ST_AIssistant_v2.py
+    #command: tail -f /dev/null
+    # networks:
+    #   - cloudflare_tunnel
+    restart: unless-stopped
+            
+# networks:
+#   cloudflare_tunnel:
+#     external: true
+```

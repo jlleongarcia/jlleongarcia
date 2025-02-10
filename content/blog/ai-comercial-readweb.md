@@ -101,8 +101,8 @@ SELECT * FROM job_offers;
 SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
 
 #.quit
-
 ```
+
 {{< /details >}}
 
 You can make it **run every night** by setting **CRON task with [a script](https://gitlab.com/fossengineer1/cv-check/-/blob/main/Scrap_Pracuj/run_pracuj.sh?ref_type=heads)**.
