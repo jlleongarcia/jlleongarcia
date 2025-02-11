@@ -19,7 +19,7 @@ Inspired by the awsome work of **[William Halley in his blog](https://www.willha
 
 > Let's learn a little bit about **Networking by doing!**
 
-![CV with a RPI4](/blog_img/hardware/wifi_eth.jpg)
+![Wifi to Ethernet RPI4](/blog_img/hardware/wifi_eth.jpg)
 
 
 {{< details title="Option 1 - Wifi to Ethernet with Separated subnet 📌" closed="true" >}}

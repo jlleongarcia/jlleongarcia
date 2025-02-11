@@ -94,7 +94,7 @@ offers_element = soup.find('span', class_='listing_j1fjdh9e') #just tweaking thi
 But making it work again for the remote data, was not that easy.
 
 
-{{< details title="Only with bs4 up to v4 📌" closed="true" >}}
+{{< details title="Only with bs4 📌" closed="true" >}}
 
 
 It was all about using **the filtered link**:
@@ -102,6 +102,8 @@ It was all about using **the filtered link**:
 ```py
 
 ```
+
+> up to v4 and v6 again, its just with BS4.
 
 
 {{< /details >}}
@@ -154,20 +156,53 @@ def get_zdalna_count(url):
 ```
 
 
+### Server and CRON
 
 **Cron Job** for the server:
 
 ```sh
-nano run_pracuj.sh
-chmod +x /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/run_pracuj.sh
-./run_pracuj.sh
+#https://gitlab.com/-/user_settings/ssh_keys
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+cat ~/.ssh/id_rsa.pub
+
+ssh -T git@gitlab.com
+```
+
+```sh
+git clone git@gitlab.com:fossengineer1/cv-check.git
 ```
 
 
 ```sh
+cd cv-check/Scrap_Pracuj
+nano run_pracuj_v3.sh
+pwd
+
+chmod +x /home/reisipi/cv-check/Scrap_Pracuj/run_pracuj_v3.sh
+./run_pracuj_v3.sh
+```
+
+```sh
+#python -m venv scrap_remote_offers_venv
+python3 -m venv scrap_remote_offers_venv
+
+#Unix
+source scrap_remote_offers_venv/bin/activate
+#Windows
+#.\scrap_remote_offers_venv\Scripts\activate
+```
+
+```sh
+#pip install -U kaleido requests bs4
+pip install -r requirements.txt
+```
+
+Now, CRON will execute the script every day:
+
+```sh
 crontab -e
 #0 0 * * * /path/to/your/run_pracuj.sh >> /path/to/your/logfile.log 2>&1
-0 23 * * * /home/reisipi/dirty_repositories/cv-check/Scrap_Pracuj/run_pracuj.sh
+0 23 * * * /home/reisipi/cv-check/Scrap_Pracuj/run_pracuj.sh
 ```
 
 ```sh
@@ -206,6 +241,10 @@ python3 query_pracuj_sqlite_v3c.py
 {{< callout type="info" >}}
 Its all about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)** 💻 and [Curriculum Check](https://gitlab.com/fossengineer1/cv-check)
 {{< /callout >}}
+
+
+
+![Wifi to Ethernet RPI4](/blog_img/data-experiments/job-market.png)
 
 
 <!-- 

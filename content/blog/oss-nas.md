@@ -23,13 +23,18 @@ Time to try something new, getting ready for a **network attached storage**:
 
 ```sh
 tailscale status
-
 ```
+
 {{< details title="How to Setup Tailscale DNS 📌" closed="true" >}}
 
 TBD
 
 {{< /details >}}
+
+### benchmarks
+
+sudo apt install hardinfo
+
 
 ---
 
@@ -71,6 +76,7 @@ They also provide an [API](https://haveibeenpwned.com/API/Key), which you would 
 6. https://www.reddit.com/r/SelfHosting/
 7. https://akashrajpurohit.com/blogs/?ref=nav
 8. https://alternateoss.com/
+9. https://star-history.com/blog/knowledge-management
 
 ### Interesting Software for Servers
 
