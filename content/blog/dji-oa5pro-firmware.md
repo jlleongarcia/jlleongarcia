@@ -4,7 +4,7 @@ date: 2025-01-01T00:20:21+01:00
 draft: false
 tags: ["Tinkering"]
 summary: Learning how to edit videos with the OA5Pro
-description: Updating OA5 Pro Firmware. Compared with a go pro hero 9 and Commenting on my new video edition learnings for youtube.
+description: Updating OA5 Pro Firmware. Compared with another action cam (go pro hero 9).New video edition learnings for youtube.
 url: 'dji-oa5pro-firmware-updates'
 ---
 
@@ -38,7 +38,7 @@ For example, in video or audio, the **bit rate** determines the **quality** and 
 ### About OA5Pro Videos
 
 
-Before firmware update (only one default bit rate):
+**Before** firmware update (only one default bit rate):
 
 |**Image Quality**|**Space (per second)**|**Space (30min)**|**Bit Rate**|**Battery**|
 |:---|:---|:---|:---|:---|
@@ -51,12 +51,14 @@ Before firmware update (only one default bit rate):
 |4k@100/RS+/UW|—|—|To be filled|10% for 10min|
 
 
+
+
 ---
 
 ## Video Workflow
 
 {{< callout type="info" >}}
-CLI code base video workflow - https://github.com/JAlcocerT/YT-Video-Edition
+**CLI code** base video workflow - https://github.com/JAlcocerT/YT-Video-Edition
 {{< /callout >}}
 
 But there is live beyond the CLI.
@@ -245,7 +247,7 @@ flatpak install flathub com.obsproject.Studio
 
 Im recording on a Dell 25` (2560x1440 16:9).
 
-> **OBS Settings** -> Output MPEG4 `.mp4` and codex x264.
+> **OBS Settings** -> Output MPEG4 `.mp4` and codec x264.
 
 
 
@@ -308,6 +310,13 @@ convert too_big_image.jpg -quality 50% output_image.jpg #ok to upload to YT
 
 ## Conclusions
 
+At OA5Pro settings, **after the firmware update**, I have:
+
+* Firmware Version `01.03.02.10`
+* And Camera Firmware Version `10.00.11.62`
+
+When recording at 1080p60 RS UW I got now
+
 ### Thanks to
 
 For explaining the **firmware update** process:
@@ -331,22 +340,64 @@ But, when **pulling video from the OA5Pro**:
 * via USB ~25mb/s
 * via USB-c ~28mb/s
 
+> You can also see them with **rsync CLI**
+
+{{< details title="SD Card Speed is important! 📌" closed="true" >}}
+
+V10 and V30 are ratings that refer to the write speed of a memory card, specifically SD cards. This is important for recording video and capturing photos, as it determines how quickly data can be stored on the card.
+
+You might also see the Class 10 (C10), similar to V10 at ~10MB/s (previous standard for FHD video - 1080/30)
+
+
+* **V10:** This means the card has a minimum sustained write speed of **10 MB/s** (megabytes per second). It's suitable for recording Full HD (1080p) video and taking photos, but might struggle with higher resolutions or faster frame rates.
+
+> I have a **Samsung Evo Plus** stating its **V10**
+
+* **V30:** This means the card has a minimum sustained write speed of 30 MB/s. It's better suited for recording Full HD video at higher frame rates and can handle basic 4K video recording.
+
+**In simpler terms:** V30 cards are faster than V10 cards. This means they can handle more data being written to them in a given time, which is important for higher quality video and photos.
+
+**Here's a table summarizing the key differences:**
+
+| Feature | V10 | V30 |
+|---|---|---|
+| Minimum write speed | 10 MB/s | 30 MB/s |
+| Suitable for | Full HD video, photos | Full HD high frame rate, basic 4K video |
+
+**Which one should you choose?**
+
+* If you mainly take photos and record standard Full HD video, a V10 card might be sufficient.
+* If you record Full HD video at high frame rates or want to start recording 4K video, a V30 card is recommended.
+
+Keep in mind that other factors like card capacity and read speed also play a role in overall performance.
+
+
+{{< /details >}}
+
 The **limitant is the internal memory** / the SD card im using with the osmo camera.
 
 
 ### OA5Pro vs GoProHero9
 
-1. GoPro cuts the files at ~3.7GB.
+I was testing together with a friend our action cams.
+
+We both recorded at 4k60
+
+1. GoPro cuts the files at ~3.7GB (the OA5Pro at ~17GB)
 
 Files has an interesting naming with the GoPro: `GX010389`, then it would go the `GX020389`...
 
-2. The bit rate when recording at 4K60 is ~60.2Mbit/s with a GPH9.
+2. The bit rate when recording at 4K60 is **~60.2Mbit/s with a GPH9**.
 
-The OA5Pro now is **~100Mbit/s** when bit rate is selected **as high**.
+The OA5Pro now is **~100Mbit/s** (when bit rate is selected **as high**.)
 
 3. The **GoPro has GPS** - Which allow us to do [cool analysis with python](https://github.com/JAlcocerT/Py_RouteTracker/tree/main/Z_GoPro)
 
-#### Extracting Telemtry Data from GPH9
+The OA5Pro does NOT have GPS unfortunately!
+
+#### Extracting Telemetry Data from GPH9
+
+Extracting data from action camera `.MP4` files.
 
 > It all started with [PhyPhox](https://jalcocert.github.io/JAlcocerT/blog/tinker-phyphox/) and [PyRouteTracker](https://jalcocert.github.io/JAlcocerT/polar-data-python-analysis/)
 

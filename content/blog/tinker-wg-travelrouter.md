@@ -42,6 +42,9 @@ The [GL.iNet](https://www.gl-inet.com/community/) GL-MT3000 has been a very inte
 * Currently using it with 
 
 
+> The **forum** was very helpful [here ](https://forum.gl-inet.com/t/gl-mt3000-stops-working-when-connecting-to-tailscale-exit-node/34146) and [here](https://forum.gl-inet.com/t/beryl-ax-gl-mt3000-using-a-tailscale-exit-node/47744)
+
+
 {{< callout type="info" >}}
 An alternative to the [Raspberry Pi as Travel Router](https://jalcocert.github.io/RPi/posts/rpi-wifi-ethernet-bridge/)
 {{< /callout >}}

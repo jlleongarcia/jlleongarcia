@@ -14,14 +14,14 @@ math: true
 
 
 {{< callout type="info" >}}
-Geospatial learnings are collected at [RouteTracker Repo](https://github.com/JAlcocerT/Py_RouteTracker) 💻
+Geospatial learnings are placed at [RouteTracker Repo](https://github.com/JAlcocerT/Py_RouteTracker) 💻
 {{< /callout >}}
 
 ### GeoJSON
 
 With R I learnt about many other formats.
 
-one of them was GeoJson
+One of them was **GeoJson**.
 
 ### GPX
 
@@ -133,7 +133,7 @@ You can also open it with: [![Open in Google Colab](https://colab.research.googl
 
 ### DJi Metadata Extraction
 
-The DJi OA5Pro does not have a GPS.
+The DJi OA5Pro does NOT have a GPS.
 
 Videos can look like:
 
@@ -143,16 +143,9 @@ https://studio.youtube.com/video/2ZSDeD3HzHg/edit
 
 {{< youtube "2ZSDeD3HzHg" >}}
 
-With the [updated firmware](https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/) and **high bit rate**, `1080p30 UW RS` I got:
-
-* 38.9GB total files (every 17.2gb or 1h 12min there is a file reset)
-* Bitrate 31168 kbps, with an average size of **~3.75MB/s**
-* Using 80% of the total battery for those ~2h 45min of video
-
-> This happened while recording at ~0C
 
 
-Im now using **rsync** to move the big video files:
+Im now using **rsync** to move the **big video files**:
 
 ```sh
 #cp *.MP4 /home/jalcocert/Desktop/oa5pro/
@@ -165,6 +158,8 @@ rsync -avP *.MP4 /home/jalcocert/Desktop/oa5pro/ #speeds of ~32mb/s from interna
 
 ### Video to Image to GIF
 
+How about: extracting images from a video...and making a gif with them?
+
 
 The choice between PNG and JPG depends on the trade-off between **image quality** and **file size**:  
 
@@ -174,7 +169,7 @@ ffmpeg -i DJI_20250116072852_0036_D.MP4 -vf "select='gte(t\,90)',fps=1" -vsync v
 ffmpeg -i DJI_20250116072852_0036_D.MP4 -vf "select='gte(t\,90)',fps=1" -vsync vfr frame_%03d.jpg
 ```
 
-- **Use PNG** if you need high-quality, lossless images.
+- **Use PNG** if you need **high-quality**, lossless images.
 - **Use JPG** if you want smaller file sizes and are okay with slight quality loss.
 
 {{< cards cols="2" >}}
@@ -182,13 +177,13 @@ ffmpeg -i DJI_20250116072852_0036_D.MP4 -vf "select='gte(t\,90)',fps=1" -vsync v
   {{< card link="https://github.com/JAlcocerT/YT-Video-Edition/tree/main/With_FFmpeg/Images2Gif" title="Images2Gif ↗" >}}
 {{< /cards >}}
 
-And just between 90s and 105s:
+And just between 90s and 105s timeframe:
 
 ```sh
 ffmpeg -i DJI_20250116072528_0035_D.MP4 -vf "select='between(t,90,105)',fps=1" -vsync vfr frame_%03d.png
 ```
 
-> This is an interesting way to generate Images for YT Videos!
+> This is an interesting way to **generate Images for YT** Videos!
 
 {{< callout type="info" >}}
 And if the image is too big, [you can reduce it](https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/#image-caption).
@@ -224,7 +219,7 @@ When a force is applied to an object and causes it to move, work is done.
 
 where `v` is the *instantaneous* velocity of the object.
 
-> So more power, gives you a higher force to keep accelerating, at a given speed.
+> So more power, gives you a higher force (to keep accelerating), at a given speed.
 
 The *work-energy theorem* states that the work done on an object is equal to the change in its kinetic energy.  
 
@@ -296,11 +291,19 @@ Thanks to [Hextra and Katex](https://imfing.github.io/hextra/docs/guide/latex/)
 
 **Summary Table:**
 
-| Comparison                                 | Power Increase (%) | Speed Increase (%) |
+| Comparison                                 | Power Increase (%) | Top Speed Increase (%) |
 | ------------------------------------------- | ----------------- | ----------------- |
 | 15 cv to 18 cv (same cc)                   | 20                | 3.9               |
 | 15 cv to 22 cv (different cc)              | 46.7              | 14.3              |
 | 18 cv to 22 cv (different cc)              | 22.2              | 10                |
+
+
+<!-- https://www.youtube.com/watch?v=pjnHdBSDm6A&pp=ygUkNSBjaWx5bmRlcnMgdnMgNiBjaWx5bmRlcnMgZm9ybXVsYSAx -->
+
+{{< youtube "pjnHdBSDm6A" >}}
+
+> You can see there 6 cyl goes to 325 and 5 cyl goes up to 304km/h (6% diff)
+
 
 **Important Reminder:**
 
