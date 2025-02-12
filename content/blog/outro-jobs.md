@@ -195,6 +195,7 @@ source scrap_remote_offers_venv/bin/activate
 ```sh
 #pip install -U kaleido requests bs4
 pip install -r requirements.txt
+python3 pracuj_v6.py
 ```
 
 Now, CRON will execute the script every day:
@@ -215,6 +216,8 @@ crontab -l
 Check [whats in there](https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/#old-school-scrapping)
 
 ```sh
+#sudo apt install sqlite3
+#sqlite3 --version
 sqlite3 ./job_offers_v3.db
 
 SELECT * FROM job_offers;
@@ -232,8 +235,8 @@ python3 query_pracuj_sqlite_v3c.py
 
 ```sh
 # Execute the Python script
-python3 pracuj_v3.py
-#python pracuj_v3.py
+python3 pracuj_v6.py
+#python pracuj_v6.py
 python3 query_pracuj_sqlite_v3c.py
 ```
 
@@ -244,7 +247,7 @@ Its all about **[Scrapping Tools](https://github.com/JAlcocerT/Scrap_Tools)** ðŸ
 
 
 
-![Wifi to Ethernet RPI4](/blog_img/data-experiments/job-market.png)
+![Job Market Trend](/blog_img/data-experiments/job-market.png)
 
 
 <!-- 
