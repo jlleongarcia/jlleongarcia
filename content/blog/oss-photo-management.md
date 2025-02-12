@@ -39,10 +39,10 @@ I have learnt to **export photo frames** from a video (with ffmpeg).
 Im still impress that with ffmpeg I dont need to re-render videos, which makes joining them really fast.
 
 {{< callout type="info" >}}
-Everything is captured here - https://github.com/JAlcocerT/YT-Video-Edition
+Everything about video, is captured here - https://github.com/JAlcocerT/YT-Video-Edition
 {{< /callout >}}
 
-PS: You can also do it with Google photos (at least at this moment)
+> PS: You can also export snapshots with Google photos (at least at this moment)
 
 ---
 
@@ -54,7 +54,7 @@ PS: You can also do it with Google photos (at least at this moment)
 2. Home HDD
 3. Cloud
 
-The typical **read and write speeds*8 for different interfaces are as follows:
+The typical **read and write speeds** for different interfaces are as follows:
 
 | Interface | Read Speed (MB/s) | Write Speed (MB/s) |
 |---|---|---|
@@ -75,7 +75,7 @@ Synlogy seems to be a good alternative, but...in my opinion its just a PC with c
 
 Im exploring other options at this point.
 
-I just need the space and Linux with containers!
+> I'd just need the space and Linux with containers!
 
 
 #### Cold Storage

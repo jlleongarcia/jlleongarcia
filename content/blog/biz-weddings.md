@@ -413,3 +413,26 @@ Kudos to [awsome-docker-compose](https://awesome-docker-compose.com/apps/photo-s
 2. To generate [**QR's with logo** thanks to Python](https://github.com/JAlcocerT/JAlcocerT/blob/main/Z_TestingLanguages/Z_Python/QR_generation.ipynb) (it can be done as well with Inkscape)
 
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/JAlcocerT/blob/main/Z_TestingLanguages/Z_Python/QR_generation.ipynb)
+
+3. Make sure to secure your Hetzner Server
+
+
+
+{{< details title="Some Ports might be Open and you can receive a BSI mail 📌" closed="true" >}}
+
+```sh
+sudo apt update
+sudo apt install ufw
+```
+
+```sh
+sudo ufw deny 111/tcp
+sudo ufw deny 111/udp
+
+sudo ufw allow ssh
+
+sudo ufw status
+#sudo ufw enable
+```
+
+{{< /details >}}

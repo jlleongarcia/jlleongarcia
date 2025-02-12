@@ -12,7 +12,7 @@ Exactly Three years ago from this moment I was able to generate the following:
 
 ![Stable Difussion Sample](/blog_img/GenAI/jalcocert-author.png)
 
-How much is 2 years in GenAI? 
+How much is **3** years in GenAI? 
 
 Well...lets find that out.
 

@@ -31,10 +31,26 @@ TBD
 
 {{< /details >}}
 
-### benchmarks
+### Benchmarks
 
+```sh
 sudo apt install hardinfo
+```
 
+
+**Testing the Memory**
+
+```sh
+sudo apt install hwinfo
+hwinfo --memory
+
+sudo apt install sysbench
+sysbench memory run
+```
+
+The x13 got ~8164 MiB/sec and the Pi 4 4GB ~175MiB/sec.
+
+Your server *most likely* will be in between.
 
 ---
 
@@ -86,17 +102,3 @@ https://github.com/moghtech/komodo
 
 <!-- https://www.youtube.com/watch?v=acDVwwLklas -->
 {{< youtube "acDVwwLklas" >}}
-
-#### Testing the Memory
-
-```sh
-sudo apt install hwinfo
-hwinfo --memory
-
-sudo apt install sysbench
-sysbench memory run
-```
-
-The x13 got ~8164 MiB/sec and the Pi 4 4GB ~175MiB/sec.
-
-Your server *most likely* will be in between.

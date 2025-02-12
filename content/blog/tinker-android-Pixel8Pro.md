@@ -116,6 +116,7 @@ I also enjoy the night mode (but make sure to have a tripod).
     * [Element](https://f-droid.org/es/packages/im.vector.app/)
     * [RSS - Wallabag](https://f-droid.org/es/packages/fr.gaulupeau.apps.InThePoche/)
     * [RSS ReadDrops](https://f-droid.org/es/packages/com.readrops.app/)
+    * NFC Tools
 
 * [2FAS](https://play.google.com/store/apps/details?id=com.twofasapp)
 * [Bitwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden)

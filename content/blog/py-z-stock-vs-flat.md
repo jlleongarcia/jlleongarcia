@@ -478,7 +478,7 @@ But, she is not paying an increasingly high rent (which actually in this period 
 
 In the end it all comes down to your personal situation.
 
-Make sure to analyzer yourself the figures and check with a professional, as there are several ways to get your ideas funded, and they will provide different conditions, as examples:
+Make sure to analyze yourself the figures and check with a professional, as there are several ways to get your ideas funded, and they will provide different conditions, as examples:
 
 
 * https://www.caixabank.es/particular/hipotecas.html
@@ -536,6 +536,42 @@ La TAE te permite comparar diferentes préstamos de manera más precisa, ya que 
   {{< card link="https://jalcocert.github.io/JAlcocerT/astro-web-setup/" title="Real Estate Web" image="/blog_img/GenAI/ai-real-estate.jpeg" subtitle="AI Ready Website" >}}
   {{< card link="https://github.com/JAlcocerT/Data-Chat/tree/main/LLamaIndex/With_Mem0" title="Data Chat" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Real Estate Agent with LLamaIndex and Mem0" >}}
 {{< /cards >}}
+
+
+
+{{< details title="Quick Streamlit App for French Amortization 📌" closed="true" >}}
+
+```sh
+#ssh -T git@gitlab.com
+#git clone git@gitlab.com:fossengineer1/py_stocks.git
+git clone https://gitlab.com/fossengineer1/py_stocks
+```
+
+```sh
+cd EDA_Mortage
+
+python3 -m venv amortization_venv
+source amortization_venv/bin/activate
+```
+
+```sh
+pip install -r requirements.txt
+streamlit run mortage_v4.py #streamlit app
+```
+
+```sh
+docker image build -t py_mortage:v4 .
+docker run -d \
+    --name py_mortage \
+    -p 8509:8501 \
+    -w /app \
+    --restart always \
+    py_mortage:v4 \
+    streamlit run py_mortage_v4.py
+```
+
+{{< /details >}}
+
 
 
 ### Useful Concepts
@@ -740,5 +776,24 @@ Aquí te doy algunas observaciones y sugerencias adicionales:
 *   **Pide ver los planos del piso:** Esto te ayudará a entender mejor la distribución y las posibilidades de reforma.
 *   **Visita el piso a diferentes horas del día:** Esto te permitirá evaluar el ruido y la luminosidad.
 *   **No te sientas presionado a tomar una decisión:** Tómate tu tiempo para evaluar todas las opciones.
+
+
+**More**
+
+1. Na którą stone wychodzą okna? 
+2. Kiedy był ostatni remont?
+3. Jaki jest stan instalacji? (Wodno-kanalizacyjna, gazowa, elektryczna)
+4. Jakie są miesięczne opłaty? Co wchodzi w czynsz?
+5. Czy jest wspólnota mieszkaniowa? Jakie są spory w wspólnocie? I jakie są plany wspólnoty?
+6. Dlaczego sprzedajecie mieszkanie?
+7. Jak długo w nim mieszkacie?
+8. Jak długo jest ono na rynku? 
+9. Jeszcze raz, co zostaje w mieszkaniu po sprzedaży?
+10. Kiedy lokal może zostać wydany do mojego użytku?
+11. Opłata za media ile wynosi? 
+12. Jak wygląda sytuacja z internetem? Czy jest światłowód?
+13. Księga wieczysta czy istnieje i czy mogę prosić o numer?
+14. Najbliższy paczkomat? Sprawdzić
+
 
 {{< /details >}}
