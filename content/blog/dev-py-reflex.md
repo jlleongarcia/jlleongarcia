@@ -70,19 +70,19 @@ You will also need `localhost:8000` for the BE (which can conflict with Portaine
 
 <!-- 
 https://imfing.github.io/hextra/docs/guide/shortcodes/filetree/
-{{< reflex-structure name="My Reflex App" >}}
-  {{< reflex-file name="app.py" type="code" lang="python" >}}
-    # Your app.py code here (e.g., state, events, UI)
-  {{< /reflex-file >}}
-  {{< reflex-file name="rxconfig.py" type="code" lang="python" >}}
-    # Your rxconfig.py code here (e.g., app name, port)
-  {{< /reflex-file >}}
-  {{< reflex-folder name="components" >}}
-    {{< reflex-file name="MyComponent.py" type="code" lang="python" >}}
-      # Your component code here
-    {{< /reflex-file >}}
-  {{< /reflex-folder >}}
-{{< /reflex-structure >}} -->
+-->
+
+{{< filetree/container >}}
+  {{< filetree/folder name="content" >}}
+    {{< filetree/file name="_index.md" >}}
+    {{< filetree/folder name="docs" state="closed" >}}
+      {{< filetree/file name="_index.md" >}}
+      {{< filetree/file name="introduction.md" >}}
+      {{< filetree/file name="introduction.fr.md" >}}
+    {{< /filetree/folder >}}
+  {{< /filetree/folder >}}
+  {{< filetree/file name="hugo.toml" >}}
+{{< /filetree/container >}}
 
 ---
 
