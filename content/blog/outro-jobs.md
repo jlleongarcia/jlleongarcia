@@ -66,7 +66,6 @@ SELECT * FROM job_offers;
 SELECT * FROM job_offers ORDER BY timestamp DESC LIMIT 5;
 
 #.quit
-
 ```
 {{< /details >}}
 
@@ -108,7 +107,7 @@ remote_offers = get_job_offer_count(remote_url, remote_selector)
 
 {{< /details >}}
 
-So I switched gears.
+> So I switched gears
 
 ### Improving Reliability
 
@@ -208,13 +207,15 @@ pip install -r requirements.txt
 python3 pracuj_v6.py
 ```
 
-Now, CRON will execute the script every day:
+Now, CRON will execute the script **every day**:
 
 ```sh
 crontab -e
 #0 0 * * * /path/to/your/run_pracuj.sh >> /path/to/your/logfile.log 2>&1
-0 23 * * * /home/reisipi/cv-check/Scrap_Pracuj/run_pracuj.sh
+0 23 * * * /home/reisipi/cv-check/Scrap_Pracuj/run_pracuj_v3.sh
 ```
+
+See that the CRON job is there:
 
 ```sh
 crontab -l

@@ -482,6 +482,20 @@ See **other popular RAG frameworks**, alternatives to Langchain:
 
 {{< details title="LangChain + DuckDuckGo 📌" closed="true" >}}
 
+You do not need an API key to perform basic web searches with DuckDuckGo using Python.
+
+DuckDuckGo's search functionality is generally accessible without authentication for standard queries.
+
+https://pypi.org/project/duckduckgo-search/#history
+https://github.com/deedy5/duckduckgo_search
+
+> AI chat and search for text, news, images and videos using the DuckDuckGo.com search engine.
+
+
+
+```sh
+
+```
 
 
 {{< /details >}}

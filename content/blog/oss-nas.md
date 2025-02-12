@@ -37,7 +37,6 @@ TBD
 sudo apt install hardinfo
 ```
 
-
 **Testing the Memory**
 
 ```sh
@@ -48,7 +47,7 @@ sudo apt install sysbench
 sysbench memory run
 ```
 
-The x13 got ~8164 MiB/sec and the Pi 4 4GB ~175MiB/sec.
+> The x13 got ~8164 MiB/sec and the Pi 4 4GB ~175MiB/sec (x46)
 
 Your server *most likely* will be in between.
 

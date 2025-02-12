@@ -17,6 +17,12 @@ Cloud SQL: Cloud SQL is a relational database service, but it's not globally dis
 
 BigQuery: BigQuery is a data warehouse designed for analytics and business intelligence, not for transactional workloads or CRUD operations. It's used for analyzing large datasets, not for serving real-time application requests.
 
+{{< cards cols="1" >}}
+  {{< card link="https://www.firecrawl.dev" title="FireCrawl API ↗ " >}}
+  {{< card link="https://docs.firecrawl.dev/features/scrape#extracting-without-schema-new" title="API Docs ↗" >}}
+{{< /cards >}}
+
+
 #### GCS
 
 **Google Cloud Storage**
@@ -24,8 +30,6 @@ BigQuery: BigQuery is a data warehouse designed for analytics and business intel
 The correct sequence of the data storage hierarchy is:
 
 Tables -> File storage -> Block storage
-
-Here's why:
 
 Tables:  At the highest level, you have tables in a database. These tables organize data in a structured format with rows and columns.
 
@@ -42,6 +46,13 @@ Tables are a structured view of data, which are typically stored as files, and t
 Simply speaking, BQ *is just [SQL](https://jalcocert.github.io/JAlcocerT/sql-data-analytics/)*.
 
 But its actually much more than an interface to write your SQL queries.
+
+
+{{< cards cols="1" >}}
+  {{< card link="https://www.firecrawl.dev" title="FireCrawl API ↗ " >}}
+  {{< card link="https://docs.firecrawl.dev/features/scrape#extracting-without-schema-new" title="API Docs ↗" >}}
+{{< /cards >}}
+
 
 #### Big Table
 

@@ -68,7 +68,8 @@ The front end will be at `localhost:3000`
 You will also need `localhost:8000` for the BE (which can conflict with Portainer!) 
 {{< /callout >}}
 
-
+<!-- 
+https://imfing.github.io/hextra/docs/guide/shortcodes/filetree/
 {{< reflex-structure name="My Reflex App" >}}
   {{< reflex-file name="app.py" type="code" lang="python" >}}
     # Your app.py code here (e.g., state, events, UI)
@@ -81,7 +82,7 @@ You will also need `localhost:8000` for the BE (which can conflict with Portaine
       # Your component code here
     {{< /reflex-file >}}
   {{< /reflex-folder >}}
-{{< /reflex-structure >}}
+{{< /reflex-structure >}} -->
 
 ---
 

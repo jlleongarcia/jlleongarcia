@@ -371,7 +371,7 @@ First thing I thought was **airbnb data**.
 * https://insideairbnb.com/get-the-data/
   * https://insideairbnb.com/valencia/
 
-But I also heard about idealista:
+But I also heard about **idealista:**
 
 * https://www.idealista.com/data/
 * https://www.idealista.com/labs/blog/?p=4207
@@ -561,6 +561,7 @@ streamlit run mortage_v4.py #streamlit app
 
 ```sh
 docker image build -t py_mortage:v4 .
+
 docker run -d \
     --name py_mortage \
     -p 8509:8501 \
@@ -568,6 +569,8 @@ docker run -d \
     --restart always \
     py_mortage:v4 \
     streamlit run py_mortage_v4.py
+
+#ifconfig eth0 | grep "inet " | awk '{ print $2 }' #if ETH Connected - SEE THE LOCAL IP
 ```
 
 {{< /details >}}
@@ -795,5 +798,6 @@ Aquí te doy algunas observaciones y sugerencias adicionales:
 13. Księga wieczysta czy istnieje i czy mogę prosić o numer?
 14. Najbliższy paczkomat? Sprawdzić
 
+* https://hipoteczny.expert/
 
 {{< /details >}}
