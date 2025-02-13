@@ -107,13 +107,3 @@ These tools are designed to simplify the process of provisioning and managing in
 System engineering is an important skill for developers to know because it helps them to design and build software that is reliable, scalable, and efficient. By using a structured approach to software development and integrating CI/CD tools and processes, developers can deliver high-quality software more quickly and efficiently, and ensure that their software meets the needs and requirements of the system. 
 
 Infrastructure provisioning tools can be a valuable resource for managing and maintaining infrastructure resources at scale, and can help to simplify the process of deploying and managing complex, multi-tier applications. By using these tools, developers and system administrators can reduce manual intervention, enforce consistent configurations, and automate the delivery of software and infrastructure resources.
-
-
-
-<!-- ## FAQ
-
-### How can I get better?
-
-Learn about Linux
-
-Get a raspberry... -->

@@ -1,5 +1,5 @@
 ---
-title: "What is Lean and Why do I need it as Software ?"
+title: "What is Lean? Why do I need it as Software ?"
 date: 2022-10-02T23:20:21+01:00
 draft: true
 tags: ["Outro"]

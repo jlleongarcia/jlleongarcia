@@ -15,9 +15,11 @@ url: 'negotiation-skills-data-analytics'
 
 By the end of the recents years, I am asking my close friends to recommend me some book that they have found interesting for them over the last months.
 
-This time, I got to know about *Never split the difference - Chriss Voss*, which at first glance can be seen as pure negotiation skills, but- in my opinion it can help you become a better engineer.
+This time, I got to know about *Never split the difference - Chriss Voss*.
 
-Actually this does not apply to learning or [career](https://fossengineer.com/business-skills-data-analytics/) alone, but can be applied in every aspect of our life. Here is why.
+Which at first glance can be seen as pure negotiation skills, but- in my opinion it can help you become a better engineer.
+
+Actually this does not apply to learning or [career](/business-skills-data-analytics/) alone, but can be applied in every aspect of our life. Here is why.
 
 Negotiation is a process of discovery, of uncovering information. We tend to confuse it with an argument, that is simply a battle between the parties involved.
 
@@ -64,7 +66,11 @@ Remember that empathy is not the same as projection (thinking that the rest of t
 
 ## Show You’re Listening – and Listen
 
-Voss encourages negotiators to pay careful attention to the other party’s answers, and their nonverbal clues like body language and facial expressions. As he shows, when people feel you are really heeding what they say, they’re more likely to stay calm and listen to you. Focus on the other person. Encourage him or her to feel safe and to talk openly. Ascertain what he or she needs. 
+Voss encourages negotiators to pay careful attention to the other party’s answers, and their nonverbal clues like body language and facial expressions.
+
+As he shows, when people feel you are really heeding what they say, they’re more likely to stay calm and listen to you.
+
+Focus on the other person. Encourage him or her to feel safe and to talk openly. Ascertain what he or she needs. 
 
 >
     Instead of doing any thinking at all in the early goings about what you’re going to say:
@@ -76,6 +82,6 @@ Instead of doing any thinking at all in the early goings about what you’re goi
 
 Voss recommends a few techniques you can use to show that you’re listening carefully:
 
-* Mirroring (repeating the last one to three words the other party said, often in question form)
-* Labeling (verbally identifying the emotion that the other party seems to be experiencing) 
-* Responding (addressing the other party’s concerns in good faith).
+* **Mirroring** (repeating the last one to three words the other party said, often in question form)
+* **Labeling** (verbally identifying the emotion that the other party seems to be experiencing) 
+* **Responding*8 (addressing the other party’s concerns in good faith).

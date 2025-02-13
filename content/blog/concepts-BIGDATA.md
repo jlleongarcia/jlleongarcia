@@ -620,6 +620,11 @@ With AI/ML you can do very cool stuff, from **AB Testing** to test new strategie
 {{< /details >}}
 
 
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/AB-Testing-for-data-analytics/" title="Bayes and Streamlit?" image="/blog_img/data-experiments/bayes-st.png" subtitle="I thought that was for ML and DSc" >}}
+  {{< card link="https://github.com/JAlcocerT/Python_is_awesome" title="Awsome Python" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Tinkering with Bayes and Streamlit" >}}
+{{< /cards >}}
+
 
 {{< details title="Preparing a DSc Interview 📌" closed="true" >}}
 
@@ -780,7 +785,12 @@ Initially, I had this one for Telecom
 
 ### BI Tools Data Analytic Projects
 
-Specially if you like SelfHosting: Superset, metabase and redash
+Specially if you like SelfHosting: Superset, metabase and redash.
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/AB-Testing-for-data-analytics/" title="Bayes and Streamlit?" image="/blog_img/data-experiments/bayes-st.png" subtitle="I thought that was for ML and DSc" >}}
+  {{< card link="https://github.com/JAlcocerT/Python_is_awesome" title="Awsome Python" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Tinkering with Bayes and Streamlit" >}}
+{{< /cards >}}
 
 #### SuperSet
 

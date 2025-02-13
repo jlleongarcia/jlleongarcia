@@ -8,7 +8,21 @@ url: 'calculus-101'
 math: true
 ---
 
-## The core of
+
+The essence of calculus
+
+https://www.youtube.com/watch?v=WUvTyaaNkzM
+{{< youtube "WUvTyaaNkzM" >}}
+
+## PDE - Partial Derivate Equations
 
 
 {{< youtube "m3hxPxPgSIY" >}}
+
+
+
+---
+
+
+<!-- https://www.youtube.com/watch?v=ToIXSwZ1pJU -->
+{{< youtube "ToIXSwZ1pJU" >}}

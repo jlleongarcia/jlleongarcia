@@ -176,7 +176,7 @@ Repeating steps 3 and 4 until the cluster allocations stabilize or the specified
 
 ### Key Concepts
 
-* Neural Networks (NN): Remember that not all ML models use NN.
+Neural Networks (NN): Remember that not all ML models use NN.
 
 > I could not finish this topic without mentioning it.
 
@@ -197,6 +197,15 @@ Repeating steps 3 and 4 until the cluster allocations stabilize or the specified
 * Activation Functions - algorithm applied to a hidden layer node that affects connected outputs, e.g ReLu
 * Dense Layer - next layer increase amount of nodes
 * Sparse Layer - next layer decrease amount of nodes
+
+
+How are NN trained?
+
+Have a look to this awsome **gradient descent** explanation:
+
+<!-- https://www.youtube.com/watch?v=IHZwWFHWa-w -->
+{{< youtube "IHZwWFHWa-w" >}}
+
 
 ### Software for DSc
 

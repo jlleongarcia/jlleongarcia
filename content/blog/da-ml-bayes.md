@@ -3,7 +3,7 @@ title: "Understanding Bayes"
 date: 2025-02-13T21:20:21+01:00
 draft: false
 tags: ["DSc"]
-description: 'What it is Bayes Theorem? And why should I care?'
+description: 'What it is Bayes Theorem? And why should I care for Data Analytics & ML?'
 url: 'bayes-theorem-with-python'
 math: true
 ---

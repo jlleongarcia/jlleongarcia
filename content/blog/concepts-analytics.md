@@ -1,9 +1,12 @@
 ---
-title: Analytic Tools
-type: docs
-prev: /docs/gcp/
-next: docs/ansible/
+title: "Data Analytics Concepts [Recap]"
+date: 2025-02-14T03:20:21+01:00
+#Lastmod: 2022-11-17
 draft: true
+tags: ["Dev"]
+description: 'Big Data Tools recap for the AI era. SQL, PySpark and more. AIssistant for Tech.'
+summary: 'A recap on SQL, PySpark and visualizations tools.'
+url: 'data-analytics-concepts'
 ---
 
 ## BI Tools

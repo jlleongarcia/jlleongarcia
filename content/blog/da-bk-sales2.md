@@ -11,7 +11,7 @@ url: 'selling-ideas-in-data-analytics'
 <!-- 
 sell yourself -->
 
-# Sales in Data Analytics
+## Sales in Data Analytics
 
 In today's rapidly evolving digital landscape, data analytics has become an indispensable skill for businesses and professionals alike. However, with the growing popularity of data-driven decision-making, standing out in the crowded field of data analytics can be a daunting challenge.
 

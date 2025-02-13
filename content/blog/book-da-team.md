@@ -42,7 +42,7 @@ This topic alone, can cover tons of books, [but there are some basic concepts th
         * [The-Wise-Pomodoro](https://the-wise-pomodoro.firebaseapp.com/)
         * [Focus Tide](https://focustide.app/)
         * Focus-To-Do, ToDoIst
-    * Others: ABC Analysis, [Pareto (80/20)](https://fossengineer.com/pareto-principle-for-data-analytics/), Eisenhower Matrix *(Do, Decide, Delegate, Delete)*
+    * Others: ABC Analysis, [Pareto (80/20)](/pareto-principle-for-data-analytics/), Eisenhower Matrix *(Do, Decide, Delegate, Delete)*
     * [~~Multi-Tasking~~](https://fossengineer.com/time-management-data-analytics/#avoid-multi-tasking)
 * Be adaptable
 <!-- Actively seeks information about new work situations
