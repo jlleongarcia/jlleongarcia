@@ -51,6 +51,12 @@ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
 It feels much faster than the i7-1185G7+32Gb Ram that im using at work (specially with Linux)
 {{< /callout >}}
 
+And the ssd looks also quite snappy:
+
+![Lenovo Thinkpad x13 SSD](/blog_img/hardware/Lenovo_x13-micron-ssd.png)
+
+> benchmarked with the `disk` utility within ubuntu
+
 ## My Setup for a Laptop
 
 Whether you want to [use Conky](https://jalcocert.github.io/Linux/docs/debian/conky_configuring_ubuntu/) or not...
@@ -166,7 +172,6 @@ Once you provide the user and pass, you will be able to see all the NC Files.
 
 > SFTPgo with docker compose [JMLabarta video](https://www.youtube.com/watch?v=ME5t2UREY_Q&t=570s)
 
-
 {{< /details >}}
 
 ### Using the ThinkPad as a Server
@@ -267,10 +272,10 @@ curl -6 ifconfig.me #ipv6 info
 
 {{% /details %}}
 
-Connecting your laptop to your server with https:
+Connecting your laptop to your server **with https**:
 
 {{< cards >}}
-  {{< card link="/" title="Local Image" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Raw image under static directory." >}}
+  {{< card link="/" title="NGINX Setup" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="HTTPs everywhere." >}}
   {{< card link="https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/" title="HTTPS Everywhere" image="/blog_img/mini_pc/nginx_posteio.png" subtitle="Setup NGINX with DuckDNS to have https certificates." method="Resize" options="600x q80 webp" >}}
 {{< /cards >}}
 

@@ -13,7 +13,7 @@ math: true
 -->
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/AB-Testing-for-data-analytics/" title="Bayes and Streamlit?" image="blog_img/data-experiments/bayes-st.png" subtitle="I thought that was for ML and DSc" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/AB-Testing-for-data-analytics/" title="Bayes and Streamlit?" image="/blog_img/data-experiments/bayes-st.png" subtitle="I thought that was for ML and DSc" >}}
   {{< card link="https://github.com/JAlcocerT/Python_is_awesome" title="Awsome Python" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Tinkering with Bayes and Streamlit" >}}
 {{< /cards >}}
 
@@ -57,6 +57,12 @@ It says that the updated belief (posterior probability P(A|B)) is proportional t
 
 **Example:**
 
+<!-- 
+https://www.youtube.com/watch?v=R13BD8qKeTg
+ -->
+{{< youtube "R13BD8qKeTg" >}}
+
+
 Let's say we're trying to diagnose a medical condition.
 
 * **A:** The patient has the condition.
@@ -74,3 +80,6 @@ Bayes' Theorem helps us calculate `P(A|B)`, the probability of having the condit
 Bayes' Theorem is essential because it provides a formal way to **reason about probabilities and update our beliefs in the face of new information**.
 
 It's a cornerstone of many statistical and machine learning techniques, and it's a valuable tool for decision-making under uncertainty.
+
+https://www.youtube.com/watch?v=HZGCoVF3YvM
+{{< youtube "HZGCoVF3YvM" >}}

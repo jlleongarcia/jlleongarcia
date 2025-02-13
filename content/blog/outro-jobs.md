@@ -18,6 +18,7 @@ url: 'when-to-apply-for-a-job'
 ### Using BS4 and CRON
 
 It was all very simple, very clear...
+
 ```sh
 git clone https://gitlab.com/fossengineer1/cv-check
 cd Scrap_Pracuj
