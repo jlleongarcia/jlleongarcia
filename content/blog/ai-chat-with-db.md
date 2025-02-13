@@ -125,7 +125,7 @@ Once, **Docker/Podman** are installed, just spin a mysql instance:
 sudo docker exec -it mysql-db /bin/bash
 ```
 
-Now, you can see that MySQL is installed, just inside the container:
+Now, you can see that **MySQL is installed**, just inside the container:
 
 ```sh
 # mysql --version  # Output: mysql Ver 8.0.40-0ubuntu0.24.04.1 for Linux on x86_64 ((Ubuntu))

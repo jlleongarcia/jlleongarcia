@@ -3,17 +3,17 @@ title: "A/B Testing: Revolutionize Your Optimization Strategy"
 date: 2020-11-27T23:20:21+01:00
 draft: false
 tags: ["Outro"]
-description: 'What it is A/B Testing. Results in Python'
+description: 'What it is A/B Testing? Statistical insights and informed decisions that drive conversions'
 summary: 'Explore A/B testing. Learn how to integrate advanced data analysis techniques, uncover insights, and make informed decisions that drive conversions.'
 url: 'AB-Testing-for-data-analytics'
 math: true
 ---
 
-By combining the power of data-driven experimentation with advanced analytical techniques, you can revolutionize your optimization strategy and achieve impressive results.
+By combining the power of **data-driven experimentation** with advanced analytical techniques, you can revolutionize your **optimization strategy** and achieve impressive results.
 
 We'll leverage **the synergy between A/B testing and data analytics**, showcasing how these two disciplines can work hand in hand to help you make informed decisions.
 
-> The world of A/B testing — a simple yet powerful technique that can transform products
+> The world of A/B testing — a simple yet powerful technique that can **transform products**
 
 In a nutshell, **A/B testing involves comparing two different versions of your product** (*you name it: app, web page, email, ad...*) to determine which one performs better. 
 
@@ -57,7 +57,7 @@ A/B testing can benefit various fields and industries beyond digital marketing a
 
 Some areas where A/B testing can be beneficial include:
 
-* Product Development: A/B testing can help product managers and developers refine product features, user interfaces, and pricing strategies by understanding user preferences and behavior.
+* Product Development: A/B testing can help product managers and developers **refine product features, user interfaces, and pricing strategies** by understanding user preferences and behavior.
 
 * E-commerce: Online retailers can use A/B testing to optimize website elements such as product listings, pricing, promotional offers, and checkout processes to increase sales and customer satisfaction.
 
@@ -72,8 +72,10 @@ Some areas where A/B testing can be beneficial include:
 
 ## AB Testing with Python
 
+Which Free Software can I use to do AB Testing?
+
 {{< callout type="info" >}}
-Which Free Software can I use to do AB Testing? You can have a look to **PostHog**, a Product Analytic software. Or simply use Python.
+ You can have a look to **PostHog**, a Product Analytic software. Or simply use Python.
 {{< /callout >}}
 
 
@@ -117,7 +119,7 @@ The p-value resulting from the test is compared to a pre-defined significance le
 
 
 {{< callout type="info" >}}
-**Please note** that this is a basic example and should be adapted according to your specific use case and data.
+**Please note** that this is a basic example. Adapt it according to your specific use case.
 {{< /callout >}}
 
 ---

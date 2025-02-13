@@ -3,7 +3,7 @@ title: "Which OS for a NAS?"
 date: 2025-03-17
 draft: false
 tags: ["Gen-AI","Python","Dev"]
-summary: 'Testing Operative System for a NAS'
+description: 'Testing Operative System for a NAS'
 url: 'os-for-nas'
 ---
 
@@ -11,7 +11,9 @@ Ive been pretty much confortable with these OS:
 
 1. Ubuntu
 2. Zorin OS
-3. Garuda Linux (with this one you unlock the superpower of saying: I use Arch, btw)
+3. Garuda Linux 
+
+> With Garuda, you unlock the superpower of saying: *I use Arch, btw*
 
 
 Time to try something new, getting ready for a **network attached storage**:
@@ -95,9 +97,13 @@ They also provide an [API](https://haveibeenpwned.com/API/Key), which you would 
 
 ### Interesting Software for Servers
 
-https://github.com/moghtech/komodo
+1. https://github.com/moghtech/komodo
 
 > 🦎 a tool to build and deploy software on many servers 🦎
 
 <!-- https://www.youtube.com/watch?v=acDVwwLklas -->
 {{< youtube "acDVwwLklas" >}}
+
+2. https://github.com/safing/portmaster
+
+> 🏔 Love Freedom - ❌ Block Mass Surveillance

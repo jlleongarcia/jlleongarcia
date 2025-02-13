@@ -215,7 +215,7 @@ crontab -e
 0 23 * * * /home/reisipi/cv-check/Scrap_Pracuj/run_pracuj_v3.sh
 ```
 
-See that the CRON job is there:
+See that **the CRON job is there**:
 
 ```sh
 crontab -l
