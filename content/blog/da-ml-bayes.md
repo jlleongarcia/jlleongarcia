@@ -12,29 +12,34 @@ math: true
 ![French Amortiz Example](/blog_img/data-experiments/bayes-st.png)  
 -->
 
+**What is Bayes' Theorem?**
+
+Bayes' Theorem is a fundamental concept in probability theory that describes how to update the probability of a hypothesis as new evidence becomes available.
+
+{{< callout type="info" >}}
+It's a way to **revise our beliefs in light of new information**.
+{{< /callout >}}
+
+Bayes formula is: $P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$
+
+It's widely used in fields like medicine, **machine learning**, and many others **where we need to make inferences based on incomplete or uncertain data**.
+
+
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/AB-Testing-for-data-analytics/" title="Bayes and Streamlit?" image="/blog_img/data-experiments/bayes-st.png" subtitle="I thought that was for ML and DSc" >}}
   {{< card link="https://github.com/JAlcocerT/Python_is_awesome" title="Awsome Python" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Tinkering with Bayes and Streamlit" >}}
 {{< /cards >}}
 
 
-Bayes formula is: $P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$
-
 Let's break down Bayes' Theorem and its components.
 
-**What is Bayes' Theorem?**
-
-Bayes' Theorem is a fundamental concept in probability theory that describes how to update the probability of a hypothesis as new evidence becomes available.  It's a way to revise our beliefs in light of new information.  It's widely used in fields like medicine, machine learning, and many others where we need to make inferences based on incomplete or uncertain data.
-
-**The Formula:**
-
-The mathematical expression of Bayes' Theorem is:
+**The Formula:** The mathematical expression of Bayes' Theorem is
 
 ```
 P(A|B) = [P(B|A) * P(A)] / P(B)
 ```
 
-Which leads to this 3d behaviour (having P(A) constant )
+Which leads to this interesting 3d behaviour (having P(A) constant )
 
 ![Bayes](/blog_img/data-experiments/bayes3d.png)
 

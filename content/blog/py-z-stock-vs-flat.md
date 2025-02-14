@@ -3,7 +3,7 @@ title: "Real Estate Calculator with Python"
 date: 2025-01-25
 draft: false
 tags: ["Python"]
-description: "Making my own mortage calculator in Python."
+description: "Making my own mortage calculator in Python. Understanding LTV, I2P, French Amortization,.."
 url: 'python-real-estate-mortage-calculator'
 math: true
 ---
@@ -23,7 +23,6 @@ This arise the question: *what it is the **return** on the money that ive given 
 Apparently, finance people call that the **ROIC** (without leverage on a loan, ROI=ROIC)
 
 But its all about few mathematical ways to represent very logical financial concepts.
-
 
 {{< callout type="warning" >}}
 **No information exposed on this post can be taken as financial recommendations** 
@@ -149,25 +148,61 @@ Ive also covered **mortage with python** as part of the [EDA of pystocks](https:
 
 ### Net assets
 
-So in the beginning of 'the game', these are your cards:
+So in the beginning of *'the game'*, these are your cards:
 
-* The lender owns the principal, but you can use it, at least until you keep paying as per payment schedule
+* The lender owns the principal, but you can use it. At least until you keep paying as per payment schedule
 * You have extra liabilities to pay now, the interests
 
 Basically, your net assets at the moment of the operation are going from something, to less of that something.
 
-And you net assets at the initial moment **could be** less than zero:
+And your **net assets** at the initial moment **could be** less than zero.
 
 
-![Interest to Principal Ratio](/blog_img/data-experiments/interest2principal.png)
+{{% details title="More about Net Assets Value - NAV 🚀" closed="true" %}}
 
-How much into the deep?
+Whether or not you include the *future* interest payments in your net asset value (NAV) calculation depends on your specific purpose and how you define "net asset value." 
+
+There are different perspectives and conventions, so it's essential to be clear about your approach.
+
+Breakdown of the common approaches and their implications:
+
+**1. Excluding Future Interest (Most Common for NAV):**
+
+* **Logic:**  Net asset value typically represents the current value of your assets *minus* your current liabilities.  Future interest payments are not yet liabilities. They are contingent on you continuing the loan and are calculated over time.  Therefore, they are not usually included in a standard NAV calculation.
+* **Interpretation:** This approach gives you a snapshot of your current financial position: "If I were to sell the asset today and pay off my existing debts, this is what I would have left."
+* **Your Code's Current Behavior:** Your existing code follows this approach. It calculates NAV as: `Asset Value - Principal Remaining`. This is generally the most common and accepted way to represent NAV for loan scenarios.
+
+**2. Including Future Interest (More Complex and Less Common):**
+
+* **Logic:** You *could* argue that future interest payments are a future liability and should be considered.  This would involve calculating the total future interest payments over the remaining loan term and discounting them back to their present value.  This is a more complex calculation.
+* **Interpretation:** This approach attempts to estimate the total cost of the loan, including all future interest payments.  It's useful for understanding the overall financial impact of the loan but is less common for "net asset value" calculations. It is more in line with what a *total cost of ownership* calculation would consider.
+* **Pros and Cons:**
+
+    * **Pro:** More comprehensive view of the loan's cost.
+    * **Con:** More complex to calculate, subjective discounting rate, might not be relevant to day-to-day NAV.
+
+**3.  Important Considerations:**
+
+* **Purpose of the Calculation:**  If you're calculating NAV for financial reporting or investment purposes, excluding future interest (approach 1) is the standard and generally accepted method.  If you want to understand the total cost of borrowing, including the interest (approach 2), then a more advanced method will give the *total cost of ownership*.
+
+**Recommendation:**
+
+For your Streamlit app, the current approach of *excluding* future interest from the NAV calculation is perfectly fine and is the most common and accepted way of calculating NAV.  It provides a **clear picture of your current equity in the asset**.
+
+
+{{% /details %}}
+
+This is an example, where in the NAV the interests to be paid are not included, but visible in a separated line:
+
+![Interest to Principal Ratio](/blog_img/data-experiments/buyr_mortage_NAV_norent.png)
+
+How much into the deep could this operation make me be?
 
 Well, that depends ofc of:
 
 1. Interest rates
 2. Years to Pay
-3. LTV
+3. LTV - How much you ask, versus how much you got initially
 
 Makes sense right?
 
@@ -177,12 +212,14 @@ Lets see.
 
 ## Dividend Growth vs Rent Growth
 
+Having a look to the growth of the dividends of a real estate stock, like `NYSE:O`.
+
 ```sh
 #https://www.nasdaq.com/market-activity/stocks/o/dividend-history
 =(importxml("https://www.nasdaq.com/market-activity/stocks/o/dividend-history";$AJ$28))
 ```
 
-First div of 2025 has been 0.264 and first of 2024 was 0.2565, or a 2.92% growth.
+First div of 2025 has been 0.264 and first of 2024 was 0.2565, or a **~2.92% growth**.
 
 But some years are better than others, right?
 
@@ -240,7 +277,10 @@ And also the property most likely increased the value on a 25 years horizon sinc
 
 Those 2 factors, while you 'just' put from your pocket the orange part of the graph.
 
-This is an **example on how ROIC >> ROI**
+This is an **example on how ROIC >> ROI**.
+
+$$ Annualized\ ROI = \left( \frac{Ending\ Value}{Beginning\ Value} \right)^{\frac{1}{n}} - 1 $$
+
 
 ### Rent Price vs Property Price
 
@@ -450,17 +490,17 @@ Those are **nominal growth** values, dont forget to take into consideration [inf
 Retirements facts, the inflation shiny app [repo](https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps)
 {{< /callout >}}
 
-Taking inflation into consideration is very important.
+Taking **inflation** into consideration is **very important**.
 
 I was talking with a friend recently, who bought a flat in 2020 and she told me 'now it's wort more than 50% what she paid for'.
 
-Remember to have a broader look to these kind of conversations.
+> Remember to have a broader look to these kind of conversations.
 
 Providing that return is true, that's the **nominal one**.
 
 And as you understand what it is [CAGR](#cagr), you know that x1.5 in 5 years is a ~8% compund yearly return.
 
-Is it much? is it low?
+Is it much? Is it low?
 
 > Here is where most people disconnect, **please continue reasoning**
 
@@ -792,13 +832,12 @@ if monthly_payment is not None:
 
 ## Thanks To
 
-* Thanks to airbnb and idealista for the historical data
+Thanks to airbnb and idealista for the historical data figures!
 
 * Interesting Financial realted **Posts**:
   * https://estudinero.substack.com/
   * https://estudinero.substack.com/p/la-inflacion-el-impuesto-invisible
-* https://wtfhappenedin1971.com/
-
+  * https://wtfhappenedin1971.com/
 
 * Thanks to [HUGO Hextra Theme and katex](https://imfing.github.io/hextra/docs/guide/latex/)!
 
