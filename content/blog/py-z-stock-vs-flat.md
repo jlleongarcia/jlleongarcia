@@ -318,7 +318,7 @@ You might need to put some more money in the initial stages of the process, desp
 
 What exactly? We need to make some **zoom in** on the previous **cash flow graph**:
 
-![French Amortiz Example](/blog_img/data-experiments/buy_mortage_and_rent_CF_focused.png) 
+![First Months of Renting](/blog_img/data-experiments/buy_mortage_and_rent_CF_focused.png) 
 
 The break even point is much later on, but see how initially you might have some configuration of parameters that will make you place **additional money from your pocket** (in addition to the one you give initially, together with the bank to get the property).
 
@@ -711,6 +711,82 @@ And with those rates, the yield of that stock you are buying today, catch up in 
 
 <!-- https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps -->
 
+### What if the interest change?
+
+Maybe, you will get a fixed interest for the first 5Y, then, an **estimation** of what you will have to pay.
+
+Im sure some of you have created an excel, which needs such interest value.
+
+Probably with some condition on the month, to consider the initial or the changed interest.
+
+But...what would that *virtual, future* interest be **potentially**?
+
+{{< details title="Given Monthly Payment - Know i with Py 📌" closed="true" >}}
+
+Again - POTENTIALLY BE. 
+
+Not for sure.
+
+```py
+# #cd EDA_Mortage
+# #source mortage_venv/bin/activate #(linux)
+# #python3 given_
+
+import numpy_financial as npf
+
+def calculate_interest_rate(loan_amount, monthly_payment, loan_term_months):
+    """Calculates the annual interest rate.
+
+    Args:
+        loan_amount: The principal loan amount.
+        monthly_payment: The monthly payment amount (should be negative).
+        loan_term_months: The total number of months in the loan term.
+
+    Returns:
+        The annual interest rate (as a decimal), or None if an error occurs.
+    """
+    try:
+        monthly_rate = npf.rate(loan_term_months, monthly_payment, loan_amount, fv=0) # fv=0 added
+        annual_rate = monthly_rate * 12
+        return annual_rate
+    except Exception as e:
+        print(f"Error calculating interest rate: {e}")
+        return None
+
+# Example usage:
+loan_amount = 630000
+monthly_payment = -3274
+loan_term_months = 360
+
+annual_interest_rate = calculate_interest_rate(loan_amount, monthly_payment, loan_term_months)
+
+if annual_interest_rate is not None:
+    percentage_rate = annual_interest_rate * 100
+    print(f"The annual interest rate is approximately: {percentage_rate:.2f}%")
+
+# Example of calculating monthly payment
+def calculate_monthly_payment(loan_amount, annual_interest_rate, loan_term_months):
+  try:
+    monthly_rate = annual_interest_rate / 12
+    monthly_payment = npf.pmt(monthly_rate, loan_term_months, loan_amount)
+    return monthly_payment
+  except Exception as e:
+    print(f"Error calculating monthly payment: {e}")
+    return None
+
+loan_amount = 630000
+annual_interest_rate = 0.08 # 8%
+loan_term_months = 360
+
+monthly_payment = calculate_monthly_payment(loan_amount, annual_interest_rate, loan_term_months)
+
+if monthly_payment is not None:
+  print(f"The monthly payment is approximately: {monthly_payment:.2f}")
+```
+
+{{< /details >}}
+
+![Finding virtual interest with numerical aprox](/blog_img/data-experiments/frenchamortiz_Finding_interest_given_M.png) 
 
 ---
 
