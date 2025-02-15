@@ -1,9 +1,9 @@
 ---
 title: "A closer look to Google Cloud Platform"
-date: 2025-02-15
+date: 2025-02-16
 draft: false
 tags: ["dev"]
-description: 'Learning more about GCP. Compared with other Clouds and onprem.'
+description: 'Learning more about GCP. Compared with other Clouds and OnPrem.'
 url: 'understanding-google-cloud-platform'
 ---
 

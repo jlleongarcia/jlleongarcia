@@ -148,8 +148,10 @@ Now, its all about adding components to the `def index()`, like: https://reflex.
 rx.moment(MomentState.date_now), #you will need to define its associated MomentState(), also given in the docs
 ```
 
-Not long after get that working, you will **build some demo, using graph components**: https://reflex.dev/docs/library/graphing/charts/barchart/
+Not long after get that working, you will **build some demo, using graph components**:
 
+* https://reflex.dev/docs/library/graphing/charts/barchart/
+* https://reflex.dev/docs/library/graphing/charts/composedchart/
 
 
 {{< details title="testing Sample Components with Reflex 📌" closed="true" >}}
@@ -304,7 +306,7 @@ app.add_page(index)
 ### Real Estate with Reflex
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/" title="Understanding Real Estate" image="/videos/job_offers.png" subtitle="Post where I tinkered with Math for Real Estate." >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/" title="Understanding Real Estate" image="/blog_img/data-experiments/buyr_mortage_NAV_norent.png" subtitle="Post where I tinkered with Math for Real Estate." >}}
   {{< card link="https://gitlab.com/fossengineer1/py_stocks/-/tree/main/EDA_Mortage?ref_type=heads" title="Scrapping Tools" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source CodeEDA French Amortization" >}}
 {{< /cards >}}
 
