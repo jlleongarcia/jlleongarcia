@@ -3,7 +3,7 @@ title: "Reflex. Cooler Web Apps?"
 date: 2025-02-12
 draft: false
 tags: ["Dev"]
-description: 'Using (Python) Reflex to display Job Market Trends as a simple web app.'
+description: 'Using (Python) Reflex to display Real Estate and Job Market Trends as Web Apps.'
 url: 'tinkering-with-reflex'
 ---
 
@@ -11,6 +11,20 @@ url: 'tinkering-with-reflex'
 
 
 ## The Reflex Package
+
+* https://github.com/reflex-dev/reflex
+
+> Apache v2 | 🕸️ Web apps in pure Python 🐍
+
+
+What I want to use it for?
+
+How about enhancing this streamlit projects?
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/" title="RE Calculator - Post"  >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/when-to-apply-for-a-job/" title="Job Offers and CV Creation" >}}
+{{< /cards >}}
 
 
 {{< details title="Compile Python on a Pi 📌" closed="true" >}}
@@ -58,10 +72,10 @@ source my_env/bin/activate  # Activates the environment
 ```sh
 pip install reflex
 reflex init
-reflex run
+reflex run #this compiles and execute the sample app
 ```
 
-The front end will be at `localhost:3000`
+The front end UI will be at `localhost:3000`
 
 
 {{< callout type="info" >}}
@@ -84,13 +98,226 @@ https://imfing.github.io/hextra/docs/guide/shortcodes/filetree/
   {{< filetree/file name="hugo.toml" >}}
 {{< /filetree/container >}}
 
+If you inspect, this is how the reflex `main.py` looks:
+
+```py
+"""Welcome to Reflex! This file outlines the steps to create a basic app.""" #Shown as title
+
+import reflex as rx
+
+from rxconfig import config
+
+
+class State(rx.State):
+    """The app state."""
+
+    ...
+
+
+def index() -> rx.Component:
+    # Welcome Page (Index)
+    return rx.container(
+        rx.color_mode.button(position="top-right"),
+        rx.vstack(
+            rx.heading("Welcome to Reflex!", size="9"),
+            rx.text(
+                "Get started by editing ",
+                rx.code(f"{config.app_name}/{config.app_name}.py"),
+                size="5",
+            ),
+            rx.link(
+                rx.button("Check out our docs!"),
+                href="https://reflex.dev/docs/getting-started/introduction/",
+                is_external=True,
+            ),
+            spacing="5",
+            justify="center",
+            min_height="85vh",
+        ),
+        rx.logo(),
+    )
+
+
+app = rx.App()
+app.add_page(index)
+```
+
+Now, its all about adding components to the `def index()`, like: https://reflex.dev/docs/library/data-display/moment/
+
+```py
+rx.moment(MomentState.date_now), #you will need to define its associated MomentState(), also given in the docs
+```
+
+Not long after get that working, you will **build some demo, using graph components**: https://reflex.dev/docs/library/graphing/charts/barchart/
+
+
+
+{{< details title="testing Sample Components with Reflex 📌" closed="true" >}}
+
+```py
+#pip install reflex
+#reflex init
+
+import reflex as rx
+
+from datetime import datetime, timezone
+
+
+class MomentState(rx.State):
+    date_now: datetime = datetime.now(timezone.utc)
+
+    @rx.event
+    def update(self):
+        self.date_now = datetime.now(timezone.utc)
+
+
+def moment_update_example():
+    return rx.button(
+        "Update",
+        rx.moment(MomentState.date_now),
+        on_click=MomentState.update,
+    )
+
+##
+
+data = [
+    {"name": "Page A", "uv": 4000, "pv": 2400, "amt": 2400},
+    {"name": "Page B", "uv": 3000, "pv": 1398, "amt": 2210},
+    {"name": "Page C", "uv": 2000, "pv": 9800, "amt": 2290},
+    {"name": "Page D", "uv": 2780, "pv": 3908, "amt": 2000},
+    {"name": "Page E", "uv": 1890, "pv": 4800, "amt": 2181},
+    {"name": "Page F", "uv": 2390, "pv": 3800, "amt": 2500},
+    {"name": "Page G", "uv": 3490, "pv": 4300, "amt": 2100},
+]
+
+def bar_simple():
+    return rx.recharts.bar_chart(
+        rx.recharts.bar(
+            data_key="uv",
+            stroke=rx.color("accent", 9),
+            fill=rx.color("accent", 8),
+        ),
+        rx.recharts.x_axis(data_key="name"),
+        rx.recharts.y_axis(),
+        data=data,
+        width="100%",
+        height=250,
+    )
+
+def composed():
+    return rx.recharts.composed_chart(
+        rx.recharts.area(
+            data_key="uv", stroke="#8884d8", fill="#8884d8"
+        ),
+        rx.recharts.bar(
+            data_key="amt", bar_size=20, fill="#413ea0"
+        ),
+        rx.recharts.line(
+            data_key="pv",
+            type_="monotone",
+            stroke="#ff7300",
+        ),
+        rx.recharts.x_axis(data_key="name"),
+        rx.recharts.y_axis(),
+        rx.recharts.cartesian_grid(stroke_dasharray="3 3"),
+        rx.recharts.graphing_tooltip(),
+        data=data,
+        height=250,
+        width="100%",
+    )
+#####
+
+"""Welcome to Reflex! This file outlines the steps to create a basic app."""
+
+import reflex as rx
+from rxconfig import config
+
+
+class State(rx.State):
+    """The app state."""
+
+    ...
+
+def index() -> rx.Component:
+    # Welcome Page (Index)
+    return rx.container(
+        rx.color_mode.button(position="top-right"),
+        rx.vstack(
+            rx.heading("Welcome to Reflex!", size="9"),
+            rx.heading("Yessss, this works!", size="5"),
+            
+            rx.callout(
+                "One step closer to do cool things :)",
+                icon="info",
+            ),
+            rx.moment(MomentState.date_now),
+            #moment_update_example(),
+            bar_simple(),
+            composed(),
+            
+            rx.text(
+                "Get started by editing ",
+                rx.code(f"{config.app_name}/{config.app_name}.py"),
+                size="5",
+            ),
+            rx.link(
+                rx.button("Check out our docs!"),
+                href="https://reflex.dev/docs/getting-started/introduction/",
+                is_external=True,
+            ),
+            spacing="5",
+            justify="center",
+            min_height="85vh",
+        ),
+        rx.logo(),
+    )
+
+app = rx.App()
+app.add_page(index)
+```
+
+{{< /details >}}
+
+![Reflex 101](/blog_img/apps/reflex/reflex-101.png)
+
+
+
 ---
 
-## Historical Job Market Data with Reflex
+## Building with Reflex
 
+
+
+### Historical Job Market Data with Reflex
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/when-to-apply-for-a-job/" title="When to apply?" image="/videos/job_offers.png" subtitle="Post where I tinkered with scrapping tools." >}}
+  {{< card link="https://github.com/JAlcocerT/Scrap_Tools" title="Scrapping Tools" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source Code for using BS4, AI Scraps..." >}}
+{{< /cards >}}
+
+
+{{< details title=" 📌" closed="true" >}}
+
+
+{{< /details >}}
+
+### Real Estate with Reflex
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/" title="Understanding Real Estate" image="/videos/job_offers.png" subtitle="Post where I tinkered with Math for Real Estate." >}}
+  {{< card link="https://gitlab.com/fossengineer1/py_stocks/-/tree/main/EDA_Mortage?ref_type=heads" title="Scrapping Tools" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source CodeEDA French Amortization" >}}
+{{< /cards >}}
+
+{{< details title=" 📌" closed="true" >}}
+
+
+{{< /details >}}
 
 ## Conclusions
 
+I find it easier to iterate with streamlit, as there is no waiting time for compiling.
+
+But definitely, Reflex apps can look really cool.
 
 
 ---
@@ -98,7 +325,8 @@ https://imfing.github.io/hextra/docs/guide/shortcodes/filetree/
 ## FAQ
 
 
-You're asking about a good range of Python web UI frameworks! Here's a breakdown of the key differences between Reflex, Flet, Streamlit, and PySimpleGUI (often referred to as "PyNiceGUI" due to its original name):
+{{< details title="There is a good range of Python web UI frameworks... 📌" closed="true" >}}
+
 
 **1. Reflex:**
 
@@ -139,6 +367,9 @@ You're asking about a good range of Python web UI frameworks! Here's a breakdown
 | Web Capabilities| Excellent               | Good                      | Good                  | Not designed for web (PySimpleGUI) / Good (NiceGUI) |
 | Data Science    | Good                    | Moderate                  | Excellent               | Limited (PySimpleGUI) / Good (NiceGUI) |
 
+
+{{< /details >}}
+
 **Which one should you choose?**
 
 * **Reflex:** If you need to build a complex, interactive web application with real-time updates and a rich UI.
@@ -146,5 +377,3 @@ You're asking about a good range of Python web UI frameworks! Here's a breakdown
 * **Streamlit:** If you're building a data-driven web app or dashboard quickly and easily, especially for data science projects.
 * **PySimpleGUI:** If you need to create a simple desktop utility or tool with a basic UI.
 * **NiceGUI:** If you want to create a simple web UI quickly and easily, with a focus on data visualization and interactivity.
-
-Remember to consider the complexity of your project, your team's familiarity with the technologies involved, and your deployment requirements when making your decision.

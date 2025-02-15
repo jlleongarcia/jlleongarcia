@@ -7,7 +7,7 @@ description: 'Testing Operative System for a NAS'
 url: 'os-for-nas'
 ---
 
-Ive been pretty much confortable with these OS:
+Ive been pretty much **comfortable with these OS's**:
 
 1. Ubuntu
 2. Zorin OS
@@ -107,3 +107,5 @@ They also provide an [API](https://haveibeenpwned.com/API/Key), which you would 
 2. https://github.com/safing/portmaster
 
 > 🏔 Love Freedom - ❌ Block Mass Surveillance
+
+You can also have a look to: ModSecurity, Naxsi, Open AppSec, SafeLine,...

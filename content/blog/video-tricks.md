@@ -7,18 +7,21 @@ description: 'Quick videos with action cameras.'
 url: 'my-action-cam-video-workflow'
 ---
 
+So far, ive been doing couple of things with the action cam.
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/" title="OA5 Pro 101"  >}}
-  {{< card link="https://github.com/JAlcocerT/Scrap_Tools" title="OA5Pro Firmware Update" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/" title="OA5 Pro 101"  >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/" title="OA5Pro Firmware Update" >}}
 {{< /cards >}}
 
 
+Even apply it for karting!
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/scrap-and-chat-with-the-web/" title="OA5 Pro 101"  >}}
-  {{< card link="https://github.com/JAlcocerT/Scrap_Tools" title="Geospatial Analysis (with action cams)" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/geospatial-data/" title="Geospatial Analysis (with action cams)" >}}
 {{< /cards >}}
+
+Now its time for a recap on the latest tricks.
 
 
 ## High vs Low Bit Rate

@@ -121,7 +121,17 @@ There you have a **sample split evolution** of how much you are paying on intere
 
 As per the french amortization behaviour, it goes down to 0% in the last payment.
 
-And overall, it would be ~54,4%. Again, all with this sample figures.
+This means, that if you return principal earlier and yo keep the monthly payments constant, you will finish the operation earlier, leading to a save on the last interests you had to pay.
+
+As you can imagine, the more you advance payments, the more % of interest you are saving versus the amount given.
+
+{{< callout type="info" >}}
+Also, you can save more interests than the advanced principal, if you return enough and early enough to avoid montly payments where the interes to principal was >50%  
+{{< /callout >}}
+
+And overall, it would be ~54,4%.
+
+> Again, all with this sample figures.
 
 The shape of the **curve depends on the parameters** you set:
 
@@ -132,7 +142,7 @@ As you can imagine, the higher those 2 are, the higher interest you pay in value
 
 That's right, it **can be 50%, but** the interest you pay back **does not have to be a 50/50 split** with the pincipal.
 
-I mean in total.
+> I mean in total.
 
 Because if you understood previous graph, you already now that **the split varies month per month**.
 
@@ -479,7 +489,7 @@ Those are **nominal growth** values, dont forget to take into consideration [inf
 
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/r-dashboard-shinyapps/" title="Retirement Facts" image="/blog_img/data-experiments/Inflation_Mild.JPG" subtitle="Life savings and inflation in a R Shiny App." >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/r-dashboard-shinyapps/" title="Retirement Facts [Post]" image="/blog_img/data-experiments/Inflation_Mild.JPG" subtitle="Life savings and inflation in a R Shiny App." >}}
   {{< card link="https://github.com/JAlcocerT/R_is_Great/tree/main/ShinyApps" title="Retirement Facts" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Life savings and inflation in a R Shiny App." >}}
 {{< /cards >}}
 
