@@ -1,9 +1,8 @@
 ---
-title: "Trying a Nuxt Theme and a SSG Recap"
+title: "Trying a Nuxt Theme [and a SSG Recap]"
 date: 2025-02-23
 draft: false
 tags: ["dev"]
-summary: ''
 description: 'Testing NUXT Themes. Looking back to the learnings with other SSGs like HUGO and Astro. Creating a website for a moto blogger.'
 url: 'trying-nuxt-themes'
 ---
@@ -48,7 +47,6 @@ The **theme** - https://github.com/JAlcocerT/horizon
 Which original (and fantastic) job was done by https://github.com/Boston343/horizon and released under GPL3.0
 
 
-
 ---
 
 ## A SSG Recap
@@ -77,9 +75,10 @@ Certainly! Below is an improved version of the table that provides a comparison 
 <!-- [![Star History Chart](https://api.star-history.com/svg?repos=gohugoio/hugo&type=Date)](https://star-history.com/#gohugoio/hugo&Date) -->
 
 
-For HUGO you will need to use GO, as explained [here](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/).
+For **HUGO** you will need to use GO, as explained [here](https://jalcocert.github.io/JAlcocerT/using-hugo-as-website/).
 
-For Jekyll, you will need Ruby.
+
+For **Jekyll**, you will need Ruby.
 
 If you plan to use [Github Pages with these SSGs](https://jalcocert.github.io/JAlcocerT/how-to-use-github-pages/), create the proper **[Github Actions](https://jalcocert.github.io/JAlcocerT/github-actions-use-cases) workflow**.
 
@@ -117,6 +116,16 @@ rm hugo_specific_version.deb
 
 https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml
 
+{{< callout type="info" >}}
+https://github.com/theNewDynamic/awesome-hugo
+{{< /callout >}}
+
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/" title="RE Calculator - Post"  >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/when-to-apply-for-a-job/" title="Job Offers and CV Creation" >}}
+{{< /cards >}}
+
 ### Astro       
 
 
@@ -125,6 +134,15 @@ https://github.com/JAlcocerT/JAlcocerT/blob/main/.github/workflows/pages.yaml
 3. https://jalcocert.github.io/JAlcocerT/how-to-use-github-pages/
     * Example - https://github.com/JAlcocerT/web3/actions
     https://github.com/JAlcocerT/web3/blob/main/.github/workflows/deploy_astro.yml
+
+{{< callout type="info" >}}
+https://github.com/one-aalam/awesome-astro?tab=readme-ov-file#%E2%84%B9%EF%B8%8F-repositoriesstarter-kitscomponents
+{{< /callout >}}
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/" title="RE Calculator - Post"  >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/when-to-apply-for-a-job/" title="Job Offers and CV Creation" >}}
+{{< /cards >}}
 
 {{< details title="What it is Pydantic? 📌" closed="true" >}}
 

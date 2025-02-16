@@ -108,9 +108,14 @@ Google Compute Engine charges are based on Network use: Network egress (data lea
 {{< /details >}}
 
 
-#### Other Clouds vs GCP CE
+## Other Clouds vs GCP
 
-#### GCP CE vs SBCs
+---
+
+## Conclusions
+
+
+### GCP CE vs SBCs
 
 Before going into the cloud, I got familiar with linux thanks to a raspberry Pi 4.
 
@@ -128,35 +133,24 @@ If you are wondering if you need a Pi or a MiniPC, you can have a look to [this]
 Most SBCs (not all) are ARM based CPUs and we will be seeing more and more ARM adoption on cloud providers.
 
 
-#### GCP CE vs Mini PCs
+### GCP CE vs Mini PCs
 
 Not so long ago I was lucky to try the following mini PCs:
 
-1. BMax B4
-2. Asrock x300
+1. [BMax B4](https://jalcocert.github.io/RPi/posts/minipc-vs-pi)
+2. Asrock [x300](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/)
 3. [Firebat AK2 Plus](https://jalcocert.github.io/JAlcocerT/firebat-ak2-plus-minipc-review/)
 
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/RPi/posts/minipc-vs-pi/" title="Asrock x300" image="/blog_img/hardware/bmax-b4.jpg" subtitle="Building a MiniPC as Server" >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/" title="Asrock x300" image="/blog_img/mini_pc/bmax_asrockx300.jpg" subtitle="Building a MiniPC as Server" >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers" title="BMax B4 Review" image="/blog_img/hardware/bmax-b4.jpg" subtitle="Small Factor x86 MiniPC" >}}
 {{< /cards >}}
 
-Mini PCs tend to have x86 CPU architecture.
+Mini PCs tend to have **x86** CPU architecture.
 
-They tend to behave better if you plan to reproduce high resolution video, but in general are less efficient per W.
+They tend to behave better if you plan to reproduce high resolution video, but in general, are less efficient as per compute power / Watt.
 
 <!-- https://studio.youtube.com/video/4qLgpJc2Ghs/edit -->
 
 {{< youtube "4qLgpJc2Ghs" >}}
-
-## Conclusions
-
-
-
----
-
-## FAQ
-
-### Compute vs Cost
-

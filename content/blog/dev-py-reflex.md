@@ -85,7 +85,7 @@ You will also need `localhost:8000` for the BE (which can conflict with Portaine
 
 {{< youtube "ITOZkzjtjUA" >}}
 
-> Learn to code by building series from Coding Entrepreneur is great (and not only for Reflex) https://www.youtube.com/watch?v=ITOZkzjtjUA&list=PLEsfXFp6DpzRDEA6ElMF_NuLu9cvoK49v
+> Learn to code by building [series from Coding Entrepreneur](https://www.youtube.com/watch?v=ITOZkzjtjUA&list=PLEsfXFp6DpzRDEA6ElMF_NuLu9cvoK49v) is great (and not only for Reflex)
 
 <!-- 
 https://imfing.github.io/hextra/docs/guide/shortcodes/filetree/
@@ -288,6 +288,11 @@ app.add_page(index)
 ![Reflex 101](/blog_img/apps/reflex/reflex-101.png)
 
 
+You will find also useful:
+
+1. rx.input - https://reflex.dev/docs/library/forms/input/
+2. rx.datatable - https://reflex.dev/docs/library/tables-and-data-grids/data-table/ or [table](https://reflex.dev/docs/library/tables-and-data-grids/table/)
+
 
 ---
 
@@ -310,10 +315,17 @@ app.add_page(index)
 
 ### Real Estate with Reflex
 
+Lately Ive been playing with RE data driven apps.
+
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/" title="Understanding Real Estate" image="/blog_img/data-experiments/buyr_mortage_NAV_norent.png" subtitle="Post where I tinkered with Math for Real Estate." >}}
   {{< card link="https://gitlab.com/fossengineer1/py_stocks/-/tree/main/EDA_Mortage?ref_type=heads" title="Scrapping Tools" image="/blog_img/apps/gh-jalcocert.svg" subtitle="Source CodeEDA French Amortization" >}}
 {{< /cards >}}
+
+And with Reflex and some tricks with Gemini...
+
+![Reflex using Components](/blog_img/apps/reflex/reflex-composedchart-datatable.png)
+
 
 {{< details title=" 📌" closed="true" >}}
 
@@ -379,8 +391,8 @@ But definitely, Reflex apps can look really cool.
 
 **Which one should you choose?**
 
-* **Reflex:** If you need to build a complex, interactive web application with real-time updates and a rich UI.
-* **Flet:** If you want to create a cross-platform application that runs on both desktop and web from a single codebase.
-* **Streamlit:** If you're building a data-driven web app or dashboard quickly and easily, especially for data science projects.
+* **Reflex:** If you need to build a complex, interactive web application with real-time updates and a **rich UI**.
+* **Flet:** If you want to create a **cross-platform** application that runs on both desktop and web from a single codebase.
+* **Streamlit:** If you're building a **data-driven web app** or dashboard quickly and easily, especially for data science projects.
 * **PySimpleGUI:** If you need to create a simple desktop utility or tool with a basic UI.
 * **NiceGUI:** If you want to create a simple web UI quickly and easily, with a focus on data visualization and interactivity.

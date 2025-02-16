@@ -406,19 +406,25 @@ Then, Try with:
 
 ### Favicon Creation
 
-
-For **regular icons**, [iconify](https://github.com/iconify/iconify) is a great place to start.
+For **regular ICONS**, [iconify](https://github.com/iconify/iconify) is a great place to start.
 
 > Universal icon framework. One syntax for FontAwesome, Material Design Icons, DashIcons, Feather Icons, EmojiOne, Noto Emoji and many other open source icon sets ([over 150 icon sets and 200k icons](https://github.com/iconify/icon-sets)). SVG framework, React, Vue and Svelte components!
 
-Or with https://github.com/pqoqubbw/icons
+Or with:
+
+*  https://github.com/pqoqubbw/icons
 
 > MIT | beautifully crafted animated icons
 
+* https://github.com/lucide-icons/lucide
 
-* You will need **proper favicons**
-    * https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
-    * https://github.com/seadfeng/favicon-downloader
+> ISC | Beautiful & consistent icon toolkit made by the community. Open-source project and a fork of Feather Icons.
+
+
+When you will need **proper FAVICONS**:
+
+* https://mariushosting.com/how-to-install-favicon-downloader-on-your-synology-nas/
+* https://github.com/seadfeng/favicon-downloader
 
 
 {{< details title="About favicons 📌" closed="true" >}}

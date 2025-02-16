@@ -7,7 +7,7 @@ description: 'Quick videos with action cameras.'
 url: 'my-action-cam-video-workflow'
 ---
 
-So far, ive been doing couple of things with the action cam.
+So far, ive been doing couple of things with the **action cam**.
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/dji-osmo-action-5-pro/" title="OA5 Pro 101"  >}}
@@ -15,7 +15,7 @@ So far, ive been doing couple of things with the action cam.
 {{< /cards >}}
 
 
-Even apply it for karting!
+Even apply data analytics for action cams and for karting!
 
 {{< cards >}}
   {{< card link="https://jalcocert.github.io/JAlcocerT/geospatial-data/" title="Geospatial Analysis (with action cams)" >}}

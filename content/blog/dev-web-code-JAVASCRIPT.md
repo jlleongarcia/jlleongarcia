@@ -10,6 +10,12 @@ url: 'javascript-for-static-websites'
 Ive learnt all of this **about JS** thanks to tinkering with the [Astro](https://jalcocert.github.io/JAlcocerT/create-your-website/#what-ive-learnt-about-astro) and [NextJS](https://fossengineer.com/nextjs-ssg/) web frameworks.
 
 
+
+{{< callout type="info" >}}
+https://github.com/sorrycc/awesome-javascript
+{{< /callout >}}
+
+
 ### JS Dependency Management
 
 1. NPM
