@@ -82,6 +82,11 @@ The front end UI will be at `localhost:3000`
 You will also need `localhost:8000` for the BE (which can conflict with Portainer!) 
 {{< /callout >}}
 
+
+{{< youtube "ITOZkzjtjUA" >}}
+
+> Learn to code by building series from Coding Entrepreneur is great (and not only for Reflex) https://www.youtube.com/watch?v=ITOZkzjtjUA&list=PLEsfXFp6DpzRDEA6ElMF_NuLu9cvoK49v
+
 <!-- 
 https://imfing.github.io/hextra/docs/guide/shortcodes/filetree/
 -->

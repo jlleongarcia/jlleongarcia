@@ -21,10 +21,16 @@ To learn streamlit with youtube: https://www.youtube.com/@andfanilo
 ### Chat Elements
 
 https://www.youtube.com/watch?v=4sPnOqeUDmk
+ 
+{{< youtube "4sPnOqeUDmk" >}}
+
 
 ### Replit and Streamlit
 
 https://www.youtube.com/watch?v=CJ9E0Sm_hy4
+
+{{< youtube "CJ9E0Sm_hy4" >}}
+
 
 ## Audio with Streamlit
 

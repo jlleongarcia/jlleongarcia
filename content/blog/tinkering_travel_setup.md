@@ -1,6 +1,6 @@
 ---
 title: "Technology Setup for a Trip"
-date: 2025-01-16
+date: 2025-02-11
 draft: false
 tags: ["AI"]
 description: "Software and Hardware setup before trips or vacations. Tech Travel Setup."
@@ -63,7 +63,8 @@ tailscale ip -4 #get the ip
 #sudo tailscale down
 ```
 
-Make this device available as exit node
+Make this device available as exit node:
+
 ```sh
 echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf &&
 echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.conf &&
@@ -87,9 +88,8 @@ Which you can combine with [Mullvad](https://jalcocert.github.io/Linux/docs/debi
 ![Trip Planner Graph](https://github.com/JAlcocerT/Py_Trip_Planner/raw/main/images/trip-planner-main-graph.png)
 
 {{< cards cols="1" >}}
-  {{< card link="https://github.com/JAlcocerT/Py_Trip_Planner" title="Trip Planner GH Repo" >}}
-  {{< card link="https://jalcocert.github.io/JAlcocerT/using-langchain-with-pandas-df/" title="Latest AI Changes to Trip Planner - Post" >}}
-  {{< card link="https://github.com/JAlcocerT/Py_Trip_Planner/pkgs/container/py_trip_planner" title="GHCR Container for Trip Planner" >}}
+  {{< card link="https://fossengineer.com/selfhosting-adventurelog/" title="How to Setuo AdventureLog with Containers" >}}
+  {{< card link="https://fossengineer.com/selfhosting-airtrail/" title="Selfhosting AirTrail" >}}
 {{< /cards >}}
 
 
@@ -98,6 +98,12 @@ Which you can combine with [Mullvad](https://jalcocert.github.io/Linux/docs/debi
 
 
 {{< /details >}}
+
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/python-real-estate-mortage-calculator/" title="RE Calculator - Post"  >}}
+  {{< card link="https://jalcocert.github.io/JAlcocerT/when-to-apply-for-a-job/" title="Job Offers and CV Creation" >}}
+{{< /cards >}}
 
 ### Maps
 
@@ -242,9 +248,11 @@ To bring with you, a [compact laptop](https://jalcocert.github.io/JAlcocerT/lapt
 
 Some people bring their drons.
 
-But [my DJI Tello dron](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/) is more a cool tool to get started with flying and do some Python test on it.
+But [my DJI Tello dron](https://jalcocert.github.io/JAlcocerT/dji-tello-python-programming/) is more a 101 tool to get started with dron flying while doing some Python test on it.
 
-I saw some people mounting **action cameras on their drons** with some adjustments.
+> [I saw some people mounting](https://www.youtube.com/shorts/myz4ujPcQ10) **action cameras on their drons** with some adjustments.
+
+
 
 #### SmartPhone
 

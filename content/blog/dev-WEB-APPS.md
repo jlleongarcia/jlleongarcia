@@ -1,18 +1,25 @@
 ---
-title: "Getting started with Flask. Deploying Flask with NGINX."
-date: 2024-10-02T05:20:21+01:00
+title: "Web Apps with Python"
+date: 2025-12-02T05:20:21+01:00
 draft: true
 tags: ["Dev","Python"]
-description: 'How to use Flask. Get HTTPs with your domain for Flask Apps. Compared to other Web App Frameworks'
-summary: 'How I learnt the basics to use Python Flask.'
-url: 'get-started-with-flask'
+description: 'My favourite ways to build web apps with Python.'
+url: 'web-apps-with-python'
 ---
 
 ## Streamlit
 
 ## Flask
 
+https://jalcocert.github.io/JAlcocerT/get-started-with-flask/
+
+## Flet
+
+https://jalcocert.github.io/JAlcocerT/tinkering-with-reflex/
+
 ## Shiny
+
+https://jalcocert.github.io/JAlcocerT/R-Stocks/
 
 ## AI Building Web Apps
 
@@ -21,4 +28,3 @@ url: 'get-started-with-flask'
 > MIT |  Prompt, run, edit, and deploy full-stack web applications using any LLM you want! 
 
 ---
-

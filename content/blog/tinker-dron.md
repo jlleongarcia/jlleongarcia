@@ -18,7 +18,7 @@ The dron has a camera as well, similar to the [RPi Camera tested here](https://j
 
 ## DJI Tello Python
 
-If there are some doubts, I wanted to try and control the drone with...code.
+If there are some doubts, I wanted to try and control the **drone with...code**.
 
 I have [forked](https://github.com/damiafuentes/DJITelloPy) and created a Docker Image with **Python Code which is able to control the drone**.
 

@@ -65,7 +65,9 @@ nix-env -u
 
 ## Interesting Stuff Regarding Emulation
 
-* GNOME Boxes is a virtualization tool for Linux desktop environments (like GNOME on Ubuntu). It allows you to create, manage, and run virtual machines in a desktop environment. It’s primarily used to virtualize full operating systems on Linux PCs using technologies like QEMU/KVM.
+* GNOME Boxes is a virtualization tool for Linux desktop environments (like GNOME on Ubuntu). It allows you to create, manage, and run virtual machines in a desktop environment.
+
+It’s primarily used to virtualize full operating systems on Linux PCs using technologies like QEMU/KVM.
 
 * **Termux**, on the other hand, is a **terminal emulator and Linux environment app for Android devices**.
     * It allows users to run a lightweight Linux environment on their Android phone or tablet, providing access to a wide range of command-line utilities and programming environments without rooting the device.

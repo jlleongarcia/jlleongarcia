@@ -21,7 +21,7 @@ Even apply it for karting!
   {{< card link="https://jalcocert.github.io/JAlcocerT/geospatial-data/" title="Geospatial Analysis (with action cams)" >}}
 {{< /cards >}}
 
-Now its time for a recap on the latest tricks.
+Now its time for a recap on my latest video tricks.
 
 
 ## High vs Low Bit Rate
@@ -75,13 +75,15 @@ exiftool -ee ./GX030390.MP4
 #exiftool -ee ./GX030390.MP4 > output.txt
 ```
 
-If you do similarly with a OA5Pro video, the output is **much more reduced**
+If you do similarly with a OA5Pro video and **see the metadata**, the output is **much more reduced**
 
 ```sh
 exiftool -ee ./DJI_20241008163958_0031_D.MP4 #no GPS - no party
 ```
 
 #### FFMPEG
+
+Some tricks with ffmpeg package.
 
 No reencoding = Quick 
 
@@ -114,6 +116,27 @@ ffmpeg -f concat -safe 0 -i file_list.txt -c:v copy -an silenced_output_video.mp
 ffmpeg -stream_loop -1 -i "TRAVELATOR - Density & Time.mp3" -i silenced_output_video.mp4 -c:v copy -c:a aac -shortest output_with_song.mp4
 
 ### 🎵 Music by: 
+```
+
+3. Extract images from video:
+
+```sh
+4ffmpeg -i input_video.mp4 -vf "select='gte(t\,120)',fps=1" -vsync vfr frame_%03d.png
+ffmpeg -i DJI_20250116072852_0036_D.MP4 -vf "select='gte(t\,90)',fps=1" -vsync vfr frame_%03d.png
+#ffmpeg -i DJI_20250116072852_0036_D.MP4 -vf "select='gte(t\,90)',fps=1" -vsync vfr frame_%03d.jpg
+
+
+#between 2 seconds, 1fps extracts and creates a folder
+#ffmpeg -i DJI_20250116072528_0035_D.MP4 -vf "select='between(t,90,105)',fps=1" -vsync vfr frame_%03d.png
+mkdir -p "./$(basename DJI_20250215215547_0006_D.MP4 .MP4)" && ffmpeg -i DJI_20250215215547_0006_D.MP4 -vf "select='between(t,260,262)',fps=1" -vsync vfr "./$(basename DJI_20250215215547_0006_D.MP4 .MP4)/frame_%03d.png"
+```
+
+4. How to reduce image quality in Linux to upload as **youtube thumbnail**:
+
+```sh
+#ffmpeg -i thumbnail.png -c:v libwebp -quality 80 compressed_thumbnail.webp
+#ffmpeg -i PXL_20241030_115355466.jpg -q:v 3 compressed_PXL_20241030_115355466.jpg
+ffmpeg -i thumbnail.png -qscale:v 2 compressed_thumbnail.jpg
 ```
 
 **Space what?**
