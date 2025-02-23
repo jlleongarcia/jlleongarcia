@@ -1,6 +1,6 @@
 #baseURL: http://localhost/ #specified in pages.yml
 languageCode: en-us
-title: JAlcocerT Blog
+title: JLLeonGarcia Blog
 theme: hextra
 
 
@@ -10,7 +10,7 @@ theme: hextra
 #   - path: github.com/imfing/hextra
 
 params:
-  description: JAlcocerT Blog
+  description: JLLeonGarcia Blog
 
 markup:
   # allow raw html
@@ -32,7 +32,7 @@ menu:
       pageRef: /blog
       weight: 2      
     - name: Cool Stuff ↗
-      url: "https://jalcocertech.xyz/"
+      url: "https://jalcocertech.com/"
       weight: 4
     - name: Search
       weight: 5
@@ -52,7 +52,7 @@ menu:
       weight: 2
     - identifier: Docker
       name: "Collaborations ↗"
-      url: "https://jalcocertech.xyz"
+      url: "https://jalcocertech.com"
       weight: 3      
     - identifier: RPi
       name: "Raspberry Pi Guide ↗"

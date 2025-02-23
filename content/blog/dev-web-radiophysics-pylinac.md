@@ -1,5 +1,5 @@
 ---
-title: "A Website for a Phd"
+title: "A Website for a Phd - QaTrack+ and Pylinac for all"
 date: 2025-02-20T10:20:21+01:00
 draft: false
 tags: ["dev"]

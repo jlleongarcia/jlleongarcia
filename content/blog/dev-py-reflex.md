@@ -79,9 +79,10 @@ The front end UI will be at `localhost:3000`
 
 
 {{< callout type="info" >}}
-You will also need `localhost:8000` for the BE (which can conflict with Portainer!) 
+You will also need `localhost:8000` for the BE (which can conflict with Portainer!) s
 {{< /callout >}}
 
+<!-- https://www.youtube.com/watch?v=ITOZkzjtjUA -->
 
 {{< youtube "ITOZkzjtjUA" >}}
 
