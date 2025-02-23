@@ -11,8 +11,7 @@ editPost:
     URL: "https://github.com/JAlcocerT/R_Stocks"
     Text: "Suggest Changes" # edit text
     appendFilePath: false # to append file path to Edit link
-description: "R Stocks - R Shiny Interactive Dashboard that displays free available financial information."
-summary: 'An interactive R Shiny App that revolutionizes the way public financial information is displayed. Built on top of well-known R packages for financial analysis: yfR, QuantMod, PriceR and Quandl.'
+description: "R Stocks - Testing HUGO Hextra and saying Hi to the RStock project from the other side.s"
 url: 'R-Stocks'
 isPinned: false
 ---
