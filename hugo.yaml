@@ -76,7 +76,7 @@ params:
       dark: images/logo.svg
       width: 40
       height: 20
-      link: /JAlcocerT #base for github pages
+      link: /jlleongarcia #base for github pages
     width: wide    
 
   footer:
@@ -85,4 +85,4 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/JAlcocerT/JAlcocerT/edit/main/content"
+    base: "https://github.com/jlleongarcia"
