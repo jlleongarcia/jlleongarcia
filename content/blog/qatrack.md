@@ -8,5 +8,7 @@ url: 'qatrack-installation'
 ---
 
 {{< callout type="info" >}}
-Im testing **HUGO** after this [setup with Github Pages](https://jalcocert.github.io/JAlcocerT/web-for-phd-researcher/)
+I'm testing **HUGO** after this [setup with Github Pages](https://jalcocert.github.io/JAlcocerT/web-for-phd-researcher/)
 {{< /callout >}}
+
+* https://imfing.github.io/hextra/docs/
