@@ -25,7 +25,7 @@ A Fast and Flexible Static Site Generator built with love by [bep](https://githu
 
 ## Overview
 
-Hugo & Yosua is a static HTML and CSS website generator written in [Go](https://go.dev/).
+Hugo is a static HTML and CSS website generator written in [Go](https://go.dev/).
 It is optimized for speed, ease of use, and configurability.
 Hugo takes a directory with content and templates and renders them into a full HTML website.
 
