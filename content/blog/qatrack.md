@@ -7,6 +7,10 @@ description: 'Combining Python, Django and HTML to create your QA database.'
 url: 'qatrack-installation'
 ---
 
+## How to install and deploy a new QATrack+ Server on Windows
+
+
+
 {{< callout type="info" >}}
 I'm testing **HUGO** after this [setup with Github Pages](https://jalcocert.github.io/JAlcocerT/web-for-phd-researcher/)
 {{< /callout >}}
