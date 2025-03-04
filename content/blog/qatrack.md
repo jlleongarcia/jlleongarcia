@@ -11,7 +11,11 @@ There is already a [guide to install QATrack+](https://docs.qatrackplus.com/en/s
 
 ## Let's install prerequisite stuff
 
-First of all, you will need SQL Server 2016-2019. SQL Express is also a valid option, so in my case I downloaded and installed [SQL2019 Express](https://www.google.com/?hl=es) along with [SQL Server Management Studio 20.2](https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms).
+First of all, you will need SQL Server 2016-2019. SQL Express is also a valid option, so in my case I downloaded and installed [SQL2019 Express](https://www.google.com/?hl=es), along with [SQL Server Management Studio 20.2](https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms) and [ODBC Controller for SQL Server](https://learn.microsoft.com/es-es/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16).
+
+Then, install [Google Chrome](https://www.google.com/chrome/index.html) if you don't have it already. Next, download and install [Intenert Information Services](https://www.microsoft.com/es-es/download/details.aspx?id=48264), [URL Rewrite Module](https://www.iis.net/downloads/microsoft/url-rewrite) and [Application Request Routing](https://www.iis.net/downloads/microsoft/application-request-routing).
+
+[Python 3.9.X](https://www.python.org/downloads/release/python-3913/), [VS Code](https://code.visualstudio.com/) and [Github Desktop](https://desktop.github.com/download/).
 
 
 
