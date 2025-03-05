@@ -21,6 +21,8 @@ markup:
   # enable hextra syntax highlight
   highlight:
     noClasses: false
+    style: algol # Or any Chroma style you prefer (e.g., github, solarized)
+    # lineNos: true # Enable line numbers (optional)
 
 menu:
   main:
@@ -31,9 +33,9 @@ menu:
       name: Blog
       pageRef: /blog
       weight: 2      
-    - name: Cool Stuff ↗
-      url: "https://jalcocertech.com/"
-      weight: 4
+    # - name: Cool Stuff ↗
+    #   url: "https://jalcocertech.com/"
+    #   weight: 4
     - name: Search
       weight: 5
       params:
@@ -86,3 +88,6 @@ params:
   editURL:
     enable: true
     base: "https://github.com/jlleongarcia"
+
+customCSS:
+    custom_css: ["css/custom.css"]

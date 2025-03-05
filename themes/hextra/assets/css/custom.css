@@ -1,0 +1,32 @@
+/* General code block styling */
+pre.chroma {
+    background-color: #f8f8f8; /* Light gray background */
+    border: 1px solid #ccc; /* Add a border */
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #333; /* Default text color */
+    overflow-x: auto;
+}
+
+/* PowerShell-specific keywords styling */
+.language-powershell .tok-kd {
+    color: #008080; /* Dark teal for keywords */
+    font-weight: bold;
+}
+
+/* PowerShell-specific comments styling */
+.language-powershell .tok-c {
+    color: #008000; /* Green for comments */
+    font-style: italic;
+}
+
+/* PowerShell-specific strings styling */
+.language-powershell .tok-s {
+    color: #a31515; /* Dark red for strings */
+}
+
+/* PowerShell-specific numbers styling */
+.language-powershell .tok-m {
+    color: #098658; /* Darker green for numbers */
+}
