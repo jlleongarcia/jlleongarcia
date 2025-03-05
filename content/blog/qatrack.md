@@ -28,7 +28,7 @@ When installing Python, check *“Install launcher for all users”* and *“Add
 
 If you have a proxy server at your institution, you need to tell Git/Github desktop how to reach your repositories.
 
-```Windows Powershell
+```PowerShell
 git config --global http.proxy <your-proxy-server>:<port-number>
 git config --global https.proxy <your-proxy-server>:<port-number>
 ```
