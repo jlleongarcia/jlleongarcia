@@ -26,13 +26,19 @@ When installing Python, check *“Install launcher for all users”* and *“Add
   It is highly recommended to fork the [QATrack+ repository](https://github.com/qatrackplus/qatrackplus), thus you may make any changes you want and have your own version both in your PC and in your GitHub.
 {{< /callout >}}
 
-If you have a proxy server at your institution, you need to tell Git/Github desktop how to reach your repositories.
+If you have a proxy server at your institution, you need to tell Git/Github desktop how to reach your repositories; run the following command in a powershell:
 
-```PowerShell
+```powershell
 git config --global http.proxy <your-proxy-server>:<port-number>
 git config --global https.proxy <your-proxy-server>:<port-number>
 ```
 
+If you want to undo this changes just copy and paste the following command:
+
+```powershell
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
 
 
 {{< callout type="info" >}}
