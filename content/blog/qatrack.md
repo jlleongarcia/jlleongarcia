@@ -15,7 +15,23 @@ First of all, you will need SQL Server 2016-2019. SQL Express is also a valid op
 
 Then, install [Google Chrome](https://www.google.com/chrome/index.html) if you don't have it already. Next, download and install [Intenert Information Services](https://www.microsoft.com/es-es/download/details.aspx?id=48264), [URL Rewrite Module](https://www.iis.net/downloads/microsoft/url-rewrite) and [Application Request Routing](https://www.iis.net/downloads/microsoft/application-request-routing).
 
-[Python 3.9.X](https://www.python.org/downloads/release/python-3913/), [VS Code](https://code.visualstudio.com/) and [Github Desktop](https://desktop.github.com/download/).
+Finally, you will need any [Python 3.9.X](https://www.python.org/downloads/release/python-3913/) version, [VS Code](https://code.visualstudio.com/) and either [Github Desktop](https://desktop.github.com/download/) or [Git](https://git-scm.com/downloads), but I prefer the former due to its more friendly interface.
+
+When installing Python, check *“Install launcher for all users”* and *“Add Python 3.9 to PATH”*, then click on *“Customize Installation”* and, on the following window, leave all defaults choices and click *"Next"*. On the third window, make sure to check *"Install for all users"* before clicking *"Install"*.
+
+
+## Configure GitHub to work with a proxy server
+
+{{< callout type="info" >}}
+  It is highly recommended to fork the [QATrack+ repository](https://github.com/qatrackplus/qatrackplus), thus you may make any changes you want and have your own version both in your PC and in your GitHub.
+{{< /callout >}}
+
+If you have a proxy server at your institution, you need to tell Git/Github desktop how to reach your repositories.
+
+```Windows Powershell
+git config --global http.proxy <your-proxy-server>:<port-number>
+git config --global https.proxy <your-proxy-server>:<port-number>
+```
 
 
 
