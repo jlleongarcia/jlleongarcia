@@ -89,5 +89,5 @@ params:
     enable: true
     base: "https://github.com/jlleongarcia"
 
-customCSS:
-    custom_css: ["css/custom.css"]
+# customCSS:
+#     custom_css: ["css/custom.css"]
