@@ -170,7 +170,7 @@ To customize the [favicon](https://en.wikipedia.org/wiki/Favicon) for your site,
     {{< filetree/file name="favicon-16x16.png" >}}
     {{< filetree/file name="favicon-32x32.png" >}}
     {{< filetree/file name="favicon-dark.svg" >}}
-    {{< filetree/file name="favicon.ico" >}}
+    {{< filetree/file name="favicon_v2.ico" >}}
     {{< filetree/file name="favicon.svg" >}}
     {{< filetree/file name="site.webmanifest" >}}
   {{< /filetree/folder >}}
