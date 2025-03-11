@@ -28,14 +28,14 @@ When installing Python, check *“Install launcher for all users”* and *“Add
 
 If you have a proxy server at your institution, you need to tell Git/Github desktop how to reach your repositories; run the following command in a powershell:
 
-```powershell
+```bash
 git config --global http.proxy <your-proxy-server>:<port-number>
 git config --global https.proxy <your-proxy-server>:<port-number>
 ```
 
 If you want to undo this changes just copy and paste the following command:
 
-```powershell
+```bash
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
@@ -44,7 +44,7 @@ git config --global --unset https.proxy
 
 Open a Windows PowerShell terminal and create the following directory:
 
-```powershell
+```bash
 mkdir C:\deploy
 cd C:\deploy
 ```
@@ -55,13 +55,13 @@ cd C:\deploy
 
 Now, it's time to clone your repository. You may do it directly from the PowerShell terminal by copying the following command:
 
-```powershell
+```bash
 git clone https://github.com/qatrackplus/qatrackplus.git
 ```
 
 Once cloned, setup the Python environment and install all dependencies:
 
-```powershell
+```bash
 mkdir venvs
 python -m pip install --upgrade pip
 python -m venv venvs\qatrack31
