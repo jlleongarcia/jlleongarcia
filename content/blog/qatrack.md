@@ -40,6 +40,40 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
 
+## Clone repository and install all dependencies
+
+Open a Windows PowerShell terminal and create the following directory:
+
+```powershell
+mkdir C:\deploy
+cd C:\deploy
+```
+
+{{< callout type="warning" >}}
+  It is crucial to create the directory *"C:\deploy"* since there is a file that looks for such directory.
+{{< /callout >}}
+
+Now, it's time to clone your repository. You may do it directly from the PowerShell terminal by copying the following command:
+
+```powershell
+git clone https://github.com/qatrackplus/qatrackplus.git
+```
+
+Once cloned, setup the Python environment and install all dependencies:
+
+```powershell
+mkdir venvs
+python -m pip install --upgrade pip
+python -m venv venvs\qatrack31
+.\venvs\qatrack31\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+cd qatrackplus
+git checkout v3.1.1.4
+pip install -r requirements\win.txt
+```
+
+## Create your SQL database
+
 
 {{< callout type="info" >}}
 I'm testing **HUGO** after this [setup with Github Pages](https://jalcocert.github.io/JAlcocerT/web-for-phd-researcher/)
