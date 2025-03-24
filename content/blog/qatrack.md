@@ -55,13 +55,12 @@ cd C:\deploy
 
 Now, it's time to clone your repository. You may do it directly from the PowerShell terminal by copying the following command:
 
-```bash
+```bash {title="Configure Git Proxy"}
 git clone https://github.com/qatrackplus/qatrackplus.git
 ```
 
 Once cloned, setup the Python environment and install all dependencies:
 
-```markdown
 ```powershell {title="PowerShell"}
 mkdir venvs
 python -m pip install --upgrade pip
