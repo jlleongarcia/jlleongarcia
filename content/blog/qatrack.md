@@ -61,7 +61,7 @@ git clone https://github.com/qatrackplus/qatrackplus.git
 
 Once cloned, setup the Python environment and install all dependencies:
 
-```powershell {title="PowerShell"}
+```markdown {title="PowerShell"}
 mkdir venvs
 python -m pip install --upgrade pip
 python -m venv venvs\qatrack31
