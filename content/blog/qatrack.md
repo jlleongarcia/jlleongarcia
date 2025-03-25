@@ -76,8 +76,7 @@ pip install -r requirements\win.txt
 
 Open SQL Server Management Studio, connect to your database and make sure you have checked *"Trust server certificate"*.
 
-![Snapshot when logging into your database](/images/qatrack/SSMS.PNG "Optional Image Title")
-<!-- {{< figure src="/static/images/qatrack/SSMS.PNG" alt="Snapshot when logging into your database" caption="This is the image caption" class="my-image-class" >}} -->
+![sql-server-management-studio-logging](/images/qatrack/SSMS.PNG "SSMS Snapshot when logging into your database")
 
 
 
