@@ -55,9 +55,9 @@ cd C:\deploy
 
 Now, it's time to clone your repository. You may do it directly from the PowerShell terminal by copying the following command:
 
-{{</* code file="clone-qatrack.sh" title="Clone QATrack+ Repository" */>}}
+```.py Example
 git clone https://github.com/qatrackplus/qatrackplus.git
-{{</* /code */>}}
+```
 
 Once cloned, setup the Python environment and install all dependencies:
 
