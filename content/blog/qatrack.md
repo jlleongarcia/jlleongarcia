@@ -76,7 +76,7 @@ pip install -r requirements\win.txt
 
 Open SQL Server Management Studio, connect to your database and make sure you have checked *"Trust server certificate"*.
 
-![Snapshot when logging into your database](/images/qatrack/my-image.png "Optional Image Title")
+![Snapshot when logging into your database](/static/images/qatrack/SSMS.PNG "Optional Image Title")
 
 
 {{< callout type="info" >}}
