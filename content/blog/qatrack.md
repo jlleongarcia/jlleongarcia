@@ -74,9 +74,14 @@ pip install -r requirements\win.txt
 
 ## Create your SQL database
 
+Open SQL Server Management Studio, connect to your database and make sure you have checked *"Trust server certificate"*.
+
+![Snapshot when logging into your database](/images/qatrack/my-image.png "Optional Image Title")
+
 
 {{< callout type="info" >}}
 I'm testing **HUGO** after this [setup with Github Pages](https://jalcocert.github.io/JAlcocerT/web-for-phd-researcher/)
 {{< /callout >}}
 
 * https://imfing.github.io/hextra/docs/
+* https://imfing.github.io/hextra/blog/markdown/#code-blocks
