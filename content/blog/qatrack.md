@@ -44,7 +44,7 @@ git config --global --unset https.proxy
 
 Open a Windows PowerShell terminal and create the following directory:
 
-```bash
+```sh
 mkdir C:\deploy
 cd C:\deploy
 ```
@@ -55,13 +55,13 @@ cd C:\deploy
 
 Now, it's time to clone your repository. You may do it directly from the PowerShell terminal by copying the following command:
 
-```bash {title="Configure Git Proxy"}
+```sh {title="Configure Git Proxy"}
 git clone https://github.com/qatrackplus/qatrackplus.git
 ```
 
 Once cloned, setup the Python environment and install all dependencies:
 
-```markdown {title="PowerShell"}
+```py {title="PowerShell"}
 mkdir venvs
 python -m pip install --upgrade pip
 python -m venv venvs\qatrack31
