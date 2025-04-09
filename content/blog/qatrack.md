@@ -130,7 +130,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', "*"]
 ```
 
 {{< callout type="warning" >}}
-  Important! Add "***" in the *ALLOWED_HOSTS* to successfully connect QATrack+ to your database.
+  Important! Add "*" in ALLOWED_HOSTS to successfully connect QATrack+ to your database.
 {{< /callout >}}
 
 
