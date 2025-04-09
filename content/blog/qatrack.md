@@ -80,8 +80,58 @@ Open SQL Server Management Studio, connect to your database and make sure you ha
 
 When successfully logged in, right click on your server name, located in the *Object Explorer* panel, and go to *Properties*. In the dialog window, click on *Security* and check *SQL Server and Windows Authentication mode* is selected. After that, click on *OK*, right click again on your server name and click on *Restart*.
 
-![sql-win-auth-logging](/images/qatrack/SQL-Win-Auth.PNG)
-{{< caption >}}Properties tab where we have to choose _SQL Server and Windows Authentication mode_.{{< /caption >}}
+![sql-win-auth-logging](/images/qatrack/SQL-Win-Auth.PNG "Server properties tab")
+
+Now, you are ready to create our new database! Again, in the *Object Explorer* panel right click over *Databases* folder and select *New Database...*. You have to name it as "qatrackplus31" and click *OK*.
+
+Back in the *Object Explorer* frame, click this time in *Security* folder and select *New -> Login...*. Select *SQL Server Authentication* and enter as login name "qatrack"; set whatever password you want but make sure to uncheck *Enforce Password Policy* (this is just to be able to set simple password like pass123) before clicking *OK*. Then, repeat this process for the user "qatrack_reports".
+
+When both logins are created, it's time to create their corresponding users. Expand *Database* folder and then expand "qatrackplus31" database to right click on the *Security* folder and select *New -> User...*. First, enter "qatrack" as user name and login name and, in the *Membership* page, check "db_ddladmin", "db_datawriter", "db_datareader" and "db_owner". Next, enter "qatrack_reports" as user and login name and, in the *Membership* page, check "db_datareader".
+
+## Configure your QATrack+ settings
+
+Copy the *local_settings.py* file by:
+
+```powerhsell
+cp deploy\win\local_settings.py qatrack\local_settings.py
+```
+and to make things easier, just comment the 'readonly' database and do not set any user nor password for the default database.
+
+```py
+# Set to True to enable debug mode (not safe for regular use!)
+DEBUG = False
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'qatrackplus31',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'COMPUTER_NAME\SQLEXPRESS',  # leave blank unless using remote server or SQLExpress (use 127.0.0.1\SQLEXPRESS or COMPUTERNAME\SQLEXPRESS)
+        'PORT': '',  # Set to empty string for default. Not used with sqlite3.
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+        },
+    },
+    # 'readonly': {
+    #     'ENGINE': 'sql_server.pyodbc',
+    #     'NAME': 'qatrackplus31',
+    #     'USER': 'qatrack_reports',
+    #     'PASSWORD': 'qatrack_reports',
+    #     'HOST': 'COMPUTER_NAME\SQLEXPRESS',  # leave blank unless using remote server or SQLExpress (use 127.0.0.1\SQLEXPRESS or COMPUTERNAME\SQLEXPRESS)
+    #     'PORT': '',  # Set to empty string for default. Not used with sqlite3.
+    #     'OPTIONS': {
+    #         'driver': 'ODBC Driver 17 for SQL Server'
+    #     },
+    # }
+}
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', "*"]
+```
+
+{{< callout type="warning" >}}
+  Important! Add "***" in the *ALLOWED_HOSTS* to successfully connect QATrack+ to your database.
+{{< /callout >}}
 
 
 {{< callout type="info" >}}
