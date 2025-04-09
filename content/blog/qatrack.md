@@ -80,7 +80,7 @@ Open SQL Server Management Studio, connect to your database and make sure you ha
 
 When successfully logged in, right click on your server name, located in the *Object Explorer* panel, and go to *Properties*. In the dialog window, click on *Security* and check *SQL Server and Windows Authentication mode* is selected. After that, click on *OK*, right click again on your server name and click on *Restart*.
 
-![sql-win-auth-logging](/images/qatrack/SQL-Win-Auth.PNG "Properties tab where we have to choose *SQL Server and Windows Authentication mode*")
+![sql-win-auth-logging](/images/qatrack/SQL-Win-Auth.PNG "Properties tab where we have to choose _SQL Server and Windows Authentication mode_")
 
 
 {{< callout type="info" >}}
