@@ -133,6 +133,55 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', "*"]
   Important! Add "*" in ALLOWED_HOSTS to successfully connect QATrack+ to your database.
 {{< /callout >}}
 
+Confirm you can connect to your database by running:
+
+```powershell
+python manage.py showmigrations accounts
+```
+
+which should show output like:
+
+```sh
+accounts
+    [ ] 0001_initial
+    [ ] 0002_activedirectorygroupmap_defaultgroup
+    [ ] 0003_auto_20210207_1027
+```
+
+Then, you will create the database tables and configure your database by running:
+
+```powershell
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py createcachetable
+python manage.py collectstatic
+Get-ChildItem .\fixtures\defaults\*\*json | foreach {python manage.py loaddata $_.FullName}
+```
+
+Remember that if you want to add new fields when storing data, you have to make and create the migrations by:
+
+```powershell
+cd C:\deploy
+.\venvs\qatrack31\Scripts\Activate.ps1
+cd qatrackplus
+python manage.py makemigrations
+python manage.py migrate
+python manage.py showmigrations
+```
+
+which should output things like:
+
+```sh
+    [X] 0001_whatever
+    [X] 0002_whenever
+    [X] 0003_wherever
+    ...
+```
+
+## Configure CherryPy
+
+
+
 
 {{< callout type="info" >}}
 I'm testing **HUGO** after this [setup with Github Pages](https://jalcocert.github.io/JAlcocerT/web-for-phd-researcher/)
