@@ -15,7 +15,7 @@ First of all, you will need SQL Server 2016-2019. SQL Express is also a valid op
 
 Then, install [Google Chrome](https://www.google.com/chrome/index.html) if you don't have it already. Next, download and install [Internet Information Services](https://www.microsoft.com/es-es/download/details.aspx?id=48264), [URL Rewrite Module](https://www.iis.net/downloads/microsoft/url-rewrite) and [Application Request Routing](https://www.iis.net/downloads/microsoft/application-request-routing). Check [this link](https://help.monitorsanywhere.com/portal/en/kb/articles/how-do-i-solve-this-error-message-the-iis-7-0-corewebengine-and-w3svc-features-must-be-installed) before installing URL Rewrite and Application Request Routing.
 
-Finally, you will need any [Python 3.9.X](https://www.python.org/downloads/release/python-3913/) version, [VS Code](https://code.visualstudio.com/) and either [Github Desktop](https://desktop.github.com/download/) or [Git](https://git-scm.com/downloads), but I prefer the former due to its more friendly interface.
+Finally, you will need any [Python 3.9.X](https://www.python.org/downloads/release/python-3913/) version, [VS Code](https://code.visualstudio.com/) and [Github Desktop](https://desktop.github.com/download/) (I prefer this one to work with repositories) and [Git](https://git-scm.com/downloads) (in case we need to configure our PC, choose **"Use git from the Windows Command Prompt"**).
 
 When installing Python, check *“Install launcher for all users”* and *“Add Python 3.9 to PATH”*, then click on *“Customize Installation”* and, on the following window, leave all defaults choices and click *"Next"*. On the third window, make sure to check *"Install for all users"* before clicking *"Install"*.
 
