@@ -167,4 +167,101 @@ and go to Github > Settings > SSH and GPG Keys > New SSH Key > *Key* field. Past
 ssh -T git@github.com
 ```
 
+To sync all your projects without having to be logged in, just create the pull script and timer, then run the timer with *systemd*. Follow these steps:
+
+Create the script:
+```sh
+sudo nano /usr/local/bin/git-pull-all
+```
+
+Paste the following code:
+```sh
+#!/bin/bash
+
+# Path to your projects directory
+PROJECTS_DIR="/home/jlleongarcia/projects"
+
+# Check if the directory exists
+if [ ! -d "$PROJECTS_DIR" ]; then
+  echo "Projects directory not found at $PROJECTS_DIR"
+  exit 1
+fi
+
+# Change to the projects directory
+cd "$PROJECTS_DIR" || exit
+
+# Loop through each directory and pull the latest changes
+for repo in */; do
+  if [ -d "$repo/.git" ]; then
+    echo "Syncing $repo..."
+    cd "$repo"
+    git pull
+    cd ..
+  fi
+done
+```
+
+Make the script executable:
+
+```sh
+sudo chmod +x /usr/local/bin/git-pull-all
+```
+
+Create a systemd Service:
+
+```sh
+sudo nano /etc/systemd/system/git-sync.service
+```
+
+Add the service configuration:
+
+```sh
+[Unit]
+Description=Git synchronization service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/git-pull-all
+User=jlleongarcia
+Group=jlleongarcia
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Create a systemd Timer:
+
+```sh
+sudo nano /etc/systemd/system/git-sync.timer
+```
+
+Add the timer configuration:
+
+```sh
+[Unit]
+Description=Runs git-sync.service every day at 8am
+
+[Timer]
+OnCalendar=*-*-* 08:00:00
+RandomizedDelaySec=15m
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+```
+
+Finally, enable and start the Timer:
+
+```sh
+sudo systemctl daemon-reload
+sudo systemctl start git-sync.timer # Start the Timer
+sudo systemctl enable git-sync.timer # Enable the timer to run on boot
+```
+
+To check the status of your timer, run:
+
+```sh
+sudo systemctl status git-sync.timer
+```
+
 
