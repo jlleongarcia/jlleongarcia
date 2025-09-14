@@ -125,3 +125,10 @@ docker restart portainer
 ```
 
 Now, navigate to server_IP:9000 and you can create your admin user.
+
+### htop
+```sh
+sudo apt install htop
+```
+
+
