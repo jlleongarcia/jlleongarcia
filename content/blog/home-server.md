@@ -131,4 +131,40 @@ Now, navigate to server_IP:9000 and you can create your admin user.
 sudo apt install htop
 ```
 
+### Git
+
+Git should have been installed by now, but if not:
+
+```sh
+sudo apt update
+sudo apt install git
+```
+
+Now, it's time to configure your Git user information:
+
+```sh
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+```
+
+Replace "Your Name" and "youremail@example.com" with your GitHub name and email.
+
+Once you have configured your Git information, choose an authentication method; I have chosen SSH key:
+
+```sh
+ssh-keygen -t ed25519 -C "youremail@example.com"
+```
+
+Then, copy the output of the following command line:
+
+```sh
+cat ~/.ssh/id_ed25519.pub
+```
+
+and go to Github > Settings > SSH and GPG Keys > New SSH Key > *Key* field. Paste the output there and give it a title. After all, test the connection:
+
+```sh
+ssh -T git@github.com
+```
+
 
