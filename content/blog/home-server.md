@@ -121,4 +121,7 @@ Finally, start and run Portainer, a graphical user interface (GUI) that sits on 
 
 ```sh
 docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+docker restart portainer
 ```
+
+Now, navigate to server_IP:9000 and you can create your admin user.
