@@ -264,4 +264,16 @@ To check the status of your timer, run:
 sudo systemctl status git-sync.timer
 ```
 
+### uv
+
+```sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Then, restart your terminal or run:
+
+```sh
+source $HOME/.local/bin/env
+```
+
 
