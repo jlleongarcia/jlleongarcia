@@ -140,6 +140,12 @@ sudo apt update
 sudo apt install git
 ```
 
+To clone your repositories:
+
+```sh
+git clone git@github.com:your_username/your_repo_ssh_url.git
+```
+
 Now, it's time to configure your Git user information:
 
 ```sh
@@ -276,4 +282,10 @@ Then, restart your terminal or run:
 source $HOME/.local/bin/env
 ```
 
+### Develop your projects using VSCode Remote - SSH
 
+If you are familiar to VSCode, you can use it to develop your projects directly on your home server, save it to the server's project directory, and then run it directly in a terminal within VS Code that is connected to the server.
+
+To do so, you will need to install the "Remote - SSH" extension in VSCode. Once installed, you can connect to your server by clicking on the green "Remote Explorer" icon in the activity bar on the left, then selecting "SSH Targets" and clicking the "+" icon to add a new SSH host.
+
+You will be prompted to enter the SSH connection command, which will be similar to `ssh username@100.x.y.z`. After successfully connecting, VSCode will open a new window connected to your server, allowing you to browse files, edit code, and run terminals as if you were working locally on the server.
