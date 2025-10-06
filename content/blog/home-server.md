@@ -289,3 +289,108 @@ If you are familiar to VSCode, you can use it to develop your projects directly 
 To do so, you will need to install the "Remote - SSH" extension in VSCode. Once installed, you can connect to your server by clicking on the green "Remote Explorer" icon in the activity bar on the left, then selecting "SSH Targets" and clicking the "+" icon to add a new SSH host.
 
 You will be prompted to enter the SSH connection command, which will be similar to `ssh username@100.x.y.z`. After successfully connecting, VSCode will open a new window connected to your server, allowing you to browse files, edit code, and run terminals as if you were working locally on the server.
+
+---
+
+## Other apps to be included as optional
+
+### Umami + Cloudflare to get web analytics
+
+The process involves two main phases: setting up the Umami server and connecting it via the Cloudflare Tunnel. Most people use Docker for the Umami server setup as it simplifies deployment.
+
+1. **Create the Umami Setup Files**: Create a directory for Umami and inside it paste:
+
+```sh
+openssl rand 30 | openssl base64 -A
+```
+
+2. **Create a .env file:**
+
+```sh
+nano .env
+```
+and paste the generated code:
+
+```sh
+# Umami Application Secret
+UMAMI_SECRET=<PASTE_YOUR_GENERATED_SECRET_HERE>
+
+# Database Configuration (Using PostgreSQL for simplicity)
+DATABASE_URL=postgresql://umami:umami@umami-db:5432/umami
+```
+
+3. **Create the docker-compose.yml file:**
+
+```sh
+nano docker-compose.yml
+```
+
+```sh
+version: '3.8'
+
+services:
+  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    container_name: umami
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      - umami-db
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - HASH_SALT=${UMAMI_SECRET}
+      - APP_SECRET=${UMAMI_SECRET}
+    # Important: Umami runs on port 3000 inside the container. 
+    # We will use this internal port with the Cloudflare Tunnel.
+
+  umami-db:
+    image: postgres:15-alpine
+    container_name: umami-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: umami
+      POSTGRES_PASSWORD: umami
+      POSTGRES_DB: umami
+    volumes:
+      - ./umami_data:/var/lib/postgresql/data
+```
+
+After creating all these files, run the following command to start the Umami Containers:
+
+```sh
+docker-compose up -d
+```
+
+Then, install the cloudflared Daemon:
+
+```sh
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared-linux-amd64.deb
+```
+
+Run the command:
+
+```sh
+cloudflared tunnel login
+```
+
+The command will output a URL. Copy this URL and paste it into a web browser on your computer. The browser will prompt you to log in to your Cloudflare account. Once logged in, select the domain you want to use for the Tunnel and click Authorize.
+
+Next, create the Tunnel in the Cloudflare Dashboard and define the Umami Service.
+
+Finally, run the tunnel by:
+
+```sh
+cloudflared tunnel run <YOUR-TUNNEL-NAME>
+```
+
+and paste the following command just before the closing </body> tag:
+
+```sh
+<script 
+    async 
+    src="https://<YOUR_UMAMI_DOMAIN>/script.js" 
+    data-website-id="<YOUR_WEBSITE_ID>">
+</script>
+```
+
