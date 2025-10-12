@@ -394,3 +394,8 @@ and paste the following command just before the closing </body> tag:
 </script>
 ```
 
+In order to test if your containers are up, run:
+
+```sh
+docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+```
