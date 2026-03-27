@@ -399,3 +399,82 @@ In order to test if your containers are up, run:
 ```sh
 docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
 ```
+
+### Nextcloud AIO
+
+
+---
+
+## Additional features
+
+### Installing an external SSD
+
+After the physical installation of the external disk, you need to tell Linux how to use this new bunch of space.
+
+1. **Identify the Drive**
+
+    Open your terminal and run:
+
+    ```bash
+    lsblk
+    ```
+
+    Look for a new disk that is approximately the size of the disk you bought. It will likely be labeled something like /dev/sdb.
+
+2. **Format the Drive**
+
+    We will use ext4, the most stable and standard filesystem for Linux servers.
+
+    ```bash
+    # Replace 'sdb' with your actual drive letter found in the previous step
+    sudo mkfs.ext4 /dev/sdb
+    ```
+
+3. **Create a Mount Point**
+
+    We don't want to manually mount the drive every time the minipc restarts. Choose a location where your data will live.
+
+    ```bash
+    sudo mkdir -p /mnt/nextcloud_data
+    ```
+
+4. **Get the UUID**
+
+    Linux identifies drives best by their UUID (Unique ID), which doesn't change even if you swap cable ports.
+
+    ```bash
+    sudo blkid /dev/sdb
+    ```
+    Copy the long alphanumeric string inside the quotes (e.g., UUID="550e8400-e29b-...").
+
+5. **Edit the File System Table**
+
+    ```bash
+    sudo nano /etc/fstab
+    ```
+
+    Add this line to the bottom of the file (replace the UUID with yours):
+
+    ```bash
+    UUID=your-uuid-here /mnt/nextcloud_data ext4 defaults 0 2
+    ```
+
+    Save and exit (Ctrl+O, Enter, Ctrl+X).
+
+6. **Test the Mount**
+
+    ```bash
+    sudo mount -a
+    ```
+
+    If no errors appear, your SSD is now active at /mnt/nextcloud_data. However, if it returns "mount: (hint) your fstab has been modified but systemd still uses the old version; use 'systemctl daemon-reload' to reload", no stress—this is a perfectly normal informational message on modern Linux systems. Just reload the systemd manager configuration:
+
+    ```bash
+    sudo systemctl daemon-reload
+    ```
+
+    and mount the drive again.
+
+    ```bash
+    sudo mount -a
+   ```
