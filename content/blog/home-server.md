@@ -478,3 +478,29 @@ After the physical installation of the external disk, you need to tell Linux how
     ```bash
     sudo mount -a
    ```
+
+---
+
+## Additional features
+
+### Git notes
+
+When working with branches, if one branch isn't up to date any more with main, there are two options:
+
+- Option A — Merge main into your branch (simpler, safer):
+
+    ```bash
+    git checkout your-other-branch
+    git fetch origin
+    git merge origin/main
+    ```
+  Creates a merge commit, but no risk of rewriting history.
+
+- Option B — Rebase your branch on top of main (cleaner history):
+
+    ```bash
+    git checkout your-other-branch
+    git fetch origin
+    git rebase origin/main
+   ```
+  Replays your commits on top of the updated main — linear history, no merge commit. Since files don't overlap, no conflicts expected.
