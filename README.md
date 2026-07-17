@@ -41,7 +41,7 @@ Everything here came from a real problem I had to solve. If you're starting your
 - 📊 [**SPC-analysis**](https://github.com/jlleongarcia/SPC-analysis) — Streamlit app for Statistical Process Control on any process
 - 🚗 [**wheeler-keeper**](https://github.com/jlleongarcia/wheeler-keeper) — Django web app to track vehicle upkeep
 - 📚 [**corp-library**](https://github.com/jlleongarcia/corp-library) — corporate library management
-- 📈 [**PyStocks**](https://github.com/jlleongarcia/PyStocks) — stock market research and portfolio management platform
+- 📈 [**Market-Mind**](https://github.com/jlleongarcia/market-mind) — stock market research and portfolio management platform
 
 ---
 
