@@ -36,12 +36,12 @@ Everything here came from a real problem I had to solve. If you're starting your
 
 ## Featured repos
 
-- 🏥 [**DICOM-anonymizer**](https://github.com/jlleongarcia/DICOM-anonymizer) — web app to anonymize DICOM files
+- 🏥 [**DICOM Anonymizer**](https://github.com/jlleongarcia/DICOM-anonymizer) — web app to anonymize DICOM files
 - 📐 [**pylinac**](https://github.com/jlleongarcia/pylinac) — image analysis library for medical physics (fork)
-- 📊 [**SPC-analysis**](https://github.com/jlleongarcia/SPC-analysis) — Streamlit app for Statistical Process Control on any process
-- 🚗 [**wheeler-keeper**](https://github.com/jlleongarcia/wheeler-keeper) — Django web app to track vehicle upkeep
-- 📚 [**corp-library**](https://github.com/jlleongarcia/corp-library) — corporate library management
-- 📈 [**Market-Mind**](https://github.com/jlleongarcia/market-mind) — stock market research and portfolio management platform
+- 📊 [**Stats Analysis**](https://github.com/jlleongarcia/stats-analysis) — PWA for statistics and SPC on any process
+- 🚗 [**Wheeler Keeper**](https://github.com/jlleongarcia/wheeler-keeper) — Django web app to track vehicle upkeep
+- 📚 [**Corp Library**](https://github.com/jlleongarcia/corp-library) — corporate library management
+- 📈 [**Market Mind**](https://github.com/jlleongarcia/market-mind) — stock market research and portfolio management platform
 
 ---
 
